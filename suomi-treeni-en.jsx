@@ -5,7 +5,6 @@ import {
 } from "lucide-react";
 
 /* ------------------------------------------------------------------ */
-/*  Palette: Finnish winter — frost, lake blue, cloudberry, spruce, lingonberry */
 /* ------------------------------------------------------------------ */
 const C = {
   paper: "#EDF1F5",
@@ -22,12 +21,9 @@ const C = {
   lingon: "#B8332A",
   lingonSoft: "#FBE2DF",
 };
-// Changes with every rebuild — shows which version is currently open.
-const BUILD = "29.09 / English branch, all 66 lessons";
 const FONT = '"Helvetica Neue", Inter, system-ui, -apple-system, "Segoe UI", Arial, sans-serif';
 
 /* ------------------------------------------------------------------ */
-/*  Lesson 17 — FinnishPod101 Lower Beginner S1 #17 (illness and symptoms)     */
 /* ------------------------------------------------------------------ */
 const LESSON_17 = {
   id: "LB_S1_17",
@@ -36,35 +32,35 @@ const LESSON_17 = {
   glossary: [
     { w: "sairas", ru: "больной, болен", en: "sick, ill",
       forms: ["sairas", "sairaana"],
-      note: "Про любую болезнь — от простуды до рака, но не про травмы: со сломанной ногой человек loukkaantunut («травмированный»), а не sairas. Можно сказать и Tiina on sairas, и Tiina on sairaana. Эссив (-na) означает временное состояние: sairaana — сейчас болеет и поправится. Про диабет так не скажешь — только Tiina on sairas." },
+      note: "Used for any illness — from a cold to cancer — but not for injuries: a person with a broken leg is loukkaantunut (“injured”), not sairas. You can say both Tiina on sairas and Tiina on sairaana. The essive (-na) marks a temporary state: sairaana — ill right now and will recover. You can’t say this about diabetes — only Tiina on sairas." },
     { w: "kipeä", ru: "болит; больной, воспалённый", en: "sore; sick, ill",
       forms: ["kipeä", "kipeät", "kipeää"],
-      note: "В разговорной речи — синоним sairas: Oletko kipeä? = Oletko sairas? («Ты болен?»). В формальном языке (газеты) kipeä значит в основном «болит». Частая конструкция: Minulla on ... kipeä («У меня болит ...»), в середину вставляется часть тела: Minulla on jalka kipeä, Minulla on selkä kipeä." },
+      note: "In colloquial speech a synonym of sairas: Oletko kipeä? = Oletko sairas? (“Are you ill?”). In formal language (newspapers) kipeä mostly means “sore, hurting”. A common construction: Minulla on ... kipeä (“My ... hurts”), with a body part in the middle: Minulla on jalka kipeä, Minulla on selkä kipeä." },
     { w: "vuotaa", ru: "течь, протекать", en: "to leak, to run (of nose)",
       forms: ["vuotaa", "vuoti", "vuotanut"],
-      note: "Стандартный глагол для любой жидкости, газа (и даже информации), которая медленно уходит оттуда, где должна оставаться. Про нос — «течёт, надо сморкаться». Если нос просто заложен: Nenäni on tukossa." },
+      note: "The standard verb for any liquid or gas (even information) that slowly escapes from where it should stay. About the nose — “runs, needs blowing”. If the nose is just blocked: Nenäni on tukossa." },
     { w: "kuume", ru: "температура, жар", en: "fever",
       forms: ["kuume", "kuumetta", "kuumeen"],
-      note: "Симптом, поэтому обычно в партитиве: Minulla on kuumetta («У меня температура»). Основы: kuume-, kuumee-." },
+      note: "A symptom, so usually in the partitive: Minulla on kuumetta (“I have a temperature”). Stems: kuume-, kuumee-." },
     { w: "kuinka", ru: "как, насколько", en: "how",
       forms: ["kuinka"],
-      note: "Синоним miten, но чаще стоит перед прилагательным: kuinka kauan («как долго»), kuinka vanha («сколько лет»), kuinka pitkä («какого роста»)." },
+      note: "A synonym of miten, but more often placed before an adjective: kuinka kauan (“how long”), kuinka vanha (“how old”), kuinka pitkä (“how tall”)." },
     { w: "nenä", ru: "нос", en: "nose", forms: ["nenä", "nenäsi", "nenäni", "nenää"] },
     { w: "paras", ru: "лучший", en: "best",
       forms: ["paras"],
-      note: "Превосходная степень от hyvä. On paras + инфинитив = «лучше всего сделать что-то»: On paras levätä." },
+      note: "The superlative of hyvä. On paras + infinitive = “the best thing is to do something”: On paras levätä." },
     { w: "kurkku", ru: "горло", en: "throat",
       forms: ["kurkku", "kurkkua", "kurkkuaan"],
-      note: "То же слово значит «огурец». Что именно имеется в виду, ясно из контекста: Kurkku on kipeä — про горло, а не про овощ." },
+      note: "The same word means “cucumber”. What is meant is clear from context: Kurkku on kipeä — about the throat, not the vegetable." },
     { w: "levätä", ru: "отдыхать", en: "to rest",
       forms: ["levätä", "lepää", "lepäsi", "lepäävät"],
-      note: "Тип глагола с чередованием: levätä → minä lepään, hän lepää, hän lepäsi." },
+      note: "A verb type with gradation: levätä → minä lepään, hän lepää, hän lepäsi." },
     { w: "luulla", ru: "думать, полагать (предполагать)", en: "to believe, to think",
       forms: ["luulla", "luulen", "luulin", "luuli"],
-      note: "Luulla — думать в смысле «предполагать, возможно ошибочно». Не путать с ajatella («размышлять») и tietää («знать»). Luulin, että... часто значит «а я-то думал, что...»." },
+      note: "Luulla — to think in the sense of “to suppose, possibly wrongly”. Not to be confused with ajatella (“to ponder”) and tietää (“to know”). Luulin, että... often means “and I thought that...”." },
     { w: "minulla on", ru: "у меня есть", en: "I have",
       forms: ["minulla", "sinulla", "hänellä", "meillä", "teillä", "heillä", "eerikalla", "juhalla", "naisella", "monella", "lapsella", "jussilla"],
-      note: "Владение выражается адессивом (-lla/-llä) + on: Minulla on kuume. Названия болезней обычно в номинативе (flunssa, ruokamyrkytys), а симптомы — в партитиве (kuumetta, yskää, nuhaa). Yskä и nuha могут быть и тем, и другим." },
+      note: "Possession is expressed with the adessive (-lla/-llä) + on: Minulla on kuume. Names of illnesses are usually in the nominative (flunssa, ruokamyrkytys), and symptoms in the partitive (kuumetta, yskää, nuhaa). Yskä and nuha can be either." },
     { w: "flunssa", ru: "простуда", en: "the common cold", forms: ["flunssa", "flunssaa"] },
     { w: "influenssa", ru: "грипп", en: "influenza, flu", forms: ["influenssa", "influenssaa"] },
     { w: "heinänuha", ru: "сенная лихорадка, поллиноз", en: "hay fever", forms: ["heinänuha"] },
@@ -84,17 +80,17 @@ const LESSON_17 = {
     { w: "ranne", ru: "запястье", en: "wrist", forms: ["ranne", "ranteet", "ranteesi"] },
     { w: "elatiivi", ru: "элатив: причина боли", en: "elative for cause",
       forms: ["eilisestä", "tennispelistä", "kävelemisestä"],
-      note: "Причина боли ставится в элатив (-sta/-stä): Käsi on kipeä eilisestä tennispelistä («Рука болит после вчерашней игры в теннис»), Jalat ovat kipeät kävelemisestä («Ноги болят от ходьбы»)." },
+      note: "The cause of pain goes into the elative (-sta/-stä): Käsi on kipeä eilisestä tennispelistä (“My hand hurts after yesterday’s tennis game”), Jalat ovat kipeät kävelemisestä (“My legs hurt from walking”)." },
   ],
   items: [
-    // dialogue
+    // диалог
     { fi: "Minun pitäisi ehkä lähteä kotiin.", ru: "Мне, наверное, пора домой.", en: "I think maybe I should go home.", k: "d", who: "Petri" },
     { fi: "Kuinka niin? Oletko sairas?", ru: "Это почему? Ты болен?", en: "Why? Are you sick?", k: "d", who: "Mari" },
     { fi: "Luulen, että minulla on kuumetta.", ru: "Думаю, у меня температура.", en: "I think I have a fever.", k: "d", who: "Petri" },
     { fi: "Kurkku on kipeä ja nenä vuotaa.", ru: "Горло болит и нос течёт.", en: "I have a sore throat and my nose is running.", k: "d", who: "Petri" },
     { fi: "Sitten on kyllä paras levätä.", ru: "Тогда лучше всего отдохнуть.", en: "Then you had better rest.", k: "d", who: "Mari" },
     { fi: "Joo. Hei hei.", ru: "Ага. Пока.", en: "Yeah. Bye.", k: "d", who: "Petri" },
-    // words
+    // слова
     { fi: "kuinka", ru: "как, насколько", en: "how", k: "w" },
     { fi: "kipeä", ru: "болит; больной", en: "sore; sick", k: "w" },
     { fi: "nenä", ru: "нос", en: "nose", k: "w" },
@@ -122,7 +118,7 @@ const LESSON_17 = {
     { fi: "kyynärpää", ru: "локоть", en: "elbow", k: "w" },
     { fi: "selkä", ru: "спина", en: "back", k: "w" },
     { fi: "ranne", ru: "запястье", en: "wrist", k: "w" },
-    // sentences
+    // предложения
     { fi: "Kuinka kauan sinulla on ollut kuumetta?", ru: "Как долго у тебя температура?", en: "For how long have you had a fever?", k: "s" },
     { fi: "Kuinka hyvä tuo elokuva on?", ru: "Насколько хорош тот фильм?", en: "How good is that movie?", k: "s" },
     { fi: "Kuinka pitkä sinä olet?", ru: "Какого ты роста?", en: "How tall are you?", k: "s" },
@@ -166,7 +162,7 @@ const LESSON_17 = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Lesson 18 — Lower Beginner S1 #18 (at the doctor's: where it hurts)        */
+/*  Урок 18 — Lower Beginner S1 #18 (у врача: где болит)               */
 /* ------------------------------------------------------------------ */
 const LESSON_18 = {
   id: "LB_S1_18",
@@ -175,33 +171,33 @@ const LESSON_18 = {
   glossary: [
     { w: "vika", ru: "неисправность, поломка, проблема", en: "fault, problem",
       forms: ["vika", "vikana", "vikaa"],
-      note: "Mikä on vikana? — «В чём дело?», «Что не так?». Слово стоит в эссиве (-na). Разговорная частица -s в Mikäs смягчает вопрос. Подходит и к людям, и к технике: Mikä tässä tietokoneessa on vikana?" },
+      note: "Mikä on vikana? — “What’s the matter?”, “What’s wrong?”. The word is in the essive (-na). The colloquial particle -s in Mikäs softens the question. It suits both people and machines: Mikä tässä tietokoneessa on vikana?" },
     { w: "särkeä", ru: "ломить, ныть, болеть; ломать, разбивать", en: "to ache; to break",
       forms: ["särkee", "särkeekö", "särki", "särkenyt", "särkeä", "särkekää"],
-      note: "Главная конструкция урока — предложение без подлежащего. Глагол всегда в 3-м лице ед. числа (särkee), а часть тела стоит в партитиве: Päätä särkee. Того, у кого болит, ставят в генитив перед частью тела: Elmerin hammasta särkee. Särkeä годится не для любой боли: чаще всего это pää, hammas, korva, jalat и ломота в мышцах при гриппе. Про живот так не говорят. В переносном смысле — про сердце. В значении «разбить» särkeä ведёт себя как обычный глагол с подлежащим: Pallo särki ikkunan." },
+      note: "The main construction of the lesson is a sentence without a subject. The verb is always in the 3rd person singular (särkee), and the body part is in the partitive: Päätä särkee. The person who is in pain is put into the genitive before the body part: Elmerin hammasta särkee. Särkeä is not used for every pain: most often it is pää, hammas, korva, jalat and muscle aches in flu. It is not said about the stomach. Figuratively — about the heart. In the meaning “to break” särkeä behaves like a normal verb with a subject: Pallo särki ikkunan." },
     { w: "adessiivi", ru: "второй способ: у кого болит — в адессиве", en: "adessive experiencer",
       forms: ["minulla", "sinulla", "elmerillä", "mummilla"],
-      note: "Можно сказать иначе: человек в адессиве (-lla/-llä), а глагол встаёт между ним и частью тела: Minulla särkee päätä. При таком порядке слов притяжательного окончания у части тела уже быть не может." },
+      note: "You can also say it differently: the person in the adessive (-lla/-llä), and the verb goes between them and the body part: Minulla särkee päätä. With this word order the body part can no longer have a possessive ending." },
     { w: "joka", ru: "каждый", en: "every",
       forms: ["joka"],
-      note: "Короткая форма от jokainen. Уникальна тем, что не склоняется вообще: joka pojalla on sadetakki (ср. jokaisella pojalla on sadetakki). И ещё: jokainen может стоять само по себе в значении «каждый, все» — Jokaisella on sadetakki, а joka так не умеет, ему всегда нужно существительное рядом." },
+      note: "A short form of jokainen. Unique in that it is not inflected at all: joka pojalla on sadetakki (cf. jokaisella pojalla on sadetakki). Also: jokainen can stand on its own meaning “everyone, all” — Jokaisella on sadetakki, whereas joka can’t do that, it always needs a noun next to it." },
     { w: "influenssa", ru: "грипп", en: "influenza, flu",
       forms: ["influenssa", "influenssaa", "influenssalta", "influenssaan"],
-      note: "В финском influenssa и flunssa — не одно и то же. Influenssa — настоящий грипп, а flunssa обычно значит просто простуду: небольшой кашель, насморк, почти без температуры." },
+      note: "In Finnish influenssa and flunssa are not the same. Influenssa is real flu, while flunssa usually just means a cold: a slight cough, a runny nose, almost no fever." },
     { w: "sairausloma", ru: "больничный", en: "sick leave",
       forms: ["sairausloma", "sairauslomaa", "sairauslomalla"],
-      note: "Sairas — «больной» (прилагательное, урок 17), а sairaus — «болезнь» (существительное). Разница в одну букву. Отсюда sairausloma — «больничный»; форма sairasloma тоже часто встречается." },
+      note: "Sairas — “ill” (adjective, lesson 17), and sairaus — “illness” (noun). The difference is one letter. Hence sairausloma — “sick leave”; the form sairasloma is also common." },
     { w: "suu", ru: "рот", en: "mouth", forms: ["suu", "suuta", "suun", "suuhygienia"] },
     { w: "korva", ru: "ухо", en: "ear", forms: ["korva", "korvat", "korvia", "korviaan", "korvaa"] },
     { w: "avata", ru: "открывать", en: "to open",
       forms: ["avata", "avaa", "avaan", "avasi", "avattiin", "avaisitko"],
-      note: "Avaa suu — «Открой рот» (повелительное наклонение). Avaisitko ikkunan? — вежливая просьба через кондиционал: «Ты не открыл бы окно?»" },
+      note: "Avaa suu — “Open your mouth” (imperative). Avaisitko ikkunan? — a polite request with the conditional: “Would you open the window?”" },
     { w: "paljon", ru: "много, очень", en: "a lot",
       forms: ["paljon"],
-      note: "С глаголами значит и «много», и «очень»: Pidän siitä paljon — «Мне это очень нравится»." },
+      note: "With verbs it means both “a lot” and “very much”: Pidän siitä paljon — “I like it very much”." },
     { w: "aste", ru: "градус", en: "degree",
       forms: ["aste", "astetta", "asteen"],
-      note: "В Финляндии всё в метрической системе: градусы только по Цельсию, на кухне — децилитры и граммы. Единственное заметное исключение — диагонали экранов в дюймах." },
+      note: "In Finland everything is metric: degrees are only Celsius, in the kitchen it is decilitres and grams. The only noticeable exception is screen diagonals in inches." },
     { w: "pää", ru: "голова", en: "head", forms: ["pää", "päätä", "päätäni", "päätäsi", "päätään"] },
     { w: "hammas", ru: "зуб", en: "tooth", forms: ["hammas", "hammasta", "hampaat"] },
     { w: "silmä", ru: "глаз", en: "eye", forms: ["silmä", "silmät", "silmiä", "silmiäni"] },
@@ -267,7 +263,7 @@ const LESSON_18 = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Lesson 19 — Lower Beginner S1 #19 (at the store: the polite "you")         */
+/*  Урок 19 — Lower Beginner S1 #19 (в магазине: вежливое «вы»)        */
 /* ------------------------------------------------------------------ */
 const LESSON_19 = {
   id: "LB_S1_19",
@@ -276,34 +272,34 @@ const LESSON_19 = {
   glossary: [
     { w: "teitittely", ru: "вежливое обращение на Te", en: "polite address",
       forms: ["teitittely", "sinuttelu", "teille", "teitä", "olette", "oletteko", "allekirjoittakaa", "odottakaa", "lukekaa", "henkilötodistuksenne", "saisinko"],
-      note: "У финского есть разделение на вежливое teitittely (от te) и обычное sinuttelu (от sinä), как французские vous и tu. Но пользуются им заметно реже: чётких правил нет, многие, особенно молодые, чувствуют себя с ним неловко. Чаще всего вы услышите его от продавцов и официантов, от журналистов при интервью с политиками, и уместно самому обратиться так к незнакомому человеку намного старше себя. На письме вежливое Te пишется с заглавной буквы.\nФормально это второе лицо множественного числа, но с одной важной оговоркой: прилагательные и причастия остаются в единственном числе, хотя местоимение во множественном. Сравните Oletteko jo lopettaneet? (обычное «вы» — нескольким людям) и Oletteko jo lopettanut? (вежливое — одному человеку). А вот притяжательные окончания берут форму множественного числа: henkilötodistuksenne." },
+      note: "Finnish has a split between polite teitittely (from te) and ordinary sinuttelu (from sinä), like French vous and tu. But it is used noticeably less often: there are no clear rules, and many people, especially young ones, feel awkward with it. You will most often hear it from shop assistants and waiters, from journalists interviewing politicians, and it is appropriate to address a stranger much older than yourself this way. In writing the polite Te is capitalised.\nFormally it is the second person plural, but with one important caveat: adjectives and participles stay singular, although the pronoun is plural. Compare Oletteko jo lopettaneet? (ordinary “you” — to several people) and Oletteko jo lopettanut? (polite — to one person). Possessive endings, however, take the plural form: henkilötodistuksenne." },
     { w: "persoonaton puhuttelu", ru: "уйти от обращения: 3-е лицо без подлежащего", en: "impersonal address",
       forms: ["voi", "saisi", "saa", "ottaako", "on hyvä ja"],
-      note: "Раз непонятно, когда sinuttelu, а когда teitittely, финны часто вообще не обращаются к собеседнику напрямую. Простой приём — 3-е лицо единственного числа без подлежащего, особенно в инструкциях: Kyselylomakkeen voi antaa minulle («Анкету можно отдать мне»), Täällä ei saa tupakoida («Здесь нельзя курить»). Второй приём — говорить о человеке в третьем лице по имени или титулу: Ottaako herra presidentti lisää kahvia? Звучит слегка старомодно, но в некоторых ситуациях уместно." },
+      note: "Since it is unclear when to use sinuttelu and when teitittely, Finns often do not address the other person directly at all. A simple trick is the 3rd person singular without a subject, especially in instructions: Kyselylomakkeen voi antaa minulle (“The questionnaire can be given to me”), Täällä ei saa tupakoida (“Smoking is not allowed here”). A second trick is to speak about the person in the third person by name or title: Ottaako herra presidentti lisää kahvia? It sounds slightly old-fashioned, but is appropriate in some situations." },
     { w: "millainen", ru: "какой, какого рода", en: "what kind of",
       forms: ["millainen", "millaista", "millaisesta", "minkälainen"],
-      note: "Вопросительное слово, которое ждёт в ответе прилагательное. Есть целое семейство слов на -lainen: sellainen («такой»), tällainen («вот такой»), tuollainen («вон такой»). Первая часть каждого — генитив местоимения: minkä, sen, tämän, tuon. У millainen есть равноправный вариант minkälainen, у остальных — только одна форма. Обратите внимание: tällainen нарушает гармонию гласных, а в разговорной речи многие говорят tälläinen или tälläne." },
+      note: "A question word that expects an adjective in the answer. There is a whole family of words in -lainen: sellainen (“such”), tällainen (“like this”), tuollainen (“like that over there”). The first part of each is the genitive of a pronoun: minkä, sen, tämän, tuon. Millainen has an equal variant minkälainen; the others have only one form. Note that tällainen breaks vowel harmony, and in colloquial speech many say tälläinen or tälläne." },
     { w: "solmio", ru: "галстук", en: "necktie",
       forms: ["solmio", "solmiota", "solmiopaidassa"],
-      note: "Стандартное слово для длинного узкого галстука. Синонимы: kravatti и разговорные kraka, skraga (последнее — хельсинкский сленг). Бабочка называется solmuke или rusetti. И solmio, и solmuke происходят от solmu («узел»)." },
+      note: "The standard word for a long narrow tie. Synonyms: kravatti and the colloquial kraka, skraga (the latter is Helsinki slang). A bow tie is called solmuke or rusetti. Both solmio and solmuke come from solmu (“knot”)." },
     { w: "hillitty", ru: "сдержанный, спокойный, неброский", en: "conservative, subdued, composed",
       forms: ["hillitty", "hillitymmän", "hillitysti"],
-      note: "Всё, что не бросается в глаза и не выглядит вычурно. Про одежду — без ярких цветов и странного кроя, то есть безопасный вариант для деловой обстановки. Про человека — спокойный, владеющий собой: Hän käyttäytyy aina niin hillitysti." },
+      note: "Anything that doesn’t catch the eye and doesn’t look flashy. About clothing — without bright colours and odd cuts, i.e. the safe option for a business setting. About a person — calm, self-possessed: Hän käyttäytyy aina niin hillitysti." },
     { w: "sopia", ru: "подходить, идти (о вещи); договариваться", en: "to suit, to fit",
       forms: ["sopia", "sopii", "sopisi", "sopivat"],
-      note: "И про то, что вещь по размеру, и про то, что она к лицу или сочетается с другой: Tuo väri sopii sinulle, Tämä huivi sopii hyvin tämän takin kanssa. Форма sopisi — кондиционал, вежливое предположение: «подошёл бы»." },
+      note: "Both for “the item is the right size” and for “it suits you or goes with something else”: Tuo väri sopii sinulle, Tämä huivi sopii hyvin tämän takin kanssa. The form sopisi is the conditional, a polite supposition: “would fit”." },
     { w: "etsiä", ru: "искать", en: "to search, to look for",
       forms: ["etsiä", "etsin", "etsit", "etsii", "etsi", "etsiäkseni"],
-      note: "Объект при etsiä обычно в партитиве, потому что поиск не завершён: Etsin solmiota, Tutkija etsii muurahaisia." },
+      note: "The object of etsiä is usually in the partitive, because the search is not completed: Etsin solmiota, Tutkija etsii muurahaisia." },
     { w: "auttaa", ru: "помогать", en: "to help",
       forms: ["auttaa", "auttavat", "auttoi", "auttaisitko", "voinko auttaa"],
-      note: "Тому, кому помогают, — партитив: Myymäläapulainen auttoi minua, Pojat auttavat äitiään. Voinko auttaa? — стандартная фраза продавца." },
+      note: "The one being helped is in the partitive: Myymäläapulainen auttoi minua, Pojat auttavat äitiään. Voinko auttaa? — a standard shop assistant phrase." },
     { w: "ajatella", ru: "думать, размышлять; задумывать", en: "to think",
       forms: ["ajatella", "ajattelin", "ajatellut"],
-      note: "В отличие от luulla («предполагать», урок 17), ajatella — это обдумывать и намереваться: Ajattelin syödä tänään keittoa. Olette ajatellut — перфект вежливого обращения: «что вы себе присмотрели»." },
+      note: "Unlike luulla (“to suppose”, lesson 17), ajatella means to consider and to intend: Ajattelin syödä tänään keittoa. Olette ajatellut — the perfect of polite address: “what you have had in mind”." },
     { w: "mieluummin", ru: "лучше, охотнее", en: "rather",
       forms: ["mieluummin"],
-      note: "Сравнительная форма наречия: «предпочтительнее». Otatko mieluummin teetä vai kahvia?" },
+      note: "A comparative adverb form: “preferably”. Otatko mieluummin teetä vai kahvia?" },
     { w: "myyjä", ru: "продавец", en: "salesperson", forms: ["myyjä", "myymäläapulainen"] },
     { w: "vihreä", ru: "зелёный", en: "green", forms: ["vihreä"] },
   ],
@@ -331,7 +327,7 @@ const LESSON_19 = {
     { fi: "Myymäläapulainen auttoi minua.", ru: "Продавец-консультант мне помог.", en: "The shop assistant helped me.", k: "s" },
     { fi: "Hänen elämäntarkoituksensa oli auttaa toisia ihmisiä.", ru: "Смыслом её жизни было помогать другим людям.", en: "Her purpose in life was to help other people.", k: "s" },
     { fi: "Auttaisitko nostamaan tämän laatikon hyllyyn?", ru: "Не поможешь поднять эту коробку на полку?", en: "Could you help me lift this box on the shelf?", k: "s" },
-    { fi: "Pojat auttavat äitiään.", ru: "Сыновья помогают маме.", en: "The sons help their mother.", k: "s" },
+    { fi: "Pojat auttavat äitiään.", ru: "Сыновья помогают своей маме.", en: "The sons help their mother.", k: "s" },
     { fi: "Tuo väri sopii sinulle.", ru: "Этот цвет тебе идёт.", en: "That color looks good on you.", k: "s" },
     { fi: "Tämä huivi sopii hyvin tämän takin kanssa.", ru: "Этот шарф хорошо смотрится с этим пальто.", en: "This scarf goes well with this jacket.", k: "s" },
     { fi: "Ajattelin syödä tänään keittoa.", ru: "Я подумал сегодня съесть супа.", en: "I thought I'd eat soup today.", k: "s" },
@@ -363,7 +359,7 @@ const LESSON_19 = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Lesson 20 — Lower Beginner S1 #20 (the comparative)                        */
+/*  Урок 20 — Lower Beginner S1 #20 (сравнительная степень)            */
 /* ------------------------------------------------------------------ */
 const LESSON_20 = {
   id: "LB_S1_20",
@@ -372,25 +368,25 @@ const LESSON_20 = {
   glossary: [
     { w: "komparatiivi", ru: "сравнительная степень: -mpi", en: "comparative of adjectives",
       forms: ["lyhyempi", "kapeampi", "leveämpi", "mukavampi", "isompi", "lämpimämpi", "tuulisempi", "helpompi", "pienempi", "sairaampi", "kipeämpi", "hillitympi", "terveempi", "kivempi", "mustempi", "hauskempi", "kylmempi", "parempi", "suurempi", "hillitymmän", "lyhyemmästä", "isompana", "lämpimämpää", "leveämmät", "paremmalla", "paremmin", "kylmemmässä", "mustempia", "hauskempaa"],
-      note: "Можно, конечно, сказать enemmän («более»), но обычно берут особую форму: к гласной основе прилагательного добавляется -mpi. Iso → isompi, leveä → leveämpi, lyhyt (основа lyhye-) → lyhyempi, lämmin (основа lämpimä-) → lämpimämpi, terve (основа tervee-) → terveempi.\nОдно исключение из правила: если в прилагательном два слога и оно кончается на a или ä, этот конечный гласный переходит в e. Kiva → kivempi, musta → mustempi, hauska → hauskempi, kylmä → kylmempi. Но kapea и mukava длиннее двух слогов, поэтому у них kapeampi, mukavampi.\nПри склонении -mpi превращается в -mpa-/-mpä- либо -mma-/-mmä-: isompana, lyhyemmästä, leveämmät, paremmalla, kylmemmässä. И, как во многих языках, hyvä («хороший») ведёт себя не по правилам: hyvä → parempi." },
+      note: "One can of course say enemmän (“more”), but usually a special form is used: -mpi is added to the vowel stem of the adjective. Iso → isompi, leveä → leveämpi, lyhyt (stem lyhye-) → lyhyempi, lämmin (stem lämpimä-) → lämpimämpi, terve (stem tervee-) → terveempi.\nOne exception to the rule: if the adjective has two syllables and ends in a or ä, that final vowel changes to e. Kiva → kivempi, musta → mustempi, hauska → hauskempi, kylmä → kylmempi. But kapea and mukava are longer than two syllables, so they have kapeampi, mukavampi.\nWhen inflected, -mpi turns into -mpa-/-mpä- or -mma-/-mmä-: isompana, lyhyemmästä, leveämmät, paremmalla, kylmemmässä. And, as in many languages, hyvä (“good”) does not follow the rules: hyvä → parempi." },
     { w: "kuin", ru: "чем; как (при сравнении)", en: "than, as",
       forms: ["kuin", "yhtä"],
-      note: "Схема сравнения: A on ... kuin B. Kuin всегда стоит перед B — тем, с чем сравнивают: Pekka on lyhyempi kuin Matti. Если из контекста и так ясно, с чем сравнивают, B опускают вместе с kuin: Tämä on mukavampi.\nТо же kuin работает с enemmän («больше»), vähemmän («меньше») и yhtä paljon («столько же»): Minulla on enemmän veljiä kuin Jaakolla, Eerolla on yhtä paljon töitä kuin Kallella. Конструкция yhtä + прилагательное значит «такой же»: Emmi on yhtä pitkä kuin Helen." },
+      note: "The comparison pattern: A on ... kuin B. Kuin always comes before B — what is being compared with: Pekka on lyhyempi kuin Matti. If it is clear from context what is being compared with, B is dropped together with kuin: Tämä on mukavampi.\nThe same kuin works with enemmän (“more”), vähemmän (“less”) and yhtä paljon (“as much”): Minulla on enemmän veljiä kuin Jaakolla, Eerolla on yhtä paljon töitä kuin Kallella. The construction yhtä + adjective means “as ... as”: Emmi on yhtä pitkä kuin Helen." },
     { w: "löytyä", ru: "найтись, обнаружиться; быть в наличии", en: "to be found",
       forms: ["löytyä", "löytyy", "löytyykö", "löytyi", "löytynyt", "löytää"],
-      note: "Пара к löytää («найти»). Разница в том, кто подлежащее: при löytää подлежащее — тот, кто ищет и находит, при löytyä — сама вещь, которая нашлась. По смыслу это финский аналог английского пассива: Tämä kaulakoru löytyi kadulta («Ожерелье нашлось на улице»). В магазине löytyä значит «есть в наличии»: Löytyykö tätä mekkoa isompana?" },
+      note: "The pair of löytää (“to find”). The difference is who the subject is: with löytää the subject is the one who searches and finds, with löytyä it is the thing itself that has been found. In meaning it is the Finnish counterpart of the English passive: Tämä kaulakoru löytyi kadulta (“The necklace was found on the street”). In a shop löytyä means “is available”: Löytyykö tätä mekkoa isompana?" },
     { w: "vähän", ru: "немного, чуть-чуть; мало", en: "a bit, a little, a few",
       forms: ["vähän", "vähemmän"],
-      note: "Значит и «немного» (vähän pienempi — «немного меньше», Minulla on vähän rahaa — «у меня есть немного денег»), и «мало» — особенно после vain («только») или hyvin («очень»): Minulla on vain vähän rahaa («у меня совсем мало денег»). Годится и с исчисляемым, и с неисчисляемым: vähän maitoa, vähän ihmisiä." },
+      note: "It means both “a little” (vähän pienempi — “a little smaller”, Minulla on vähän rahaa — “I have a little money”) and “little, not much” — especially after vain (“only”) or hyvin (“very”): Minulla on vain vähän rahaa (“I have very little money”). It works with both countable and uncountable: vähän maitoa, vähän ihmisiä." },
     { w: "mekko", ru: "платье", en: "dress",
       forms: ["mekko", "mekon", "mekosta", "mekkoa", "kotelomekko", "kukkamekko"],
-      note: "Женское платье, и повседневное, и нарядное. Но у самых торжественных нарядов своё слово с puku («костюм»): iltapuku («вечернее платье»), hääpuku («свадебное»). Составные: kotelomekko («платье-футляр»), kukkamekko («летнее платье в цветочек»)." },
+      note: "A woman’s dress, both everyday and formal. But the most formal outfits have their own word with puku (“suit, outfit”): iltapuku (“evening dress”), hääpuku (“wedding dress”). Compounds: kotelomekko (“sheath dress”), kukkamekko (“summer floral dress”)." },
     { w: "koko", ru: "размер", en: "size",
       forms: ["koko", "kokoa", "kokona"],
-      note: "Не путайте с неизменяемым koko («весь, целый») из урока 7 — пишутся одинаково, различает контекст. Yhtä kokoa isompana — «на один размер больше»." },
+      note: "Do not confuse with the indeclinable koko (“whole, entire”) from lesson 7 — they are spelled the same, and context tells them apart. Yhtä kokoa isompana — “one size bigger”." },
     { w: "kysyä", ru: "спрашивать", en: "to ask",
       forms: ["kysyä", "kysyn", "kysyy", "kysyi", "kysy", "kysymys", "kysymyksen", "kysyttävää"],
-      note: "У кого спрашивают — аблатив (-lta/-ltä): Opettaja kysyy oppilaalta kysymyksen, kysy minulta." },
+      note: "The person asked is in the ablative (-lta/-ltä): Opettaja kysyy oppilaalta kysymyksen, kysy minulta." },
     { w: "iso", ru: "большой", en: "big", forms: ["iso", "isompi", "isompana", "isoon"] },
     { w: "lyhyt", ru: "короткий; невысокий", en: "short", forms: ["lyhyt", "lyhyempi", "lyhyemmästä"] },
     { w: "leveä", ru: "широкий", en: "wide", forms: ["leveä", "leveämpi", "leveät", "leveämmät"] },
@@ -462,19 +458,19 @@ const LESSONS_EXTRA = [
   source: "FinnishPod101 · Lower Beginner S1 #1",
   glossary: [
     { w: "nominatiivi", ru: "номинатив — словарная форма", en: "nominative", forms: ["kalle", "omena", "poliisi", "varas", "maito", "pojat"],
-      note: "Словарная форма существительного, прилагательного, числительного или местоимения. Обычно это подлежащее и всегда — нечто целое, в отличие от партитива, который выражает часть. В финском порядок слов свободный, роль слова показывает окончание, а не место в предложении." },
+      note: "The dictionary form of a noun, adjective, numeral or pronoun. Usually it is the subject and always something whole, unlike the partitive, which expresses a part. In Finnish the word order is free, and the role of a word is shown by its ending, not by its place in the sentence." },
     { w: "partitiivi", ru: "партитив — часть, незавершённость", en: "partitive", forms: ["omenaa", "maitoa", "kylmää", "jalkapalloa", "taloa", "tiinaa", "onnea", "mielenkiintoista", "työtä", "rahaa"],
-      note: "Обозначает часть, неопределённое количество или незаконченное действие: Maija söi omenaa («Майя ела яблоко») против Maija söi omenan («съела яблоко целиком»). Партитив обязателен в отрицаниях и часто в вопросах. Окончание -a/-ä или -ta/-tä." },
+      note: "Denotes a part, an indefinite amount or an unfinished action: Maija söi omenaa (“Maija was eating an apple”) versus Maija söi omenan (“ate the whole apple”). The partitive is obligatory in negations and often in questions. Ending -a/-ä or -ta/-tä." },
     { w: "genetiivi", ru: "генитив — принадлежность и завершённость", en: "genitive", forms: ["tiinan", "paikan", "talon", "mukin", "työn", "omenan", "varkaan"],
-      note: "Окончание -n. Показывает принадлежность (Tiinan hame — «юбка Тийны») или что действие охватило объект целиком и завершилось: Maalari maalasi talon punaiseksi." },
+      note: "Ending -n. Shows possession (Tiinan hame — “Tiina’s skirt”) or that the action has covered the object completely and is finished: Maalari maalasi talon punaiseksi." },
     { w: "astevaihtelu", ru: "чередование ступеней согласных", en: "consonant gradation", forms: ["paikan", "mukin", "isomman", "kaupassa"],
-      note: "Основа слова меняется при добавлении окончаний, если в ней есть k, p или t: kk>k, pp>p, tt>t, а также t>d, p>v, mp>mm. Paikka → paikan, muki → mukin. Затрагивает и существительные, и глаголы. Некоторые новые заимствования (auto, muki) не затрагиваются." },
+      note: "The stem of a word changes when endings are added, if it contains k, p or t: kk>k, pp>p, tt>t, and also t>d, p>v, mp>mm. Paikka → paikan, muki → mukin. It affects both nouns and verbs. Some recent loanwords (auto, muki) are not affected." },
     { w: "paikka", ru: "место; должность, работа", en: "place, position, job", forms: ["paikka", "paikan", "paikkaa"],
-      note: "Используется почти везде, где по-русски «место»: и физическое, и переносное. Может значить место в театре (Haluan hyvän paikan) и рабочее место — тогда часто в форме työpaikka, что значит и «работа», и «место работы»." },
+      note: "Used almost everywhere where English says “place”: both physical and figurative. It can mean a seat in a theatre (Haluan hyvän paikan) and a workplace — then often in the form työpaikka, which means both “job” and “place of work”." },
     { w: "onni", ru: "удача; счастье", en: "luck, happiness", forms: ["onni", "onnea", "onnen"],
-      note: "Одно слово покрывает и удачу в азартной игре, и тихое счастье от хорошей книги или прогулки с другом." },
+      note: "One word covers both luck in a game of chance and the quiet happiness from a good book or a walk with a friend." },
     { w: "aloittaa", ru: "начинать (что-то)", en: "to start, to begin", forms: ["aloittaa", "aloitan", "aloitti", "aloitin"],
-      note: "Переходный глагол, всегда нужен объект: Tiina aloitti uuden kirjan. Сказать «книга началась» через aloittaa нельзя — для этого есть непереходный alkaa: Kirja alkoi hyvin." },
+      note: "A transitive verb, it always needs an object: Tiina aloitti uuden kirjan. You can’t say “the book began” with aloittaa — for that there is the intransitive alkaa: Kirja alkoi hyvin." },
     { w: "ohjelmoija", ru: "программист", en: "programmer", forms: ["ohjelmoija", "ohjelmoijan"] },
     { w: "mielenkiintoinen", ru: "интересный", en: "interesting", forms: ["mielenkiintoinen", "mielenkiintoista"] },
     { w: "saada", ru: "получать", en: "to get, to receive", forms: ["saada", "saan", "saa", "sain", "sai"] },
@@ -536,15 +532,15 @@ const LESSONS_EXTRA = [
   source: "FinnishPod101 · Lower Beginner S1 #2",
   glossary: [
     { w: "anteeksi", ru: "извините; простите", en: "excuse me, I'm sorry", forms: ["anteeksi"],
-      note: "Просят прощения за проступок и вежливо привлекают внимание. Можно уточнить, за что: Anteeksi, että häiritsen («Простите, что беспокою»). Важно: в отличие от английского I'm sorry, это НЕ выражение сочувствия — «сочувствую вашей утрате» через anteeksi не скажешь." },
+      note: "Used to ask forgiveness for a misdeed and to politely attract attention. You can specify what for: Anteeksi, että häiritsen (“Sorry to disturb you”). Important: unlike English I’m sorry, this is NOT an expression of sympathy — you can’t say “I’m sorry for your loss” with anteeksi." },
     { w: "sisäpaikallissijat", ru: "внутренние местные падежи: -ssa / -sta / -Vn", en: "inner locative cases", forms: ["talossa", "talosta", "taloon", "kaapissa", "kaapista", "kaappiin", "puistossa", "puistoon", "järvessä", "järvestä", "järveen", "risteyksestä", "kulmasta", "valoista"],
-      note: "Инессив (-ssa/-ssä) — «в», элатив (-sta/-stä) — «из», иллатив (гласный + n) — «в (куда)». Про замкнутое пространство: коробка, дом, шкаф. Обратите внимание на чередование: kaapissa — kaapista — kaappiin." },
+      note: "The inessive (-ssa/-ssä) — “in”, the elative (-sta/-stä) — “out of”, the illative (vowel + n) — “into”. About an enclosed space: a box, a house, a cupboard. Note the gradation: kaapissa — kaapista — kaappiin." },
     { w: "ulkopaikallissijat", ru: "внешние местные падежи: -lla / -lta / -lle", en: "outer locative cases", forms: ["pihalla", "pihalta", "pihalle", "pöydällä", "pöydältä", "pöydälle", "torilla", "rannalla", "oikealle", "vasemmalle", "vasemmalta", "kadulla", "laiturilta", "bussipysäkille"],
-      note: "Адессив (-lla/-llä) — «на», аблатив (-lta/-ltä) — «с», аллатив (-lle) — «на (куда)». Про поверхность: стол, пол, площадь. Направления тоже идут сюда: oikealle, vasemmalle." },
+      note: "The adessive (-lla/-llä) — “on”, the ablative (-lta/-ltä) — “off, from”, the allative (-lle) — “onto”. About a surface: a table, a floor, a square. Directions also belong here: oikealle, vasemmalle." },
     { w: "oikea", ru: "правый; правильный, настоящий", en: "right; correct", forms: ["oikea", "oikealle", "oikealla", "oikean"],
-      note: "Как и в английском right, у слова два значения: «правый» (не левый) и «верный, правильный»." },
+      note: "As in English right, the word has two meanings: “right” (not left) and “correct”." },
     { w: "näkyä", ru: "быть видимым, виднеться", en: "to be visible", forms: ["näkyä", "näkyy", "näkyi", "näkynyt"],
-      note: "Непереходный глагол: объекта у него нет, а то, что видно, — подлежащее. Puistossa ei näkynyt lapsia («В парке не было видно детей»)." },
+      note: "An intransitive verb: it has no object, and what is seen is the subject. Puistossa ei näkynyt lapsia (“No children were to be seen in the park”)." },
     { w: "kääntyä", ru: "поворачивать(ся)", en: "to turn", forms: ["kääntyä", "käänny", "kääntyy", "käännyt", "kääntykää", "kääntyminen"] },
     { w: "risteys", ru: "перекрёсток", en: "crossing", forms: ["risteys", "risteyksestä", "risteyksessä"] },
     { w: "suora", ru: "прямой", en: "straight", forms: ["suora", "suoraan"] },
@@ -608,12 +604,12 @@ const LESSONS_EXTRA = [
   source: "FinnishPod101 · Lower Beginner S1 #3",
   glossary: [
     { w: "postpositiot", ru: "послелоги: ориентир идёт в генитиве", en: "postpositions with genitive", forms: ["takana", "vieressä", "edessä", "sivulla", "päällä", "alla", "keskellä", "sisällä", "ulkopuolella", "yläpuolella", "alapuolella", "lähellä"],
-      note: "Схема: A on B:n [направление]. Ориентир B ставится в генитив, а слово направления идёт ПОСЛЕ него (в русском и английском — перед): Puu on talon takana («Дерево за домом»). Порядок A и B может меняться, но слово направления всегда сразу после B." },
+      note: "Pattern: A on B:n [direction]. The landmark B goes into the genitive, and the direction word comes AFTER it (in English it comes before): Puu on talon takana (“The tree is behind the house”). The order of A and B can change, but the direction word always comes right after B." },
     { w: "vieressä", ru: "рядом с", en: "next to", forms: ["vieressä", "vierestä", "viereen"],
-      note: "Vieressä и edessä — бывшие существительные в инессиве, поэтому у них есть родня в других падежах: vierestä («от, со стороны»), viereen («к»), edestä, eteen. Два слова — а падежных форм шесть." },
+      note: "Vieressä and edessä are former nouns in the inessive, so they have relatives in other cases: vierestä (“from beside”), viereen (“to beside”), edestä, eteen. Two words — and six case forms." },
     { w: "edessä", ru: "перед", en: "in front of", forms: ["edessä", "edestä", "eteen"] },
     { w: "lehtihylly", ru: "полка для газет и журналов", en: "magazine shelf", forms: ["lehtihylly", "lehtihyllyssä"],
-      note: "Сложное слово: lehti + hylly. Hylly — любая полка. А вот lehti очень широкое: и лист растения, и газета, и журнал, и комикс. Уточняют приставкой: sanomalehti (газета), aikakauslehti (журнал), sarjakuvalehti (комикс)." },
+      note: "A compound word: lehti + hylly. Hylly is any shelf. But lehti is very broad: a leaf of a plant, a newspaper, a magazine and a comic. It is specified with a prefix: sanomalehti (newspaper), aikakauslehti (magazine), sarjakuvalehti (comic)." },
     { w: "toimisto", ru: "офис", en: "office", forms: ["toimisto", "toimistossa", "toimistoni", "toimistoomme"] },
     { w: "keittiö", ru: "кухня", en: "kitchen", forms: ["keittiö", "keittiössä", "keittiötä", "keittiön"] },
     { w: "naulakko", ru: "вешалка", en: "coat rack", forms: ["naulakko", "naulakon", "naulakkoon"] },
@@ -649,7 +645,7 @@ const LESSONS_EXTRA = [
     { fi: "Keittiö on uusi.", ru: "Кухня новая.", en: "The kitchen is new.", k: "s" },
     { fi: "Kokki laittoi ruokaa keittiössä.", ru: "Повар готовил на кухне.", en: "The chef cooked in the kitchen.", k: "s" },
     { fi: "Laita takki naulakkoon.", ru: "Повесь куртку на вешалку.", en: "Hang your coat on the coat rack.", k: "s" },
-    { fi: "Voitko sulkea ikkunan, kiitos.", ru: "Закрой окно, пожалуйста.", en: "Close the window, please.", k: "s" },
+    { fi: "Voitko sulkea ikkunan, kiitos.", ru: "Можешь закрыть окно, пожалуйста?", en: "Could you close the window, please?", k: "s" },
     { fi: "Avaa ikkuna, kiitos.", ru: "Открой окно, пожалуйста.", en: "Open the window, please.", k: "s" },
     { fi: "Kylpyhuoneessa on pikkuruinen ikkuna.", ru: "В ванной крошечное окно.", en: "The bathroom has a tiny window.", k: "s" },
     { fi: "Liisa katsoo ulos ikkunasta.", ru: "Лийса смотрит в окно.", en: "Liisa looks out of the window.", k: "s" },
@@ -676,15 +672,15 @@ const LESSONS_EXTRA = [
   source: "FinnishPod101 · Lower Beginner S1 #10",
   glossary: [
     { w: "ablatiivi", ru: "аблатив впечатления: -lta / -ltä", en: "ablative of impression", forms: ["mukavilta", "kivalta", "mielenkiintoiselta", "kylmältä", "selvältä", "uudelta", "tyytyväiseltä", "hyvältä", "turhalta", "mielekkäältä", "ankaralta", "maalta", "pitkältä", "piristävältä", "hauskalta", "tylsältä", "helpolta", "epäreilulta", "kovalta", "poliisilta", "miltä"],
-      note: "Главная конструкция урока. Вопрос: Miltä x tuntuu/vaikuttaa? Ответ: X vaikuttaa/tuntuu + слово в аблативе (-lta/-ltä). Обычно это прилагательное, но может быть и существительное: Hän vaikuttaa poliisilta («Он похож на полицейского»). Если вопрос уже прозвучал, повторять подлежащее не нужно — достаточно одного слова в аблативе: Ihan kivalta." },
+      note: "The main construction of the lesson. Question: Miltä x tuntuu/vaikuttaa? Answer: X vaikuttaa/tuntuu + a word in the ablative (-lta/-ltä). Usually it is an adjective, but it can also be a noun: Hän vaikuttaa poliisilta (“He seems like a policeman”). If the question has already been asked, there is no need to repeat the subject — one word in the ablative is enough: Ihan kivalta." },
     { w: "vaikuttaa", ru: "казаться; влиять", en: "to seem; to influence", forms: ["vaikuttaa", "vaikutti", "vaikuttivat", "vaikutan"],
-      note: "В этом уроке — «казаться»: Hän vaikuttaa mukavalta. Но есть и значение «влиять», и там другая конструкция, так что перепутать сложно: Pimeys vaikuttaa mielialaan («Темнота влияет на настроение»)." },
+      note: "In this lesson — “to seem”: Hän vaikuttaa mukavalta. But there is also the meaning “to influence”, with a different construction, so it is hard to mix them up: Pimeys vaikuttaa mielialaan (“Darkness affects the mood”)." },
     { w: "tuntua", ru: "ощущаться, казаться", en: "to feel, to seem", forms: ["tuntua", "tuntuu", "tuntui", "tuntuvat"],
-      note: "Близко к vaikuttaa, но с личным оттенком, плюс значит буквальное ощущение на ощупь: Vesi tuntui kylmältä. Päätös vaikutti epäreilulta — объективное наблюдение, Päätös tuntui epäreilulta — «мне показалось несправедливым»." },
+      note: "Close to vaikuttaa, but with a personal shade, and it also means a literal feeling by touch: Vesi tuntui kylmältä. Päätös vaikutti epäreilulta — an objective observation, Päätös tuntui epäreilulta — “the decision felt unfair to me”." },
     { w: "projekti", ru: "проект", en: "project", forms: ["projekti", "projektikin", "projektin"],
-      note: "Недавнее заимствование из шведского projekt. Типичная финская привычка: если слово кончается на согласный, добавляют -i. Так polis стал poliisi, mugg — muki, skåp — kaappi." },
+      note: "A recent loanword from the Swedish projekt. A typical Finnish habit: if a word ends in a consonant, -i is added. That is how polis became poliisi, mugg — muki, skåp — kaappi." },
     { w: "miten", ru: "как", en: "how", forms: ["miten"],
-      note: "Вопрос ожидает в ответе способ или образ действия: Miten Jussi kävelee? — Hitaasti («Медленно»). Miten olet menossa kaupunkiin? — Bussilla («На автобусе»)." },
+      note: "The question expects a way or manner in the answer: Miten Jussi kävelee? — Hitaasti (“Slowly”). Miten olet menossa kaupunkiin? — Bussilla (“By bus”)." },
     { w: "muuten", ru: "в остальном; кстати", en: "otherwise; by the way", forms: ["muuten"] },
     { w: "kiva", ru: "приятный, классный", en: "nice", forms: ["kiva", "kivalta", "kivaa"] },
     { w: "mukava", ru: "приятный, милый", en: "nice, pleasant", forms: ["mukava", "mukavilta", "mukavia", "mukavalta"] },
@@ -741,15 +737,15 @@ const LESSONS_EXTRA = [
   source: "FinnishPod101 · Lower Beginner S1 #11",
   glossary: [
     { w: "perfekti", ru: "перфект: olla + причастие на -nut/-nyt/-neet", en: "perfect tense", forms: ["harjannut", "käynyt", "vaihtanut", "lukenut", "syönyt", "aloittaneet", "kääntyneet", "nukuttanut", "tullut", "tehnyt", "ollut", "lainannut", "pelannut", "pelanneet", "kaivanneet", "päättäneet", "nähnyt"],
-      note: "Действие важно для настоящего: либо продолжается, либо его результат в силе. Olen harjannut hampaani — чистка закончилась, но зубы чистые, можно спать. Сравните: Äiti on laittanut ruokaa kolmesta asti (мама всё ещё готовит) и Äiti laittoi ruokaa kolmesta asti (уже не готовит). Образуется из olla в нужном лице + причастие NUT: -nut/-nyt в единственном числе, -neet во множественном. У глаголов с согласной основой -n- заменяется последней согласной основы: tul-lut, men-nyt, ol-lut, pes-syt. У глаголов на гласный + ta именно -t меняется на n: lainat-a → lainan-nut, tarvit-a → tarvin-nut, pelat-a → pelan-nut." },
+      note: "The action matters for the present: either it continues or its result is in force. Olen harjannut hampaani — the brushing is finished, but the teeth are clean, you can go to sleep. Compare: Äiti on laittanut ruokaa kolmesta asti (Mum is still cooking) and Äiti laittoi ruokaa kolmesta asti (no longer cooking). It is formed from olla in the right person + the NUT participle: -nut/-nyt in the singular, -neet in the plural. With verbs with a consonant stem, -n- is replaced by the last consonant of the stem: tul-lut, men-nyt, ol-lut, pes-syt. With verbs in vowel + ta it is precisely the -t that changes to n: lainat-a → lainan-nut, tarvit-a → tarvin-nut, pelat-a → pelan-nut." },
     { w: "vessa", ru: "туалет", en: "bathroom, restroom", forms: ["vessa", "vessassa", "vessaan"],
-      note: "Самое обычное, слегка неформальное слово. На табличках всегда WC, в официальном тексте — WC или käymälä. В ресторанах есть miestenhuone и naistenhuone. Встречаются и эвфемизмы вроде pieni huone, но vessa годится почти везде." },
+      note: "The most ordinary, slightly informal word. On signs it is always WC, in official texts WC or käymälä. In restaurants there are miestenhuone and naistenhuone. Euphemisms like pieni huone also occur, but vessa works almost everywhere." },
     { w: "yöpuku", ru: "пижама, ночная одежда", en: "pajamas, nightdress", forms: ["yöpuku", "yöpuvun", "muumiyöpuku"],
-      note: "Общее слово для любой одежды для сна: yö («ночь») + puku («костюм, одежда»). Уточнить можно словами pyjama («пижама») или yöpaita («ночная рубашка», буквально «ночная рубаха»)." },
+      note: "A general word for any sleepwear: yö (“night”) + puku (“suit, clothes”). You can specify with the words pyjama (“pyjamas”) or yöpaita (“nightshirt”, literally “night shirt”)." },
     { w: "vaihtaa", ru: "менять, обменивать", en: "to change, to exchange", forms: ["vaihtaa", "vaihtanut", "vaihdan", "vaihtoi"],
-      note: "Годится везде, где что-то меняют на что-то: vaihtaa vaatteita (переодеться), vaihtaa työpaikkaa (сменить работу), vaihtaa rahaa (обменять деньги), vaihtaa patteri (поменять батарейку), vaihtaa väriä (сменить цвет)." },
+      note: "Works everywhere where something is changed for something else: vaihtaa vaatteita (to change clothes), vaihtaa työpaikkaa (to change jobs), vaihtaa rahaa (to exchange money), vaihtaa patteri (to replace a battery), vaihtaa väriä (to change colour)." },
     { w: "käydä", ru: "сходить и вернуться, побывать", en: "to visit, to go and come back", forms: ["käydä", "käynyt", "käyn", "käyt", "käytkö", "kävi"],
-      note: "Особенность финского: käydä значит не просто «идти», а «сходить туда и обратно». Käytkö sinä kaupassa? — «Ты сходишь в магазин (и вернёшься)?»" },
+      note: "A peculiarity of Finnish: käydä means not just “to go” but “to go there and back”. Käytkö sinä kaupassa? — “Will you pop to the shop (and come back)?”" },
     { w: "harjata", ru: "чистить щёткой", en: "to brush", forms: ["harjata", "harjannut", "harjaa"] },
     { w: "sänky", ru: "кровать", en: "bed", forms: ["sänky", "sänkyyn", "sängyssä", "sängyn"] },
     { w: "iltasatu", ru: "сказка на ночь", en: "bedtime story", forms: ["iltasatu", "iltasadun"] },
@@ -804,19 +800,19 @@ const LESSONS_EXTRA = [
   source: "FinnishPod101 · Lower Beginner S1 #12",
   glossary: [
     { w: "pitäisi", ru: "должно бы, по идее", en: "should", forms: ["pitäisi", "pitäisitkö"],
-      note: "Вспомогательный глагол, после него основной глагол в инфинитиве. Форма не меняется по лицам (тот, кто должен, стоит в генитиве: Heidän pitäisi tulla). Смысл: вы ожидаете, что так будет, но с вас не спросят, если не сложится." },
+      note: "An auxiliary verb, followed by the main verb in the infinitive. The form does not change by person (the one who should do it stands in the genitive: Heidän pitäisi tulla). Meaning: you expect it to be so, but you won’t be called to account if it doesn’t work out." },
     { w: "saattaa", ru: "может быть, возможно", en: "may", forms: ["saattaa", "saatamme", "saattoi"],
-      note: "Тоже вспомогательный глагол с инфинитивом. Уверенности меньше, чем в pitäisi." },
+      note: "Also an auxiliary verb with an infinitive. There is less certainty than with pitäisi." },
     { w: "epävarmuus", ru: "слова неуверенности", en: "hedging words", forms: ["ehkä", "luultavasti", "tuskin", "varmasti", "kovin", "aika", "voi", "voida"],
-      note: "Шкала: varmasti («точно») → pitäisi («должно бы») → luultavasti («вероятно») → saattaa / voi («может быть») → ehkä («может, вряд ли высокая вероятность») → tuskin («вряд ли»). Tuskin само по себе отрицательное, глагол при нём отдельно не отрицают: Tuskin ne siellä ovat." },
+      note: "A scale: varmasti (“for sure”) → pitäisi (“should”) → luultavasti (“probably”) → saattaa / voi (“may”) → ehkä (“maybe”, a modest probability) → tuskin (“hardly”). Tuskin is itself negative, and the verb with it is not negated separately: Tuskin ne siellä ovat." },
     { w: "aika", ru: "довольно, весьма", en: "rather, somewhat", forms: ["aika"],
-      note: "Наречие при прилагательных: умеренное усиление. Обычно в утвердительных предложениях. Kovin («очень») сильнее и годится и в отрицаниях: Ei kovin." },
+      note: "An adverb with adjectives: moderate intensification. Usually in affirmative sentences. Kovin (“very”) is stronger and also works in negations: Ei kovin." },
     { w: "pouta", ru: "погода без дождя", en: "dry weather", forms: ["pouta", "poutaa", "pilvipouta"],
-      note: "Значит просто «не идёт дождь» — может быть и солнечно, и пасмурно. Для пасмурной, но сухой погоды есть отдельное слово pilvipouta (pilvi — «облако»)." },
+      note: "Simply means “it is not raining” — it can be both sunny and overcast. For overcast but dry weather there is a separate word pilvipouta (pilvi — “cloud”)." },
     { w: "sadekuuro", ru: "ливень, кратковременный дождь", en: "rain shower", forms: ["sadekuuro", "sadekuuroja"],
-      note: "Короткий дождь, иногда сильный, чаще летом. Есть известная строчка Микко Алатало: Aurinko paistaa ja vettä sataa, taitaa tulla kesä («Солнце светит и дождь идёт — похоже, лето»). Её знают почти все в Финляндии." },
+      note: "A short rain, sometimes heavy, more often in summer. There is a famous line by Mikko Alatalo: Aurinko paistaa ja vettä sataa, taitaa tulla kesä (“The sun shines and it rains — looks like summer is coming”). Almost everyone in Finland knows it." },
     { w: "tuulinen", ru: "ветреный", en: "windy", forms: ["tuulinen", "tuulista", "tuulisena"],
-      note: "Окончание -inen делает из существительного прилагательное: tuuli → tuulinen, aurinko → aurinkoinen («солнечный»), pilvi → pilvinen («облачный»), sade → sateinen («дождливый»)." },
+      note: "The ending -inen makes an adjective from a noun: tuuli → tuulinen, aurinko → aurinkoinen (“sunny”), pilvi → pilvinen (“cloudy”), sade → sateinen (“rainy”)." },
     { w: "lämmin", ru: "тёплый", en: "warm", forms: ["lämmin", "lämmintä", "lämpimät", "lämpimiä"] },
     { w: "ylihuomenna", ru: "послезавтра", en: "the day after tomorrow", forms: ["ylihuomenna", "ylihuomiseksi"] },
     { w: "tuuli", ru: "ветер", en: "wind", forms: ["tuuli", "tuulta", "tuulen"] }
@@ -872,13 +868,13 @@ const LESSONS_EXTRA = [
   source: "FinnishPod101 · Lower Beginner S1 #13",
   glossary: [
     { w: "monikko", ru: "множественное число в падежах: показатель -i-", en: "plural case forms", forms: ["kengillä", "lätäköissä", "käsineitä", "housuihin", "kengissä", "laseissa", "kirjoissa", "sukissa", "vaatteista", "puiden", "ohikulkijoille", "serkuiltani", "housuille", "elokuviin", "hahmoja", "reikiä", "hamstereita", "mainoksia"],
-      note: "В номинативе множественное — просто -t, но во всех остальных падежах между основой и окончанием встаёт -i-: kengä-t, но keng-i-ssä, keng-i-llä. Между гласными -i- превращается в -j-: koulu-j-a, koulu-j-en. Особые окончания у генитива (-en, -den, -tten, -ten) и иллатива (-in, -hin, -siin) — их можно набрать позже на практике." },
+      note: "In the nominative the plural is just -t, but in all the other cases -i- stands between the stem and the ending: kengä-t, but keng-i-ssä, keng-i-llä. Between vowels -i- turns into -j-: koulu-j-a, koulu-j-en. The genitive (-en, -den, -tten, -ten) and the illative (-in, -hin, -siin) have special endings — they can be picked up later in practice." },
     { w: "pitää", ru: "держать; нравиться; быть должным", en: "to hold; to like; to have to", forms: ["pitää", "pitääkö", "pidä", "pidän", "pitäisitkö", "piti"],
-      note: "Значений много, но связь есть. «Нравиться» — с элативом: Veera pitää jäätelöstä. «Держать»: Pitäisitkö kirjaani hetken? Отсюда же «держать воду»: Tämä kulho ei pidä vettä («Эта миска протекает»). «Держаться за» — тоже элатив: Pidä kiinni tästä köydestä. И вспомогательный глагол «надо»: Minun pitää mennä." },
+      note: "Many meanings, but there is a link. “To like” — with the elative: Veera pitää jäätelöstä. “To hold”: Pitäisitkö kirjaani hetken? Hence also “to hold water”: Tämä kulho ei pidä vettä (“This bowl leaks”). “To hold on to” — also the elative: Pidä kiinni tästä köydestä. And the auxiliary verb “must”: Minun pitää mennä." },
     { w: "housut", ru: "брюки, штаны", en: "trousers, pants", forms: ["housut", "housuihin", "housuissa", "housuille"],
-      note: "Любая одежда на нижнюю часть тела с отдельными штанинами, и мужская, и женская. Слово всегда во множественном числе, как и в русском. Производные: alushousut (трусы), sukkahousut (колготки), sadehousut (дождевые штаны)." },
+      note: "Any garment for the lower body with separate legs, both men’s and women’s. The word is always plural, as in English. Derivatives: alushousut (underpants), sukkahousut (tights), sadehousut (rain trousers)." },
     { w: "käsine", ru: "перчатка", en: "glove", forms: ["käsine", "käsineet", "käsineitä", "käsineiden"],
-      note: "От käsi («рука»). Обычно про перчатку с отдельными пальцами. Есть и другие слова: hanska, rukkanen (четыре пальца вместе), lapanen («вязаная варежка»). Поскольку рук две, эти слова чаще всего во множественном числе." },
+      note: "From käsi (“hand”). Usually about a glove with separate fingers. There are other words too: hanska, rukkanen (four fingers together), lapanen (“knitted mitten”). Since there are two hands, these words are most often in the plural." },
     { w: "kenkä", ru: "ботинок, туфля", en: "shoe", forms: ["kenkä", "kengät", "kengillä", "kengissä", "kenkiä", "kenkäpari"] },
     { w: "lätäkkö", ru: "лужа", en: "puddle", forms: ["lätäkkö", "lätäköissä", "lätäköitä"] },
     { w: "juosta", ru: "бежать", en: "to run", forms: ["juosta", "juokse", "juoksee", "juosseet"] },
@@ -936,15 +932,15 @@ const LESSONS_EXTRA = [
   source: "FinnishPod101 · Lower Beginner S1 #14",
   glossary: [
     { w: "kielteinen imperfekti", ru: "отрицательный имперфект: en / et / ei + причастие NUT", en: "negative imperfect", forms: ["nähnyt", "nähneet", "sanonut", "käynyt", "muistanut", "unohtanut", "kuullut", "ostaneet", "myöhästynyt", "menneet", "päässeet", "juosseet", "satanut", "olleet", "tiennyt"],
-      note: "Схема простая, если знать перфект. Отрицательный глагол берёт лицо (en, et, ei, emme, ette, eivät), а основной идёт причастием NUT: -nut/-nyt в единственном, -neet во множественном. Сравните: настоящее время en näe («не вижу») — прошедшее en nähnyt («не видел»). Объект в отрицании всегда в партитиве: en nähnyt kukkaa." },
+      note: "The pattern is simple if you know the perfect. The negative verb takes the person (en, et, ei, emme, ette, eivät), and the main verb comes as the NUT participle: -nut/-nyt in the singular, -neet in the plural. Compare: present en näe (“I don’t see”) — past en nähnyt (“I didn’t see”). The object in a negation is always in the partitive: en nähnyt kukkaa." },
     { w: "ulkomailla", ru: "за границей", en: "abroad", forms: ["ulkomailla", "ulkomailta", "ulkomaille", "ulkomaat"],
-      note: "Адессив множественного числа от ulkomaa, буквально «внешняя земля». Само ulkomaa в одиночку почти не используется — только в составных словах: ulkomaankauppa («внешняя торговля»), ulkomaanmatka («поездка за границу»). Ходовые наречия: ulkomailla («за границей»), ulkomailta («из-за границы»), ulkomaille («за границу»)." },
+      note: "The plural adessive of ulkomaa, literally “outside land”. Ulkomaa on its own is almost never used — only in compounds: ulkomaankauppa (“foreign trade”), ulkomaanmatka (“trip abroad”). Common adverbs: ulkomailla (“abroad”), ulkomailta (“from abroad”), ulkomaille (“to abroad”)." },
     { w: "ulkomainen", ru: "иностранный, заграничный", en: "foreign", forms: ["ulkomainen", "ulkomaisia", "ulkomaalaisia", "ulkomaalainen"],
-      note: "Тоже от ulkomaa, с прилагательным окончанием -inen. Противоположность — kotimainen («отечественный», буквально «домашнеземельный»). Родственное существительное ulkomaalainen значит «иностранец»." },
+      note: "Also from ulkomaa, with the adjective ending -inen. The opposite is kotimainen (“domestic”, literally “home-land-ish”). The related noun ulkomaalainen means “foreigner”." },
     { w: "keksi", ru: "печенье", en: "cookie, biscuit", forms: ["keksi", "keksejä", "keksit", "suklaakeksejä"],
-      note: "Любое печенье, сладкое или солёное. Часто взаимозаменяемо с pikkuleipä («маленький хлебец»), но keksi обычно тоньше и всегда сухое, а pikkuleipä может быть мягким и толстым." },
+      note: "Any biscuit or cracker, sweet or salty. Often interchangeable with pikkuleipä (“little bread”), but keksi is usually thinner and always dry, whereas pikkuleipä can be soft and thick." },
     { w: "että", ru: "что (союз)", en: "that", forms: ["että"] },
-    { w: "nähdä", ru: "видеть", en: "to see", forms: ["nähdä", "näin", "näit", "näitkö", "näki", "nähnyt", "näkee"] },
+    { w: "nähdä", ru: "видеть", en: "to see", forms: ["nähdä", "näit", "näitkö", "näki", "nähnyt", "näkee"] },
     { w: "sanoa", ru: "сказать", en: "to say", forms: ["sanoa", "sano", "sanoi", "sanonut", "sanoo", "sanotaan"] },
     { w: "loma", ru: "отпуск, каникулы", en: "vacation", forms: ["loma", "lomalta", "lomalla", "talvilomana"] },
     { w: "palata", ru: "возвращаться", en: "to return", forms: ["palata", "palasi", "palaa", "palaamme"] }
@@ -997,13 +993,13 @@ const LESSONS_EXTRA = [
   source: "FinnishPod101 · Lower Beginner S1 #15",
   glossary: [
     { w: "essiivi", ru: "эссив: -na / -nä", en: "essive case", forms: ["lapsena", "aikuisena", "pienenä", "iloisena", "punaisena", "kylmänä", "sairaana", "opettajana", "isona", "puheenjohtajana", "parhaana", "lemmikkinä", "metsästyskoirana", "sukkina", "sinuna", "työttömänä", "jouluna", "kesänä", "tiistaina", "ystävänään", "helppona", "kukkana", "oppilaana", "kätenä", "asiana"],
-      note: "Выражает состояние или роль — часто временные. Образуется прибавлением -na/-nä к гласной основе, чередования ступеней в эссиве нет, так что обычно окончание просто клеится к словарной форме. Три типа употребления: 1) состояние — Lapsi hyppi iloisena, Eija on sairaana; 2) роль и должность — Hän on opettaja («учитель по профессии») против Hän on opettajana Helsingin yliopistossa («работает учителем»); 3) время — jouluna, viime kesänä, tiistaina." },
+      note: "Expresses a state or role — often temporary. Formed by adding -na/-nä to the vowel stem; there is no gradation in the essive, so the ending usually just attaches to the dictionary form. Three kinds of use: 1) a state — Lapsi hyppi iloisena, Eija on sairaana; 2) a role or position — Hän on opettaja (“a teacher by profession”) versus Hän on opettajana Helsingin yliopistossa (“works as a teacher”); 3) time — jouluna, viime kesänä, tiistaina." },
     { w: "päättää", ru: "решать; заканчивать", en: "to decide, to end", forms: ["päättää", "päätti", "päättäneet", "päätän"],
-      note: "Pää значит «голова» или «конец» (например, конец верёвки), а päättää буквально — «положить конец». Отсюда «завершить»: Hän päätti puheensa kiitoksiin («Он закончил речь благодарностями»). И отсюда же «решить, заключить»: Eero päätti lähteä kotiin." },
+      note: "Pää means “head” or “end” (for example the end of a rope), and päättää literally means “to put an end to”. Hence “to finish”: Hän päätti puheensa kiitoksiin (“He ended his speech with thanks”). And hence also “to decide, to conclude”: Eero päätti lähteä kotiin." },
     { w: "asia", ru: "дело, вопрос, вещь", en: "thing, issue, matter", forms: ["asia", "asioistaan", "asiaa", "asian", "asiasta", "tosiasia"],
-      note: "Очень широкое слово: пункт повестки, любой вопрос, дело. Mennään jo asiaan («Перейдём к делу»), Veikko puhui asian vierestä («Вейкко говорил не по существу»), Minun pitää hoitaa muutama asia («Мне надо сделать пару дел»). «Факт» — tosiasia, буквально «истинная вещь». Устойчивые: pidä huoli omista asioistasi («занимайся своими делами»), asiasta toiseen («кстати»)." },
+      note: "A very broad word: an item on an agenda, any matter, affair. Mennään jo asiaan (“Let’s get to the point”), Veikko puhui asian vierestä (“Veikko talked off the point”), Minun pitää hoitaa muutama asia (“I have to take care of a few things”). “Fact” — tosiasia, literally “true thing”. Set phrases: pidä huoli omista asioistasi (“mind your own business”), asiasta toiseen (“by the way”)." },
     { w: "tarkasti", ru: "внимательно, точно", en: "carefully, exactly", forms: ["tarkasti", "tarkka", "tarkkaan"],
-      note: "Наречие от tarkka («точный, внимательный»). Годится везде, где нужна точность или строгое следование инструкции: Kuuntele tarkasti! («Слушай внимательно!»), Leikkaa tarkasti viivaa pitkin («Режь точно по линии»)." },
+      note: "An adverb from tarkka (“exact, careful”). Works everywhere precision or strict following of instructions is needed: Kuuntele tarkasti! (“Listen carefully!”), Leikkaa tarkasti viivaa pitkin (“Cut exactly along the line”)." },
     { w: "lapsi", ru: "ребёнок", en: "child", forms: ["lapsi", "lapsena", "lapsia", "lapsen", "lapsella"] },
     { w: "aikuinen", ru: "взрослый", en: "adult", forms: ["aikuinen", "aikuisena", "aikuisten"] },
     { w: "pieni", ru: "маленький", en: "small", forms: ["pieni", "pienenä", "pieniä", "pienempi"] },
@@ -1059,15 +1055,15 @@ const LESSONS_EXTRA = [
   source: "FinnishPod101 · Lower Beginner S1 #16",
   glossary: [
     { w: "viikonpäivät", ru: "дни недели и их падежи", en: "weekdays", forms: ["maanantai", "tiistai", "keskiviikko", "torstai", "perjantai", "lauantai", "sunnuntai", "maanantaina", "tiistaina", "keskiviikkona", "torstaina", "perjantaina", "lauantaina", "sunnuntaina", "maanantaista", "tiistaihin", "maanantailta", "tiistaille", "torstain", "sunnuntaille", "lauantaille", "keskiviikosta", "keskiviikolta", "päivänä"],
-      note: "maanantai, tiistai, keskiviikko, torstai, perjantai, lauantai, sunnuntai. С заглавной буквы НЕ пишутся — как и названия месяцев и праздников (joulu). «В такой-то день» — эссив, просто добавьте -na: maanantaina, torstaina. Другие падежи для других смыслов: siirsi palaverin maanantaista tiistaihin («перенёс встречу с понедельника на вторник»), Onko sinulla ohjelmaa sunnuntaille? («Есть планы на воскресенье?»), Tänään on lauantai («Сегодня суббота» — номинатив)." },
+      note: "maanantai, tiistai, keskiviikko, torstai, perjantai, lauantai, sunnuntai. They are NOT capitalised — like the names of months and holidays (joulu). “On such-and-such a day” — the essive, just add -na: maanantaina, torstaina. Other cases for other meanings: siirsi palaverin maanantaista tiistaihin (“moved the meeting from Monday to Tuesday”), Onko sinulla ohjelmaa sunnuntaille? (“Do you have plans for Sunday?”), Tänään on lauantai (“Today is Saturday” — nominative)." },
     { w: "keskiviikko", ru: "среда", en: "Wednesday", forms: ["keskiviikko", "keskiviikkona", "keskiviikolta", "keskiviikosta"],
-      note: "Все остальные дни недели заимствованы из древнегерманских языков, а keskiviikko перевели: буквально «середина недели», как немецкое Mittwoch. Приставка keski- («средний») работает и в других словах: keskipäivä («полдень»), keskiyö («полночь»)." },
+      note: "All the other days of the week were borrowed from Old Germanic languages, while keskiviikko was translated: literally “middle of the week”, like German Mittwoch. The prefix keski- (“middle”) works in other words too: keskipäivä (“noon”), keskiyö (“midnight”)." },
     { w: "palaveri", ru: "рабочая встреча, совещание", en: "meeting at work", forms: ["palaveri", "palaverin", "palaveria", "palaveriin", "viikkopalaveri"],
-      note: "Это встреча на работе, где обсуждают или решают конкретный вопрос — никогда не дружеская встреча. Составные: viikkopalaveri, projektipalaveri, statuspalaveri. Слово слегка разговорное, деловой сленг; в официальном тексте пишут kokous. Kokous при этом шире: sukukokous («семейный сбор»), kansankokous («народное собрание»)." },
+      note: "This is a meeting at work where a specific matter is discussed or decided — never a friendly meeting. Compounds: viikkopalaveri, projektipalaveri, statuspalaveri. The word is slightly colloquial, business slang; in an official text kokous is written. Kokous is broader: sukukokous (“family gathering”), kansankokous (“public assembly”)." },
     { w: "miten", ru: "как; что значит", en: "how", forms: ["miten"],
-      note: "В диалоге устойчивое Miten niin? — «Это почему?», «В смысле?». В остальном вопрос про способ: Miten olet menossa kaupunkiin? — Bussilla." },
+      note: "In dialogue the set phrase Miten niin? — “How come?”, “What do you mean?”. Otherwise the question is about manner: Miten olet menossa kaupunkiin? — Bussilla." },
     { w: "tuntua", ru: "казаться, ощущаться", en: "to feel like", forms: ["tuntua", "tuntuu", "tuntui"],
-      note: "С аблативом (-lta/-ltä): Minusta tuntui ihan keskiviikolta («Мне казалось, что среда»). Minusta tuntuu, että... — «мне кажется, что...»." },
+      note: "With the ablative (-lta/-ltä): Minusta tuntui ihan keskiviikolta (“It felt like Wednesday to me”). Minusta tuntuu, että... — “I feel that...”." },
     { w: "onneksi", ru: "к счастью", en: "fortunately", forms: ["onneksi"] },
     { w: "viikonloppu", ru: "выходные", en: "weekend", forms: ["viikonloppu", "viikonloppuna", "viikonloppusi"] },
     { w: "torstai", ru: "четверг", en: "Thursday", forms: ["torstai", "torstaina", "torstain"] },
@@ -1124,15 +1120,15 @@ const LESSONS_78 = [
   source: "FinnishPod101 · Lower Beginner S1 #7",
   glossary: [
     { w: "imperfekti", ru: "имперфект: показатель -i- между основой и окончанием", en: "imperfect tense", forms: ["katsoin", "katsoitteko", "katsoit", "katsoi", "katsoimme", "katsoivat", "aioin", "aioit", "aikoi", "luin", "luki", "lukivat", "menin", "meni", "menimme", "olin", "oli", "olivat", "tulin", "tuli", "söin", "söi", "sain", "sait", "sai", "näkivät", "satoi", "voitti", "kävittekö", "teit", "nukutti", "väsytti"],
-      note: "Просто рассказ о том, что случилось: действие закончилось до момента речи. В утвердительных формах всегда есть показатель -i- между основой и личным окончанием: katso-i-n, katso-i-t, katso-i (в 3-м лице ед. числа окончания нет), katso-i-mme, katso-i-tte, katso-i-vat. Основа берётся та же, что в настоящем времени, и чередование ступеней работает как обычно: aion → aioin, mutta aikoo → aikoi." },
+      note: "Simply a story of what happened: the action ended before the moment of speaking. In affirmative forms there is always the marker -i- between the stem and the personal ending: katso-i-n, katso-i-t, katso-i (no ending in the 3rd person singular), katso-i-mme, katso-i-tte, katso-i-vat. The stem is the same as in the present, and gradation works as usual: aion → aioin, but aikoo → aikoi." },
     { w: "vartalonmuutokset", ru: "изменения основы перед -i-", en: "stem changes before -i-", forms: ["sain", "myin", "luin", "olin", "menin", "söin", "join", "sadoin", "satoi", "annoin", "antoi", "autoin", "laitoin", "kaatoi", "lainasin", "tiesin", "kaipasin", "taisin", "uin"],
-      note: "Четыре типа. 1) Долгий гласный укорачивается: saa-n → sa-i-n, myy-n → my-i-n. 2) Последний гласный основы выпадает: lue-n → lu-i-n, mene-n → men-i-n; в односложных основах с -ie, -uo, -yö выпадает первый гласный: syö-n → sö-i-n. 3) Конечное a основы переходит в o, если в основе два слога и первый гласный — a: anta- → anno-i-n, anto-i; sata- → sato-i. 4) Конечный гласный выпадает, а t переходит в s: lainat-a → lainas-i-n, tietä-ä → ties-i-n, taita-a → tais-i-n. Если основа и так кончается на -i, имперфект совпадает с настоящим: uin («плаваю» и «плавал»)." },
+      note: "Four types. 1) A long vowel is shortened: saa-n → sa-i-n, myy-n → my-i-n. 2) The last vowel of the stem drops: lue-n → lu-i-n, mene-n → men-i-n; in one-syllable stems with -ie, -uo, -yö the first vowel drops: syö-n → sö-i-n. 3) The final a of the stem changes to o if the stem has two syllables and the first vowel is a: anta- → anno-i-n, anto-i; sata- → sato-i. 4) The final vowel drops and t changes to s: lainat-a → lainas-i-n, tietä-ä → ties-i-n, taita-a → tais-i-n. If the stem already ends in -i, the imperfect is the same as the present: uin (“I swim” and “I swam”)." },
     { w: "koko", ru: "весь, целый", en: "entire, all", forms: ["koko"],
-      note: "Прилагательное с единственной формой — падежных окончаний не берёт вообще: Luin koko kirjan (ср. Luin hyvän kirjan), Koko kirjassa ei ollut yhtään tylsää kohtaa (ср. Tässä kirjassa...). Таких неизменяемых прилагательных немного, к ним же относятся ensi («следующий») и viime («прошлый»)." },
+      note: "An adjective with a single form — it takes no case endings at all: Luin koko kirjan (cf. Luin hyvän kirjan), Koko kirjassa ei ollut yhtään tylsää kohtaa (cf. Tässä kirjassa...). There are few such invariable adjectives; ensi (“next”) and viime (“last”) also belong to them." },
     { w: "nukuttaa", ru: "укладывать спать; клонить в сон", en: "to make sleep; to feel sleepy", forms: ["nukuttaa", "nukutti", "nukuta"],
-      note: "Буквально «заставлять спать»: Lämmin maito nukuttaa («От тёплого молока клонит в сон»), Eeva nukuttaa vauvaa («Ээва укладывает малыша»). Minua nukuttaa значит «мне хочется спать», но minua здесь ОБЪЕКТ, а не подлежащее: глагол в 3-м лице ед. числа, подлежащего нет вовсе. Буквально: «(что-то) нагоняет на меня сон»." },
+      note: "Literally “to make sleep”: Lämmin maito nukuttaa (“Warm milk makes you sleepy”), Eeva nukuttaa vauvaa (“Eeva is putting the baby to sleep”). Minua nukuttaa means “I feel sleepy”, but minua here is the OBJECT, not the subject: the verb is in the 3rd person singular, and there is no subject at all. Literally: “(something) makes me sleepy”." },
     { w: "kauhean", ru: "ужасно, страшно (усилитель)", en: "terribly", forms: ["kauhean", "kauheasti"],
-      note: "Как и русское «ужасно», часто используется просто для усиления, без всякого ужаса: kauhean mielenkiintoinen («ужасно интересный»)." },
+      note: "Like the English “terribly”, often used just for intensification, without any terror: kauhean mielenkiintoinen (“terribly interesting”)." },
     { w: "aikoa", ru: "собираться, намереваться", en: "to intend, to be going to", forms: ["aikoa", "aion", "aiotko", "aioin", "aikoi", "aiotte"] },
     { w: "mennä nukkumaan", ru: "идти спать", en: "to go to bed", forms: ["nukkumaan", "menkää", "menin", "menimme"] },
     { w: "liian", ru: "слишком", en: "too, excessively", forms: ["liian"] },
@@ -1192,13 +1188,13 @@ const LESSONS_78 = [
   source: "FinnishPod101 · Lower Beginner S1 #8",
   glossary: [
     { w: "apuverbit", ru: "вспомогательные глаголы + инфинитив", en: "helping verbs", forms: ["aikoa", "haluta", "tahtoa", "unohtaa", "ajatella", "luvata", "pelätä", "jaksaa", "uskaltaa", "viitsiä", "yrittää", "alkaa", "ehtiä", "täytyä", "osata", "halusit", "tahtoo", "unohdimme", "ajattelitko", "lupasivat", "pelkää", "jaksoin", "uskalsi", "viitsi", "yritän", "alkoi", "ehdimmekö", "täytyy", "osaa"],
-      note: "Вспомогательный глагол берёт на себя лицо и время, а основной остаётся в инфинитиве — в словарной форме: Aion juosta maratonin. Обычно инфинитив идёт сразу после вспомогательного, но порядок может меняться ради акцента. Список: aikoa (собираться), haluta / tahtoa (хотеть), unohtaa (забыть), ajatella (думать, планировать), luvata (обещать), pelätä (бояться), päättää (решить), jaksaa (иметь силы), uskaltaa (осмелиться), viitsiä (иметь охоту), yrittää (пытаться), alkaa (начинать), ehtiä (успевать), meinata (собираться), pitää / täytyä (быть должным), saada (иметь разрешение), taitaa (пожалуй), voida (мочь), osata (уметь)." },
+      note: "The auxiliary verb takes the person and tense, and the main verb stays in the infinitive — in the dictionary form: Aion juosta maratonin. Usually the infinitive comes right after the auxiliary, but the order can change for emphasis. The list: aikoa (to intend), haluta / tahtoa (to want), unohtaa (to forget), ajatella (to think, to plan), luvata (to promise), pelätä (to fear), päättää (to decide), jaksaa (to have the strength), uskaltaa (to dare), viitsiä (to bother), yrittää (to try), alkaa (to begin), ehtiä (to have time), meinata (to intend), pitää / täytyä (to have to), saada (to be allowed), taitaa (to probably), voida (to be able), osata (to know how)." },
     { w: "voida", ru: "мочь (возможность, разрешение)", en: "to be able to, can", forms: ["voida", "voin", "voinko", "voitko", "voisin", "voi", "voitte"],
-      note: "Про возможность, разрешение или самочувствие: Voinko mennä ulos? («Можно мне на улицу?»), Kuinka voitte? («Как вы себя чувствуете?»). НО не про умение! «Я умею петь» — Osaan laulaa. Voin laulaa значит только, что мне ничто не мешает петь, например горло не болит." },
+      note: "About possibility, permission or well-being: Voinko mennä ulos? (“May I go outside?”), Kuinka voitte? (“How are you feeling?”). BUT not about ability! “I can sing” — Osaan laulaa. Voin laulaa means only that nothing prevents me from singing, for example my throat doesn’t hurt." },
     { w: "taitaa", ru: "пожалуй, похоже; уметь", en: "to be likely; to master", forms: ["taitaa", "taidan", "taisi", "taitaisi"],
-      note: "Говорит о вероятности, часто на основании увиденного: Koira taitaa olla nälkäinen («Собака, похоже, голодная»). Про свои планы звучит мягче, чем aikoa: Taidan mennä aikaisin nukkumaan («Пожалуй, лягу пораньше») против решительного Aion mennä aikaisin nukkumaan." },
+      note: "Speaks of probability, often on the basis of what has been seen: Koira taitaa olla nälkäinen (“The dog seems to be hungry”). About your own plans it sounds softer than aikoa: Taidan mennä aikaisin nukkumaan (“I think I’ll go to bed early”) versus the resolute Aion mennä aikaisin nukkumaan." },
     { w: "meinata", ru: "собираться; иметь в виду; чуть не сделать", en: "to intend; to mean", forms: ["meinata", "meinaatteko", "meinaatko", "meinasin", "meinasimme"],
-      note: "Разговорнее, чем aikoa, но смысл тот же. Плюс два своих значения. Первое — «иметь в виду» (из шведского mena): Mitä meinaat? («Что ты имеешь в виду?»). Второе — «чуть не»: Meinasin kaataa kukkamaljakon («Я чуть не опрокинул вазу»), Meinasimme törmätä hirveen («Мы чуть не врезались в лося»)." },
+      note: "More colloquial than aikoa, but the same meaning. Plus two meanings of its own. The first — “to mean” (from Swedish mena): Mitä meinaat? (“What do you mean?”). The second — “almost”: Meinasin kaataa kukkamaljakon (“I almost knocked over the vase”), Meinasimme törmätä hirveen (“We almost ran into a moose”)." },
     { w: "kerta", ru: "раз", en: "time (this time, next time)", forms: ["kerta", "kertaa", "kerralla", "kertaa", "kerran"] },
     { w: "oikeastaan", ru: "вообще-то, на самом деле", en: "actually", forms: ["oikeastaan"] },
     { w: "juoda", ru: "пить", en: "to drink", forms: ["juoda", "juon", "juo", "join"] },
@@ -1273,25 +1269,25 @@ const LESSONS_4569 = [
   glossary: [
     { w: "omistusliitteet", ru: "притяжательные окончания: -ni, -si, -nsa, -mme, -nne", en: "possessive suffixes",
       forms: ["työpöytäsi", "puhelimensa", "puhelimesi", "puhelimeni", "taloni", "talosi", "talonsa", "talomme", "talonne", "autoni", "autonsa", "äitini", "poikasi", "koiransa", "työtoverisi", "sateenvarjonsa", "vaimonsa", "työpöytäni", "työpöytänsä", "lasini", "vyönsä", "pojalleni", "pöydällensä", "kotimatkallaan"],
-      note: "Схема: генитив личного местоимения + предмет с притяжательным окончанием. minun -ni, sinun -si, hänen -nsa/-nsä, meidän -mme, teidän -nne, heidän -nsa/-nsä.\nОкончание идёт после падежного, но перед энклитиками (-kin, -pa). Если падежное окончание кончается на согласный — генитив -n или номинатив множественного -t, — этот согласный отбрасывается. Поэтому taloni может значить и «мой дом», и «моего дома», и «мои дома»: различает только контекст.\nМестоимение часто опускают: в 1-м и 2-м лице почти всегда (Autoni on huollossa), если на нём нет особого ударения (Minunkin äitini...). В 3-м лице, когда предмет — подлежащее, местоимение обязательно: Hänen autonsa on huollossa." },
+      note: "Pattern: the genitive of a personal pronoun + the object with a possessive ending. minun -ni, sinun -si, hänen -nsa/-nsä, meidän -mme, teidän -nne, heidän -nsa/-nsä.\nThe ending comes after the case ending but before the enclitics (-kin, -pa). If the case ending ends in a consonant — genitive -n or nominative plural -t — that consonant is dropped. So taloni can mean “my house”, “of my house” and “my houses”: only context tells them apart.\nThe pronoun is often dropped: in the 1st and 2nd person almost always (Autoni on huollossa), unless it carries special stress (Minunkin äitini...). In the 3rd person, when the object is the subject, the pronoun is obligatory: Hänen autonsa on huollossa." },
     { w: "hänen vai ei", ru: "чей именно: с hänen или без", en: "third person: whose exactly",
       forms: ["hänen", "heidän"],
-      note: "Когда предмет НЕ подлежащее, наличие hänen меняет смысл. Если владелец и есть подлежащее — местоимение убирают: Pekka lähtee kotiin. Sirpa siivoaa työpöytänsä («Сирпа убирает свой стол»). Если владелец кто-то другой — hänen обязательно: Sirpa siivoaa hänen työpöytänsä («убирает его стол»). В 1-м и 2-м лице такой разницы нет." },
+      note: "When the object is NOT the subject, the presence of hänen changes the meaning. If the owner is the subject — the pronoun is removed: Pekka lähtee kotiin. Sirpa siivoaa työpöytänsä (“Sirpa tidies her (own) desk”). If the owner is somebody else — hänen is obligatory: Sirpa siivoaa hänen työpöytänsä (“tidies his desk”). In the 1st and 2nd person there is no such difference." },
     { w: "pitkä omistusliite", ru: "второй вариант окончания 3-го лица: долгий гласный + n", en: "alternative third person suffix",
       forms: ["taloaan", "talossaan", "talostaan", "talollaan", "taloltaan", "talolleen", "taloonsa", "kotimatkallaan"],
-      note: "У 3-го лица есть второй вариант: долгий гласный + n. Он годится в непрямых падежах, если падежное окончание кончается на один гласный: talossansa или talossaan, talollensa или talolleen. В разговорной речи чаще именно он, а -nsa звучит книжно. В номинативе и генитиве вариант один: talonsa." },
+      note: "The 3rd person has a second variant: a long vowel + n. It works in the non-direct cases if the case ending ends in one vowel: talossansa or talossaan, talollensa or talolleen. In colloquial speech it is the one more often used, and -nsa sounds bookish. In the nominative and genitive there is one variant: talonsa." },
     { w: "joku", ru: "кто-то, некто", en: "someone",
       forms: ["joku", "jonkun", "jotakuta", "jossakussa", "jotkut"],
-      note: "Местоимение для неизвестного человека. Странность в том, что склоняется в двух местах сразу, будто jo и ku — отдельные слова: генитив jonkun, партитив jotakuta, инессив jossakussa, номинатив множественного jotkut. Сами окончания обычные, надо только не забыть вставить их ещё и в середину." },
+      note: "A pronoun for an unknown person. The oddity is that it is inflected in two places at once, as if jo and ku were separate words: genitive jonkun, partitive jotakuta, inessive jossakussa, nominative plural jotkut. The endings themselves are ordinary, you just have to remember to insert them in the middle as well." },
     { w: "-pa/-pä", ru: "энклитика усиления", en: "emphasis marker",
       forms: ["onpa", "niinpä", "käveletpä", "jäätelöpä", "minullapa", "juupas", "eipäs"],
-      note: "Цепляется к концу слова и усиливает его — в разговорной речи есть и вариант -pas. Идёт последним: после падежных окончаний, притяжательных суффиксов и глагольных форм. Minullapa on jäätelöä («А у меня мороженое, а у тебя нет»), Onpa täällä kuuma («Ну и жарко же тут»). Персонажей Ричарда Скарри Pig Will и Pig Won't перевели как Juupas-possu и Eipäs-possu — от juu («ага») и ei («нет»)." },
+      note: "Attaches to the end of a word and strengthens it — in colloquial speech there is also a variant -pas. It goes last: after case endings, possessive suffixes and verb forms. Minullapa on jäätelöä (“Well, I have ice cream, and you don’t”), Onpa täällä kuuma (“Gosh, it’s hot here”). The characters of Richard Scarry Pig Will and Pig Won’t were translated as Juupas-possu and Eipäs-possu — from juu (“yeah”) and ei (“no”)." },
     { w: "-kin", ru: "энклитика «тоже»", en: "also",
       forms: ["jussikin", "minullakin", "jäätelökin", "käveletkin", "minunkin", "projektikin", "niinpä onkin"],
-      note: "Вторая энклитика: значит «тоже, также». Minullakin on jäätelöä («У меня тоже есть мороженое»), Jäätelökin on hyvää («И мороженое тоже вкусное»)." },
+      note: "The second enclitic: it means “also, too”. Minullakin on jäätelöä (“I have ice cream too”), Jäätelökin on hyvää (“The ice cream is good too”)." },
     { w: "lähin", ru: "ближайший", en: "the closest",
       forms: ["lähin", "lähellä"],
-      note: "Превосходная степень от lähellä («близко»). Про расстояние (lähin kahvila) и про отношения (lähin työtoveri — «ближайший коллега», тот, с кем работаешь теснее всего)." },
+      note: "The superlative of lähellä (“near”). About distance (lähin kahvila) and about relationships (lähin työtoveri — “nearest colleague”, the one you work with most closely)." },
     { w: "unohtaa", ru: "забывать", en: "to forget", forms: ["unohtaa", "unohdan", "unohda", "unohtanut", "unohtako"] },
     { w: "puhelin", ru: "телефон", en: "phone", forms: ["puhelin", "puhelinta", "puhelimen", "puhelimeni", "puhelimesi", "puhelimensa"] },
     { w: "työtoveri", ru: "коллега", en: "colleague", forms: ["työtoveri", "työtoverit", "työtoverisi"] },
@@ -1362,16 +1358,16 @@ const LESSONS_4569 = [
   glossary: [
     { w: "omistuksen kolme tapaa", ru: "три конструкции принадлежности", en: "three ways of expressing possession",
       forms: ["minulla", "sinulla", "hänellä", "meillä", "teillä", "hannan", "marin", "kirjaston", "kasvin", "tuon", "sen", "niiden", "kynänsä", "kaapissaan", "kynävarastomme", "isäni", "isänsä", "opettajansa", "opettajamme", "voileipänsä", "taskuunsa", "tavaroitanne"],
-      note: "Их ровно три, и они не смешиваются.\n1) Адессив + olla — «у меня есть»: Minulla on kissa. Владелец тут НЕ подлежащее, подлежащее — сама вещь, поэтому она в номинативе или партитиве. Так сообщают новую информацию или спрашивают: Onko sinulla sokeria?\n2) Существительное или указательное местоимение в генитиве: Hannan kynä on keltainen, Tuon pojan koira on iloinen. Никакого притяжательного окончания у вещи при этом НЕТ. Указательные местоимения (tämä, tuo, se, nämä, nuo, ne) ведут себя как существительные.\n3) Личное местоимение в генитиве + притяжательное окончание: hänen kynänsä. Только личные местоимения включают притяжательное окончание. Правила опускания местоимения — из урока 4." },
+      note: "There are exactly three of them, and they do not mix.\n1) Adessive + olla — “I have”: Minulla on kissa. The owner here is NOT the subject, the subject is the thing itself, so it is in the nominative or partitive. This is how new information is given or asked for: Onko sinulla sokeria?\n2) A noun or demonstrative pronoun in the genitive: Hannan kynä on keltainen, Tuon pojan koira on iloinen. The thing has NO possessive ending here. Demonstrative pronouns (tämä, tuo, se, nämä, nuo, ne) behave like nouns.\n3) A personal pronoun in the genitive + a possessive ending: hänen kynänsä. Only personal pronouns include the possessive ending. The rules for dropping the pronoun are from lesson 4." },
     { w: "lainata", ru: "одалживать: и брать, и давать", en: "to borrow, to lend",
       forms: ["lainata", "lainaa", "lainasin", "lainaisitko", "lainaan"],
-      note: "Одно слово на оба направления, а кто кому — показывают падежи. Jaakko lainaa Erkille viisi euroa — «Яакко даёт Эркки взаймы пять евро» (аллатив -lle). Jaakko lainaa Erkiltä viisi euroa — «Яакко занимает у Эркки» (аблатив -ltä)." },
+      note: "One word for both directions, and the cases show who does what to whom. Jaakko lainaa Erkille viisi euroa — “Jaakko lends Erkki five euros” (allative -lle). Jaakko lainaa Erkiltä viisi euroa — “Jaakko borrows from Erkki” (ablative -ltä)." },
     { w: "itse", ru: "сам, себя", en: "self, oneself",
       forms: ["itse", "itselleni", "itsellesi", "itsellemme", "itsekseni"],
-      note: "Может стоять само: Minä pärjään itse («Я справлюсь сам»), Itse tarina ei ole kovin hyvä («Сама история не очень»). Часто с притяжательным окончанием: Hae itsellesi uusi kynä («Возьми себе новую ручку»), Ostamme itsellemme koiran." },
+      note: "It can stand alone: Minä pärjään itse (“I’ll manage on my own”), Itse tarina ei ole kovin hyvä (“The story itself is not very good”). Often with a possessive ending: Hae itsellesi uusi kynä (“Get yourself a new pen”), Ostamme itsellemme koiran." },
     { w: "kynä", ru: "ручка, карандаш", en: "pen, pencil",
       forms: ["kynä", "kynää", "kynäsi", "kynästä", "kynänsä", "kynävarastomme"],
-      note: "Общее слово для всего пишущего. Уточняют приставкой: lyijykynä («карандаш»), värikynä («цветной карандаш»), kuulakärkikynä («шариковая ручка»), mustekynä («перьевая»), sulkakynä («гусиное перо»), huopakynä («фломастер»)." },
+      note: "A general word for anything one writes with. It is specified with a prefix: lyijykynä (“pencil”), värikynä (“coloured pencil”), kuulakärkikynä (“ballpoint pen”), mustekynä (“fountain pen”), sulkakynä (“quill”), huopakynä (“felt-tip pen”)." },
     { w: "varasto", ru: "запас, склад", en: "stock, warehouse", forms: ["varasto", "varaston", "kynävarasto", "kynävarastomme"] },
     { w: "pyyhekumi", ru: "ластик", en: "eraser", forms: ["pyyhekumi", "pyyhekumeja", "kumeja"] },
     { w: "lehtiö", ru: "блокнот", en: "notepad", forms: ["lehtiö", "lehtiön", "lehtiöitä"] },
@@ -1443,25 +1439,25 @@ const LESSONS_4569 = [
   glossary: [
     { w: "luvut yli kymmenen", ru: "числа больше десяти", en: "numbers over ten",
       forms: ["yksitoista", "kaksitoista", "kolmetoista", "neljätoista", "viisitoista", "kuusitoista", "seitsemäntoista", "kahdeksantoista", "yhdeksäntoista", "kaksikymmentä", "kaksikymmentäyksi", "kaksikymmentäviisi", "kolmekymmentä", "sata", "satayksi", "kaksisataa", "tuhat", "viisituhatta", "miljoona"],
-      note: "От одиннадцати до девятнадцати: однозначное число + -toista (yksitoista, kaksitoista). Десятки от двадцати: однозначное число + партитив от kymmenen — kaksikymmentä, kolmekymmentä, дальше просто дописывается остаток: kaksikymmentäviisi. Сотни и тысячи так же, через партитив от sata и tuhat: kaksisataa, viisituhatta, satayksitoista." },
+      note: "From eleven to nineteen: a single-digit number + -toista (yksitoista, kaksitoista). Tens from twenty: a single-digit number + the partitive of kymmenen — kaksikymmentä, kolmekymmentä, then the remainder is simply added: kaksikymmentäviisi. Hundreds and thousands likewise, through the partitive of sata and tuhat: kaksisataa, viisituhatta, satayksitoista." },
     { w: "lukujen taivutus", ru: "склоняются все части числа", en: "declension of numbers",
       forms: ["yhdessä", "neljässä", "seitsemässätoista", "kahdessakymmenessäkahdeksassa", "kahdeltatoista", "yhdeltä", "kahdelta", "yhdeksältä", "viiden", "kolmen"],
-      note: "Плата за простое образование чисел: склоняются ВСЕ части. Seitsemäntoista → seitsemässätoista, kaksikymmentäkahdeksan → kahdessakymmenessäkahdeksassa. Не склоняется только -toista. В разговорной речи обычно склоняют лишь последнюю часть, но на письме положено все." },
+      note: "The price of the simple formation of numbers: ALL the parts are inflected. Seitsemäntoista → seitsemässätoista, kaksikymmentäkahdeksan → kahdessakymmenessäkahdeksassa. Only -toista is not inflected. In colloquial speech usually only the last part is inflected, but in writing all of them should be." },
     { w: "kellonajat", ru: "как называть время", en: "telling time",
       forms: ["yli", "vaille", "vailla", "puoli", "tasan", "vartti", "varttia", "viittä", "kymmentä", "kahtakymmentä"],
-      note: "Схема: [минуты] yli/vaille [часы], а для ровного часа и половины — tasan/puoli [часы]. Внимание на «полчаса»: финны считают половину ДО следующего часа, поэтому puoli neljä — это половина четвёртого, то есть 3:30. Минуты могут быть в номинативе или партитиве: маленькие числа чаще в партитиве (viittä vaille neljä), большие — в номинативе (kaksikymmentäviisi yli neljä).\nЧтобы сказать, во сколько что-то происходит, час ставится в аблатив (-lta/-ltä): Kokous alkaa yhdeksältä, Juna lähtee puoli kahdelta. Если час и так ясен, аблатив можно перенести на puoli (Aloitetaan puolelta), но не на минуты (Jatketaan kahtakymmentä yli).\nВ Финляндии на письме всегда 24-часовой формат, разделитель официально точка (18.04), но двоеточие тоже в ходу." },
+      note: "Pattern: [minutes] yli/vaille [hour], and for a full hour and the half hour — tasan/puoli [hour]. Mind the “half hour”: Finns count the half TO the next hour, so puoli neljä is half past three, i.e. 3:30. The minutes can be in the nominative or the partitive: small numbers more often in the partitive (viittä vaille neljä), big ones in the nominative (kaksikymmentäviisi yli neljä).\nTo say at what time something happens, the hour goes into the ablative (-lta/-ltä): Kokous alkaa yhdeksältä, Juna lähtee puoli kahdelta. If the hour is already clear, the ablative can be moved to puoli (Aloitetaan puolelta), but not to the minutes (Jatketaan kahtakymmentä yli).\nIn Finland in writing it is always the 24-hour format, the official separator is a full stop (18.04), but the colon is also in use." },
     { w: "vartti", ru: "четверть часа", en: "quarter of an hour",
       forms: ["vartti", "varttia", "vartin"],
-      note: "Разговорное слово. В указании времени всегда в партитиве: varttia vaille kaksitoista («без четверти двенадцать»), varttia yli viisi («четверть шестого»)." },
+      note: "A colloquial word. In telling the time it is always in the partitive: varttia vaille kaksitoista (“quarter to twelve”), varttia yli viisi (“quarter past five”)." },
     { w: "kello", ru: "часы; звонок, колокол", en: "clock, watch, bell",
       forms: ["kello", "kelloni", "rannekello", "seinäkello", "käkikello", "kirkonkello"],
-      note: "Годится почти для любых часов и звонков. Составных слов много: rannekello («наручные часы»), seinäkello («настенные»), käkikello («с кукушкой»), kirkonkello («церковный колокол»), kissankello («колокольчик» — цветок)." },
+      note: "Works for almost any clocks and bells. There are many compounds: rannekello (“wristwatch”), seinäkello (“wall clock”), käkikello (“cuckoo clock”), kirkonkello (“church bell”), kissankello (“bellflower” — the plant, literally “cat’s bell”)." },
     { w: "mielelläni", ru: "с удовольствием, охотно", en: "with pleasure, I'd love to",
       forms: ["mielelläni", "mielelläsi", "mielellään", "mielellämme", "mielellänne", "mielellään"],
-      note: "Корень mieli («ум, настроение») + адессив -llä + притяжательное окончание, буквально «на моём уме». Поэтому слово меняется по лицам: mielelläni («я с удовольствием»), mielelläsi, mielellään, mielellämme, mielellänne." },
+      note: "The root mieli (“mind, mood”) + the adessive -llä + a possessive ending, literally “on my mind”. That is why the word changes by person: mielelläni (“gladly, with pleasure”), mielelläsi, mielellään, mielellämme, mielellänne." },
     { w: "kaksitoista", ru: "двенадцать", en: "twelve",
       forms: ["kaksitoista", "kahdeltatoista"],
-      note: "Буквально «два второго», то есть «два из второго десятка», а само «десять» опущено. Toinen — порядковое от «два», toista — его партитив. В старых текстах так строили и большие числа: viisikolmatta («двадцать пять»), kuusineljättä («тридцать шесть»); сейчас это архаика, молодёжь их уже не понимает." },
+      note: "Literally “two of the second”, i.e. “two of the second ten”, with “ten” itself omitted. Toinen is the ordinal of “two”, toista is its partitive. In older texts large numbers were built this way too: viisikolmatta (“twenty-five”), kuusineljättä (“thirty-six”); now it is archaic, and young people no longer understand them." },
     { w: "lounas", ru: "обед", en: "lunch", forms: ["lounas", "lounasta", "lounaan", "lounaalle", "lounaalla", "lounaaksi"] },
     { w: "puoli", ru: "половина", en: "half", forms: ["puoli", "puolelta", "puolenpäivän"] },
     { w: "yleensä", ru: "обычно", en: "usually", forms: ["yleensä"] },
@@ -1521,19 +1517,19 @@ const LESSONS_4569 = [
   glossary: [
     { w: "hyvästelyt", ru: "формулы прощания: три группы", en: "taking leave",
       forms: ["hyvästi", "hei hei", "heippa", "moikka", "näkemiin", "kuulemiin", "nähdään", "huomiseen", "soitellaan", "näkyillään", "pärjäile"],
-      note: "Прощание складывается из трёх групп фраз, и можно взять одну, а можно все три подряд.\n1) Просто «пока», от формального к разговорному: hyvästi («прощай» — редкое, означает, что больше не увидитесь, иногда даже «видеть тебя не хочу»), hei hei (самое обычное, годится и в делах, и с друзьями), heippa, moikka (разговорные). Просто hei или moi при прощании тоже говорят, но короткие варианты звучат резковато.\n2) Про следующую встречу: näkemiin («до свидания», буквально «до увидения» — формально), kuulemiin («до связи», по телефону), nähdään huomenna / illalla / ensi viikolla, nähdään (когда не знаешь когда), huomiseen («до завтра»), soitellaan («созвонимся»), näkyillään (совсем разговорное, шутливое).\n3) Пожелание: hyvää päivän jatkoa, hauskaa iltaa, hyvää yötä, hyvää viikonloppua, hyvää lomaa, hyvää työpäivää, hyvää jatkoa («всего наилучшего» — если не увидитесь долго), voi hyvin, koita pärjätä («держись» — если у человека трудности), pärjäile.\nНа пожелание отвечают Kiitos samoin или просто Samoin. На Hyvää yötä и Hyvää viikonloppua можно ответить той же фразой.\nВажно: Hyvää huomenta / päivää / iltaa — это приветствия при встрече, для прощания они не годятся." },
+      note: "A farewell consists of three groups of phrases, and you can use one or all three in a row.\n1) Just “bye”, from formal to colloquial: hyvästi (“farewell” — rare, means you will not see each other again, sometimes even “I never want to see you”), hei hei (the most ordinary, works both in business and with friends), heippa, moikka (colloquial). Plain hei or moi are also said when parting, but the short variants sound abrupt.\n2) About the next meeting: näkemiin (“goodbye”, literally “until seeing” — formal), kuulemiin (“talk soon”, by phone), nähdään huomenna / illalla / ensi viikolla, nähdään (when you don’t know when), huomiseen (“until tomorrow”), soitellaan (“we’ll call each other”), näkyillään (very colloquial, jocular).\n3) A wish: hyvää päivän jatkoa, hauskaa iltaa, hyvää yötä, hyvää viikonloppua, hyvää lomaa, hyvää työpäivää, hyvää jatkoa (“all the best” — if you won’t see each other for a long time), voi hyvin, koita pärjätä (“hang in there” — if the person is going through difficulties), pärjäile.\nA wish is answered with Kiitos samoin or just Samoin. To Hyvää yötä and Hyvää viikonloppua you can reply with the same phrase.\nImportant: Hyvää huomenta / päivää / iltaa are greetings on meeting, and are not suitable for parting." },
     { w: "maissa", ru: "около, примерно (о времени)", en: "about, around (time)",
       forms: ["maissa"],
-      note: "Послелог для приблизительного времени, а время перед ним стоит в генитиве: kolmen maissa («около трёх»), puoli viiden maissa («около половины пятого»), puolenpäivän maissa («около полудня»)." },
+      note: "A postposition for approximate time, and the time before it stands in the genitive: kolmen maissa (“around three”), puoli viiden maissa (“around half past four”), puolenpäivän maissa (“around noon”)." },
     { w: "loppuviikko", ru: "конец недели", en: "the rest of the week",
       forms: ["loppuviikko", "loppuviikolla", "alkuviikko"],
-      note: "Loppu («конец») + viikko («неделя»). Значит либо вторую половину недели, либо всё, что осталось от этой недели. Противоположность — alkuviikko («начало недели»): понедельник, вторник и, может быть, среда, а с четверга уже loppuviikko. Не путайте с viikonloppu («выходные») — те же части, но в другом порядке." },
+      note: "Loppu (“end”) + viikko (“week”). Means either the second half of the week or everything that is left of this week. The opposite is alkuviikko (“start of the week”): Monday, Tuesday and perhaps Wednesday, and from Thursday it is already loppuviikko. Not to be confused with viikonloppu (“weekend”) — the same parts but in a different order." },
     { w: "aika", ru: "время; час", en: "time, hour",
       forms: ["aika", "aikaan", "aikaa", "keskiaika"],
-      note: "И момент времени — Mihin aikaan tulet? («Во сколько придёшь?»), и период — itsenäisyyden aika («период независимости»), keskiaika («Средние века»). Не путайте с наречием aika («довольно») из урока 12." },
+      note: "Both a moment in time — Mihin aikaan tulet? (“What time are you coming?”), and a period — itsenäisyyden aika (“the period of independence”), keskiaika (“the Middle Ages”). Not to be confused with the adverb aika (“quite”) from lesson 12." },
     { w: "samoin", ru: "взаимно; так же", en: "likewise",
       forms: ["samoin"],
-      note: "Kiitos samoin — «спасибо, и вам того же»: стандартный ответ на пожелание. В другом значении — «таким же образом»: samoin ajattelevat ihmiset («люди, думающие так же»)." },
+      note: "Kiitos samoin — “thanks, and the same to you”: the standard reply to a wish. In another meaning — “in the same way”: samoin ajattelevat ihmiset (“people who think the same way”)." },
     { w: "huomiseen", ru: "до завтра", en: "until tomorrow", forms: ["huomiseen", "huominen"] },
     { w: "lähteä", ru: "уходить, отправляться", en: "to leave", forms: ["lähteä", "lähden", "lähdemme", "lähtee", "lähti", "lähtenyt"] },
     { w: "huomenna", ru: "завтра", en: "tomorrow", forms: ["huomenna"] },
@@ -1596,16 +1592,16 @@ const LESSONS_NEXT = [
   glossary: [
     { w: "konditionaali", ru: "кондиционал: показатель -isi-", en: "conditional verb form",
       forms: ["tekisitkö", "voisiko", "pitäisi", "ehtisit", "riittäisi", "laittaisitko", "tulisin", "ehtisin", "olisit", "olisi", "olisikin", "menisi", "lähtisin", "tarvitsisi", "antaisitko", "voisitko", "saisinko", "lainaisitko", "ottaisin", "olisipa", "voittaisipa", "sopisi", "riittäisin", "katsoisi", "löytyisi", "kysyisi", "auttaisi", "saisi", "pelaisi", "joisi", "söisi", "tekisi", "etsisi", "lähtisi"],
-      note: "Форма для действия, которое чем-то обусловлено и потому под вопросом: «сделал бы». Показатель -isi- встаёт между основой и личным окончанием, а основа берётся та же, что в 3-м лице множественного: riittävät → riittäisin, katsovat → katsoisin.\nДве поправки к основе. Если она кончается на -e или -i, этот гласный выпадает: tekevät → tekisin, ehtivät → ehtisin, lähtevät → lähtisin, etsivät → etsisin. Если она кончается на два гласных, один уходит: saavat → saisin, pelaavat → pelaisin, а в juo-, syö-, vie- выпадает первый: juovat → joisin, syövät → söisin. Olla — исключение: ovat → olisin.\nТри применения. Условие или что-то нереальное: Tulisin, jos ehtisin («Пришёл бы, если бы успел»). Вежливая просьба, вопрос, заказ: Antaisitko minulle tuon kirjan?, Saisinko leipää?, Ottaisin kilon silakoita. И желание — часто с частицей -pa: Olisipa jo kesä! («Скорее бы лето!»)." },
+      note: "The form for an action that depends on something and is therefore in question: “would do”. The marker -isi- stands between the stem and the personal ending, and the stem is the same as in the 3rd person plural: riittävät → riittäisin, katsovat → katsoisin.\nTwo corrections to the stem. If it ends in -e or -i, that vowel drops: tekevät → tekisin, ehtivät → ehtisin, lähtevät → lähtisin, etsivät → etsisin. If it ends in two vowels, one goes: saavat → saisin, pelaavat → pelaisin, while in juo-, syö-, vie- the first one drops: juovat → joisin, syövät → söisin. Olla is an exception: ovat → olisin.\nThree uses. A condition or something unreal: Tulisin, jos ehtisin (“I would come if I had time”). A polite request, question, order: Antaisitko minulle tuon kirjan?, Saisinko leipää?, Ottaisin kilon silakoita. And a wish — often with the particle -pa: Olisipa jo kesä! (“If only it were summer already!”)." },
     { w: "tehdä", ru: "делать; изготавливать", en: "to do, to make",
       forms: ["tehdä", "tekisitkö", "teet", "teen", "tekee", "tekisi"],
-      note: "Покрывает и «делать», и «изготавливать»: Mitä teet huomenna?, Jaana tekee itse vaatteensa («Яана сама шьёт себе одежду»). Полезная готовая фраза в магазине: Paljonko se tekee? — «Сколько с меня?»" },
+      note: "Covers both “to do” and “to make”: Mitä teet huomenna?, Jaana tekee itse vaatteensa (“Jaana makes her own clothes”). A useful ready phrase in a shop: Paljonko se tekee? — “How much do I owe?”" },
     { w: "ennen", ru: "до, перед", en: "before",
       forms: ["ennen", "ennenkin"],
-      note: "Предлог, и то, до чего происходит дело, ставится в партитив: ennen yhtä («до часа»), ennen kahta («до двух»), ennen joulua, ennen sinua. Работает и как наречие «раньше»: En ole ennen käynyt täällä, Ennen tässä oli kauppa («Раньше здесь был магазин»)." },
+      note: "A preposition, and what the matter happens before is put into the partitive: ennen yhtä (“before one o’clock”), ennen kahta (“before two”), ennen joulua, ennen sinua. It also works as the adverb “earlier”: En ole ennen käynyt täällä, Ennen tässä oli kauppa (“There used to be a shop here”)." },
     { w: "tieto", ru: "сведения, данные, знания", en: "information, data, knowledge",
       forms: ["tieto", "tietoa", "tiedot", "tietoja", "tietokone"],
-      note: "Слово очень широкое: и «информация» (Minulla ei ole tietoa tästä), и «данные» (Onko sinulla kaikki tarvittavat tiedot?), и «знания» (Hänellä on asiasta hyvät tiedot), и даже разведданные (Hän keräsi tietoja vihollisesta). Отсюда tietokone — «компьютер»: это калька со шведского datamaskin, «машина данных», а не «машина знаний», как иногда переводят." },
+      note: "A very broad word: both “information” (Minulla ei ole tietoa tästä), and “data” (Onko sinulla kaikki tarvittavat tiedot?), and “knowledge” (Hänellä on asiasta hyvät tiedot), and even intelligence (Hän keräsi tietoja vihollisesta). Hence tietokone — “computer”: it is a calque of the Swedish datamaskin, “data machine”, and not a “knowledge machine” as it is sometimes translated." },
     { w: "riittää", ru: "хватать, быть достаточным", en: "to be enough", forms: ["riittää", "riittäisi", "riitä", "riittävät"] },
     { w: "ehtiä", ru: "успевать", en: "to have the time", forms: ["ehtiä", "ehtisit", "ehditkö", "ehtisin"] },
     { w: "muutos", ru: "изменение, правка", en: "change", forms: ["muutos", "muutoksen"] },
@@ -1665,19 +1661,19 @@ const LESSONS_NEXT = [
   glossary: [
     { w: "olla ... mieltä", ru: "быть такого-то мнения", en: "to be of the opinion",
       forms: ["mieltä", "samaa", "eri", "sitä"],
-      note: "Первая конструкция урока. Olla спрягается по подлежащему, а mieltä всегда стоит в партитиве единственного числа.\nСогласие или несогласие: подставьте samaa («то же») или eri («другое») — Minä olen samaa mieltä («Я согласен»), Minä olen eri mieltä («Я не согласен»), Kalle oli samaa mieltä.\nСамо мнение: sitä mieltä, että + предложение — Minä olen sitä mieltä, että tuo mekko sopii sinulle. Так же строится и вопрос: Mitä mieltä te olette? Тема, о которой мнение, идёт в элатив: Mitä mieltä olette tästä?" },
+      note: "The first construction of the lesson. Olla is conjugated by the subject, and mieltä is always in the singular partitive.\nAgreement or disagreement: insert samaa (“the same”) or eri (“different”) — Minä olen samaa mieltä (“I agree”), Minä olen eri mieltä (“I disagree”), Kalle oli samaa mieltä.\nThe opinion itself: sitä mieltä, että + a clause — Minä olen sitä mieltä, että tuo mekko sopii sinulle. The question is built the same way: Mitä mieltä te olette? The subject the opinion is about goes into the elative: Mitä mieltä olette tästä?" },
     { w: "minun mielestäni", ru: "по-моему, я считаю", en: "in my opinion",
       forms: ["mielestäni", "mielestäsi", "mielestään", "mielestämme", "mielestänne", "maijun", "mummin", "virtasten"],
-      note: "Вторая конструкция. Человек с мнением ставится в генитив (и подлежащим он не является), а mieli — в элатив единственного числа. Без существительного рядом слово берёт притяжательное окончание: mielestäni, mielestäsi, mielestään, mielestämme, mielestänne. С существительным окончание не нужно: Maijun mielestä kahvi on pahaa, Mummin mielestä tatuoinnit ovat rumia. После этой конструкции всегда идёт целое предложение — просто «я согласен» так не скажешь." },
+      note: "The second construction. The person with the opinion goes into the genitive (and is not the subject), and mieli into the singular elative. Without a noun next to it the word takes a possessive ending: mielestäni, mielestäsi, mielestään, mielestämme, mielestänne. With a noun no ending is needed: Maijun mielestä kahvi on pahaa, Mummin mielestä tatuoinnit ovat rumia. After this construction a whole clause always follows — you can’t just say “I agree” this way." },
     { w: "mieli", ru: "ум, настроение", en: "mind, mood",
       forms: ["mieli", "mielessä", "mieltä", "mielellä", "mielipide", "mielelläni", "mielisairas"],
-      note: "Mitä sinulla on mielessä? — «Что у тебя на уме?». Ещё значит «настроение»: Millä mielellä olet tänään?, Hänelle tuli siitä paha mieli («Ему стало от этого неприятно»). Родня по слову: mielipide («мнение»), mielelläni («с удовольствием», урок 6), mielisairas («душевнобольной»)." },
+      note: "Mitä sinulla on mielessä? — “What do you have in mind?”. It also means “mood”: Millä mielellä olet tänään?, Hänelle tuli siitä paha mieli (“It upset him”). Relatives of the word: mielipide (“opinion”), mielelläni (“gladly”, lesson 6), mielisairas (“mentally ill”)." },
     { w: "muuttaa", ru: "менять; переезжать", en: "to change, to move",
       forms: ["muuttaa", "muuta", "muutti", "muutimme"],
-      note: "Значит «сделать другим», изменить свойство: muuttaa kuvan kokoa («изменить размер картинки»), Noita muutti prinssin sammakoksi («Колдунья превратила принца в жабу»). Но заменить одно на другое — это vaihtaa (урок 11), не muuttaa. Есть и второе значение — «переезжать»: Muutimme viime vuonna Helsinkiin." },
+      note: "Means “to make different”, to change a property: muuttaa kuvan kokoa (“to change the size of a picture”), Noita muutti prinssin sammakoksi (“The witch turned the prince into a frog”). But replacing one thing with another is vaihtaa (lesson 11), not muuttaa. There is a second meaning — “to move house”: Muutimme viime vuonna Helsinkiin." },
     { w: "kannattaa", ru: "стоит (сделать); поддерживать; быть выгодным", en: "to be worth it, to support",
       forms: ["kannattaa", "kannata", "kannatat", "kannattavat", "kannattava"],
-      note: "Буквально «держать, поддерживать»: pylväät kannattavat kattoa («колонны держат крышу»). Переносно — поддерживать дело или команду: Mitä joukkuetta kannatat? Ещё «быть выгодным»: Rikos ei kannata («Преступление не выгодно»). А в диалоге употреблено самое частое значение — «стоит, есть смысл»: Kannattaa muuttaa toimintoa." },
+      note: "Literally “to hold, to support”: pylväät kannattavat kattoa (“the columns hold the roof”). Figuratively — to support a cause or a team: Mitä joukkuetta kannatat? Also “to be profitable”: Rikos ei kannata (“Crime doesn’t pay”). And in the dialogue the most frequent meaning is used — “it is worth, it makes sense”: Kannattaa muuttaa toimintoa." },
     { w: "toiminto", ru: "функция (в программе)", en: "functionality, function", forms: ["toiminto", "toimintoa", "toimintoja"] },
     { w: "mielipide", ru: "мнение", en: "opinion", forms: ["mielipide", "mielipidettä", "mielipiteitä"] },
     { w: "nykyinen", ru: "текущий, нынешний", en: "current", forms: ["nykyinen", "nykyään"] },
@@ -1746,16 +1742,16 @@ const LESSONS_NEXT = [
   glossary: [
     { w: "ajan adessiivi", ru: "когда именно: время в адессиве", en: "adessive of time",
       forms: ["talvella", "keväällä", "kesällä", "syksyllä", "aamulla", "aamupäivällä", "päivällä", "iltapäivällä", "illalla", "yöllä", "viikolla", "öisin"],
-      note: "Чтобы сказать, что что-то происходит в такой-то отрезок времени, название отрезка ставится в адессив (-lla/-llä). Так работают времена года, части суток и слово viikko.\ntalvi → talvella, kevät → keväällä, kesä → kesällä, syksy → syksyllä; aamu → aamulla, aamupäivä → aamupäivällä, päivä → päivällä, iltapäivä → iltapäivällä, ilta → illalla, yö → yöllä.\nСмысл при этом либо «вообще, каждое лето», либо про конкретный период, ясный из контекста. Слова ensi («следующий») и viime («прошлый») с адессивом времени не употребляются, поэтому какое именно лето — понимайте из разговора.\nИсключение — viikko: недели все похожи, из контекста нужную не угадать, поэтому уточнение обязательно: ensi viikolla, viime viikolla. А из исключения есть своё исключение: если viikko противопоставлено выходным и значит «с понедельника по пятницу», уточнение не нужно — Viikolla minulla on kiire, mutta viikonloppuna ehdin rentoutua." },
+      note: "To say that something happens in a certain stretch of time, the name of the stretch is put in the adessive (-lla/-llä). Seasons, parts of the day and the word viikko work this way.\ntalvi → talvella, kevät → keväällä, kesä → kesällä, syksy → syksyllä; aamu → aamulla, aamupäivä → aamupäivällä, päivä → päivällä, iltapäivä → iltapäivällä, ilta → illalla, yö → yöllä.\nThe meaning is either “in general, every summer”, or about a specific period clear from context. The words ensi (“next”) and viime (“last”) are not used with the time adessive, so you work out which summer it is from the conversation.\nThe exception is viikko: weeks are all alike, and the right one can’t be guessed from context, so specifying is obligatory: ensi viikolla, viime viikolla. And the exception has an exception of its own: if viikko is contrasted with the weekend and means “Monday to Friday”, no specification is needed — Viikolla minulla on kiire, mutta viikonloppuna ehdin rentoutua." },
     { w: "valoisa", ru: "светлый (где много света)", en: "light, well-lit",
       forms: ["valoisa", "valoisaa", "valo", "auringonvalo"],
-      note: "Светлый в смысле «где много света», обычно солнечного, но и от лампы тоже. НЕ значит «светлый» о цвете — для цвета есть vaalea: vaalean sininen («светло-синий»). И не значит «лёгкий» по весу. От существительного valo («свет»): auringonvalo, päivänvalo. Про характер тоже говорят: valoisa luonne («светлый, оптимистичный нрав»)." },
+      note: "“Light” in the sense of “where there is a lot of light”, usually sunlight, but also from a lamp. It does NOT mean “light” about colour — for colour there is vaalea: vaalean sininen (“light blue”). And it does not mean “light” in weight. From the noun valo (“light”): auringonvalo, päivänvalo. It is also said about character: valoisa luonne (“a bright, optimistic nature”)." },
     { w: "pimeä", ru: "тёмный (где нет света)", en: "dark, lacking light",
       forms: ["pimeä", "pimeää", "pimeällä"],
-      note: "Противоположность valoisa: там, где нет света. Про цвет так же нельзя — для цвета tumma: tumman ruskea («тёмно-коричневый»). Pimeä — это уже довольно темно, почти совсем. Между valoisa и pimeä есть hämärä («сумрачно, полутьма»)." },
+      note: "The opposite of valoisa: where there is no light. It can’t be used about colour either — for colour it is tumma: tumman ruskea (“dark brown”). Pimeä is already quite dark, almost completely. Between valoisa and pimeä there is hämärä (“dusky, half-dark”)." },
     { w: "synkkä", ru: "мрачный, гнетущий", en: "gloomy, dark",
       forms: ["synkkä", "synkkää", "synkällä", "synkmetsä"],
-      note: "И про обстановку (synkkä ilta — «мрачный вечер»), и про настроение человека: Kalle on tänään synkällä tuulella («Калле сегодня в мрачном настроении»). Часто про тучи и густой лес, звучит немного зловеще. Лихолесье Толкина по-фински — Synkmetsä («мрачный лес»)." },
+      note: "Both about the surroundings (synkkä ilta — “a gloomy evening”) and about a person’s mood: Kalle on tänään synkällä tuulella (“Kalle is in a gloomy mood today”). Often about clouds and a dense forest, it sounds a little ominous. Tolkien’s Mirkwood in Finnish is Synkmetsä (“gloomy forest”)." },
     { w: "kevät", ru: "весна", en: "spring", forms: ["kevät", "keväällä"] },
     { w: "kesä", ru: "лето", en: "summer", forms: ["kesä", "kesällä", "kesäleireille"] },
     { w: "syksy", ru: "осень", en: "fall, autumn", forms: ["syksy", "syksyllä"] },
@@ -1812,22 +1808,22 @@ const LESSONS_NEXT = [
   glossary: [
     { w: "tunteet", ru: "как сказать, что чувствуешь", en: "expressing feelings",
       forms: ["iloinen", "surullinen", "hilpeä", "rauhallinen", "masentunut", "pettynyt", "tyytyväinen", "tyytymätön", "onnellinen", "hermostunut", "masentuneita", "hermostuneita", "onnellisilta", "tyytymättömiltä", "rauhalliselta", "tyytyväiseltä", "masentuneelta"],
-      note: "Самый простой способ — прилагательное в предложении с olla. Одна тонкость: в единственном числе прилагательное стоит в номинативе, а во множественном — в партитиве множественного. Mari oli iloinen, но Olimme masentuneita, Näyttelijät olivat hermostuneita.\nСлова, которые пригодятся: iloinen («радостный»), surullinen («грустный»), hilpeä («весёлый»), rauhallinen («спокойный»), masentunut («подавленный»), pettynyt («разочарованный»), tyytyväinen («довольный»), tyytymätön («недовольный»), onnellinen («счастливый»), hermostunut («нервничающий»).\nЕсли человек не «есть» такой, а «выглядит» таким, берут vaikuttaa («казаться», урок 10) или näyttää («выглядеть»), а прилагательное ставят в аблатив: Petri vaikutti rauhalliselta, Mika näytti tyytyväiseltä. Во множественном числе аблатив тоже множественный: Jukka ja Minna vaikuttavat onnellisilta." },
+      note: "The simplest way is an adjective in a sentence with olla. One subtlety: in the singular the adjective stands in the nominative, and in the plural in the plural partitive. Mari oli iloinen, but Olimme masentuneita, Näyttelijät olivat hermostuneita.\nUseful words: iloinen (“joyful”), surullinen (“sad”), hilpeä (“cheerful”), rauhallinen (“calm”), masentunut (“depressed”), pettynyt (“disappointed”), tyytyväinen (“satisfied”), tyytymätön (“dissatisfied”), onnellinen (“happy”), hermostunut (“nervous”).\nIf a person doesn’t “be” like that but “looks” like that, take vaikuttaa (“to seem”, lesson 10) or näyttää (“to look”), and put the adjective in the ablative: Petri vaikutti rauhalliselta, Mika näytti tyytyväiseltä. In the plural the ablative is plural too: Jukka ja Minna vaikuttavat onnellisilta." },
     { w: "harmittaa", ru: "досадовать, быть раздосадованным", en: "to be vexed",
       forms: ["harmittaa", "harmitti", "harmittaako", "harmittaa minua", "mattia", "tiinaa", "teitä"],
-      note: "Глагол устроен непривычно: тот, кто досадует, стоит в партитиве и подлежащим НЕ является. Tiinaa harmittaa — «Тийна досадует». Minua harmittaa — «мне досадно».\nА подлежащим становится то, что раздосадовало: Häviäminen harmittaa minua («Проигрыш меня раздосадовал»). Причину можно и вынести в придаточное: Mattia harmitti, koska hän ei päässyt kavereiden kanssa ulos." },
+      note: "The verb is built unusually: the one who is annoyed stands in the partitive and is NOT the subject. Tiinaa harmittaa — “Tiina is annoyed”. Minua harmittaa — “I am annoyed”.\nAnd the subject becomes the thing that annoyed: Häviäminen harmittaa minua (“Losing annoys me”). The cause can also be moved into a subordinate clause: Mattia harmitti, koska hän ei päässyt kavereiden kanssa ulos." },
     { w: "surra", ru: "горевать, оплакивать; переживать", en: "to mourn, to worry",
       forms: ["surra", "suri", "sure", "surko", "surraan"],
-      note: "Здесь наоборот, всё как обычно: переживающий — подлежащее, а предмет переживаний — объект. Kerttu suri kuollutta miestään («Кертту оплакивала умершего мужа»), Ei yhtä lautasta kannata surra («Из-за одной тарелки не стоит убиваться»). Повелительное отрицательное: Älkää surko («Не переживайте»)." },
+      note: "Here it is the other way round, everything is as usual: the one who grieves is the subject, and the object of grief is the object. Kerttu suri kuollutta miestään (“Kerttu mourned her dead husband”), Ei yhtä lautasta kannata surra (“It’s not worth grieving over one plate”). The negative imperative: Älkää surko (“Don’t grieve”)." },
     { w: "olla hyvällä tuulella", ru: "быть в хорошем настроении", en: "to be in a good mood",
       forms: ["tuulella", "hyvällä", "huonolla", "pahalla"],
-      note: "Идиома, буквально «быть на хорошем ветру»: tuuli — это «ветер» (урок 12). Противоположность — olla huonolla tuulella или olla pahalla tuulella («быть в плохом настроении»). Huono значит «плохой, негодный», paha — «плохой, злой», поэтому pahalla tuulella звучит чуть мрачнее, хотя разница невелика." },
+      note: "An idiom, literally “to be in a good wind”: tuuli is “wind” (lesson 12). The opposite is olla huonolla tuulella or olla pahalla tuulella (“to be in a bad mood”). Huono means “bad, poor”, paha — “bad, evil”, so pahalla tuulella sounds slightly gloomier, although the difference is small." },
     { w: "kuunnella", ru: "слушать (внимательно)", en: "to listen",
       forms: ["kuunnella", "kuuntelin", "kuuntelee", "kuunteli", "kuuntele"],
-      note: "Именно активное слушание. Если звук просто донёсся сам, нужен kuulla («слышать»). Разница слышна в примере: Kuulin oven läpi, mitä he puhuivat — «я услышал через дверь, о чём они говорили», может быть, просто проходил мимо. А Kuuntelin oven läpi — уже «подслушивал», прижавшись ухом к двери." },
+      note: "Precisely active listening. If the sound simply reached you by itself, you need kuulla (“to hear”). The difference can be heard in the example: Kuulin oven läpi, mitä he puhuivat — “I heard through the door what they were saying”, maybe I was just passing. And Kuuntelin oven läpi — is already “eavesdropped”, with an ear pressed to the door." },
     { w: "huomenta", ru: "доброе утро", en: "good morning",
       forms: ["huomenta", "huomen", "huominen", "huomenna", "huomiseen"],
-      note: "Короткая форма от Hyvää huomenta. Это партитив от huomen — старинного слова «утро». В современном языке «утро» — это aamu, а huomen сместилось в сторону значения «завтра» и живёт в основном в устойчивых выражениях: huomenna («завтра», наречие), huominen («завтрашний день»), Huomiseen («до завтра», урок 9)." },
+      note: "A short form of Hyvää huomenta. It is the partitive of huomen — an old word for “morning”. In modern language “morning” is aamu, and huomen has moved towards the meaning “tomorrow” and lives mainly in set expressions: huomenna (“tomorrow”, adverb), huominen (“tomorrow, the next day”), Huomiseen (“until tomorrow”, lesson 9)." },
     { w: "rikkoa", ru: "разбить, сломать", en: "to break", forms: ["rikkoa", "rikoin", "rikkoi", "rikkonut"] },
     { w: "masentunut", ru: "подавленный, в унынии", en: "depressed", forms: ["masentunut", "masentuneita", "masentuneelta"] },
     { w: "huonosti", ru: "плохо", en: "badly", forms: ["huonosti", "huono"] },
@@ -1899,19 +1895,19 @@ const LESSONS_NEXT = [
   glossary: [
     { w: "passiivi", ru: "форма неопределённого действующего лица", en: "unspecified actor form",
       forms: ["kaadetaan", "rakennetaan", "jätetään", "jätetäänköhän", "toivotaan", "istutetaan", "vaikutetaan", "kysytään", "autetaan", "muutetaan", "halutaan", "ollaan", "kuunnellaan", "surraan", "tehdään", "tullaan", "ajatellaan", "levätään", "juodaan", "mennään", "mennäänkö", "syödään", "heitetään", "maalataan", "pelataan", "liikutaan", "tanssitaan", "pidetään", "lähdetään", "voidaan", "juodaan", "rakennettu"],
-      note: "Эту форму по традиции зовут пассивом, но по сути она другая. Английский пассив поднимает объект в подлежащие («The fish is eaten»), а финская форма говорит, что нечто делают неназванные люди: неизвестно кто, или незачем уточнять, или «вообще все так делают». Подлежащего в предложении нет вовсе, а действующий всегда человек — поэтому «рыбу съела кошка» через эту форму не передать.\nОбразование двух видов. Если перед последним -a/-ä инфинитива стоит гласный, берём основу 1-го лица единственного и добавляем -taan/-tään, причём конечный -a/-ä основы переходит в -e: kaataa → kaadan → kaadetaan, rakentaa → rakennan → rakennetaan, jättää → jätän → jätetään, istuttaa → istutan → istutetaan, kysyä → kysyn → kysytään, toivoa → toivon → toivotaan.\nЕсли перед последним гласным инфинитива согласный, добавляем -an/-än прямо к инфинитиву: haluta → halutaan, olla → ollaan, tehdä → tehdään, tulla → tullaan, ajatella → ajatellaan, levätä → levätään, juoda → juodaan.\nПорядок слов: предложение начинается с объекта или обстоятельства. Объект по-прежнему делится на «целиком» и «частично», но «целиком» здесь НЕ генитив, а номинатив: Omena syödään («Яблоко съедят») против Omenaa syödään («Яблоко едят»). Сравните с обычным Emmi syö omenan.\nВ разговорной речи эта форма почти всегда заменяет «мы»: не Me menemme elokuviin, а Me mennään elokuviin. Особенно в побуждении: Menkäämme elokuviin! звучит напыщенно, говорят Mennään elokuviin! Ею же уходят от прямого обращения: врач может спросить Kuinkas täällä tänään voidaan? («Как мы себя сегодня чувствуем?»)" },
+      note: "This form is traditionally called the passive, but in essence it is different. The English passive raises the object to subject (“The fish is eaten”), whereas the Finnish form says that something is being done by unnamed people: nobody knows who, or there is no need to specify, or “everyone does it”. There is no subject in the sentence at all, and the doer is always a person — so “the fish was eaten by the cat” can’t be expressed with this form.\nTwo kinds of formation. If there is a vowel before the final -a/-ä of the infinitive, take the 1st person singular stem and add -taan/-tään, and the final -a/-ä of the stem changes to -e: kaataa → kaadan → kaadetaan, rakentaa → rakennan → rakennetaan, jättää → jätän → jätetään, istuttaa → istutan → istutetaan, kysyä → kysyn → kysytään, toivoa → toivon → toivotaan.\nIf there is a consonant before the last vowel of the infinitive, add -an/-än directly to the infinitive: haluta → halutaan, olla → ollaan, tehdä → tehdään, tulla → tullaan, ajatella → ajatellaan, levätä → levätään, juoda → juodaan.\nWord order: the sentence begins with the object or an adverbial. The object still divides into “whole” and “partial”, but here “whole” is NOT the genitive but the nominative: Omena syödään (“The apple will be eaten”) versus Omenaa syödään (“The apple is being eaten”). Compare the ordinary Emmi syö omenan.\nIn colloquial speech this form almost always replaces “we”: not Me menemme elokuviin, but Me mennään elokuviin. Especially in suggestions: Menkäämme elokuviin! sounds pompous, people say Mennään elokuviin! It is also used to avoid direct address: a doctor may ask Kuinkas täällä tänään voidaan? (“How are we feeling today?”)" },
     { w: "kukaan", ru: "кто-нибудь; никто", en: "anyone, no one",
       forms: ["kukaan", "ketään", "kenenkään", "kenessäkään", "kenestäkään", "kehenkään", "kenelläkään", "kellään", "keneltäkään", "kenellekään", "kenään"],
-      note: "Всегда о человеке и почти всегда в вопросе или отрицании: Onko täällä ketään? («Здесь есть кто-нибудь?»), Ei kukaan halua... Как и joku (урок 4), склоняется в середине: партитив ketään, генитив kenenkään, инессив kenessäkään, элатив kenestäkään, иллатив kehenkään, адессив kenelläkään или kellään, аблатив keneltäkään, аллатив kenellekään, эссив kenään. Формы множественного числа встречаются редко." },
+      note: "Always about a person and almost always in a question or negation: Onko täällä ketään? (“Is anyone here?”), Ei kukaan halua... Like joku (lesson 4), it is inflected in the middle: partitive ketään, genitive kenenkään, inessive kenessäkään, elative kenestäkään, illative kehenkään, adessive kenelläkään or kellään, ablative keneltäkään, allative kenellekään, essive kenään. Plural forms are rare." },
     { w: "puu", ru: "дерево; древесина", en: "tree, wood",
       forms: ["puu", "puita", "puiden", "puulattia", "puulusikka", "polttopuut"],
-      note: "И живое дерево, и древесина как материал. Но «лес» — это не puu, а metsä. Составные: puulattia («деревянный пол»), puulusikka («деревянная ложка»), polttopuut («дрова»). Если хоккейный судья не реагирует на происходящее, его могут назвать puusilmä — буквально «деревянный глаз»." },
+      note: "Both a living tree and wood as a material. But “forest” is not puu, it is metsä. Compounds: puulattia (“wooden floor”), puulusikka (“wooden spoon”), polttopuut (“firewood”). If a hockey referee doesn’t react to what is happening, he may be called puusilmä — literally “wooden eye”." },
     { w: "talo", ru: "дом (жилой)", en: "house",
       forms: ["talo", "taloja", "talossa", "taloa", "omakotitalo", "kerrostalo", "rivitalo"],
-      note: "Обычно именно жилой дом. Прочие здания — rakennus: toimistorakennus («офисное здание»). Составные: omakotitalo («частный дом на одну семью»), kerrostalo («многоэтажка»), rivitalo («блокированный дом, таунхаус»)." },
+      note: "Usually precisely a residential house. Other buildings are rakennus: toimistorakennus (“office building”). Compounds: omakotitalo (“a detached single-family house”), kerrostalo (“a block of flats”), rivitalo (“a terraced house, townhouse”)." },
     { w: "kaataa", ru: "валить; наливать; опрокидывать", en: "to fell, to pour",
       forms: ["kaataa", "kaadan", "kaadetaan", "kaataa"],
-      note: "Одно слово на всё, что опрокидывается или льётся: kaataa puu («срубить дерево»), Emäntä kaataa kahvia («Хозяйка наливает кофе»)." },
+      note: "One word for everything that is tipped or poured: kaataa puu (“to fell a tree”), Emäntä kaataa kahvia (“The hostess pours coffee”)." },
     { w: "rakentaa", ru: "строить", en: "to build", forms: ["rakentaa", "rakennan", "rakennetaan", "rakennettu"] },
     { w: "istuttaa", ru: "сажать (растения)", en: "to plant", forms: ["istuttaa", "istutan", "istutetaan", "istuttaneet"] },
     { w: "jättää", ru: "оставлять", en: "to leave (behind)", forms: ["jättää", "jätän", "jätetään", "jätämme", "jättäkää"] },
@@ -1972,22 +1968,22 @@ const LESSONS_NEXT = [
   glossary: [
     { w: "vielä ja enää", ru: "vielä «ещё» и enää «больше не»", en: "still and anymore",
       forms: ["vielä", "vieläkin", "enää", "niinkö", "kuitenkaan"],
-      note: "Два наречия времени, которые легко перепутать.\n1) Vielä при глаголе в утвердительной форме — «ещё, всё ещё»: Olen vielä kiireinen («Я всё ещё занят»), Olen vielä nuori, Olin vielä opiskelija.\n2) Vielä при отрицании — «пока не, ещё не»: En tiedä vielä («Пока не знаю»), Etkö ole vielä naimisissa?, En ole löytänyt vielä poikaystävää.\n3) Enää употребляется только в отрицании и значит «больше не»: En ole enää niin kiireinen, En ole enää nuori, En mene sinne enää.\nСмысл различается по сути: vielä про то, что продолжается, enää про то, что закончилось. Уберите наречие — и останется простая констатация: Sataako ulkona? («На улице дождь?»), Ulkona ei sada." },
+      note: "Two time adverbs that are easy to confuse.\n1) Vielä with a verb in an affirmative form — “still”: Olen vielä kiireinen (“I am still busy”), Olen vielä nuori, Olin vielä opiskelija.\n2) Vielä with a negation — “not yet”: En tiedä vielä (“I don’t know yet”), Etkö ole vielä naimisissa?, En ole löytänyt vielä poikaystävää.\n3) Enää is used only in a negation and means “no longer”: En ole enää niin kiireinen, En ole enää nuori, En mene sinne enää.\nThe meaning differs in essence: vielä is about something that continues, enää about something that has ended. Remove the adverb and what is left is a simple statement: Sataako ulkona? (“Is it raining outside?”), Ulkona ei sada." },
     { w: "sääsanat", ru: "погодные слова", en: "weather vocabulary",
       forms: ["sade", "pouta", "selkeä", "pakkanen", "ukkosmyrsky", "ukkonen", "salama", "tihkusade", "rankkasade", "lumi", "loska", "räntä", "lumimyrsky", "pyry", "lumituisku", "lumisade", "sadepilvi", "säätiedote"],
-      note: "Осадки и явления: sade («дождь»), pouta («без дождя»), selkeä («ясно»), pakkanen («морозь»), ukkosmyrsky («гроза»), ukkonen («гром»), salama («молния»), tihkusade («морось»), rankkasade («ливень»), lumi («снег»), loska («слякоть»), räntä («мокрый снег»), lumimyrsky и pyry («метель»), lumituisku («поземка»), lumisade («снегопад»), sadepilvi («дождевая туча»).\nКак ощущается: kylmä («холодно»), jäätävä («ледяной»), kuuma («жарко»), kostea («влажно»), hiostava («душно»), viileä («прохладно»), raikas («свежо»)." },
+      note: "Precipitation and phenomena: sade (“rain”), pouta (“no rain”), selkeä (“clear”), pakkanen (“frost”), ukkosmyrsky (“thunderstorm”), ukkonen (“thunder”), salama (“lightning”), tihkusade (“drizzle”), rankkasade (“downpour”), lumi (“snow”), loska (“slush”), räntä (“sleet”), lumimyrsky and pyry (“snowstorm”), lumituisku (“blowing snow”), lumisade (“snowfall”), sadepilvi (“rain cloud”).\nHow it feels: kylmä (“cold”), jäätävä (“icy”), kuuma (“hot”), kostea (“humid”), hiostava (“muggy”), viileä (“cool”), raikas (“fresh”)." },
     { w: "sateenvarjo", ru: "зонт", en: "umbrella",
       forms: ["sateenvarjo", "sateenvarjoni", "sateenvarjoa", "sateenvarjoasi", "sateenvarjon"],
-      note: "Сложено из sade («дождь») и varjo («тень, укрытие»), буквально «тень дождя». Есть сленговые sontsa и sontikka, но sateenvarjo поймут в любом уголке страны." },
+      note: "Made from sade (“rain”) and varjo (“shadow, shelter”), literally “shadow of the rain”. There are slang sontsa and sontikka, but sateenvarjo will be understood in any corner of the country." },
     { w: "kirkas taivas", ru: "ясное небо", en: "clear sky",
       forms: ["kirkas", "kirkkaalta", "taivas", "taivaalla", "taivaalta", "pilvinen", "harmaa"],
-      note: "Kirkas — «ясный, яркий», taivas — «небо». Фраза про совершенно чистое небо без облаков: Aurinko paistaa kirkkaalta taivaalta. Про облачное небо скажут pilvinen taivas, про серое — harmaa taivas. А «небо в облаках» — taivas on pilvessä." },
+      note: "Kirkas — “clear, bright”, taivas — “sky”. A phrase about a completely clear sky without clouds: Aurinko paistaa kirkkaalta taivaalta. About a cloudy sky one says pilvinen taivas, about a grey one — harmaa taivas. And “a sky full of clouds” — taivas on pilvessä." },
     { w: "liittyä", ru: "присоединяться", en: "to join",
       forms: ["liittyä", "liityn", "liitytkö", "liityin", "seuraani", "seuraan"],
-      note: "Liittyä seuraan — «присоединиться к компании»: Liitytkö seuraani? («Составишь мне компанию?»). Куда присоединяются — в иллатив: Liityin kirjakerhoon («Я вступил в книжный клуб»)." },
+      note: "Liittyä seuraan — “to join company”: Liitytkö seuraani? (“Will you keep me company?”). What one joins goes into the illative: Liityin kirjakerhoon (“I joined a book club”)." },
     { w: "sataa", ru: "идти (об осадках)", en: "to rain, to snow",
       forms: ["sataa", "sataako", "sada", "satoi", "satanut"],
-      note: "Безличный глагол: подлежащего нет, стоит всегда в 3-м лице единственного. Sataa само по себе — про дождь, а что именно падает, уточняется партитивом: sataa lunta («идёт снег»), sataa räntää." },
+      note: "An impersonal verb: there is no subject, it always stands in the 3rd person singular. Sataa on its own is about rain, and what exactly falls is specified with the partitive: sataa lunta (“it is snowing”), sataa räntää." },
     { w: "aurinko", ru: "солнце", en: "sun", forms: ["aurinko", "auringon", "auringonvalo", "auringonpaiste"] },
     { w: "paistaa", ru: "светить; жарить, печь", en: "to shine; to bake", forms: ["paistaa", "paistoi", "paista"] },
     { w: "sää", ru: "погода", en: "weather", forms: ["sää", "säästä", "sään", "säätiedote"] },
@@ -2068,22 +2064,22 @@ const LESSONS_NEXT = [
   glossary: [
     { w: "preesens haastattelussa", ru: "настоящее время о себе", en: "present tense for your qualities",
       forms: ["opiskelen", "opiskelet", "opiskelee", "opiskelemme", "opiskelette", "opiskelevat", "työskentelen", "pidän", "olen"],
-      note: "На собеседовании настоящее время описывает то, что верно сейчас: что вы учите, где работаете, какой вы человек. Готовые каркасы: Minä opiskelen... , Minä pidän... («мне нравится», с элативом), ...sopii minulle hyvin, koska... («мне это подходит, потому что»), Olen... («я такой-то»).\nЧто именно изучаете — партитив: Opiskelen kirjallisuutta yliopistossa. А в каком качестве работаете — эссив (урок 15): Työskentelen osa-aikaisena kukkakaupassa, Olen kotiäitinä." },
+      note: "At an interview the present tense describes what is true now: what you study, where you work, what kind of person you are. Ready frames: Minä opiskelen... , Minä pidän... (“I like”, with the elative), ...sopii minulle hyvin, koska... (“it suits me because”), Olen... (“I am such-and-such”).\nWhat exactly you study — the partitive: Opiskelen kirjallisuutta yliopistossa. And in what capacity you work — the essive (lesson 15): Työskentelen osa-aikaisena kukkakaupassa, Olen kotiäitinä." },
     { w: "perfekti työhistoriasta", ru: "перфект о прошлом опыте", en: "perfect for work history",
       forms: ["olen ollut", "olen työskennellyt", "olen tehnyt", "olen opiskellut", "olette lukeneet", "olemme lukeneet", "olen juonut", "olet lukenut"],
-      note: "Перфект (урок 11) — главное время для рассказа о прошлом опыте: olen työskennellyt siellä aikaisemmin, Olen tehnyt kirjanpitäjän töitä, Olen opiskellut taidetta.\nВажное ограничение: перфект НЕ ставят рядом с точным указанием времени — eilen, viime viikolla, kaksi tuntia sitten, sinä päivänä. «Eilen olen lukenut kirjan» — ошибка, надо Luin kirjan eilen. Зато он свободно сочетается с общими словами: jo («уже»), ei koskaan / ei ikinä («никогда»), kerran («однажды»), aikaisemmin и ennen («раньше»), vielä («ещё»). Olen jo lukenut kirjan — правильно, потому что jo не привязано к дате." },
+      note: "The perfect (lesson 11) is the main tense for telling about past experience: olen työskennellyt siellä aikaisemmin, Olen tehnyt kirjanpitäjän töitä, Olen opiskellut taidetta.\nAn important restriction: the perfect is NOT placed next to an exact time reference — eilen, viime viikolla, kaksi tuntia sitten, sinä päivänä. “Eilen olen lukenut kirjan” is a mistake, it should be Luin kirjan eilen. But it combines freely with general words: jo (“already”), ei koskaan / ei ikinä (“never”), kerran (“once”), aikaisemmin and ennen (“earlier”), vielä (“yet”). Olen jo lukenut kirjan is right, because jo is not tied to a date." },
     { w: "työhaastattelu", ru: "собеседование при приёме на работу", en: "job interview",
       forms: ["työhaastattelu", "työhaastatteluun"],
-      note: "Из työ («работа») и haastattelu («интервью»). Saitko kutsun työhaastatteluun? — «Тебя позвали на собеседование?»" },
+      note: "From työ (“work”) and haastattelu (“interview”). Saitko kutsun työhaastatteluun? — “Were you invited to a job interview?”" },
     { w: "myyntityö", ru: "работа в продажах", en: "sales work",
       forms: ["myyntityö", "myyntityöstä", "myynti", "myyjä", "myyntipäällikkö", "suunnittelutyö"],
-      note: "Myynti («продажи») + työ. Годится про всё, что связано с прямыми продажами клиентам — и продавец в магазине, и телемаркетинг. Про руководителя лучше сказать точнее: myyntipäällikkö («начальник отдела продаж»). Первую часть можно менять: suunnittelutyö («проектная работа»)." },
+      note: "Myynti (“sales”) + työ. Works for everything connected with direct sales to customers — both a shop assistant and telemarketing. About a manager it is better to be more precise: myyntipäällikkö (“sales manager”). The first part can be changed: suunnittelutyö (“design work”)." },
     { w: "ruokakauppa", ru: "продуктовый магазин", en: "grocery store",
       forms: ["ruokakauppa", "ruokakaupassa", "kauppa", "kauppaan"],
-      note: "Ruoka («еда») + kauppa («магазин»). Любой магазин с продуктами, от маленькой лавки до гипермаркета. Про закусочную или киоск так не говорят — там noutoravintola или kioski. В речи часто сокращают до просто kauppa: Menen kauppaan («Иду в магазин»)." },
+      note: "Ruoka (“food”) + kauppa (“shop”). Any shop with groceries, from a small store to a hypermarket. It isn’t said about a snack bar or kiosk — there it is noutoravintola or kioski. In speech it is often shortened to just kauppa: Menen kauppaan (“I’m going to the shop”)." },
     { w: "työntekijän ominaisuudet", ru: "качества работника", en: "qualities of an employee",
       forms: ["ahkera", "systemaattinen", "päättäväinen", "luova", "ystävällinen", "miellyttävä", "luotettava", "kurinalainen", "motivoitunut", "joustava", "vilpitön", "menestynyt", "tahdikas", "rehellinen", "innostunut", "reilu", "järjestelmällinen", "looginen", "innovatiivinen", "aito", "tuottelias", "käytännöllinen", "positiivinen", "luonne", "johtajuustaidot", "tiimityöskentelijä", "huumorintaju"],
-      note: "Прилагательные: ahkera («работящий»), systemaattinen («системный»), päättäväinen («решительный»), luova («творческий»), ystävällinen («приветливый»), miellyttävä («приятный»), luotettava («надёжный»), kurinalainen («дисциплинированный»), motivoitunut («мотивированный»), joustava («гибкий»), vilpitön («искренний»), tahdikas («тактичный»), rehellinen («честный»), innostunut («увлечённый»), reilu («справедливый»), järjestelmällinen («методичный»), looginen («логичный»), innovatiivinen, aito («настоящий»), tuottelias («продуктивный»), käytännöllinen («практичный»), positiivinen.\nСуществительные: luonne («характер»), johtajuustaidot («лидерские навыки»), tiimityöskentelijä («командный игрок»), huumorintaju («чувство юмора»), kokemus («опыт»)." },
+      note: "Adjectives: ahkera (“hard-working”), systemaattinen (“systematic”), päättäväinen (“determined”), luova (“creative”), ystävällinen (“friendly”), miellyttävä (“pleasant”), luotettava (“reliable”), kurinalainen (“disciplined”), motivoitunut (“motivated”), joustava (“flexible”), vilpitön (“sincere”), tahdikas (“tactful”), rehellinen (“honest”), innostunut (“enthusiastic”), reilu (“fair”), järjestelmällinen (“methodical”), looginen (“logical”), innovatiivinen (“innovative”), aito (“genuine”), tuottelias (“productive”), käytännöllinen (“practical”), positiivinen (“positive”).\nNouns: luonne (“character”), johtajuustaidot (“leadership skills”), tiimityöskentelijä (“team player”), huumorintaju (“sense of humour”), kokemus (“experience”)." },
     { w: "osa-aikainen", ru: "работающий на неполную ставку", en: "part-time", forms: ["osa-aikainen", "osa-aikaisen", "osa-aikaisena"] },
     { w: "kokemus", ru: "опыт", en: "experience", forms: ["kokemus", "kokemusta"] },
     { w: "aikaisemmin", ru: "раньше, ранее", en: "previously", forms: ["aikaisemmin", "aiemmin"] },
@@ -2161,22 +2157,22 @@ const LESSONS_AB = [
   glossary: [
     { w: "minä olen", ru: "конструкция «я — такой-то»", en: "I am ...",
       forms: ["minä", "olen", "on", "ovat"],
-      note: "Схема простая: Minä olen A. Minä — местоимение «я», olen — форма глагола olla («быть») для первого лица единственного числа, а на месте A всё, что вы хотите о себе сказать: имя, профессия, состояние. Minä olen Helen, Minä olen opettaja, Minä olen iloinen («Я радостный»).\nОдна оговорка: не всякое состояние так выражается. «Мне жарко» или «мне холодно» через minä olen не скажешь — для них есть отдельная конструкция, она встретится позже." },
+      note: "The pattern is simple: Minä olen A. Minä is the pronoun “I”, olen is the form of the verb olla (“to be”) for the first person singular, and in place of A anything you want to say about yourself: a name, a profession, a state. Minä olen Helen, Minä olen opettaja, Minä olen iloinen (“I am cheerful”).\nOne caveat: not every state is expressed this way. “I am hot” or “I am cold” can’t be said with minä olen — there is a separate construction for them, which will come later." },
     { w: "hauska tutustua", ru: "приятно познакомиться", en: "nice to meet you",
       forms: ["hauska", "tutustua", "tavata"],
-      note: "Буквально «приятно познакомиться»: hauska («приятный») + tutustua («знакомиться») в инфинитиве. Как и в русском, это не полное предложение — подлежащего и сказуемого тут нет. Равноправный вариант — Hauska tavata, буквально «приятно встретиться». Говорить это не обязательно, но приятно." },
+      note: "Literally “nice to get acquainted”: hauska (“pleasant”) + tutustua (“to get acquainted”) in the infinitive. As in English, this is not a full sentence — there is no subject or predicate. An equal variant is Hauska tavata, literally “nice to meet”. It is not obligatory to say it, but it is pleasant." },
     { w: "hyvää päivää", ru: "приветствия по времени дня", en: "greetings",
       forms: ["hyvää", "päivää", "huomenta", "iltaa", "yötä", "öitä", "näkemiin", "nähdään", "heippa", "moikka"],
-      note: "Hyvää päivää — из hyvä («хороший») и päivä («день»), оба в падежной форме, но пока это можно не разбирать. Приветствие слегка официальное и годится почти на весь день: примерно с одиннадцати-двенадцати до шести-семи вечера. До полудня говорят Hyvää huomenta («доброе утро»), после шести — Hyvää iltaa («добрый вечер»).\nВажно: всё это говорят ТОЛЬКО при встрече, не при расставании. Расходясь, скажут Näkemiin (официально) или Nähdään, Hei hei, Heippa, Moikka (по-дружески), а перед сном — Hyvää yötä.\nСлово hyvää можно опустить, вежливость почти не пострадает. Правда, если убрать его из Hyvää yötä, то yötä обычно ставят во множественное: Öitä!" },
+      note: "Hyvää päivää — from hyvä (“good”) and päivä (“day”), both in a case form, but for now this can be left unanalysed. The greeting is slightly formal and works for almost the whole day: from about eleven or twelve to six or seven in the evening. Before noon one says Hyvää huomenta (“good morning”), after six — Hyvää iltaa (“good evening”).\nImportant: all of this is said ONLY on meeting, not on parting. When parting one says Näkemiin (formal) or Nähdään, Hei hei, Heippa, Moikka (friendly), and before sleep — Hyvää yötä.\nThe word hyvää can be dropped, politeness hardly suffers. True, if you remove it from Hyvää yötä, yötä is usually put into the plural: Öitä!" },
     { w: "vartalo", ru: "основа слова, к которой клеятся окончания", en: "declension stem",
       forms: ["vartalo"],
-      note: "Почти все финские слова меняются: и глаголы, и существительные, и прилагательные, и местоимения, и числительные берут окончания. Но основа, к которой они клеятся, не всегда совпадает со словарной формой — с инфинитивом у глаголов и с номинативом у остальных. Поэтому основу приходится знать отдельно; в уроках её дают вместе с новым словом." },
+      note: "Almost all Finnish words change: verbs, nouns, adjectives, pronouns and numerals all take endings. But the stem they attach to does not always coincide with the dictionary form — the infinitive for verbs and the nominative for the rest. So the stem has to be learnt separately; in the lessons it is given together with the new word." },
     { w: "äänteet", ru: "буквы и звуки финского", en: "Finnish sounds",
       forms: ["kissa", "järvi", "kengät", "kenkä", "langat", "äiti", "ääni", "pöllö", "löytää", "auto", "hei", "kiitos", "orava", "koulu", "tuuli", "tuli", "kyllä", "yö"],
-      note: "Пишется латиницей, но гласных больше, чем в английском: есть ä, ö и å.\nСогласные: k всегда читается как /k/ — kissa («кошка»); j читается как русское «й» — järvi («озеро»); сочетание nk превращается в звук «нг» при изменении слова: kenkä («ботинок») → kengät («ботинки»), langat («нитки»).\nГласные: å — это «шведское o», встречается только в шведских именах и названиях вроде Åbo и Åland. ä — открытое «э» как в английском cat: äiti («мама»), ääni («звук, голос»). ö — как «ё» без «й»: pöllö («сова»), löytää («находить»). Остальные ближе к русским, чем к английским: a в auto, e в hei, i в kiitos, o в orava («белка») и koulu («школа»), u в tuuli, y — среднее между «у» и «ю», как в kyllä («да») и yö («ночь»)." },
+      note: "Written in the Latin alphabet, but there are more vowels than in English: there are ä, ö and å.\nConsonants: k is always read as /k/ — kissa (“cat”); j is read like English “y” — järvi (“lake”); the combination nk turns into an “ng” sound when the word changes: kenkä (“shoe”) → kengät (“shoes”), langat (“threads”).\nVowels: å is the “Swedish o”, found only in Swedish names and place names like Åbo and Åland. ä is an open “e” as in English cat: äiti (“mother”), ääni (“sound, voice”). ö is like the vowel in “bird” without the r: pöllö (“owl”), löytää (“to find”). The rest are closer to Spanish than to English: a in auto, e in hei, i in kiitos, o in orava (“squirrel”) and koulu (“school”), u in tuuli, y is between “oo” and “ee”, as in kyllä (“yes”) and yö (“night”)." },
     { w: "kaksoiskirjaimet", ru: "двойные буквы: долгий звук меняет смысл", en: "double letters",
       forms: ["kuka", "kukka", "tuli", "tuuli"],
-      note: "Двойная гласная или двойная согласная — это просто долгий звук, но пропустить его нельзя: смысл меняется. Kuka — «кто», а kukka — «цветок». Tuli — «огонь», а tuuli — «ветер». Долготу надо и слышать, и выговаривать." },
+      note: "A double vowel or double consonant is just a long sound, but you can’t skip it: the meaning changes. Kuka — “who”, and kukka — “flower”. Tuli — “fire”, and tuuli — “wind”. Length has to be both heard and pronounced." },
     { w: "hyvä", ru: "хороший", en: "good", forms: ["hyvä", "hyvää", "hyväksi"] },
     { w: "päivä", ru: "день", en: "day", forms: ["päivä", "päivää", "päivän"] },
     { w: "hauska", ru: "приятный, весёлый", en: "pleasant, fun", forms: ["hauska", "hauskaa"] },
@@ -2242,16 +2238,16 @@ const LESSONS_AB = [
   glossary: [
     { w: "yksikön persoonamuodot", ru: "три лица единственного числа", en: "singular verb forms",
       forms: ["olen", "olet", "on", "tulen", "tulet", "tulee"],
-      note: "У финского глагола своя форма для каждого лица — в отличие от английского, где меняется только третье. Берём основу глагола и добавляем окончание: -n для первого лица, -t для второго. В третьем лице окончания нет, зато последний гласный основы удлиняется: tule- → hän tulee.\nminä tulen, sinä tulet, hän tulee. Глагол olla неправильный, его третье лицо надо просто запомнить: minä olen, sinä olet, hän on.\nВажная привычка: раз лицо видно по окончанию, местоимения minä и sinä обычно опускают — Tulen huomenna звучит естественнее, чем Minä tulen huomenna. А вот в третьем лице подлежащее нужно, иначе непонятно, о ком речь." },
+      note: "A Finnish verb has its own form for every person — unlike English, where only the third changes. Take the verb stem and add an ending: -n for the first person, -t for the second. The third person has no ending, but the last vowel of the stem is lengthened: tule- → hän tulee.\nminä tulen, sinä tulet, hän tulee. The verb olla is irregular, its third person simply has to be memorised: minä olen, sinä olet, hän on.\nAn important habit: since the person is visible from the ending, the pronouns minä and sinä are usually dropped — Tulen huomenna sounds more natural than Minä tulen huomenna. In the third person, though, the subject is needed, otherwise it is unclear who is meant." },
     { w: "hän", ru: "он, она", en: "he, she",
       forms: ["hän", "häntä", "hänellä"],
-      note: "Одно местоимение на оба рода: финский в третьем лице мужчин и женщин не различает. Из-за этого финны, говоря по-английски, часто путают he и she — это не невнимательность, а привычка родного языка.\nВ принципе hän только о людях, не о животных, хотя своих питомцев некоторые так называют. В сказках очеловеченных зверей тоже зовут hän." },
+      note: "One pronoun for both genders: Finnish does not distinguish men and women in the third person. Because of this Finns often mix up he and she when speaking English — this is not carelessness but a habit of the mother tongue.\nIn principle hän is only for people, not animals, although some call their pets that. In fairy tales humanised animals are also called hän." },
     { w: "hei ja terve", ru: "неформальные приветствия", en: "casual greetings",
       forms: ["hei", "terve", "moi", "heippa", "moikka", "moro", "tere", "tervetuloa", "tervemenoa"],
-      note: "В уроке 1 были официальные приветствия по времени дня. Hei и terve — попроще, но в деловой обстановке тоже годятся. Hei значит ровно «привет», и больше ничего.\nA у terve есть своё значение — «здоровый». Оно же сидит в слове tervetuloa («добро пожаловать»), где вторая часть — форма глагола tulla («приходить»). Есть и противоположность: tervemenoa, от mennä («уходить»), примерно «скатертью дорога».\nЕщё разговорнее: moi, heippa, moikka, moro, tere." },
+      note: "Lesson 1 had the formal greetings by time of day. Hei and terve are simpler, but also fit a business setting. Hei means exactly “hi”, and nothing more.\nAnd terve has a meaning of its own — “healthy”. It also sits in the word tervetuloa (“welcome”), where the second part is a form of the verb tulla (“to come”). There is an opposite too: tervemenoa, from mennä (“to go”), roughly “good riddance”.\nEven more colloquial: moi, heippa, moikka, moro, tere." },
     { w: "ääntäminen", ru: "как звучит финский", en: "Finnish pronunciation",
       forms: ["ala", "kukka", "sinä", "hieno", "järvi", "joki", "äiti", "isä", "lämmin", "täällä", "yö", "syödä"],
-      note: "Звуков немного: тринадцать согласных (d, g, h, j, k, l, m, n, p, r, s, t, v) и девять гласных (a, e, i, o, u, y, ä, ö, å). Слова строятся из слогов, где гласные и согласные чередуются: a.la, kuk.ka, si.nä. Скоплений согласных вроде английского strength в финском не бывает.\nГлавная ловушка для говорящих по-английски — придыхание. В английском после p, t, k вырывается облачко воздуха («TWO»), в финском его почти нет. Придыхание сразу выдаёт иностранца. Небольшое придыхание есть только у h: hieno («хороший»).\nЗвук j — это русское «й»: järvi («озеро»), joki («река»). Å встречается только в шведских именах и читается как обычное o." },
+      note: "There are few sounds: thirteen consonants (d, g, h, j, k, l, m, n, p, r, s, t, v) and nine vowels (a, e, i, o, u, y, ä, ö, å). Words are built from syllables in which vowels and consonants alternate: a.la, kuk.ka, si.nä. Consonant clusters like English strength do not occur in Finnish.\nThe main trap for English speakers is aspiration. In English a puff of air comes out after p, t, k (“TWO”), in Finnish it is almost absent. Aspiration gives a foreigner away at once. Only h has a slight aspiration: hieno (“fine”).\nThe sound j is like English “y”: järvi (“lake”), joki (“river”). Å occurs only in Swedish names and is read as an ordinary o." },
     { w: "väsynyt", ru: "уставший", en: "tired", forms: ["väsynyt"] },
     { w: "varmaan", ru: "наверное, должно быть", en: "surely, probably", forms: ["varmaan", "varmasti"] },
     { w: "vähän", ru: "немного", en: "a little", forms: ["vähän"] },
@@ -2301,13 +2297,13 @@ const LESSONS_AB = [
   glossary: [
     { w: "mikä ja kuka", ru: "вопросы «что это» и «кто это»", en: "asking what and who",
       forms: ["mikä", "kuka", "mitä"],
-      note: "Берём обычное предложение Tämä on lautanen («Это тарелка») и обозначим его как схему A on B. Чтобы получился вопрос, убираем B и ставим вопросительное слово в начало:\nMikä A on? — «Что такое A?»\nKuka A on? — «Кто такой A?»\nОбратите внимание: в отличие от английского, порядок остальных слов НЕ меняется, ничего переставлять не надо. Просто добавили слово в начало — и готово.\nKuka спрашивает про личность человека: ответом будет имя, должность, «мой начальник». Mikä — про всё остальное." },
+      note: "Take an ordinary sentence Tämä on lautanen (“This is a plate”) and denote it as the pattern A on B. To make a question, remove B and put the question word at the beginning:\nMikä A on? — “What is A?”\nKuka A on? — “Who is A?”\nNote: unlike English, the order of the other words does NOT change, nothing needs rearranging. You just add a word at the beginning — and it’s done.\nKuka asks about a person’s identity: the answer will be a name, a position, “my boss”. Mikä — about everything else." },
     { w: "tämä, tuo, se", ru: "этот, тот, он (по удалённости)", en: "this, that, it",
       forms: ["tämä", "tuo", "se", "tämän", "tuon", "siitä", "sen"],
-      note: "Три указательных местоимения, и выбор зависит от расстояния. Tämä — то, что рядом с говорящим. Tuo — то, что не рядом, но видно; может быть рядом со слушателем. Se — то, что не рядом и видеть его не обязательно.\nTämä и tuo обычно говорят, показывая пальцем, а se — про то, о чём уже была речь, поэтому оно типично для ответов.\nВсе три могут стоять сами по себе (Tämä on punainen — «Это красное») или при существительном (Tämä pallo on punainen — «Этот мяч красный»). Когда они стоят одни, никакого слова-подпорки вроде английского one не нужно: Tuo on liian suuri — «Тот слишком большой».\nВ разговорной речи se говорят и про людей вместо hän. Ничего пренебрежительного в этом нет." },
+      note: "Three demonstrative pronouns, and the choice depends on distance. Tämä — what is near the speaker. Tuo — what is not near but visible; it may be near the listener. Se — what is not near and need not be visible.\nTämä and tuo are usually said while pointing, whereas se is about what has already been mentioned, so it is typical of answers.\nAll three can stand on their own (Tämä on punainen — “This is red”) or with a noun (Tämä pallo on punainen — “This ball is red”). When they stand alone no prop-word like English one is needed: Tuo on liian suuri — “That one is too big”.\nIn colloquial speech se is also said about people instead of hän. There is nothing disparaging in this." },
     { w: "presidentti", ru: "президент (страны)", en: "president",
       forms: ["presidentti"],
-      note: "Уже́, чем русское и английское слово: по-фински так называют почти исключительно главу государства. У руководителей компаний и организаций другие названия." },
+      note: "Narrower than the English word: in Finnish this is almost exclusively how the head of state is called. Heads of companies and organisations have other titles." },
     { w: "lautanen", ru: "тарелка", en: "plate", forms: ["lautanen", "lautasta", "lautas"] },
     { w: "lasi", ru: "стакан; стекло", en: "glass", forms: ["lasi", "lasia"] }
   ],
@@ -2355,16 +2351,16 @@ const LESSONS_AB = [
   glossary: [
     { w: "partitiivi", ru: "партитив: -a/-ä, -ta/-tä, -tta/-ttä", en: "partitive case",
       forms: ["suolaa", "sokeria", "teetä", "lasia", "minua", "lautasta", "häntä", "mitä", "tervettä", "maitoa", "omenaa", "muovia", "apua", "hyvää", "emmiä"],
-      note: "Основное значение — «часть чего-то», по-русски часто «немного»: Tarvitsen sokeria («Мне нужно немного сахара»), Anna Jussille maitoa.\nКакое окончание выбрать. Сначала гармония гласных, потом одно из трёх правил:\n1) основа кончается на один гласный → -a/-ä: lasi → lasia, suola → suolaa, minä → minua;\n2) основа кончается на два гласных или на согласный → -ta/-tä; сюда же почти все местоимения кроме minä и sinä: tee → teetä, lautanen (основа lautas-) → lautasta, hän → häntä, mikä → mitä;\n3) многие слова на -e берут -tta/-ttä: terve → tervettä. Правило нестрогое, эти слова придётся запоминать.\nГде ещё нужен партитив: материал, из которого сделана вещь (Se on sokeria, Tämä lautanen on muovia); объект при глаголах вроде kehua («хвалить») и kiittää («благодарить») — Hän kehuu minua, Jussi kiittää Emmiä; и оценка, какое что-то на вкус или на качество — Tee on hyvää." },
+      note: "The basic meaning — “a part of something”, often “some” in English: Tarvitsen sokeria (“I need some sugar”), Anna Jussille maitoa.\nWhich ending to choose. First vowel harmony, then one of three rules:\n1) the stem ends in one vowel → -a/-ä: lasi → lasia, suola → suolaa, minä → minua;\n2) the stem ends in two vowels or a consonant → -ta/-tä; almost all pronouns except minä and sinä belong here: tee → teetä, lautanen (stem lautas-) → lautasta, hän → häntä, mikä → mitä;\n3) many words in -e take -tta/-ttä: terve → tervettä. The rule is not strict, these words have to be memorised.\nWhere else the partitive is needed: the material a thing is made of (Se on sokeria, Tämä lautanen on muovia); the object with verbs like kehua (“to praise”) and kiittää (“to thank”) — Hän kehuu minua, Jussi kiittää Emmiä; and an assessment of how something tastes or what quality it is — Tee on hyvää." },
     { w: "vokaaliharmonia", ru: "гармония гласных", en: "vowel harmony",
       forms: ["suolaa", "sokeria", "teetä", "häntä", "-han", "-hän"],
-      note: "Гласные делятся на задние (a, o, u) и передние (e, i, y, ä, ö). Если в слове есть хоть один задний гласный, окончание берёт a; если только передние — ä. Suola → suolaa, но tee → teetä.\nЭто касается вообще всех окончаний в финском, не только партитива, так что правило стоит усвоить сразу." },
+      note: "Vowels are divided into back (a, o, u) and front (e, i, y, ä, ö). If a word has at least one back vowel, the ending takes a; if only front vowels — ä. Suola → suolaa, but tee → teetä.\nThis concerns absolutely all endings in Finnish, not only the partitive, so the rule is worth learning right away." },
     { w: "vielä", ru: "ещё; пока не; даже; ещё немного", en: "still, yet, even, more",
       forms: ["vielä"],
-      note: "Слово с широким разбросом значений, всё решает контекст:\nTee on vielä kuumaa — «чай ещё горячий»;\nTee ei ole vielä valmista — «чай ещё не готов»;\nPidän teestä vielä enemmän — «чай мне нравится даже больше»;\nOttaisin vielä teetä — «я бы взял ещё чая»." },
+      note: "A word with a wide spread of meanings, context decides everything:\nTee on vielä kuumaa — “the tea is still hot”;\nTee ei ole vielä valmista — “the tea is not ready yet”;\nPidän teestä vielä enemmän — “I like tea even more”;\nOttaisin vielä teetä — “I would take some more tea”." },
     { w: "tässä", ru: "здесь, тут", en: "here",
       forms: ["tässä"],
-      note: "Целый ряд финских слов — это бывшие существительные и местоимения, застывшие в одной падежной форме и ставшие наречиями. Tässä как раз такое: оно образовано от tämä («этот») и буквально значит «в этом (месте)».\nВ диалоге Sitä on tässä переводится как «Оно здесь», и по-русски это неоднозначно: то же самое «оно» с тем же успехом могло бы значить Hän on täällä — про человека. Sitä — партитив от se и относится к уже упомянутому предмету; hän — только про людей. Перепутать легко, потому что русское местоимение не различает предмет и человека так строго, как финское." },
+      note: "A whole range of Finnish words are former nouns and pronouns frozen in one case form and turned into adverbs. Tässä is exactly such: it is formed from tämä (“this”) and literally means “in this (place)”.\nIn the dialogue Sitä on tässä is translated as “It is here”, and in some languages this is ambiguous: the same “it” could just as well mean Hän on täällä — about a person. Sitä is the partitive of se and refers to an already mentioned object; hän — only to people. It is easy to confuse, because some other languages do not distinguish an object from a person as strictly as Finnish does." },
     { w: "tarvita", ru: "нуждаться, требоваться", en: "to need", forms: ["tarvita", "tarvitsen", "tarvitset"] },
     { w: "entä", ru: "а как насчёт", en: "how about", forms: ["entä"] },
     { w: "sokeri", ru: "сахар", en: "sugar", forms: ["sokeri", "sokeria", "sokeritasoni"] },
@@ -2419,16 +2415,16 @@ const LESSONS_AB = [
   glossary: [
     { w: "mitä kuuluu", ru: "«как дела» и ответы на него", en: "how are you",
       forms: ["kuuluu", "hyvää", "tässähän", "siinähän", "mikäs"],
-      note: "Буквально «что слышно», а по смыслу «как дела» — самый частый вопрос о самочувствии.\nОтветы:\n• Kiitos hyvää — «спасибо, хорошо». Стандартный ответ. Hyvää стоит в партитиве, как и mitä в вопросе. Можно усилить: Kiitos oikein hyvää.\n• Tässähän tämä (menee) — «да ничего». Буквально «вот так вот тут и идёт». Годится и когда всё скучно-обычно, и когда всё плохо, и когда прекрасно, но рассказывать не хочется. Решает интонация, а не слова.\n• Siinähän se (menee) — то же самое, только tässä заменено на siinä, а tämä на se.\n• Mikäs tässä — ещё один уклончивый ответ, сокращение от Mikäs tässä ollessa, примерно «да нормально, держусь»." },
+      note: "Literally “what is heard”, and in meaning “how are you” — the most frequent question about well-being.\nAnswers:\n• Kiitos hyvää — “thank you, fine”. The standard answer. Hyvää is in the partitive, like mitä in the question. It can be strengthened: Kiitos oikein hyvää.\n• Tässähän tämä (menee) — “oh, so-so”. Literally “right here this goes on”. It works both when everything is boringly ordinary, and when everything is bad, and when it’s wonderful but you don’t want to talk about it. Intonation decides, not the words.\n• Siinähän se (menee) — the same, only tässä is replaced by siinä, and tämä by se.\n• Mikäs tässä — another evasive answer, a shortening of Mikäs tässä ollessa, roughly “I’m fine, hanging in there”." },
     { w: "miten menee", ru: "«как идёт» и ответы", en: "how is it going",
       forms: ["miten", "menee", "hyvin", "loistavasti", "koulussa", "töissä", "kotona"],
-      note: "Второй ходовой вопрос. В середину можно вставить область жизни: Miten koulussa menee?, Miten töissä menee?, Miten kotona menee?\nОтветы: Kiitos hyvin, Ihan hyvin, Loistavasti! («блестяще», услышите редко), а также любые уклончивые из предыдущей записи.\nВажная тонкость: на Mitä kuuluu? отвечают hyvää, а на Miten menee? — hyvin. Разница в том, что miten — наречие, значит и в ответе нужно наречие. Ihan hyvin при этом не лучше, чем просто hyvin: это скорее «нормально», чем «отлично».\nЕсть и совсем разговорный вариант вопроса: Kuis hurisee? — буквально «как жужжит». Среди друзей хорошо, в официальной обстановке не стоит.\nОтветив, вежливо спросить в ответ: Entä itsellesi? — «А у тебя как?»" },
+      note: "The second common question. In the middle one can insert an area of life: Miten koulussa menee?, Miten töissä menee?, Miten kotona menee?\nAnswers: Kiitos hyvin, Ihan hyvin, Loistavasti! (“brilliantly”, rarely heard), and any evasive ones from the previous entry.\nAn important subtlety: Mitä kuuluu? is answered with hyvää, and Miten menee? — with hyvin. The difference is that miten is an adverb, so the answer needs an adverb too. Ihan hyvin is no better than just hyvin: it is more “fine” than “great”.\nThere is also a very colloquial variant of the question: Kuis hurisee? — literally “how is it buzzing”. Good among friends, not for formal settings.\nAfter answering, politely ask back: Entä itsellesi? — “And how about you?”" },
     { w: "-han/-hän", ru: "частица усиления и смягчения", en: "emphasis particle",
       forms: ["-han", "-hän", "tässähän", "siinähän", "jussihan", "tämähän", "sehän"],
-      note: "Ещё одна энклитика: приклеивается к концу слова и добавляет оттенок удивления, очевидности или мягкого нажима. Подчиняется гармонии гласных: -han после слов с a, o, u, и -hän после слов только с e, i, y, ä, ö.\nJussihan on tänään iloinen — «Юсси-то сегодня радостный». Tämähän on hyvää! — «Да это же вкусно!»" },
+      note: "Another enclitic: it is attached to the end of a word and adds a shade of surprise, obviousness or gentle pressure. It obeys vowel harmony: -han after words with a, o, u, and -hän after words with only e, i, y, ä, ö.\nJussihan on tänään iloinen — “Jussi is cheerful today, isn’t he”. Tämähän on hyvää! — “But this is delicious!”" },
     { w: "kuulua", ru: "быть слышным, доноситься", en: "to be heard",
       forms: ["kuulua", "kuuluu", "kuulla", "kuulee"],
-      note: "Родственно глаголу kuulla («слышать»), но подлежащее у них разное. У kuulla подлежащее — тот, кто слышит: Kalle kuulee jyrinää («Калле слышит грохот»). У kuulua подлежащее — сам звук, а кто его слышит, обычно вообще не упоминается: Kuuluu jyrinää («Слышится грохот»)." },
+      note: "Related to the verb kuulla (“to hear”), but the subject is different. With kuulla the subject is the one who hears: Kalle kuulee jyrinää (“Kalle hears a rumble”). With kuulua the subject is the sound itself, and who hears it is usually not mentioned at all: Kuuluu jyrinää (“A rumble can be heard”)." },
     { w: "itse", ru: "сам", en: "self", forms: ["itse", "itsellesi"] },
     { w: "ihan", ru: "совсем, вполне", en: "quite, totally", forms: ["ihan"] },
     { w: "hyvin", ru: "хорошо (наречие)", en: "well", forms: ["hyvin"] },
@@ -2479,16 +2475,16 @@ const LESSONS_AB = [
   glossary: [
     { w: "-ko/-kö", ru: "частица вопроса «да/нет»", en: "yes/no question particle",
       forms: ["onko", "otatko", "tarvitsetko", "sinäkö", "suolaako", "oletko"],
-      note: "До сих пор вопросы строились со словом mikä или kuka, и ответом было что-то конкретное. Теперь — вопрос, на который отвечают «да» или «нет».\nСхема простая: слово, о котором спрашивают, переносится в начало предложения, и к нему приклеивается -ko или -kö по гармонии гласных. Возьмём Tämä on sokeria («Это сахар»). Хотим спросить — Onko tämä sokeria?\nВажная особенность: -ko можно приклеить почти к любому слову, и именно оно окажется предметом вопроса. Sinäkö tarvitset suolaa? — «Это ты нуждаешься в соли?» (акцент на «ты»). Suolaako se on? — «А, так это соль? (а я думал — сахар)». Английский так гибко не умеет, поэтому переводы иногда получаются длиннее оригинала." },
+      note: "Until now the questions were built with the word mikä or kuka, and the answer was something specific. Now — a question answered with “yes” or “no”.\nThe pattern is simple: the word being asked about is moved to the beginning of the sentence, and -ko or -kö is attached to it by vowel harmony. Take Tämä on sokeria (“This is sugar”). We want to ask — Onko tämä sokeria?\nAn important feature: -ko can be attached to almost any word, and that is what becomes the subject of the question. Sinäkö tarvitset suolaa? — “Is it YOU who needs salt?” (stress on “you”). Suolaako se on? — “Oh, so it’s salt? (I thought it was sugar)”. English isn’t as flexible, so translations are sometimes longer than the original." },
     { w: "saisinko", ru: "можно мне...? — вежливая просьба", en: "may I have...?",
       forms: ["saisinko", "saada"],
-      note: "Стандартная вежливая формула, от глагола saada («получать») плюс -ko. Разбирать её по частям пока рано — проще выучить как готовое выражение. Если по-английски вопрос звучал бы с «some» вместо «a/the», объект ставится в партитив: Saisinko maitoa? — «Можно мне (немного) молока?»" },
+      note: "A standard polite formula, from the verb saada (“to get”) plus -ko. It is too early to analyse it part by part — it is easier to learn as a ready expression. If in English the question would have “some” instead of “a/the”, the object goes into the partitive: Saisinko maitoa? — “May I have (some) milk?”" },
     { w: "ole hyvä", ru: "пожалуйста (при вручении чего-то)", en: "here you are",
       forms: ["ole hyvä", "eipä kestä", "ole ystävällinen"],
-      note: "Буквально «будь хорошим», а по смыслу — «вот, пожалуйста» при передаче чего-то. Получивший говорит Kiitos, а дающий может ответить Eipä kestä («не за что»). За столом Eipä kestä не нужен — только когда подарили что-то или оказали услугу. В кругу семьи за обедом даже Ole hyvä часто опускают.\nЕсть похожая по звучанию, но другая по смыслу фраза Ole ystävällinen («будь любезен») — она не про вручение вещи, а формальный аналог «пожалуйста» в просьбах, встречается на бланках и в инструкциях." },
+      note: "Literally “be good”, and in meaning “here you are” when handing something over. The receiver says Kiitos, and the giver can answer Eipä kestä (“don’t mention it”). At the table Eipä kestä is not needed — only when something was given as a present or a favour was done. In the family circle at dinner even Ole hyvä is often omitted.\nThere is a similar-sounding but different phrase Ole ystävällinen (“be so kind”) — it is not about handing over an object but a formal analogue of “please” in requests, found on forms and in instructions." },
     { w: "otatko", ru: "не хотите ли...? (предложить угощение)", en: "would you like...?",
       forms: ["otatko", "haluaisitko", "saisiko olla"],
-      note: "Буквально «берёшь ли ты», самый простой и нейтральный способ предложить угощение за столом: Otatko teetä vai kahvia? По нарастанию вежливости: Otatko...? → Haluaisitko...? («не хотел бы ты...») → Saisiko olla...? («как насчёт...»)." },
+      note: "Literally “do you take”, the simplest and most neutral way to offer something at the table: Otatko teetä vai kahvia? In increasing politeness: Otatko...? → Haluaisitko...? (“would you like...”) → Saisiko olla...? (“how about...”)." },
     { w: "päärynä", ru: "груша", en: "pear", forms: ["päärynä", "päärynät", "päärynää"] },
     { w: "salaatti", ru: "салат", en: "salad", forms: ["salaatti", "salaattia"] },
     { w: "omena", ru: "яблоко", en: "apple", forms: ["omena", "omenaa"] },
@@ -2542,16 +2538,16 @@ const LESSONS_AB = [
   glossary: [
     { w: "koko fraasi partitiivissa", ru: "весь оборот в партитиве целиком", en: "whole phrase in the partitive",
       forms: ["tätä vihreää salaattia", "kylmää mustaa kahvia", "tuota sinistä lasia", "sitä herkullista mustikkapiirakkaa"],
-      note: "Пока мы ставили в партитив одно слово. Но часто хочется сказать что-то вроде «этот прекрасный домашний финский черничный пирог» — и тут есть одно простое правило: ВСЕ слова, которые описывают существительное, получают то же самое окончание, что и оно само.\nПорядок такой: сначала указательное местоимение (tämä, tuo, se), если оно есть, затем прилагательные, и в конце — само существительное.\ntämä vihreä salaatti («этот зелёный салат», основы tä-, vihreä-, salaatti-) → tätä vihreää salaattia.\nkylmä musta kahvi («холодный чёрный кофе») → kylmää mustaa kahvia.\nkaunis lautanen («красивая тарелка», основа lautas-) → kaunista lautasta." },
+      note: "So far we have put one word into the partitive. But often you want to say something like “this wonderful homemade Finnish blueberry pie” — and there is one simple rule: ALL the words that describe the noun get the same ending as the noun itself.\nThe order is: first the demonstrative pronoun (tämä, tuo, se), if there is one, then the adjectives, and at the end the noun itself.\ntämä vihreä salaatti (“this green salad”, stems tä-, vihreä-, salaatti-) → tätä vihreää salaattia.\nkylmä musta kahvi (“cold black coffee”) → kylmää mustaa kahvia.\nkaunis lautanen (“a beautiful plate”, stem lautas-) → kaunista lautasta." },
     { w: "pituus partitiivissa", ru: "долгота звука в партитиве", en: "sound length in the partitive",
       forms: ["suolaa", "päivää", "hyvää", "omenaa", "teetä", "perhettä", "miestä", "sädettä"],
-      note: "Произносительная тонкость. Если слово в словарной форме кончается на короткий a или ä, в партитиве этот звук становится долгим: suola → suolaa, päivä → päivää, hyvä → hyvää, omena → omenaa. Качество звука не меняется — просто тянется дольше.\nТо же самое касается и долготы согласных: tee → teetä, perhe → perhettä, mies → miestä, säde → sädettä. Пар слов, где из-за неправильной долготы менялся бы смысл, немного, но для естественного звучания разницу стоит соблюдать." },
+      note: "A pronunciation subtlety. If a word in the dictionary form ends in a short a or ä, in the partitive this sound becomes long: suola → suolaa, päivä → päivää, hyvä → hyvää, omena → omenaa. The quality of the sound doesn’t change — it is just held longer.\nThe same concerns the length of consonants: tee → teetä, perhe → perhettä, mies → miestä, säde → sädettä. There are few pairs of words where the meaning would change because of wrong length, but for natural sound the difference is worth observing." },
     { w: "herkullinen", ru: "вкусный, аппетитный", en: "delicious",
       forms: ["herkullinen", "herkullista", "herkullisia"],
-      note: "Hyvä («хороший», в том числе о еде) уже знакомо. Herkullinen — сильнее, но только о еде: не скажешь herkullinen фильм или herkullinen человек, только про вкус." },
+      note: "Hyvä (“good”, including about food) is already familiar. Herkullinen is stronger, but only about food: you can’t say a herkullinen film or a herkullinen person, only about taste." },
     { w: "mustikkapiirakka", ru: "черничный пирог", en: "blueberry pie",
       forms: ["mustikkapiirakka", "mustikkapiirakkaa"],
-      note: "Составное слово: mustikka («черника») + piirakka («пирог»). Финский охотно склеивает слова в одно — это очень продуктивный способ образования новых. Финский черничный пирог обычно не такой, как ожидает англоговорящий от слова «pie»: чаще без верхней корочки, похож на плоский бисквит с рассыпанной по верху черникой." },
+      note: "A compound word: mustikka (“blueberry”) + piirakka (“pie”). Finnish readily glues words into one — this is a very productive way of forming new ones. A Finnish blueberry pie is usually not what an English speaker expects from the word “pie”: more often without a top crust, resembling a flat sponge with blueberries scattered over it." },
     { w: "lisää", ru: "ещё, больше", en: "more", forms: ["lisää"] },
     { w: "mutta", ru: "но", en: "but", forms: ["mutta"] },
     { w: "myös", ru: "тоже, также", en: "also", forms: ["myös"] },
@@ -2609,16 +2605,16 @@ const LESSONS_AB = [
   glossary: [
     { w: "inessiivi", ru: "инессив: -ssa/-ssä, «в чём-то»", en: "the inessive case",
       forms: ["keittiössä", "kuivauskaapissa", "kaapissa", "mukissa", "puhelimessa", "heinäkuussa"],
-      note: "Показывает, где что-то находится — буквально «внутри». Окончание -ssa/-ssä, без вариантов кроме гармонии гласных.\nСложность в другом: у многих слов ДВЕ основы. Одна кончается на гласный, другая — на согласный. Партитив, который мы учили раньше, берёт согласную основу; инессив и почти все остальные падежи — гласную. Так и должно быть: финский не терпит скоплений согласных вроде *väsynytssä, поэтому перед -ssa всегда нужен гласный.\nПримеры с одной основой: lasi → lasia (партитив), lasissa (инессив) — обе от lasi-. С двумя основами: väsynyt → väsynyttä (от väsynyt-), но väsyneessä (от väsynee-); lautanen → lautasta (от lautas-), но lautasessa (от lautase-).\nЗначение не только про физическое место. Ещё — с названиями месяцев (Heinäkuussa poimin mustikoita — «В июле я собираю чернику»), для повторяющихся действий, для отвлечённых состояний (Minussa ei ole mitään vikaa — «Со мной всё в порядке», буквально «во мне нет никакого изъяна»), и в конструкции длящегося действия: Olen juuri syömässä («Я как раз ем»)." },
+      note: "Shows where something is — literally “inside”. The ending is -ssa/-ssä, with no variants except vowel harmony.\nThe difficulty is something else: many words have TWO stems. One ends in a vowel, the other in a consonant. The partitive we learnt earlier takes the consonant stem; the inessive and almost all the other cases — the vowel one. It must be so: Finnish does not tolerate consonant clusters like *väsynytssä, so a vowel is always needed before -ssa.\nExamples with one stem: lasi → lasia (partitive), lasissa (inessive) — both from lasi-. With two stems: väsynyt → väsynyttä (from väsynyt-), but väsyneessä (from väsynee-); lautanen → lautasta (from lautas-), but lautasessa (from lautase-).\nThe meaning is not only about a physical place. It is also used with names of months (Heinäkuussa poimin mustikoita — “In July I pick blueberries”), for repeated actions, for abstract states (Minussa ei ole mitään vikaa — “There’s nothing wrong with me”, literally “in me there is no defect”), and in the construction of an ongoing action: Olen juuri syömässä (“I am just eating”)." },
     { w: "päin", ru: "в сторону; примерно в районе", en: "towards; in the approximate area of",
       forms: ["päin", "missä päin", "tuolla päin"],
-      note: "С наречием места добавляет смысл «-то, где-то там»: missä päin — «где именно, в каком районе», tuolla päin — «там где-то»." },
+      note: "With an adverb of place it adds the sense of “-ish, somewhere around”: missä päin — “where exactly, in which area”, tuolla päin — “over there somewhere”." },
     { w: "tietää", ru: "знать (сведения)", en: "to know",
       forms: ["tietää", "tiedän", "tiedätkö", "tiesi"],
-      note: "Значит «располагать сведениями о чём-то». Про человека — не обязательно знать его лично, достаточно знать что-то о нём, например имя. Обратите внимание на чередование: hän tietää, но minä tiedän — то же самое t → d, что в äiti → äidin." },
+      note: "Means “to have information about something”. About a person — you don’t have to know them personally, it is enough to know something about them, for example the name. Note the gradation: hän tietää, but minä tiedän — the same t → d as in äiti → äidin." },
     { w: "eipä kestä", ru: "не за что, пожалуйста", en: "you're welcome, don't mention it",
       forms: ["eipä kestä"],
-      note: "Ответ на «спасибо» за услугу или подарок. За столом при передаче еды не нужен — там своего Kiitos достаточно." },
+      note: "The answer to “thank you” for a service or a gift. At the table when passing food it is not needed — there a plain Kiitos is enough." },
     { w: "keittiö", ru: "кухня", en: "kitchen", forms: ["keittiö", "keittiössä", "keittiötä"] },
     { w: "kaappi", ru: "шкаф, шкафчик", en: "cabinet, cupboard", forms: ["kaappi", "kaapissa", "kaappia", "kuivauskaappi"] },
     { w: "muki", ru: "кружка", en: "mug", forms: ["muki", "mukini", "mukissa", "mukia"] },
@@ -2679,19 +2675,19 @@ const LESSONS_AB = [
   glossary: [
     { w: "genetiivi", ru: "генитив: -n, принадлежность", en: "the genitive case",
       forms: ["isän", "äidin", "Jussin", "muki-n", "väsyneen", "lautasen", "sinisen"],
-      note: "Основное значение — принадлежность: Jussin muki («кружка Юсси»), точно как в русском притяжательном. «Хозяин» стоит в генитиве.\nОкончание для единственного числа — просто -n, и, как и в инессиве, оно клеится к гласной основе: muki → mukin, isä → isän. У слов с двумя основами: väsynyt → väsyneen, lautanen → lautasen, sininen → sinisen." },
+      note: "The basic meaning — possession: Jussin muki (“Jussi’s mug”), just like the English possessive. The “owner” stands in the genitive.\nThe ending for the singular is simply -n and, as in the inessive, it attaches to the vowel stem: muki → mukin, isä → isän. For words with two stems: väsynyt → väsyneen, lautanen → lautasen, sininen → sinisen." },
     { w: "astevaihtelu", ru: "чередование ступеней согласных k, p, t", en: "consonant gradation",
       forms: ["presidentin", "salaatin", "piirakan", "kaapin", "äidin", "maidon", "tiedän"],
-      note: "Если внимательно смотреть таблицы основ, видно кое-что странное: слова, у которых должна быть только одна основа, вдруг имеют две. Это явление — чередование ступеней, и касается оно согласных k, p, t, когда после них идёт окончание, начинающееся с двух согласных (как -ssa) или состоящее из одного согласного (как -n).\nГлавные замены: -kk-, -pp-, -tt- переходят в -k-, -p-, -t-: presidentti → presidentin, presidentissä; salaatti → salaatin, salaatissa; piirakka → piirakan, piirakassa; kaappi → kaapin, kaapissa.\n-t- переходит в -d-: äiti → äidin, äidissä; maito → maidon, maidossa; tietää → tiedän, tiedät (это касается и глаголов в 1-м и 2-м лице! А вот 3-е лицо не меняется: hän tietää).\nЭто происходит почти постоянно, потому что многих окончаний это касается. Недавние заимствования и имена иногда чередованию не подчиняются: auto → auton, autossa, а не *audon.\nС этого урока у слов, подверженных чередованию, в словаре будет указана и вторая основа — в скобках, отдельно от остальных." },
+      note: "If you look carefully at the stem tables, you see something strange: words that should have only one stem suddenly have two. This phenomenon is consonant gradation, and it concerns the consonants k, p, t when they are followed by an ending that begins with two consonants (like -ssa) or consists of one consonant (like -n).\nThe main replacements: -kk-, -pp-, -tt- turn into -k-, -p-, -t-: presidentti → presidentin, presidentissä; salaatti → salaatin, salaatissa; piirakka → piirakan, piirakassa; kaappi → kaapin, kaapissa.\n-t- turns into -d-: äiti → äidin, äidissä; maito → maidon, maidossa; tietää → tiedän, tiedät (this concerns verbs in the 1st and 2nd person too! But the 3rd person doesn’t change: hän tietää).\nThis happens almost constantly, because many endings are affected. Recent loanwords and names sometimes do not obey gradation: auto → auton, autossa, not *audon.\nFrom this lesson on, for words subject to gradation the dictionary also gives the second stem — in brackets, separately from the rest." },
     { w: "sukulaissanat", ru: "родственники: словарь семьи", en: "family vocabulary",
       forms: ["isoäiti", "isoisä", "isoisoäiti", "isotäti", "isosisko", "isoveli", "tytär", "pikkusisko", "pikkuveli", "setä", "eno", "täti", "serkku", "lapsi", "lapsenlapsi", "veljenpoika", "siskonpoika", "anoppi", "appi", "miniä", "vävy", "äitipuoli", "sisarpuoli"],
-      note: "isoäiti («бабушка») и isoisä («дедушка») строятся так же, как в русском: iso («большой») + äiti/isä. Чтобы уйти на поколение дальше, просто добавляют ещё iso: isoisoäiti («прабабушка»). Так же образуются isotäti («двоюродная бабушка»), а ещё старшие братья и сёстры: isosisko, isoveli.\nОстальные родственники: tytär («дочь»; «девочка» — отдельное слово, tyttö), pikkusisko/pikkuveli («младшие сестра/брат»), setä («брат отца, муж тёти, или вообще незнакомый мужчина»), eno («брат матери»), täti («тётя или незнакомая женщина»), serkku («двоюродный брат/сестра»), lapsi («ребёнок»), lapsenlapsi («внук/внучка»), veljenpoika/siskonpoika («племянник»), veljentytär/siskontytär («племянница»), anoppi («свекровь/тёща»), appi («свёкор/тесть»), miniä («невестка»), vävy («зять»). Приставка -puoli значит «сводный»: äitipuoli («мачеха»), sisarpuoli («сводная сестра»)." },
+      note: "isoäiti (“grandmother”) and isoisä (“grandfather”) are built in the same way as in other languages: iso (“big”) + äiti/isä. To go back one more generation, you simply add another iso: isoisoäiti (“great-grandmother”). Similarly formed are isotäti (“great-aunt”), and also older brothers and sisters: isosisko, isoveli.\nOther relatives: tytär (“daughter”; “girl” is a separate word, tyttö), pikkusisko/pikkuveli (“younger sister/brother”), setä (“father’s brother, an aunt’s husband, or in general an unfamiliar man”), eno (“mother’s brother”), täti (“aunt or an unfamiliar woman”), serkku (“cousin”), lapsi (“child”), lapsenlapsi (“grandchild”), veljenpoika/siskonpoika (“nephew”), veljentytär/siskontytär (“niece”), anoppi (“mother-in-law”), appi (“father-in-law”), miniä (“daughter-in-law”), vävy (“son-in-law”). The element -puoli means “step-”: äitipuoli (“stepmother”), sisarpuoli (“stepsister”)." },
     { w: "vieressä", ru: "рядом с (+ генитив)", en: "next to",
       forms: ["vieressä", "vieri", "viere-"],
-      note: "«Рядом с чем-то» — предмет ставится в генитив, а само vieressä не меняется: isoäidin vieressä («рядом с бабушкой»). Как и missä/tässä/tuossa/siinä, vieressä — это застывшая падежная форма существительного vieri («бок, сторона»)." },
+      note: "“Next to something” — the object goes into the genitive, and vieressä itself doesn’t change: isoäidin vieressä (“next to grandmother”). Like missä/tässä/tuossa/siinä, vieressä is a frozen case form of the noun vieri (“side”)." },
     { w: "sisko", ru: "сестра (разговорное)", en: "sister",
       forms: ["sisko", "siskon", "sisar"],
-      note: "Разговорный вариант официального sisar (пришедшего от шведского syster, того же корня, что и английское sister)." },
+      note: "A colloquial variant of the official sisar (which came from Swedish syster, the same root as English sister)." },
     { w: "veli", ru: "брат", en: "brother", forms: ["veli", "veljen", "veljensä"] },
     { w: "poika", ru: "сын; мальчик", en: "son; boy", forms: ["poika", "pojan", "poikaa"] },
     { w: "iso", ru: "большой", en: "big", forms: ["iso", "ison"] }
@@ -2748,16 +2744,16 @@ const LESSONS_AB = [
   glossary: [
     { w: "kansallisuudet", ru: "национальности: страна + -lainen/-läinen", en: "nationalities",
       forms: ["suomalainen", "ruotsalainen", "venäläinen", "norjalainen", "virolainen", "saksalainen", "englantilainen", "ranskalainen", "italialainen", "espanjalainen", "unkarilainen", "kiinalainen", "japanilainen", "australialainen", "kanadalainen", "amerikkalainen"],
-      note: "Название национальности почти всегда получается из названия страны прибавлением -lainen/-läinen. Suomi → suomalainen, Ruotsi → ruotsalainen, Saksa → saksalainen, Ranska → ranskalainen. Исключений с небольшой заменой основы всего три: suomi, ruotsi и venäjä (финский, шведский, русский языки).\nВажная особенность: в финском нет отдельных слов для «финский» (прилагательное) и «финн» (человек) — одно и то же прилагательное suomalainen работает и так, и так. И национальности, и языки пишутся со строчной буквы, не с заглавной." },
+      note: "The name of a nationality is almost always formed from the name of the country by adding -lainen/-läinen. Suomi → suomalainen, Ruotsi → ruotsalainen, Saksa → saksalainen, Ranska → ranskalainen. There are only three exceptions with a small change of stem: suomi, ruotsi and venäjä (the Finnish, Swedish and Russian languages).\nAn important feature: Finnish has no separate words for “Finnish” (adjective) and “a Finn” (person) — the same adjective suomalainen works both ways. And both nationalities and languages are written with a lowercase letter, not a capital." },
     { w: "kielten nimet", ru: "названия языков — как страна, без -lainen", en: "language names",
       forms: ["suomi", "ruotsi", "venäjä", "englanti", "saksa", "ranska", "espanja", "kiina", "japani"],
-      note: "Если у страны один официальный язык, его название обычно совпадает с названием страны: Ranska («Франция») — ranska («французский язык»). Puhutko suomea? — «Ты говоришь по-фински?» Языки тоже со строчной буквы." },
+      note: "If a country has one official language, its name usually coincides with the name of the country: Ranska (“France”) — ranska (“the French language”). Puhutko suomea? — “Do you speak Finnish?” Languages are also written with a lowercase letter." },
     { w: "käydä koulua", ru: "ходить в школу (регулярно)", en: "to go to a school",
       forms: ["käydä", "käyn", "käyt", "käy"],
-      note: "Käydä значит «сходить и вернуться» или «делать что-то регулярно, но не постоянно». Käyn huomenna äidin luona («Завтра схожу к маме») — про один раз; Käyn suomalaista koulua («Я хожу в финскую школу») — про постоянную привычку." },
+      note: "Käydä means “to go and come back” or “to do something regularly but not constantly”. Käyn huomenna äidin luona (“Tomorrow I’ll go to see my mother”) — about one time; Käyn suomalaista koulua (“I attend a Finnish school”) — about a permanent habit." },
     { w: "vaihto-oppilas", ru: "студент по обмену", en: "exchange student",
       forms: ["vaihto-oppilas", "vaihto-oppilaan"],
-      note: "Vaihto («обмен») + oppilas («ученик»). Обратите внимание на дефис: в сложном слове его ставят, если последняя гласная первого слова совпадает с первой гласной второго — на письме показывает границу между словами, а при произношении там короткая пауза в горле." },
+      note: "Vaihto (“exchange”) + oppilas (“pupil”). Note the hyphen: in a compound word it is put when the last vowel of the first word coincides with the first vowel of the second — in writing it shows the boundary between the words, and in pronunciation there is a short pause in the throat." },
     { w: "erilainen", ru: "другой, отличающийся", en: "different", forms: ["erilainen", "erilaista"] },
     { w: "vaikea", ru: "трудный", en: "difficult", forms: ["vaikea", "vaikeaa"] },
     { w: "kovin", ru: "очень", en: "very", forms: ["kovin"] },
@@ -2812,14 +2808,14 @@ const LESSONS_AB = [
   glossary: [
     { w: "kieltoverbi", ru: "отрицательный глагол ei: спрягается сам", en: "the negative verb",
       forms: ["en tiedä", "et tiedä", "ei tiedä", "en tarvitse", "et tarvitse", "ei tarvitse", "en käy", "et käy", "ei käy", "en ole", "et ole", "ei ole"],
-      note: "Ei — это тоже глагол, хоть и неполный. Он спрягается по лицам, а не основной глагол: минимальный набор окончаний забирает именно он. Основной глагол при этом остаётся голой основой — той же самой, что используется в 1-м и 2-м лице утверждения, и одинаковой для ВСЕХ лиц в отрицании, даже если в утверждении у 3-го лица была другая основа.\nminä tiedän → minä en tiedä; sinä tiedät → sinä et tiedä; hän tietää → hän ei tiedä (у утверждения tietää другая основа, а у отрицания — та же, что у tiedän).\nminä tarvitsen → en tarvitse; minä käyn → en käy; minä olen → en ole." },
+      note: "Ei is also a verb, albeit an incomplete one. It is conjugated by person, and not the main verb: the minimal set of endings is taken by it. The main verb stays a bare stem — the same one used in the 1st and 2nd person of the affirmative, and identical for ALL persons in the negative, even if the affirmative 3rd person had a different stem.\nminä tiedän → minä en tiedä; sinä tiedät → sinä et tiedä; hän tietää → hän ei tiedä (the affirmative tietää has a different stem, and the negative has the same one as tiedän).\nminä tarvitsen → en tarvitse; minä käyn → en käy; minä olen → en ole." },
     { w: "millainen", ru: "какой, какого рода", en: "what kind of", forms: ["millainen", "millaista"] },
     { w: "kaivata", ru: "нуждаться в чём-то; скучать по чему-то", en: "to need, to miss",
       forms: ["kaivata", "kaipaan", "kaipaa"],
-      note: "Два значения сразу: «нуждаться» (En kaivannut neuvoja — «Мне не нужны были советы») и «скучать, недоставать» (En kaipaa sadetta — «Мне не хватает дождя», то есть я по нему не скучаю)." },
+      note: "Two meanings at once: “to need” (En kaivannut neuvoja — “I didn’t need advice”) and “to miss, to lack” (En kaipaa sadetta — “I don’t miss the rain”)." },
     { w: "sateenvarjo", ru: "зонт", en: "umbrella",
       forms: ["sateenvarjo", "sateenvarjoa"],
-      note: "Sade («дождь», генитив sateen) + varjo («тень»). Буквально «тень дождя». По тому же образцу — päivänvarjo, «зонт от солнца»." },
+      note: "Sade (“rain”, genitive sateen) + varjo (“shadow”). Literally “shadow of the rain”. On the same model — päivänvarjo, “parasol”." },
     { w: "ennuste", ru: "прогноз", en: "forecast", forms: ["ennuste", "ennustetta"] },
     { w: "sataa", ru: "идти (об осадках)", en: "to rain", forms: ["sataa", "sada", "satoi"] },
     { w: "sää", ru: "погода", en: "weather", forms: ["sää", "säätä"] },
@@ -2880,10 +2876,10 @@ const LESSONS_AB = [
   glossary: [
     { w: "objektin sija", ru: "падеж объекта: партитив против генитива", en: "the case of the object",
       forms: ["pianoa", "pianon", "omenaa", "omenan", "jalkapalloa", "jalkapallon", "kirjaa", "kirjan"],
-      note: "У объекта в финском может быть один из четырёх падежей: партитив, генитив, аккузатив или номинатив. Аккузатив бывает только у некоторых местоимений, номинатив — в конструкциях, которых мы ещё не проходили, так что пока — партитив против генитива, и разница в смысле принципиальная: часть против целого.\nОбъект в ПАРТИТИВЕ, когда: действие привычное или длящееся; действие затрагивает только часть предмета; глагол в отрицании.\nОбъект в ГЕНИТИВЕ, когда: действие завершено или завершится в определённый момент; действие затрагивает предмет целиком; глагол утвердительный.\nSoitan pianoa («Я играю на пианино» — процесс) — En osta pianoa («Не куплю пианино» — отрицание) — Ostan pianon («Куплю пианино» — завершённое действие). Osaan soittaa Finlandiaa («Умею играть кусок Финляндии») — Osaan soittaa Finlandian («Умею играть Финляндию целиком»)." },
+      note: "The object in Finnish can be in one of four cases: partitive, genitive, accusative or nominative. The accusative occurs only with some pronouns, the nominative in constructions we haven’t covered yet, so for now — partitive versus genitive, and the difference in meaning is fundamental: part versus whole.\nThe object is in the PARTITIVE when: the action is habitual or ongoing; the action affects only part of the object; the verb is negated.\nThe object is in the GENITIVE when: the action is completed or will be completed at a definite moment; the action affects the object entirely; the verb is affirmative.\nSoitan pianoa (“I play the piano” — a process) — En osta pianoa (“I won’t buy a piano” — negation) — Ostan pianon (“I will buy a piano” — a completed action). Osaan soittaa Finlandiaa (“I can play a bit of Finlandia”) — Osaan soittaa Finlandian (“I can play the whole of Finlandia”)." },
     { w: "soittaa vs pelata", ru: "«играть»: на инструменте — иначе, чем в игру", en: "to play: instrument vs game",
       forms: ["soittaa", "soitan", "pelata", "pelaan"],
-      note: "В английском одно слово play на всё. В финском — два разных: soittaa для инструментов (и телефона), pelata для спорта и игр. Soitan kitaraa («Играю на гитаре»), но Pelaan jalkapalloa («Играю в футбол»)." },
+      note: "English has one word play for everything. Finnish has two different ones: soittaa for instruments (and the phone), pelata for sports and games. Soitan kitaraa (“I play the guitar”), but Pelaan jalkapalloa (“I play football”)." },
     { w: "muuten", ru: "кстати, между прочим", en: "by the way", forms: ["muuten"] },
     { w: "harrastaa", ru: "заниматься чем-то как хобби", en: "to do as a hobby", forms: ["harrastaa", "harrastat", "harrasti"] },
     { w: "kitara", ru: "гитара", en: "guitar", forms: ["kitara", "kitaraa", "kitaran"] },
@@ -2891,7 +2887,7 @@ const LESSONS_AB = [
     { w: "uida", ru: "плавать", en: "to swim", forms: ["uida", "uin", "ui"] },
     { w: "sähly", ru: "флорбол (по-домашнему)", en: "floorball",
       forms: ["sähly", "sählyä", "salibandy"],
-      note: "Разновидность хоккея в зале, очень популярная в Финляндии — часто просто ради удовольствия среди друзей или коллег. Более организованный и соревновательный вариант называется salibandy (произносится как «салибенди»). Формально у них разные правила, но в быту sähly говорят про любую неформальную игру клюшками и мячиком." }
+      note: "A kind of indoor hockey, very popular in Finland — often just for fun among friends or colleagues. A more organised and competitive variant is called salibandy (pronounced “salibandy”). Formally they have different rules, but in everyday life sähly is said about any informal game with sticks and a ball." }
   ],
   items: [
     { fi: "Mitä sinä harrastat?", ru: "Какие у тебя увлечения?", en: "What hobbies do you have?", k: "d", who: "Emmi" },
@@ -2944,19 +2940,19 @@ const LESSONS_AB = [
   glossary: [
     { w: "imperatiivi sinä-muoto", ru: "повелительное для «ты»: голая основа", en: "second person singular imperative",
       forms: ["mene", "odota", "anna", "tule", "älä unohda", "soita", "lue", "ota"],
-      note: "Формула проще некуда: берём основу глагола, ту же, что для 1-го и 2-го лица утверждения, и убираем окончание. Всё.\nmennä → sinä menet → mene! («иди!»); odottaa → sinä odotat → odota! («жди!»); antaa → sinä annat → anna! («дай!»); tulla → sinä tulet → tule! («приходи!»).\nОтрицание строится через älä (это форма отрицательного глагола ei для «ты») перед той же голой основой: unohtaa → sinä et unohda → älä unohda! («не забудь!»).\nВ повелительных предложениях у «ты» никогда нет подлежащего — оно просто не нужно. Даже когда в диалоге звучит Jussi, anna tuo kirja, слово Jussi — это не подлежащее, а просто способ привлечь его внимание перед просьбой." },
+      note: "The formula couldn’t be simpler: take the verb stem, the same as for the 1st and 2nd person of the affirmative, and remove the ending. That’s all.\nmennä → sinä menet → mene! (“go!”); odottaa → sinä odotat → odota! (“wait!”); antaa → sinä annat → anna! (“give!”); tulla → sinä tulet → tule! (“come!”).\nThe negative is built with älä (the form of the negative verb ei for “you”) before the same bare stem: unohtaa → sinä et unohda → älä unohda! (“don’t forget!”).\nIn imperative sentences “you” never has a subject — it is simply not needed. Even when in a dialogue Jussi, anna tuo kirja is heard, the word Jussi is not a subject but just a way to attract his attention before the request." },
     { w: "objekti käskyssä", ru: "объект в повелительном: номинатив вместо генитива", en: "object in imperative sentences",
       forms: ["anna kirja", "ota sateenvarjo", "lue kirja"],
-      note: "В уроке 12 мы разбирали разницу между партитивным и генитивным объектом. У повелительного предложения нет подлежащего, поэтому объект, который в обычном предложении стоял бы в генитиве, «наследует» номинатив — словарную форму. Jussi antaa kirjan Emmille («Юсси даёт книгу Эмми», объект в генитиве) — но Anna kirja Emmille! («Дай книгу Эмми!», объект в номинативе). Случаи, когда нужен партитив, остаются теми же, что и раньше." },
+      note: "In lesson 12 we looked at the difference between a partitive and a genitive object. An imperative sentence has no subject, so the object, which in an ordinary sentence would stand in the genitive, “inherits” the nominative — the dictionary form. Jussi antaa kirjan Emmille (“Jussi gives the book to Emmi”, object in the genitive) — but Anna kirja Emmille! (“Give the book to Emmi!”, object in the nominative). The cases where the partitive is needed remain the same as before." },
     { w: "ääntäminen käskyssä", ru: "произношение: скрытое удвоение согласной", en: "pronunciation: consonant assimilation",
       forms: ["tule jo", "tulej jo", "tule tänne", "tulet tänne"],
-      note: "Финский почти всегда читается ровно так, как пишется — но повелительное наклонение одно из немногих исключений. Если после него идёт слово с согласной в начале, звучит так, будто в конце повелительной формы есть та же согласная: Tule tänne звучит как Tulet tänne, Tule jo — как Tulej jo. Если следующее слово начинается на гласный — короткая пауза в горле (гортанная смычка). Деталь небольшая, забыть про неё не страшно, но с ней речь звучит естественнее." },
+      note: "Finnish is almost always read exactly as it is written — but the imperative is one of the few exceptions. If a word with a consonant at the beginning follows, it sounds as if the imperative form ends in the same consonant: Tule tänne sounds like Tulet tänne, Tule jo — like Tulej jo. If the next word begins with a vowel — a short pause in the throat (a glottal stop). It is a small detail, forgetting it is not terrible, but with it speech sounds more natural." },
     { w: "pukea", ru: "надевать (одежду); одевать (кого-то)", en: "to put on (clothes)",
       forms: ["pukea", "puen", "pukee"],
-      note: "Всегда требует объекта. Объектом может быть сама одежда (Helen pukee takin päälle — «Хелен надевает куртку») или человек, которого одевают (äiti pukee lapsen — «мама одевает ребёнка»)." },
+      note: "Always requires an object. The object can be the clothing itself (Helen pukee takin päälle — “Helen puts on a jacket”) or the person being dressed (äiti pukee lapsen — “mother dresses the child”)." },
     { w: "takki", ru: "куртка, пальто", en: "jacket, coat",
       forms: ["takki", "takin", "takkia", "villatakki", "aamutakki", "kylpytakki", "sadetakki"],
-      note: "Любая верхняя одежда с рукавами, которая застёгивается спереди — длинная или короткая, из любого материала. В сложных словах: villatakki («кардиган», villa — «шерсть»), aamutakki («халат», буквально «утренняя куртка»), kylpytakki («банный халат»), sadetakki («дождевик»)." },
+      note: "Any outer garment with sleeves that fastens at the front — long or short, of any material. In compounds: villatakki (“cardigan”, villa — “wool”), aamutakki (“dressing gown”, literally “morning jacket”), kylpytakki (“bathrobe”), sadetakki (“raincoat”)." },
     { w: "odottaa", ru: "ждать", en: "to wait", forms: ["odottaa", "odota", "odotan"] },
     { w: "antaa", ru: "давать", en: "to give", forms: ["antaa", "anna", "annan"] },
     { w: "vähän", ru: "немного", en: "a bit, a little, a few", forms: ["vähän"] },
@@ -3014,16 +3010,16 @@ const LESSONS_AB = [
   glossary: [
     { w: "illatiivi", ru: "иллатив: движение «внутрь чего-то»", en: "the illative case",
       forms: ["uuniin", "kattilaan", "kaappiin", "Suomeen", "teehen", "lasiin", "kahviin", "kouluun"],
-      note: "В уроке 8 мы выучили инессив — «муки в шкафу». Теперь научимся класть эту кружку в шкаф.\nЕсли основа кончается на один гласный, иллатив получается так: тот же гласный удлиняется, и в конце добавляется -n. Kaappi (основа kaappi-) → kaappiin. Если в конце и так уже долгий гласный, как в tee, между ним и -n вставляется -h-: tee → teehen.\nlasi → lasiin, kahvi → kahviin, koulu → kouluun, Suomi (основа Suome-) → Suomeen, sininen (основа sinise-) → siniseen, sää (уже долгий гласный) → säähän." },
+      note: "In lesson 8 we learnt the inessive — “flour in the cupboard”. Now we learn to put this mug into the cupboard.\nIf the stem ends in one vowel, the illative is formed like this: the same vowel is lengthened, and -n is added at the end. Kaappi (stem kaappi-) → kaappiin. If there is already a long vowel at the end, as in tee, -h- is inserted between it and -n: tee → teehen.\nlasi → lasiin, kahvi → kahviin, koulu → kouluun, Suomi (stem Suome-) → Suomeen, sininen (stem sinise-) → siniseen, sää (already a long vowel) → säähän." },
     { w: "illatiivi kuvaannollisesti", ru: "иллатив в переносном смысле", en: "figurative uses of the illative",
       forms: ["pallo osui Jussiin", "tutustua", "rakastua", "väsyä", "kääntyä vasempaan", "menen syömään"],
-      note: "Как и у инессива, у иллатива есть переносные значения без буквального «движения куда-то». Некоторые глаголы просто требуют иллатива при дополнении: tutustua («знакомиться с кем-то»), rakastua («влюбиться в кого-то»), väsyä («устать от чего-то»). Pallo osui Jussiin («Мяч попал в Юсси»), Käänny vasempaan («Поверни налево»), Menen nyt syömään («Иду сейчас поесть» — конструкция цели)." },
+      note: "Like the inessive, the illative has figurative meanings without a literal “movement to somewhere”. Some verbs simply require the illative for their complement: tutustua (“to get to know someone”), rakastua (“to fall in love with someone”), väsyä (“to get tired of something”). Pallo osui Jussiin (“The ball hit Jussi”), Käänny vasempaan (“Turn left”), Menen nyt syömään (“I’m going to eat now” — a construction of purpose)." },
     { w: "laittaa", ru: "класть, ставить; готовить еду", en: "to put; to prepare food",
       forms: ["laittaa", "laitan", "laita"],
-      note: "Два основных значения. Первое — «положить что-то куда-то». Второе — «готовить еду», и тогда после него идёт либо слово ruokaa, либо название конкретного блюда: Äiti laittaa hyvää ruokaa («Мама хорошо готовит»), Äiti laittaa tänään lihapullia («Сегодня мама готовит тефтели»)." },
+      note: "Two main meanings. The first — “to put something somewhere”. The second — “to cook”, and then it is followed by either the word ruokaa or the name of a specific dish: Äiti laittaa hyvää ruokaa (“Mother cooks good food”), Äiti laittaa tänään lihapullia (“Mother is making meatballs today”)." },
     { w: "selvä", ru: "ясно, понятно; чистый, трезвый", en: "all right, clear",
       forms: ["selvä", "selvää"],
-      note: "Очень многозначное слово. В диалоге — просто «принято», подтверждение задачи, вроде «есть!» или «слушаюсь». В других контекстах — «ясный, нераспутанный, очевидный» и даже «трезвый» (в противоположность пьяному)." },
+      note: "A very polysemous word. In the dialogue — simply “understood”, confirmation of a task, like “got it!” or “yes, sir”. In other contexts — “clear, untangled, obvious” and even “sober” (as opposed to drunk)." },
     { w: "pestä", ru: "мыть", en: "to wash", forms: ["pestä", "pese", "pesee"] },
     { w: "kulho", ru: "миска", en: "bowl", forms: ["kulho", "kulhoon"] },
     { w: "uuni", ru: "духовка", en: "oven", forms: ["uuni", "uuniin", "uunista"] },
@@ -3064,7 +3060,7 @@ const LESSONS_AB = [
     { fi: "Myymäläapulainen auttoi minua.", ru: "Продавец-консультант мне помог.", en: "The shop assistant helped me.", k: "s" },
     { fi: "Auttaisitko nostamaan tämän laatikon hyllyyn?", ru: "Не поможешь поднять эту коробку на полку?", en: "Could you help me lift this box on the shelf?", k: "s" },
     { fi: "Voinko auttaa?", ru: "Могу помочь?", en: "May I help you?", k: "s" },
-    { fi: "Pojat auttavat äitiään.", ru: "Сыновья помогают маме.", en: "The sons help their mother.", k: "s" },
+    { fi: "Pojat auttavat äitiään.", ru: "Сыновья помогают своей маме.", en: "The sons help their mother.", k: "s" },
     { fi: "Laitatko teehen sokeria?", ru: "Ты кладёшь сахар в чай?", en: "Do you put sugar in your tea?", k: "s" },
     { fi: "Laita muki kaappiin.", ru: "Поставь кружку в шкаф.", en: "Put the mug into the cabinet.", k: "s" },
     { fi: "Menen huomenna Helsinkiin.", ru: "Завтра я поеду в Хельсинки.", en: "I will go to Helsinki tomorrow.", k: "s" },
@@ -3083,20 +3079,20 @@ const LESSONS_AB = [
   glossary: [
     { w: "elatiivi", ru: "элатив: движение «из чего-то»", en: "the elative case",
       forms: ["uunista", "jääkaapista", "yläkerrasta", "lasista", "teestä", "piirakasta", "salaatista", "sinisestä"],
-      note: "Третий и последний из «внутренних местных падежей» — тех, что говорят про замкнутое пространство. Инессив (урок 8) — «в», иллатив (урок 14) — «внутрь», элатив — «изнутри, из».\nОкончание -sta/-stä клеится к той же основе, что генитив и инессив. Kaappi: kaapin (генитив), kaapissa (инессив), kaapista (элатив) — но kaappia, kaappiin в партитиве и иллативе.\nlasi → lasista, tee → teestä, piirakka (основа piiraka-) → piirakasta, salaatti (основа salaati-) → salaatista, sininen (основа sinise-) → sinisestä." },
+      note: "The third and last of the “inner local cases” — those that speak about an enclosed space. The inessive (lesson 8) — “in”, the illative (lesson 14) — “into”, the elative — “from inside, out of”.\nThe ending -sta/-stä attaches to the same stem as the genitive and the inessive. Kaappi: kaapin (genitive), kaapissa (inessive), kaapista (elative) — but kaappia, kaappiin in the partitive and illative.\nlasi → lasista, tee → teestä, piirakka (stem piiraka-) → piirakasta, salaatti (stem salaati-) → salaatista, sininen (stem sinise-) → sinisestä." },
     { w: "elatiivi kuvaannollisesti", ru: "элатив в переносном смысле: «из» и «откуда»", en: "figurative uses of the elative",
       forms: ["Australiasta", "vanhasta takista"],
-      note: "Как и у остальных внутренних местных падежей, у элатива есть переносные употребления. Minä olen Australiasta («Я из Австралии») — происхождение. Teen vanhasta takista liivin («Сделаю из старой куртки жилет») — материал, из которого что-то получается. Takista puuttuu nappi («На куртке не хватает пуговицы») — то, чего недостаёт." },
+      note: "Like the other inner local cases, the elative has figurative uses. Minä olen Australiasta (“I am from Australia”) — origin. Teen vanhasta takista liivin (“I’ll make a waistcoat out of an old jacket”) — the material something is made from. Takista puuttuu nappi (“The jacket is missing a button”) — what is lacking." },
     { w: "kaataa", ru: "опрокидывать; наливать; валить", en: "to turn over, to pour, to fell",
       forms: ["kaataa", "kaada", "kaataa"],
-      note: "Базовое значение — «опрокинуть, повалить из вертикального положения в горизонтальное». Про жидкости это «наливать»; но тем же словом описывают что угодно, что можно повалить — кегли, кружки, вазы, деревья, и даже животных, тогда это значит «подстрелить»." },
+      note: "The basic meaning — “to tip over, knock down from a vertical position to a horizontal one”. About liquids it is “to pour”; but the same word describes anything that can be knocked down — skittles, mugs, vases, trees, and even animals, then it means “to shoot down”." },
     { w: "yläkerta", ru: "верхний этаж", en: "upstairs",
       forms: ["yläkerta", "yläkerrasta", "alakerta", "yläkaappi", "alakaappi", "ylähylly", "alahylly"],
-      note: "Приставка ylä- («верхний») сама по себе не употребляется, только в сложных словах, и у неё есть пара ala- («нижний»): alakerta («нижний этаж»), yläkaappi/alakaappi («навесной/напольный шкаф»), ylähylly/alahylly («верхняя/нижняя полка»)." },
+      note: "The prefix ylä- (“upper”) is not used on its own, only in compounds, and it has a pair ala- (“lower”): alakerta (“downstairs”), yläkaappi/alakaappi (“wall cupboard/floor cupboard”), ylähylly/alahylly (“upper/lower shelf”)." },
     { w: "hakea", ru: "забирать, идти за кем-то/чем-то", en: "to fetch, to pick up", forms: ["hakea", "hae", "haen"] },
     { w: "jääkaappi", ru: "холодильник", en: "fridge", forms: ["jääkaappi", "jääkaapista"] },
     { w: "voi", ru: "масло (сливочное)", en: "butter", forms: ["voi", "voita"],
-      note: "У этого слова есть омонимы, и по контексту их легко перепутать. Voi — это ещё и форма глагола voida («мочь, быть в состоянии») для hän/se: Hän voi tulla huomenna («Он может прийти завтра»), Se voi olla totta («Это может быть правдой»).\nА само по себе, как восклицание, voi значит «ой», «увы»: Voi ei! («Ой нет!»), Voi voi, kuinka sääli («Ну надо же, как жаль»). Различить просто: перед маслом обычно стоит слово вроде «немного», после глагола идёт другой глагол в инфинитиве, а восклицание стоит само по себе в начале фразы." },
+      note: "This word has homonyms, and they are easy to confuse by context. Voi is also a form of the verb voida (“can, to be able”) for hän/se: Hän voi tulla huomenna (“He can come tomorrow”), Se voi olla totta (“It may be true”).\nAnd on its own, as an exclamation, voi means “oh”, “alas”: Voi ei! (“Oh no!”), Voi voi, kuinka sääli (“Oh dear, what a pity”). It is easy to tell them apart: before butter there is usually a word like “some”, after the verb comes another verb in the infinitive, and the exclamation stands on its own at the beginning of a phrase." },
     { w: "vesi", ru: "вода", en: "water", forms: ["vesi", "vettä"] },
     { w: "pois", ru: "прочь, долой", en: "away, off", forms: ["pois"] },
     { w: "sitten", ru: "потом, затем", en: "then", forms: ["sitten"] }
@@ -3143,16 +3139,16 @@ const LESSONS_AB = [
   glossary: [
     { w: "tuletko mukaan", ru: "пойдёшь с нами? — приглашение + иллатив", en: "will you come along?",
       forms: ["tuletko mukaan", "mukaan"],
-      note: "Простой способ пригласить кого-то с собой: Tuletko mukaan... и дальше место в иллативе. Tuletko mukaan kirjastoon? («Пойдёшь со мной в библиотеку?»), Tuletko mukaan kauppaan? Способ прямой и неформальный — среди друзей и коллег отлично подходит, хотя есть и более вежливые варианты." },
+      note: "A simple way to invite someone along: Tuletko mukaan... and then the place in the illative. Tuletko mukaan kirjastoon? (“Will you come with us to the library?”), Tuletko mukaan kauppaan? A direct and informal way — excellent among friends and colleagues, although there are more polite variants too." },
     { w: "sisäpaikallissijat yhteenveto", ru: "три внутренних местных падежа вместе", en: "review of the inner locative cases",
       forms: ["lasissa", "lasista", "lasiin", "koulussa", "koulusta", "kouluun", "tässä", "tästä", "tähän", "Suomessa", "Suomesta", "Suomeen"],
-      note: "Теперь у нас есть все три: инессив («в», -ssa/-ssä), элатив («из», -sta/-stä), иллатив («в, внутрь», удвоенный гласный + -n). Один пример полностью: lasi → lasissa, lasista, lasiin. Указательные местоимения — tämä → tässä, tästä, tähän; tuo → tuossa, tuosta, tuohon; se → siinä, siitä, siihen (у se все формы неправильные, их стоит просто запомнить).\nСтраны и города ведут себя так же: Suomi → Suomessa, Suomesta, Suomeen; Helsinki (с чередованием) → Helsingissä, Helsingistä, Helsinkiin." },
+      note: "Now we have all three: the inessive (“in”, -ssa/-ssä), the elative (“out of”, -sta/-stä), the illative (“into”, doubled vowel + -n). One example in full: lasi → lasissa, lasista, lasiin. Demonstrative pronouns — tämä → tässä, tästä, tähän; tuo → tuossa, tuosta, tuohon; se → siinä, siitä, siihen (all the forms of se are irregular, they are worth simply memorising).\nCountries and cities behave the same: Suomi → Suomessa, Suomesta, Suomeen; Helsinki (with gradation) → Helsingissä, Helsingistä, Helsinkiin." },
     { w: "jokin", ru: "какой-то, что-то (неизвестное)", en: "some, something",
       forms: ["jokin", "jotakin", "jonkin", "jossakin", "jostakin", "johonkin"],
-      note: "Слово с хитрым склонением: окончания падежей встают не в конец, а в середину. Это потому, что -kin — энклитика, приклеившаяся к joka: слово на самом деле joka+kin, где joka склоняется как обычно (только -ka выпадает в номинативе и генитиве), а -kin добавляется в конце. В некоторых формах k может выпадать.\nМожет стоять при существительном (jokin kirja — «какая-то книга») или само по себе (Etsitkö jotakin? — «Ты что-то ищешь?»). Смысл всегда один: точно неизвестно, что именно." },
+      note: "A word with a tricky declension: the case endings go not at the end but in the middle. This is because -kin is an enclitic attached to joka: the word is really joka+kin, where joka is inflected as usual (only -ka drops in the nominative and genitive), and -kin is added at the end. In some forms the k may drop.\nIt can stand with a noun (jokin kirja — “some book”) or on its own (Etsitkö jotakin? — “Are you looking for something?”). The meaning is always the same: it is not exactly known what." },
     { w: "mielelläni", ru: "с удовольствием (только про себя)", en: "I'd love to",
       forms: ["mielelläni"],
-      note: "Слово, которое можно использовать только про себя самого — сказать о желании другого человека им нельзя." },
+      note: "A word that can be used only about yourself — you cannot use it to speak about another person’s wish." },
     { w: "kirjasto", ru: "библиотека", en: "library", forms: ["kirjasto", "kirjastossa", "kirjastosta"] },
     { w: "elokuva", ru: "фильм", en: "movie", forms: ["elokuva", "elokuvassa", "elokuviin"] },
     { w: "samalla", ru: "заодно, попутно", en: "on the same (way/time)", forms: ["samalla"] },
@@ -3170,7 +3166,7 @@ const LESSONS_AB = [
     { fi: "samalla", ru: "заодно", en: "on the same way", k: "w" },
     { fi: "kirjasto", ru: "библиотека", en: "library", k: "w" },
     { fi: "ajatus", ru: "мысль, идея", en: "thought, idea", k: "w" },
-    { fi: "Tuletko mukaan elokuviin?", ru: "Пойдёшь со мной в кино?", en: "Would you like to come along to the movies?", k: "s" },
+    { fi: "Tuletko mukaan elokuviin?", ru: "Пойдёшь с нами в кино?", en: "Would you like to come along to the movies?", k: "s" },
     { fi: "Katsoisin mielelläni tuon elokuvan.", ru: "Я бы с удовольствием посмотрел тот фильм.", en: "I would like to watch that movie.", k: "s" },
     { fi: "Hän on uudessa Woody Allen-elokuvassa.", ru: "Он снялся в новом фильме Вуди Аллена.", en: "He's in the new Woody Allen movie.", k: "s" },
     { fi: "Me emme ole katsoneet hyvää elokuvaa sitten lukion.", ru: "Мы не смотрели хороший фильм со времён старшей школы.", en: "We haven't watched a good movie since high school.", k: "s" },
@@ -3183,9 +3179,9 @@ const LESSONS_AB = [
     { fi: "Lukion oppilaat opiskelivat kirjastossa.", ru: "Старшеклассники занимались в библиотеке.", en: "The high school students studied in the library.", k: "s" },
     { fi: "Sehän on loistava ajatus!", ru: "Это же прекрасная мысль!", en: "That's a brilliant idea!", k: "s" },
     { fi: "Tässä videovuokraamossa on hyvä valikoima.", ru: "В этом видеопрокате хороший выбор.", en: "There's a good selection in this video rental store.", k: "s" },
-    { fi: "Tuletko mukaan kirjastoon?", ru: "Пойдёшь со мной в библиотеку?", en: "Will you come along to the library?", k: "s" },
-    { fi: "Tuletko mukaan kauppaan?", ru: "Пойдёшь со мной в магазин?", en: "Will you come along to the store?", k: "s" },
-    { fi: "Tuletko mukaan puistoon?", ru: "Пойдёшь со мной в парк?", en: "Will you come along to the park?", k: "s" }
+    { fi: "Tuletko mukaan kirjastoon?", ru: "Пойдёшь с нами в библиотеку?", en: "Will you come along to the library?", k: "s" },
+    { fi: "Tuletko mukaan kauppaan?", ru: "Пойдёшь с нами в магазин?", en: "Will you come along to the store?", k: "s" },
+    { fi: "Tuletko mukaan puistoon?", ru: "Пойдёшь с нами в парк?", en: "Will you come along to the park?", k: "s" }
   ]
 },
 {
@@ -3195,16 +3191,16 @@ const LESSONS_AB = [
   glossary: [
     { w: "pitää jostakin", ru: "нравится: то, что нравится — в элативе", en: "to like: the thing liked is in the elative",
       forms: ["pidän", "en pidä", "mistä pidät", "pitää"],
-      note: "Базовая формула для «нравится»: Minä pidän... плюс предмет в элативе (буквально «от чего-то»). Отрицание — Minä en pidä... тоже с элативом. Minä pidän komediasta («Мне нравится комедия»), Minä en pidä romantiikasta («Мне не нравится романтика»).\nСпросить, что нравится другому: Pidätkö mustikkapiirakasta? («Тебе нравится черничный пирог?») или Mistä sinä pidät? («Что тебе нравится?») — здесь в элативе стоит уже вопросительное слово mikä, как заместитель того, о чём спрашивают.\nЕсть и разговорный синоним pitää — tykätä, особенно частый в повседневной речи и в интернете." },
+      note: "The basic formula for “like”: Minä pidän... plus the object in the elative (literally “from something”). The negative — Minä en pidä... also with the elative. Minä pidän komediasta (“I like comedy”), Minä en pidä romantiikasta (“I don’t like romance”).\nTo ask what someone else likes: Pidätkö mustikkapiirakasta? (“Do you like blueberry pie?”) or Mistä sinä pidät? (“What do you like?”) — here the question word mikä stands in the elative, as a substitute for what is being asked about.\nThere is also a colloquial synonym of pitää — tykätä, especially frequent in everyday speech and on the internet." },
     { w: "elatiivi puheen aiheena", ru: "элатив: «о чём» говорят", en: "the elative for the topic of speech",
       forms: ["tästä", "mitä sanot tästä"],
-      note: "Ещё одно применение элатива, кроме «нравится»: тема разговора. Mitä sanot tästä? — «Что ты скажешь об этом?» — часть «об этом» тоже в элативе." },
+      note: "Another use of the elative, besides “like”: the topic of conversation. Mitä sanot tästä? — “What do you say about this?” — the “about this” part is also in the elative." },
     { w: "sopia", ru: "подходить, годиться", en: "to suit, to fit",
       forms: ["sopia", "sopii", "sopiiko"],
-      note: "Про то, что подходит по размеру, цвету, обстоятельствам. Часто используется, договариваясь о встрече: Sopiiko huomenna? — «Тебе подходит завтра?»" },
+      note: "About what fits in size, colour, circumstances. Often used when arranging a meeting: Sopiiko huomenna? — “Does tomorrow suit you?”" },
     { w: "kelvata", ru: "годиться, быть достаточно хорошим", en: "to do, to be good enough",
       forms: ["kelvata", "kelpaa"],
-      note: "Значит, что вещь проходит по установленным критериям — годится. Часто (хоть и не всегда) с оттенком «едва-едва достаточно, но сойдёт»." },
+      note: "Means that the item passes the set criteria — it will do. Often (though not always) with a shade of “just barely enough, but acceptable”." },
     { w: "romantiikka", ru: "романтика (жанр)", en: "romance", forms: ["romantiikka", "romantiikasta"] },
     { w: "toiminta", ru: "экшен; деятельность", en: "action; activity", forms: ["toiminta", "toiminnasta"] },
     { w: "komedia", ru: "комедия", en: "comedy", forms: ["komedia", "komediasta"] },
@@ -3255,22 +3251,22 @@ const LESSONS_AB = [
   glossary: [
     { w: "adessiivi", ru: "адессив: -lla/-llä, «на чём-то»", en: "the adessive case",
       forms: ["pöydällä", "tuolilla", "sohvalla", "lautasella", "kitaralla", "siskolla"],
-      note: "До сих пор мы учили три «внутренних» местных падежа — про замкнутое пространство. Теперь начинается вторая тройка, «внешние», про поверхность. Первый из них — адессив, «на», окончание -lla/-llä.\nСравните с инессивом: Salaatti on lautasella («Салат на тарелке», поверхность) против Maito on lasissa («Молоко в стакане», замкнутое пространство). Lautanen on pöydällä против Muki on kaapissa. Jussi istuu tuolilla («сидит НА стуле») против Liisa istuu autossa («сидит В машине»)." },
+      note: "So far we have learnt three “inner” local cases — about an enclosed space. Now the second three begin, the “outer” ones, about a surface. The first of them is the adessive, “on”, ending -lla/-llä.\nCompare with the inessive: Salaatti on lautasella (“The salad is on the plate”, a surface) versus Maito on lasissa (“The milk is in the glass”, an enclosed space). Lautanen on pöydällä versus Muki on kaapissa. Jussi istuu tuolilla (“sits ON a chair”) versus Liisa istuu autossa (“sits IN a car”)." },
     { w: "adessiivi kuvaannollisesti", ru: "адессив в переносном смысле: рядом, обладание, средство", en: "figurative uses of the adessive",
       forms: ["minulla on", "bussilla", "autolla", "päivällä"],
-      note: "Кроме буквального «на» у адессива много других применений: близость к чему-то (а не обязательно прямо сверху), обладание (Minulla on koira — «у меня есть собака», уже знакомая конструкция), личные характеристики (Minulla on siniset silmät), некоторые выражения времени (päivällä — «днём»), и способ или средство: Menen kouluun bussilla («Еду в школу на автобусе»)." },
+      note: "Besides the literal “on” the adessive has many other uses: nearness to something (not necessarily directly on top), possession (Minulla on koira — “I have a dog”, an already familiar construction), personal characteristics (Minulla on siniset silmät), some expressions of time (päivällä — “in the daytime”), and way or means: Menen kouluun bussilla (“I go to school by bus”)." },
     { w: "lyhenteiden taivutus", ru: "как склонять аббревиатуры", en: "adding case endings to acronyms",
       forms: ["DVD:tä", "DVD:n", "DVD:ssä", "DVD:stä", "DVD:hen", "DVD:llä"],
-      note: "Даже аббревиатуры получают падежные окончания. Правило: берём последнюю букву, смотрим, как она называется сама по себе, и добавляем окончание, как для этого слова. Буква D называется «дее» — склоняется как tee («чай»): DVD (произносится «дееveedee») → DVD:tä, DVD:n, DVD:ssä, DVD:stä, DVD:hen, DVD:llä. Окончание от аббревиатуры отделяется двоеточием." },
+      note: "Even abbreviations get case endings. The rule: take the last letter, see what it is called on its own, and add the ending as for that word. The letter D is called “dee” — it is inflected like tee (“tea”): DVD (pronounced “deeveedee”) → DVD:tä, DVD:n, DVD:ssä, DVD:stä, DVD:hen, DVD:llä. The ending is separated from the abbreviation by a colon." },
     { w: "sohva", ru: "диван", en: "couch, sofa",
       forms: ["sohva", "sohvalla"],
-      note: "В финском исконно нет звука f — он встречается только в недавних или научных заимствованиях (farmakologia). В более старых словах f превратился в hv или v: sohva от шведского soffa, univormu («униформа»), väri («цвет», от шведского färg). У слова «асфальт» есть оба варианта: asfaltti и asvaltti." },
+      note: "Finnish originally has no f sound — it occurs only in recent or scientific loanwords (farmakologia). In older words f turned into hv or v: sohva from Swedish soffa, univormu (“uniform”), väri (“colour”, from Swedish färg). The word for “asphalt” has both variants: asfaltti and asvaltti." },
     { w: "pussi", ru: "пакет, мешочек", en: "bag, sachet",
       forms: ["pussi", "pussilla", "karkkipussi", "paperipussi", "muovipussi"],
-      note: "Простой, обычно небольшой пакет, куда что-то кладут. В сложных словах: paperipussi («бумажный пакет»), muovipussi («полиэтиленовый»). Сумочку так не называют." },
+      note: "A simple, usually small bag in which something is put. In compounds: paperipussi (“paper bag”), muovipussi (“plastic bag”). A handbag is not called this." },
     { w: "karkki", ru: "конфета, сладость", en: "candy, sweet",
       forms: ["karkki", "karkkia", "karamelli", "makeinen"],
-      note: "Разговорное сокращение от karamelli. В отличие от английского caramel, karkki охватывает вообще любые сладости — от леденцов до шоколада, лакрицы, мармелада, жевательных конфет. В официальном стиле вместо этого говорят makeinen." },
+      note: "A colloquial shortening of karamelli. Unlike English caramel, karkki covers absolutely any sweets — from boiled sweets to chocolate, liquorice, marmalade, chewy sweets. In formal style makeinen is said instead." },
     { w: "kaikki", ru: "всё, все", en: "everything, everyone, all", forms: ["kaikki", "kaiken"] },
     { w: "tuoli", ru: "стул", en: "chair", forms: ["tuoli", "tuolilla"] },
     { w: "pöytä", ru: "стол", en: "table", forms: ["pöytä", "pöydällä"] },
@@ -3324,16 +3320,16 @@ const LESSONS_AB = [
   glossary: [
     { w: "monikon nominatiivi", ru: "множественное число, номинатив: -t", en: "the nominative plural form",
       forms: ["mukit", "kaapit", "tuolit", "piirakat", "siniset", "vedet", "äidit"],
-      note: "Наконец-то можно говорить не про одну вещь и не про «сколько-то от чего-то», а про несколько целых предметов! У местоимений множественное число обычно особое, но у существительных, прилагательных и числительных номинатив множественного числа совершенно правильный: просто -t к гласной основе. muki → mukit, tuoli → tuolit, sininen (основа sinise-) → siniset, vesi (основа vede-) → vedet, äiti (основа äidi-) → äidit." },
+      note: "At last you can talk not about one thing and not about “some of something”, but about several whole objects! Pronouns usually have a special plural, but for nouns, adjectives and numerals the nominative plural is completely regular: just -t added to the vowel stem. muki → mukit, tuoli → tuolit, sininen (stem sinise-) → siniset, vesi (stem vede-) → vedet, äiti (stem äidi-) → äidit." },
     { w: "monikolliset pronominit", ru: "местоимения во множественном числе (неправильные)", en: "plural pronouns",
       forms: ["me", "te", "he", "nämä", "nuo", "ne"],
-      note: "Местоимения меняются по своим особым правилам: minä → me, sinä → te, hän → he, tämä → nämä, tuo → nuo, se → ne." },
+      note: "Pronouns change by their own special rules: minä → me, sinä → te, hän → he, tämä → nämä, tuo → nuo, se → ne." },
     { w: "yhtään", ru: "хоть сколько-то (в вопросе/отрицании)", en: "any",
       forms: ["yhtään"],
-      note: "Появляется только в отрицании или в вопросе, и говорит о количестве КОНКРЕТНОЙ вещи. Lasissa ei ole yhtään maitoa («В стакане нет вообще никакого молока»), Onko lasissa yhtään maitoa? («В стакане есть хоть немного молока?»). После него — партитив." },
+      note: "Appears only in a negation or a question, and speaks of the quantity of a SPECIFIC thing. Lasissa ei ole yhtään maitoa (“There is no milk at all in the glass”), Onko lasissa yhtään maitoa? (“Is there any milk at all in the glass?”). It is followed by the partitive." },
     { w: "hius", ru: "один волос (а «волосы» — во множественном)", en: "hair (a single strand)",
       forms: ["hius", "hiukset", "hiuksia"],
-      note: "В финском hius означает ровно один волос, поэтому «у меня рыжие волосы» — обязательно во множественном числе: Minulla on punaiset hiukset. И ещё: hius — только про волосы на голове человека, не про шерсть животных и не про волосы на теле." },
+      note: "In Finnish hius means exactly one hair, so “I have red hair” must be in the plural: Minulla on punaiset hiukset. And also: hius is only about the hair on a person’s head, not animal fur and not body hair." },
     { w: "kuin", ru: "как, чем (сравнение, сходство)", en: "than, as, like", forms: ["kuin"] },
     { w: "silmä", ru: "глаз", en: "eye", forms: ["silmä", "silmät"] },
     { w: "sama", ru: "тот же, одинаковый", en: "same", forms: ["sama", "saman"] },
@@ -3383,16 +3379,16 @@ const LESSONS_AB = [
   glossary: [
     { w: "monikon partitiivi", ru: "множественное число, партитив: -i-/-j- перед окончанием", en: "the partitive plural form",
       forms: ["eläimiä", "kaloja", "koiria", "millaisia", "suloisia", "laseja", "kaappeja"],
-      note: "Хорошая новость: во множественном числе не нужно учить новый набор окончаний для каждого падежа. Кроме номинатива, все остальные падежи сохраняют то же окончание, что и в единственном числе — просто перед ним добавляется маленький показатель множественности -i-, который между гласными превращается в -j-. Иногда предыдущий гласный при этом меняется или выпадает, но это тонкости на будущее.\nПартитив ед. числа → партитив мн. числа: eläintä → eläimiä, kalaa → kaloja, koiraa → koiria, millaista → millaisia, lasia → laseja, kaappia → kaappeja." },
+      note: "Good news: in the plural you don’t need to learn a new set of endings for each case. Except for the nominative, all the other cases keep the same ending as in the singular — just a small plural marker -i- is added before it, which between vowels turns into -j-. Sometimes the preceding vowel changes or drops, but those are subtleties for the future.\nPartitive singular → partitive plural: eläintä → eläimiä, kalaa → kaloja, koiraa → koiria, millaista → millaisia, lasia → laseja, kaappia → kaappeja." },
     { w: "nominatiivi vai partitiivi monikossa", ru: "во множественном: тоже целое против части", en: "nominative or partitive plural with Minulla on...",
       forms: ["harmaat hiukset", "harmaita hiuksia", "kaikki jääkiekkokortit", "jääkiekkokortteja"],
-      note: "Разница между номинативом и партитивом сохраняется и во множественном числе: номинатив — про определённый, весь набор, партитив — про неопределённое количество. Minulla on harmaat hiukset («Все мои волосы седые») против Minulla on harmaita hiuksia («У меня есть немного седых волос»). Minulla on kaikki jääkiekkokortit («У меня есть все хоккейные карточки») против Minulla on jääkiekkokortteja («У меня есть [какие-то] хоккейные карточки»)." },
+      note: "The difference between the nominative and the partitive is kept in the plural too: the nominative — about a definite, whole set, the partitive — about an indefinite quantity. Minulla on harmaat hiukset (“All my hair is grey”) versus Minulla on harmaita hiuksia (“I have some grey hairs”). Minulla on kaikki jääkiekkokortit (“I have all the ice hockey cards”) versus Minulla on jääkiekkokortteja (“I have [some] ice hockey cards”)." },
     { w: "mitään", ru: "какой-нибудь, никакой (класс вещей)", en: "any, anything, nothing",
       forms: ["mitään"],
-      note: "Похоже на yhtään из прошлого урока, но разница важная: yhtään про количество конкретной вещи, а mitään — про класс, вид вещей, «какого рода». Onko sinulla mitään eläimiä? спрашивает не только «есть ли у тебя животные», но и «какие вообще», раз ответ заранее неизвестен. А про братьев и сестёр в прошлом уроке использовали именно yhtään — потому что братья и сёстры обычно не бывают «разных видов»." },
+      note: "Similar to yhtään from the previous lesson, but the difference is important: yhtään is about the quantity of a specific thing, and mitään is about a class, a kind of things, “what sort”. Onko sinulla mitään eläimiä? asks not only “do you have animals” but also “what kind at all”, since the answer is not known in advance. And about brothers and sisters the previous lesson used precisely yhtään — because brothers and sisters are not usually of “different kinds”." },
     { w: "todella", ru: "действительно, очень", en: "really, truly",
       forms: ["todella"],
-      note: "Усилительное наречие. Исторически — застывшая адессивная форма слова tosi («правда»)." },
+      note: "An intensifying adverb. Historically — a frozen adessive form of the word tosi (“true”)." },
     { w: "koira", ru: "собака", en: "dog", forms: ["koira", "koiria"] },
     { w: "eläin", ru: "животное", en: "animal", forms: ["eläin", "eläimiä"] },
     { w: "suloinen", ru: "милый, славный", en: "cute, sweet", forms: ["suloinen", "suloisia"] }
@@ -3438,16 +3434,16 @@ const LESSONS_AB = [
   glossary: [
     { w: "luvut 1-10", ru: "числа 1–10", en: "numbers 1 to 10",
       forms: ["yksi", "kaksi", "kolme", "neljä", "viisi", "kuusi", "seitsemän", "kahdeksan", "yhdeksän", "kymmenen"],
-      note: "yksi, kaksi, kolme, neljä, viisi, kuusi, seitsemän, kahdeksan, yhdeksän, kymmenen. Три правила использования:\n1) Числа грамматически единственного числа, поэтому и следующее за ними существительное — тоже в единственном, не во множественном, как можно было бы ожидать.\n2) Если число стоит в номинативе, следующее слово — в партитиве единственного числа для всех чисел, кроме «один» (после yksi — номинатив). Minulla on yksi koira («У меня одна собака»), Minulla on kaksi koiraa («У меня две собаки»).\n3) В остальных падежах число и следующее слово принимают ОДИНАКОВОЕ окончание: Kaada kahteen mukiin kahvia («Налей кофе в две кружки»), Teen näistä kuudesta omenasta piirakan («Сделаю пирог из этих шести яблок»)." },
+      note: "yksi, kaksi, kolme, neljä, viisi, kuusi, seitsemän, kahdeksan, yhdeksän, kymmenen. Three rules of use:\n1) Numbers are grammatically singular, so the noun that follows is also singular, not plural as one might expect.\n2) If the number is in the nominative, the next word is in the singular partitive for all numbers except “one” (after yksi — the nominative). Minulla on yksi koira (“I have one dog”), Minulla on kaksi koiraa (“I have two dogs”).\n3) In the other cases the number and the next word take the SAME ending: Kaada kahteen mukiin kahvia (“Pour coffee into two mugs”), Teen näistä kuudesta omenasta piirakan (“I’ll make a pie out of these six apples”)." },
     { w: "lukujen taivutus", ru: "склонение чисел по падежам", en: "declension of numbers",
       forms: ["yhtä", "yhden", "kahta", "kahden", "kolmea", "kolmen", "neljää", "neljän", "viittä", "viiden", "kuutta", "kuuden"],
-      note: "Числа склоняются по тем же правилам, что и остальные слова — ничего нового. Таблица падежей для памяти: yksi → yhtä, yhden, yhdessä, yhteen; kaksi → kahta, kahden, kahdessa, kahteen; viisi → viittä, viiden, viidessä, viiteen; kuusi → kuutta, kuuden, kuudessa, kuuteen. Семь, восемь и девять в генитиве совпадают с номинативом: seitsemän, kahdeksan, yhdeksän." },
+      note: "Numbers are inflected by the same rules as other words — nothing new. A table of cases for memory: yksi → yhtä, yhden, yhdessä, yhteen; kaksi → kahta, kahden, kahdessa, kahteen; viisi → viittä, viiden, viidessä, viiteen; kuusi → kuutta, kuuden, kuudessa, kuuteen. Seven, eight and nine in the genitive coincide with the nominative: seitsemän, kahdeksan, yhdeksän." },
     { w: "kuinka", ru: "как, сколько (в вопросах меры)", en: "how",
       forms: ["kuinka", "kuinka monta", "kuinka kauan", "kuinka pitkä", "kuinka suuri"],
-      note: "Используется в вопросах про количество, время, размер: kuinka monta («сколько штук»), kuinka kauan («как долго»), kuinka pitkä («какой длины / какого роста»), kuinka suuri («насколько большой»). Ещё — простое наречие способа: Kuinka voin auttaa? («Как я могу помочь?»), Kuinka voit? («Как дела?»)." },
+      note: "Used in questions about quantity, time, size: kuinka monta (“how many”), kuinka kauan (“how long”), kuinka pitkä (“how long / how tall”), kuinka suuri (“how big”). Also — a simple adverb of manner: Kuinka voin auttaa? (“How can I help?”), Kuinka voit? (“How are you?”)." },
     { w: "moni", ru: "многие, много (ед. и мн. число равноправны)", en: "many",
       forms: ["moni", "monet", "monella", "monilla", "monen", "monien"],
-      note: "Значит «многие», но может стоять и в единственном, и во множественном числе — разницы в смысле нет. Слово, которое описывает moni, всегда идёт следом за ним, а не перед: moni koira или monet koirat («многие собаки»), но никогда *moni koirat. И падеж у обоих слов всегда совпадает: monella koiralla (адессив ед. числа), monilla koirilla (адессив мн. числа), monen koiran, monien koirien." }
+      note: "Means “many”, but can stand in both the singular and the plural — there is no difference in meaning. The word describing moni always follows it, not precedes: moni koira or monet koirat (“many dogs”), but never *moni koirat. And the case of both words always matches: monella koiralla (singular adessive), monilla koirilla (plural adessive), monen koiran, monien koirien." }
   ],
   items: [
     { fi: "Yksi, kaksi, kolme, neljä, viisi, kuusi, seitsemän, kahdeksan, yhdeksän, kymmenen.", ru: "Один, два, три, четыре, пять, шесть, семь, восемь, девять, десять.", en: "One, two, three, four, five, six, seven, eight, nine, ten.", k: "d", who: "Emmi" },
@@ -3509,16 +3505,16 @@ const LESSONS_AB = [
   glossary: [
     { w: "ablatiivi", ru: "аблатив: -lta/-ltä, «с поверхности чего-то»", en: "the ablative case",
       forms: ["pöydältä", "tuolilta", "sohvalta", "lattialta", "torilta"],
-      note: "Внешний падеж, парный элативу («изнутри»). Аблатив значит «с поверхности, сверху чего-то». Окончание -lta/-ltä (в отличие от элатива -sta/-stä).\nOta lautanen pöydältä («Возьми тарелку со стола», с поверхности) против Ota lautanen kaapista («Возьми тарелку из шкафа», изнутри). Nouse ylös sohvalta («Встань с дивана») против Nouse ylös sängystä («Встань с кровати» — тут кровать воспринимается как «внутри», с постельным бельём). Liisa tulee torilta («Лийса идёт с рынка», открытое пространство) против Liisa tulee kaupasta («...из магазина», закрытое)." },
+      note: "The outer case paired with the elative (“from inside”). The ablative means “from a surface, from on top of something”. The ending is -lta/-ltä (unlike the elative -sta/-stä).\nOta lautanen pöydältä (“Take the plate off the table”, from a surface) versus Ota lautanen kaapista (“Take the plate from the cupboard”, from inside). Nouse ylös sohvalta (“Get up from the sofa”) versus Nouse ylös sängystä (“Get out of bed” — here the bed is perceived as “inside”, with the bedclothes). Liisa tulee torilta (“Liisa is coming from the market”, an open space) versus Liisa tulee kaupasta (“...from the shop”, an enclosed one)." },
     { w: "ablatiivi kuvaannollisesti", ru: "аблатив в переносном смысле: источник, потеря, время", en: "figurative uses of the ablative",
       forms: ["Maijulta", "minulta", "kuudelta"],
-      note: "Кроме буквального «с поверхности» аблатив показывает источник или того, кто дал что-то, а ещё — того, с кем случилась потеря или неприятность. Sain Maijulta joulukortin («Я получил от Майи открытку»), Minulta kaatui maitolasi («Я нечаянно опрокинул стакан молока», буквально «от меня упал стакан молока»). И время: Jussi tulee kuudelta («Юсси придёт в шесть»)." },
+      note: "Besides the literal “from a surface” the ablative shows the source or the person who gave something, and also the person to whom a loss or misfortune happened. Sain Maijulta joulukortin (“I got a Christmas card from Maija”), Minulta kaatui maitolasi (“I accidentally knocked over a glass of milk”, literally “from me fell a glass of milk”). And time: Jussi tulee kuudelta (“Jussi will come at six”)." },
     { w: "kai", ru: "наверное, пожалуй, полагаю", en: "supposedly, probably, I think",
       forms: ["kai"],
-      note: "Показывает предположение говорящего — довольно уверенное, но не стопроцентное. Годится и в вопросе, когда ждут подтверждения: Kai sinä tulet huomenna? («Ты ведь придёшь завтра, да?»)." },
+      note: "Shows the speaker’s supposition — fairly confident, but not a hundred percent. It also works in a question when confirmation is expected: Kai sinä tulet huomenna? (“You’ll come tomorrow, won’t you?”)." },
     { w: "tarkoittaa", ru: "значить, иметь в виду", en: "to mean, to signify",
       forms: ["tarkoittaa", "tarkoitat"],
-      note: "Полезнейший глагол для изучающего язык: Mitä ... tarkoittaa? («Что значит ...?»), Mitä tämä lause tarkoittaa? («Что значит это предложение?»)." },
+      note: "A most useful verb for a language learner: Mitä ... tarkoittaa? (“What does ... mean?”), Mitä tämä lause tarkoittaa? (“What does this sentence mean?”)." },
     { w: "koska", ru: "потому что", en: "because", forms: ["koska"] },
     { w: "miksi", ru: "почему", en: "why", forms: ["miksi"] },
     { w: "ikkuna", ru: "окно", en: "window", forms: ["ikkuna", "ikkunalla"] },
@@ -3542,7 +3538,7 @@ const LESSONS_AB = [
     { fi: "Kynttilät tuovat tunnelmaa.", ru: "Свечи создают атмосферу.", en: "Candles add atmosphere.", k: "s" },
     { fi: "Kynttilä on ikkunalla.", ru: "Свеча на окне.", en: "The candle is in the window.", k: "s" },
     { fi: "Kynttilöiden lukumäärä kakun päällä näyttää vuosien määrän.", ru: "Количество свечек на торте показывает число лет.", en: "The number of candles on a cake shows the number of years.", k: "s" },
-    { fi: "Voitko sulkea ikkunan, kiitos.", ru: "Закрой окно, пожалуйста.", en: "Close the window, please.", k: "s" },
+    { fi: "Voitko sulkea ikkunan, kiitos.", ru: "Можешь закрыть окно, пожалуйста?", en: "Could you close the window, please?", k: "s" },
     { fi: "Avaa ikkuna, kiitos.", ru: "Открой окно, пожалуйста.", en: "Open the window, please.", k: "s" },
     { fi: "Kylpyhuoneessa on pikkuruinen ikkuna.", ru: "В ванной крошечное окно.", en: "The bathroom has a tiny window.", k: "s" },
     { fi: "Liisa katsoo ulos ikkunasta.", ru: "Лийса смотрит в окно.", en: "Liisa looks out of the window.", k: "s" },
@@ -3573,22 +3569,22 @@ const LESSONS_AB = [
   glossary: [
     { w: "allatiivi", ru: "аллатив: -lle, «на поверхность чего-то»", en: "the allative case",
       forms: ["nurmikolle", "pihalle", "torille", "pöydälle", "lattialle"],
-      note: "Последний из шести местных падежей финского. Аллатив — внешний аналог иллатива: не «внутрь», а «на поверхность». Окончание -lle.\nJussi menee pihalle («Юсси идёт во двор») против Jussi menee taloon («...в дом», внутрь). Liisa menee torille («...на рынок», открытое место) против Liisa menee kauppaan («...в магазин», помещение). Emmi laittaa ruokaa lautaselle («кладёт еду на тарелку») против Emmi kaataa maitoa lasiin («наливает молоко в стакан»)." },
+      note: "The last of the six local cases of Finnish. The allative is the outer analogue of the illative: not “into” but “onto a surface”. The ending is -lle.\nJussi menee pihalle (“Jussi goes out into the yard”) versus Jussi menee taloon (“...into the house”, inside). Liisa menee torille (“...to the market”, an open place) versus Liisa menee kauppaan (“...to the shop”, a building). Emmi laittaa ruokaa lautaselle (“puts food on the plate”) versus Emmi kaataa maitoa lasiin (“pours milk into the glass”)." },
     { w: "allatiivi kuvaannollisesti", ru: "аллатив в переносном смысле: получатель, подходит ли", en: "figurative uses of the allative",
       forms: ["ystävälle", "sinulle sopii", "kävelylle"],
-      note: "Кроме буквального движения «на», аллатив показывает получателя чего-то, а ещё используется в выражениях подходящести и одобрения — на кого именно вещь годится или нравится. Vihreä sopii sinulle («Зелёный тебе идёт»), Romanttinen elokuva ei kelvannut Jussille («Романтический фильм не подошёл Юсси»). С некоторыми отглагольными существительными аллатив значит «отправиться делать это»: Lähden kävelylle («Иду на прогулку»)." },
+      note: "Besides the literal movement “onto”, the allative shows the recipient of something, and is also used in expressions of suitability and approval — for whom the thing is suitable or liked. Vihreä sopii sinulle (“Green suits you”), Romanttinen elokuva ei kelvannut Jussille (“A romantic film didn’t suit Jussi”). With some verbal nouns the allative means “to go and do this”: Lähden kävelylle (“I’m going for a walk”)." },
     { w: "sisä- vai ulkopaikallissija", ru: "внутренний или внешний падеж: когда неочевидно", en: "inner or outer locative case?",
       forms: ["takki päälle", "pipo päähän", "listalla", "listassa", "tietokoneella", "tietokoneessa"],
-      note: "Часто выбор между «внутренним» и «внешним» падежом логичен: в шкаф кладут внутрь, на стол — сверху. Но иногда логики почти нет: куртку надевают päälle («сверху», внешний), а шапку — päähän («в голову», внутренний иллатив), хотя по смыслу разница между действиями небольшая. Такие случаи просто надо запоминать по одному. У некоторых слов сами финны не всегда уверены, какой падеж правильный — например «список» listalla/listassa, «компьютер» tietokoneella/tietokoneessa — в буквальном месте расположения разницы почти нет. Но в переносном смысле путать нельзя: Teen töitä tietokoneella («Работаю на компьютере», адессив — средство) обязательно, а не *tietokoneessa («внутри компьютера» — бессмыслица)." },
+      note: "Often the choice between an “inner” and an “outer” case is logical: you put things inside a cupboard, on top of a table. But sometimes there is almost no logic: a jacket is put on päälle (“on top”, outer), and a hat — päähän (“into the head”, inner illative), although in meaning the difference between the actions is small. Such cases just have to be memorised one by one. For some words Finns themselves are not always sure which case is correct — for example “list” listalla/listassa, “computer” tietokoneella/tietokoneessa — in the literal location there is almost no difference. But in the figurative sense you must not mix them up: Teen töitä tietokoneella (“I work on the computer”, the adessive — means) is obligatory, and not *tietokoneessa (“inside the computer” — nonsense)." },
     { w: "tippua", ru: "падать, капать (повторяющееся действие)", en: "to fall, to drip",
       forms: ["tippua", "tippuu", "tippuvat"],
-      note: "Обычно про капающую жидкость (hanasta tippuu vettä — «из крана капает вода») или про что-то, что падает не один раз, а повторяется: omenat tippuvat puusta («яблоки падают с дерева», одно за другим). Строго говоря, для одного однократного падения это слово не подходит, но в разговорной речи так тоже говорят." },
+      note: "Usually about a dripping liquid (hanasta tippuu vettä — “water drips from the tap”) or about something that falls not once but repeatedly: omenat tippuvat puusta (“the apples fall from the tree”, one after another). Strictly speaking this word is not suitable for a single fall, but in colloquial speech it is also used like that." },
     { w: "piha", ru: "двор", en: "yard",
       forms: ["piha", "pihalla", "pihalta", "pihalle"],
-      note: "Участок земли при доме. Во внешних местных падежах (pihalla, pihalta, pihalle) значит ещё и просто «на улице» в противоположность «дома»: Menen pihalle не обязательно означает, что человек останется именно во дворе — может значить просто «выхожу на улицу»." },
+      note: "A plot of land at a house. In the outer local cases (pihalla, pihalta, pihalle) it also simply means “outdoors” as opposed to “at home”: Menen pihalle does not necessarily mean the person will stay precisely in the yard — it may simply mean “I’m going outside”." },
     { w: "pää", ru: "голова; конец (чего-то длинного)", en: "head; end (of something long)",
       forms: ["pää", "päähän", "päälle"],
-      note: "Используется и для головы человека, и для конца любого длинного предмета: köyden pää («конец верёвки»), kynän pää («кончик карандаша»), tien pää («конец дороги»)." },
+      note: "Used both for a person’s head and for the end of any long object: köyden pää (“the end of a rope”), kynän pää (“the tip of a pencil”), tien pää (“the end of the road”)." },
     { w: "lumi", ru: "снег", en: "snow", forms: ["lumi", "lunta"] },
     { w: "kylmä", ru: "холодный", en: "cold", forms: ["kylmä", "kylmät"] },
     { w: "oikeasti", ru: "действительно, по-настоящему", en: "really, truly", forms: ["oikeasti"] }
@@ -3643,13 +3639,13 @@ const LESSONS_AB = [
   glossary: [
     { w: "fyysiset ja psyykkiset tilat", ru: "физические и душевные состояния: minulla on...", en: "expressing physical and mental states",
       forms: ["minulla on nälkä", "minulla on jano", "minulla on kylmä", "minulla on kuuma", "minulla on tylsää", "minulla on hauskaa", "minulla on mukavaa", "minulla on kurjaa"],
-      note: "Ещё одно применение уже знакомой конструкции Minulla on... — не только владение, но и телесные и душевные состояния.\nЕсли внимательно приглядеться, слово, описывающее состояние, иногда стоит в номинативе, а иногда в партитиве — и разница неслучайна. Физические состояния — номинатив: Minulla on nälkä («Я голоден»), Minulla on jano («Мне хочется пить»), Minulla on kylmä («Мне холодно»), Minulla on kuuma («Мне жарко»). Причём эти четыре слова — nälkä, jano, kylmä, kuuma — остаются в номинативе даже в отрицании и в вопросе: Minulla ei ole nälkä, Onko sinulla nälkä?\nДушевные состояния — партитив: Minulla on tylsää («Мне скучно»), Minulla on hauskaa («Мне весело»), Minulla on mukavaa («Мне приятно»), Minulla on kurjaa («Мне паршиво»).\nВажно: так можно сказать не про любое состояние, а только про эти конкретные слова из списка. Для большинства прилагательных нужна другая конструкция — Minä olen...: Minä olen väsynyt («Я устал»), Minä olen iloinen («Я рад»)." },
+      note: "Another use of the already familiar construction Minulla on... — not only possession, but also bodily and mental states.\nIf you look closely, the word describing the state sometimes stands in the nominative and sometimes in the partitive — and the difference is not accidental. Physical states — the nominative: Minulla on nälkä (“I am hungry”), Minulla on jano (“I am thirsty”), Minulla on kylmä (“I am cold”), Minulla on kuuma (“I am hot”). Moreover these four words — nälkä, jano, kylmä, kuuma — stay in the nominative even in a negation and a question: Minulla ei ole nälkä, Onko sinulla nälkä?\nMental states — the partitive: Minulla on tylsää (“I am bored”), Minulla on hauskaa (“I am having fun”), Minulla on mukavaa (“I am comfortable”), Minulla on kurjaa (“I feel miserable”).\nImportant: this can be said not about any state but only about these specific words from the list. For most adjectives another construction is needed — Minä olen...: Minä olen väsynyt (“I am tired”), Minä olen iloinen (“I am glad”)." },
     { w: "ruoka", ru: "еда; приём пищи", en: "food, meal",
       forms: ["ruoka", "ruokaa", "ruoan", "ruuan"],
-      note: "Значит и «еда» вообще (Onko sinulla mitään ruokaa? — «У тебя есть что-нибудь поесть?»), и конкретный приём пищи (Tule kotiin ennen ruokaa — «Приходи домой до ужина»). У слова две формы основы с чередованием: исторически правильная ruoa- (ruoan, ruoassa) и более лёгкая для произношения ruua- (ruuan, ruuassa) — обе приняты в норме." },
+      note: "Means both “food” in general (Onko sinulla mitään ruokaa? — “Do you have anything to eat?”) and a specific meal (Tule kotiin ennen ruokaa — “Come home before dinner”). The word has two stem forms with gradation: the historically correct ruoa- (ruoan, ruoassa) and the one easier to pronounce, ruua- (ruuan, ruuassa) — both are accepted as standard." },
     { w: "tylsä", ru: "скучный; тупой (не острый)", en: "dull, boring",
       forms: ["tylsä", "tylsää"],
-      note: "Двойное значение, как и в русском «тупой»: и «скучный», и «не острый» (про нож). Ещё есть разговорное значение, близкое к «зануда, портит всем веселье»: Älä ole tylsä! — «Не будь занудой!»" },
+      note: "A double meaning, as in English “dull”: both “boring” and “not sharp” (about a knife). There is also a colloquial meaning close to “a bore, spoils everyone’s fun”: Älä ole tylsä! — “Don’t be a bore!”" },
     { w: "kanssa", ru: "вместе с", en: "with", forms: ["kanssa", "kanssani"] },
     { w: "ainakin", ru: "по крайней мере", en: "at least", forms: ["ainakin"] },
     { w: "kohta", ru: "скоро", en: "soon", forms: ["kohta"] },
@@ -3671,10 +3667,10 @@ const LESSONS_AB = [
     { fi: "televisio", ru: "телевизор", en: "television", k: "w" },
     { fi: "tylsä", ru: "скучный", en: "boring, dull", k: "w" },
     { fi: "nälkä", ru: "голод", en: "hunger", k: "w" },
-    { fi: "Menisitkö elokuviin kanssani?", ru: "Пойдёшь со мной в кино?", en: "Will you go to the movies with me?", k: "s" },
+    { fi: "Menisitkö elokuviin kanssani?", ru: "Не сходил бы ты со мной в кино?", en: "Will you go to the movies with me?", k: "s" },
     { fi: "Jussi pelaa sählyä kavereiden kanssa.", ru: "Юсси играет во флорбол с друзьями.", en: "Jussi plays floorball with his friends.", k: "s" },
     { fi: "Lunta on ainakin kymmenen senttimetriä.", ru: "Снега как минимум десять сантиметров.", en: "There is at least ten centimeters of snow.", k: "s" },
-    { fi: "Tulen ihan kohta.", ru: "Я скоро приду.", en: "I'll be there in a minute.", k: "s" },
+    { fi: "Tulen ihan kohta.", ru: "Я довольно скоро приду.", en: "I'll be there in a minute.", k: "s" },
     { fi: "Mitä ruokaa meillä on tänään?", ru: "Что у нас сегодня на еду?", en: "What are we having for dinner today?", k: "s" },
     { fi: "Tämä on tyypillistä suomalaista ruokaa.", ru: "Это (tämä) типичная финская еда.", en: "This is typical Finnish food.", k: "s" },
     { fi: "En yleensä katso ollenkaan urheilua, mutta tein eilen poikkeuksen.", ru: "Обычно я вообще не смотрю спорт, но вчера сделал исключение.", en: "Usually, I don't watch any sports but I made an exception yesterday.", k: "s" },
@@ -3701,16 +3697,16 @@ const LESSONS_AB = [
   glossary: [
     { w: "ulkopaikallissijat yhdessä", ru: "три внешних падежа вместе: обладание, отдающий, получающий", en: "outer locative cases: having, giving, receiving",
       forms: ["lapsella on", "äidiltä", "äidille", "isältä pojalle"],
-      note: "Мы уже разбирали, что адессив (-lla/-llä) значит обладание: Lapsella on ruokaa («У ребёнка есть еда»). Аблатив (-lta/-ltä, «с поверхности») и аллатив (-lle, «на поверхность») логично продолжают эту идею: тот, ОТ кого что-то приходит, и тот, КОМУ что-то достаётся.\nLapsi saa äidiltä ruokaa («Ребёнок получает еду от матери») — аблатив, источник. Äiti antaa lapselle ruokaa («Мать даёт еду ребёнку») — аллатив, получатель. Глагол обычно antaa («давать») или saada («получать»), но подходит любой глагол передачи: Helen lainaa Liisalta sateenvarjon («Хелен берёт взаймы у Лийсы зонт») — Liisa lainaa Helenille sateenvarjon («Лийса одалживает Хелен зонт»). Talo siirtyy isältä pojalle («Дом переходит от отца к сыну») — сразу оба падежа в одном предложении." },
+      note: "We have already seen that the adessive (-lla/-llä) means possession: Lapsella on ruokaa (“The child has food”). The ablative (-lta/-ltä, “from a surface”) and the allative (-lle, “onto a surface”) logically continue this idea: the one FROM whom something comes, and the one TO whom something goes.\nLapsi saa äidiltä ruokaa (“The child gets food from the mother”) — the ablative, the source. Äiti antaa lapselle ruokaa (“The mother gives food to the child”) — the allative, the recipient. The verb is usually antaa (“to give”) or saada (“to get”), but any verb of transfer works: Helen lainaa Liisalta sateenvarjon (“Helen borrows an umbrella from Liisa”) — Liisa lainaa Helenille sateenvarjon (“Liisa lends Helen an umbrella”). Talo siirtyy isältä pojalle (“The house passes from father to son”) — both cases in one sentence." },
     { w: "keneltä", ru: "от кого (вопрос в аблативе)", en: "from whom",
       forms: ["keneltä"],
-      note: "Вопросительное слово kuka («кто») в аблативе: Keneltä se on? («От кого это?»)" },
+      note: "The question word kuka (“who”) in the ablative: Keneltä se on? (“Who is it from?”)" },
     { w: "tuntua", ru: "ощущаться, казаться (на ощупь, по впечатлению)", en: "to feel, to seem",
       forms: ["tuntua", "tuntuu"],
-      note: "Непереходный глагол: нельзя перевести дословно «я ощупал посылку». По-фински так и говорят про саму вещь: Se tuntuu kylmältä/kuumalta/pehmeältä («Она кажется на ощупь холодной/горячей/мягкой»). И нельзя сказать Minä tunnun kylmältä, желая сказать «мне холодно» — для этого нужна уже знакомая конструкция из прошлого урока: Minulla on kylmä. Minä tunnun kylmältä означало бы, что вы сами на ощупь холодные. Переносное значение — «казаться, производить впечатление»: Kalle tuntuu mukavalta pojalta («Калле кажется приятным парнем»)." },
+      note: "An intransitive verb: you can’t translate literally “I felt the parcel”. In Finnish they say it about the thing itself: Se tuntuu kylmältä/kuumalta/pehmeältä (“It feels cold/hot/soft to the touch”). And you can’t say Minä tunnun kylmältä if you want to say “I am cold” — for that you need the already familiar construction from the previous lesson: Minulla on kylmä. Minä tunnun kylmältä would mean that you yourself feel cold to the touch. The figurative meaning — “to seem, to make an impression”: Kalle tuntuu mukavalta pojalta (“Kalle seems a nice guy”)." },
     { w: "lukea", ru: "читать; быть написанным (без подлежащего)", en: "to read; to say (impersonal)",
       forms: ["lukea", "lukee"],
-      note: "Мы уже знали lukea в обычном смысле «читать». Но часто оно встречается и в безличных предложениях без подлежащего: Tässä lukee... («Здесь написано...»), Ei tässä lue («Здесь не написано»)." },
+      note: "We already knew lukea in the ordinary sense “to read”. But it also often occurs in impersonal sentences without a subject: Tässä lukee... (“It says here...”), Ei tässä lue (“It doesn’t say here”)." },
     { w: "samanlainen", ru: "похожий, такой же", en: "similar", forms: ["samanlainen"] },
     { w: "pehmeä", ru: "мягкий", en: "soft", forms: ["pehmeä", "pehmeältä"] },
     { w: "kaunis", ru: "красивый", en: "beautiful", forms: ["kaunis", "kaunis villapaita"] },
@@ -3771,16 +3767,16 @@ const LESSONS_BE = [
   glossary: [
     { w: "mitä kuuluu", ru: "как дела: кому — в аллативе", en: "how are you",
       forms: ["kuuluu", "sinulle", "sulle", "teille", "minulle", "meille", "kaikille"],
-      note: "Буквально «что слышно», то есть «что у тебя происходит». Тот, о ком спрашивают, ставится в аллатив (-lle): Mitä sinulle kuuluu?, Mitä teille kaikille kuuluu? В разговорной речи sinulle сокращается до sulle.\nОтвечают той же конструкцией: Minulle kuuluu hyvää, kiitos или Meille kaikille kuuluu ihan hyvää. Короткий вариант — Kiitos hyvää. Вежливо добавить Kiitos kysymästä («спасибо, что спросил»).\nВажно: этот вопрос задают тем, кого давно не видели или хотя бы знают. Незнакомому человеку при первой встрече так не говорят, и каждый день коллеге тоже." },
+      note: "Literally “what is heard”, i.e. “what is going on with you”. The person asked about goes into the allative (-lle): Mitä sinulle kuuluu?, Mitä teille kaikille kuuluu? In colloquial speech sinulle is shortened to sulle.\nThe answer uses the same construction: Minulle kuuluu hyvää, kiitos or Meille kaikille kuuluu ihan hyvää. A short variant — Kiitos hyvää. It is polite to add Kiitos kysymästä (“thanks for asking”).\nImportant: this question is asked to people you haven’t seen for a long time or at least know. You don’t say it to a stranger at the first meeting, and not to a colleague every day either." },
     { w: "miten voit", ru: "как ты себя чувствуешь", en: "how are you doing",
       forms: ["voit", "voi", "voida", "voiko"],
-      note: "Тот же смысл, но через глагол voida — здесь он значит не «мочь», а «чувствовать себя». Особенно уместен, если человек болел или был травмирован: Kuulin että olit sairaana. Miten voit nyt? Про третьих лиц: Miten äitisi voi?, Voiko perheesi hyvin?\nСамый разговорный из трёх вариантов — Miten menee (урок 5 первого уровня)." },
+      note: "The same meaning, but through the verb voida — here it means not “can” but “to feel”. Especially appropriate if the person has been ill or injured: Kuulin että olit sairaana. Miten voit nyt? About third persons: Miten äitisi voi?, Voiko perheesi hyvin?\nThe most colloquial of the three variants is Miten menee (lesson 5 of the first level)." },
     { w: "pitkästä aikaa", ru: "давно не виделись", en: "long time no see",
       forms: ["pitkästä", "aikaa"],
-      note: "Из pitkä («долгий») и aika («время»), буквально «спустя долгое время». Годится не только про встречу с человеком, но и про любое дело, которого давно не делали: Menin pitkästä aikaa uimaan («Сходил поплавать первый раз за долгое время»). Место в предложении свободное." },
+      note: "From pitkä (“long”) and aika (“time”), literally “after a long time”. Works not only about meeting a person, but about any activity not done for a long time: Menin pitkästä aikaa uimaan (“I went swimming for the first time in a long while”). The place in the sentence is free." },
     { w: "soittaa", ru: "звонить; играть (на инструменте)", en: "to call; to play",
       forms: ["soittaa", "soitan", "soitatko", "soitanpa", "soittakaa"],
-      note: "Два значения сразу: звонить по телефону и играть на музыкальном инструменте. Куда или кому звонят — в иллатив или аллатив: soittaa postitoimistoon, soittaa äidille." },
+      note: "Two meanings at once: to call on the phone and to play a musical instrument. Where or to whom one calls — the illative or the allative: soittaa postitoimistoon, soittaa äidille." },
     { w: "yllätys", ru: "сюрприз, неожиданность", en: "surprise", forms: ["yllätys", "yllätyksen"] },
     { w: "yhdessä", ru: "вместе", en: "together", forms: ["yhdessä"] },
     { w: "haloo", ru: "алло", en: "hello (on the phone)", forms: ["haloo"] },
@@ -3833,22 +3829,22 @@ const LESSONS_BE = [
   glossary: [
     { w: "translatiivi", ru: "транслатив: в каком качестве становятся, -ksi", en: "translative case",
       forms: ["uudeksi", "opiskelijaksi", "valmiiksi", "punaiseksi"],
-      note: "Окончание -ksi отвечает на вопрос «кем, чем становится» или «во что превращается»: ilmoittautua uudeksi opiskelijaksi («записаться в качестве нового студента»). Сравните с эссивом из урока 15, который описывает уже имеющееся состояние: opettajana («работая учителем»), а opettajaksi — «(стать) учителем»." },
+      note: "The ending -ksi answers the question “who or what does one become” or “what does it turn into”: ilmoittautua uudeksi opiskelijaksi (“to enrol as a new student”). Compare with the essive from lesson 15, which describes an already existing state: opettajana (“working as a teacher”), whereas opettajaksi means “(to become) a teacher”." },
     { w: "onko tämä", ru: "«это ли ...?» — уточнить, куда попал", en: "is this ...?",
       forms: ["onko", "tämä"],
-      note: "Простая и очень полезная схема: onko + tämä + существительное. Onko tämä opintotoimisto?, Onko tämä kirjasto?, Onko tämä musiikkiopisto? Подставляется любое место, и получается вопрос «это вот то самое?»" },
+      note: "A simple and very useful pattern: onko + tämä + a noun. Onko tämä opintotoimisto?, Onko tämä kirjasto?, Onko tämä musiikkiopisto? Any place can be inserted, and you get the question “is this the one?”" },
     { w: "pitäisi", ru: "надо бы: кто — в генитиве", en: "should",
       forms: ["pitäisi", "minun", "hänen", "heidän"],
-      note: "Схема: личное местоимение в генитиве + pitäisi + глагол в инфинитиве. Minun pitäisi ilmoittautua, Hänen pitäisi siivota keittiö, Heidän pitäisi nukkua. Сам pitäisi по лицам не меняется — это кондиционал (урок 21), и он же делает просьбу мягче." },
+      note: "Pattern: a personal pronoun in the genitive + pitäisi + a verb in the infinitive. Minun pitäisi ilmoittautua, Hänen pitäisi siivota keittiö, Heidän pitäisi nukkua. Pitäisi itself doesn’t change by person — it is the conditional (lesson 21), and it also makes a request softer." },
     { w: "opintotoimisto", ru: "учебный отдел, деканат", en: "student affairs office",
       forms: ["opintotoimisto", "opintotoimistoa", "opinnot", "toimisto"],
-      note: "Из opinto (от opinnot, «учёба») и toimisto («офис»), буквально «контора по учёбе». Так называют учебную часть в университете или похожем заведении." },
+      note: "From opinto (from opinnot, “studies”) and toimisto (“office”), literally “an office for studies”. This is what the registrar’s office at a university or a similar institution is called." },
     { w: "henkilöllisyystodistus", ru: "удостоверение личности", en: "identification",
       forms: ["henkilöllisyystodistus", "henkilöllisyystodistukseni", "henkkari"],
-      note: "Длинное слово из henkilöllisyys («личность») и todistus («свидетельство, подтверждение»). В официальных ситуациях говорят так, а между собой — коротко henkkari." },
+      note: "A long word from henkilöllisyys (“identity”) and todistus (“certificate, proof”). In official situations this is what is said, and among themselves — the short henkkari." },
     { w: "opiskelusanasto", ru: "слова про учёбу", en: "study vocabulary",
       forms: ["yliopisto", "ammattikorkeakoulu", "lukio", "ammattikoulu", "luento", "kurssi", "koe", "muistiinpanot", "aikataulu", "syysloma", "joululoma", "talviloma", "pääsiäisloma", "kesäloma", "ryhmätyö", "presentaatio", "lukukausi", "lukuvuosi", "ylioppilastutkinto", "opiskelija-alennus"],
-      note: "yliopisto («университет»), ammattikorkeakoulu («прикладной университет»), lukio («старшая школа»), ammattikoulu («профучилище»), luento («лекция»), kurssi («курс»), koe («экзамен»), muistiinpanot («конспект»), aikataulu («расписание»), lukukausi («семестр»), lukuvuosi («учебный год»), ryhmätyö («групповая работа»), presentaatio («презентация»). Каникулы: syysloma, joululoma, talviloma, pääsiäisloma, kesäloma.\nУчёба в Финляндии бесплатная от начальной школы до университета, а школьников ещё и кормят обедом. Обязательная школа длится девять лет, потом выбирают lukio или ammattikoulu." },
+      note: "yliopisto (“university”), ammattikorkeakoulu (“university of applied sciences”), lukio (“upper secondary school”), ammattikoulu (“vocational school”), luento (“lecture”), kurssi (“course”), koe (“exam”), muistiinpanot (“notes”), aikataulu (“timetable”), lukukausi (“term”), lukuvuosi (“school year”), ryhmätyö (“group work”), presentaatio (“presentation”). Holidays: syysloma, joululoma, talviloma, pääsiäisloma, kesäloma.\nEducation in Finland is free from primary school to university, and schoolchildren are even given a lunch. Compulsory school lasts nine years, after which one chooses lukio or ammattikoulu." },
     { w: "ilmoittautua", ru: "записаться, зарегистрироваться", en: "to register", forms: ["ilmoittautua", "ilmoittauduin", "ilmoittautukaa"] },
     { w: "ylioppilaskunta", ru: "студенческий союз", en: "student union", forms: ["ylioppilaskunta", "ylioppilaskunnan"] },
     { w: "jäsenmaksu", ru: "членский взнос", en: "membership fee", forms: ["jäsenmaksu", "jäsenmaksun"] },
@@ -3910,19 +3906,19 @@ const LESSONS_BE = [
   glossary: [
     { w: "pitää ja rakastaa", ru: "нравится — элатив, люблю — партитив", en: "to like and to love",
       forms: ["pidän", "pidät", "pitää", "pidä", "rakastan", "rakastaa", "vihaan", "vihata", "kakusta", "kissoista", "kissoja", "mansikoista", "katkaravuista", "porosta", "ruisleivästä"],
-      note: "Две конструкции, и падеж у них разный.\nPitää («нравиться») требует элатива (-sta/-stä): Minä pidän kakusta, Minä pidän kissoista, Saara pitää ruisleivästä.\nRakastaa («любить») требует партитива: Minä rakastan kissoja, Hän rakastaa sienipiirakkaa.\nОтрицание строится обычным способом: Minä en pidä kakusta, Hän ei pidä kalakeitosta. А если хочется сказать резче, есть vihata («ненавидеть») — тоже с партитивом: Minä vihaan vaniljajäätelöä." },
+      note: "Two constructions, and the case differs.\nPitää (“to like”) requires the elative (-sta/-stä): Minä pidän kakusta, Minä pidän kissoista, Saara pitää ruisleivästä.\nRakastaa (“to love”) requires the partitive: Minä rakastan kissoja, Hän rakastaa sienipiirakkaa.\nThe negative is formed in the usual way: Minä en pidä kakusta, Hän ei pidä kalakeitosta. And if you want to say it more bluntly, there is vihata (“to hate”) — also with the partitive: Minä vihaan vaniljajäätelöä." },
     { w: "tilaaminen", ru: "как сделать заказ", en: "placing an order",
       forms: ["tilaisin", "tilaan", "tilata", "ruokalista", "kahdelle", "kolmelle", "neljälle", "lohikeiton", "mustikkapiirakan", "silakkapihvit", "vettä", "olutta", "kahvia"],
-      note: "Меню просят так: Saisinko ruokalistan, kiitos. Ruokalista — из ruoka («еда») и lista («список»).\nЗаказ начинают словом tilaisin («я бы заказал», кондиционал). Названия блюд при этом ставятся в генитив: lohikeitto → tilaisin lohikeiton, mustikkapiirakka → tilaisin mustikkapiirakan. Если название уже во множественном числе, его не трогают: tilaisin silakkapihvit.\nНапитки, наоборот, идут в партитив: vesi → vettä, olut → olutta, kahvi → kahvia. Количество людей — в аллативе: kahdelle («на двоих»), kolmelle, neljälle. И в конце обязательно kiitos.\nРазделы меню: alkupalat («закуски»), keitot ja salaatit («супы и салаты»), pääruoka («горячее»), jälkiruoka («десерт»)." },
+      note: "The menu is asked for like this: Saisinko ruokalistan, kiitos. Ruokalista — from ruoka (“food”) and lista (“list”).\nAn order begins with the word tilaisin (“I would order”, the conditional). The names of dishes then go into the genitive: lohikeitto → tilaisin lohikeiton, mustikkapiirakka → tilaisin mustikkapiirakan. If the name is already in the plural, it is left alone: tilaisin silakkapihvit.\nDrinks, on the contrary, go into the partitive: vesi → vettä, olut → olutta, kahvi → kahvia. The number of people — in the allative: kahdelle (“for two”), kolmelle, neljälle. And at the end kiitos is obligatory.\nSections of the menu: alkupalat (“starters”), keitot ja salaatit (“soups and salads”), pääruoka (“main course”), jälkiruoka (“dessert”)." },
     { w: "allerginen", ru: "аллергия: на что — в аллативе", en: "allergic to",
       forms: ["allerginen", "allergia", "porkkanalle", "pähkinöille", "kalalle", "mansikoille"],
-      note: "То, на что аллергия, ставится в аллатив (-lle): Olen allerginen porkkanalle, Minä olen allerginen pähkinöille. Существительное — allergia. Частые: maitotuote-allergia, kala-allergia, pähkinä-allergia." },
+      note: "What one is allergic to goes into the allative (-lle): Olen allerginen porkkanalle, Minä olen allerginen pähkinöille. The noun is allergia. Common ones: maitotuote-allergia, kala-allergia, pähkinä-allergia." },
     { w: "suomalaiset ruoat", ru: "финские блюда", en: "Finnish dishes",
       forms: ["graavilohi", "lohikeitto", "poronkäristys", "lihapullat", "mustikkapiirakka", "kalakukko", "silakkapihvit", "äyriäissalaatti"],
-      note: "graavilohi — малосольный лосось в травах; lohikeitto — суп из лосося с картофелем и укропом; poronkäristys — тушёная оленина с картофельным пюре и брусничным вареньем; lihapullat — тефтели с пюре; mustikkapiirakka — черничный пирог; kalakukko — рыба, запечённая в ржаном тесте; silakkapihvit — котлетки из салаки." },
+      note: "graavilohi — lightly cured salmon with herbs; lohikeitto — salmon soup with potatoes and dill; poronkäristys — braised reindeer with mashed potato and lingonberry jam; lihapullat — meatballs with mash; mustikkapiirakka — blueberry pie; kalakukko — fish baked in rye dough; silakkapihvit — Baltic herring patties." },
     { w: "lounaslista", ru: "обеденное меню", en: "lunch menu",
       forms: ["lounaslista", "ruokalista", "juomalista", "lista"],
-      note: "Lounas («обед») + lista («список»). Первую часть можно менять: juomalista («карта напитков»), а ещё в ходу заимствование menu." },
+      note: "Lounas (“lunch”) + lista (“list”). The first part can be changed: juomalista (“drinks menu”), and the loanword menu is also in use." },
     { w: "tarjoilija", ru: "официант, официантка", en: "waiter", forms: ["tarjoilija", "tarjoilijan"] },
     { w: "suositella", ru: "рекомендовать", en: "to recommend", forms: ["suositella", "suosittelen", "suositteli"] },
     { w: "ottaa", ru: "брать, взять", en: "to take", forms: ["ottaa", "otan", "otat", "otin"] }
@@ -3989,13 +3985,13 @@ const LESSONS_BE = [
   glossary: [
     { w: "ehdotus konditionaalilla", ru: "предложение через кондиционал + -ko/-kö", en: "suggestions with the conditional",
       forms: ["menisimmekö", "voisimme", "kävisikö", "näkisimme", "tapaisimmeko", "lähtisimmekö"],
-      note: "Кондиционал (урок 21) годится не только для вежливых просьб, но и для предложений «давай сделаем». Схема для «мы»: основа + -isi- + окончание -mme + вопросительная частица -ko/-kö.\nMenisimmekö huomenna syömään? («Пойдём завтра поедим?»), Tapaisimmeko tänään illalla?, Lähtisimmekö kesän alussa risteilylle? Без вопросительной частицы получается просто мягкое «мы могли бы»: Voisimme juhlia sun uutta opiskelupaikkaa.\nВопрос про вариант дня строится так же, но в третьем лице: Kävisikö perjantaina? — «Пятница подошла бы?»" },
+      note: "The conditional (lesson 21) works not only for polite requests but also for “let’s do” suggestions. The pattern for “we”: stem + -isi- + the ending -mme + the question particle -ko/-kö.\nMenisimmekö huomenna syömään? (“Shall we go and eat tomorrow?”), Tapaisimmeko tänään illalla?, Lähtisimmekö kesän alussa risteilylle? Without the question particle it is just a soft “we could”: Voisimme juhlia sun uutta opiskelupaikkaa.\nA question about a day option is built the same way, but in the third person: Kävisikö perjantaina? — “Would Friday suit?”" },
     { w: "kuulostaa hyvältä", ru: "звучит хорошо", en: "sounds good",
       forms: ["kuulostaa", "hyvältä", "kuulostaisi"],
-      note: "Kuulostaa joltakin — «звучать как-то», и это «как-то» ставится в аблатив (-lta/-ltä), как и с vaikuttaa из урока 10: Suunnitelmasi kuulostaa hyvältä. Годится и про буквальный звук, и про идею или план." },
+      note: "Kuulostaa joltakin — “to sound like something”, and this “something” goes into the ablative (-lta/-ltä), as with vaikuttaa from lesson 10: Suunnitelmasi kuulostaa hyvältä. It works both for a literal sound and for an idea or plan." },
     { w: "puhekieli", ru: "разговорные сокращения местоимений", en: "colloquial pronouns",
       forms: ["sun", "mun", "sulle", "mulle", "sua", "mua"],
-      note: "В живой речи minun сокращается до mun, sinun до sun, minulle до mulle, sinulle до sulle. В диалоге как раз так: sun uutta opiskelupaikkaa вместо sinun, mun ystävän вместо minun. На письме и в официальной речи пишут полные формы." },
+      note: "In lively speech minun is shortened to mun, sinun to sun, minulle to mulle, sinulle to sulle. In the dialogue it is exactly so: sun uutta opiskelupaikkaa instead of sinun, mun ystävän instead of minun. In writing and formal speech the full forms are used." },
     { w: "keikka", ru: "концерт, выступление; подработка", en: "gig", forms: ["keikka", "keikalle", "keikan"] },
     { w: "juhlia", ru: "праздновать, отмечать", en: "to celebrate", forms: ["juhlia", "juhlin", "juhlimme", "juhlat"] },
     { w: "ravintola", ru: "ресторан", en: "restaurant", forms: ["ravintola", "ravintolaan", "ravintoloissa", "ravintolan"] },
@@ -4048,16 +4044,16 @@ const LESSONS_BE = [
   glossary: [
     { w: "hinnan kysyminen", ru: "как спросить цену", en: "asking the price",
       forms: ["maksaa", "maksavat", "minkä verran", "kuinka paljon", "paljonko"],
-      note: "Три равноправных способа: Kuinka paljon tämä maksaa? («Сколько это стоит?»), Minkä verran tuo maksaa?, Minkä verran nuo sinappisilakat maksavat? Перед вопросом вежливо добавить anteeksi.\nОбратите внимание на согласование: если спрашиваете про несколько предметов, глагол во множественном — nuo maksavat." },
+      note: "Three equal ways: Kuinka paljon tämä maksaa? (“How much does this cost?”), Minkä verran tuo maksaa?, Minkä verran nuo sinappisilakat maksavat? It is polite to add anteeksi before the question.\nNote the agreement: if you ask about several items, the verb is plural — nuo maksavat." },
     { w: "kilo kuudella eurolla", ru: "цена в адессиве: «за шесть евро»", en: "a kilo for six euros",
       forms: ["kuudella", "viidellätoista", "eurolla", "kilon"],
-      note: "Цена, за которую что-то отдают, ставится в адессив (-lla/-llä): saat kilon kuudella eurolla («получишь килограмм за шесть евро»), saat ne viidellätoista eurolla. Ostin omenoita kilon kuudella eurolla." },
+      note: "The price for which something is given goes into the adessive (-lla/-llä): saat kilon kuudella eurolla (“you’ll get a kilo for six euros”), saat ne viidellätoista eurolla. Ostin omenoita kilon kuudella eurolla." },
     { w: "alennuksen pyytäminen", ru: "как попросить скидку", en: "asking for a discount",
       forms: ["alennus", "alennusta", "edullisemmin", "halvemmalla", "tinkiä", "neuvotella", "kaupat tuli"],
-      note: "Saisinko yhtään alennusta? — «Можно хоть какую-то скидку?». Ещё варианты: Saisinko sen edullisemmin? и Voisinko saada sen halvemmalla? («Можно подешевле?»). Прямо спросить о торге: Saanko tinkiä?\nПродавец может ответить Voimme neuvotella («можем договориться») или saa tinkiä («торговаться можно»). Сделка закрывается фразой Kaupat tuli! — «По рукам!», буквально «сделка пришла».\nВажно про место: в Финляндии торговаться почти не принято и часто считается невежливым. Уместно только на блошиных рынках (kirpputori) и иногда на уличных (markkinat)." },
+      note: "Saisinko yhtään alennusta? — “May I have any discount at all?”. More variants: Saisinko sen edullisemmin? and Voisinko saada sen halvemmalla? (“Can I have it cheaper?”). To ask directly about haggling: Saanko tinkiä?\nThe seller may answer Voimme neuvotella (“we can negotiate”) or saa tinkiä (“you may haggle”). The deal is closed with the phrase Kaupat tuli! — “Deal!”, literally “the deal came”.\nImportant about the place: in Finland haggling is hardly customary and is often considered impolite. It is appropriate only at flea markets (kirpputori) and sometimes at street markets (markkinat)." },
     { w: "kaupan päälle", ru: "в придачу, бесплатно к покупке", en: "on the house",
       forms: ["kaupan päälle", "kauppa", "päällä"],
-      note: "Из kauppa («сделка») и päällä («сверху»), буквально «поверх сделки»: что-то дают бесплатно вдобавок к покупке. Jos ostan nämä kolme pukua, saanko solmion kaupan päälle?" },
+      note: "From kauppa (“deal”) and päällä (“on top”), literally “on top of the deal”: something given free in addition to a purchase. Jos ostan nämä kolme pukua, saanko solmion kaupan päälle?" },
     { w: "kallis", ru: "дорогой", en: "expensive", forms: ["kallis", "kallista", "kalleimman", "kalliimpi"] },
     { w: "käteinen", ru: "наличные", en: "cash", forms: ["käteinen", "käteistä"] },
     { w: "silakka", ru: "салака", en: "Baltic herring", forms: ["silakka", "silakkaa", "silakoita", "sinappisilakat", "silakkapihvit"] },
@@ -4116,22 +4112,22 @@ const LESSONS_IN = [
   glossary: [
     { w: "potentiaali", ru: "потенциал: показатель -ne-", en: "the potential mood",
       forms: ["paistanee", "satanee", "pilvistynee", "lienee", "tullee", "menneen"],
-      note: "Наклонение предположения: «пожалуй, будет», «по всей вероятности». В прогнозах погоды оно встречается постоянно, в обычной речи — редко.\nОбразуется прибавлением -ne- к основе инфинитива, а дальше обычные личные окончания: -ne-n, -ne-t, -ne-e, -ne-mme, -ne-tte, -ne-vat/-vät.\npaistaa → paistanee («вероятно, будет светить»), sataa → satanee («вероятно, пойдёт дождь»), pilvistyä → pilvistynee («вероятно, затянет облаками»).\nОтдельно стоит запомнить lienee — это потенциал от olla: Huomenna lienee aurinkoinen ilma («Завтра, надо полагать, будет солнечно»)." },
+      note: "The potential mood: “will probably be”, “in all likelihood”. It is constantly met in weather forecasts, and rarely in ordinary speech.\nIt is formed by adding -ne- to the infinitive stem, and then the ordinary personal endings: -ne-n, -ne-t, -ne-e, -ne-mme, -ne-tte, -ne-vat/-vät.\npaistaa → paistanee (“will probably shine”), sataa → satanee (“will probably rain”), pilvistyä → pilvistynee (“will probably cloud over”).\nlienee is worth remembering separately — it is the potential of olla: Huomenna lienee aurinkoinen ilma (“Tomorrow it will, one supposes, be sunny”)." },
     { w: "todennäköisyys", ru: "слова вероятности", en: "words of probability",
       forms: ["luultavasti", "todennäköisesti", "saattaa", "varmaankin", "varmasti", "ehkäpä", "kenties", "mahdollisesti"],
-      note: "Кроме потенциала есть целый набор наречий: luultavasti и todennäköisesti («вероятно»), saattaa («может»), varmaankin («наверняка»), ehkäpä и kenties («пожалуй, может быть»), mahdollisesti («возможно»).\nIltapäivällä luultavasti sataa, Saattaa sataa, Koe on varmaankin vaikea, Kenties koe on helppo. Шкала уверенности та же, что в уроке 12: varmasti сильнее, чем varmaankin, а ehkäpä и kenties — самые осторожные." },
+      note: "Besides the potential there is a whole set of adverbs: luultavasti and todennäköisesti (“probably”), saattaa (“may”), varmaankin (“surely”), ehkäpä and kenties (“perhaps, maybe”), mahdollisesti (“possibly”).\nIltapäivällä luultavasti sataa, Saattaa sataa, Koe on varmaankin vaikea, Kenties koe on helppo. The scale of certainty is the same as in lesson 12: varmasti is stronger than varmaankin, and ehkäpä and kenties are the most cautious." },
     { w: "pakkanen", ru: "мороз, минусовая температура", en: "frost, freezing weather",
       forms: ["pakkanen", "pakkasta", "pakkasella", "pakkaseen", "pakkasaste", "pakkasastetta", "pakkaslukema", "pakkaslukemat"],
-      note: "Отдельное слово для погоды ниже нуля, которого нет в русском одним словом. Производные: pakkasaste — «градус мороза» (Ulkona on 15 pakkasastetta — «на улице минус пятнадцать»), pakkaslukema — «показание ниже нуля» (Ulkona on kovat pakkaslukemat).\nБлагодаря им финны обходятся без минуса: не «минус двадцать», а «двадцать градусов мороза»." },
+      note: "A separate word for below-zero weather, which English does not have as a single word. Derivatives: pakkasaste — “a degree of frost” (Ulkona on 15 pakkasastetta — “It is minus fifteen outside”), pakkaslukema — “a below-zero reading” (Ulkona on kovat pakkaslukemat).\nThanks to them Finns manage without “minus”: not “minus twenty” but “twenty degrees of frost”." },
     { w: "ilmanpaine", ru: "давление: высокое и низкое", en: "air pressure",
       forms: ["korkeapaine", "matalapaine", "paine", "korkea"],
-      note: "Korkeapaine — из korkea («высокий») и paine («давление»), то есть антициклон. Противоположность — matalapaine («низкое давление, циклон»). Korkeapaine lähestyy viikonlopun aikana." },
+      note: "Korkeapaine — from korkea (“high”) and paine (“pressure”), i.e. an anticyclone. The opposite is matalapaine (“low pressure, cyclone”). Korkeapaine lähestyy viikonlopun aikana." },
     { w: "sääsanasto", ru: "погодный словарь прогноза", en: "weather forecast vocabulary",
       forms: ["paistaa", "pilvistyä", "sataa", "tuulla", "selkeytyä", "kirkastua", "kylmentyä", "lämmetä", "pakastua", "sulaa", "jäätyä", "lauhtua", "sademäärä", "lämpötila", "kosteus", "sumu", "usva", "sateenkaari", "myrsky", "ukonilma", "tulva", "kuivuus", "lämpöaalto", "sääennuste", "ilmasto", "ilmastonmuutos", "aurinkoinen", "sateinen", "sumuinen", "jäinen", "huurteinen", "myrskyinen"],
-      note: "Глаголы: paistaa («светить»), pilvistyä («затягивать облаками»), sataa («идти — об осадках»), tuulla («дуть»), selkeytyä и kirkastua («проясняться»), kylmentyä («холодать»), lämmetä («теплеть»), pakastua («подмораживать»), sulaa («таять»), jäätyä («обледеневать»), lauhtua («оттаивать»).\nСуществительные: sumu и usva («туман, дымка»), sateenkaari («радуга»), tuulahdus («дуновение»), ukonilma («гроза»), navakka tuuli («крепкий ветер»), tulva («наводнение»), kuivuus («засуха»), lämpöaalto («волна жары»), sademäärä («количество осадков»), lämpötila («температура»), kosteus («влажность»), ilmastonmuutos («изменение климата»).\nПрилагательные: aurinkoinen, sateinen, sumuinen, jäinen («ледяной»), huurteinen («заиндевелый»), myrskyinen («штормовой»), kostea («влажный»), viileä («прохладный»)." },
+      note: "Verbs: paistaa (“to shine”), pilvistyä (“to cloud over”), sataa (“to fall — of precipitation”), tuulla (“to blow”), selkeytyä and kirkastua (“to clear up”), kylmentyä (“to get colder”), lämmetä (“to get warmer”), pakastua (“to start freezing”), sulaa (“to melt”), jäätyä (“to ice over”), lauhtua (“to thaw, to turn milder”).\nNouns: sumu and usva (“fog, mist”), sateenkaari (“rainbow”), tuulahdus (“breath of wind”), ukonilma (“thunderstorm”), navakka tuuli (“a stiff wind”), tulva (“flood”), kuivuus (“drought”), lämpöaalto (“heatwave”), sademäärä (“amount of precipitation”), lämpötila (“temperature”), kosteus (“humidity”), ilmastonmuutos (“climate change”).\nAdjectives: aurinkoinen, sateinen, sumuinen, jäinen (“icy”), huurteinen (“frosty”), myrskyinen (“stormy”), kostea (“damp”), viileä (“cool”)." },
     { w: "hellittää", ru: "ослабевать, отпускать", en: "to ease",
       forms: ["hellittää", "hellitä", "hellittäjä"],
-      note: "Про погоду — ослабнуть: talvi hellittää otettaan («зима ослабляет хватку»). Про человека — сбавить обороты: Hellitä hieman, älä työskentele niin kovasti." },
+      note: "About weather — to ease: talvi hellittää otettaan (“winter loosens its grip”). About a person — to slow down: Hellitä hieman, älä työskentele niin kovasti." },
     { w: "ulottua", ru: "простираться, доходить", en: "to extend", forms: ["ulottua", "ulottuu", "ulottunut"] },
     { w: "kiristyä", ru: "усиливаться, затягиваться", en: "to tighten", forms: ["kiristyä", "kiristyy"] },
     { w: "talvinen", ru: "зимний", en: "wintry", forms: ["talvinen", "talvisessa"] },
@@ -4192,25 +4188,25 @@ const LESSONS_IN = [
   glossary: [
     { w: "eri mieltä kohteliaasti", ru: "как вежливо возразить", en: "polite disagreement",
       forms: ["toisaalta", "kuitenkin", "silti", "aivan", "totta", "niinkin"],
-      note: "Набор оборотов, которыми вводят своё несогласие, не обижая собеседника:\nToisaalta... («с другой стороны»), Voi olla, mutta... («может быть, но»), Se on totta, mutta... («это правда, но»), Minun mielestäni kuitenkin... («по-моему всё же»), Aivan, mutta silti... («верно, но всё равно»), Se on toki niinkin, mutta... («и так тоже, конечно, но»), Minulla on kuitenkin eri mielipide («у меня всё же другое мнение»), Aivan, olen kuitenkin eri mieltä kuin sinä." },
+      note: "A set of phrases with which to introduce disagreement without offending the other person:\nToisaalta... (“on the other hand”), Voi olla, mutta... (“maybe, but”), Se on totta, mutta... (“that is true, but”), Minun mielestäni kuitenkin... (“in my opinion, however”), Aivan, mutta silti... (“quite, but still”), Se on toki niinkin, mutta... (“that is so too, of course, but”), Minulla on kuitenkin eri mielipide (“I do have a different opinion, though”), Aivan, olen kuitenkin eri mieltä kuin sinä." },
     { w: "hyvä ja huono puoli", ru: "плюсы и минусы", en: "pros and cons",
       forms: ["puoli", "juttu", "asia", "paras", "huonoin"],
-      note: "Готовые каркасы для взвешивания: Hyvä/huono juttu on, että... («хорошо/плохо то, что»), Paras/huonoin puoli on... («лучшая/худшая сторона в том, что»), Tässä asiassa on se hyvä puoli, että..., Eräs huono puoli on, että...\nПример разговора: Paras puoli on sen hinta! — Huono puoli on sen sijainti. — No toisaalta, täällä on hyvin rauhallista." },
+      note: "Ready frames for weighing things up: Hyvä/huono juttu on, että... (“the good/bad thing is that”), Paras/huonoin puoli on... (“the best/worst side is”), Tässä asiassa on se hyvä puoli, että..., Eräs huono puoli on, että...\nAn example conversation: Paras puoli on sen hinta! — Huono puoli on sen sijainti. — No toisaalta, täällä on hyvin rauhallista." },
     { w: "ehdotus ja -ko/-kö", ru: "вопросительная частица и предложения", en: "question clitic",
       forms: ["-ko", "-kö", "menisimmekö", "onko", "sinullako", "kissako", "lähtikö", "oliko"],
-      note: "Частица -ko/-kö цепляется к тому слову, о котором спрашивают, и это слово ставят в начало: Onko sinulla kissa? («У тебя есть кошка?»), Sinullako on kissa? («Это у тебя кошка?»), Kissako sinulla on? («Именно кошка у тебя?»). Остальной порядок слов свободный.\nВместе с кондиционалом получается вежливое предложение или просьба: Menisimmekö kahville?, Voisitteko siirtyä hieman oikealle?, Joisitko jotain kuumaa?\nТа же частица нужна в косвенных вопросах: En tiedä, lähtikö opettaja jo kotiin, Kysy, onko hänellä karttaa." },
+      note: "The particle -ko/-kö attaches to the word being asked about, and that word is put at the beginning: Onko sinulla kissa? (“Do you have a cat?”), Sinullako on kissa? (“Is it YOU who has a cat?”), Kissako sinulla on? (“Is it a CAT that you have?”). The rest of the word order is free.\nTogether with the conditional you get a polite suggestion or request: Menisimmekö kahville?, Voisitteko siirtyä hieman oikealle?, Joisitko jotain kuumaa?\nThe same particle is needed in indirect questions: En tiedä, lähtikö opettaja jo kotiin, Kysy, onko hänellä karttaa." },
     { w: "ei välitä", ru: "«не очень люблю» — мягкий отказ", en: "to not care for",
       forms: ["välittää", "välitä", "uimisesta", "urheilusta", "lukemisesta", "maidosta"],
-      note: "Ei välitä jostakin — смягчённое «не люблю», то, о чём говорят, идёт в элатив: En välitä maidosta («молоко мне не очень»), Hän ei välitä lukemisesta. Если хочется сказать прямо, есть en pidä jostakin." },
+      note: "Ei välitä jostakin — a softened “doesn’t like”, what is spoken about goes into the elative: En välitä maidosta (“I’m not keen on milk”), Hän ei välitä lukemisesta. If you want to say it directly, there is en pidä jostakin." },
     { w: "sekä... että", ru: "и то, и другое", en: "both... and",
       forms: ["sekä", "että"],
-      note: "Парный союз: Pidän sekä omenista, että appelsiineista («Люблю и яблоки, и апельсины»), paikka, missä voimme sekä lautailla, että käydä kylpylässä." },
+      note: "A paired conjunction: Pidän sekä omenista, että appelsiineista (“I like both apples and oranges”), paikka, missä voimme sekä lautailla, että käydä kylpylässä." },
     { w: "hiihtoloma", ru: "лыжные каникулы", en: "skiing holiday",
       forms: ["hiihtoloma", "hiihtolomalla", "hiihtolomaa", "talviloma"],
-      note: "Hiihto («катание на лыжах») + loma («каникулы»). Недельные школьные каникулы между февралём и мартом, причём в разных муниципалитетах в разные недели — чтобы лыжные курорты не забились разом. Традиция с 1930-х: детей выгоняли двигаться, чтобы хватило сил доучиться до весны.\nХодовые вопросы: Koska teillä on hiihtoloma?, Minne menette hiihtolomalla?" },
+      note: "Hiihto (“skiing”) + loma (“holiday”). A week-long school holiday between February and March, in different municipalities in different weeks — so that ski resorts don’t fill up all at once. A tradition since the 1930s: children were sent out to be active so they would have the energy to study until spring.\nCommon questions: Koska teillä on hiihtoloma?, Minne menette hiihtolomalla?" },
     { w: "lomamökki", ru: "съёмный домик на отпуск", en: "holiday cottage",
       forms: ["lomamökki", "lomamökin", "kesämökki", "mökki"],
-      note: "Loma («отпуск») + mökki («домик»). Именно съёмный домик в туристической деревне. Свой собственный называют kesämökki или просто mökki." },
+      note: "Loma (“holiday”) + mökki (“cottage”). Precisely a rented cottage in a holiday village. One’s own is called kesämökki or simply mökki." },
     { w: "tylsä", ru: "скучный; тупой (о лезвии)", en: "boring; dull", forms: ["tylsä", "tylsää"] },
     { w: "kylpylä", ru: "спа, термы", en: "spa", forms: ["kylpylä", "kylpylään", "kylpylässä"] },
     { w: "lumilautailla", ru: "кататься на сноуборде", en: "to snowboard", forms: ["lumilautailemaan", "lautailla", "lautailemaan"] }
@@ -4267,19 +4263,19 @@ const LESSONS_IN = [
   glossary: [
     { w: "imperatiivi yksikkö", ru: "повелительное: ты", en: "singular imperative",
       forms: ["lue", "anna", "syö", "hymyile", "herää", "lukitse", "tule", "mene", "käänny", "siivoa", "odota", "kerro"],
-      note: "Форма для «ты» берётся из первого лица единственного числа настоящего времени: убираем окончание -n, и всё.\nluen → Lue! («Читай!»), annan → Anna! («Дай!»), syön → Syö! («Ешь!»), hymyilen → Hymyile! («Улыбнись!»), herään → Herää! («Проснись!»), lukitsen → Lukitse! («Запри!»). Работает для всех типов глаголов.\nОтрицание — частица älä перед той же формой: Älä syö!, Älä tule!, Älä mene sinne!, Älä sulje puhelinta!" },
+      note: "The form for “you” is taken from the first person singular of the present: remove the ending -n, and that’s it.\nluen → Lue! (“Read!”), annan → Anna! (“Give!”), syön → Syö! (“Eat!”), hymyilen → Hymyile! (“Smile!”), herään → Herää! (“Wake up!”), lukitsen → Lukitse! (“Lock!”). Works for all types of verbs.\nThe negative — the particle älä before the same form: Älä syö!, Älä tule!, Älä mene sinne!, Älä sulje puhelinta!" },
     { w: "imperatiivi monikko", ru: "повелительное: вы (и вежливое)", en: "plural imperative",
       forms: ["istukaa", "juokaa", "nouskaa", "menkää", "kertokaa", "odottakaa", "rauhoittukaa", "kuunnelkaa", "varokaa", "älkää", "auttako", "menkö", "tehkö", "sulkeko"],
-      note: "Здесь основа берётся от инфинитива, к ней добавляется -kaa/-kää: istua → istukaa, juoda → juokaa, nousta → nouskaa, mennä → menkää.\nЭта же форма служит вежливым обращением к одному человеку — как teitittely из урока 19. Поэтому диспетчер говорит Kertokaa osoite hitaasti, а не Kerro.\nОтрицание сложнее: älkää + основа инфинитива + -ko/-kö. Älkää auttako!, Älkää menkö sinne!, Älkää tehkö tyhmyyksiä!, Älkää sulkeko puhelinta!" },
+      note: "Here the stem is taken from the infinitive, and -kaa/-kää is added: istua → istukaa, juoda → juokaa, nousta → nouskaa, mennä → menkää.\nThe same form serves as a polite address to one person — like the teitittely from lesson 19. That is why a dispatcher says Kertokaa osoite hitaasti, and not Kerro.\nThe negative is more complicated: älkää + the infinitive stem + -ko/-kö. Älkää auttako!, Älkää menkö sinne!, Älkää tehkö tyhmyyksiä!, Älkää sulkeko puhelinta!" },
     { w: "hätäkeskus", ru: "служба экстренного вызова", en: "emergency response center",
       forms: ["hätäkeskus", "hätäkeskukseen", "hätä"],
-      note: "Единый номер в Финляндии — 112. Hätä значит «беда, крайняя нужда», keskus — «центр». Оттуда же hätätilanne («чрезвычайная ситуация»)." },
+      note: "The single emergency number in Finland is 112. Hätä means “distress, extreme need”, keskus — “centre”. Hence also hätätilanne (“emergency”)." },
     { w: "olla tavoitettavissa", ru: "быть доступным для связи", en: "to be reachable",
       forms: ["tavoitettavissa", "tavoittaa", "tavoittaako"],
-      note: "Voiko teidät tavoittaa tästä numerosta? — «Вас можно застать по этому номеру?». Olen tavoitettavissa toimistoltani ensi viikolla. Lääkärin täytyy olla tavoitettavissa melkein koko ajan." },
+      note: "Voiko teidät tavoittaa tästä numerosta? — “Can you be reached at this number?”. Olen tavoitettavissa toimistoltani ensi viikolla. Lääkärin täytyy olla tavoitettavissa melkein koko ajan." },
     { w: "paikkakunta", ru: "населённый пункт, местность", en: "locality",
       forms: ["paikkakunta", "paikkakunnalta", "paikkakunnalla"],
-      note: "Из paikka («место») и kunta («муниципалитет, община»). Любой посёлок, город или местность, но прежде всего единица административного деления. Olen kotoisin pieneltä paikkakunnalta." },
+      note: "From paikka (“place”) and kunta (“municipality”). Any village, town or locality, but first of all a unit of administrative division. Olen kotoisin pieneltä paikkakunnalta." },
     { w: "liukastua", ru: "поскользнуться", en: "to slip", forms: ["liukastua", "liukastui", "liukastu", "jäinen"] },
     { w: "rauhoittua", ru: "успокоиться", en: "to calm down", forms: ["rauhoittua", "rauhoittukaa", "rauhoitu"] },
     { w: "odottaa", ru: "ждать", en: "to wait", forms: ["odottaa", "odotan", "odottakaa", "odotti", "odottamaan"] },
@@ -4343,16 +4339,16 @@ const LESSONS_IN = [
   glossary: [
     { w: "komparatiivin vartalo", ru: "сравнительная степень: что делать с основой", en: "comparative stem changes",
       forms: ["pienempi", "suurempi", "hitaampi", "nopeampi", "kauniimpi", "viisaampi", "onnellisempi", "hauskempi", "ahkerampi", "nuorempi", "kokeneempi", "isompi", "pidempi"],
-      note: "Показатель -mpi уже был в уроке 20, здесь — точные правила для основы. Последняя буква основы отбрасывается в трёх случаях:\n• основа кончается на -i: pieni (piene-) → pienempi, suuri (suure-) → suurempi;\n• основа кончается на два гласных: hidas (hitaa-) → hitaampi, kaunis (kaunii-) → kauniimpi, viisas (viisaa-) → viisaampi;\n• в основе три слога и больше и она кончается на a/ä: nopea → nopeampi, onnellinen (onnellise-) → onnellisempi.\nУ двусложных на a/ä конечный гласный переходит в e: hauska → hauskempi. Но у трёхсложных этого не происходит: ahkera → ahkerampi.\nНеправильные: hyvä → parempi, pitkä → pidempi, lyhyt → lyhyempi." },
+      note: "The marker -mpi was already in lesson 20, here are the exact rules for the stem. The last letter of the stem is dropped in three cases:\n• the stem ends in -i: pieni (piene-) → pienempi, suuri (suure-) → suurempi;\n• the stem ends in two vowels: hidas (hitaa-) → hitaampi, kaunis (kaunii-) → kauniimpi, viisas (viisaa-) → viisaampi;\n• the stem has three or more syllables and ends in a/ä: nopea → nopeampi, onnellinen (onnellise-) → onnellisempi.\nIn two-syllable adjectives in a/ä the final vowel changes to e: hauska → hauskempi. But in three-syllable ones this does not happen: ahkera → ahkerampi.\nIrregular: hyvä → parempi, pitkä → pidempi, lyhyt → lyhyempi." },
     { w: "superlatiivi", ru: "превосходная степень: -in", en: "superlative",
       forms: ["isoin", "mukavin", "nuorin", "rennoin", "iloisin", "halvin", "vakavin", "nätein", "kaunein", "rikkain", "tervein", "paras", "pisin", "uusin", "viisain"],
-      note: "Показатель -in в номинативе и партитиве, прибавляется к основе. Основа при этом меняется:\n• конечные a, ä или e отбрасываются: halpa (halva-) → halvin, vakava → vakavin, terve (tervee-) → tervein;\n• i и ii переходят в e: nätti (näti-) → nätein, kaunis (kaunii-) → kaunein;\n• из двух одинаковых гласных остаётся один: rikas (rikkaa-) → rikkain.\nБез изменений: iso → isoin, mukava → mukavin, nuori → nuorin, iloinen (iloise-) → iloisin.\nИсключения: hyvä → parempi → paras, pitkä → pidempi → pisin, uusi → uudempi → uusin." },
+      note: "The marker -in in the nominative and partitive, added to the stem. The stem changes:\n• final a, ä or e are dropped: halpa (halva-) → halvin, vakava → vakavin, terve (tervee-) → tervein;\n• i and ii change to e: nätti (näti-) → nätein, kaunis (kaunii-) → kaunein;\n• of two identical vowels one remains: rikas (rikkaa-) → rikkain.\nWithout changes: iso → isoin, mukava → mukavin, nuori → nuorin, iloinen (iloise-) → iloisin.\nExceptions: hyvä → parempi → paras, pitkä → pidempi → pisin, uusi → uudempi → uusin." },
     { w: "murehtia", ru: "беспокоиться, тревожиться", en: "to worry",
       forms: ["murehtia", "murehdi", "murehtivat", "murhe"],
-      note: "От существительного murhe («печаль, горе»), но по смыслу мягче: это тревожиться, а не горевать. Älä murehdi menneistä («Не переживай о прошлом»), Äidit murehtivat aina lapsistaan. Если речь именно о трауре и скорби, нужен surra (урок 24)." },
+      note: "From the noun murhe (“sorrow, grief”), but milder in meaning: it is to worry, not to grieve. Älä murehdi menneistä (“Don’t worry about the past”), Äidit murehtivat aina lapsistaan. If mourning and sorrow are meant, you need surra (lesson 24)." },
     { w: "varmaan vai varmasti", ru: "«наверное» против «наверняка»", en: "probably vs surely",
       forms: ["varmaan", "varmasti", "varma"],
-      note: "Оба от varma («уверенный, надёжный»), но степень разная. Varmaan — «наверное, скорее всего», с оттенком сомнения: Ruoka on varmaan jo valmista. Varmasti — «точно, безусловно», без сомнений.\nСама уверенность выражается через olla varma: Olen varma, että voitan tällä kerralla. Отрицание — обычное: En ole yhtään varma." },
+      note: "Both from varma (“sure, reliable”), but the degree differs. Varmaan — “probably, most likely”, with a shade of doubt: Ruoka on varmaan jo valmista. Varmasti — “certainly, definitely”, without doubt.\nCertainty itself is expressed with olla varma: Olen varma, että voitan tällä kerralla. The negative is ordinary: En ole yhtään varma." },
     { w: "kokenut", ru: "опытный", en: "experienced", forms: ["kokenut", "kokeneempia", "kokeneet", "kokemus"] },
     { w: "mahdollisuus", ru: "возможность, шанс", en: "chance, possibility", forms: ["mahdollisuus", "mahdollisuuksia"] },
     { w: "hakija", ru: "соискатель, кандидат", en: "applicant", forms: ["hakija", "hakijat", "hakijaa"] },
@@ -4408,19 +4404,19 @@ const LESSONS_IN = [
   glossary: [
     { w: "kieltoverbi", ru: "отрицательный глагол: en, et, ei, emme, ette, eivät", en: "the negative verb",
       forms: ["en", "et", "ei", "emme", "ette", "eivät", "ole", "toimi", "tarkenna", "käynnisty", "jousta"],
-      note: "В финском отрицание — это отдельный глагол, который спрягается по лицам: en, et, ei, emme, ette, eivät. По временам и наклонениям он не меняется.\nОсновной глагол при этом теряет личное окончание и остаётся в слабой основе: её находят, взяв форму первого лица на minä и убрав -n. toimin → ei toimi, tarkennan → ei tarkenna, käynnistyn → ei käynnisty, joustan → ei jousta.\nПри жалобах на товар чаще всего нужны третьи лица: ei toimi («не работает»), eivät toimi («не работают»)." },
+      note: "In Finnish negation is a separate verb that is conjugated by person: en, et, ei, emme, ette, eivät. It does not change for tense or mood.\nThe main verb loses its personal ending and stays in the weak stem: you find it by taking the first person form with minä and removing -n. toimin → ei toimi, tarkennan → ei tarkenna, käynnistyn → ei käynnisty, joustan → ei jousta.\nWhen complaining about goods the third persons are needed most often: ei toimi (“doesn’t work”), eivät toimi (“don’t work”)." },
     { w: "kieltosanat", ru: "усилители отрицания", en: "words used with negation",
       forms: ["ollenkaan", "lainkaan", "varsinkaan", "yhtään", "enää", "eikä", "enkä"],
-      note: "Слова, которые встречаются только рядом с отрицанием: ollenkaan и lainkaan («вовсе»), varsinkaan («особенно не»), yhtään («ни одного, нисколько»), enää («больше не», урок 1 уровня Beginner).\nTämä ei jousta lainkaan, Autoni ei käynnisty enää ollenkaan, Myymälässä ei ole yhtään myyjää.\nСоюз ja в отрицательном предложении превращается в eikä, а с первым лицом — в enkä: Nämä ovat vain perusmalleja, eikä näissä ole kameraa. En pidä sienistä, enkä varsinkaan kanttarelleista." },
+      note: "Words that occur only next to a negation: ollenkaan and lainkaan (“at all”), varsinkaan (“especially not”), yhtään (“not a single one, not at all”), enää (“no longer”, lesson 1 of the Beginner level).\nTämä ei jousta lainkaan, Autoni ei käynnisty enää ollenkaan, Myymälässä ei ole yhtään myyjää.\nThe conjunction ja in a negative sentence turns into eikä, and with the first person — into enkä: Nämä ovat vain perusmalleja, eikä näissä ole kameraa. En pidä sienistä, enkä varsinkaan kanttarelleista." },
     { w: "indikatiivi", ru: "изъявительное наклонение: просто факты", en: "the indicative mood",
       forms: ["sammuu", "pitää", "loppuu", "välkkynyt", "painan"],
-      note: "Наклонение без особого показателя — просто основа плюс личное окончание. Им сообщают факты, а не чувства и мнения. При жалобе на товар пригождается во всех своих смыслах:\nповторяющееся действие — Ruutu sammuu joka kerta («Экран гаснет каждый раз»);\nдлящееся — Kytkin pitää kovaa ääntä («Переключатель громко трещит»);\nближайшее будущее — Virta loppuu viiden minuutin kuluttua;\nпостоянное состояние — Varaosaliike on liian kaukana;\nа также условие — Jos painan tästä napista..." },
+      note: "A mood without a special marker — just the stem plus the personal ending. It is used to report facts, not feelings and opinions. When complaining about goods it comes in handy in all its senses:\na repeated action — Ruutu sammuu joka kerta (“The screen goes off every time”);\nan ongoing one — Kytkin pitää kovaa ääntä (“The switch makes a loud noise”);\nthe near future — Virta loppuu viiden minuutin kuluttua;\na permanent state — Varaosaliike on liian kaukana;\nand also a condition — Jos painan tästä napista..." },
     { w: "ei toimi kunnolla", ru: "не работает как следует", en: "doesn't work properly",
       forms: ["toimia", "toimii", "kunnolla", "kunnollinen"],
-      note: "Три части: ei + toimia («функционировать») + kunnolla («как следует»). Если убрать kunnolla, получится «не работает вообще»: Tämä tietokone ei toimi. Без отрицания — toimia kunnolla («работать как надо»): Lukko ei toimi enää kunnolla." },
+      note: "Three parts: ei + toimia (“to function”) + kunnolla (“properly”). If you remove kunnolla, you get “doesn’t work at all”: Tämä tietokone ei toimi. Without the negation — toimia kunnolla (“to work as it should”): Lukko ei toimi enää kunnolla." },
     { w: "vara- ja perus-", ru: "приставки «запасной» и «базовый»", en: "spare and basic",
       forms: ["varapuhelin", "vara-auto", "vara-avain", "perusmalli", "peruspyörä", "perus"],
-      note: "Две продуктивные первые части сложных слов. Vara- значит «запасной»: varapuhelin («запасной телефон»), vara-auto, vara-avain. Perus- значит «базовый»: perusmalli («базовая модель»), peruspyörä («простой велосипед»). Их можно приставлять к почти любому существительному." },
+      note: "Two productive first parts of compound words. Vara- means “spare”: varapuhelin (“spare phone”), vara-auto, vara-avain. Perus- means “basic”: perusmalli (“basic model”), peruspyörä (“a simple bicycle”). They can be attached to almost any noun." },
     { w: "takuu", ru: "гарантия", en: "warranty", forms: ["takuu", "takuun", "takuuta"] },
     { w: "veloitukseton", ru: "бесплатный, без взимания платы", en: "free of charge", forms: ["veloitukseton", "veloituksetta"] },
     { w: "tallella", ru: "в сохранности, на месте", en: "intact, kept", forms: ["tallella", "tallessa"] },
@@ -4476,6 +4472,909 @@ const LESSONS_IN = [
     { fi: "Paperi on loppu, tämä on todella harmillista.", ru: "Бумага кончилась, это очень досадно.", en: "The paper has run out, this is really annoying.", k: "s" }
   ]
 },
+{
+  id: "IN_S1_07",
+  title: "A change of restaurant: the polite imperative",
+  source: "FinnishPod101 · Intermediate S1 #7",
+  glossary: [
+    { w: "istukaa, jättäkää, menkää", ru: "вежливое повелительное на -kaa/-kää (форма «вы»)", en: "polite plural imperative",
+      forms: ["istukaa", "juokaa", "nouskaa", "menkää", "jättäkää", "odottakaa", "soittakaa"],
+      note: "The plural imperative (to everyone addressed as “you” or to several people) is formed with the ending -kaa/-kää added to the infinitive stem: istua → istu- + kaa → Istukaa! (“Sit down!”), juoda → juo- + kaa → Juokaa! (“Drink!”), mennä → men- + kää → Menkää! (“Go!”).\nThis form is the usual way to address one person politely in the service sector, even if you would say “you” in the friendly form to them. Among young people and in an informal setting the ordinary “you” form is still used." },
+    { w: "älkää ... -ko/-kö", ru: "вежливый запрет: не делайте", en: "polite negative imperative",
+      forms: ["älkää menkö", "älkää tehkö", "älkää syökö", "älkää sulkeko"],
+      note: "The plural prohibition is built like this: älkää (“don’t”) + the infinitive stem + -ko/-kö: mennä → men- + kö → Älkää menkö sinne! (“Don’t go there!”), tehdä → teh- + kö → Älkää tehkö tyhmyyksiä! (“Don’t do anything stupid!”).\nTo soften a prohibition, an explanatory phrase with mutta (“but”) or vaan (“but rather”) is added before or after it: Älkää tulko ravintola Kukkoon, vaan tulkaa ravintola Kissaan (“Don’t come to the restaurant Kukko, but come to the restaurant Kissa”)." },
+    { w: "jättää viesti", ru: "оставить сообщение", en: "to leave a message",
+      forms: ["jättää", "jättäkää viesti"],
+      note: "Jättää — “to leave” in the broadest sense: to leave an item, a message, a trace. Jättäkää viesti äänimerkin jälkeen (“Leave a message after the tone”) — a standard answerphone phrase." },
+    { w: "äänimerkki", ru: "сигнал, звуковой сигнал", en: "signal, tone, beep",
+      forms: ["äänimerkki", "äänimerkin"],
+      note: "A compound word: ääni (“sound”) + merkki (“sign, mark”). Literally “sound mark”. Used for any short audio signal — on an answerphone, a timer, a fire alarm." },
+    { w: "nähdään ...na", ru: "увидимся (в день недели)", en: "see you on...",
+      forms: ["nähdään sunnuntaina", "nähdään lauantaina", "nähdään huomenna"],
+      note: "From the verb nähdä (“to see”) in the present passive, to which a day of the week or another time reference in the essive (-na/-nä) is added: Nähdään sunnuntaina! (“See you on Sunday!”). It is a farewell phrase — appropriate when leaving a conversation, but not in a formal setting and not when you are unlikely to see each other again." }
+  ],
+  items: [
+    { fi: "Tämä on vastaaja. Numero jota yritätte tavoittaa, on tällä hetkellä varattuna.", ru: "Это автоответчик. Номер, который вы пытаетесь набрать, сейчас занят.", en: "This is an answering machine. The number you are trying to reach is currently busy.", k: "d", who: "Answering machine" },
+    { fi: "Jättäkää viesti äänimerkin jälkeen.", ru: "Оставьте сообщение после сигнала.", en: "Please leave a message after the beep.", k: "d", who: "Answering machine" },
+    { fi: "No hei Aino, Linnea tässä. Soitan sunnuntaista. Vaihdoimme ravintolaa!", ru: "Привет, Айно, это Линнеа. Звоню насчёт воскресенья. Мы поменяли ресторан!", en: "Well hey Aino, Linnea here. I'm calling about Sunday. We changed the restaurant!", k: "d", who: "Linnea" },
+    { fi: "Eli älkää tulko ravintola Kukkoon, vaan tulkaa ravintola Kissaan.", ru: "В общем, не приходите в ресторан «Петух», а приходите в ресторан «Кот».", en: "So please don't come to restaurant Rooster, but come to restaurant Cat.", k: "d", who: "Linnea" },
+    { fi: "Olemme Markun kanssa ehkä hiukan myöhässä, joten menkää vain Heikin kanssa jo pöytään istumaan.", ru: "Мы с Маркку, возможно, немного опоздаем, так что идите с Хейкки сразу за столик.", en: "We might be a little late with Markku, so please go ahead and sit at the table with Heikki.", k: "d", who: "Linnea" },
+    { fi: "Nähdään sunnuntaina! Hei hei!", ru: "Увидимся в воскресенье! Пока-пока!", en: "See you on Sunday! Bye bye!", k: "d", who: "Linnea" },
+    { fi: "Onko tämä istuinpaikka varattu?", ru: "Это место занято?", en: "Is this seat taken?", k: "s" },
+    { fi: "Olen melkein aina myöhässä.", ru: "Я почти всегда опаздываю.", en: "I am almost always late.", k: "s" },
+    { fi: "Jättäkää minullekin jälkiruokaa.", ru: "Оставьте и мне десерт.", en: "Leave some dessert for me, too.", k: "s" },
+    { fi: "Äänimerkki soi, kun se on valmis.", ru: "Сигнал прозвучит, когда будет готово.", en: "A signal will ring when it's done.", k: "s" },
+    { fi: "Minun täytyy vaihtaa rahaa ulkomaanmatkaa varten.", ru: "Мне нужно обменять деньги для поездки за границу.", en: "I need to exchange some money for a trip abroad.", k: "s" },
+    { fi: "Odottakaa, kunnes kuulette äänimerkin.", ru: "Подождите, пока не услышите сигнал.", en: "Please wait until you hear the signal.", k: "s" },
+    { fi: "Olkaa hyvä, soittakaa myöhemmin uudelleen.", ru: "Пожалуйста, перезвоните позже.", en: "Please call again later.", k: "s" },
+    { fi: "Menkää vain jo istumaan, olkaa hyvä.", ru: "Идите уже садиться, пожалуйста.", en: "Please, go ahead and sit already.", k: "s" },
+    { fi: "Kuunnelkaa minua!", ru: "Слушайте меня!", en: "Listen to me!", k: "s" },
+    { fi: "Älkää menkö sinne!", ru: "Не ходите туда!", en: "Do not go there!", k: "s" },
+    { fi: "Älkää tehkö tyhmyyksiä!", ru: "Не делайте глупостей!", en: "Do not do anything stupid!", k: "s" },
+    { fi: "Rauhoittukaa!", ru: "Успокойтесь!", en: "Calm down!", k: "s" },
+    { fi: "Älkää sulkeko puhelinta!", ru: "Не кладите трубку!", en: "Do not hang up!", k: "s" },
+    { fi: "Syökää salaattia, mutta älkää syökö vielä keittoa.", ru: "Ешьте салат, но суп пока не ешьте.", en: "Eat the salad, but don't eat the soup yet.", k: "s" },
+    { fi: "Kirjoittakaa nimenne vieraskirjaan, olkaa hyvä.", ru: "Запишите своё имя в книгу гостей, пожалуйста.", en: "Write your name in the guest book, please.", k: "s" },
+    { fi: "Älkää olko huolissanne, hän soittaa varmasti pian.", ru: "Не волнуйтесь, он обязательно скоро позвонит.", en: "Don't worry, he will surely call soon.", k: "s" },
+    { fi: "varattu", ru: "занято, забронировано", en: "busy, reserved", k: "w" },
+    { fi: "olla myöhässä", ru: "опаздывать", en: "to be late", k: "w" },
+    { fi: "hiukan", ru: "немного", en: "slightly, a little", k: "w" },
+    { fi: "jättää", ru: "оставить", en: "to leave", k: "w" },
+    { fi: "äänimerkki", ru: "сигнал", en: "signal, tone", k: "w" },
+    { fi: "vaihtaa", ru: "менять, обменивать", en: "to change, to exchange", k: "w" },
+    { fi: "kännykkä", ru: "мобильник (разговорное)", en: "mobile phone (casual)", k: "w" }
+  ]
+},
+{
+  id: "IN_S1_08",
+  title: "An accident: the past tense",
+  source: "FinnishPod101 · Intermediate S1 #8",
+  glossary: [
+    { w: "ajanmääre", ru: "обозначение времени при прошедшем времени", en: "time adverbs with the past tense",
+      forms: ["eilen", "äsken", "juuri nyt", "tänä aamuna", "...sitten"],
+      note: "The imperfect (the ordinary past tense) is the most frequent tense in Finnish, and almost always a clarification “when exactly” is added to it: eilen (“yesterday”), äsken (“just now, recently”), juuri äsken (“literally just now”), tänä aamuna (“this morning”), ...sitten (“... ago”, after a number and a unit of time — 10 minuuttia sitten, “10 minutes ago”)." },
+    { w: "имперфект vs перфект vs плюсквамперфект", ru: "разница между тремя прошедшими временами", en: "imperfect vs. perfect vs. pluperfect",
+      forms: ["kävitkö", "oletko käynyt", "olitko käynyt"],
+      note: "Three ways to speak about the past, and the difference is in how much the moment is still connected with the present.\nThe imperfect — just a fact in the past, with no connection to “now”: Kävitkö sairaalassa? (“Did you go to the hospital?”).\nThe perfect (olla + the NUT participle) — an action in the past, but important for the present or one that may still be repeated: Oletko käynyt sairaalassa? (“Have you been to a hospital?” — at any moment in life, not tied to a specific occasion).\nThe pluperfect (olla in the past + the NUT participle) — “the past before the past”, the background to another event: Olitko käynyt sairaalassa? (“Had you already been to the hospital [by then]?”). It is also used to pass on someone else’s story or a rumour: Isoisä oli nähnyt onnettomuuden (“Grandfather, it is said, had seen the accident” — i.e. someone is retelling it from grandfather’s words)." },
+    { w: "käydä pahasti", ru: "плохо обернуться, сильно пострадать", en: "to go badly, to get hurt badly",
+      forms: ["kävikö pahasti", "kävi pahasti"],
+      note: "Käydä (“to go, to turn out”) + pahasti (“badly”). It is asked like this when one wants to know whether somebody was seriously hurt: Kävikö hänelle pahasti? (“Did he get badly hurt?”)." },
+    { w: "jännittävä", ru: "захватывающий, волнительный (не «нервирующий»!)", en: "exciting, thrilling",
+      forms: ["jännittävä", "jännittävää"],
+      note: "Related to the verb jännittää (“to be nervous, to be excited”) and the adjective jännä (“funny, curious”), but jännittävä itself means precisely “exciting, thrilling” — in a good sense. If you need to say that something frightens or tenses, hermostuttava or pelottava (“scary”) is used." },
+    { w: "toipua", ru: "выздоравливать, поправляться", en: "to recover", forms: ["toipua", "toipuu", "toivottavasti toipuu"] }
+  ],
+  items: [
+    { fi: "Hei Jukka! Miten viikonloppu meni?", ru: "Привет, Юкка! Как прошли выходные?", en: "Hi Jukka! How was your weekend?", k: "d", who: "Aino" },
+    { fi: "Huomenta Aino. Oli aika jännittävä viikonloppu!", ru: "Доброе утро, Айно. Выходные были довольно бурными!", en: "Good morning Aino. It was quite an eventful weekend!", k: "d", who: "Jukka" },
+    { fi: "Kuinka niin?", ru: "Это почему?", en: "How come?", k: "d", who: "Aino" },
+    { fi: "Näin, kuinka eräs vanhus kaatui jäisellä tiellä ja loukkasi itsensä. Menin auttamaan häntä.", ru: "Я видел, как один пожилой человек упал на обледенелой дороге и поранился. Я пошёл ему помочь.", en: "I saw an elderly person fall on an icy road and hurt herself. I went to help her.", k: "d", who: "Jukka" },
+    { fi: "Hui! Kävikö hänelle pahasti?", ru: "Ой! Ему сильно досталось?", en: "Oh my! Did she hurt herself badly?", k: "d", who: "Aino" },
+    { fi: "Luita ainakin murtui. Soitin hänelle ambulanssin ja odotin ambulanssia hänen kanssaan.", ru: "Кости точно сломал. Я вызвал ему скорую и ждал её вместе с ним.", en: "Her bones were at least fractured. I called her an ambulance and waited for the ambulance with her.", k: "d", who: "Jukka" },
+    { fi: "Viikonloppuna oli niin kylmäkin. Toivottavasti hän toipuu hyvin!", ru: "На выходных было ещё и так холодно. Надеюсь, он хорошо поправится!", en: "It was also so cold during the weekend. I hope she recovers well!", k: "d", who: "Aino" },
+    { fi: "Kyllä, toivottavasti.", ru: "Да, будем надеяться.", en: "Yes, I hope so.", k: "d", who: "Jukka" },
+    { fi: "Veljeni kaatui eilen portaissa.", ru: "Мой брат упал вчера на лестнице.", en: "My brother fell on the stairs yesterday.", k: "s" },
+    { fi: "Kissani loukkasi häntänsä.", ru: "Моя кошка поранила хвост.", en: "My cat hurt her tail.", k: "s" },
+    { fi: "Sormesi on saattanut murtua.", ru: "Твой палец, возможно, сломан.", en: "Your finger may have fractured.", k: "s" },
+    { fi: "Hän toipuu varmasti pian.", ru: "Он точно скоро поправится.", en: "She will surely recover soon.", k: "s" },
+    { fi: "Kaaduin eilen.", ru: "Я упал вчера.", en: "I fell yesterday.", k: "s" },
+    { fi: "Hän loukkasi kätensä aamulla.", ru: "Она поранила руку утром.", en: "She hurt her hand in the morning.", k: "s" },
+    { fi: "Äitini liukastui juuri äsken.", ru: "Моя мама только что поскользнулась.", en: "My mother slipped just now.", k: "s" },
+    { fi: "Viilsin vahingossa sormeeni 10 minuuttia sitten.", ru: "Я случайно порезал палец 10 минут назад.", en: "I accidentally cut my finger 10 minutes ago.", k: "s" },
+    { fi: "Hän tippui tikapuilta ja mursi jalkansa.", ru: "Он упал с лестницы и сломал ногу.", en: "He fell from the ladder and fractured his foot.", k: "s" },
+    { fi: "Tipuin jäihin, mutta ystäväni pelasti minut.", ru: "Я провалился под лёд, но друг меня спас.", en: "I fell through the ice, but my friend rescued me.", k: "s" },
+    { fi: "Vene kaatui ja jouduimme veden varaan.", ru: "Лодка перевернулась, и мы оказались в воде.", en: "The boat tipped over and we fell into the water.", k: "s" },
+    { fi: "Oletko käynyt sairaalassa?", ru: "Ты бывал в больнице?", en: "Have you been to the hospital?", k: "s" },
+    { fi: "Isoisä oli nähnyt onnettomuuden.", ru: "Дедушка, говорят, видел аварию.", en: "Grandpa had seen an accident.", k: "s" },
+    { fi: "Metsässä oli nähty karhu.", ru: "В лесу, говорят, видели медведя.", en: "A bear had been seen in the forest.", k: "s" },
+    { fi: "jännittävä", ru: "захватывающий, волнительный", en: "exciting", k: "w" },
+    { fi: "kaatua", ru: "падать", en: "to fall", k: "w" },
+    { fi: "jäinen", ru: "ледяной", en: "icy", k: "w" },
+    { fi: "loukata", ru: "травмировать, поранить", en: "to hurt, to injure", k: "w" },
+    { fi: "murtua", ru: "сломаться (о кости)", en: "to fracture", k: "w" },
+    { fi: "toipua", ru: "выздоравливать", en: "to recover", k: "w" }
+  ]
+},
+{
+  id: "IN_S1_09",
+  title: "Booking the dentist: the conditional perfect",
+  source: "FinnishPod101 · Intermediate S1 #9",
+  glossary: [
+    { w: "olisin tarvinnut", ru: "кондиционал перфекта: мне бы понадобилось — вежливая просьба", en: "conditional perfect for polite requests",
+      forms: ["olisin tarvinnut", "olisin halunnut", "olisin tiedustellut"],
+      note: "The perfect (olla + the NUT participle) is already familiar — it expresses what happened and still matters. If olla is put in the conditional, you get the “conditional perfect”: olisin tarvinnut (“I would have needed”, literally “I would have had a need”).\nThis form is an exquisitely polite way to ask for something or to enquire when you are not sure it is possible at all: Olisin tarvinnut hammaslääkäriltä ajan (“I would have liked to book an appointment with the dentist”) sounds softer and more cautious than the direct Tarvitsen ajan (“I need an appointment”)." },
+    { w: "кондиционал: положительный и отрицательный", ru: "форма «бы» — утверждение и отрицание", en: "the positive and negative conditional",
+      forms: ["olisin", "olisit", "olisi", "en olisi", "et olisi", "ei olisi"],
+      note: "The positive conditional is built from the strong stem (3rd person plural without -vat) + -isi- + the personal ending: ovat → olisin, olisit, olisi, olisimme, olisitte, olisivat.\nThe negative takes the negative verb (en, et, ei...) and the conditional without a personal ending: en olisi, et olisi, ei olisi, emme olisi, ette olisi, eivät olisi.\nThe conditional expresses politeness, possibility or supposition: Jos pääsisin heti huomenna, olisin kiitollinen (“If I could come right tomorrow, I would be grateful”)." },
+    { w: "katsotaanpa", ru: "давайте посмотрим, ну-ка посмотрим", en: "let's see, shall we see",
+      forms: ["katsotaanpa"],
+      note: "From katsoa (“to look”) in the present passive with the intensifying particle -pa. A colloquial and slightly old-fashioned expression — suitable when you want to think aloud slowly together with the other person: Katsotaanpa, mitä täältä löytyy (“Let’s see what can be found here”)." },
+    { w: "viisaudenhammas", ru: "зуб мудрости", en: "wisdom tooth",
+      forms: ["viisaudenhammas", "viisaudenhampaani", "viisaudenhampaita"],
+      note: "A compound word: viisaus (“wisdom”) in the genitive + hammas (“tooth”). Other names of doctors are built on the same model: lastenlääkäri (“paediatrician”, literally “children’s doctor”), eläinlääkäri (“vet”, “animal doctor”), korvalääkäri (“ear doctor”)." }
+  ],
+  items: [
+    { fi: "Haloo, Keskustalon Hammaslääkäri.", ru: "Алло, стоматология «Кескусталон».", en: "Hello, Center House Dentists.", k: "d", who: "Vastaanottovirkailija" },
+    { fi: "Hei, olisin tarvinnut hammaslääkäriltä ajan. Viisaudenhampaani on ollut jo pitkään todella kipeä.", ru: "Здравствуйте, мне бы хотелось записаться к стоматологу. Зуб мудрости уже давно сильно болит.", en: "Hello, I would like an appointment with a dentist. My wisdom tooth has been very sore for a long time now.", k: "d", who: "Jukka" },
+    { fi: "Ahaa. Oletteko asioineet meillä aikaisemmin?", ru: "Ясно. Вы раньше к нам обращались?", en: "I see. Have you visited us before?", k: "d", who: "Vastaanottovirkailija" },
+    { fi: "En ole.", ru: "Нет.", en: "No, I haven't.", k: "d", who: "Jukka" },
+    { fi: "Selvä. Katsotaanpa... Meillä on yleensä ollut vapaita aikoja iltapäivisin.", ru: "Хорошо. Давайте посмотрим... У нас обычно есть свободное время после обеда.", en: "Okay. Let's see... we've usually had open appointments in the afternoons.", k: "d", who: "Vastaanottovirkailija" },
+    { fi: "Se sopisi kyllä. Jos pääsisin heti huomenna, olisin kiitollinen.", ru: "Это бы подошло. Если бы я мог прийти прямо завтра, был бы благодарен.", en: "That would be fine. If I could come by tomorrow, I would be grateful.", k: "d", who: "Jukka" },
+    { fi: "Huomenna on keskiviikko. Se on yleensä ollut todella kiireinen päivä, mutta tarkistan...", ru: "Завтра среда. Обычно это очень загруженный день, но я проверю...", en: "Tomorrow is Wednesday. That's usually been a very busy day, but I'll check...", k: "d", who: "Vastaanottovirkailija" },
+    { fi: "No, yksi aika löytyy. Päivän viimeinen aika, kello 17.30. Sopiiko se?", ru: "Ну, одно время нашлось. Последнее на день, в 17:30. Подойдёт?", en: "Well, there is one appointment available. It's the last appointment of the day, at 5:30 PM. Would that be ok?", k: "d", who: "Vastaanottovirkailija" },
+    { fi: "Kyllä, sopii. Kiitos!", ru: "Да, подходит. Спасибо!", en: "Yes, perfect. Thank you!", k: "d", who: "Jukka" },
+    { fi: "Olisimme voineet opiskella television katsomisen sijaan.", ru: "Мы могли бы заниматься вместо просмотра телевизора.", en: "We could have studied instead of watching TV.", k: "s" },
+    { fi: "En olisi ehtinyt junaan, ellet olisi herättänyt minua.", ru: "Я бы не успел на поезд, если бы ты меня не разбудил.", en: "I would not have made it to the train if you hadn't woken me up.", k: "s" },
+    { fi: "Olisin juossut, jos olisin tiennyt että bussi on jo lähellä bussipysäkkiä.", ru: "Я бы побежал, если бы знал, что автобус уже близко к остановке.", en: "I would have run if I'd known the bus was already close to the bus stop.", k: "s" },
+    { fi: "Olisimme tulleet, ellei meillä olisi ollut töitä.", ru: "Мы бы пришли, если бы у нас не было работы.", en: "We would have come if we hadn't had work.", k: "s" },
+    { fi: "Olisitte ilmoittaneet, että ette pääse.", ru: "Вы бы сообщили, что не сможете прийти.", en: "You could have informed me that you can not make it.", k: "s" },
+    { fi: "Olisin tiedustellut, onko teillä vielä lippuja illan konserttiin.", ru: "Я бы поинтересовался, остались ли у вас билеты на вечерний концерт.", en: "I would have inquired about whether you still have tickets to the concert tonight.", k: "s" },
+    { fi: "Minä olisin kertonut sinullekin, jos olisit ollut paikalla.", ru: "Я бы и тебе рассказал, если бы ты был там.", en: "I would have told you as well, if you'd have been there.", k: "s" },
+    { fi: "Emme olisi ehtineet junaan, jos emme olisi juosseet.", ru: "Мы бы не успели на поезд, если бы не побежали.", en: "We wouldn't have made it to the train, if we hadn't run.", k: "s" },
+    { fi: "Olisin halunnut kupin teetä.", ru: "Я бы хотел чашку чая.", en: "I would have wanted a cup of tea.", k: "s" },
+    { fi: "Olen aina pelännyt hammaslääkäriä.", ru: "Я всегда боялся стоматолога.", en: "I have always feared the dentist.", k: "s" },
+    { fi: "Onko sinulla viisaudenhampaita?", ru: "У тебя есть зубы мудрости?", en: "Do you have any wisdom teeth?", k: "s" },
+    { fi: "hammaslääkäri", ru: "стоматолог", en: "dentist", k: "w" },
+    { fi: "tarkistaa", ru: "проверять", en: "to check", k: "w" },
+    { fi: "löytyä", ru: "находиться, сыскаться", en: "to be found", k: "w" },
+    { fi: "kiitollinen", ru: "благодарный", en: "grateful", k: "w" },
+    { fi: "viisaudenhammas", ru: "зуб мудрости", en: "wisdom tooth", k: "w" },
+    { fi: "todella", ru: "действительно, по-настоящему", en: "really, truly", k: "w" }
+  ]
+},
+{
+  id: "IN_S1_10",
+  title: "At the dentist: the modal verbs täytyy, pitää, tarvita",
+  source: "FinnishPod101 · Intermediate S1 #10",
+  glossary: [
+    { w: "täytyy / pitää", ru: "должен, нужно (безличная конструкция)", en: "must, have to",
+      forms: ["minun täytyy", "hänen täytyy", "minun pitää", "heidän pitää"],
+      note: "Täytyy and pitää express duty and necessity and always stand in the 3rd person singular — the subject (who has to) is put not in the nominative but in the genitive: Minun täytyy lähteä (“I have to go”, literally “my [it is] necessary to leave”), Sinun pitää auttaa (“You must help”).\nThere is no big difference in meaning between täytyy and pitää, they are interchangeable in everyday speech." },
+    { w: "ei tarvitse", ru: "не нужно, нет необходимости", en: "don't need to",
+      forms: ["minun ei tarvitse", "teidän ei tarvitse", "meidän ei tarvitse"],
+      note: "Tarvita (“to need”) is also an impersonal construction with the genitive of the subject, but it is used above all in the negative: Teidän ei tarvitse ottaa paperireseptiä (“You don’t need to take a paper prescription”). The related noun tarve means “need”." },
+    { w: "antibioottikuuri", ru: "курс антибиотиков", en: "a course of antibiotics",
+      forms: ["antibioottikuuri", "antibioottikuurin"],
+      note: "A compound word: antibiootti (“antibiotic”) + kuuri (“course of treatment”). Names of other courses of treatment are built the same way — only the first part changes." },
+    { w: "sähköinen resepti, e-resepti", ru: "электронный рецепт", en: "electronic prescription",
+      forms: ["sähköinen resepti", "e-resepti"],
+      note: "Sähköinen — “electronic”. E-resepti — a more colloquial variant, where e- is borrowed from English electronic. In Finland the electronic prescription is the main format: the doctor signs it digitally, it goes into the single Reseptikeskus database, and the medicine can be collected from any pharmacy." }
+  ],
+  items: [
+    { fi: "No niin, päivää, olen hammaslääkäri Korhonen. Teilläkö oli viisaudenhammas kipeä?", ru: "Так, добрый день, я стоматолог Корхонен. У вас, значит, зуб мудрости болит?", en: "Well, good afternoon, I'm the dentist, Korhonen. So you had a sore wisdom tooth?", k: "d", who: "Hammaslääkäri" },
+    { fi: "Kyllä, vasen alahammas on todella kipeä. Minun on pakko syödä vain keittoja, koska hampaaseen sattuu niin paljon.", ru: "Да, нижний левый зуб очень болит. Мне приходится есть только супы, потому что зуб очень сильно болит.", en: "Yes, the bottom left tooth is really sore. I have to eat only soup, because the tooth hurts so much.", k: "d", who: "Jukka" },
+    { fi: "Ahaa. Katsotaanpa. Avatkaa suu.", ru: "Ясно. Давайте посмотрим. Откройте рот.", en: "Okay. Let's see. Open your mouth please.", k: "d", who: "Hammaslääkäri" },
+    { fi: "Teidän täytyy avata suuta vielä hiukan enemmän, jotta näen paremmin.", ru: "Вам нужно открыть рот ещё немного шире, чтобы я видел получше.", en: "You have to open your mouth a little bit more, so I can see better.", k: "d", who: "Hammaslääkäri" },
+    { fi: "Hammas on todella tulehtunut, ja se pitää poistaa. Sitä ennen teidän täytyy syödä antibioottikuuri.", ru: "Зуб сильно воспалён, его нужно удалить. Но перед этим вам нужно пропить курс антибиотиков.", en: "The tooth is really inflamed, and it has to be removed. Before that you must take a course of antibiotics.", k: "d", who: "Hammaslääkäri" },
+    { fi: "Teidän ei tarvitse ottaa antibiootteja varten paperireseptiä, vaan lähetän reseptin sähköisesti suoraan apteekkiin.", ru: "Вам не нужно получать бумажный рецепт на антибиотики, я отправлю рецепт электронно прямо в аптеку.", en: "You don't have to get a paper prescription for the antibiotics, I will send the prescription electronically directly to the pharmacy.", k: "d", who: "Hammaslääkäri" },
+    { fi: "Selvä, kiitos paljon!", ru: "Понятно, большое спасибо!", en: "Okay, thank you so much!", k: "d", who: "Jukka" },
+    { fi: "Minun täytyy lähteä.", ru: "Мне нужно идти.", en: "I must go.", k: "s" },
+    { fi: "Hänen täytyy mennä töihin.", ru: "Ему нужно идти на работу.", en: "He has to go to work.", k: "s" },
+    { fi: "Meidän täytyy ostaa ruokaa.", ru: "Нам нужно купить еды.", en: "We must buy food.", k: "s" },
+    { fi: "Sinun täytyy auttaa minua.", ru: "Тебе нужно мне помочь.", en: "You have to help me.", k: "s" },
+    { fi: "Minun pitää tehdä tämä loppuun.", ru: "Мне нужно это доделать.", en: "I need to finish this.", k: "s" },
+    { fi: "Sinun pitää pyytää häneltä anteeksi.", ru: "Тебе нужно перед ней извиниться.", en: "You must apologize to her.", k: "s" },
+    { fi: "Heidän pitää tehdä kaikki uudelleen.", ru: "Им нужно всё переделать.", en: "They must do everything again.", k: "s" },
+    { fi: "Teidän ei tarvitse syödä kaikkea, jos et jaksa.", ru: "Вам не нужно есть всё, если не хочется.", en: "You don't have to eat everything if you can't.", k: "s" },
+    { fi: "Meidän ei tarvitse herätä aikaisin.", ru: "Нам не нужно рано вставать.", en: "We don't have to wake up early.", k: "s" },
+    { fi: "Minun ei tarvitse tehdä kaikkea yksin.", ru: "Мне не нужно делать всё в одиночку.", en: "I don't have to do everything alone.", k: "s" },
+    { fi: "Täällä saattaa olla hometta.", ru: "Тут, возможно, есть плесень.", en: "There might be mold in here.", k: "s" },
+    { fi: "Minun pitää mennä uudestaan kauppaan.", ru: "Мне нужно снова сходить в магазин.", en: "I must go to the store again.", k: "s" },
+    { fi: "E-resepti on erittäin kätevä.", ru: "Электронный рецепт очень удобен.", en: "An electronic prescription is very handy.", k: "s" },
+    { fi: "täytyä", ru: "быть должным", en: "to have to, must", k: "w" },
+    { fi: "pitää", ru: "быть должным, нужно", en: "to have to, need to", k: "w" },
+    { fi: "tarvita", ru: "нуждаться", en: "to need", k: "w" },
+    { fi: "apteekki", ru: "аптека", en: "pharmacy", k: "w" },
+    { fi: "resepti", ru: "рецепт", en: "prescription", k: "w" },
+    { fi: "sattua", ru: "причинять боль, болеть", en: "to hurt", k: "w" },
+    { fi: "tulehtunut", ru: "воспалённый", en: "inflamed", k: "w" }
+  ]
+},
+{
+  id: "IN_S1_11",
+  title: "Choosing a flat: finite and infinitive verb forms",
+  source: "FinnishPod101 · Intermediate S1 #11",
+  glossary: [
+    { w: "два глагола в предложении", ru: "один глагол спрягается, второй остаётся в инфинитиве", en: "two verbs in a sentence",
+      forms: ["haluan katsoa", "voimme kävellä", "yritämme ehtiä"],
+      note: "The basic rule: if there are two verbs in a sentence, one is conjugated by person and the other stands in the dictionary form — the infinitive: Haluan katsoa elokuvan (“I want to watch a film”) — haluan is conjugated, katsoa stays an infinitive. The same: Voimme kävellä kotiin saakka (“We can walk all the way home”)." },
+    { w: "ma-инфинитив (третий инфинитив)", ru: "глагол как место действия: -massa, -masta, -maan", en: "the third infinitive (MA-infinitive)",
+      forms: ["kirjoittamassa", "kirjoittamasta", "kirjoittamaan", "syömässä", "syömästä", "syömään"],
+      note: "The third infinitive, also the ma-infinitive, behaves like a noun and answers the questions “where?”, “from where?”, “to where?”. It is formed from the 3rd person plural stem (kirjoitta-vat → kirjoitta-) + -ma/-mä + a case ending.\nInessive (-massa/-mässä, “in the middle of an activity”): Olin juuri kirjoittamassa (“I was just writing”).\nElative (-masta/-mästä, “from an activity”): Tuletko kirjoittamasta? (“Are you coming from writing [having finished writing]?”).\nIllative (-maan/-mään, “to an activity”): Mennään kirjoittamaan (“Let’s go and write”)." },
+    { w: "minen-форма (четвёртый инфинитив)", ru: "превращение глагола в существительное: -minen", en: "the fourth infinitive (-minen ending)",
+      forms: ["lukeminen", "piirtäminen", "maalaaminen", "korjaaminen"],
+      note: "The ending -minen turns a verb into a full noun, close in meaning to the English gerund “reading”, “painting”: lukea (“to read”) → lukeminen (“reading”). If olla and an adjective stand before such a noun, the adjective is put in the partitive: Lukeminen on mielenkiintoista (“Reading is interesting”, literally “interesting [stuff]”). If there is an object of the action before -minen, it is put in the genitive: Taulun maalaaminen on hauskaa (“Painting a picture is fun”, literally “picture’s painting”)." },
+    { w: "taloyhtiö", ru: "товарищество дома, жилищное акционерное общество", en: "housing association",
+      forms: ["taloyhtiö", "taloyhtiön"],
+      note: "A compound word: talo (“house”) + yhtiö (“company, society”). In Finland almost all blocks of flats belong to such a housing company of owners, which hires a manager (isännöitsijä) and decides the building’s common matters — for example, when to do a major renovation of the pipes." },
+    { w: "putkiremontti", ru: "капитальный ремонт труб", en: "plumbing renovation",
+      forms: ["putkiremontti", "putkiremontin"],
+      note: "Putki (“pipe”) + remontti (“renovation”). In Finland the pipes, waterproofing and tiling in a building are supposed to be replaced every 40–50 years — this is a large-scale decision of the whole housing company, and residents usually have to move out for the duration of the renovation." }
+  ],
+  items: [
+    { fi: "Tervetuloa asuntonäyttöön! Sinä olet varmaankin Heikki?", ru: "Добро пожаловать на показ квартиры! Вы, наверное, Хейкки?", en: "Welcome to the housing display! You must be Heikki?", k: "d", who: "Asunto-esittelijä" },
+    { fi: "Kyllä vain, ja kiitos.", ru: "Да, и спасибо.", en: "Oh yes, and thank you.", k: "d", who: "Heikki" },
+    { fi: "Tämä asuntohan on tällä hetkellä kolmio, mutta jos haluatte purkaa tuon väliseinän ja tehdä tästä kaksion, niin se on ihan ok.", ru: "Эта квартира сейчас трёхкомнатная, но если захотите снести ту перегородку и сделать из неё двухкомнатную, это вполне можно.", en: "So this apartment is currently a three-room apartment, but if you want to tear down that partition wall and make this into a two-room apartment, that is quite all right.", k: "d", who: "Asunto-esittelijä" },
+    { fi: "Ahaa, se on hyvä tietää. Voisimme kyllä hieman remontoida täällä.", ru: "Ага, это полезно знать. Мы бы могли тут немного переделать.", en: "Okay, that's good to know. We could renovate here a little bit.", k: "d", who: "Heikki" },
+    { fi: "Se sopii. Taloyhtiö on kuitenkin teettämässä putkiremontin kahden vuoden päästä, ottakaa se huomioon.", ru: "Это нормально. Правда, товарищество дома затевает замену труб через два года, учтите это.", en: "That's ok. However, the housing association will have the plumbing re-done in two years, so please take that into consideration.", k: "d", who: "Asunto-esittelijä" },
+    { fi: "Selvä. Milloin tämä talo on rakennettu?", ru: "Понятно. Когда построен этот дом?", en: "Right. When was this house built?", k: "d", who: "Heikki" },
+    { fi: "Vuonna 1932. Putkiremontti on tehty viimeksi vuonna 1977, jolloin rakennettiin myös hissi.", ru: "В 1932 году. Трубы последний раз меняли в 1977-м, тогда же построили лифт.", en: "In 1932. The last time the plumbing was re-done was in 1977, when they also built the elevator.", k: "d", who: "Asunto-esittelijä" },
+    { fi: "Voimmeko harrastaa täällä musiikkia?", ru: "Можно здесь заниматься музыкой?", en: "Can we practice music here?", k: "d", who: "Heikki" },
+    { fi: "No, kohtuudella voi. Oletteko muusikko?", ru: "Ну, в меру можно. Вы музыкант?", en: "Well, in moderation you can. Are you a musician?", k: "d", who: "Asunto-esittelijä" },
+    { fi: "En toki, mutta vaimoni haluaa laulaa silloin tällöin. Minä säestän häntä pianolla.", ru: "Нет, но жена иногда хочет попеть. Я ей аккомпанирую на пианино.", en: "Oh no, but my wife wants to sing occasionally. I accompany her on piano.", k: "d", who: "Heikki" },
+    { fi: "Sehän on hienoa!", ru: "Это здорово!", en: "Oh that's great!", k: "d", who: "Asunto-esittelijä" },
+    { fi: "Haluan katsoa elokuvan.", ru: "Я хочу посмотреть фильм.", en: "I want to watch a movie.", k: "s" },
+    { fi: "Voimme kävellä kotiin saakka.", ru: "Мы можем дойти пешком до самого дома.", en: "We can walk until home.", k: "s" },
+    { fi: "Olin juuri kirjoittamassa.", ru: "Я как раз писал.", en: "I was just writing.", k: "s" },
+    { fi: "Tuletko kirjoittamasta?", ru: "Ты идёшь от письма?", en: "Are you coming from writing?", k: "s" },
+    { fi: "Mennään kirjoittamaan.", ru: "Пойдём писать.", en: "Let's go write.", k: "s" },
+    { fi: "Lukeminen on mielenkiintoista.", ru: "Чтение — это интересно.", en: "Reading is interesting.", k: "s" },
+    { fi: "Piirtäminen on ihanaa.", ru: "Рисование — это прекрасно.", en: "Drawing is wonderful.", k: "s" },
+    { fi: "Taulun maalaaminen on hauskaa.", ru: "Рисовать картину — это весело.", en: "Painting the painting is fun.", k: "s" },
+    { fi: "Auton korjaaminen on rankkaa.", ru: "Чинить машину — это тяжело.", en: "Fixing the car is tough.", k: "s" },
+    { fi: "Lukeminen on rentouttava ajanviete.", ru: "Чтение — расслабляющее занятие.", en: "Reading is a relaxing past-time.", k: "s" },
+    { fi: "kolmio", ru: "трёхкомнатная квартира", en: "three-room apartment", k: "w" },
+    { fi: "taloyhtiö", ru: "товарищество дома", en: "housing association", k: "w" },
+    { fi: "hissi", ru: "лифт", en: "elevator", k: "w" },
+    { fi: "remontoida", ru: "ремонтировать", en: "to renovate", k: "w" },
+    { fi: "purkaa", ru: "сносить, разбирать", en: "to tear down", k: "w" },
+    { fi: "väliseinä", ru: "перегородка", en: "partition wall", k: "w" },
+    { fi: "kaksio", ru: "двухкомнатная квартира", en: "two-room apartment", k: "w" }
+  ]
+},
+{
+  id: "IN_S1_12",
+  title: "The wrong price tag: clarifying and the pluperfect",
+  source: "FinnishPod101 · Intermediate S1 #12",
+  glossary: [
+    { w: "Mitä tarkoitat? En aivan ymmärrä.", ru: "фразы для уточнения, если что-то непонятно", en: "phrases for asking for clarification",
+      forms: ["mitä tarkoitat", "en aivan ymmärrä", "voitko toistaa", "selventäisitkö"],
+      note: "A set of ready phrases for a misunderstanding: Mitä tarkoitat(te)? (“What do you mean?”), En aivan ymmärrä (“I don’t quite understand”), Voit(te)ko toistaa (“Please repeat”), Selventäisit(te)kö hieman? (“Could you clarify a little?”). And to explain something to the other person yourself: Anna, kun selvennän (“Let me clarify”), Anna, kun selitän (“Let me explain”). To check that you were understood: Ymmärsit(te)kö? (“Did you understand?”), Pysyt(te)kö kärryillä? (“Are you keeping up?”, literally “are you staying on the cart”)." },
+    { w: "Eikö ... olekaan?", ru: "вопрос с удивлением или сомнением: разве не...?", en: "negative question expressing surprise",
+      forms: ["eikö olekaan", "eikö paita olekaan alennuksessa"],
+      note: "An ordinary negative question (Eikö paita ole alennuksessa? — “Isn’t the shirt on sale?”) with the particle -kaan/-kään added sounds more surprised and insistent: Eikö paita olekaan alennuksessa? (“So the shirt isn’t on sale after all?”) — this is how one asks when expecting one thing and getting another." },
+    { w: "плюсквамперфект", ru: "прошлое до прошлого: фон для другого события", en: "the pluperfect",
+      forms: ["olin unohtanut", "olimme unohtaneet", "olitteko merkinneet"],
+      note: "The pluperfect (olla in the past tense + the NUT participle) describes an event that happened BEFORE another event in the past — it is a background that explains the situation: Olin juuri laittanut laukkuni hyllylle, kun se tapahtui (“I had just put my bag on the shelf when it happened”) — first I put the bag, then something happened.\nThis tense is also often used to explain a misunderstanding: Olimme unohtaneet hyllyyn vanhan hintalapun (“It turns out we had forgotten an old price tag on the shelf”) — forgotten earlier, and found out about it only now." },
+    { w: "hetkinen", ru: "секундочку, минутку (подождите)", en: "wait a minute, just a moment",
+      forms: ["hetkinen", "odota hetki"],
+      note: "From hetki (“moment”). Used to ask the other person to wait a bit: Hetkinen, eikö tuo ole siskosi? (“Hang on, isn’t that your sister?”). A colloquial synonym is odota hetki, “wait a moment”." }
+  ],
+  items: [
+    { fi: "25 euroa, kiitos.", ru: "25 евро, пожалуйста.", en: "25 euros, please.", k: "d", who: "Työntekijä" },
+    { fi: "Tuota..hetkinen. Eikö paita olekaan alennuksessa? Luulin, että se maksaa 20 euroa.", ru: "Эм... секундочку. А рубашка разве не со скидкой? Я думал, она стоит 20 евро.", en: "Umm...wait a moment. Isn't the shirt on sale? I thought that it costs 20 euros.", k: "d", who: "Markku" },
+    { fi: "Niinkö..? Hetki, niin käyn tarkistamassa asian.", ru: "Правда?.. Минутку, я пойду проверю.", en: "Really..? Just a moment, and I will go and check it.", k: "d", who: "Työntekijä" },
+    { fi: "Olimme unohtaneet hyllyyn vanhan hintalapun. Meillä oli alennusmyynti viime viikolla. Pahoittelen.", ru: "Мы забыли на полке старый ценник. У нас была распродажа на прошлой неделе. Извините.", en: "We'd forgotten an old price tag on the shelf. We had a sale last week. I'm sorry.", k: "d", who: "Työntekijä" },
+    { fi: "Ihmettelinkin, miksi olitte merkinneet vain tämän yhden tuotteen alennukseen.", ru: "Я как раз удивлялся, почему вы отметили скидкой только этот один товар.", en: "Well, I was wondering why you had marked only this one item on sale.", k: "d", who: "Markku" },
+    { fi: "Aivan. Luulin, että olimme keränneet jo kaikki alennuslaput pois, mutta tämä unohtui.", ru: "Точно. Я думала, мы уже собрали все ценники со скидкой, но этот забылся.", en: "Right. I thought that we had already taken off all the sale labels, but this one was forgotten.", k: "d", who: "Työntekijä" },
+    { fi: "No, sattuuhan sitä.", ru: "Ну, бывает.", en: "Well, it happens.", k: "d", who: "Markku" },
+    { fi: "Myyn paidan teille toki alennushinnalla, koska tämä oli meidän virheemme.", ru: "Я, конечно, продам вам рубашку по цене со скидкой, раз это была наша ошибка.", en: "I will of course sell the shirt to you at the sale price, as this was our fault.", k: "d", who: "Työntekijä" },
+    { fi: "Kiitos!", ru: "Спасибо!", en: "Thank you!", k: "d", who: "Markku" },
+    { fi: "Mitä tarkoitatte?", ru: "Что вы имеете в виду?", en: "What do you mean?", k: "s" },
+    { fi: "En aivan ymmärrä.", ru: "Я не совсем понимаю.", en: "I don't quite understand.", k: "s" },
+    { fi: "Voitko toistaa.", ru: "Можешь повторить.", en: "Could you repeat, please.", k: "s" },
+    { fi: "Selventäisitkö hieman?", ru: "Не мог бы ты немного пояснить?", en: "Could you clarify that a little?", k: "s" },
+    { fi: "Anna, kun selvennän.", ru: "Дай поясню.", en: "Let me clarify it.", k: "s" },
+    { fi: "Ymmärsitkö?", ru: "Ты понял?", en: "Did you understand?", k: "s" },
+    { fi: "Pysytkö kärryillä?", ru: "Ты следишь за мыслью?", en: "Are you following me?", k: "s" },
+    { fi: "Olin juuri laittanut laukkuni hyllylle, kun se tapahtui.", ru: "Я как раз положил сумку на полку, когда это случилось.", en: "I had just put my bag on the shelf when it happened.", k: "s" },
+    { fi: "Hän oli unohtanut kirjan kotiin.", ru: "Он, оказывается, забыл книгу дома.", en: "He had forgotten the book at home.", k: "s" },
+    { fi: "Eikö äitisi olekaan kotona?", ru: "А твоей мамы разве нет дома?", en: "Isn't your mom at home?", k: "s" },
+    { fi: "Luulin, että olimme unohtaneet passit kotiin.", ru: "Я думал, мы забыли паспорта дома.", en: "I thought that we had forgotten our passports at home.", k: "s" },
+    { fi: "hetki", ru: "момент", en: "moment", k: "w" },
+    { fi: "merkitä", ru: "отмечать", en: "to mark", k: "w" },
+    { fi: "virhe", ru: "ошибка", en: "mistake, error", k: "w" },
+    { fi: "ihmetellä", ru: "удивляться", en: "to wonder", k: "w" },
+    { fi: "hintalappu", ru: "ценник", en: "price tag", k: "w" },
+    { fi: "luulla", ru: "думать, полагать", en: "to believe, to think", k: "w" },
+    { fi: "unohtaa", ru: "забывать", en: "to forget", k: "w" }
+  ]
+},
+{
+  id: "IN_S1_13",
+  title: "Shop notices: the outer local cases",
+  source: "FinnishPod101 · Intermediate S1 #13",
+  glossary: [
+    { w: "внешние падежи: adessiivi, ablatiivi, allatiivi", ru: "у чего-то, от чего-то, к чему-то — сводная таблица", en: "the three external locative cases together",
+      forms: ["pääovilla", "pääovilta", "pääoville", "infopisteellä", "infopisteeltä", "infopisteelle"],
+      note: "The three outer cases are already familiar separately — here they are put together as they are used in announcements (in airports, shops): Voitte kysyä neuvoa infopisteellä (“You can ask for advice at the information desk”, the adessive — “at/on something”); Voitte kysyä neuvoa infopisteeltä (“You can get advice from the information desk”, the ablative — “from something”); Voitte mennä infopisteelle (“You can go to the information desk”, the allative — “to something”).\nAnnouncements almost always go in the plural polite imperative — the same -kaa/-kää as in the previous lesson." },
+    { w: "hintakarnevaali", ru: "«ценовой карнавал» — рекламное название распродажи", en: "price carnival",
+      forms: ["hintakarnevaali", "hintakarnevaalimme"],
+      note: "Hinta (“price”) + karnevaali (“carnival”). Not a general word for any sale (for that there is alennusmyynti), but rather the marketing name of a specific promotion — you can also meet kevätkarnevaali (“spring carnival”) or simply karnevaali on its own." },
+    { w: "tarjousluettelo", ru: "каталог предложений, рекламная листовка", en: "sales catalog",
+      forms: ["tarjousluettelo", "tarjousluettelomme", "alennusluettelo"],
+      note: "Tarjous (“offer, promotion”) + luettelo (“list, catalogue”). Shops send such catalogues to regular customers by post or lay them out at the entrance. A synonym with the same second root is alennusluettelo, “a catalogue of discounts”." }
+  ],
+  items: [
+    { fi: "Arvoisat asiakkaamme, myymälämme sulkeutuu viiden minuutin kuluttua.", ru: "Уважаемые покупатели, наш магазин закрывается через пять минут.", en: "Dear customers, our shop will be closing in five minutes.", k: "d", who: "Kuuluttaja" },
+    { fi: "Maksattehan ostoksenne lähimmälle kassalle.", ru: "Пожалуйста, оплатите покупки на ближайшей кассе.", en: "Please pay for your purchases at the nearest till.", k: "d", who: "Kuuluttaja" },
+    { fi: "Muistakaa myös ensi viikolla alkava hintakarnevaalimme!", ru: "Не забудьте также про наш «ценовой карнавал», который начнётся на следующей неделе!", en: "Please also remember our price carnival that starts next week!", k: "d", who: "Kuuluttaja" },
+    { fi: "Uunituoreen tarjousluettelomme löydätte pääovilta, niiden edessä olevilta pöydiltä.", ru: "Наш свежий каталог предложений вы найдёте у главного входа, на столах перед ним.", en: "You can find our brand new sales catalog at the main entrance, on the tables in front of it.", k: "d", who: "Kuuluttaja" },
+    { fi: "Toivotamme teille viihtyisää viikonloppua, toivottavasti tapaamme teidät ensi viikolla karnevaalitunnelmissa!", ru: "Желаем вам приятных выходных, надеемся увидеть вас на следующей неделе в карнавальной атмосфере!", en: "We wish you a pleasant weekend, and hope to see you next week in the carnival atmosphere!", k: "d", who: "Kuuluttaja" },
+    { fi: "Kuulitko Linnea? Kauppa menee ihan kohta kiinni. Tullaan ensi viikolla takaisin.", ru: "Слышала, Линнеа? Магазин вот-вот закроется. Придём на следующей неделе.", en: "Did you hear Linnea? The shop is closing soon. Let's come back next week.", k: "d", who: "Markku" },
+    { fi: "Sopii, mutta otetaan se alennusluettelo pääovien pöydiltä mukaan. Siinä saattaa olla hyviä tarjouksia!", ru: "Хорошо, но давай возьмём с собой каталог скидок со столов у главного входа. Там могут быть хорошие предложения!", en: "Sure, but let's take that discount catalog from the main entrance tables with us. There may be some good deals in it!", k: "d", who: "Linnea" },
+    { fi: "Pieni poika odottaa äitiään infopisteellä.", ru: "Маленький мальчик ждёт маму у справочной стойки.", en: "A little boy is waiting for his mother at the information desk.", k: "s" },
+    { fi: "Alennuskuponkeja jaetaan pääovilla.", ru: "Купоны на скидку раздают у главного входа.", en: "Discount coupons are being distributed at the main entrance.", k: "s" },
+    { fi: "Miesten osastolta on löytynyt lompakko. Voitte noutaa sen infopisteeltä tuntomerkkejä vastaan.", ru: "В мужском отделе нашли кошелёк. Можете забрать его у справочной стойки, описав приметы.", en: "A wallet has been found from the men's department. You can pick it up from the information desk in exchange for a description of it.", k: "s" },
+    { fi: "Voitte kysyä neuvoa infopisteellä.", ru: "Вы можете спросить совета у справочной стойки.", en: "You can ask for advice at the information desk.", k: "s" },
+    { fi: "Teitä odotetaan lähtöportilla kolme.", ru: "Вас ждут у выхода на посадку номер три.", en: "You are being expected at departure gate three.", k: "s" },
+    { fi: "Lentonne lähtee lähtöportilta kolme.", ru: "Ваш рейс вылетает от выхода номер три.", en: "Your flight leaves from departure gate three.", k: "s" },
+    { fi: "Voitte mennä infopisteelle kysymään neuvoa.", ru: "Вы можете подойти к справочной стойке, чтобы спросить совета.", en: "You can go to the information desk to ask for an advice.", k: "s" },
+    { fi: "Teitä pyydetään saapumaan viipymättä lähtöportille kolme.", ru: "Просим вас незамедлительно прибыть к выходу номер три.", en: "You are requested to arrive immediately at departure gate three.", k: "s" },
+    { fi: "Palohälytyksen sattuessa poistukaa huoneista ja tulkaa ulos kokoontumispaikalle.", ru: "В случае пожарной тревоги покиньте помещения и выйдите на место сбора.", en: "In the case of a fire alarm, leave the rooms and come out to the meeting point.", k: "s" },
+    { fi: "Tarkistakaa pöydällä olevat ohjeet.", ru: "Проверьте инструкции на столе.", en: "Check the instructions on the table.", k: "s" },
+    { fi: "Lento Barcelonaan lähtee portilta numero 23. Saapukaa viipymättä lähtöportille.", ru: "Рейс в Барселону отправляется от выхода номер 23. Прибудьте незамедлительно к выходу.", en: "The flight to Barcelona leaves from gate number 23. Arrive to the departure gate without delay.", k: "s" },
+    { fi: "arvoisa", ru: "уважаемый", en: "dear, honorable", k: "w" },
+    { fi: "sulkeutua", ru: "закрываться", en: "to close", k: "w" },
+    { fi: "kassa", ru: "касса", en: "till, checkout", k: "w" },
+    { fi: "tarjousluettelo", ru: "каталог предложений", en: "sales catalog", k: "w" },
+    { fi: "viihtyisä", ru: "уютный, приятный", en: "enjoyable, homey", k: "w" },
+    { fi: "takaisin", ru: "обратно", en: "back", k: "w" }
+  ]
+},
+{
+  id: "IN_S1_14",
+  title: "Getting there: the inner local cases",
+  source: "FinnishPod101 · Intermediate S1 #14",
+  glossary: [
+    { w: "внутренние падежи: inessiivi, elatiivi, illatiivi", ru: "в чём-то, из чего-то, в/на что-то — сводная таблица", en: "the three internal locative cases together",
+      forms: ["metrossa", "metrosta", "metroon", "töissä", "töistä", "kauppaan"],
+      note: "Three inner cases — just like the outer ones, but about “inside” and not “on a surface”. Inessive -ssa/-ssä (“in something”): Olen vielä töissä (“I’m still at work”). Elative -sta/-stä (“out of something”, the same suffix as the partitive has, but a different meaning): Olen juuri lähdössä töistä (“I’m just leaving work”); Jää pois metrosta (“Get off the metro”). The illative, the most irregular in form, but the meaning is simple — “into”: Hyppää bussiin (“Hop on the bus”).\nIn explaining a route these three cases occur literally in every sentence." },
+    { w: "samaan aikaan vs samalla", ru: "в то же время — но по-разному", en: "at the same time: two different words",
+      forms: ["samaan aikaan", "samalla"],
+      note: "Both translate as “at the same time”, but samaan aikaan is usually about an event in ANOTHER place at the same moment (Olemme varmaan samaan aikaan perillä — “We will probably arrive at about the same time”, though going by different routes), and samalla — about what happens in the SAME place and as if in passing, “while at it”: Vien samalla roskat ulos kun haen postit (“I’ll take the rubbish out while I’m getting the post”)." },
+    { w: "hyppää pois vs jää pois", ru: "выходить (из транспорта): разговорное и нейтральное", en: "to get off: casual vs. neutral",
+      forms: ["hyppää pois", "jää pois"],
+      note: "Hypätä pois (“to jump off”) — a colloquial, casual way to say “get off” a vehicle, appropriate with friends. Jäädä pois (“to stay off”, i.e. “get off”) — a neutral variant that also suits a more formal setting." },
+    { w: "tulla vastaan", ru: "встретить (кого-то по пути)", en: "to come and meet",
+      forms: ["tulla vastaan", "tulen vastaan"],
+      note: "Tulla (“to come”) + vastaan (“towards”). Used when you go to meet someone heading to you who doesn’t know the way — the classic situation when a guest comes to visit for the first time: Tulen sinua pysäkille vastaan (“I’ll meet you at the stop”)." }
+  ],
+  items: [
+    { fi: "Hei Aino! Olen juuri lähdössä töistä. Tulen täältä suoraan sinne teidän uuteen asuntoon.", ru: "Привет, Айно! Я как раз ухожу с работы. Поеду прямо оттуда к вам, в новую квартиру.", en: "Hi Aino! I'm just about to leave work. I'll come to that new apartment of yours straight from here.", k: "d", who: "Vilja" },
+    { fi: "Hei Vilja! Olen itse vielä töissä, mutta lähden pian. Olemme varmaan samaan aikaan perillä.", ru: "Привет, Вилья! Я сама ещё на работе, но скоро выхожу. Мы, наверное, придём примерно одновременно.", en: "Hi Vilja! I'm still at work myself, but I'll leave soon. We'll probably arrive at the same time.", k: "d", who: "Aino" },
+    { fi: "Ok, kiva juttu! Mutta miten löydän perille?", ru: "Хорошо, отлично! Но как мне найти дорогу туда?", en: "Ok, great! But how do I find my way there?", k: "d", who: "Vilja" },
+    { fi: "Jää pois metrosta Kalasataman kohdalla. Hyppää sitten bussiin numero 56.", ru: "Выйди из метро на Каласатама. Потом сядь на автобус номер 56.", en: "Get off the subway at Kalasatama. Then jump on bus number 56.", k: "d", who: "Aino" },
+    { fi: "Selvä. Missä kohtaa hyppään pois?", ru: "Понятно. В каком месте мне выходить?", en: "All right. At which point do I jump off?", k: "d", who: "Vilja" },
+    { fi: "Jää pois bussista kun bussi ohittaa Joukolan puiston. Tulen sinua pysäkille vastaan.", ru: "Выходи из автобуса, когда он проедет парк Йоукола. Я встречу тебя на остановке.", en: "Get off the bus when the bus passes Joukola Park. I will come and meet you at the bus stop.", k: "d", who: "Aino" },
+    { fi: "Hienoa!", ru: "Отлично!", en: "Great!", k: "d", who: "Vilja" },
+    { fi: "Käydään sitten yhdessä kaupassa, ja mennään sitten asunnolle.", ru: "Тогда сходим вместе в магазин, а потом пойдём в квартиру.", en: "Let's go to the supermarket together, and then to the apartment.", k: "d", who: "Aino" },
+    { fi: "Sopii! Nähdään pian!", ru: "Договорились! Скоро увидимся!", en: "That's fine! See you soon!", k: "d", who: "Vilja" },
+    { fi: "Voin lähteä samaan aikaan kuin sinä.", ru: "Я могу выйти в то же время, что и ты.", en: "I can leave at the same time as you.", k: "s" },
+    { fi: "Hyppää pois junasta kolmannella asemalla.", ru: "Выходи из поезда на третьей станции.", en: "Jump off the train at the third station.", k: "s" },
+    { fi: "Voitko tulla vastaan ja auttaa painavien ostoskassien kanssa?", ru: "Можешь встретить меня и помочь с тяжёлыми сумками?", en: "Can you come and meet me and help me with the heavy shopping bags?", k: "s" },
+    { fi: "Laukussa on esitteitä, ota sieltä muutama.", ru: "В сумке есть брошюры, возьми оттуда несколько.", en: "There are brochures in the bag, take a few from there.", k: "s" },
+    { fi: "Tulen kotiin, kun pääsen koulusta.", ru: "Я приду домой, когда выйду из школы.", en: "I come home when I finish school.", k: "s" },
+    { fi: "Oletko vielä kaupassa?", ru: "Ты ещё в магазине?", en: "Are you still in the store?", k: "s" },
+    { fi: "Tuo laukkuni autosta. Avaimeni ovat laukussa.", ru: "Принеси мою сумку из машины. Мои ключи в сумке.", en: "Bring my bag from the car. My keys are inside the bag.", k: "s" },
+    { fi: "Hyppää bussiin numero 56.", ru: "Садись на автобус номер 56.", en: "Jump on (into) the bus number 56.", k: "s" },
+    { fi: "Vie paketit tähän osoitteeseen.", ru: "Отнеси посылки по этому адресу.", en: "Take the parcels to this address.", k: "s" },
+    { fi: "lähteä", ru: "уходить, отправляться", en: "to leave", k: "w" },
+    { fi: "hypätä", ru: "прыгать, запрыгивать", en: "to jump", k: "w" },
+    { fi: "jäädä pois", ru: "выходить (из транспорта)", en: "to get off", k: "w" },
+    { fi: "ohittaa", ru: "проезжать мимо, обгонять", en: "to pass", k: "w" },
+    { fi: "tulla vastaan", ru: "встретить (по пути)", en: "to come and meet", k: "w" },
+    { fi: "löytää", ru: "находить", en: "to find", k: "w" }
+  ]
+},
+{
+  id: "IN_S1_15",
+  title: "An opinion about renovation: agreeing, disagreeing and consonant gradation",
+  source: "FinnishPod101 · Intermediate S1 #15",
+  glossary: [
+    { w: "olla eri mieltä", ru: "быть несогласным", en: "to disagree",
+      forms: ["olen eri mieltä", "olen samaa mieltä"],
+      note: "Literally “to be of a different mind”: olla (“to be”) + eri (“different, other”) + mieli (“mind, opinion”). The opposite — replace eri with sama (“same”): Olen samaa mieltä (“I agree”, literally “of the same opinion”)." },
+    { w: "kahden välillä", ru: "между двумя (вариантами)", en: "between the two",
+      forms: ["kahden välillä", "näiden kahden välillä"],
+      note: "The genitive of the numeral kaksi (“two”) + välillä (“between”). Used when you need to choose from two options: En osaa valita näiden kahden välillä (“I can’t choose between these two”). The number can be replaced by another, although that is rarer." },
+    { w: "чередование ступеней в глаголах", ru: "k, p, t меняются при спряжении — подробная таблица для типа 1", en: "consonant gradation in verbs",
+      forms: ["luen / lukee", "lähden / lähtee", "kuljen / kulkee", "käytän / käyttää"],
+      note: "In type 1 the strong grade is in the 3rd person singular and the infinitive, the weak grade is in all the other forms and in the negative: lukea (“to read”) → luen, luet, but lukee; lähteä (“to leave”) → lähden, but lähtee (t → d); kirjoittaa (“to write”) → kirjoitan, but kirjoittaa (tt → t).\nIn the lesson’s dialogue: Minä kuljen yleensä tätä kautta, mutta Heikki kulkee usein tuolta (“I usually go this way, but Heikki often goes that way”) — kuljen (weak, k disappears) versus kulkee (strong). And käytän tätä, Heikki käyttää tuota (“I use this one, Heikki uses that one”) — tt → t in the first person, but stays strong in the third." },
+    { w: "mielipide", ru: "мнение", en: "opinion", forms: ["mielipide", "mielipiteesi", "mielipiteeni"] },
+    { w: "uskoakseni", ru: "мне кажется, по моему убеждению", en: "in my belief",
+      forms: ["uskoakseni"],
+      note: "From uskoa (“to believe, to suppose”). A slightly more bookish and cautious way of voicing an opinion than mielestäni: Tuo kylppäri on uskoakseni valoisampi (“That bathroom is, I believe, brighter”)." }
+  ],
+  items: [
+    { fi: "No niin, Vilja, tässä tämä asuntomme nyt on. Aiomme aloittaa remontin viimeistään ensi kuussa.", ru: "Так, Вилья, вот наша квартира. Мы планируем начать ремонт самое позднее в следующем месяце.", en: "Okay, Vilja, so here is our apartment. We are going to start the remodeling by next month at the latest.", k: "d", who: "Aino" },
+    { fi: "Tämähän on todella kiva asunto. Valoisa ja suuri!", ru: "Это действительно классная квартира. Светлая и большая!", en: "Now this is a really nice apartment. Bright and large!", k: "d", who: "Vilja" },
+    { fi: "Kiitos. Haluaisin kuitenkin kuulla mielipiteesi. Olemme Heikin kanssa eri mieltä joistakin asioista.", ru: "Спасибо. Но мне хотелось бы услышать твоё мнение. У нас с Хейкки разногласия по некоторым вопросам.", en: "Thank you. But I would like to hear your opinion, however. I'm having a disagreement with Heikki about some things.", k: "d", who: "Aino" },
+    { fi: "Toki, miten voin auttaa?", ru: "Конечно, чем могу помочь?", en: "Sure, how can I help?", k: "d", who: "Vilja" },
+    { fi: "No, aiomme poistaa näistä kulkuväylistä toisen. Meidän pitäisi päättää, kumman poistamme.", ru: "Ну, мы собираемся убрать один из этих проходов. Нам нужно решить, какой именно.", en: "Well, we're going to remove one of these passages. We just have to decide which one.", k: "d", who: "Aino" },
+    { fi: "Minä kuljen yleensä tätä kautta, mutta Heikki kulkee usein tuolta. Mielestäni tämä on käytännöllisempi reitti.", ru: "Я обычно хожу этим путём, а Хейкки часто ходит тем. По-моему, этот маршрут практичнее.", en: "I usually go through here, but Heikki often goes through there. I think this is a more practical route.", k: "d", who: "Aino" },
+    { fi: "Emme myöskään tarvitse kahta kylpyhuonetta, joten teemme toisesta vaatehuoneen. Pitäisi vain päättää näiden kahden välillä..", ru: "Нам также не нужны две ванные, так что из одной сделаем гардеробную. Нужно только решить между этими двумя.", en: "We also don't need two bathrooms, so we're going to make the other one into a walk-in wardrobe. We should just decide between the two...", k: "d", who: "Aino" },
+    { fi: "Kumpaa kylpyhuonetta käytätte enemmän?", ru: "Какой ванной вы пользуетесь больше?", en: "Which bathroom do you use more?", k: "d", who: "Vilja" },
+    { fi: "No, minä käytän yleensä tätä. Heikki taas käyttää enemmän tuota, koska se on lähellä makuuhuonetta.", ru: "Ну, я обычно пользуюсь этой. А Хейкки больше пользуется той, потому что она рядом со спальней.", en: "Well, I usually use this one. But again, Heikki uses the other one more, because it's close to the bedroom.", k: "d", who: "Aino" },
+    { fi: "No, tällä kertaa olen Heikin puolella. Tuo kylppäri on uskoakseni valoisampi. Mutta voisitte pitää sen kulkuväylän, mitä ehdotit?", ru: "Ну, в этот раз я на стороне Хейкки. Та ванная, мне кажется, светлее. Но вы могли бы оставить тот проход, который ты предложила?", en: "Well, this time I am on Heikki's side. That bathroom is brighter, I believe. But you could keep the passage you suggested?", k: "d", who: "Vilja" },
+    { fi: "Niin, ehkä olet oikeassa.", ru: "Да, пожалуй, ты права.", en: "Yeah, maybe you're right.", k: "d", who: "Aino" },
+    { fi: "Tykkään tästä väristä.", ru: "Мне нравится этот цвет.", en: "I like this color.", k: "s" },
+    { fi: "Pidän tästä tapetista.", ru: "Мне нравятся эти обои.", en: "I like this wallpaper.", k: "s" },
+    { fi: "Niin minustakin.", ru: "Я тоже так думаю.", en: "I think so too.", k: "s" },
+    { fi: "Olen samaa mieltä.", ru: "Я согласен.", en: "I agree.", k: "s" },
+    { fi: "Minulla on toinen mielipide.", ru: "У меня другое мнение.", en: "I have a different opinion.", k: "s" },
+    { fi: "Mitä olet mieltä?", ru: "Что ты думаешь?", en: "What do you think?", k: "s" },
+    { fi: "Luulen, että...", ru: "Я думаю, что...", en: "I think that...", k: "s" },
+    { fi: "En ole kanssasi samaa mieltä, minusta tämä toinen on parempi.", ru: "Я с тобой не согласен, по-моему, вот этот второй лучше.", en: "I don't agree with you, I think this other one is better.", k: "s" },
+    { fi: "remontti", ru: "ремонт", en: "remodeling, renovation", k: "w" },
+    { fi: "kulkea", ru: "ходить, передвигаться", en: "to go, to move", k: "w" },
+    { fi: "päättää", ru: "решать, заканчивать", en: "to decide, to end", k: "w" },
+    { fi: "käytännöllinen", ru: "практичный", en: "practical", k: "w" },
+    { fi: "mielipide", ru: "мнение", en: "opinion", k: "w" },
+    { fi: "poistaa", ru: "убирать, удалять", en: "to remove", k: "w" }
+  ]
+},
+{
+  id: "IN_S1_16",
+  title: "Opening a bank account: the plural partitive",
+  source: "FinnishPod101 · Intermediate S1 #16",
+  glossary: [
+    { w: "партитив множественного числа", ru: "о неопределённом количестве чего-то", en: "the plural partitive",
+      forms: ["pankkeja", "henkilöllisyyspapereita", "kaavakkeita"],
+      note: "The plural partitive is used when it is about NOT all the objects but some indefinite number of them. Compare: Kaavakkeet ovat pöydällä (“[All] the forms are on the table”, the ordinary plural) and Pöydällä on kaavakkeita (“There are [some] forms on the table”, the partitive).\nThe plural partitive is also used to say WHERE something is: Keskustassa on paljon pankkeja (“There are many banks in the centre”), and WHAT WHO has or doesn’t have: Joillakin pankeilla on paljon asiakkaita (“Some banks have many customers”), and WHAT KIND of things or people: Pankkitoimihenkilöt ovat pääosin avuliaita (“The bank staff are mostly helpful”).\nThe ending depends on the plural stem — it often differs from the singular stem: talo → plural stem taloi- → taloja; pankki → panki- → pankkeja." },
+    { w: "henkilöllisyyspaperit", ru: "удостоверение личности, документы", en: "identification papers",
+      forms: ["henkilöllisyyspaperit", "henkilöllisyyspapereita", "henkkarit"],
+      note: "Henkilöllisyys (“identity”) + papereita (plural partitive of paperi, “paper”). In Finland this can be a passport, a driving licence or a Kela card with a photo. The short colloquial form is henkkarit, used in everyday life and by police officers or shop staff themselves." },
+    { w: "Kela-kortti", ru: "карта Kela — финская карта социального страхования", en: "Kela-card",
+      forms: ["Kela-kortti", "kuvallinen Kela-kortti"],
+      note: "Kela (Kansaneläkelaitos, “the Social Insurance Institution”) issues this card to every permanent resident of Finland — it confirms the right to health insurance. With a photo it also works as an ID." },
+    { w: "itse asiassa", ru: "вообще-то, на самом деле", en: "as a matter of fact",
+      forms: ["itse asiassa"],
+      note: "Literally “in the thing/fact itself”. Introduces a clarification or a small correction to what has just been said: Itse asiassa, avaisin samalla tilin myös yritykselleni (“Actually, I would also open an account for my company while I’m at it”)." }
+  ],
+  items: [
+    { fi: "Päivää! Istukaa vain alas. Miten voin olla avuksi?", ru: "Добрый день! Присаживайтесь. Чем могу помочь?", en: "Good afternoon! Please just sit down. How can I help you?", k: "d", who: "Pankkivirkailija" },
+    { fi: "Päivää! Haluaisin avata uuden pankkitilin. Olen katsonut Internetistä pankkien tietoja, ja mielestäni teillä on parhaimmat ehdot.", ru: "Добрый день! Я хотела бы открыть новый банковский счёт. Я изучила в интернете информацию о банках, и, по-моему, у вас лучшие условия.", en: "Good afternoon! I would like to open a new bank account. I have been researching information on banks on the Internet, and I think you have the best terms.", k: "d", who: "Linnea" },
+    { fi: "Ahaa, hienoa! Onko teillä henkilöllisyyspapereita mukana?", ru: "О, отлично! У вас с собой есть документы, удостоверяющие личность?", en: "Oh, great! Do you have any identification papers with you?", k: "d", who: "Pankkivirkailija" },
+    { fi: "Käykö Kela-kortti tai passi?", ru: "Подойдёт карта Kela или паспорт?", en: "Is a Kela-card or passport ok?", k: "d", who: "Linnea" },
+    { fi: "Kuvallinen Kela-kortti tai passi käy.", ru: "Карта Kela с фото или паспорт подойдут.", en: "A Kela-card with photo or a passport is ok.", k: "d", who: "Pankkivirkailija" },
+    { fi: "Selvä, etsin teille sitten passini. Hetki vain.", ru: "Хорошо, тогда поищу для вас паспорт. Минутку.", en: "Okay, then I'll look for my passport for you. Just a moment.", k: "d", who: "Linnea" },
+    { fi: "Ok, laitan teille sillä aikaa tähän kaavakkeita valmiiksi. Olettehan te siis avaamassa yksityisasiakkaan tiliä?", ru: "Хорошо, пока я подготовлю вам бланки. Вы ведь открываете счёт частного лица?", en: "Ok, I'll put some forms here for you in the meantime. So you're opening a private customer account?", k: "d", who: "Pankkivirkailija" },
+    { fi: "Itse asiassa, jos mahdollista, avaisin samalla tilin myös yritykselleni.", ru: "Вообще-то, если возможно, я бы заодно открыла счёт и для своей компании.", en: "As a matter of fact, if possible, I would also like to open up an account for my business.", k: "d", who: "Linnea" },
+    { fi: "Ahaa, tarvitsemme sitten myös joitakin yrityksenne papereita, kuten kaupparekisteriotteen.", ru: "Ага, тогда нам также понадобятся некоторые документы вашей компании, например выписка из торгового реестра.", en: "Ah, well then we would also need some of your business papers, such as an extract from the trade register.", k: "d", who: "Pankkivirkailija" },
+    { fi: "Aivan, minulla on kaikki paperit täällä kansiossa.", ru: "Конечно, у меня все документы здесь, в папке.", en: "Yes, I have all the papers here in this folder.", k: "d", who: "Linnea" },
+    { fi: "Täyttäkää tämä kaavake, olkaa hyvä.", ru: "Заполните этот бланк, пожалуйста.", en: "Fill in this form, please.", k: "s" },
+    { fi: "Keskustassa on paljon pankkeja.", ru: "В центре много банков.", en: "There are lots of banks in the downtown area.", k: "s" },
+    { fi: "Joillakin pankeilla on paljon asiakkaita ruuhka-aikaan.", ru: "У некоторых банков в часы пик много клиентов.", en: "Some banks have a lot of customers during rush-hour.", k: "s" },
+    { fi: "Pankkitoimihenkilöt ovat pääosin avuliaita.", ru: "Банковские сотрудники в основном услужливы.", en: "Bankers are mainly helpful.", k: "s" },
+    { fi: "Etsin luotettavaa ja suosittua pankkia.", ru: "Я ищу надёжный и популярный банк.", en: "I am looking for a reliable and popular bank.", k: "s" },
+    { fi: "Käytin tänään liikaa luottokorttia.", ru: "Я сегодня слишком много тратил с кредитки.", en: "I used the credit card too much today.", k: "s" },
+    { fi: "Pankkeja on niin monenlaisia.", ru: "Банков так много разных видов.", en: "There are so many kinds of banks.", k: "s" },
+    { fi: "Monet pankit ovat myös lopettaneet toimintansa.", ru: "Многие банки также прекратили свою деятельность.", en: "Many banks have also ceased their actions.", k: "s" },
+    { fi: "Mitä asiakirjoja tarvitsen tilin avaamista varten?", ru: "Какие документы мне нужны, чтобы открыть счёт?", en: "What kind of documents do I need to open an account?", k: "s" },
+    { fi: "Saanko allekirjoituksenne tähän, kiitos.", ru: "Можно вашу подпись здесь, пожалуйста.", en: "May I have your signature here, please.", k: "s" },
+    { fi: "avata", ru: "открывать", en: "to open", k: "w" },
+    { fi: "pankkitili", ru: "банковский счёт", en: "bank account", k: "w" },
+    { fi: "ehto", ru: "условие", en: "term, condition", k: "w" },
+    { fi: "henkilöllisyyspaperit", ru: "удостоверение личности", en: "identity papers", k: "w" },
+    { fi: "itse asiassa", ru: "вообще-то, на самом деле", en: "as a matter of fact", k: "w" },
+    { fi: "kaavake", ru: "бланк, форма", en: "form", k: "w" }
+  ]
+},
+{
+  id: "IN_S1_17",
+  title: "Lunch at a restaurant: subject–verb agreement",
+  source: "FinnishPod101 · Intermediate S1 #17",
+  glossary: [
+    { w: "kongruenssi", ru: "согласование сказуемого с подлежащим по числу", en: "congruence (subject-verb agreement)",
+      forms: ["koira juoksee", "koirat juoksivat", "paistetut silakat ovat"],
+      note: "The predicate agrees with the subject in number: Koira juoksee metsään (“The dog runs into the forest”, singular), Koirat juoksivat metsässä (“The dogs ran in the forest”, plural). If there are several subjects joined with ja (“and”), the predicate also becomes plural: Koira ja kissa juoksivat metsässä (“The dog and the cat ran in the forest”).\nBut if tai (“or”) or joko-tai (“either-or”) stands between the subjects, the predicate stays singular: Äiti tai isä maksaa laskun (“Mum or Dad will pay the bill”)." },
+    { w: "собирательные слова в единственном числе", ru: "группа — это одно слово, и сказуемое остаётся в ед. числе", en: "group words keep the predicate singular",
+      forms: ["henkilöstö on", "nuoriso kokoontuu", "joukkue juhli"],
+      note: "Words like ryhmä (“group”), joukkue (“team”), nuoriso (“youth”) or henkilökunta (“staff”) are formally singular, although they denote many people — and the predicate with them stays singular: Henkilöstö on tyytymätön palkankorotukseen (“The staff are dissatisfied with the pay rise”), Joukkue juhli voittoaan (“The team celebrated its victory”)." },
+    { w: "lasillinen", ru: "стакан/бокал чего-либо", en: "a glass of",
+      forms: ["lasillinen", "lasillisen", "pullollinen"],
+      note: "From lasi (“glass”), the suffix -llinen turns the name of a container into a “measure of the contents”: lasillinen (“a glass of [something]”), pullollinen (“a bottle of [something]”), ämpärillinen (“a bucket of [something]”). After such a word the needed noun is put in the partitive: lasillinen punaviiniä (“a glass of red wine”)." },
+    { w: "vartti", ru: "четверть часа, пятнадцать минут", en: "fifteen minutes, quarter",
+      forms: ["vartti", "varttitunti"],
+      note: "Borrowed from Swedish kvart. A colloquial word for 15 minutes — in a formal setting it is better to say 15 minuuttia. The expression akateeminen vartti (“academic quarter”) recalls the tradition of starting classes 15 minutes later than the stated time." },
+    { w: "suosittu", ru: "популярный", en: "popular", forms: ["suosittu", "suosituin"] }
+  ],
+  items: [
+    { fi: "Hei, anteeksi!", ru: "Извините!", en: "Hello, excuse me!", k: "d", who: "Jukka" },
+    { fi: "Hei, miten voin auttaa?", ru: "Здравствуйте, чем могу помочь?", en: "Hello, how can I help you?", k: "d", who: "Työntekijä" },
+    { fi: "Onko tässä ravintolassa lounasaikaa erikseen? Etsin edullista, mutta herkullista lounasta.", ru: "В этом ресторане отдельное время для обеда? Ищу недорогой, но вкусный обед.", en: "Is there a separate lunch time in this restaurant? I'm looking for an inexpensive but delicious lunch.", k: "d", who: "Jukka" },
+    { fi: "Kyllä on, virallisesti aloitamme sen vartin päästä, mutta tulkaa vain jo sisään.", ru: "Да, официально мы начнём через четверть часа, но заходите уже сейчас.", en: "Yes there is, officially we start it in fifteen minutes, but please come on in already.", k: "d", who: "Työntekijä" },
+    { fi: "Kiitos.", ru: "Спасибо.", en: "Thank you.", k: "d", who: "Jukka" },
+    { fi: "Kas tässä on ruokalista. Paistetut silakat ovat suosituin lounasannoksemme.", ru: "Вот меню. Жареная салака — наше самое популярное блюдо на обед.", en: "Now, here is the menu. The fried herrings are our most popular lunch dish.", k: "d", who: "Työntekijä" },
+    { fi: "Ahaa. Voisin sitten ottaa ne. Haluaisin myös jonkun raikkaan salaatin.", ru: "Ага. Тогда возьму её. Ещё хотел бы какой-нибудь свежий салат.", en: "Aha. Could I have them then? I would also like to have some fresh salad.", k: "d", who: "Jukka" },
+    { fi: "Tämä salaatti on koottu kauden tuoreista vihanneksista. Suosittelen sitä.", ru: "Этот салат собран из свежих сезонных овощей. Рекомендую его.", en: "This salad is made up of fresh seasonal vegetables. I recommend it.", k: "d", who: "Työntekijä" },
+    { fi: "Selvä, otan sitten sen. Saisinko myös lasillisen vissyä, ja jälkiruuaksi palan lämmintä omenapiirakkaa.", ru: "Хорошо, тогда возьму его. Можно ещё стакан минералки и на десерт кусок тёплого яблочного пирога.", en: "Right, I will take that one then. Could I also have a glass of sparkling water, and a piece of warm apple pie as a dessert, please?", k: "d", who: "Jukka" },
+    { fi: "Toki. Kiitos!", ru: "Конечно. Спасибо!", en: "Sure. Thank you!", k: "d", who: "Työntekijä" },
+    { fi: "Koira ja kissa juoksivat metsässä.", ru: "Собака и кошка бегали в лесу.", en: "The dog and cat were running in the forest.", k: "s" },
+    { fi: "Äiti tai isä maksaa ravintolalaskun.", ru: "Мама или папа оплатит счёт в ресторане.", en: "Mom or dad will pay the restaurant bill.", k: "s" },
+    { fi: "Huuto ja itku vaimeni äidin tultua paikalle.", ru: "Крики и плач стихли, когда пришла мама.", en: "The shouting and crying faded after mother arrived.", k: "s" },
+    { fi: "Henkilöstö on tyytymätön palkankorotukseen.", ru: "Персонал недоволен повышением зарплаты.", en: "The staff is unsatisfied with the pay raise.", k: "s" },
+    { fi: "Nuoriso kokoontuu puistossa.", ru: "Молодёжь собирается в парке.", en: "The youth are assembling in the park.", k: "s" },
+    { fi: "Joukkue juhli voittoaan viikonloppuna.", ru: "Команда праздновала свою победу на выходных.", en: "The team celebrated its victory during the weekend.", k: "s" },
+    { fi: "Osa asiakkaista hakee take-away annoksen.", ru: "Часть клиентов берёт блюдо на вынос.", en: "Part of the customers will get a take-away portion.", k: "s" },
+    { fi: "Monet tilaavat myös kahvin.", ru: "Многие заказывают ещё и кофе.", en: "Many will order also a coffee.", k: "s" },
+    { fi: "Saisinko lasillisen punaviiniä, kiitos.", ru: "Можно бокал красного вина, пожалуйста.", en: "Could I have a glass of red wine, please.", k: "s" },
+    { fi: "Onko teillä varausta?", ru: "У вас есть бронь?", en: "Do you have a reservation?", k: "s" },
+    { fi: "Onko teillä talon suosituksia?", ru: "У вас есть фирменные рекомендации?", en: "Do you have any house recommendations?", k: "s" },
+    { fi: "Olen allerginen pähkinöille.", ru: "У меня аллергия на орехи.", en: "I am allergic to nuts.", k: "s" },
+    { fi: "lounasaika", ru: "обеденное время", en: "lunchtime", k: "w" },
+    { fi: "ruokalista", ru: "меню", en: "menu", k: "w" },
+    { fi: "suositella", ru: "рекомендовать", en: "to recommend", k: "w" },
+    { fi: "edullinen", ru: "недорогой", en: "inexpensive", k: "w" },
+    { fi: "tuore", ru: "свежий", en: "fresh", k: "w" },
+    { fi: "vartti", ru: "четверть часа", en: "a quarter of an hour", k: "w" },
+    { fi: "lasillinen", ru: "стакан/бокал чего-то", en: "a glass of", k: "w" }
+  ]
+},
+{
+  id: "IN_S1_18",
+  title: "A complaint about a pie: the essive and translative",
+  source: "FinnishPod101 · Intermediate S1 #18",
+  glossary: [
+    { w: "эссив: -na/-nä", ru: "«как кто-то», «в каком состоянии», «когда»", en: "the essive case",
+      forms: ["lämpimänä", "viileänä", "lapsena", "sairaana"],
+      note: "The essive answers the questions “how?”, “as whom?” and “when?”. It is formed with the ending -na/-nä on the strong stem (as with the illative).\nA role or position: Hän on kokkina suuressa ravintolassa (“He works as a cook in a big restaurant”). The speaker’s opinion: Pidän häntä mukavana ihmisenä (“I consider him a nice person”). A time of life: Pidin kalasta lapsena (“I liked fish as a child”). A state: En ollut töissä, koska olin sairaana (“I wasn’t at work because I was ill” — literally “was as sick”).\nIn the complaint from the dialogue: Tilasin omenapiirakan lämpimänä (“I ordered the apple pie warm”) — the essive describes in what form the dish was ordered." },
+    { w: "транслатив: -ksi", ru: "«во что становится», «в качестве чего», «на какой срок»", en: "the translative case",
+      forms: ["uudeksi", "rakeiseksi", "kiitolliseksi", "ensimmäiseksi"],
+      note: "The translative answers the question “into what/whom it turns”. The ending -ksi on the stem of the word.\nChange: Vaihdan sen uudeksi annokseksi (“I’ll replace it with a new portion”); Se menisi rakeiseksi (“It would turn grainy”). After the verbs luulla, tuntea, sanoa, kutsua, ehdottaa, kuvitella: Luulin tätä annosta pienemmäksi (“I thought this portion was smaller”). Time — for how long or by when: Tein varauksen kuudeksi (“I made a booking for six [o’clock]”). Order: Otamme ensimmäiseksi salaattia (“We’ll have the salad first”). The language in which something was done: Kirjoitin kirjan englanniksi (“I wrote the book in English”)." },
+    { w: "жалоба в ресторане", ru: "как вежливо пожаловаться на еду", en: "making a complaint about food",
+      forms: ["ruokani on kylmää", "tämä ei ole kypsää", "tämä on palanut"],
+      note: "A complaint begins with anteeksi (“excuse me”), and then the problem is named: Ruokani on kylmää (“My food is cold”), Tämä ei ole kypsää (“This is undercooked”), Tämä on palanut (“This is burnt”), Ruokani maistuu kummalliselta (“My food tastes strange”). If they brought something other than what you ordered: En tilannut tätä, tilasin... (“I didn’t order this, I ordered...”)." },
+    { w: "kas näin", ru: "вот так, вот, держите", en: "here you go, like this",
+      forms: ["kas näin"],
+      note: "Kas — an exclamation like “well”, “look”; näin — “like this”. Together — what is said when handing over something expected, or showing how something is done: Kas näin, tässä uusi pala piirakkaa (“There you are, here is a new piece of pie”). A more neutral and frequent variant in the same situation is ole hyvä / olkaa hyvä." }
+  ],
+  items: [
+    { fi: "Anteeksi, tarjoilija!", ru: "Извините, официант!", en: "Excuse me, waiter!", k: "d", who: "Jukka" },
+    { fi: "Aivan, miten voin auttaa?", ru: "Да, чем могу помочь?", en: "Right, how can I help you?", k: "d", who: "Työntekijä" },
+    { fi: "Tilasin tämän omenapiirakan lämpimänä. Tämä on aivan liian viileä.", ru: "Я заказывал этот яблочный пирог тёплым. Этот совсем холодный.", en: "I ordered this apple pie as warm. This is way too cold.", k: "d", who: "Jukka" },
+    { fi: "Ai niinkö... pahoittelen. Vaihdan sen teille uudeksi annokseksi.", ru: "Ах вот как... извините. Заменю вам на новую порцию.", en: "Oh really... My apologies. I will change it to a new portion for you.", k: "d", who: "Työntekijä" },
+    { fi: "Minulle riittäisi kyllä, jos vain lämmitätte sen.", ru: "Мне бы хватило, если бы вы его просто подогрели.", en: "It would be enough for me if you just re-heat it.", k: "d", who: "Jukka" },
+    { fi: "Vaniljakastike on kuitenkin parempaa viileänä, ja menisi lämmittämisestä rakeiseksi.", ru: "Ванильный соус, правда, вкуснее холодным, и от подогрева станет зернистым.", en: "But the vanilla sauce is, however, better when it's cold, and it would turn grainy from the heating.", k: "d", who: "Työntekijä" },
+    { fi: "Ahaa. No, selvä on.", ru: "Ага. Ну, ладно.", en: "Oh. Well, okay then.", k: "d", who: "Jukka" },
+    { fi: "Kas näin, tässä uusi pala omenapiirakkaa uunituoreena.", ru: "Вот так, держите новый кусок яблочного пирога прямо из духовки.", en: "Here you go, a new piece of apple pie fresh from the oven.", k: "d", who: "Työntekijä" },
+    { fi: "Kiitos!", ru: "Спасибо!", en: "Thank you!", k: "d", who: "Jukka" },
+    { fi: "Ja erehdyksemme vuoksi tarjoamme piirakan ilmaiseksi.", ru: "И из-за нашей ошибки угощаем пирогом бесплатно.", en: "And due to our error, we are offering this pie free of charge.", k: "d", who: "Työntekijä" },
+    { fi: "Ruokani on kylmää.", ru: "Моя еда холодная.", en: "My food is cold.", k: "s" },
+    { fi: "Tämä ei ole kypsää.", ru: "Это недожарено.", en: "This is not (properly) cooked.", k: "s" },
+    { fi: "Tämä on palanut.", ru: "Это подгорело.", en: "This is burnt.", k: "s" },
+    { fi: "Tilasin pihvin kypsänä.", ru: "Я заказывал стейк хорошо прожаренным.", en: "I ordered my steak as well-done.", k: "s" },
+    { fi: "Ruokani maistuu kummalliselta.", ru: "Моя еда странная на вкус.", en: "My food tastes strange.", k: "s" },
+    { fi: "Hän on kokkina suuressa ravintolassa.", ru: "Он работает поваром в большом ресторане.", en: "He works as a chef in a big restaurant.", k: "s" },
+    { fi: "Minä pidän häntä mukavana ihmisenä.", ru: "Я считаю его приятным человеком.", en: "I consider him as a nice person.", k: "s" },
+    { fi: "Pidin kalasta lapsena, mutta en enää.", ru: "Мне нравилась рыба в детстве, но больше нет.", en: "I liked fish as a child, but not anymore.", k: "s" },
+    { fi: "En ollut eilen töissä, koska olin sairaana.", ru: "Я вчера не был на работе, потому что болел.", en: "I wasn't at work yesterday, because I was sick.", k: "s" },
+    { fi: "Voitko vaihtaa tämän annoksen uudeksi?", ru: "Можешь заменить эту порцию на новую?", en: "Can you exchange this portion for a new one?", k: "s" },
+    { fi: "Hän kouluttautui kokiksi.", ru: "Он выучился на повара.", en: "He trained to be a chef.", k: "s" },
+    { fi: "Luulin tätä annosta pienemmäksi.", ru: "Я думал, эта порция меньше.", en: "I thought this portion was smaller.", k: "s" },
+    { fi: "Saanko ehdottaa mustikkajäätelöä jälkiruoaksi?", ru: "Можно предложить черничное мороженое на десерт?", en: "May I suggest the blueberry ice-cream as dessert?", k: "s" },
+    { fi: "Tein ravintolaan varauksen kuudeksi.", ru: "Я сделал бронь в ресторане на шесть.", en: "I made a reservation at the restaurant for six (o'clock).", k: "s" },
+    { fi: "Otamme ensimmäiseksi rapusalaattia.", ru: "Сначала возьмём крабовый салат.", en: "We will have the crab salad first.", k: "s" },
+    { fi: "Kirjoitin keittokirjan englanniksi.", ru: "Я написал кулинарную книгу на английском.", en: "I wrote a cook book in English.", k: "s" },
+    { fi: "tarjoilija", ru: "официант", en: "waiter", k: "w" },
+    { fi: "annos", ru: "порция, блюдо", en: "portion, dish", k: "w" },
+    { fi: "lämmin", ru: "тёплый", en: "warm", k: "w" },
+    { fi: "viileä", ru: "прохладный", en: "cold, cool", k: "w" },
+    { fi: "pahoitella", ru: "извиняться", en: "to apologize", k: "w" },
+    { fi: "ilmainen", ru: "бесплатный", en: "free, free of charge", k: "w" }
+  ]
+},
+{
+  id: "IN_S1_19",
+  title: "Clothes rental: the -va participle",
+  source: "FinnishPod101 · Intermediate S1 #19",
+  glossary: [
+    { w: "va-партицип", ru: "действующее лицо как прилагательное: -va/-vä", en: "the VA-participle (active present participle)",
+      forms: ["etsivä", "tuleva", "itkevä", "nukkuva"],
+      note: "The va-participle behaves like an adjective and is formed from the 3rd person plural stem (etsi-vät → etsi-vä). It describes an action that happens in general, now or in the future: Nukkuva lapsi on suloinen (“A sleeping child is sweet”); Ensi viikolla alkava äänestys (“The vote that begins next week”). For olla the participle is irregular: oleva." },
+    { w: "va-партицип вместо joka", ru: "заменяет придаточное «который»", en: "replacing joka-clauses",
+      forms: ["lapsi, joka itkee → itkevä lapsi", "asiakas, joka etsii → etsivä asiakas"],
+      note: "A subordinate clause with joka (“who, which”) can be condensed into a single participle word: Lapsi, joka itkee (“a child who cries”) → itkevä lapsi (“a crying child”); Asiakas, joka etsii vaatteita (“a customer who is looking for clothes”) → vaatteita etsivä asiakas. In the lesson’s dialogue almost all descriptions of customers are built exactly this way: laadukkaita vaatteita etsivä asiakas, vaatteisiin tykästyvä asiakas, vaatekaappiaan siivoava asiakas." },
+    { w: "va-партицип вместо että", ru: "заменяет придаточное «что»", en: "replacing että-clauses",
+      forms: ["kuulin, että hän saapuu → kuulin hänen saapuvan", "uskon, että liike menestyy → uskon liikkeen menestyvän"],
+      note: "A clause with että (“that”) can also be condensed: Kuulin, että hän saapuu huomenna (“I heard that he is arriving tomorrow”) → Kuulin hänen saapuvan huomenna. An important detail: both the subject (hänen) and the participle itself (saapuvan) are put in the genitive." },
+    { w: "uudenlainen", ru: "нового рода, новой разновидности", en: "new kind, novel",
+      forms: ["uudenlainen", "uudenlaista"],
+      note: "From uusi (“new”) with the suffix -lainen, which corresponds to “some kind/sort of”. The difference from plain uusi (“new”): uudenlainen means precisely a NEW TYPE of something, and not just a recently appeared thing of the same type." }
+  ],
+  items: [
+    { fi: "Hyvät kuulijat, meillä on tänään vieraana Linnea Virtanen, joka on avannut uuden vaateliikkeen kaupunkiimme.", ru: "Уважаемые слушатели, сегодня у нас в гостях Линнеа Виртанен, открывшая новый магазин одежды в нашем городе.", en: "Dear listeners, today we have a guest, Linnea Virtanen, who has opened a new clothing store in our city.", k: "d", who: "Haastattelija" },
+    { fi: "Myymälässäsi on uudenlainen konsepti. Kerrotko ideastasi hiukan lisää, Linnea?", ru: "В вашем магазине новый формат. Расскажете немного подробнее о своей идее, Линнеа?", en: "There is a new kind of concept in your store. Can you tell us a little bit more about your idea, Linnea?", k: "d", who: "Haastattelija" },
+    { fi: "Toki. Meille tuleva asiakas ei välttämättä halua sijoittaa paljoa rahaa pukeutumiseen, mutta pitää kuitenkin laadukkaista vaatteista.", ru: "Конечно. Клиент, который к нам приходит, не обязательно хочет вкладывать много денег в одежду, но при этом любит качественные вещи.", en: "Sure. A customer who is coming to us may not want to invest that much money into dressing, but they nevertheless like quality clothes.", k: "d", who: "Linnea" },
+    { fi: "Eli teiltä laadukkaita vaatteita etsivä asiakas voi vuokrata vaatteen tietyksi ajaksi?", ru: "То есть клиент, ищущий у вас качественную одежду, может арендовать вещь на определённый срок?", en: "So a customer who is looking for good quality clothes from you can rent a piece of a clothing for a certain amount of time?", k: "d", who: "Haastattelija" },
+    { fi: "Kyllä, näin on ja vaatteisiin tykästyvä asiakas voi myös lunastaa vaatteen itselleen.", ru: "Да, именно так, и клиент, полюбивший вещь, может также выкупить её себе.", en: "Yes, that's right, and a customer who finds herself fond of the clothes can also claim the garment for herself.", k: "d", who: "Linnea" },
+    { fi: "Tämän kaltaisia liikkeitä on tosin ollut ennenkin. Mitä muuta erikoista liikkeessänne on?", ru: "Правда, такие магазины уже бывали и раньше. Что ещё особенного в вашем магазине?", en: "However, these kinds of stores have existed before as well. What else is special about your store?", k: "d", who: "Haastattelija" },
+    { fi: "Vaatteistaan eroon haluavat asiakkaat voivat myös tarjota meille omia vaatteitaan myytäväksi tai vuokrattavaksi.", ru: "Клиенты, желающие избавиться от своей одежды, также могут предложить нам свои вещи на продажу или в аренду.", en: "Customers who are wanting to get rid of their own clothes can also offer us clothes to be sold or to be rented.", k: "d", who: "Linnea" },
+    { fi: "Vaatekaappiaan siivoava asiakas voi siis hyödyntää palveluitanne. Kätevää!", ru: "Значит, клиент, разбирающий свой гардероб, может воспользоваться вашими услугами. Удобно!", en: "So a customer who is tidying up her wardrobe can take advantage of your services. Convenient!", k: "d", who: "Haastattelija" },
+    { fi: "Aivan.", ru: "Именно.", en: "Exactly.", k: "d", who: "Linnea" },
+    { fi: "Kiitos haastattelusta!", ru: "Спасибо за интервью!", en: "Thank you for the interview!", k: "d", who: "Haastattelija" },
+    { fi: "Kiitos!", ru: "Спасибо!", en: "Thank you!", k: "d", who: "Linnea" },
+    { fi: "Nukkuva lapsi on suloinen.", ru: "Спящий ребёнок — очаровательный.", en: "A sleeping child is adorable.", k: "s" },
+    { fi: "Ensi viikolla alkava äänestys tulee olemaan tiukka.", ru: "Голосование, которое начнётся на следующей неделе, будет напряжённым.", en: "The voting beginning next week will be tough.", k: "s" },
+    { fi: "Minne vaatteita etsivä asiakas voi mennä?", ru: "Куда может пойти клиент, ищущий одежду?", en: "Where can a customer looking for clothes go?", k: "s" },
+    { fi: "Odotushuone oli täynnä nukkuvia ihmisiä.", ru: "Комната ожидания была полна спящих людей.", en: "The waiting room was full of sleeping people.", k: "s" },
+    { fi: "Kuulin hänen saapuvan huomenna.", ru: "Я слышал, что он приезжает завтра.", en: "I heard that she arrives tomorrow.", k: "s" },
+    { fi: "Uskon liikkeen menestyvän hyvin.", ru: "Я верю, что магазин будет процветать.", en: "I believe that the business will be a success.", k: "s" },
+    { fi: "Tämä lomakohde on sopiva rauhaa kaipaaville asiakkaille.", ru: "Это место отдыха подходит для клиентов, ищущих покоя.", en: "This holiday destination is suitable for customers longing for tranquility.", k: "s" },
+    { fi: "Itkevä lapsi saattaa olla vain väsynyt.", ru: "Плачущий ребёнок, возможно, просто устал.", en: "A crying child may be only tired.", k: "s" },
+    { fi: "Etelään muuttavat linnut palaavat takaisin keväällä.", ru: "Птицы, улетающие на юг, возвращаются обратно весной.", en: "Birds migrating to the south return in the spring time.", k: "s" },
+    { fi: "vaateliike", ru: "магазин одежды", en: "clothing store", k: "w" },
+    { fi: "lunastaa", ru: "выкупать", en: "to redeem", k: "w" },
+    { fi: "hyödyntää", ru: "использовать, извлекать выгоду", en: "to take advantage of", k: "w" },
+    { fi: "konsepti", ru: "концепция, формат", en: "concept", k: "w" },
+    { fi: "sijoittaa", ru: "инвестировать, вкладывать", en: "to invest", k: "w" },
+    { fi: "uudenlainen", ru: "нового рода", en: "new kind, novel", k: "w" }
+  ]
+},
+{
+  id: "IN_S1_20",
+  title: "A business idea: the present passive",
+  source: "FinnishPod101 · Intermediate S1 #20",
+  glossary: [
+    { w: "пассив настоящего времени", ru: "действие без указания исполнителя: «делают», «делается»", en: "the passive present tense",
+      forms: ["tiedetään", "haetaan", "puhutaan", "ei tiedetä"],
+      note: "The passive is used when it doesn’t matter or isn’t known WHO does something — in English this is often conveyed with “they/one does” (generally, without a subject) or with the passive “is done”: Kauppa tiedetään jo hyvin (“The shop is already well known”, literally “they know it well”).\nFor type 1 the weak stem is taken (as in minä, without -n), the final a/ä is changed to e, and -taan/-tään is added: hae-n → hae- → haetaan. For the other types it is simpler — just take the infinitive and add -an/-än: viedä → viedään, tavata → tavataan.\nThe negative: the -an/-än is removed and ei put in front: viedään → ei viedä.\nIn the spoken language the passive often replaces the ordinary “we”: Me mennään ostoksille instead of the bookish Me menemme ostoksille — both mean “We are going shopping”." },
+    { w: "ensinnäkin", ru: "во-первых", en: "first of all",
+      forms: ["ensinnäkin"],
+      note: "A handy word to begin an explanation by points and immediately attract the listener’s attention: No, ensinnäkin kauppa tiedetään jo hyvin (“Well, first of all, the shop is already well known”)." },
+    { w: "edullinen", ru: "выгодный: и «недорогой», и «прибыльный»", en: "inexpensive — but also profitable",
+      forms: ["edullinen", "edullisesti", "edullisemmaksi"],
+      note: "This word has two related meanings depending on whose side you look from. Saan tavaraa edullisesti (“I get goods at a good price”) — “cheap” for the buyer. Asiakkaille tulee edullisemmaksi (“It works out cheaper for customers”) — also “cheaper”, but with an accent on benefit. Overall “edullinen” is always about benefit — be it a low price or profitability for a business." },
+    { w: "kannattaa", ru: "быть прибыльным, стоить того", en: "to be profitable, to be worth the trouble",
+      forms: ["kannattaa", "ei kannata"],
+      note: "An impersonal construction: Miten tämä voi kannattaa? (“How can this be profitable?”). The same verb is used in advice about whether something is worth doing: Ei sinne enää kannata mennä (“It’s no longer worth going there”)." }
+  ],
+  items: [
+    { fi: "Kuulin haastattelusi radiossa! Melko jännittävä bisnesidea.", ru: "Я слышал твоё интервью по радио! Довольно интересная бизнес-идея.", en: "I heard your interview on the radio! Quite an exciting business idea.", k: "d", who: "Heikki" },
+    { fi: "Kiitos!", ru: "Спасибо!", en: "Thank you!", k: "d", who: "Linnea" },
+    { fi: "Mutta miten tämä voi kannattaa?", ru: "Но как это может быть прибыльным?", en: "But how can this be profitable?", k: "d", who: "Heikki" },
+    { fi: "No, ensinnäkin kauppa tiedetään jo melko hyvin. Saan yrityksiltä mallikappaleita ja sesongin viimeisiä vaatekappaleita edullisesti.", ru: "Ну, во-первых, магазин уже довольно хорошо известен. Я получаю от компаний образцы и последние вещи сезона по выгодной цене.", en: "Well, first of all, the shop is quite well known already. I get samples and the last pieces of the season from companies for an inexpensive price.", k: "d", who: "Linnea" },
+    { fi: "Eivätkö asiakkaat halua omistaa vaatteita?", ru: "А разве клиенты не хотят владеть одеждой?", en: "Don't the customers want to own the clothes?", k: "d", who: "Heikki" },
+    { fi: "Kyllä, joskus, ja sekin onnistuu kyllä. Täältä kuitenkin haetaan vaatteita usein erityisiä tilanteita varten.", ru: "Да, иногда, и это тоже возможно. Но чаще сюда приходят за одеждой для особых случаев.", en: "Yes, sometimes, and they can do that too. However, they are usually here seeking clothes for special occasions.", k: "d", who: "Linnea" },
+    { fi: "Eikö vuokraaminen ole kallista?", ru: "А аренда разве не дорогая?", en: "Isn't renting expensive?", k: "d", who: "Heikki" },
+    { fi: "Asiakkaille tulee edullisemmaksi, kun he voivat vuokrata vaatteen ostamisen sijaan.", ru: "Клиентам выходит выгоднее, когда они могут арендовать вещь вместо покупки.", en: "It becomes more affordable for the customers when they can rent a garment instead of buying it.", k: "d", who: "Linnea" },
+    { fi: "Aivan.. kuulostaa hyvältä.", ru: "Понятно... звучит неплохо.", en: "Right...sounds good.", k: "d", who: "Heikki" },
+    { fi: "Huoltokustannukset ovat tietysti suhteellisen korkeat, mutta huoltamisella vältetään vaatteiden kuluminen.", ru: "Расходы на обслуживание, конечно, относительно высокие, но за счёт обслуживания избегают износа одежды.", en: "The maintenance costs are of course relatively high, but with maintenance we can avoid the clothes wearing out.", k: "d", who: "Linnea" },
+    { fi: "Hienoa. No, toivottavasti kauppa käy!", ru: "Отлично. Ну, надеюсь, дело пойдёт!", en: "Great. Well, I hope the business goes well!", k: "d", who: "Heikki" },
+    { fi: "Täältä haetaan vaatteita erityisiä tilanteita varten.", ru: "Отсюда берут одежду для особых случаев.", en: "Clothes for special occasions are often sought from here.", k: "s" },
+    { fi: "Me mennään huomenna ostoksille.", ru: "Мы завтра идём за покупками.", en: "We are going shopping tomorrow.", k: "s" },
+    { fi: "Kokouksessa päätetään ensi vuoden budjetti.", ru: "На собрании решается бюджет на следующий год.", en: "The budget for next year will be decided in the meeting.", k: "s" },
+    { fi: "Kehityskeskustelussa käydään läpi työntekijän onnistumiset ja epäonnistumiset.", ru: "На беседе по развитию разбираются успехи и неудачи сотрудника.", en: "Employees' successes and failures are reviewed in the development appraisal.", k: "s" },
+    { fi: "Päivän aluksi pidetään aina aamupalaveri.", ru: "В начале дня всегда проводится утреннее совещание.", en: "A morning meeting is held at the beginning of each day.", k: "s" },
+    { fi: "bisnesidea", ru: "бизнес-идея", en: "business idea", k: "w" },
+    { fi: "omistaa", ru: "владеть", en: "to own", k: "w" },
+    { fi: "kannattaa", ru: "быть прибыльным, стоить того", en: "to be profitable, worth it", k: "w" },
+    { fi: "mallikappale", ru: "образец", en: "sample", k: "w" },
+    { fi: "sesonki", ru: "сезон", en: "season", k: "w" },
+    { fi: "ensinnäkin", ru: "во-первых", en: "first of all", k: "w" }
+  ]
+},
+{
+  id: "IN_S1_21",
+  title: "At the bookshop: the ma-infinitive in its cases",
+  source: "FinnishPod101 · Intermediate S1 #21",
+  glossary: [
+    { w: "ma-инфинитив: -massa/-masta/-maan", ru: "за занятием, от занятия, на занятие", en: "the MA-infinitive in the inessive/elative/illative",
+      forms: ["opiskelemassa", "opiskelemasta", "opiskelemaan"],
+      note: "The ma-infinitive has already been met — here all its cases are collected together.\nInessive (-massa/-mässä, “in the middle of doing something right now”): Olin koko päivän kirjastossa opiskelemassa (“I was in the library studying all day”).\nElative (-masta/-mästä, “from an activity, just having finished”): Milloin tulet pelaamasta? (“When will you be back from the game?”).\nIllative (-maan/-mään, “going to do something”, and also “good/bad at something”): Mennäänkö katsomaan sirkusta? (“Shall we go and see the circus?”); Olen huono muistamaan nimiä (“I’m bad at remembering names”).\nThe exception is the verbs tulla, mennä, lähteä in the inessive: not the opiskelemassa type but a special form: Olin tulossa töistä kotiin (“I was on my way home from work”), Olin juuri lähdössä (“I was just leaving”), Olen menossa elokuviin (“I’m going to the cinema”)." },
+    { w: "ma-инфинитив: -matta/-malla", ru: "без занятия, посредством занятия", en: "the MA-infinitive in the abessive/adessive",
+      forms: ["sanomatta", "jättämällä", "juoksemalla"],
+      note: "The abessive (-matta/-mättä, “without doing something”): Hän lähti sanomatta sanaakaan (“He left without saying a word”).\nThe adessive (-malla/-mällä, “by means of something”): Laihduin jättämällä sokerin pois (“I lost weight by cutting out sugar”); Juoksemalla voimme ehtiä junaan! (“By running we can make the train!”)." },
+    { w: "nykykirjailija", ru: "современный писатель", en: "contemporary writer",
+      forms: ["nykykirjailija", "nykykirjailijoihin"],
+      note: "The prefix nyky- (“modern, current”) + kirjailija (“writer”). On the same model: nykytaiteilija (“contemporary artist”), nykymuoti (“current fashion”)." },
+    { w: "suomenkielinen", ru: "финскоязычный, на финском языке", en: "Finnish (in the Finnish language)",
+      forms: ["suomenkielinen", "suomenkielisiä"],
+      note: "From suomen kieli (“the Finnish language”) in the genitive. It speaks about the LANGUAGE, not nationality — for “Finnish by origin” you need suomalainen. On the same model: englanninkielinen (“English-speaking”), ruotsinkielinen (“Swedish-speaking”)." }
+  ],
+  items: [
+    { fi: "Hei! Tervetuloa kauppaamme. Voinko olla avuksi?", ru: "Привет! Добро пожаловать в наш магазин. Могу я помочь?", en: "Hello! Welcome to our shop. Can I be of assistance?", k: "d", who: "Vilja" },
+    { fi: "Kiitos! Haluaisin itse asiassa katsoa suomenkielisiä romaaneja.", ru: "Спасибо! Я бы хотел, собственно, посмотреть романы на финском.", en: "Thank you! I would actually like to see some Finnish novels.", k: "d", who: "Mies" },
+    { fi: "Etsitkö jotakin tiettyä?", ru: "Ищешь что-то конкретное?", en: "Are you looking for something in particular?", k: "d", who: "Vilja" },
+    { fi: "No, tulen juuri opiskelemasta, ja olemme lukemassa Sofi Oksasen kirjoja. Haluaisin tutustua muihinkin nykykirjailijoihin.", ru: "Ну, я как раз иду с учёбы, мы читаем книги Софи Оксанен. Хотел бы познакомиться и с другими современными писателями.", en: "Well, I'm just coming from studying, and we're reading books by Sofi Oksanen. I would like to get to know other contemporary writers as well.", k: "d", who: "Mies" },
+    { fi: "Sehän on mukavaa. Opiskeletko kirjallisuutta?", ru: "Это приятно. Ты изучаешь литературу?", en: "Well that's nice. Are you studying literature?", k: "d", who: "Vilja" },
+    { fi: "Kyllä, tai suomalaista kulttuuria yleensä. Pidän kirjallisuudesta ja elokuvista eniten.", ru: "Да, или вообще финскую культуру. Больше всего мне нравятся литература и кино.", en: "Yes, and Finnish culture in general. I like literature and the cinema the most.", k: "d", who: "Mies" },
+    { fi: "Opiskelen itsekin kirjallisuutta! Tule, mennään katsomaan mitä meiltä löytyy.", ru: "Я сама тоже изучаю литературу! Пойдём, посмотрим, что у нас есть.", en: "I am studying literature myself as well! Come, let's go see what we have.", k: "d", who: "Vilja" },
+    { fi: "Hienoa, kiitos!", ru: "Отлично, спасибо!", en: "Great, thanks!", k: "d", who: "Mies" },
+    { fi: "Olemme myös juuri laittamassa osaa kirjoista alennukseen, voimme katsoa jos löydämme sieltä jotakin.", ru: "Мы как раз выставляем часть книг со скидкой, можем посмотреть, вдруг там что-то найдётся.", en: "We are also just putting some of the books on sale, we can check if we can find something from there.", k: "d", who: "Vilja" },
+    { fi: "Olin koko päivän kirjastossa opiskelemassa.", ru: "Я весь день был в библиотеке, занимался.", en: "I was studying at the library for the whole day.", k: "s" },
+    { fi: "Olin juuri kirjoittamassa sinulle sähköpostia.", ru: "Я как раз писал тебе письмо.", en: "I was just writing an email to you.", k: "s" },
+    { fi: "Käyn tarkistamassa, vieläkö vauva nukkuu.", ru: "Пойду проверю, спит ли ещё малыш.", en: "I'm going to check if the baby is still sleeping.", k: "s" },
+    { fi: "Olin tulossa töistä kotiin.", ru: "Я шёл с работы домой.", en: "I was coming home from work.", k: "s" },
+    { fi: "Olin juuri lähdössä kotiin.", ru: "Я как раз собирался уходить домой.", en: "I was just about to leave home.", k: "s" },
+    { fi: "Olen menossa elokuviin, tuletko mukaan?", ru: "Я иду в кино, пойдёшь со мной?", en: "I'm going to the movies, do you want to come with me?", k: "s" },
+    { fi: "Milloin tulet pelaamasta?", ru: "Когда ты вернёшься с игры?", en: "When do you come from playing?", k: "s" },
+    { fi: "Paikalliset varoittivat menemästä tätä reittiä.", ru: "Местные предупредили не ходить этим маршрутом.", en: "The locals warned not to take this route.", k: "s" },
+    { fi: "Mennäänkö katsomaan sirkusta?", ru: "Пойдём посмотреть цирк?", en: "Shall we go and see the circus?", k: "s" },
+    { fi: "Kuka on hyvä leipomaan kakkuja?", ru: "У кого хорошо получается печь торты?", en: "Who is good at baking cakes?", k: "s" },
+    { fi: "Olen huono muistamaan ihmisten nimiä.", ru: "У меня плохо получается запоминать имена людей.", en: "I am bad at remembering people's names.", k: "s" },
+    { fi: "Hän lähti sanomatta sanaakaan.", ru: "Он ушёл, не сказав ни слова.", en: "He left without saying a word.", k: "s" },
+    { fi: "Laihduin jättämällä sokerin ruokavaliostani kokonaan pois.", ru: "Я похудел, полностью исключив сахар из рациона.", en: "I lost weight by taking sugar entirely out of my diet.", k: "s" },
+    { fi: "Juoksemalla voimme vielä ehtiä junaan!", ru: "Бегом мы ещё можем успеть на поезд!", en: "By running we can still catch the train!", k: "s" },
+    { fi: "kirjallisuus", ru: "литература", en: "literature", k: "w" },
+    { fi: "romaani", ru: "роман", en: "novel", k: "w" },
+    { fi: "nykykirjailija", ru: "современный писатель", en: "contemporary writer", k: "w" },
+    { fi: "tutustua", ru: "знакомиться", en: "to get to know", k: "w" },
+    { fi: "elokuva", ru: "фильм", en: "movie", k: "w" },
+    { fi: "tietty", ru: "определённый", en: "particular, certain", k: "w" }
+  ]
+},
+{
+  id: "IN_S1_22",
+  title: "The bookshop: the -nut/-nyt participle",
+  source: "FinnishPod101 · Intermediate S1 #22",
+  glossary: [
+    { w: "nut-партицип", ru: "совершённое действие как прилагательное: -nut/-nyt", en: "the NUT-participle (active past participle)",
+      forms: ["kirjoittanut", "menestynyt", "ratkaissut", "avannut"],
+      note: "The nut-participle — the same participle suffix as in the perfect (olen kirjoittanut), only now it works as an adjective and can stand with any noun, in all cases. It expresses: 1) a state begun in the past and still relevant — Väsynyt opiskelija ei jaksa keskittyä (“A tired student can’t concentrate”); 2) an action already accomplished and completed — Kirjan kirjoittanut nainen (“The woman who wrote the book”).\nFormation: from types 1–2 — the infinitive stem + -nut/-nyt (puhua → puhunut); in type 3 the final consonant of the stem merges with n (surra → surrut, nousta → noussut); in types 4–6 -nnut/-nnyt is added (tavata → tavannut, tarvita → tarvinnut).\nIt replaces a clause with joka exactly like the va-participle, only for the past: Mies, joka ratkaisi ongelman (“The man who solved the problem”) → Ongelman ratkaissut mies." },
+    { w: "kaunokirjallisuus", ru: "художественная литература", en: "fiction",
+      forms: ["kaunokirjallisuus", "kaunokirjallisuuden"],
+      note: "Kauno (from kaunis, “beautiful”, in the context of literature — “fine”) + kirjallisuus (“literature”). Other kinds of literature are called differently: tietokirjallisuus (“non-fiction”), tieteiskirjallisuus (“science fiction”), runous (“poetry”)." },
+    { w: "henkilökohtainen", ru: "личный", en: "personal",
+      forms: ["henkilökohtainen", "henkilökohtaisesti"],
+      note: "Henkilö (“person”) + -kohtainen, turning the word into “addressed to one person”. If you need to say “private” in the sense of “not for strangers’ eyes”, yksityinen suits better." }
+  ],
+  items: [
+    { fi: "Tässä on kaunokirjallisuuden osastomme.", ru: "Вот наш отдел художественной литературы.", en: "Here is our fiction department.", k: "d", who: "Vilja" },
+    { fi: "Ahaa. Voitko suositella jotakin?", ru: "Ага. Можешь что-то порекомендовать?", en: "Aha. Can you recommend something?", k: "d", who: "Mies" },
+    { fi: "No, esimerkiksi tämä kirja on juuri tullut valikoimiimme. Tämä menestynyt kirjailija on voittanut useita palkintoja.", ru: "Ну, например, эта книга только что поступила к нам в ассортимент. Этот успешный писатель выиграл несколько наград.", en: "Well, for example, this book has just arrived to our selection. This successful writer has won several awards.", k: "d", who: "Vilja" },
+    { fi: "Selvä, vaikuttaa mielenkiintoiselta.", ru: "Понятно, выглядит интересно.", en: "Okay, seems interesting.", k: "d", who: "Mies" },
+    { fi: "Kokemukseni mukaan myös tämän kirjailijan kirjat ovat hyviä. Moni ansioitunut kriitikko on kirjoittanut hyviä arvioita hänen kirjoistaan.", ru: "По моему опыту, книги этого писателя тоже хороши. Многие именитые критики писали хорошие рецензии на его книги.", en: "In my experience, this author's books are good too. Many distinguished critics have written good reviews of his books.", k: "d", who: "Vilja" },
+    { fi: "Aivan, hänestä olenkin kuullut ennen.", ru: "Точно, я о нём уже слышал раньше.", en: "Yes, right, I've heard of him before.", k: "d", who: "Mies" },
+    { fi: "Henkilökohtaisesti pidän myös tästä kirjailijasta, vaikka hän ei olekaan niin tunnettu.", ru: "Лично мне нравится и этот писатель, хотя он не такой известный.", en: "Personally I also like this author, even if he is not that well known.", k: "d", who: "Vilja" },
+    { fi: "Kiitos, tutustun mielelläni näihin kirjoihin.", ru: "Спасибо, с удовольствием познакомлюсь с этими книгами.", en: "Thank you, I'm happy to get acquainted with these books.", k: "d", who: "Mies" },
+    { fi: "Nämä alennetut kirjat ovat myös laadukkaita. Meillä on niitä vain suuri varasto, joten siksi ne ovat nyt alennuksessa.", ru: "Эти уценённые книги тоже качественные. Просто у нас их большой запас, поэтому они сейчас со скидкой.", en: "These discounted books are also of high quality. We just had a lot of them in stock, so that's why they're on sale now.", k: "d", who: "Vilja" },
+    { fi: "Selvä, kiitos paljon avusta!", ru: "Понятно, большое спасибо за помощь!", en: "Okay, thank you very much for your help!", k: "d", who: "Mies" },
+    { fi: "Väsynyt opiskelija ei jaksa keskittyä.", ru: "Уставший студент не может сосредоточиться.", en: "A tired student can't focus.", k: "s" },
+    { fi: "Ulkomailla asunut tätini muuttaa takaisin Suomeen.", ru: "Моя тётя, жившая за границей, переезжает обратно в Финляндию.", en: "My aunt who has been living abroad is moving back to Finland.", k: "s" },
+    { fi: "Eilen päättynyt festivaali.", ru: "Фестиваль, закончившийся вчера.", en: "The festival which ended yesterday.", k: "s" },
+    { fi: "Kirjan kirjoittanut nainen.", ru: "Женщина, написавшая книгу.", en: "The woman who wrote the book.", k: "s" },
+    { fi: "Mielestäni eilen luennoinut professori on innostava.", ru: "По-моему, профессор, читавший вчера лекцию, вдохновляет.", en: "In my opinion the professor who lectured yesterday is inspirational.", k: "s" },
+    { fi: "Kyseisen ongelman ratkaissut mies kirjoitti aiheesta kirjan.", ru: "Мужчина, решивший эту проблему, написал об этом книгу.", en: "The man who solved the problem in question wrote a book on the topic.", k: "s" },
+    { fi: "Tämä dokumentti kertoo avaruuteen menneistä ihmisistä.", ru: "Этот документальный фильм рассказывает о людях, летавших в космос.", en: "This documentary tells about people who went to space.", k: "s" },
+    { fi: "Nämä välineet valinneet asiakkaat ovat olleet tyytyväisiä.", ru: "Клиенты, выбравшие эти инструменты, остались довольны.", en: "The customers who chose these tools have been satisfied.", k: "s" },
+    { fi: "Kanta-asiakastilin avanneet asiakkaat saavat alennusta.", ru: "Клиенты, открывшие счёт постоянного покупателя, получают скидку.", en: "Customers who have opened a regular customer account will receive a discount.", k: "s" },
+    { fi: "Koska olen kirjoittanut tästä aiheesta kirjan, saanko antaa neuvon?", ru: "Раз я написал книгу на эту тему, можно дам совет?", en: "Because I have written a book on the topic, may I give some advice?", k: "s" },
+    { fi: "Hän on hyvin valveutunut ihminen.", ru: "Он очень осведомлённый человек.", en: "She is a very well-informed person.", k: "s" },
+    { fi: "Kukat tässä maljakossa ovat aivan lakastuneita.", ru: "Цветы в этой вазе совсем увяли.", en: "The flowers in this vase are completely withered.", k: "s" },
+    { fi: "kaunokirjallisuus", ru: "художественная литература", en: "fiction", k: "w" },
+    { fi: "kokemus", ru: "опыт", en: "experience", k: "w" },
+    { fi: "laadukas", ru: "качественный", en: "of high quality", k: "w" },
+    { fi: "mielenkiintoinen", ru: "интересный", en: "interesting", k: "w" },
+    { fi: "voittaa", ru: "побеждать, выигрывать", en: "to win", k: "w" },
+    { fi: "henkilökohtainen", ru: "личный", en: "personal", k: "w" }
+  ]
+},
+{
+  id: "IN_S1_23",
+  title: "We need a repairman: expressing surprise and gradation in nouns",
+  source: "FinnishPod101 · Intermediate S1 #23",
+  glossary: [
+    { w: "восклицания удивления", ru: "ой, правда? вот это да! и другие реакции", en: "exclamations of surprise and disbelief",
+      forms: ["ai niinkö", "ihanko totta", "ei voi olla totta", "uskomatonta"],
+      note: "A ready set of reactions to unexpected news: Ai niinkö? (“Oh, is that so?”), Ihanko totta? (“Really?”), Onko niin? (“Is that so?”), Hyvänen aika! (“Good heavens!”), Mitä ihmettä? (“What on earth?”), Uskomatonta! (“Unbelievable!”), Eikä! (“No way!”), Ei voi olla totta! (“It can’t be true!”), Vau! (“Wow!”), Kas vain! (“Well, well!”). The stronger the surprise, the more appropriate these phrases — in a neutral business conversation they are usually avoided." },
+    { w: "чередование ступеней в именах", ru: "финские имена тоже подчиняются правилу k, p, t", en: "consonant gradation in Finnish names",
+      forms: ["Markku / Markun", "Jutta / Jutalta", "Heikki / Heikin"],
+      note: "Unlike in some languages, Finnish names containing k, p or t also alternate by the same rules as ordinary words: Markku (“Markku”, with a double k) → Markun (genitive, kk → k); Jutta → Jutalta (“from Jutta”, tt → t); Heikki → Heikin (genitive). Foreign names (Cato → Caton) and many Finnish personal names are excluded from this rule — there is no single recipe, you have to memorise them word by word." }
+  ],
+  items: [
+    { fi: "Aino, miten remontti sujuu?", ru: "Айно, как продвигается ремонт?", en: "Aino, how is the renovation going?", k: "d", who: "Linnea" },
+    { fi: "No, Heikin pitäisi aloittaa tapetointi, mutta hänellä ei ole oikein kokemusta siitä.", ru: "Ну, Хейкки пора бы начать клеить обои, но у него нет особого опыта в этом.", en: "Well, Heikki should start wallpapering, but he doesn't really have experience with it.", k: "d", who: "Aino" },
+    { fi: "Ai niinkö? Markku on tapetoinut tuttaviemme koteja. Voin kysyä, jos Markulla olisi aikaa tulla auttamaan Heikkiä.", ru: "Ах вот как? Маркку клеил обои нашим знакомым. Могу спросить, найдётся ли у Маркку время помочь Хейкки.", en: "Oh, really? Markku has wallpapered some of our acquaintances' homes. I can ask if Markku would have time to come and help Heikki.", k: "d", who: "Linnea" },
+    { fi: "Ihanko totta? En tiennytkään!", ru: "Правда что ли? Я и не знала!", en: "Oh really? I didn't know!", k: "d", who: "Aino" },
+    { fi: "Kyllä vain. Markun ensimmäinen työpaikka oli rautakaupassa.", ru: "Да уж. Первая работа Маркку была в хозяйственном магазине.", en: "Oh yes. Markku's first job was in a hardware store.", k: "d", who: "Linnea" },
+    { fi: "Minulla ei ollut aavistustakaan!", ru: "У меня вообще не было никакого понятия!", en: "I had no idea!", k: "d", who: "Aino" },
+    { fi: "No, siitä on toki aikaa. Hän oli siellä ensin kesätöissä.", ru: "Ну, с тех пор прошло время. Сначала он там работал летом.", en: "Well, some time has passed since then, of course. He was there doing a summer job at first.", k: "d", who: "Linnea" },
+    { fi: "Jos Markku vain ehtisi auttaa Heikkiä, niin se olisi Heikille suuri apu.", ru: "Если бы Маркку только успел помочь Хейкки, это было бы большой помощью для Хейкки.", en: "If Markku only had time to help Heikki, it would be a big help for Heikki.", k: "d", who: "Aino" },
+    { fi: "No minä kysyn Markulta, ja ilmoitan sitten sinulle!", ru: "Ну я спрошу у Маркку и потом сообщу тебе!", en: "Well, I'll ask Markku and then let you know!", k: "d", who: "Linnea" },
+    { fi: "Onko niin?", ru: "Разве это так?", en: "Is that so?", k: "s" },
+    { fi: "Hyvänen aika!", ru: "Боже мой!", en: "Good heavens!", k: "s" },
+    { fi: "Mitä ihmettä?", ru: "Что за чёрт?", en: "What on earth?", k: "s" },
+    { fi: "Uskomatonta!", ru: "Невероятно!", en: "Unbelievable!", k: "s" },
+    { fi: "Eikä!", ru: "Да ладно!", en: "No way!", k: "s" },
+    { fi: "Ei voi olla totta!", ru: "Не может быть правдой!", en: "It can't be true!", k: "s" },
+    { fi: "Vau!", ru: "Вау!", en: "Wow!", k: "s" },
+    { fi: "Kas vain!", ru: "Ну надо же!", en: "Well now!", k: "s" },
+    { fi: "Markku antoi Jutalle syntymäpäivälahjan.", ru: "Маркку подарил Ютте подарок на день рождения.", en: "Markku gave a birthday present to Jutta.", k: "s" },
+    { fi: "Jutta sai Markulta syntymäpäivälahjan ja näytti sen myös Tepolle.", ru: "Ютта получила от Маркку подарок на день рождения и показала его ещё Теппо.", en: "Jutta received a birthday present from Markku and also showed it to Teppo.", k: "s" },
+    { fi: "Mirkka auttaa usein Mikon äitiä.", ru: "Миркка часто помогает маме Микко.", en: "Mirkka often helps Mikko's mom.", k: "s" },
+    { fi: "Onko näin? Onpa todella yllättävää.", ru: "Это так? Как же удивительно.", en: "Is that so? That is really surprising.", k: "s" },
+    { fi: "remontti", ru: "ремонт", en: "renovation", k: "w" },
+    { fi: "tapetointi", ru: "оклейка обоями", en: "wallpapering", k: "w" },
+    { fi: "tuttava", ru: "знакомый", en: "acquaintance", k: "w" },
+    { fi: "rautakauppa", ru: "хозяйственный магазин", en: "hardware store", k: "w" },
+    { fi: "aavistus", ru: "предчувствие, догадка", en: "hunch", k: "w" },
+    { fi: "kesätyö", ru: "летняя работа", en: "summer job", k: "w" }
+  ]
+},
+{
+  id: "IN_S1_24",
+  title: "What this word means: relative pronouns and the past passive",
+  source: "FinnishPod101 · Intermediate S1 #24",
+  glossary: [
+    { w: "joka", ru: "который — относится к конкретному слову", en: "relative pronoun referring to a specific noun",
+      forms: ["joka", "jonka", "jossa", "josta", "johon"],
+      note: "Joka introduces a subordinate clause and refers to a specific word in the main clause — an object, a person or an animal: Tyttö joka istuu tuolla, on siskoni (“The girl who is sitting over there is my sister”). It is inflected in all the cases: jonka (“whose”, genitive) — Mies, jonka laukku on lattialla (“The man whose bag is on the floor”); jossa (“where”, inessive) — Talo, jossa hän asuu (“The house in which he lives”)." },
+    { w: "mikä", ru: "который — относится ко всему предыдущему предложению", en: "relative pronoun referring to the whole clause",
+      forms: ["mikä", "minkä", "missä", "mistä"],
+      note: "Mikä is used less often than joka — usually when it is about the WHOLE preceding sentence and not about one word: Hän osti minulle lahjan, mikä ilahdutti minua (“He bought me a present, which pleased me” — the fact of the gift pleases, not the gift itself; compare Hän osti minulle lahjan, joka ilahdutti minua, where it is the present itself that pleases).\nTyöpäivän kesken hän sairastui, minkä vuoksi hän lähti kotiin (“In the middle of the working day he fell ill, because of which he went home”) — minkä here refers to the whole situation “he fell ill”, and not to one word." },
+    { w: "пассив прошедшего времени", ru: "что-то было сделано (кем — неважно)", en: "the passive past tense",
+      forms: ["käytettiin", "juteltiin", "murtauduttiin", "ei syöty"],
+      note: "Built the same way as the present passive, only with the ending -ttiin/-tiin instead of -taan/-tään: sanotaan → sanottiin, puhutaan → puhuttiin. In colloquial speech it often replaces “we” in the past: Käytiin kahvilla ja juteltiin remontista (“We went for coffee and chatted about the renovation” — literally “was gone and was chatted”).\nThe negative: ei + the stem + -tu/-ty: ei syöty (“didn’t eat”), ei käytetty (“didn’t use”)." },
+    { w: "ennen vanhaan", ru: "раньше, в старину", en: "in the olden days",
+      forms: ["ennen vanhaan"],
+      note: "Ennen (“before”) + vanhaan (the illative of vanha, “old”). Used when telling about old times — often by older people recalling their youth: Ennen vanhaan ei ollut kännyköitä (“In the old days there were no mobile phones”)." },
+    { w: "eiköhän", ru: "думаю, наверное (мягкое утверждение)", en: "I suppose, I would think",
+      forms: ["eiköhän"],
+      note: "Formally a negative question (“isn’t it...?”), and in meaning a soft, not very confident statement: Eiköhän se onnistu (“I think it will work out”, literally “won’t it work out?” — i.e. “it will surely work, but I won’t swear to it”)." }
+  ],
+  items: [
+    { fi: "Hei kulta. Mitä teitte Ainon kanssa?", ru: "Привет, дорогая. Что вы делали с Айно?", en: "Hi honey. What did you do with Aino?", k: "d", who: "Markku" },
+    { fi: "Hei! Käytiin kahvilla ja juteltiin Ainon ja Heikin remontista.", ru: "Привет! Сходили на кофе и поболтали о ремонте у Айно и Хейкки.", en: "Hi! We went for coffee and talked about Aino and Heikki's remodeling.", k: "d", who: "Linnea" },
+    { fi: "Aivan, aivan, heillä on tosiaan remontti käynnissä.", ru: "Точно-точно, у них правда идёт ремонт.", en: "Right, right, they do indeed have a renovation in progress.", k: "d", who: "Markku" },
+    { fi: "Lupasin kysyä, jos voisit auttaa Heikkiä tapetoinnissa?", ru: "Я обещала спросить, не мог бы ты помочь Хейкки с обоями?", en: "I promised to ask if you could help Heikki with wallpapering.", k: "d", who: "Linnea" },
+    { fi: "Toki, eiköhän se onnistu. Pitää vain hankkia joitakin tarvikkeita.", ru: "Конечно, думаю, получится. Нужно только добыть кое-какие материалы.", en: "Sure, I suppose it will be fine. Some supplies just have to be bought.", k: "d", who: "Markku" },
+    { fi: "Aivan, puhuttiinkin siitä Ainon kanssa. Heikillä saattaa olla jo jotakin. Mitä tarvikkeita tarvitset?", ru: "Точно, мы как раз говорили об этом с Айно. У Хейкки, возможно, уже что-то есть. Какие материалы тебе нужны?", en: "Right, we were talking about it with Aino. Heikki might already have something. Which supplies do you need?", k: "d", who: "Linnea" },
+    { fi: "Ainakin tapetoimispöydän, liisteriharjan, tapettiharjan ja luotilangan.", ru: "Как минимум стол для обоев, кисть для клея, кисть для обоев и отвес.", en: "At least a wallpapering table, adhesive brush, wallpaper brush and a plumb line.", k: "d", who: "Markku" },
+    { fi: "Mikä on luotilanka?", ru: "Что такое отвес?", en: "What's a plumb line?", k: "d", who: "Linnea" },
+    { fi: "Periaatteessa se on lanka, jonka varassa roikkuu punnus. Punnus on painava, minkä ansiosta lanka muodostaa pystysuoran linjan.", ru: "В принципе, это нить, на которой висит грузик. Грузик тяжёлый, благодаря чему нить образует вертикальную линию.", en: "In principle it's a thread from which a weight is hanging. The weight is heavy, which is why the thread makes a perpendicular line.", k: "d", who: "Markku" },
+    { fi: "Ahaa. Voit siis sen avulla katsoa, että tapetti tulee suoraan.", ru: "Ага. Значит, с его помощью можно проверить, что обои клеятся ровно.", en: "Oh, I see. So with that you can see that the wallpaper hangs straight.", k: "d", who: "Linnea" },
+    { fi: "Kyllä. Ennen vanhaan niitä käytettiin enemmänkin, nykyään on myös paljon elektronisia mittalaitteita.", ru: "Да. Раньше их использовали больше, сейчас есть ещё много электронных измерительных приборов.", en: "Yes. In the olden days they were used even more, and nowadays there are a lot of electronic measuring devices.", k: "d", who: "Markku" },
+    { fi: "Tyttö joka istuu tuolla, on siskoni.", ru: "Девочка, которая сидит вон там, — моя сестра.", en: "The girl who sits there is my sister.", k: "s" },
+    { fi: "Tämä on kirja, jota olen aina halunnut.", ru: "Это книга, которую я всегда хотел.", en: "This is the book that I have always wanted.", k: "s" },
+    { fi: "Mies, jonka laukku on lattialla, on opettajani.", ru: "Мужчина, чья сумка на полу, — мой учитель.", en: "The man, whose bag is on the floor, is my teacher.", k: "s" },
+    { fi: "Talo, jossa hän asuu on punainen.", ru: "Дом, в котором он живёт, красный.", en: "The house, where he lives, is red.", k: "s" },
+    { fi: "Olin kuumeisena töissä, mikä heikensi toimintakykyäni.", ru: "Я работал с температурой, что ослабило мою работоспособность.", en: "I was working while feverish, which reduced my ability to function.", k: "s" },
+    { fi: "Hän sairastui kesken työpäivän, minkä vuoksi hän lähti kotiin.", ru: "Он заболел посреди рабочего дня, из-за чего ушёл домой.", en: "He got ill in the middle of the working day, which is why he left.", k: "s" },
+    { fi: "Autooni murtauduttiin viime yönä.", ru: "В мою машину вломились прошлой ночью.", en: "My car was broken into last night.", k: "s" },
+    { fi: "Kanasalaattia ei syöty niin paljon kuin lohisalaattia.", ru: "Куриный салат ели не так много, как салат с лососем.", en: "The chicken salad wasn't eaten as much as the salmon salad.", k: "s" },
+    { fi: "Tällä välineellä mitattiin ennen etäisyyksiä.", ru: "Этим инструментом раньше измеряли расстояния.", en: "Distances used to be measured with this tool.", k: "s" },
+    { fi: "Juna on kulkuväline, mikä kulkee kiskoilla.", ru: "Поезд — это транспортное средство, которое ездит по рельсам.", en: "A train is a mode of transport that goes on tracks.", k: "s" },
+    { fi: "käynnissä", ru: "в процессе, идёт", en: "in progress", k: "w" },
+    { fi: "luvata", ru: "обещать", en: "to promise", k: "w" },
+    { fi: "ennen vanhaan", ru: "раньше, в старину", en: "in the olden days", k: "w" },
+    { fi: "muodostaa", ru: "формировать, образовывать", en: "to form", k: "w" },
+    { fi: "eiköhän", ru: "думаю, наверное", en: "I suppose", k: "w" },
+    { fi: "tarvikkeet", ru: "материалы, принадлежности", en: "supplies", k: "w" }
+  ]
+},
+{
+  id: "IN_S1_25",
+  title: "A report deadline: changing the subject and indirect questions",
+  source: "FinnishPod101 · Intermediate S1 #25",
+  glossary: [
+    { w: "palatakseni / pysyäkseni", ru: "возвращаясь к теме / чтобы придерживаться темы", en: "to return to the topic / in order to stay on topic",
+      forms: ["palatakseni", "palatakseni asiaan", "pysyäksemme aikataulussa"],
+      note: "Handy phrases for a business conversation that has gone off to the side. Palatakseni (“to return”, literally “in order for me to return”) + a noun in the illative: palatakseni raporttiin (“going back to the report”). Pysyäkseni/pysyäksemme (“in order for me/us to stay”) + a noun in the inessive: pysyäksemme aikataulussa (“to keep to the schedule”)." },
+    { w: "Odota pieni hetki / Anteeksi, saanko keskeyttää?", ru: "подожди минутку / можно перебить?", en: "wait a moment / may I interrupt?",
+      forms: ["odota pieni hetki", "anteeksi saanko keskeyttää", "muuten"],
+      note: "Odota pieni hetki (“Wait a little moment”) — to gain time when you need to do something in the middle of a conversation. Anteeksi, saanko keskeyttää? (“Excuse me, may I interrupt?”) — to attract attention when there is an urgent new topic. Muuten (“by the way”) — to casually change the subject or ask about something in passing: Oletko muuten käynyt Kiasmassa? (“By the way, have you been to Kiasma?”)." },
+    { w: "косвенные вопросы", ru: "пересказ чужого вопроса — без вопросительного знака", en: "indirect interrogative sentences",
+      forms: ["ihmetteli, miksi", "kysyi, mihin suuntaan", "kysyn, eikö hän voisi"],
+      note: "An indirect question — a subordinate clause with a question word (kuka, miksi, miten, koska...) or with -ko/-kö, but it is NOT a real question but a retelling of someone’s words, and no question mark is needed at the end: Osastopäällikkömme ihmetteli, miksi raportti on myöhässä (“Our head of department wondered why the report is late”).\nFor a question answered with “yes/no”, -ko/-kö inside the subordinate clause is used: Kysyn, eikö hän voisi tulla (“I’ll ask whether she couldn’t come”)." }
+  ],
+  items: [
+    { fi: "Aino, osastopäällikkömme ihmetteli, miksi kuukausiraportti on myöhässä.", ru: "Айно, наш начальник отдела удивлялся, почему месячный отчёт задерживается.", en: "Aino, the head of our department was wondering why the monthly report is late.", k: "d", who: "Jukka" },
+    { fi: "Odota pieni hetki, niin tarkistan yhden asian sähköpostista.", ru: "Подожди немного, я проверю кое-что в почте.", en: "Wait a moment, and I'll check one thing in the email.", k: "d", who: "Aino" },
+    { fi: "Selvä.", ru: "Хорошо.", en: "All right.", k: "d", who: "Jukka" },
+    { fi: "Jaanan tulostin meni eilen rikki, joten hän ei voinut tulostaa sitä vielä. Hän myös ihmetteli, milloin seuraava kokous on.", ru: "У Яны вчера сломался принтер, поэтому она ещё не смогла его распечатать. Она также спрашивала, когда следующее собрание.", en: "Jaana's printer broke yesterday, so she couldn't print it out yet. She was also wondering when the next meeting is.", k: "d", who: "Aino" },
+    { fi: "Ahaa. Seuraava kokous on ensi maanantaina. Mutta palatakseni vielä raporttiin, meidän pitäisi toimittaa se tänään.", ru: "Ага. Следующее собрание в следующий понедельник. Но возвращаясь к отчёту, нам нужно сдать его сегодня.", en: "Oh. The next meeting is next Monday. But to return to the report, we should deliver it today.", k: "d", who: "Jukka" },
+    { fi: "Minä soitan Jaanalle ja kysyn, eikö hän voisi mennä tulostusliikkeeseen tulostamaan raporttia.", ru: "Я позвоню Яне и спрошу, не могла бы она сходить в копицентр распечатать отчёт.", en: "I will call Jaana and ask whether she could go to the print shop and print the report.", k: "d", who: "Aino" },
+    { fi: "Pysyäksemme aikataulussa, raportti täytyy toimittaa viimeistään huomenna aamulla.", ru: "Чтобы уложиться в график, отчёт нужно сдать самое позднее завтра утром.", en: "In order to stay on schedule, the report must be submitted by tomorrow morning at the latest.", k: "d", who: "Jukka" },
+    { fi: "Anteeksi, saanko keskeyttää? Teille on kiireellinen puhelu.", ru: "Извините, можно перебить? У вас срочный звонок.", en: "Excuse me, may I interrupt? You have an urgent call.", k: "s" },
+    { fi: "Oletko muuten käynyt Kiasmassa?", ru: "Кстати, ты бывал в Киасме?", en: "By the way, have you been to Kiasma?", k: "s" },
+    { fi: "Hän ihmetteli, milloin seuraava kokous on.", ru: "Она удивлялась, когда следующее собрание.", en: "She was wondering when the next meeting is.", k: "s" },
+    { fi: "Vartijat kysyivät asiakkailta, mihin suuntaan myymälävarkaat pakenivat.", ru: "Охранники спросили у покупателей, в каком направлении убежали воры.", en: "The security guards asked the customers in which direction the shoplifters escaped.", k: "s" },
+    { fi: "Opettajani ihmetteli, miksi emme olleet tehneet kotitehtäviä.", ru: "Моя учительница удивлялась, почему мы не сделали домашнее задание.", en: "My teacher was wondering why we hadn't done our homework.", k: "s" },
+    { fi: "Tarkistan sihteeriltä, josko kokoushuone olisi jo vapaa.", ru: "Спрошу у секретаря, не свободен ли уже переговорный зал.", en: "I will check with the secretary whether the meeting room would be available already.", k: "s" },
+    { fi: "Naapuri kysyi, mihin suuntaan koira juoksi.", ru: "Сосед спросил, в каком направлении побежала собака.", en: "The neighbor asked which direction the dog ran in.", k: "s" },
+    { fi: "Johtaja mietti, miksi tilaukset olivat myöhässä.", ru: "Директор думал, почему заказы задерживаются.", en: "The director was wondering why the orders were running late.", k: "s" },
+    { fi: "Jos voit odottaa hetken, niin käyn kopioimassa nämä paperit.", ru: "Если можешь подождать минутку, я схожу скопирую эти бумаги.", en: "If you can wait for a moment I will go and copy these papers.", k: "s" },
+    { fi: "osastopäällikkö", ru: "начальник отдела", en: "head of department", k: "w" },
+    { fi: "tulostaa", ru: "печатать", en: "to print", k: "w" },
+    { fi: "viimeistään", ru: "самое позднее", en: "at the latest", k: "w" },
+    { fi: "toimittaa", ru: "доставлять, сдавать", en: "to deliver", k: "w" },
+    { fi: "pysyä", ru: "оставаться", en: "to stay", k: "w" },
+    { fi: "aikataulu", ru: "график, расписание", en: "schedule", k: "w" }
+  ]
+},
+
 ];
 
 const LESSONS_BE2 = [
@@ -4486,19 +5385,19 @@ const LESSONS_BE2 = [
   glossary: [
     { w: "olisiko mahdollista", ru: "было бы возможно...? — вежливая просьба", en: "would it be possible to...?",
       forms: ["olisiko", "mahdollista", "mahdollinen"],
-      note: "Кондиционал от olla + mahdollista («возможно»), а дальше глагол saada («получить») в инфинитиве и то, что хочется получить: Olisiko mahdollista saada huone merinäköalalla?, Olisiko mahdollista saada lisävuode? («Можно ли получить дополнительную кровать?»), Olisiko mahdollista saada huone parvekkeella?" },
+      note: "The conditional of olla + mahdollista (“possible”), and then the verb saada (“to get”) in the infinitive and what you want to get: Olisiko mahdollista saada huone merinäköalalla?, Olisiko mahdollista saada lisävuode? (“Would it be possible to get an extra bed?”), Olisiko mahdollista saada huone parvekkeella?" },
     { w: "varaus nimellä", ru: "бронь: «на имя» — адессив", en: "reservation under a name",
       forms: ["nimellä", "varaus", "varauksenne", "varausta"],
-      note: "«На имя» по-фински — существительное nimi в адессиве: Minulla on varaus nimellä + имя. Спрашивают так: Millä nimellä varaus on tehty? Слово varaus («бронь») пригождается везде: vaatimus lentokoneeseen, huonevaraus, pöytävaraus." },
+      note: "“In the name of” in Finnish is the noun nimi in the adessive: Minulla on varaus nimellä + the name. It is asked like this: Millä nimellä varaus on tehty? The word varaus (“booking”) comes in handy everywhere: lentovaraus, huonevaraus, pöytävaraus." },
     { w: "kahden hengen huone", ru: "номер на двоих: число + henki в генитиве", en: "a room for two people",
       forms: ["kahden hengen huone", "neljän hengen huone", "henki", "hengen"],
-      note: "Схема: число + henki («человек») в генитиве + huone («номер»). Kahden hengen huone — «номер на двоих», по тому же образцу neljän hengen huone — «на четверых». Henki в этом смысле — устаревшая форма от henkilö, сохранившаяся в устойчивых выражениях." },
+      note: "Pattern: a number + henki (“person”) in the genitive + huone (“room”). Kahden hengen huone — “a room for two”, on the same model neljän hengen huone — “for four”. Henki in this sense is an obsolete form of henkilö, preserved in set expressions." },
     { w: "kirjautua sisään/ulos", ru: "заселиться / выселиться", en: "to check in / check out",
       forms: ["kirjautua", "kirjaudun", "sisään", "ulos", "uloskirjautuminen", "kirjautuminen"],
-      note: "Kirjautua sisään — «зайти, зарегистрироваться» (заселение), kirjautua ulos — «выселиться». Существительное uloskirjautuminen («выселение») составлено из ulos («наружу») и kirjautuminen («вход, регистрация»). То же слово используют и для выхода из электронной почты или другого сервиса." },
+      note: "Kirjautua sisään — “to check in, to log in”, kirjautua ulos — “to check out”. The noun uloskirjautuminen (“check-out”) is made from ulos (“out”) and kirjautuminen (“logging in, registration”). The same word is used to log out of email or another service." },
     { w: "merinäköala", ru: "вид на море", en: "sea view",
       forms: ["merinäköala", "merinäköalalla", "vuoristonäköala"],
-      note: "Meri («море») + näköala («вид»). Первую часть легко заменить: vuoristonäköala — «вид на горы». Täältä on upea merinäköala." },
+      note: "Meri (“sea”) + näköala (“view”). The first part is easily replaced: vuoristonäköala — “a mountain view”. Täältä on upea merinäköala." },
     { w: "ylihuomenna", ru: "послезавтра", en: "the day after tomorrow", forms: ["ylihuomenna", "ylihuomiseksi"] },
     { w: "varaus", ru: "бронь, резервация", en: "reservation", forms: ["varaus", "varauksenne", "varausta"] },
     { w: "huone", ru: "комната, номер", en: "room", forms: ["huone", "huoneessa", "huoneen"] }
@@ -4548,16 +5447,16 @@ const LESSONS_BE2 = [
   glossary: [
     { w: "adverbin komparatiivi", ru: "сравнительная степень наречия: -mmin", en: "comparative of adverbs",
       forms: ["nopeasti", "nopeammin", "nopeimmin", "hitaasti", "hitaammin", "vahvasti", "vahvemmin", "sievästi", "sievemmin"],
-      note: "Наречия образуются от прилагательного через -sti: nopea → nopeasti («быстро»). Сравнительная степень — через -mmin: nopeampi (сравн. прилагательного) → nopeammin («быстрее»), hidas → hitaasti → hitaammin.\nУ двусложных на a/ä тот же переход в e, что и у прилагательных (урок 20): vahva → vahvemmin, sievä → sievemmin.\nВ прогрессии: Toisen luokan kirje toimitetaan nopeasti («доставляется быстро») → Ensimmäisen luokan kirje toimitetaan nopeammin («быстрее») → Express-kirje toimitetaan nopeimmin («быстрее всего»)." },
+      note: "Adverbs are formed from the adjective through -sti: nopea → nopeasti (“quickly”). The comparative — through -mmin: nopeampi (the comparative adjective) → nopeammin (“more quickly”), hidas → hitaasti → hitaammin.\nIn two-syllable adjectives in a/ä the same change to e as in adjectives (lesson 20): vahva → vahvemmin, sievä → sievemmin.\nIn progression: Toisen luokan kirje toimitetaan nopeasti (“A second-class letter is delivered quickly”) → Ensimmäisen luokan kirje toimitetaan nopeammin (“more quickly”) → Express-kirje toimitetaan nopeimmin (“most quickly”)." },
     { w: "postiasiointi", ru: "фразы на почте", en: "post office phrases",
       forms: ["lähettää", "haluaisin lähettää", "haluaisin ostaa", "lentopostina", "kakkosluokan postina"],
-      note: "Отправить: Haluaisin lähettää tämän kirjeen / paketin / postikortin, при желании уточнить способ в конце: lentopostina («авиапочтой»), kakkosluokan postina.\nКупить: Haluaisin ostaa ykkösluokan postimerkkejä, kirjekuoria («конверты»), postikortteja." },
+      note: "To send: Haluaisin lähettää tämän kirjeen / paketin / postikortin, and if you want to specify the method, at the end: lentopostina (“by airmail”), kakkosluokan postina.\nTo buy: Haluaisin ostaa ykkösluokan postimerkkejä, kirjekuoria (“envelopes”), postikortteja." },
     { w: "ykkösluokka ja kakkosluokka", ru: "приоритетная и обычная почта", en: "priority and economy mail",
       forms: ["ykkösluokka", "kakkosluokka", "pikapaketti", "postipaketti"],
-      note: "Ykkösluokka («первый класс») доставляется быстрее и дороже, kakkosluokka («второй класс») медленнее и дешевле. Для посылок аналогично: pikapaketti («экспресс») против tavallinen postipaketti («обычная посылка»)." },
+      note: "Ykkösluokka (“first class”) is delivered faster and costs more, kakkosluokka (“second class”) is slower and cheaper. For parcels likewise: pikapaketti (“express”) versus tavallinen postipaketti (“ordinary parcel”)." },
     { w: "posti-yhdyssanat", ru: "составные слова с posti", en: "compound words with posti",
       forms: ["postikortti", "postimerkki", "postitoimisto", "syntymäpäiväkortti", "joulupostimerkki"],
-      note: "posti («почта») + kortti («открытка») = postikortti; posti + merkki («знак») = postimerkki («марка»); posti + toimisto = postitoimisto. Первую часть легко заменить: syntymäpäiväkortti («открытка на день рождения»)." },
+      note: "posti (“post”) + kortti (“card”) = postikortti; posti + merkki (“sign”) = postimerkki (“stamp”); posti + toimisto = postitoimisto. The first part is easily replaced: syntymäpäiväkortti (“birthday card”)." },
     { w: "kiire", ru: "спешка, срочность", en: "hurry, rush", forms: ["kiire", "kiirettä", "kovin kiire"] },
     { w: "kirje", ru: "письмо", en: "letter", forms: ["kirje", "kirjeet", "kirjettä", "kirjeen"] },
     { w: "postipaketti", ru: "почтовая посылка", en: "postal parcel", forms: ["postipaketti", "postipaketin", "postipakettia"] }
@@ -4612,16 +5511,16 @@ const LESSONS_BE2 = [
   glossary: [
     { w: "anteeksi + описание пропажи", ru: "как сообщить о потере", en: "reporting a loss",
       forms: ["anteeksi", "jätin", "unohdin", "ei saapunut", "en löydä"],
-      note: "Схема: Anteeksi + глагол с объектом + место. Anteeksi, jätin takkini junaan («Извините, я оставил куртку в поезде»), Anteeksi, unohdin laukkuni asemalle, Anteeksi, laukkuni ei saapunut, Anteeksi, en löydä laukkuani.\nAnteeksi тут не просто вежливость: это же слово начинает разговор с незнакомцем, извинение и просьбу — три случая сразу." },
+      note: "Pattern: Anteeksi + a verb with an object + a place. Anteeksi, jätin takkini junaan (“Sorry, I left my jacket on the train”), Anteeksi, unohdin laukkuni asemalle, Anteeksi, laukkuni ei saapunut, Anteeksi, en löydä laukkuani.\nAnteeksi here is not just politeness: this same word starts a conversation with a stranger, an apology and a request — three cases at once." },
     { w: "kadonneen kuvailu", ru: "как описать потерянную вещь", en: "describing lost property",
       forms: ["se on", "musta", "nahkainen", "olkalaukku", "siinä on", "raidoilla"],
-      note: "Порядок слов фиксированный: se on («это») + прилагательное(-ые) + существительное. Se on musta, nahkainen olkalaukku («Это чёрная кожаная сумка через плечо»), Se on pieni keltainen reppu.\nДобавить подробности можно через ja siinä on... («и у неё есть...») или ja se on... («и она...»): Se on suuri sininen salkku, ja siinä on musta kahva. Узор описывают через адессив множественного: valkoinen reppu keltaisilla raidoilla («белый рюкзак с жёлтыми полосками»)." },
+      note: "The word order is fixed: se on (“it is”) + adjective(s) + noun. Se on musta, nahkainen olkalaukku (“It is a black leather shoulder bag”), Se on pieni keltainen reppu.\nDetails can be added with ja siinä on... (“and it has...”) or ja se on... (“and it is...”): Se on suuri sininen salkku, ja siinä on musta kahva. A pattern is described with the plural adessive: valkoinen reppu keltaisilla raidoilla (“a white backpack with yellow stripes”)." },
     { w: "matkalaukku ja sukulaiset", ru: "виды сумок", en: "types of bags",
       forms: ["matkalaukku", "käsimatkatavara", "rinkka", "reppu", "urheilukassi", "salkku", "olkalaukku", "kassi"],
-      note: "matkalaukku («чемодан», буквально «дорожная сумка»), käsimatkatavara («ручная кладь»), rinkka («большой туристический рюкзак»), reppu («обычный рюкзак»), urheilukassi («спортивная сумка»), salkku («портфель»), olkalaukku («сумка через плечо»), kassi («пакет, сумка-тоут»)." },
+      note: "matkalaukku (“suitcase”, literally “travel bag”), käsimatkatavara (“hand luggage”), rinkka (“large hiking backpack”), reppu (“ordinary backpack”), urheilukassi (“sports bag”), salkku (“briefcase”), olkalaukku (“shoulder bag”), kassi (“carrier bag, tote”)." },
     { w: "epä-", ru: "приставка отрицания качества", en: "negative prefix",
       forms: ["epähuomiossa", "epäselvä", "epätavallinen"],
-      note: "Продуктивная приставка вроде русского «не-» или английского un-. Huomio («внимание») → epähuomiossa («по невнимательности, случайно»); selvä («ясный») → epäselvä («неясный»)." },
+      note: "A productive prefix like English “un-”. Huomio (“attention”) → epähuomiossa (“inadvertently, by accident”); selvä (“clear”) → epäselvä (“unclear”)." },
     { w: "toimittaa", ru: "доставлять; поставлять", en: "to deliver", forms: ["toimittaa", "toimitetaan", "toimitamme", "toimittaminen"] },
     { w: "hukassa", ru: "потерянный, пропавший", en: "missing, lost", forms: ["hukassa", "hukka"] },
     { w: "saapua", ru: "прибывать", en: "to arrive", forms: ["saapua", "saavuin", "saapuivat", "saapunut"] },
@@ -4680,19 +5579,19 @@ const LESSONS_BE2 = [
   glossary: [
     { w: "osaatteko neuvoa", ru: "как спросить дорогу вежливо", en: "asking for directions",
       forms: ["osaatteko", "neuvoa", "tiedättekö", "pääsemme", "löydämme"],
-      note: "Три готовых каркаса: Osaatteko neuvoa, miten löydämme perille? («Не подскажете, как нам найти дорогу?»), Tiedättekö miten pääsemme + место? («Знаете, как нам добраться до...?»), Tiedättekö, missä on + место? («Знаете, где находится...?»)." },
+      note: "Three ready frames: Osaatteko neuvoa, miten löydämme perille? (“Could you tell us how to find the way?”), Tiedättekö miten pääsemme + place? (“Do you know how we get to...?”), Tiedättekö, missä on + place? (“Do you know where ... is?”)." },
     { w: "imperatiivi ohjeissa", ru: "повелительное наклонение для объяснения дороги", en: "imperative for directions",
       forms: ["ottakaa", "jääkää pois", "menkää", "kääntykää", "ajakaa", "kävelkää"],
-      note: "Когда объясняют дорогу, используют повелительное наклонение (урок про hätäkeskus), и это не звучит грубо — это норма жанра: Ottakaa raitiovaunu numero kuusi, Jääkää pois ylioppilastalon pysäkillä, Kääntykää oikealle pääkadulle, Kävelkää suoraan alas puistoa kohti.\nГотовые обороты: Aja alas / Aja ylös («поезжай вниз/вверх»), Mene suoraan / Mene ohi, Käänny vasemmalle / Käänny oikealle, Mene ulos + название съезда, Kunnes näet... («пока не увидишь»), kulmassa («на углу»), kadun toisella puolella («через дорогу»), vieressä («рядом»)." },
+      note: "When giving directions the imperative is used (the lesson about hätäkeskus), and it doesn’t sound rude — it is the norm of the genre: Ottakaa raitiovaunu numero kuusi, Jääkää pois ylioppilastalon pysäkillä, Kääntykää oikealle pääkadulle, Kävelkää suoraan alas puistoa kohti.\nReady phrases: Aja alas / Aja ylös (“drive down/up”), Mene suoraan / Mene ohi, Käänny vasemmalle / Käänny oikealle, Mene ulos + the name of the exit, Kunnes näet... (“until you see”), kulmassa (“on the corner”), kadun toisella puolella (“across the street”), vieressä (“next to”)." },
     { w: "julkiset kulkuvälineet", ru: "общественный транспорт", en: "public transportation",
       forms: ["julkiset kulkuvälineet", "raitiovaunu", "bussi", "linja-auto", "juna", "metro", "lautta"],
-      note: "Julkinen («общественный») + kulkuväline («средство передвижения»). В Финляндии: bussi/linja-auto («автобус»), juna («поезд»); metro и raitiovaunu («трамвай») есть только в Хельсинки; в некоторых местах ещё lautta («паром»)." },
+      note: "Julkinen (“public”) + kulkuväline (“means of transport”). In Finland: bussi/linja-auto (“bus”), juna (“train”); metro and raitiovaunu (“tram”) exist only in Helsinki; in some places also lautta (“ferry”)." },
     { w: "raitiovaunu", ru: "трамвай", en: "tram",
       forms: ["raitiovaunu", "raitiovaunulla", "ratikka", "spora", "raitsikka"],
-      note: "Составлено из raitio (линия трамвайных путей) и vaunu («вагон»). Слово слегка официальное; в разговорной речи чаще ratikka, spora или raitsikka." },
+      note: "Made from raitio (a line of tram tracks) and vaunu (“carriage”). The word is slightly formal; in colloquial speech ratikka, spora or raitsikka are more common." },
     { w: "päästä", ru: "добраться, попасть", en: "to get to, to reach",
       forms: ["päästä", "pääsen", "pääseekö", "pääsemme", "pääsette"],
-      note: "Pääseekö sinne julkisilla kulkuvälineillä? — «Можно туда добраться на общественном транспорте?». Тот же корень в слове perille («до места, к цели»): löydämme perille, pääsen perille." },
+      note: "Pääseekö sinne julkisilla kulkuvälineillä? — “Can one get there by public transport?”. The same root is in the word perille (“to the destination”): löydämme perille, pääsen perille." },
     { w: "pysäkki", ru: "остановка", en: "stop", forms: ["pysäkki", "pysäkillä", "pysäkiltä"] },
     { w: "jäädä pois", ru: "выйти (из транспорта)", en: "to get off", forms: ["jäädä pois", "jään pois", "jääkää pois"] },
     { w: "neuvoa", ru: "советовать, подсказывать", en: "to advise", forms: ["neuvoa", "neuvon", "neuvoisitteko"] }
@@ -4738,13 +5637,14 @@ const LESSONS_BE2 = [
     { fi: "Pääsenkö sinne metrolla?", ru: "Я могу добраться туда на метро?", en: "Can I get there by subway?", k: "s" }
   ]
 },
+
 ];
 
 /* ------------------------------------------------------------------ */
-/*  Verbs: conjugation by person and tense                             */
-/*  pres/impf — six persons: minä, sinä, hän, me, te, he                */
-/*  nut/neet — the participle for the perfect and negative imperfect   */
-/*  neg — the stem for present-tense negation (en + stem)              */
+/*  Глаголы: спряжение по лицам и временам                             */
+/*  pres/impf — шесть лиц: minä, sinä, hän, me, te, he                 */
+/*  nut/neet — причастие для перфекта и отрицательного имперфекта      */
+/*  neg — основа для отрицания в настоящем времени (en + основа)       */
 /* ------------------------------------------------------------------ */
 const PERSONS = ["minä", "sinä", "hän", "me", "te", "he"];
 const OLLA_PRES = ["olen", "olet", "on", "olemme", "olette", "ovat"];
@@ -4764,7 +5664,7 @@ const VERBS = [
   { inf: "saada", ru: "получать", type: 2, ex: { fi: "lahjoja", ru: "подарки", en: "gifts" }, pres: ["saan", "saat", "saa", "saamme", "saatte", "saavat"], impf: ["sain", "sait", "sai", "saimme", "saitte", "saivat"], cond: ["saisin", "saisit", "saisi", "saisimme", "saisitte", "saisivat"], nut: "saanut", neet: "saaneet", neg: "saa" },
   { inf: "antaa", ru: "давать", type: 1, grad: "nt → nn: antaa ~ annan", ex: { fi: "rahaa", ru: "денег", en: "money" }, pres: ["annan", "annat", "antaa", "annamme", "annatte", "antavat"], impf: ["annoin", "annoit", "antoi", "annoimme", "annoitte", "antoivat"], cond: ["antaisin", "antaisit", "antaisi", "antaisimme", "antaisitte", "antaisivat"], nut: "antanut", neet: "antaneet", neg: "anna" },
   { inf: "aikoa", ru: "собираться", type: 1, grad: "k → disappears: aikoo ~ aion", ex: { fi: "lähteä", ru: "уйти", en: "to leave" }, pres: ["aion", "aiot", "aikoo", "aiomme", "aiotte", "aikovat"], impf: ["aioin", "aioit", "aikoi", "aioimme", "aioitte", "aikoivat"], cond: ["aikoisin", "aikoisit", "aikoisi", "aikoisimme", "aikoisitte", "aikoisivat"], nut: "aikonut", neet: "aikoneet", neg: "aio" },
-  { inf: "voida", ru: "мочь", type: 2, ex: { fi: "auttaa", ru: "помочь", en: "help" }, pres: ["voin", "voit", "voi", "voimme", "voitte", "voivat"], impf: ["voin", "voit", "voi", "voimme", "voitte", "voivat"], cond: ["voisin", "voisit", "voisi", "voisimme", "voisitte", "voisivat"], nut: "voinut", neet: "voineet", neg: "voi", note: "Основа кончается на -i, поэтому имперфект совпадает с настоящим временем." },
+  { inf: "voida", ru: "мочь", type: 2, ex: { fi: "auttaa", ru: "помочь", en: "help" }, pres: ["voin", "voit", "voi", "voimme", "voitte", "voivat"], impf: ["voin", "voit", "voi", "voimme", "voitte", "voivat"], cond: ["voisin", "voisit", "voisi", "voisimme", "voisitte", "voisivat"], nut: "voinut", neet: "voineet", neg: "voi", note: "The stem ends in -i, so the imperfect is the same as the present tense." },
   { inf: "käydä", ru: "сходить (и вернуться)", type: 2, ex: { fi: "kaupassa", ru: "в магазин", en: "at the store" }, pres: ["käyn", "käyt", "käy", "käymme", "käytte", "käyvät"], impf: ["kävin", "kävit", "kävi", "kävimme", "kävitte", "kävivät"], cond: ["kävisin", "kävisit", "kävisi", "kävisimme", "kävisitte", "kävisivät"], nut: "käynyt", neet: "käyneet", neg: "käy" },
   { inf: "haluta", ru: "хотеть", type: 4, ex: { fi: "jäätelöä", ru: "мороженого", en: "ice cream" }, pres: ["haluan", "haluat", "haluaa", "haluamme", "haluatte", "haluavat"], impf: ["halusin", "halusit", "halusi", "halusimme", "halusitte", "halusivat"], cond: ["haluaisin", "haluaisit", "haluaisi", "haluaisimme", "haluaisitte", "haluaisivat"], nut: "halunnut", neet: "halunneet", neg: "halua" },
   { inf: "tietää", ru: "знать", type: 1, grad: "t → d: tietää ~ tiedän", ex: { fi: "paljon", ru: "много", en: "a lot" }, pres: ["tiedän", "tiedät", "tietää", "tiedämme", "tiedätte", "tietävät"], impf: ["tiesin", "tiesit", "tiesi", "tiesimme", "tiesitte", "tiesivät"], cond: ["tietäisin", "tietäisit", "tietäisi", "tietäisimme", "tietäisitte", "tietäisivät"], nut: "tiennyt", neet: "tienneet", neg: "tiedä" },
@@ -4776,23 +5676,23 @@ const VERBS = [
   { inf: "palata", ru: "возвращаться", type: 4, grad: "t → disappears: palata ~ palaan", ex: { fi: "töistä", ru: "с работы", en: "from work" }, pres: ["palaan", "palaat", "palaa", "palaamme", "palaatte", "palaavat"], impf: ["palasin", "palasit", "palasi", "palasimme", "palasitte", "palasivat"], cond: ["palaisin", "palaisit", "palaisi", "palaisimme", "palaisitte", "palaisivat"], nut: "palannut", neet: "palanneet", neg: "palaa" },
   { inf: "juosta", ru: "бежать", type: 3, grad: "irregular stem: juosta ~ juoksen", ex: { fi: "metsässä", ru: "в лесу", en: "in the forest" }, pres: ["juoksen", "juokset", "juoksee", "juoksemme", "juoksette", "juoksevat"], impf: ["juoksin", "juoksit", "juoksi", "juoksimme", "juoksitte", "juoksivat"], cond: ["juoksisin", "juoksisit", "juoksisi", "juoksisimme", "juoksisitte", "juoksisivat"], nut: "juossut", neet: "juosseet", neg: "juokse" },
   { inf: "auttaa", ru: "помогать", type: 1, grad: "tt → t: auttaa ~ autan", ex: { fi: "äitiä", ru: "маме", en: "my mother" }, pres: ["autan", "autat", "auttaa", "autamme", "autatte", "auttavat"], impf: ["autoin", "autoit", "auttoi", "autoimme", "autoitte", "auttoivat"], cond: ["auttaisin", "auttaisit", "auttaisi", "auttaisimme", "auttaisitte", "auttaisivat"], nut: "auttanut", neet: "auttaneet", neg: "auta" },
-  { inf: "etsiä", ru: "искать", type: 1, ex: { fi: "sinua", ru: "тебя", en: "you" }, pres: ["etsin", "etsit", "etsii", "etsimme", "etsitte", "etsivät"], impf: ["etsin", "etsit", "etsi", "etsimme", "etsitte", "etsivät"], cond: ["etsisin", "etsisit", "etsisi", "etsisimme", "etsisitte", "etsisivät"], nut: "etsinyt", neet: "etsineet", neg: "etsi", note: "Основа кончается на -i, поэтому имперфект почти везде совпадает с настоящим временем: только в 3-м лице ед. числа разница слышна — etsii против etsi." },
+  { inf: "etsiä", ru: "искать", type: 1, ex: { fi: "sinua", ru: "тебя", en: "you" }, pres: ["etsin", "etsit", "etsii", "etsimme", "etsitte", "etsivät"], impf: ["etsin", "etsit", "etsi", "etsimme", "etsitte", "etsivät"], cond: ["etsisin", "etsisit", "etsisi", "etsisimme", "etsisitte", "etsisivät"], nut: "etsinyt", neet: "etsineet", neg: "etsi", note: "The stem ends in -i, so the imperfect is almost everywhere the same as the present tense: only in the 3rd person singular is the difference audible — etsii versus etsi." },
   { inf: "kysyä", ru: "спрашивать", type: 1, ex: { fi: "neuvoa", ru: "совета", en: "for advice" }, pres: ["kysyn", "kysyt", "kysyy", "kysymme", "kysytte", "kysyvät"], impf: ["kysyin", "kysyit", "kysyi", "kysyimme", "kysyitte", "kysyivät"], cond: ["kysyisin", "kysyisit", "kysyisi", "kysyisimme", "kysyisitte", "kysyisivät"], nut: "kysynyt", neet: "kysyneet", neg: "kysy" },
-  { inf: "sopia", ru: "подходить, идти", type: 1, grad: "p → v: sopii ~ sovin", ex: { fi: "tähän työhön", ru: "для этой работы", en: "for this job" }, pres: ["sovin", "sovit", "sopii", "sovimme", "sovitte", "sopivat"], impf: ["sovin", "sovit", "sopi", "sovimme", "sovitte", "sopivat"], cond: ["sopisin", "sopisit", "sopisi", "sopisimme", "sopisitte", "sopisivat"], nut: "sopinut", neet: "sopineet", neg: "sovi", note: "Чередование p > v в слабой ступени: sopia → minä sovin, но hän sopii." },
+  { inf: "sopia", ru: "подходить, идти", type: 1, grad: "p → v: sopii ~ sovin", ex: { fi: "tähän työhön", ru: "для этой работы", en: "for this job" }, pres: ["sovin", "sovit", "sopii", "sovimme", "sovitte", "sopivat"], impf: ["sovin", "sovit", "sopi", "sovimme", "sovitte", "sopivat"], cond: ["sopisin", "sopisit", "sopisi", "sopisimme", "sopisitte", "sopisivat"], nut: "sopinut", neet: "sopineet", neg: "sovi", note: "Gradation p > v in the weak grade: sopia → minä sovin, but hän sopii." },
   { inf: "ajatella", ru: "думать, размышлять", type: 3, grad: "t → tt: ajatella ~ ajattelen", ex: { fi: "asiaa", ru: "об этом", en: "about it" }, pres: ["ajattelen", "ajattelet", "ajattelee", "ajattelemme", "ajattelette", "ajattelevat"], impf: ["ajattelin", "ajattelit", "ajatteli", "ajattelimme", "ajattelitte", "ajattelivat"], cond: ["ajattelisin", "ajattelisit", "ajattelisi", "ajattelisimme", "ajattelisitte", "ajattelisivat"], nut: "ajatellut", neet: "ajatelleet", neg: "ajattele" },
-  { inf: "löytyä", ru: "найтись, быть в наличии", type: 1, grad: "t → d: löytyy ~ löydyn", ex: { fi: "täältä", ru: "здесь", en: "here" }, pres: ["löydyn", "löydyt", "löytyy", "löydymme", "löydytte", "löytyvät"], impf: ["löydyin", "löydyit", "löytyi", "löydyimme", "löydyitte", "löytyivät"], cond: ["löytyisin", "löytyisit", "löytyisi", "löytyisimme", "löytyisitte", "löytyisivät"], nut: "löytynyt", neet: "löytyneet", neg: "löydy", note: "Подлежащее при löytyä — то, что нашлось, поэтому в жизни глагол почти всегда стоит в 3-м лице: Löytyykö tätä isompana?" },
-  { inf: "lähteä", ru: "уходить, отправляться", type: 1, grad: "t → d: lähtee ~ lähden", ex: { fi: "töihin", ru: "на работу", en: "for work" }, pres: ["lähden", "lähdet", "lähtee", "lähdemme", "lähdette", "lähtevät"], impf: ["lähdin", "lähdit", "lähti", "lähdimme", "lähditte", "lähtivät"], cond: ["lähtisin", "lähtisit", "lähtisi", "lähtisimme", "lähtisitte", "lähtisivät"], nut: "lähtenyt", neet: "lähteneet", neg: "lähde", note: "Чередование t > d в слабой ступени: minä lähden, но hän lähtee." },
+  { inf: "löytyä", ru: "найтись, быть в наличии", type: 1, grad: "t → d: löytyy ~ löydyn", ex: { fi: "täältä", ru: "здесь", en: "here" }, pres: ["löydyn", "löydyt", "löytyy", "löydymme", "löydytte", "löytyvät"], impf: ["löydyin", "löydyit", "löytyi", "löydyimme", "löydyitte", "löytyivät"], cond: ["löytyisin", "löytyisit", "löytyisi", "löytyisimme", "löytyisitte", "löytyisivät"], nut: "löytynyt", neet: "löytyneet", neg: "löydy", note: "The subject of löytyä is what has been found, so in real life the verb almost always stands in the 3rd person: Löytyykö tätä isompana?" },
+  { inf: "lähteä", ru: "уходить, отправляться", type: 1, grad: "t → d: lähtee ~ lähden", ex: { fi: "töihin", ru: "на работу", en: "for work" }, pres: ["lähden", "lähdet", "lähtee", "lähdemme", "lähdette", "lähtevät"], impf: ["lähdin", "lähdit", "lähti", "lähdimme", "lähditte", "lähtivät"], cond: ["lähtisin", "lähtisit", "lähtisi", "lähtisimme", "lähtisitte", "lähtisivät"], nut: "lähtenyt", neet: "lähteneet", neg: "lähde", note: "Gradation t > d in the weak grade: minä lähden, but hän lähtee." },
   { inf: "unohtaa", ru: "забывать", type: 1, grad: "ht → hd: unohtaa ~ unohdan", ex: { fi: "usein", ru: "часто", en: "often" }, pres: ["unohdan", "unohdat", "unohtaa", "unohdamme", "unohdatte", "unohtavat"], impf: ["unohdin", "unohdit", "unohti", "unohdimme", "unohditte", "unohtivat"], cond: ["unohtaisin", "unohtaisit", "unohtaisi", "unohtaisimme", "unohtaisitte", "unohtaisivat"], nut: "unohtanut", neet: "unohtaneet", neg: "unohda" },
-  { inf: "tarvita", ru: "нуждаться", type: 5, ex: { fi: "apua", ru: "в помощи", en: "help" }, pres: ["tarvitsen", "tarvitset", "tarvitsee", "tarvitsemme", "tarvitsette", "tarvitsevat"], impf: ["tarvitsin", "tarvitsit", "tarvitsi", "tarvitsimme", "tarvitsitte", "tarvitsivat"], cond: ["tarvitsisin", "tarvitsisit", "tarvitsisi", "tarvitsisimme", "tarvitsisitte", "tarvitsisivat"], nut: "tarvinnut", neet: "tarvinneet", neg: "tarvitse", note: "В причастии NUT показатель -tse- пропадает: tarvitsen, но en tarvinnut." },
+  { inf: "tarvita", ru: "нуждаться", type: 5, ex: { fi: "apua", ru: "в помощи", en: "help" }, pres: ["tarvitsen", "tarvitset", "tarvitsee", "tarvitsemme", "tarvitsette", "tarvitsevat"], impf: ["tarvitsin", "tarvitsit", "tarvitsi", "tarvitsimme", "tarvitsitte", "tarvitsivat"], cond: ["tarvitsisin", "tarvitsisit", "tarvitsisi", "tarvitsisimme", "tarvitsisitte", "tarvitsisivat"], nut: "tarvinnut", neet: "tarvinneet", neg: "tarvitse", note: "In the NUT participle the marker -tse- disappears: tarvitsen, but en tarvinnut." },
   { inf: "valita", ru: "выбирать", type: 5, ex: { fi: "väärin", ru: "неправильно", en: "wrong" }, pres: ["valitsen", "valitset", "valitsee", "valitsemme", "valitsette", "valitsevat"], impf: ["valitsin", "valitsit", "valitsi", "valitsimme", "valitsitte", "valitsivat"], cond: ["valitsisin", "valitsisit", "valitsisi", "valitsisimme", "valitsisitte", "valitsisivat"], nut: "valinnut", neet: "valinneet", neg: "valitse" },
   { inf: "harkita", ru: "обдумывать, взвешивать", type: 5, ex: { fi: "asiaa", ru: "дело", en: "the matter" }, pres: ["harkitsen", "harkitset", "harkitsee", "harkitsemme", "harkitsette", "harkitsevat"], impf: ["harkitsin", "harkitsit", "harkitsi", "harkitsimme", "harkitsitte", "harkitsivat"], cond: ["harkitsisin", "harkitsisit", "harkitsisi", "harkitsisimme", "harkitsisitte", "harkitsisivat"], nut: "harkinnut", neet: "harkinneet", neg: "harkitse" },
   { inf: "vanheta", ru: "стареть", type: 6, ex: { fi: "nopeasti", ru: "быстро", en: "fast" }, pres: ["vanhenen", "vanhenet", "vanhenee", "vanhenemme", "vanhenette", "vanhenevat"], impf: ["vanhenin", "vanhenit", "vanheni", "vanhenimme", "vanhenitte", "vanhenivat"], cond: ["vanhenisin", "vanhenisit", "vanhenisi", "vanhenisimme", "vanhenisitte", "vanhenisivat"], nut: "vanhennut", neet: "vanhenneet", neg: "vanhene" },
   { inf: "kylmetä", ru: "остывать, замерзать", type: 6, ex: { fi: "ulkona", ru: "на улице", en: "outside" }, pres: ["kylmenen", "kylmenet", "kylmenee", "kylmenemme", "kylmenette", "kylmenevat"], impf: ["kylmenin", "kylmenit", "kylmeni", "kylmenimme", "kylmenitte", "kylmenivät"], cond: ["kylmenisin", "kylmenisit", "kylmenisi", "kylmenisimme", "kylmenisitte", "kylmenisivät"], nut: "kylmennyt", neet: "kylmenneet", neg: "kylmene" },
-  { inf: "kuulla", ru: "слышать", type: 3, ex: { fi: "ääntä", ru: "звук", en: "a sound" }, pres: ["kuulen", "kuulet", "kuulee", "kuulemme", "kuulette", "kuulevat"], impf: ["kuulin", "kuulit", "kuuli", "kuulimme", "kuulitte", "kuulivat"], cond: ["kuulisin", "kuulisit", "kuulisi", "kuulisimme", "kuulisitte", "kuulisivat"], nut: "kuullut", neet: "kuulleet", neg: "kuule", note: "Kuulla — услышать само собой, kuunnella — слушать нарочно. Урок 24." },
+  { inf: "kuulla", ru: "слышать", type: 3, ex: { fi: "ääntä", ru: "звук", en: "a sound" }, pres: ["kuulen", "kuulet", "kuulee", "kuulemme", "kuulette", "kuulevat"], impf: ["kuulin", "kuulit", "kuuli", "kuulimme", "kuulitte", "kuulivat"], cond: ["kuulisin", "kuulisit", "kuulisi", "kuulisimme", "kuulisitte", "kuulisivat"], nut: "kuullut", neet: "kuulleet", neg: "kuule", note: "Kuulla — to hear by itself, kuunnella — to listen on purpose. Lesson 24." },
   { inf: "kuunnella", ru: "слушать", type: 3, grad: "nn → nt: kuunnella ~ kuuntelen", ex: { fi: "musiikkia", ru: "музыку", en: "music" }, pres: ["kuuntelen", "kuuntelet", "kuuntelee", "kuuntelemme", "kuuntelette", "kuuntelevat"], impf: ["kuuntelin", "kuuntelit", "kuunteli", "kuuntelimme", "kuuntelitte", "kuuntelivat"], cond: ["kuuntelisin", "kuuntelisit", "kuuntelisi", "kuuntelisimme", "kuuntelisitte", "kuuntelisivat"], nut: "kuunnellut", neet: "kuunnelleet", neg: "kuuntele" },
-  { inf: "surra", ru: "горевать, переживать", type: 3, ex: { fi: "menetystä", ru: "потерю", en: "the loss" }, pres: ["suren", "suret", "suree", "suremme", "surette", "surevat"], impf: ["surin", "surit", "suri", "surimme", "suritte", "surivat"], cond: ["surisin", "surisit", "surisi", "surisimme", "surisitte", "surisivat"], nut: "surrut", neet: "surreet", neg: "sure", note: "Редкий тип основы на -rra. Повелительное отрицание: Älä sure, Älkää surko." },
+  { inf: "surra", ru: "горевать, переживать", type: 3, ex: { fi: "menetystä", ru: "потерю", en: "the loss" }, pres: ["suren", "suret", "suree", "suremme", "surette", "surevat"], impf: ["surin", "surit", "suri", "surimme", "suritte", "surivat"], cond: ["surisin", "surisit", "surisi", "surisimme", "surisitte", "surisivat"], nut: "surrut", neet: "surreet", neg: "sure", note: "A rare stem type in -rra. The negative imperative: Älä sure, Älkää surko." },
   { inf: "rikkoa", ru: "разбить, сломать", type: 1, grad: "kk → k: rikkoa ~ rikon", ex: { fi: "lautasia", ru: "тарелки", en: "plates" }, pres: ["rikon", "rikot", "rikkoo", "rikomme", "rikotte", "rikkovat"], impf: ["rikoin", "rikoit", "rikkoi", "rikoimme", "rikoitte", "rikkoivat"], cond: ["rikkoisin", "rikkoisit", "rikkoisi", "rikkoisimme", "rikkoisitte", "rikkoisivat"], nut: "rikkonut", neet: "rikkoneet", neg: "riko" },
-  { inf: "harmittaa", ru: "раздражать, досаждать", type: 1, grad: "tt → t: harmittaa ~ harmitan", ex: { fi: "minua", ru: "меня", en: "me" }, pres: ["harmitan", "harmitat", "harmittaa", "harmitamme", "harmitatte", "harmittavat"], impf: ["harmitin", "harmitit", "harmitti", "harmitimme", "harmititte", "harmittivat"], cond: ["harmittaisin", "harmittaisit", "harmittaisi", "harmittaisimme", "harmittaisitte", "harmittaisivat"], nut: "harmittanut", neet: "harmittaneet", neg: "harmita", note: "В жизни глагол почти всегда стоит в 3-м лице единственного: Minua harmittaa, Häviäminen harmittaa minua. Остальные лица существуют, но встречаются редко. Урок 24." },
+  { inf: "harmittaa", ru: "раздражать, досаждать", type: 1, grad: "tt → t: harmittaa ~ harmitan", ex: { fi: "minua", ru: "меня", en: "me" }, pres: ["harmitan", "harmitat", "harmittaa", "harmitamme", "harmitatte", "harmittavat"], impf: ["harmitin", "harmitit", "harmitti", "harmitimme", "harmititte", "harmittivat"], cond: ["harmittaisin", "harmittaisit", "harmittaisi", "harmittaisimme", "harmittaisitte", "harmittaisivat"], nut: "harmittanut", neet: "harmittaneet", neg: "harmita", note: "In real life the verb almost always stands in the 3rd person singular: Minua harmittaa, Häviäminen harmittaa minua. The other persons exist but are rare. Lesson 24." },
   { inf: "paeta", ru: "убегать, спасаться", type: 6, grad: "k appears: paeta ~ pakenen", ex: { fi: "metsään", ru: "в лес", en: "into the forest" }, pres: ["pakenen", "pakenet", "pakenee", "pakenemme", "pakenette", "pakenevat"], impf: ["pakenin", "pakenit", "pakeni", "pakenimme", "pakenitte", "pakenivat"], cond: ["pakenisin", "pakenisit", "pakenisi", "pakenisimme", "pakenisitte", "pakenisivat"], nut: "paennut", neet: "paenneet", neg: "pakene" },
   { inf: "lainata", ru: "одалживать", type: 4, grad: "t → disappears: lainata ~ lainaan", ex: { fi: "kynää", ru: "ручку", en: "a pen" }, pres: ["lainaan", "lainaat", "lainaa", "lainaamme", "lainaatte", "lainaavat"], impf: ["lainasin", "lainasit", "lainasi", "lainasimme", "lainasitte", "lainasivat"], cond: ["lainaisin", "lainaisit", "lainaisi", "lainaisimme", "lainaisitte", "lainaisivat"], nut: "lainannut", neet: "lainanneet", neg: "lainaa" },
 ];
@@ -4854,15 +5754,12 @@ function verbForm(v, tenseId, p) {
 
 function verbTaskId(v, tenseId, p) { return "v:" + v.inf + ":" + tenseId + ":" + p; }
 
-// The translation comes out as "I would look for": the first word is the pronoun, the rest is
-// the actual verb form, which is what gets bolded inside the example.
 function splitGloss(str) {
   const i = String(str || "").indexOf(" ");
   return i < 0 ? [str || "", ""] : [str.slice(0, i), str.slice(i + 1)];
 }
 
 /* ------------------------------------------------------------------ */
-/*  Translations of verb forms into Russian and English                */
 /* ------------------------------------------------------------------ */
 const RU_PRON = ["я", "ты", "он", "мы", "вы", "они"];
 const EN_PRON = ["I", "you", "he", "we", "you", "they"];
@@ -4971,9 +5868,6 @@ function enGloss(v, t, p) {
   return EN_PRON[p] + " didn't " + e.base;
 }
 
-/* An exercise gives everything except the actual verb form itself:
-   частица отрицания и вспомогательный olla. Иначе правильный вариант
-   выдавал бы себя лишним словом. */
 function verbAnswer(v, t, p) {
   const plural = p >= 3;
   if (t === "pres") return v.pres[p];
@@ -5009,13 +5903,12 @@ function makeVerbTask(v, tenseId, p, box) {
     neg: String(tenseId).startsWith("neg"),
     aux: tenseId === "perf" || tenseId === "negperf",
     ru: enGloss(v, tenseId, p),
-    en: enGloss(v, tenseId, p),
+    en: "",
     options: shuffle([answer, ...wrong]),
   };
 }
 
 /* ------------------------------------------------------------------ */
-/*  Course levels and lesson order                                     */
 /* ------------------------------------------------------------------ */
 const LEVELS = {
   AB: { n: 1, name: "Absolute Beginner", ru: "Absolute Beginner", fi: "Aivan alkeet" },
@@ -5024,10 +5917,14 @@ const LEVELS = {
   IN: { n: 4, name: "Intermediate", ru: "Intermediate", fi: "Keskitaso" },
   UI: { n: 5, name: "Upper Intermediate", ru: "Upper Intermediate", fi: "Ylempi keskitaso" },
   AD: { n: 6, name: "Advanced", ru: "Advanced", fi: "Edistynyt" },
-  MY: { n: 7, name: "My Phrases", ru: "My Phrases", fi: "Omat lauseet" },
+  YKI: { n: 7, name: "YKI Keskitaso", ru: "YKI preparation", fi: "YKI, keskitaso" },
+  MY: { n: 8, name: "My Phrases", ru: "My Phrases", fi: "Omat lauseet" },
 };
 const LEVEL_COUNT = Object.keys(LEVELS).length;
 const CUSTOM_LESSON_ID = "MY_S1_01";
+function isFreeLesson(id) {
+  return id === CUSTOM_LESSON_ID || String(id).startsWith("YKI_");
+}
 function levelOf(lesson) {
   const code = String(lesson.id || "").split("_")[0];
   return LEVELS[code] || LEVELS.LB;
@@ -5037,8 +5934,867 @@ function lessonNumber(lesson) {
   return m ? parseInt(m[1], 10) : 0;
 }
 
-const BUILTIN = [...LESSONS_EXTRA, ...LESSONS_78, ...LESSONS_4569, ...LESSONS_NEXT, ...LESSONS_AB, ...LESSONS_BE, ...LESSONS_BE2, ...LESSONS_IN, LESSON_17, LESSON_18, LESSON_19, LESSON_20]
+const LESSON_YKI_01 = {
+  id: "YKI_KT_01",
+  title: "YKI keskitaso: on the phone — orders and calls about ads",
+  source: "Based on samples of the oral part of YKI keskitaso (University of Jyväskylä, ykitesti.solki.jyu.fi — tasks “Keskustelu” and “Tilanteita”)",
+  glossary: [
+    { w: "soitan ... vuoksi", ru: "звоню по поводу чего-то — начало делового звонка", en: "calling about something",
+      forms: ["vuoksi", "takia", "ilmoituksenne vuoksi", "remontin takia", "asian vuoksi"],
+      note: "In the oral part of YKI keskitaso, business calls constantly occur — to a firm, a service, about an advertisement. They begin the same way: Soitan + genitive + vuoksi or takia (“I’m calling because of such-and-such”). Vuoksi is slightly more neutral-businesslike, takia also works in a conversation with friends.\nSoitan ilmoituksenne vuoksi (“I’m calling about your advertisement”), Soitan remontin takia (“I’m calling about the renovation”). Conveniently the formula doesn’t change — only the word before vuoksi/takia changes." },
+    { w: "voisinko / voisitteko", ru: "вежливая просьба по телефону: мне можно? не могли бы вы?", en: "polite conditional requests",
+      forms: ["voisinko", "voisitteko", "voisiko"],
+      note: "The conditional (-isi-) has already been met for polite requests — in a phone call it appears in almost every line, because without it you cannot personally ask a stranger for something. Voisinko tulla katsomaan? (“May I come and have a look?”) — about yourself; Voisitteko kertoa lisää? (“Could you tell me more?”) — to the other person addressed formally.\nIn an official call the formal “you” (te) is the norm, even if the other person is younger. Switching to the informal “you” is appropriate only if the other person began it." },
+    { w: "minkälainen", ru: "какой, в каком состоянии (при расспросе о вещи)", en: "what kind of, what condition",
+      forms: ["minkälainen", "minkälaisessa", "minkälaista"],
+      note: "A synonym of millainen, but slightly more colloquial and especially appropriate when asking about the condition of an item being bought or sold: Minkälaisessa kunnossa se on? (“What condition is it in?”)." },
+    { w: "kunto", ru: "состояние (вещи, здоровья)", en: "condition",
+      forms: ["kunto", "kunnossa", "kuntoa"],
+      note: "Not about mood or weather — precisely about the physical condition of an object or an organism: hyvässä kunnossa (“in good condition”), huonossa kunnossa (“in poor condition”). Hän on hyvässä kunnossa can also mean “he is in good shape” (about a person)." },
+    { w: "reseptivapaa", ru: "отпускается без рецепта", en: "available without a prescription",
+      forms: ["reseptivapaa", "resepti"],
+      note: "A compound word: resepti (“prescription, recipe”) + vapaa (“free from”). This model — a compound adjective in -vapaa — is productive in Finnish: sokerivapaa (“sugar-free”), gluteeniton is also found, but precisely -vapaa stresses “released from the requirement”, and not just “does not contain”." },
+    { w: "lopputulos", ru: "конечный результат, итог", en: "end result",
+      forms: ["lopputulos", "lopputulokseen", "lopputuloksesta"],
+      note: "A compound word: loppu (“end”) + tulos (“result”). In complaints and reviews — a key word: En ole tyytyväinen lopputulokseen (“I am not satisfied with the final result”) is said about the work, not about the process." },
+    { w: "mahdollisimman pian", ru: "как можно скорее", en: "as soon as possible",
+      forms: ["mahdollisimman", "mahdollisimman pian", "mahdollisimman nopeasti"],
+      note: "Mahdollisimman — the superlative of mahdollinen (“possible”), and it attaches to any adverb, strengthening it to the limit: mahdollisimman pian (“as soon as possible”), mahdollisimman nopeasti (“as quickly as possible”), mahdollisimman halvalla (“as cheaply as possible”). A handy model for all cases of polite insistence." },
+    { w: "vuokrata", ru: "арендовать, снимать", en: "to rent", forms: ["vuokrata", "vuokraan", "vuokralla"] },
+    { w: "varata", ru: "забронировать, зарезервировать", en: "to book, to reserve", forms: ["varata", "varaan", "varattu"] },
+    { w: "ilmoitus", ru: "объявление", en: "ad, listing", forms: ["ilmoitus", "ilmoituksen", "ilmoituksenne"] },
+    { w: "tyytyväinen", ru: "довольный", en: "satisfied", forms: ["tyytyväinen", "tyytyväinen lopputulokseen"] },
+    { w: "korjata", ru: "исправить, починить", en: "to fix, to repair", forms: ["korjata", "korjataan", "korjattu"] }
+  ],
+  items: [
+    { fi: "Hyvää päivää, soitan ilmoituksenne vuoksi.", ru: "Добрый день, звоню по поводу вашего объявления.", en: "Good day, I'm calling about your ad.", k: "d", who: "Asiakas" },
+    { fi: "Haluaisin varata juhlasalin syntymäpäiväjuhlia varten.", ru: "Я хотел бы забронировать зал для дня рождения.", en: "I'd like to book a party hall for a birthday party.", k: "d", who: "Asiakas" },
+    { fi: "Kuinka monta vierasta teillä on tulossa?", ru: "Сколько гостей у вас будет?", en: "How many guests are you expecting?", k: "d", who: "Myyjä" },
+    { fi: "Meitä on noin kaksikymmentä henkeä.", ru: "Нас будет человек двадцать.", en: "There will be about twenty of us.", k: "d", who: "Asiakas" },
+    { fi: "Minä päivänä juhla pidetään?", ru: "В какой день будет праздник?", en: "What day will the party be held?", k: "d", who: "Myyjä" },
+    { fi: "Onko salissa keittiö ruoanlaittoa varten?", ru: "Есть ли в зале кухня для готовки?", en: "Is there a kitchen in the hall for cooking?", k: "d", who: "Asiakas" },
+    { fi: "Mitä ruokailu maksaa henkeä kohden?", ru: "Сколько стоит питание на человека?", en: "How much does catering cost per person?", k: "d", who: "Asiakas" },
+    { fi: "Paljonko koko tilaisuus maksaisi yhteensä?", ru: "Сколько будет стоить всё мероприятие целиком?", en: "How much would the whole event cost in total?", k: "d", who: "Asiakas" },
+    { fi: "Haloo, täällä Virtanen.", ru: "Алло, это Виртанен.", en: "Hello, this is Virtanen.", k: "d", who: "Ostaja" },
+    { fi: "Soitan ilmoituksenne takia.", ru: "Звоню по поводу вашего объявления.", en: "I'm calling about your ad.", k: "d", who: "Ostaja" },
+    { fi: "Onko tuoli vielä myynnissä?", ru: "Стул ещё продаётся?", en: "Is the chair still for sale?", k: "d", who: "Ostaja" },
+    { fi: "Minkälaisessa kunnossa se on?", ru: "В каком оно состоянии?", en: "What condition is it in?", k: "d", who: "Ostaja" },
+    { fi: "Voisinko tulla katsomaan sitä tänään illalla?", ru: "Можно подъехать посмотреть его сегодня вечером?", en: "Could I come see it this evening?", k: "d", who: "Ostaja" },
+    { fi: "Sopiiko teille huomenna kello kuusi?", ru: "Вам подойдёт завтра в шесть?", en: "Does tomorrow at six work for you?", k: "d", who: "Myyjä" },
+    { fi: "Asun aivan keskustan lähellä.", ru: "Я живу совсем рядом с центром.", en: "I live right near downtown.", k: "d", who: "Ostaja" },
+    { fi: "Milloin seuraava juna lähtee Tampereelle?", ru: "Когда отправляется следующий поезд в Тампере?", en: "When does the next train to Tampere leave?", k: "s" },
+    { fi: "Onko junassa ruokavaunu?", ru: "В поезде есть вагон-ресторан?", en: "Is there a dining car on the train?", k: "s" },
+    { fi: "Paljonko lippu maksaa aikuiselta?", ru: "Сколько стоит билет для взрослого?", en: "How much does a ticket cost for an adult?", k: "s" },
+    { fi: "Voiko lipun ostaa suoraan junasta?", ru: "Можно купить билет прямо в поезде?", en: "Can you buy the ticket right on the train?", k: "s" },
+    { fi: "Onko junassa vapaita paikkoja?", ru: "В поезде есть свободные места?", en: "Are there free seats on the train?", k: "s" },
+    { fi: "Minulla on kurkku kipeä ja yskä.", ru: "У меня болит горло и кашель.", en: "I have a sore throat and a cough.", k: "s" },
+    { fi: "Mitä suosittelisitte tähän vaivaan?", ru: "Что бы вы порекомендовали от этого недомогания?", en: "What would you recommend for this ailment?", k: "s" },
+    { fi: "Onko tämä lääke reseptivapaa?", ru: "Это лекарство отпускается без рецепта?", en: "Is this medicine available without a prescription?", k: "s" },
+    { fi: "Kuinka usein tätä lääkettä pitää ottaa?", ru: "Как часто нужно принимать это лекарство?", en: "How often should this medicine be taken?", k: "s" },
+    { fi: "Onko tällä lääkkeellä sivuvaikutuksia?", ru: "У этого лекарства есть побочные эффекты?", en: "Does this medicine have side effects?", k: "s" },
+    { fi: "Soitan remontin takia.", ru: "Звоню по поводу ремонта.", en: "I'm calling about the renovation.", k: "s" },
+    { fi: "En ole tyytyväinen lopputulokseen.", ru: "Я не доволен конечным результатом.", en: "I'm not satisfied with the end result.", k: "s" },
+    { fi: "Seinä on maalattu väärällä värillä.", ru: "Стена покрашена не в тот цвет.", en: "The wall was painted the wrong color.", k: "s" },
+    { fi: "Milloin virhe voidaan korjata?", ru: "Когда можно исправить ошибку?", en: "When can the mistake be fixed?", k: "s" },
+    { fi: "Haluaisin, että asia hoidetaan mahdollisimman pian.", ru: "Я бы хотел, чтобы вопрос решили как можно скорее.", en: "I'd like the matter dealt with as soon as possible.", k: "s" },
+    { fi: "Voisitteko kertoa lisää?", ru: "Не могли бы вы рассказать подробнее?", en: "Could you tell me more?", k: "s" },
+    { fi: "Haluaisin tietää tarkan hinnan.", ru: "Я хотел бы узнать точную цену.", en: "I'd like to know the exact price.", k: "s" },
+    { fi: "Onko mahdollista saada alennusta?", ru: "Можно ли получить скидку?", en: "Is it possible to get a discount?", k: "s" },
+    { fi: "Soitan vähän myöhemmin uudestaan.", ru: "Я перезвоню немного позже.", en: "I'll call back a bit later.", k: "s" },
+    { fi: "Kiitos avusta, näkemiin.", ru: "Спасибо за помощь, до свидания.", en: "Thanks for the help, goodbye.", k: "s" },
+    { fi: "vuokrata", ru: "арендовать, снимать", en: "to rent", k: "w" },
+    { fi: "varata", ru: "забронировать", en: "to book, to reserve", k: "w" },
+    { fi: "ilmoitus", ru: "объявление", en: "ad, listing", k: "w" },
+    { fi: "kunto", ru: "состояние", en: "condition", k: "w" },
+    { fi: "tyytyväinen", ru: "довольный", en: "satisfied", k: "w" },
+    { fi: "korjata", ru: "исправить, починить", en: "to fix, to repair", k: "w" }
+  ]
+};
+const LESSON_YKI_02 = {
+  id: "YKI_KT_02",
+  title: "YKI keskitaso: telling about an important person, weather, being late",
+  source: "Based on samples of the oral part of YKI keskitaso (University of Jyväskylä, ykitesti.solki.jyu.fi — tasks “Kertominen” and “Tilanteita”)",
+  glossary: [
+    { w: "millainen ihminen hän on", ru: "какой он/она человек — описание характера", en: "what kind of person someone is",
+      forms: ["millainen", "lämminhenkinen", "kärsivällinen", "rauhallinen"],
+      note: "One of the tasks in the oral part of YKI keskitaso is to talk for a minute and a half about an important person, and the question “what kind of person” is obligatory there. Millainen here is not about appearance but precisely about character: Hän on lämminhenkinen ja kärsivällinen (“She is warm-hearted and patient”).\nFor such a story it is useful to know in advance a dozen character adjectives — not just “good” and “kind”, but specific ones: rauhallinen (“calm”), huumorintajuinen (“with a sense of humour”), luotettava (“reliable”), avoin (“open”)." },
+    { w: "kuinka kauan", ru: "как долго — вопрос о продолжительности", en: "how long (duration)",
+      forms: ["kuinka kauan", "koko elämäni ajan", "pitkään"],
+      note: "Asks precisely about the period for which something lasts, and not about a point in time (for that — milloin). The answer often contains an accusative of duration without a preposition: koko elämäni ajan (“all my life”), kaksi vuotta (“two years”), pitkään (“for a long time”)." },
+    { w: "paras asia tässä", ru: "лучшее в этом/в ком-то — превосходная степень в похвале", en: "the best thing about someone/something",
+      forms: ["paras", "parasta on se, että"],
+      note: "Paras — the superlative of hyvä, irregular (like parempi in the comparative). The construction Parasta on se, että... (“The best thing is that...”) is a ready phrase for explaining why you value a person or thing, and in the clause after että the word order is ordinary, nothing needs changing." },
+    { w: "myöhästyä", ru: "опаздывать, опоздать", en: "to be late",
+      forms: ["myöhästyä", "myöhästyn", "myöhästymistäni"],
+      note: "Being late FOR something — the elative: myöhästyn juhlista (“I’m late for the party”, literally “from the party”), myöhästyn bussista (“I’m late for the bus”, “I’m missing the bus”). The logic is the reverse of English: in Finnish you are “late FROM the event”, not “for it”." },
+    { w: "pahoitella", ru: "сожалеть, извиняться (более развёрнуто, чем anteeksi)", en: "to apologize, to express regret",
+      forms: ["pahoitella", "pahoittelen", "olen pahoillani"],
+      note: "Anteeksi — a short everyday “sorry”. Pahoitella — a verb, and it is suitable when you need not just to apologise but to explain what you regret: Pahoittelen myöhästymistäni (“I regret my lateness”). The set phrase Olen pahoillani, mutta... (“I’m sorry, but...”) is a polite way to give bad news, not only to apologise for your own behaviour." },
+    { w: "onpa", ru: "частица удивления и усиления в восклицании", en: "exclamation particle (\"what a...!\")",
+      forms: ["onpa kylmä", "onpa hauska"],
+      note: "On (“is”) + the intensifying particle -pa turns an ordinary sentence into an exclamation: Onpa kylmä talvi! (“What a cold winter!”), Onpa hauska idea! (“What a fun idea!”). Without -pa the same sentence (On kylmä talvi) sounds like a neutral statement of fact, not an emotional exclamation." },
+    { w: "toivottavasti", ru: "надеюсь (что)", en: "hopefully",
+      forms: ["toivottavasti"],
+      note: "An adverb from toivoa (“to hope”), placed at the beginning of a sentence and requiring no special construction after it — just an ordinary sentence: Toivottavasti kevät tulee pian (“I hope spring comes soon”)." },
+    { w: "tärkeä", ru: "важный", en: "important", forms: ["tärkeä", "tärkein", "tärkeänä"] },
+    { w: "kärsivällinen", ru: "терпеливый", en: "patient", forms: ["kärsivällinen"] },
+    { w: "toivottavasti", ru: "надеюсь", en: "hopefully", forms: ["toivottavasti"] }
+  ],
+  items: [
+    { fi: "Äitini on minulle kaikkein tärkein ihminen.", ru: "Моя мама — самый важный человек в моей жизни.", en: "My mother is the most important person to me.", k: "s" },
+    { fi: "Hän on aina tukenut minua kaikessa.", ru: "Она всегда поддерживала меня во всём.", en: "She has always supported me in everything.", k: "s" },
+    { fi: "Millainen ihminen hän mielestäsi on?", ru: "Какой она, по-твоему, человек?", en: "What kind of person is she, in your opinion?", k: "s" },
+    { fi: "Hän on lämminhenkinen ja kärsivällinen.", ru: "Она тёплая душой и терпеливая.", en: "She's warm-hearted and patient.", k: "s" },
+    { fi: "Kuinka kauan hän on ollut sinulle tärkeä?", ru: "Как давно она важна для тебя?", en: "How long has she been important to you?", k: "s" },
+    { fi: "Olen tuntenut hänet koko elämäni ajan.", ru: "Я знаю её всю свою жизнь.", en: "I've known her my whole life.", k: "s" },
+    { fi: "Mikä on paras asia tässä ihmisessä?", ru: "Что самое лучшее в этом человеке?", en: "What's the best thing about this person?", k: "s" },
+    { fi: "Parasta on se, että hän kuuntelee minua aina.", ru: "Лучшее — то, что она всегда меня выслушивает.", en: "The best thing is that she always listens to me.", k: "s" },
+    { fi: "Mitä teet yleensä hänen kanssaan?", ru: "Что вы обычно делаете вместе?", en: "What do you usually do together?", k: "s" },
+    { fi: "Käymme usein kahvilla yhdessä.", ru: "Мы часто вместе ходим в кафе.", en: "We often go for coffee together.", k: "s" },
+    { fi: "Mitä haluaisit oppia häneltä?", ru: "Чему бы ты хотел у неё научиться?", en: "What would you like to learn from her?", k: "s" },
+    { fi: "Haluaisin oppia olemaan yhtä rauhallinen kuin hän.", ru: "Я бы хотел научиться быть таким же спокойным, как она.", en: "I'd like to learn to be as calm as she is.", k: "s" },
+    { fi: "Millainen sää teillä on ollut viime aikoina?", ru: "Какая у вас была погода в последнее время?", en: "What's the weather been like lately?", k: "s" },
+    { fi: "Täällä on satanut lunta koko viikon.", ru: "Здесь всю неделю шёл снег.", en: "It's been snowing here all week.", k: "s" },
+    { fi: "Onpa kylmä talvi tänä vuonna!", ru: "Какая холодная зима в этом году!", en: "What a cold winter this year!", k: "s" },
+    { fi: "Toivottavasti kevät tulee pian.", ru: "Надеюсь, скоро придёт весна.", en: "I hope spring comes soon.", k: "s" },
+    { fi: "Olen pahoillani, mutta myöhästyn juhlistasi.", ru: "Прости, но я опоздаю на твой праздник.", en: "I'm sorry, but I'll be late for your party.", k: "s" },
+    { fi: "Pääsen paikalle vasta kahdeksalta.", ru: "Я смогу приехать только к восьми.", en: "I won't be able to get there until eight.", k: "s" },
+    { fi: "Jouduin jäämään töihin myöhään.", ru: "Мне пришлось задержаться на работе допоздна.", en: "I had to stay late at work.", k: "s" },
+    { fi: "Toivottavasti ehdin vielä kakulle asti.", ru: "Надеюсь, успею хотя бы к торту.", en: "I hope I'll still make it in time for the cake.", k: "s" },
+    { fi: "Pahoittelen todella myöhästymistäni.", ru: "Я действительно прошу прощения за опоздание.", en: "I really apologize for being late.", k: "s" },
+    { fi: "Oletko kuullut viimeisimmät uutiset?", ru: "Ты слышал последние новости?", en: "Have you heard the latest news?", k: "s" },
+    { fi: "Mitä sinulle kuuluu näinä päivinä?", ru: "Как у тебя дела в последнее время?", en: "How are things with you these days?", k: "s" },
+    { fi: "En ole ehtinyt soittaa sinulle aiemmin.", ru: "Я не успел позвонить тебе раньше.", en: "I haven't had time to call you earlier.", k: "s" },
+    { fi: "Pidetään yhteyttä jatkossakin.", ru: "Давай и дальше будем на связи.", en: "Let's keep in touch going forward.", k: "s" },
+    { fi: "tärkeä", ru: "важный", en: "important", k: "w" },
+    { fi: "kärsivällinen", ru: "терпеливый", en: "patient", k: "w" },
+    { fi: "myöhästyä", ru: "опаздывать", en: "to be late", k: "w" },
+    { fi: "pahoitella", ru: "сожалеть, извиняться", en: "to apologize, to regret", k: "w" },
+    { fi: "toivottavasti", ru: "надеюсь", en: "hopefully", k: "w" }
+  ]
+};
+const LESSON_YKI_03 = {
+  id: "YKI_KT_03",
+  title: "YKI keskitaso: a letter to the building manager and a complaint",
+  source: "Based on a sample of the written part of YKI keskitaso (University of Jyväskylä, ykitesti.solki.jyu.fi — task “Sähköpostiviesti”)",
+  glossary: [
+    { w: "hyvä ... / ystävällisin terveisin", ru: "формальное начало и конец письма", en: "formal email opening and closing",
+      forms: ["hyvä isännöitsijä", "ystävällisin terveisin", "kiitos jo etukäteen"],
+      note: "A formal letter in Finnish begins with Hyvä + the position or name of the recipient (Hyvä isännöitsijä, Hyvä Virtanen), and ends with Ystävällisin terveisin (“with friendly greetings”, closest to “yours sincerely”) and a signature. Before the signature a short Kiitos jo etukäteen (“thanks in advance”) is appropriate.\nIn the YKI keskitaso writing task this is directly required: “don’t forget the beginning and end” — without them the letter is considered incomplete, even if the content is good." },
+    { w: "otan yhteyttä koskien", ru: "обращаюсь по поводу (формальное начало письма)", en: "I am writing regarding",
+      forms: ["koskien", "otan yhteyttä"],
+      note: "Koskien — a frozen form of the verb koskea (“to concern”), which in modern official language works as the preposition “concerning, regarding”: Otan yhteyttä koskien kylpyhuoneeni remonttia (“I am writing regarding the renovation of my bathroom”). It sounds drier and more formal than vuoksi/takia from the colloquial call — it is a marker of written, not spoken, style." },
+    { w: "pyydän lupaa", ru: "прошу разрешения (формальная просьба)", en: "I request permission",
+      forms: ["pyydän lupaa", "lupa", "luvan"],
+      note: "Pyytää lupaa + genitive/infinitive — a standard formula of an official request for permission: Pyydän lupaa remontin aloittamiseen (“I request permission to start the renovation”). Lupa is precisely permission, not a “right” in the broad sense (for that there is oikeus)." },
+    { w: "isännöitsijä", ru: "управляющий домом (в жилищном товариществе)", en: "building/property manager",
+      forms: ["isännöitsijä", "isännöitsijälle", "talonyhtiö"],
+      note: "In Finland most blocks of flats are a talonyhtiö (a housing company), run by a hired isännöitsijä. It is to him that people write about leaks, renovation and the building’s common matters — he is not a concierge or a neighbour but a professional manager, usually someone external to the building." },
+    { w: "valittaa", ru: "жаловаться (на что-то)", en: "to complain",
+      forms: ["valittaa", "valitan", "valitus"],
+      note: "Verb valency: one complains ABOUT something — the elative. Valitan saamastani palvelusta (“I am complaining about the service I received”, literally “from the service received”). The noun valitus — “complaint”." },
+    { w: "mainitkaa", ru: "упомяните (вежливое повелительное, вы-форма)", en: "mention (polite imperative, you-plural)",
+      forms: ["mainitkaa", "muistakaa"],
+      note: "The imperative for te (polite “you” or plural) is formed with the ending -kaa/-kää: mainita → mainitkaa (“mention”), muistaa → muistakaa (“remember, don’t forget”). It is in this form that the instructions to the writing tasks of YKI are worded." },
+    { w: "remontti", ru: "ремонт", en: "renovation", forms: ["remontti", "remontin", "remonttia"] },
+    { w: "lupa", ru: "разрешение", en: "permission", forms: ["lupa", "luvan", "lupaa"] },
+    { w: "yhteystiedot", ru: "контактные данные", en: "contact details", forms: ["yhteystiedot"] },
+    { w: "kosteus", ru: "влажность, сырость", en: "moisture, dampness", forms: ["kosteus", "kosteusongelma"] }
+  ],
+  items: [
+    { fi: "Hyvä isännöitsijä,", ru: "Уважаемый управляющий,", en: "Dear building manager,", k: "s" },
+    { fi: "Otan yhteyttä koskien kylpyhuoneeni remonttia.", ru: "Обращаюсь по поводу ремонта моей ванной комнаты.", en: "I'm writing regarding the renovation of my bathroom.", k: "s" },
+    { fi: "Haluaisin ilmoittaa teille seuraavasta asiasta.", ru: "Хотел бы сообщить вам о следующем.", en: "I would like to inform you of the following matter.", k: "s" },
+    { fi: "Kylpyhuoneeni on nykyisin huonossa kunnossa.", ru: "Моя ванная сейчас в плохом состоянии.", en: "My bathroom is currently in poor condition.", k: "s" },
+    { fi: "Laatat ovat vanhoja ja osittain rikki.", ru: "Плитка старая и местами разбитая.", en: "The tiles are old and partly broken.", k: "s" },
+    { fi: "Haluaisin uusia laatat ja vaihtaa putket.", ru: "Я хотел бы заменить плитку и поменять трубы.", en: "I would like to replace the tiles and change the pipes.", k: "s" },
+    { fi: "Nykyinen tilanne aiheuttaa kosteusongelmia.", ru: "Нынешняя ситуация вызывает проблемы с влажностью.", en: "The current situation is causing moisture problems.", k: "s" },
+    { fi: "Remontti kestäisi arviolta kaksi viikkoa.", ru: "Ремонт займёт, по оценке, две недели.", en: "The renovation would take an estimated two weeks.", k: "s" },
+    { fi: "Pyydän ystävällisesti lupaa remontin aloittamiseen.", ru: "Прошу вас любезно разрешить начать ремонт.", en: "I kindly request permission to start the renovation.", k: "s" },
+    { fi: "Voitte tavoittaa minut tällä sähköpostiosoitteella tai puhelimitse.", ru: "Со мной можно связаться по этой почте или по телефону.", en: "You can reach me at this email address or by phone.", k: "s" },
+    { fi: "Odotan vastaustanne mielelläni.", ru: "С удовольствием жду вашего ответа.", en: "I look forward to your reply.", k: "s" },
+    { fi: "Kiitos jo etukäteen.", ru: "Заранее спасибо.", en: "Thank you in advance.", k: "s" },
+    { fi: "Ystävällisin terveisin,", ru: "С наилучшими пожеланиями,", en: "Best regards,", k: "s" },
+    { fi: "Haluan valittaa saamastani palvelusta.", ru: "Хочу пожаловаться на полученное обслуживание.", en: "I want to complain about the service I received.", k: "s" },
+    { fi: "Olen erittäin pettynyt lopputulokseen.", ru: "Я очень разочарован результатом.", en: "I am very disappointed with the result.", k: "s" },
+    { fi: "Asia tulisi korjata mahdollisimman pian.", ru: "Вопрос следовало бы решить как можно скорее.", en: "The matter should be fixed as soon as possible.", k: "s" },
+    { fi: "Toivon, että otatte yhteyttä minuun pian.", ru: "Надеюсь, что вы свяжетесь со мной скоро.", en: "I hope you will contact me soon.", k: "s" },
+    { fi: "Liitän mukaan muutaman kuvan tilanteesta.", ru: "Прикладываю несколько фото ситуации.", en: "I'm attaching a few photos of the situation.", k: "s" },
+    { fi: "Mainitkaa viestissänne seuraavat asiat.", ru: "Укажите в сообщении следующие моменты.", en: "Mention the following points in your message.", k: "s" },
+    { fi: "Muistakaa aloitus ja lopetus.", ru: "Не забудьте про начало и окончание письма.", en: "Remember the opening and the closing.", k: "s" },
+    { fi: "Kirjoitan teille koskien asuntoni tilannetta.", ru: "Пишу вам по поводу ситуации с моей квартирой.", en: "I'm writing to you regarding the situation with my apartment.", k: "s" },
+    { fi: "isännöitsijä", ru: "управляющий домом", en: "building manager", k: "w" },
+    { fi: "remontti", ru: "ремонт", en: "renovation", k: "w" },
+    { fi: "lupa", ru: "разрешение", en: "permission", k: "w" },
+    { fi: "valittaa", ru: "жаловаться", en: "to complain", k: "w" },
+    { fi: "yhteystiedot", ru: "контактные данные", en: "contact details", k: "w" },
+    { fi: "kosteus", ru: "влажность", en: "moisture", k: "w" }
+  ]
+};
+const LESSON_YKI_04 = {
+  id: "YKI_KT_04",
+  title: "YKI keskitaso: opinion and argumentation",
+  source: "Based on samples of the oral and written parts of YKI keskitaso (University of Jyväskylä, ykitesti.solki.jyu.fi — tasks “Mielipide” and “Mielipidekirjoitus”; topics: perheen rahankäyttö, lääkkeiden mainonta, lapsen hoitopaikka, nykymuoti)",
+  glossary: [
+    { w: "mielestäni / olen sitä mieltä, että", ru: "по-моему / я считаю, что — как начать высказывание мнения", en: "in my opinion / I think that",
+      forms: ["mielestäni", "olen sitä mieltä", "olen samaa mieltä", "olen eri mieltä"],
+      note: "Mielestäni (from mieli, “opinion, mind” + the elative suffix -stä + the possessive -ni) — the shortest way to say “in my opinion”: Mielestäni nykymuoti on kallista. Olen sitä mieltä, että... is longer, but more official-neutral and more common in the written part: Olen sitä mieltä, että lapsille kannattaa antaa viikkorahaa.\nAgreement and disagreement are built from the same mieli: Olen samaa mieltä (“I agree”, literally “of the same opinion”), Olen eri mieltä (“I disagree”, “of a different opinion”)." },
+    { w: "toisaalta ... toisaalta", ru: "с одной стороны... с другой стороны...", en: "on one hand... on the other hand...",
+      forms: ["toisaalta"],
+      note: "Toinen (“other”) + puoli (“side”) in the elative gave the frozen adverb toisaalta. Repeated twice, it builds the classic structure of comparing two points of view — exactly what is expected in the “Mielipide” part of YKI keskitaso, where you must not just state an opinion but show that you see the question from different sides." },
+    { w: "ensinnäkin, toiseksi, kolmanneksi", ru: "во-первых, во-вторых, в-третьих", en: "firstly, secondly, thirdly",
+      forms: ["ensinnäkin", "toiseksi", "kolmanneksi"],
+      note: "Ordinal numerals in the translative (-ksi, “becoming someone/something”) froze into adverbs of enumeration. In an opinion task they directly ask: Perustele mielipiteesi hyvin — “justify your opinion well”, and such numbering is the most reliable way to show structure, and not just list thoughts one after another." },
+    { w: "yhteenvetona", ru: "в итоге, подводя итог", en: "to sum up, in summary",
+      forms: ["yhteenvetona", "yhteenveto"],
+      note: "Yhteenveto — “summary” (yhteen, “together” + vetää, “to pull”), in the essive (-na) it turns into the adverb “as a summary”: Yhteenvetona voisin sanoa, että... A good way to finish an extended opinion, rather than just breaking off at the last argument." },
+    { w: "perustella", ru: "обосновывать, аргументировать", en: "to justify, to give reasons for",
+      forms: ["perustella", "perustelen", "perustelut"],
+      note: "From perusta (“basis, foundation”). Perustella mielipiteensä — “to justify one’s opinion”: to give reasons, and not just repeat it in other words. Often with the construction sillä, että... (“by the fact that...”): Perustelen tätä sillä, että raha kuuluu koko perheelle." },
+    { w: "näin", ru: "так, таким образом", en: "this way, thus",
+      forms: ["näin"],
+      note: "Not to be confused with näin — a form of the verb nähdä (“to see”) meaning “I saw”: these are two different words that simply coincide in spelling. Here näin is a frozen adverb from tämä (“this”), and means “like this, in this way”: Näin he oppivat käyttämään rahaa vastuullisesti (“This is how they learn to use money responsibly”). It usually stands at the beginning of a sentence and sums up the previous thought." },
+    { w: "mielipide", ru: "мнение", en: "opinion", forms: ["mielipide", "mielipiteeni", "mielipiteestä"] },
+    { w: "mainostaa", ru: "рекламировать", en: "to advertise", forms: ["mainostaa", "mainonta", "mainos"] },
+    { w: "hoitopaikka", ru: "место для ухода за ребёнком (садик или дом)", en: "childcare arrangement", forms: ["hoitopaikka"] },
+    { w: "näkökulma", ru: "точка зрения, ракурс", en: "point of view, perspective", forms: ["näkökulma", "näkökulmasta"] }
+  ],
+  items: [
+    { fi: "Mielestäni perheen rahankäytöstä pitäisi päättää yhdessä.", ru: "По-моему, о тратах семьи нужно решать вместе.", en: "In my opinion, family spending should be decided together.", k: "s" },
+    { fi: "Perustelen tätä sillä, että raha kuuluu koko perheelle.", ru: "Обосную это тем, что деньги принадлежат всей семье.", en: "I justify this by saying the money belongs to the whole family.", k: "s" },
+    { fi: "Toisaalta jokaisella pitäisi olla myös omaa rahaa käytettäväksi.", ru: "С другой стороны, у каждого должны быть и свои деньги на личные нужды.", en: "On the other hand, everyone should also have their own money to use.", k: "s" },
+    { fi: "Olen sitä mieltä, että lapsille kannattaa antaa viikkorahaa.", ru: "Я считаю, что детям стоит давать карманные деньги.", en: "I think it's worth giving children a weekly allowance.", k: "s" },
+    { fi: "Näin he oppivat käyttämään rahaa vastuullisesti.", ru: "Так они учатся тратить деньги ответственно.", en: "That way they learn to spend money responsibly.", k: "s" },
+    { fi: "Mielestäni lääkkeiden mainostaminen ei ole hyvä asia.", ru: "По-моему, реклама лекарств — это нехорошо.", en: "In my opinion, advertising medicines isn't a good thing.", k: "s" },
+    { fi: "Mainokset saavat ihmiset ostamaan lääkkeitä turhaan.", ru: "Реклама заставляет людей покупать лекарства без надобности.", en: "Ads make people buy medicines unnecessarily.", k: "s" },
+    { fi: "Toisaalta mainonta antaa tärkeää tietoa uusista lääkkeistä.", ru: "С другой стороны, реклама даёт важную информацию о новых лекарствах.", en: "On the other hand, advertising provides important information about new medicines.", k: "s" },
+    { fi: "Olen eri mieltä tästä väitteestä.", ru: "Я не согласен с этим утверждением.", en: "I disagree with this statement.", k: "s" },
+    { fi: "Olen samaa mieltä kanssasi tässä asiassa.", ru: "Я согласен с тобой в этом вопросе.", en: "I agree with you on this matter.", k: "s" },
+    { fi: "Mielestäni pieni lapsi viihtyy parhaiten kotona.", ru: "По-моему, маленькому ребёнку лучше всего дома.", en: "In my opinion, a small child is happiest at home.", k: "s" },
+    { fi: "Päiväkodissa lapsi oppii kuitenkin tärkeitä sosiaalisia taitoja.", ru: "Однако в садике ребёнок учится важным социальным навыкам.", en: "However, at daycare a child learns important social skills.", k: "s" },
+    { fi: "Molemmilla vaihtoehdoilla on omat hyvät ja huonot puolensa.", ru: "У обоих вариантов есть свои плюсы и минусы.", en: "Both options have their own pros and cons.", k: "s" },
+    { fi: "Nykymuoti on mielestäni liian kallista tavalliselle ihmiselle.", ru: "Современная мода, по-моему, слишком дорогая для обычного человека.", en: "In my opinion, modern fashion is too expensive for an ordinary person.", k: "s" },
+    { fi: "Vaatteiden pitäisi olla sekä kestäviä että edullisia.", ru: "Одежда должна быть и прочной, и доступной по цене.", en: "Clothes should be both durable and affordable.", k: "s" },
+    { fi: "Loppujen lopuksi jokainen saa pukeutua niin kuin haluaa.", ru: "В конце концов, каждый может одеваться так, как хочет.", en: "In the end, everyone can dress however they want.", k: "s" },
+    { fi: "Haluan perustella mielipiteeni kolmella tavalla.", ru: "Я хочу обосновать своё мнение тремя способами.", en: "I want to justify my opinion in three ways.", k: "s" },
+    { fi: "Ensinnäkin se säästää rahaa, toiseksi se säästää aikaa.", ru: "Во-первых, это экономит деньги, во-вторых — время.", en: "Firstly, it saves money, secondly, it saves time.", k: "s" },
+    { fi: "Yhteenvetona voisin sanoa, että asia on monimutkainen.", ru: "В итоге я бы сказал, что вопрос непростой.", en: "To sum up, I could say that the matter is complicated.", k: "s" },
+    { fi: "Minusta tuntuu, että kumpikin näkökulma on perusteltu.", ru: "Мне кажется, что обе точки зрения обоснованы.", en: "It seems to me that both viewpoints are justified.", k: "s" },
+    { fi: "mielipide", ru: "мнение", en: "opinion", k: "w" },
+    { fi: "perustella", ru: "обосновывать", en: "to justify", k: "w" },
+    { fi: "mainostaa", ru: "рекламировать", en: "to advertise", k: "w" },
+    { fi: "hoitopaikka", ru: "место ухода за ребёнком", en: "childcare arrangement", k: "w" },
+    { fi: "näkökulma", ru: "точка зрения", en: "point of view", k: "w" }
+  ]
+};
+const LESSON_YKI_05 = {
+  id: "YKI_KT_05",
+  title: "YKI keskitaso: society and news",
+  source: "Based on samples of YKI keskitaso listening (University of Jyväskylä, ykitesti.solki.jyu.fi — “Puheen ymmärtäminen” topics: yksityisetsivä, kalakauppa, hiihtokilpailu, lentopäästöt, viljelypalstat, puhelinkäyttäytyminen, sähkön hinta)",
+  glossary: [
+    { w: "jonkin mukaan", ru: "по данным кого-то/чего-то — ссылка на источник", en: "according to something/someone",
+      forms: ["ympäristöjärjestön mukaan", "uutisten mukaan", "asiantuntijan mukaan", "tutkimuksen mukaan"],
+      note: "Mukaan (genitive + mukaan) — an obligatory construction of news and popular-science style: it introduces the source of a claim. Ympäristöjärjestön mukaan (“according to an environmental organisation”), Asiantuntijan mukaan (“according to an expert”), Tutkimuksen mukaan (“according to a study”).\nIn the YKI keskitaso listening almost every news text or interview contains X:n mukaan somewhere — and precisely this word signals that what follows is not the speaker’s opinion but someone else’s position or a fact from a source." },
+    { w: "kannattaa", ru: "стоит, имеет смысл (сделать что-то)", en: "it's worth (doing something)",
+      forms: ["kannattaa", "kannattaisi"],
+      note: "An impersonal construction: kannattaa + infinitive, there is no subject in the usual sense. Paahtopaisti kannattaa maustaa etukäteen (“It is worth seasoning roast beef in advance”) — literally “roast meat is worth being seasoned in advance”, but in English it is more natural to translate it as advice. Negative: Ei kannata (“It isn’t worth it”)." },
+    { w: "liittyä yhdistykseen", ru: "вступить в объединение/клуб", en: "to join an association",
+      forms: ["liittyä", "liittymällä", "yhdistys", "yhdistykseen"],
+      note: "Liittyä — “to join”, requires the illative (into something): liittyä yhdistykseen (“to join an association”), liittyä seuraan (“to join a club”). Palstan voi saada liittymällä paikalliseen yhdistykseen (“A plot can be obtained by joining a local association”) — liittymällä is the instructive form (“by means of joining”), often found in explaining procedures." },
+    { w: "yleistyminen", ru: "распространение, становление обычным явлением", en: "becoming widespread",
+      forms: ["yleistyminen", "yleistymisen myötä", "yleistyä"],
+      note: "A verbal noun in -minen from yleistyä (“to become common, to spread”). The construction X:n yleistymisen myötä (“with the spread of X”) is a ready phrase for describing social changes: Käyttäytymissäännöt ovat muuttuneet kännykän yleistymisen myötä (“The rules of behaviour have changed with the spread of mobile phones”)." },
+    { w: "saattaa", ru: "может (случиться) — предположение о будущем", en: "might (happen)",
+      forms: ["saattaa", "saattaisi"],
+      note: "Saattaa + infinitive — another way to say “may”, alongside the already familiar voida and varmaan. The shade is precisely a supposition about future developments, typical of a news forecast: Tilanne saattaa muuttua lähivuosina (“The situation may change in the coming years”)." },
+    { w: "päästö", ru: "выброс (в атмосферу)", en: "emission", forms: ["päästö", "päästöjä", "päästöjen"] },
+    { w: "yhdistys", ru: "объединение, клуб, ассоциация", en: "association, club", forms: ["yhdistys", "yhdistykseen", "yhdistykseltä"] },
+    { w: "asiantuntija", ru: "эксперт, специалист", en: "expert", forms: ["asiantuntija", "asiantuntijan"] },
+    { w: "tutkimus", ru: "исследование", en: "study, research", forms: ["tutkimus", "tutkimuksen", "tutkimukseen"] }
+  ],
+  items: [
+    { fi: "Yksityisetsivä tutkii usein yksityishenkilöiden välisiä ongelmia.", ru: "Частный детектив часто расследует проблемы между частными лицами.", en: "A private detective often investigates problems between private individuals.", k: "s" },
+    { fi: "Hän voi myös selvittää, pettääkö puoliso.", ru: "Он может также выяснить, изменяет ли супруг.", en: "He can also find out whether a spouse is being unfaithful.", k: "s" },
+    { fi: "Kalakauppias suositteli tuoretta kotimaista kalaa.", ru: "Продавец рыбы порекомендовал свежую местную рыбу.", en: "The fishmonger recommended fresh domestic fish.", k: "s" },
+    { fi: "Paahtopaisti kannattaa maustaa hyvissä ajoin etukäteen.", ru: "Ростбиф стоит заправить специями заранее.", en: "Roast beef is worth seasoning well in advance.", k: "s" },
+    { fi: "Hiihtokilpailuun osallistuminen oli koko perheen yhteinen päätös.", ru: "Участие в лыжной гонке было общим решением всей семьи.", en: "Participating in the ski race was a decision made by the whole family.", k: "s" },
+    { fi: "Lentomatkustaminen tuottaa yllättävän paljon päästöjä.", ru: "Авиаперелёты производят неожиданно много выбросов.", en: "Air travel produces a surprising amount of emissions.", k: "s" },
+    { fi: "Ympäristöjärjestön mukaan päästöt pitäisi laskea tarkemmin.", ru: "По данным экологической организации, выбросы следовало бы считать точнее.", en: "According to the environmental organization, emissions should be calculated more precisely.", k: "s" },
+    { fi: "Kaupunki vuokraa asukkailleen pieniä viljelypalstoja.", ru: "Город сдаёт жителям в аренду небольшие садовые участки.", en: "The city rents out small allotment plots to its residents.", k: "s" },
+    { fi: "Palstan voi saada liittymällä paikalliseen yhdistykseen.", ru: "Участок можно получить, вступив в местное объединение.", en: "You can get a plot by joining the local association.", k: "s" },
+    { fi: "Joillakin alueilla on ollut ongelmia ilkivallan kanssa.", ru: "В некоторых районах были проблемы с вандализмом.", en: "Some areas have had problems with vandalism.", k: "s" },
+    { fi: "Käyttäytymissäännöt ovat muuttuneet kännykän yleistymisen myötä.", ru: "Правила поведения изменились с распространением мобильных телефонов.", en: "Behavioral norms have changed with the spread of mobile phones.", k: "s" },
+    { fi: "Ennen ihmisille ei soitettu myöhään illalla.", ru: "Раньше людям не звонили поздно вечером.", en: "In the past, people weren't called late in the evening.", k: "s" },
+    { fi: "Nykyään soittoaika ei ole enää niin tarkkaan rajattu.", ru: "Сейчас время для звонков уже не так строго ограничено.", en: "Nowadays the time for calling is no longer so strictly limited.", k: "s" },
+    { fi: "Sähkön hinta vaihtelee paljon vuodenajan mukaan.", ru: "Цена на электричество сильно меняется в зависимости от сезона.", en: "The price of electricity varies a lot depending on the season.", k: "s" },
+    { fi: "Kerrostaloasukkaat maksavat usein enemmän sähköstä kuin omakotiasukkaat.", ru: "Жители многоквартирных домов часто платят за электричество больше, чем жители частных домов.", en: "Apartment residents often pay more for electricity than those in detached houses.", k: "s" },
+    { fi: "Uutisten mukaan hinnat ovat laskeneet hieman viime kuukausina.", ru: "По данным новостей, цены немного снизились за последние месяцы.", en: "According to the news, prices have fallen slightly in recent months.", k: "s" },
+    { fi: "Tutkimus perustuu tuhansien ihmisten vastauksiin.", ru: "Исследование основано на ответах тысяч людей.", en: "The study is based on the responses of thousands of people.", k: "s" },
+    { fi: "Asiantuntijan mukaan tilanne saattaa muuttua lähivuosina.", ru: "По словам эксперта, ситуация может измениться в ближайшие годы.", en: "According to the expert, the situation may change in the coming years.", k: "s" },
+    { fi: "päästö", ru: "выброс", en: "emission", k: "w" },
+    { fi: "yhdistys", ru: "объединение, клуб", en: "association, club", k: "w" },
+    { fi: "ilkivalta", ru: "вандализм", en: "vandalism", k: "w" },
+    { fi: "asiantuntija", ru: "эксперт", en: "expert", k: "w" },
+    { fi: "tutkimus", ru: "исследование", en: "study, research", k: "w" }
+  ]
+};
+
+const BUILTIN = [...LESSONS_EXTRA, ...LESSONS_78, ...LESSONS_4569, ...LESSONS_NEXT, ...LESSONS_AB, ...LESSONS_BE, ...LESSONS_BE2, ...LESSONS_IN, LESSON_17, LESSON_18, LESSON_19, LESSON_20, LESSON_YKI_01, LESSON_YKI_02, LESSON_YKI_03, LESSON_YKI_04, LESSON_YKI_05]
   .sort((a, b) => a.id.localeCompare(b.id));
+
+/*__READINGS_BEGIN__*/
+// Words that are not in the lesson glossaries but appear in the texts and questions: one shared glossary for all texts.
+const READING_EXTRAS = [
+{"w":"kahvi","ru":"coffee","forms":["kahvi"]},
+{"w":"koulua","ru":"school (käydä koulua — to attend school)","forms":["koulua"]},
+{"w":"katsoa","ru":"to watch","forms":["katson"]},
+{"w":"pelata","ru":"to play (a game, a sport)","forms":["pelaa"]},
+{"w":"sade","ru":"rain","forms":["sateesta"]},
+{"w":"auttaa","ru":"to help","forms":["auta"]},
+{"w":"pasta","ru":"pasta","forms":["pasta"]},
+{"w":"älä","ru":"don’t (a prohibition: älä unohda — don’t forget)","forms":["älä"]},
+{"w":"kala","ru":"fish","forms":["kalan"]},
+{"w":"kulho","ru":"bowl","forms":["kulhoon","kulhossa"]},
+{"w":"hienoa","ru":"great, excellent","forms":["hienoa"]},
+{"w":"elokuvailta","ru":"film night","forms":["elokuvailta"]},
+{"w":"mennä","ru":"to go","forms":["menemme"]},
+{"w":"kirjasto","ru":"library","forms":["kirjastoon"]},
+{"w":"muu","ru":"other, another","forms":["muita"]},
+{"w":"olla","ru":"to be","forms":["olemme"]},
+{"w":"karkki","ru":"sweet, candy","forms":["karkit"]},
+{"w":"pussi","ru":"bag","forms":["pussissa"]},
+{"w":"ikkuna","ru":"window","forms":["ikkunassa"]},
+{"w":"kynttilä","ru":"candle","forms":["kynttilää"]},
+{"w":"yhteensä","ru":"altogether, in total","forms":["yhteensä"]},
+{"w":"ne","ru":"they, those (about things)","forms":["niitä"]},
+{"w":"muistaa","ru":"to remember","forms":["muistavat"]},
+{"w":"siellä","ru":"there","forms":["siellä"]},
+{"w":"pää","ru":"head","forms":["päähäni"]},
+{"w":"valmis","ru":"ready","forms":["valmis"]},
+{"w":"paketti","ru":"parcel","forms":["paketin"]},
+{"w":"matkapäiväkirja","ru":"travel diary","forms":["matkapäiväkirja"]},
+{"w":"lentokenttä","ru":"airport","forms":["lentokentällä"]},
+{"w":"matkalaukku","ru":"suitcase","forms":["matkalaukkuni"]},
+{"w":"toimittaa","ru":"to deliver","forms":["toimittavat"]},
+{"w":"kotiosoite","ru":"home address","forms":["kotiosoitteeseeni"]},
+{"w":"mukana","ru":"with you, on you","forms":["mukana"]},
+{"w":"hotelli","ru":"hotel","forms":["hotelli","hotelliin","hotellissa"]},
+{"w":"jäädä pois","ru":"to get off (a vehicle)","forms":["jää"]},
+{"w":"kolmas","ru":"third","forms":["kolmannella"]},
+{"w":"puoli","ru":"side","forms":["puolella"]},
+{"w":"huone","ru":"room","forms":["huoneeseen"]},
+{"w":"räntä","ru":"sleet","forms":["räntää"]},
+{"w":"posti","ru":"post office","forms":["postissa"]},
+{"w":"haluta","ru":"to want","forms":["haluan"]},
+{"w":"kestää","ru":"to last, to take time","forms":["kestää"]},
+{"w":"kauemmin","ru":"longer","forms":["kauemmin"]},
+{"w":"kakkosluokka","ru":"second class, economy","forms":["kakkosluokan"]},
+{"w":"postimerkki","ru":"stamp","forms":["postimerkin"]},
+{"w":"ehdottaa","ru":"to suggest","forms":["ehdotan"]},
+{"w":"lounasravintola","ru":"lunch restaurant","forms":["lounasravintolassa"]},
+{"w":"suositella","ru":"to recommend","forms":["suosittelee"]},
+{"w":"lohikeitto","ru":"salmon soup","forms":["lohikeittoa","lohikeiton"]},
+{"w":"äyriäiset","ru":"shellfish (crustaceans, molluscs)","forms":["äyriäisille"]},
+{"w":"joten","ru":"therefore","forms":["joten"]},
+{"w":"tilata","ru":"to order","forms":["tilaa"]},
+{"w":"äyriäissalaatti","ru":"seafood salad","forms":["äyriäissalaattia"]},
+{"w":"jälkiruoka","ru":"dessert","forms":["jälkiruoaksi"]},
+{"w":"lihapullat","ru":"meatballs","forms":["lihapullista"]},
+{"w":"ilmoittautua","ru":"to enrol, to register","forms":["ilmoittaudun"]},
+{"w":"yliopisto","ru":"university","forms":["yliopistoon"]},
+{"w":"opintotoimisto","ru":"study office","forms":["opintotoimistossa"]},
+{"w":"hyväksymiskirje","ru":"acceptance letter","forms":["hyväksymiskirjeen"]},
+{"w":"henkilöllisyystodistus","ru":"ID, identity document","forms":["henkilöllisyystodistuksen"]},
+{"w":"maksaa","ru":"to pay; to cost","forms":["maksan"]},
+{"w":"ylioppilaskunta","ru":"student union","forms":["ylioppilaskuntaan"]},
+{"w":"opiskelijakortti","ru":"student card","forms":["opiskelijakortin"]},
+{"w":"laukku","ru":"bag","forms":["laukussa"]},
+{"w":"markkinat","ru":"fair, street market","forms":["markkinoilla"]},
+{"w":"saaristolaisleipä","ru":"archipelago bread (Finnish bread with honey and spices)","forms":["saaristolaisleipää"]},
+{"w":"kilo","ru":"kilogram","forms":["kilo"]},
+{"w":"alennus","ru":"discount","forms":["alennuksen"]},
+{"w":"leipä","ru":"bread","forms":["leipä"]},
+{"w":"kaupan päälle","ru":"as a bonus, free with a purchase","forms":["kaupan"]},
+{"w":"käteinen","ru":"cash","forms":["käteisellä"]},
+{"w":"hakea","ru":"to apply; to look for","forms":["hain"]},
+{"w":"osa-aikainen","ru":"part-time","forms":["osa-aikaista"]},
+{"w":"asiakaspalvelu","ru":"customer service","forms":["asiakaspalvelussa"]},
+{"w":"työhaastattelu","ru":"job interview","forms":["työhaastattelussa"]},
+{"w":"kertoa","ru":"to tell","forms":["kerron","kerroin"]},
+{"w":"kauppa","ru":"shop, trade","forms":["kaupasta"]},
+{"w":"iltatyö","ru":"evening work","forms":["iltatyötä"]},
+{"w":"viikonlopputyö","ru":"weekend work","forms":["viikonlopputyötä"]},
+{"w":"hakija","ru":"applicant","forms":["hakijoita"]},
+{"w":"haastattelija","ru":"interviewer","forms":["haastattelija"]},
+{"w":"säätiedotus","ru":"weather forecast","forms":["säätiedotuksen"]},
+{"w":"maa","ru":"country; land","forms":["maahan"]},
+{"w":"selkeytyä","ru":"to clear up","forms":["selkeytyy"]},
+{"w":"ensin","ru":"at first","forms":["ensin"]},
+{"w":"myrsky","ru":"storm","forms":["myrskyä"]},
+{"w":"ystävä","ru":"friend","forms":["ystäväni"]},
+{"w":"haluta","ru":"to want","forms":["haluaa"]},
+{"w":"viettää","ru":"to spend (time)","forms":["viettää"]},
+{"w":"hiihtoloma","ru":"ski holiday","forms":["hiihtoloman"]},
+{"w":"lomamökki","ru":"holiday cottage","forms":["lomamökillä"]},
+{"w":"kylpylä","ru":"spa","forms":["kylpylöistä","kylpylästä"]},
+{"w":"lumi","ru":"snow","forms":["lumesta"]},
+{"w":"halpa","ru":"cheap","forms":["halpa"]},
+{"w":"liukastua","ru":"to slip","forms":["liukastuin"]},
+{"w":"jäinen","ru":"icy","forms":["jäisellä"]},
+{"w":"tie","ru":"road","forms":["tiellä"]},
+{"w":"soittaa","ru":"to call, to phone","forms":["soitin"]},
+{"w":"jalka","ru":"leg","forms":["jalassa"]},
+{"w":"kipu","ru":"pain","forms":["kipua"]},
+{"w":"pian","ru":"soon","forms":["pian"]},
+{"w":"hätäkeskus","ru":"emergency centre","forms":["hätäkeskuksen"]},
+{"w":"työntekijä","ru":"employee","forms":["työntekijä"]},
+{"w":"viikko","ru":"week","forms":["viikko"]},
+{"w":"kamera","ru":"camera","forms":["kamera"]},
+{"w":"voimassa","ru":"valid","forms":["voimassa"]},
+{"w":"varapuhelin","ru":"replacement phone","forms":["varapuhelinta"]},
+{"w":"kännykkä","ru":"mobile phone (colloq.)","forms":["kännykkä"]},
+{"w":"kaatua","ru":"to fall","forms":["kaaduin"]},
+{"w":"loukata","ru":"to injure, to hurt","forms":["loukkasin"]},
+{"w":"käsi","ru":"hand, arm","forms":["käteni"]},
+{"w":"murtua","ru":"to break (of a bone)","forms":["murtunut"]},
+{"w":"ystävä","ru":"friend","forms":["ystävä"]},
+{"w":"jättää","ru":"to leave","forms":["jätti"]},
+{"w":"viesti","ru":"message","forms":["viestin"]},
+{"w":"tulla","ru":"to come (älkää tulko — don’t come)","forms":["tulko"]},
+{"w":"koti","ru":"home","forms":["kotiini"]},
+{"w":"tulehtunut","ru":"inflamed","forms":["tulehtunut"]},
+{"w":"tarvita","ru":"to need","forms":["tarvinnut"]},
+{"w":"hammaslääkäri","ru":"dentist","forms":["hammaslääkäriltä"]},
+{"w":"aika","ru":"time; appointment","forms":["ajan"]},
+{"w":"poistaa","ru":"to remove","forms":["poistaa"]},
+{"w":"teidän","ru":"your (genitive of te)","forms":["teidän"]},
+{"w":"lähettää","ru":"to send","forms":["lähetetään"]},
+{"w":"apteekki","ru":"pharmacy","forms":["apteekkiin"]},
+{"w":"kiitollinen","ru":"grateful","forms":["kiitollinen"]},
+{"w":"asunto","ru":"flat, housing","forms":["asunto","asuntoa","asuntoon"]},
+{"w":"kolmio","ru":"three-room flat","forms":["kolmio"]},
+{"w":"väliseinä","ru":"partition wall","forms":["väliseinän"]},
+{"w":"purkaa","ru":"to take down, to demolish","forms":["purkaa"]},
+{"w":"kaksio","ru":"two-room flat","forms":["kaksio"]},
+{"w":"hissi","ru":"lift, elevator","forms":["hissi"]},
+{"w":"teettää","ru":"to have work done, to commission","forms":["teettää"]},
+{"w":"vuosi","ru":"year","forms":["vuoden"]},
+{"w":"huomio","ru":"attention (ottaa huomioon — to take into account)","forms":["huomioon"]},
+{"w":"remontoida","ru":"to renovate","forms":["remontoimme"]},
+{"w":"ostaa","ru":"to buy","forms":["ostan"]},
+{"w":"lamppu","ru":"lamp","forms":["lampun","lamppu"]},
+{"w":"kassa","ru":"till, checkout","forms":["kassalla","kassalle"]},
+{"w":"ihmetellä","ru":"to wonder, to be surprised","forms":["ihmettelen"]},
+{"w":"hinta","ru":"price","forms":["hinta"]},
+{"w":"korkea","ru":"high (korkeampi — higher)","forms":["korkeampi"]},
+{"w":"eikö","ru":"isn’t it…? / don’t they…?","forms":["eikö"]},
+{"w":"olekaan","ru":"“eikö … olekaan” — isn’t it … after all? (surprise)","forms":["olekaan"]},
+{"w":"alennus","ru":"discount","forms":["alennuksessa"]},
+{"w":"euro","ru":"euro","forms":["euroa"]},
+{"w":"hintalappu","ru":"price tag","forms":["hintalappu"]},
+{"w":"olla","ru":"to be (olimme unohtaneet — we had forgotten)","forms":["olimme"]},
+{"w":"unohtaa","ru":"to forget","forms":["unohtaneet"]},
+{"w":"hylly","ru":"shelf","forms":["hyllyyn"]},
+{"w":"kuuluttaja","ru":"announcer","forms":["kuuluttaja"]},
+{"w":"arvoisa","ru":"dear","forms":["arvoisat"]},
+{"w":"asiakas","ru":"customer, shopper","forms":["asiakkaat"]},
+{"w":"sulkeutua","ru":"to close","forms":["sulkeutuu"]},
+{"w":"minuutti","ru":"minute","forms":["minuutin"]},
+{"w":"kuluttua","ru":"in (of time)","forms":["kuluttua"]},
+{"w":"maksaa","ru":"to pay","forms":["maksattehan"]},
+{"w":"ostokset","ru":"purchases","forms":["ostoksenne"]},
+{"w":"tarjousluettelo","ru":"sales catalogue","forms":["tarjousluettelon"]},
+{"w":"löytää","ru":"to find","forms":["löydätte"]},
+{"w":"toivottaa","ru":"to wish","forms":["toivotamme"]},
+{"w":"viihtyisä","ru":"cosy, pleasant","forms":["viihtyisää"]},
+{"w":"viikonloppu","ru":"weekend","forms":["viikonloppua"]},
+{"w":"kaveri","ru":"friend, mate","forms":["kaverini"]},
+{"w":"uusi","ru":"new","forms":["uuteen"]},
+{"w":"sanoa","ru":"to say","forms":["sanon"]},
+{"w":"hypätä","ru":"to jump (hyppää bussiin — hop on the bus)","forms":["hyppää"]},
+{"w":"bussi","ru":"bus","forms":["bussiin"]},
+{"w":"sinä","ru":"you","forms":["sinua"]},
+{"w":"pysäkki","ru":"stop","forms":["pysäkille"]},
+{"w":"tulla vastaan","ru":"to meet (on the way)","forms":["vastaan"]},
+{"w":"poistaa","ru":"to remove, to clear","forms":["poistammeko"]},
+{"w":"käytävä","ru":"passage, corridor","forms":["käytävän"]},
+{"w":"minä","ru":"I (minusta — in my opinion)","forms":["minusta"]},
+{"w":"käytännöllinen","ru":"practical","forms":["käytännöllisempi"]},
+{"w":"toinen","ru":"other, second","forms":["toinen"]},
+{"w":"reitti","ru":"route","forms":["reitti"]},
+{"w":"oma","ru":"own","forms":["oma"]},
+{"w":"yritys","ru":"company, enterprise","forms":["yritys","yritykselleen"]},
+{"w":"pankkitili","ru":"bank account","forms":["pankkitilin"]},
+{"w":"pankki","ru":"bank","forms":["pankissa"]},
+{"w":"täyttää","ru":"to fill in","forms":["täyttää"]},
+{"w":"näyttää","ru":"to show","forms":["näyttää"]},
+{"w":"ehto","ru":"condition, term","forms":["ehdot"]},
+{"w":"hyvä","ru":"good","forms":["hyvät"]},
+{"w":"pankkitoimihenkilö","ru":"bank employee","forms":["pankkitoimihenkilöt"]},
+{"w":"avulias","ru":"helpful","forms":["avuliaita"]},
+{"w":"vaateliike","ru":"clothing shop","forms":["vaateliikkeessään"]},
+{"w":"vaate","ru":"garment","forms":["vaatteita","vaatteen","vaatteeseen"]},
+{"w":"asiakas","ru":"customer, shopper","forms":["asiakas","asiakkaalle"]},
+{"w":"tietty","ru":"certain, particular","forms":["tietyksi"]},
+{"w":"aika","ru":"time; period","forms":["ajaksi"]},
+{"w":"jos","ru":"if","forms":["jos"]},
+{"w":"tykästyä","ru":"to take a liking","forms":["tykästyy"]},
+{"w":"lunastaa","ru":"to buy out, to redeem","forms":["lunastaa"]},
+{"w":"itse","ru":"self (itselleen — for oneself)","forms":["itselleen"]},
+{"w":"mallikappale","ru":"sample","forms":["mallikappaleita"]},
+{"w":"vuokrata","ru":"to rent (vuokraaminen — renting)","forms":["vuokraaminen"]},
+{"w":"konsepti","ru":"concept, format","forms":["konsepti"]},
+{"w":"ravintola","ru":"restaurant","forms":["ravintolassa"]},
+{"w":"lounasaika","ru":"lunchtime","forms":["lounasaika"]},
+{"w":"tulla","ru":"to come (tulkaa — come)","forms":["tulkaa"]},
+{"w":"ruokalista","ru":"menu","forms":["ruokalistalta"]},
+{"w":"tuore","ru":"fresh","forms":["tuoretta"]},
+{"w":"lasillinen","ru":"a glass of something","forms":["lasillista"]},
+{"w":"vissy","ru":"sparkling water (colloq.)","forms":["vissyä"]},
+{"w":"omenapiirakka","ru":"apple pie","forms":["omenapiirakkaa"]},
+{"w":"piirakka","ru":"pie","forms":["piirakka"]},
+{"w":"viileä","ru":"cool","forms":["viileä"]},
+{"w":"tarjota","ru":"to offer, to treat","forms":["tarjoamme"]},
+{"w":"ilmainen","ru":"free (ilmaiseksi — for free)","forms":["ilmaiseksi"]},
+{"w":"kirjakauppa","ru":"bookshop","forms":["kirjakaupassa","kirjakaupan"]},
+{"w":"juuri","ru":"just, just now","forms":["juuri"]},
+{"w":"kaunokirjallisuus","ru":"fiction","forms":["kaunokirjallisuutta"]},
+{"w":"kirjailija","ru":"writer","forms":["kirjailija"]},
+{"w":"voittaa","ru":"to win","forms":["voittanut"]},
+{"w":"useita","ru":"several","forms":["useita"]},
+{"w":"palkinto","ru":"prize, award","forms":["palkintoja"]},
+{"w":"lukea","ru":"to read (olin lukemassa — I was just reading)","forms":["lukemassa"]},
+{"w":"romaani","ru":"novel","forms":["romaaniaan"]},
+{"w":"pitää","ru":"to like","forms":["pidin"]},
+{"w":"tapetointi","ru":"wallpapering","forms":["tapetoinut","tapetoinnissa","tapetointi"]},
+{"w":"tuttava","ru":"acquaintance","forms":["tuttaviemme"]},
+{"w":"koti","ru":"home","forms":["koteja"]},
+{"w":"ihanko totta","ru":"really?","forms":["ihanko"]},
+{"w":"tietää","ru":"to know (en tiennytkään — I didn’t even know)","forms":["tiennytkään"]},
+{"w":"aavistus","ru":"hunch, idea (ei aavistustakaan — no idea at all)","forms":["aavistustakaan"]},
+{"w":"rautakauppa","ru":"hardware shop","forms":["rautakaupassa"]},
+{"w":"kesätyö","ru":"summer job","forms":["kesätöissä"]},
+{"w":"tarvita","ru":"to need","forms":["tarvitaan"]},
+{"w":"luotilanka","ru":"plumb line","forms":["luotilanka"]},
+{"w":"lanka","ru":"thread","forms":["lanka"]},
+{"w":"varassa","ru":"on something; hangs from","forms":["varassa"]},
+{"w":"roikkua","ru":"to hang","forms":["roikkuu"]},
+{"w":"punnus","ru":"weight","forms":["punnus"]},
+{"w":"ennen vanhaan","ru":"in the old days","forms":["vanhaan"]},
+{"w":"käynnissä","ru":"in progress, under way","forms":["käynnissä"]},
+{"w":"onnistua","ru":"to work out, to succeed","forms":["onnistu"]},
+{"w":"remontti","ru":"renovation","forms":["remontista"]},
+{"w":"puhua","ru":"to speak (passive past)","forms":["puhuttiin"]},
+{"w":"osastopäällikkö","ru":"head of department","forms":["osastopäällikkö"]},
+{"w":"ihmetellä","ru":"to wonder, to be surprised","forms":["ihmettelee"]},
+{"w":"raportti","ru":"report","forms":["raportti"]},
+{"w":"olla myöhässä","ru":"to be late, to be delayed","forms":["myöhässä"]},
+{"w":"tulostin","ru":"printer","forms":["tulostin"]},
+{"w":"rikki","ru":"broken","forms":["rikki"]},
+{"w":"viimeistään","ru":"at the latest","forms":["viimeistään"]},
+{"w":"pysyä","ru":"to stay (pysyäksemme aikataulussa — to keep to the schedule)","forms":["pysyäksemme"]},
+{"w":"aikataulu","ru":"schedule","forms":["aikataulussa"]},
+{"w":"tulostaa","ru":"to print","forms":["tulostan"]},
+{"w":"kopiokeskus","ru":"copy centre","forms":["kopiokeskuksessa"]},
+{"w":"saada","ru":"to get; saanko — may I","forms":["saanko"]},
+{"w":"keskeyttää","ru":"to interrupt","forms":["keskeyttää"]},
+{"w":"tavallinen","ru":"ordinary","forms":["tavallinen"]},
+{"w":"viljelypalsta","ru":"allotment plot","forms":["viljelypalstan","palstan"]},
+{"w":"paikallinen","ru":"local","forms":["paikalliseen"]},
+{"w":"jokin","ru":"some (joillakin alueilla — in some areas)","forms":["joillakin"]},
+{"w":"alue","ru":"area, district","forms":["alueilla"]},
+{"w":"ilkivalta","ru":"vandalism","forms":["ilkivaltaa"]},
+{"w":"ongelma","ru":"problem","forms":["ongelma"]},
+{"w":"kirjoittaa","ru":"to write","forms":["kirjoitan"]},
+{"w":"kylpyhuone","ru":"bathroom","forms":["kylpyhuoneen"]},
+{"w":"pyytää","ru":"to ask","forms":["pyydän"]},
+{"w":"ystävällisesti","ru":"kindly","forms":["ystävällisesti"]},
+{"w":"aloittaminen","ru":"beginning, start","forms":["aloittamiseen"]},
+{"w":"yhteystiedot","ru":"contact details","forms":["yhteystietoni"]},
+{"w":"vastaus","ru":"answer","forms":["vastaustanne"]},
+{"w":"valittaa","ru":"to complain","forms":["valita"]},
+{"w":"sisko","ru":"sister","forms":["siskoni"]},
+{"w":"ihminen","ru":"person","forms":["ihminen","ihmisten"]},
+{"w":"asua","ru":"to live","forms":["asuu"]},
+{"w":"kuunnella","ru":"to listen","forms":["kuuntelen"]},
+{"w":"uutiset","ru":"news","forms":["uutisia"]},
+{"w":"lentomatkustaminen","ru":"air travel","forms":["lentomatkustaminen"]},
+{"w":"tuottaa","ru":"to produce, to bring","forms":["tuottaa"]},
+{"w":"perustua","ru":"to be based on","forms":["perustuu"]},
+{"w":"tuhat","ru":"thousand","forms":["tuhansien"]},
+{"w":"vastaus","ru":"answer","forms":["vastauksiin"]},
+{"w":"lääke","ru":"medicine","forms":["lääkkeiden"]},
+{"w":"mainostaminen","ru":"advertising","forms":["mainostaminen"]},
+{"w":"hyödyllinen","ru":"useful","forms":["hyödyllistä"]},
+{"w":"turha","ru":"useless, pointless","forms":["turhaa"]},
+{"w":"hoitopaikka","ru":"childcare place","forms":["hoitopaikan"]},
+{"w":"valinta","ru":"choice","forms":["valinnassa"]},
+{"w":"jokainen","ru":"every, each","forms":["jokaisella"]},
+{"w":"näkökulma","ru":"point of view","forms":["näkökulmansa"]},
+{"w":"työpaikka","ru":"workplace","forms":["työpaikka","työpaikassa","uudessa"]},
+{"w":"seuraava","ru":"next","forms":["seuraavassa"]},
+{"w":"puisto","ru":"park","forms":["puiston"]},
+{"w":"sinun","ru":"your (genitive of sinä)","forms":["sinun"]},
+{"w":"työtoveri","ru":"colleague","forms":["työtoverin"]},
+{"w":"hänen pöytänsä","ru":"his/her desk (hänen + ending -nsa: his/her own)","forms":["pöytänsä"]},
+{"w":"kynä","ru":"pen, pencil","forms":["kynääsi"]},
+{"w":"varasto","ru":"stock, storeroom","forms":["varastossa"]},
+{"w":"uusi työpaikka","ru":"new workplace","forms":["uudessa","työpaikassa"]},
+{"w":"haluta","ru":"to want","forms":["halunnut","haluan"]},
+{"w":"olla","ru":"to be","forms":["olla"]},
+{"w":"töihin","ru":"to work (where to)","forms":["töihin"]},
+{"w":"oppia","ru":"to learn","forms":["oppia"]},
+{"w":"jaksaa","ru":"to have the strength","forms":["jaksa"]},
+{"w":"kaikki","ru":"all, everything","forms":["kaikkea"]},
+{"w":"heti","ru":"at once","forms":["heti"]},
+{"w":"osata","ru":"to know how to","forms":["osaan"]},
+{"w":"ohjelmoida","ru":"to program","forms":["ohjelmoida"]},
+{"w":"suomi","ru":"Finnish language","forms":["suomea"]},
+{"w":"meinata","ru":"to intend","forms":["meinaan"]},
+{"w":"kotiin","ru":"home (where to)","forms":["kotiin"]},
+{"w":"loppuviikko","ru":"end of the week","forms":["loppuviikkoa"]},
+{"w":"nukkumaanmeno","ru":"going to bed","forms":["nukkumaanmenoa"]},
+{"w":"mennä","ru":"to go","forms":["menen"]},
+{"w":"metri","ru":"metre","forms":["metriä"]},
+{"w":"sekunti","ru":"second","forms":["sekunnissa"]},
+{"w":"laukku","ru":"bag","forms":["laukkuun"]},
+{"w":"lätäkkö","ru":"puddle","forms":["lätäköstä","lätäkköön"]},
+{"w":"avata","ru":"to open","forms":["avatkaa"]},
+{"w":"lääke","ru":"medicine","forms":["lääke"]},
+{"w":"lepo","ru":"rest","forms":["lepo"]},
+{"w":"saada","ru":"to get, to receive","forms":["saatte"]},
+{"w":"sairausloma","ru":"sick leave, sick note","forms":["sairausloman"]},
+{"w":"taas","ru":"again","forms":["taas"]},
+{"w":"sisko","ru":"sister","forms":["siskolleni"]},
+{"w":"leveä","ru":"wide","forms":["leveämmän"]},
+{"w":"vuodenaika","ru":"season","forms":["vuodenajat"]},
+{"w":"muu","ru":"other, another","forms":["muut"]},
+{"w":"vanha","ru":"old","forms":["vanhaa"]},
+{"w":"kirjoittaa","ru":"to write","forms":["kirjoittaa"]},
+{"w":"sähköpostiviesti","ru":"email","forms":["sähköpostiviestin"]},
+{"w":"hämärä","ru":"dusk, half-dark","forms":["hämärää"]},
+{"w":"silloin","ru":"then","forms":["silloin"]},
+{"w":"välillä","ru":"sometimes, from time to time","forms":["välillä"]},
+{"w":"meidän","ru":"our (genitive of me)","forms":["meidän"]},
+{"w":"tarvita","ru":"to need","forms":["tarvitsee","tarvitaan","tarvinnut"]},
+{"w":"kysymys","ru":"question","forms":["kysymykseen"]},
+{"w":"ajatella","ru":"to think","forms":["ajattelee"]},
+{"w":"pyytää","ru":"to ask","forms":["pyytää"]},
+{"w":"lopuksi","ru":"finally, at the end","forms":["lopuksi"]},
+{"w":"veli","ru":"brother","forms":["veljeni"]},
+{"w":"kertoja","ru":"narrator","forms":["kertoja","kertojalla","kertojan"]},
+{"w":"minne","ru":"where to","forms":["minne","mihin"]},
+{"w":"sade","ru":"rain","forms":["sateesta","sadetta"]},
+{"w":"kirja","ru":"book","forms":["kirjoista"]},
+{"w":"pestä","ru":"to wash","forms":["pesen"]},
+{"w":"päärynä","ru":"pear","forms":["päärynän"]},
+{"w":"pasta","ru":"pasta","forms":["pastan","pastaa"]},
+{"w":"mennä","ru":"to go","forms":["menevät","menen"]},
+{"w":"elokuva","ru":"film","forms":["elokuvista"]},
+{"w":"väri","ru":"colour (minkä värisiä — what colour)","forms":["värisiä"]},
+{"w":"hakea","ru":"to look for; to fetch","forms":["hakee"]},
+{"w":"ystävä","ru":"friend","forms":["ystävälläni","ystävänsä","ystävää"]},
+{"w":"koira","ru":"dog","forms":["koiraa","koirista","koirat"]},
+{"w":"hyvä","ru":"good","forms":["hyvästä"]},
+{"w":"päivä","ru":"day","forms":["päivästä","päivässä"]},
+{"w":"monta","ru":"how many (kuinka monta — how many)","forms":["monta"]},
+{"w":"juhla","ru":"holiday, celebration","forms":["juhlaa"]},
+{"w":"viettää","ru":"to spend, to celebrate","forms":["vietetään"]},
+{"w":"piha","ru":"yard","forms":["pihasta"]},
+{"w":"isoäiti","ru":"grandmother","forms":["isoäidin"]},
+{"w":"huominen","ru":"tomorrow, the next day","forms":["huomiselle","huomisesta"]},
+{"w":"suunta","ru":"direction","forms":["suuntaan"]},
+{"w":"kääntyä","ru":"to turn","forms":["käännytään"]},
+{"w":"kuka","ru":"who (kenen — whose; kenelle — to whom)","forms":["kenen","kenelle"]},
+{"w":"laina","ru":"loan (lainaksi — on loan)","forms":["lainaksi"]},
+{"w":"työtoveri","ru":"colleague","forms":["työtoverini","työtovereista"]},
+{"w":"usein","ru":"often","forms":["usein"]},
+{"w":"kynä","ru":"pen, pencil","forms":["kynääni"]},
+{"w":"milloin","ru":"when","forms":["milloin"]},
+{"w":"projekti","ru":"project","forms":["projektista"]},
+{"w":"haluta","ru":"to want","forms":["haluan","haluaisin","halua"]},
+{"w":"keittiö","ru":"kitchen","forms":["keittiöön"]},
+{"w":"lätäkkö","ru":"puddle","forms":["lätäköistä"]},
+{"w":"ulkona","ru":"outside","forms":["ulkona"]},
+{"w":"laukku","ru":"bag","forms":["laukkuun","laukussa"]},
+{"w":"pitää","ru":"to like (pidin — I liked)","forms":["pidin","pitävät"]},
+{"w":"palata","ru":"to return","forms":["palasin"]},
+{"w":"lääkäri","ru":"doctor","forms":["lääkärin"]},
+{"w":"hoito","ru":"treatment","forms":["hoidosta"]},
+{"w":"ostaa","ru":"to buy","forms":["ostaa"]},
+{"w":"työpaikka","ru":"workplace","forms":["työpaikka"]},
+{"w":"avain","ru":"key","forms":["avainta"]},
+{"w":"kirjoittaa","ru":"to write","forms":["kirjoittaja","kirjoittaa"]},
+{"w":"toiminto","ru":"function","forms":["uudesta","toiminnosta"]},
+{"w":"teksti","ru":"text (tekstin mukaan — according to the text)","forms":["tekstin"]},
+{"w":"puu","ru":"tree","forms":["puille"]},
+{"w":"matkalaukku","ru":"suitcase","forms":["matkalaukulle"]},
+{"w":"tapahtua","ru":"to happen","forms":["tapahtui","tapahtuu"]},
+{"w":"päästä","ru":"to get (somewhere)","forms":["pääsee"]},
+{"w":"posti","ru":"post office","forms":["postin","postissa"]},
+{"w":"luokka","ru":"class","forms":["luokat"]},
+{"w":"erota","ru":"to differ","forms":["eroavat"]},
+{"w":"lentokenttä","ru":"airport","forms":["lentokentältä","lentokentällä"]},
+{"w":"täyttää","ru":"to fill in","forms":["täytän"]},
+{"w":"lomake","ru":"form","forms":["lomakkeen"]},
+{"w":"kotiosoite","ru":"home address","forms":["kotiosoitteeni"]},
+{"w":"raitiovaunu","ru":"tram","forms":["raitiovaunun"]},
+{"w":"jäädä pois","ru":"to get off (a vehicle); to stay","forms":["jään","jäin"]},
+{"w":"hotelli","ru":"hotel","forms":["hotellissa"]},
+{"w":"lähettää","ru":"to send","forms":["lähetän"]},
+{"w":"postikortti","ru":"postcard","forms":["postikortin"]},
+{"w":"ukkonen","ru":"thunder, thunderstorm","forms":["ukkosta"]},
+{"w":"tihkusade","ru":"drizzle","forms":["tihkusadetta"]},
+{"w":"ehtiä","ru":"to make it in time","forms":["ehtii","ehditään"]},
+{"w":"keskustelija","ru":"interlocutor, the other person","forms":["keskustelija"]},
+{"w":"ilmoittautuminen","ru":"registration, enrolment","forms":["ilmoittautumiseen"]},
+{"w":"millainen","ru":"what kind of","forms":["millaiseksi"]},
+{"w":"kuvailla","ru":"to describe","forms":["kuvailee"]},
+{"w":"itse","ru":"self","forms":["itseään"]},
+{"w":"viikonloppu","ru":"weekend","forms":["viikonlopuksi"]},
+{"w":"lomasuunnitelma","ru":"holiday plans","forms":["lomasuunnitelmista"]},
+{"w":"soittaa","ru":"to call, to phone","forms":["soitti"]},
+{"w":"liukastuminen","ru":"slipping","forms":["liukastumisen"]},
+{"w":"jälkeen","ru":"after","forms":["jälkeen"]},
+{"w":"viime","ru":"last, previous","forms":["viime"]},
+{"w":"lämmetä","ru":"to get warmer","forms":["lämpenee"]},
+{"w":"yhä","ru":"still","forms":["yhä"]},
+{"w":"varovainen","ru":"careful","forms":["varovainen"]},
+{"w":"vialla","ru":"faulty, not working","forms":["vialla"]},
+{"w":"takuu","ru":"warranty","forms":["takuusta"]},
+{"w":"jää","ru":"ice","forms":["jäällä"]},
+{"w":"viesti","ru":"message","forms":["viestissä"]},
+{"w":"kännykkä","ru":"mobile phone","forms":["kännykkää"]},
+{"w":"sattua","ru":"to happen; to hurt","forms":["sattuu"]},
+{"w":"hammaslääkäri","ru":"dentist","forms":["hammaslääkärille"]},
+{"w":"tulla","ru":"to come","forms":["tulla","tulemaan"]},
+{"w":"kolmio","ru":"three-room flat","forms":["kolmion"]},
+{"w":"kaksio","ru":"two-room flat","forms":["kaksioksi"]},
+{"w":"asunto","ru":"flat","forms":["asunnon","asuntomme"]},
+{"w":"ostaja","ru":"buyer","forms":["ostajan"]},
+{"w":"kaiutin","ru":"loudspeaker","forms":["kaiuttimesta"]},
+{"w":"kuuluttaa","ru":"to announce","forms":["kuulutetaan"]},
+{"w":"neuvoa","ru":"to advise; to give directions","forms":["neuvoo"]},
+{"w":"purkaa","ru":"to take down, to demolish","forms":["puretaan"]},
+{"w":"taloyhtiö","ru":"housing company","forms":["taloyhtiössä"]},
+{"w":"pahoitella","ru":"to apologise","forms":["pahoitteli"]},
+{"w":"virhe","ru":"mistake","forms":["virhettä"]},
+{"w":"metro","ru":"metro","forms":["metrolla"]},
+{"w":"hypätä","ru":"to jump; to change","forms":["hyppäsin"]},
+{"w":"mielipide","ru":"opinion","forms":["mielipiteensä"]},
+{"w":"vaikka","ru":"although","forms":["vaikka"]},
+{"w":"liike","ru":"shop, establishment","forms":["liikkeessään","liikkeessä"]},
+{"w":"erikoinen","ru":"special","forms":["erikoista"]},
+{"w":"miellyttää","ru":"to please, to be liked","forms":["miellyttää"]},
+{"w":"piirakka","ru":"pie","forms":["piirakassa"]},
+{"w":"yritys","ru":"company; business","forms":["yritykselleen"]},
+{"w":"vaate","ru":"garment","forms":["vaatteita","vaatteiden"]},
+{"w":"mallikappale","ru":"sample","forms":["mallikappaleet"]},
+{"w":"viileä","ru":"cool","forms":["viileän"]},
+{"w":"tarjota","ru":"to offer, to treat","forms":["tarjosi"]},
+{"w":"etsiä","ru":"to look for","forms":["etsivät"]},
+{"w":"tulla","ru":"to come","forms":["tulevat"]},
+{"w":"sesonki","ru":"season","forms":["sesongin"]},
+{"w":"aikana","ru":"during","forms":["aikana"]},
+{"w":"asiakas","ru":"customer","forms":["asiakkaita"]},
+{"w":"pankki","ru":"bank","forms":["pankin"]},
+{"w":"toivoa","ru":"to hope","forms":["toivoo"]},
+{"w":"apu","ru":"help","forms":["avusta"]},
+{"w":"kiinnostunut","ru":"interested","forms":["kiinnostunut"]},
+{"w":"estää","ru":"to prevent","forms":["esti"]},
+{"w":"raportti","ru":"report","forms":["raportin"]},
+{"w":"valmistuminen","ru":"completion","forms":["valmistumisen"]},
+{"w":"juhlasali","ru":"party hall","forms":["juhlasalin"]},
+{"w":"syntymäpäiväjuhla","ru":"birthday party","forms":["syntymäpäiväjuhlia"]},
+{"w":"varten","ru":"for","forms":["varten"]},
+{"w":"me","ru":"we (meitä on — there are … of us)","forms":["meitä"]},
+{"w":"noin","ru":"about","forms":["noin"]},
+{"w":"henki","ru":"persons (of the number of guests)","forms":["henkeä"]},
+{"w":"tilaisuus","ru":"event","forms":["tilaisuus"]},
+{"w":"maksaa","ru":"to cost","forms":["maksaisi"]},
+{"w":"apteekki","ru":"pharmacy","forms":["apteekissa"]},
+{"w":"suositella","ru":"to recommend","forms":["suosittelisitte"]},
+{"w":"vaiva","ru":"ailment","forms":["vaivaan"]},
+{"w":"isännöitsijä","ru":"building manager","forms":["isännöitsijältä"]},
+{"w":"uutiset","ru":"news","forms":["uutisissa"]},
+{"w":"kertoa","ru":"to tell","forms":["kerrotaan"]},
+{"w":"ensimmäinen","ru":"first","forms":["ensimmäisessä"]},
+{"w":"puhelu","ru":"call","forms":["puhelussa"]},
+{"w":"apteekkilainen","ru":"pharmacist","forms":["apteekkilainen"]},
+{"w":"lääke","ru":"medicine","forms":["lääkkeestä"]},
+{"w":"vastata","ru":"to answer","forms":["vastaa"]},
+];
+const READINGS = [
+{"id":"RD_AB_1","after":"AB_S1_05","title":"Helen ja Liisa","listen":false,"text":["Hyvää päivää! Minä olen Helen. Tuo on Liisa. Hän on koulussa ja varmaan vähän väsynyt. Hauska tutustua, Liisa! Tervetuloa!","Tässä on kahvi ja tuo on tee. Tämä on lasi ja tuo on lautanen. — Mikä tämä on? — Se on sokeria. — Entä tuo? — Se on suolaa. — Kiitos! Tarvitsen vielä teetä.","Tuo on kissa. Se on hauska kissa. — Miten menee, Liisa? — Ihan hyvin, kiitos! Entä sinä? — Loistavasti!"],"ru":["Good afternoon! I’m Helen. This is Liisa. She is at school and probably a little tired. Nice to meet you, Liisa! Welcome!","Here is coffee, and that is tea. This is a glass, and that is a plate. — What is this? — It’s sugar. — And that? — It’s salt. — Thank you! I still need some tea.","Over there is a cat. It’s funny. — How are you, Liisa? — Quite well, thanks! And you? — Brilliant!"],"extra":[],"quiz":[{"q":"Mitä Helen sanoo Liisasta?","r":"What does Helen say about Liisa?","o":["Hän on kotona ja hyvin hauska.","Hän on töissä eikä ole väsynyt.","Hän on koulussa ja varmaan vähän väsynyt."],"t":["She is at home and very cheerful","She is at work and not tired at all","She is at school and probably a little tired"],"a":2},{"q":"Mitä Helen näyttää pöydällä?","r":"What does Helen show on the table?","o":["Kahvi, tee, lasi ja lautanen.","Vain tee ja sokeri.","Kahvi ja suola."],"t":["Coffee, tea, a glass and a plate","Only tea and sugar","Coffee and salt"],"a":0},{"q":"Mitä Helen vastaa, kun Liisa kysyy: mikä tämä on?","r":"What does Helen answer when Liisa asks about “tämä”?","o":["Se on suolaa.","Se on sokeria.","Se on teetä."],"t":["It’s salt","It’s sugar","It’s tea"],"a":1},{"q":"Mitä Liisa tarvitsee vielä?","r":"What else does Liisa need?","o":["Vielä kahvia.","Vielä teetä.","Vielä suolaa."],"t":["More coffee","More tea","More salt"],"a":1},{"q":"Mitä Liisa vastaa kysymykseen: miten menee?","r":"How does Liisa answer the question “Miten menee?”","o":["Huonosti.","Ihan hyvin, kiitos.","Loistavasti."],"t":["Badly","Quite well, thanks","Brilliantly"],"a":1}]},
+{"id":"RD_AB_2","after":"AB_S1_10","title":"Vaihto-oppilas Suomessa","listen":true,"text":["Hyvää päivää! Minä olen Tom. Hauska tutustua! Tuo on Aino. Hän on koulussa ja varmaan vähän väsynyt. — Miten menee, Aino? — Ihan hyvin, kiitos! Entä sinä? — Loistavasti!","Hei! Minä olen Tom. Olen australialainen vaihto-oppilas. Käyn koulua Suomessa. Suomi on kovin vaikea, mutta hauska.","Tänään olen Ainon kotona. Ainon äiti on keittiössä. Ainon isä on vieressä. Ainon veli on iso poika. Isoäiti ja isoisä ovat myös täällä.","— Otatko salaattia? — Kyllä kiitos! Onko tuo omenaa? — Ei, se on päärynää. — Saisinko maitoa? — Ole hyvä. — Mustikkapiirakka on herkullista! Saisinko lisää? — Totta kai!"],"ru":["Good afternoon! I’m Tom. Nice to meet you! This is Aino. She is at school and probably a little tired. — How are you, Aino? — Quite well, thanks! And you? — Brilliant!","Hi! I’m Tom. I’m an Australian exchange student. I go to school in Finland. Finnish is very hard, but fun.","Today I’m at Aino’s home. Aino’s mother is in the kitchen. Aino’s father is nearby. Aino’s brother is a big boy. Grandmother and grandfather are here too.","— Will you have some salad? — Yes, please! Is that an apple? — No, it’s a pear. — May I have some milk? — Here you are. — The blueberry pie is delicious! May I have more? — Of course!"],"extra":[],"quiz":[{"q":"Mistä Tom on?","r":"Where is Tom from?","o":["Hän on australialainen.","Hän on suomalainen.","Hän on ruotsalainen."],"t":["From Australia","From Finland","From Sweden"],"a":0},{"q":"Mitä Tom ajattelee suomesta?","r":"What does Tom think about the Finnish language?","o":["Kovin vaikea, mutta hauska.","Helppo ja tylsä.","En ymmärrä mitään."],"t":["Very hard, but fun","Easy and boring","Totally incomprehensible"],"a":0},{"q":"Missä Ainon äiti on?","r":"Where is Aino’s mother?","o":["Koulussa.","Keittiössä.","Kaupassa."],"t":["At school","In the kitchen","In the shop"],"a":1},{"q":"Mitä tuo oli, josta Tom kysyi: «Onko tuo omenaa?»","r":"What turned out to be the thing Tom asked about: “Onko tuo omenaa?”","o":["Omena.","Mustikka.","Päärynä."],"t":["An apple","A blueberry","A pear"],"a":2},{"q":"Mitä Tom pyytää lopuksi lisää?","r":"What does Tom ask for more of at the end?","o":["Lisää maitoa.","Lisää salaattia.","Lisää mustikkapiirakkaa."],"t":["More milk","More salad","More blueberry pie"],"a":2},{"q":"Kuka on varmaan vähän väsynyt?","r":"Who is probably a little tired?","o":["Aino.","Tom.","Äiti."],"t":["Aino","Tom","Mother"],"a":0}]},
+{"id":"RD_AB_3","after":"AB_S1_15","title":"Sateinen päivä","listen":false,"text":["Minä olen Aino. Veljeni Jussi on iso poika. Äiti on keittiössä, ja isä on vieressä. Tarvitsen vielä teetä ja vähän sokeria. — Ole hyvä! — Kiitos!","Isoäiti ottaa kahvia, isoisä ottaa teetä, ja minä otan maitoa. — Onko tuo omenaa? — Ei, se on päärynää.","Tänään sataa. Katson ennustetta: huomenna ei sada, mutta tänään tarvitsen sateenvarjon. En pelaa sählyä tänään, koska en pidä sateesta.","Kotona soitan kitaraa ja luen kirjaa. Isä laittaa ruokaa keittiössä: — Auta minua, Aino! Hae voita jääkaapista. Pese kala. Laita pasta kulhoon. Älä unohda vettä!","— Selvä! Haen voita jääkaapista. Sitten kaadan vettä lasiin ja laitan kalan uuniin. Pasta on jo kulhossa. — Hienoa!"],"ru":["I’m Aino. My brother Jussi is a big boy. Mother is in the kitchen and father is nearby. I still need some tea and a little sugar. — Here you are! — Thanks!","Grandmother takes coffee, grandfather takes tea, and I take milk. — Is that an apple? — No, it’s a pear.","It’s raining today. I’m checking the forecast: tomorrow it won’t rain, but today I need an umbrella. I’m not playing floorball today because I don’t like rain.","At home I play the guitar and read a book. Father is cooking in the kitchen: — Help me, Aino! Get the butter from the fridge. Wash the fish. Put the pasta in the bowl. Don’t forget the water!","— Got it! I’m getting the butter from the fridge. Then I’ll pour some water into the glass and put the fish in the oven. The pasta is already in the bowl. — Great!"],"extra":[],"quiz":[{"q":"Millainen sää on tänään?","r":"What is the weather like today?","o":["Sataa.","Aurinko paistaa.","Sataa lunta."],"t":["It is raining","The sun is shining","It is snowing"],"a":0},{"q":"Miksi kertoja ei pelaa tänään sählyä?","r":"Why isn’t the narrator playing floorball today?","o":["Koska hän on väsynyt.","Koska hän ei pidä sateesta.","Koska käsi on kipeä."],"t":["Because he is tired","Because he doesn’t like rain","Because his arm hurts"],"a":1},{"q":"Mitä kertoja tekee kotona?","r":"What does the narrator do at home?","o":["Hän ui ja pelaa sählyä.","Hän soittaa kitaraa ja lukee kirjaa.","Hän katsoo televisiota ja nukkuu."],"t":["Swims and plays floorball","Plays the guitar and reads","Watches TV and sleeps"],"a":1},{"q":"Mistä Ainon pitää hakea voita?","r":"Where must Aino get the butter from?","o":["Kaapista.","Uunista.","Jääkaapista."],"t":["From the cupboard","From the oven","From the fridge"],"a":2},{"q":"Minne Aino laittaa kalan?","r":"Where does Aino put the fish?","o":["Uuniin.","Kulhoon.","Jääkaappiin."],"t":["In the oven","In the bowl","In the fridge"],"a":0},{"q":"Mitä Aino tarvitsee vielä?","r":"What else does Aino need?","o":["Maitoa ja salaattia.","Kahvia ja suolaa.","Teetä ja vähän sokeria."],"t":["Milk and salad","Coffee and salt","Tea and a little sugar"],"a":2}]},
+{"id":"RD_AB_4","after":"AB_S1_20","title":"Elokuvailta","listen":true,"text":["Hei! Minä olen Sari. Tänään sataa, ja tuuli on kylmä. Sateenvarjo on kaapissa. En pidä sateesta, mutta pidän kirjoista. Luen paljon, ja soitan myös kitaraa.","Kotona laitan ruokaa keittiössä. Haen maitoa jääkaapista, pesen päärynän ja laitan pastan kulhoon. Isä auttaa minua. — Auta vähän! — Selvä!","Sari ja minä menemme tänään kirjastoon. Mennäänkö sitten elokuviin? — Ajatus on hyvä, tulen mielelläni mukaan!","Pidän komediasta, mutta Sari pitää enemmän toiminnasta. Emme pidä romantiikasta. Elokuvassa on koiria ja muita eläimiä. Ne ovat todella suloisia!","Illalla olemme kotona sohvalla. Kaukosäädin on pöydällä. Karkit ovat pussissa tuolilla. Sarin hiukset ovat punaiset ja silmät ovat ruskeat. — Onko pussissa yhtään karkkia? — Ei ole yhtään!","Sari sanoo: — Tule mukaan! Mennään kirjastoon ja sitten elokuviin. Kaikki on selvä!"],"ru":["Hi! I’m Sari. It’s raining today and the wind is cold. The umbrella is in the cupboard. I don’t like rain, but I like books. I read a lot, and I also play the guitar.","At home I cook in the kitchen. I get milk from the fridge, wash a pear and put pasta in the bowl. Father helps me. — Help a little! — Got it!","Sari and I are going to the library today. Shall we go to the cinema afterwards? — Good idea, I’ll gladly come along!","I like comedies, but Sari likes action more. We don’t like romance. In the film there are dogs and other animals. They are very cute!","In the evening we are at home on the sofa. The remote is on the table. The sweets are in a bag on the chair. Sari’s hair is red and her eyes are brown. — Is there even one sweet in the bag? — There isn’t a single one!","Sari says: — Come with us! We’ll go to the library and then to the cinema. All clear!"],"extra":[],"quiz":[{"q":"Minne Sari ja kertoja menevät ensin?","r":"Where do Sari and the narrator go first?","o":["Kirjastoon.","Kauppaan.","Kouluun."],"t":["To the library","To the shop","To school"],"a":0},{"q":"Mistä elokuvista kertoja pitää?","r":"What films does the narrator like?","o":["Toimintaelokuvista.","Komedioista.","Romantiikasta."],"t":["Action","Comedies","Romance"],"a":1},{"q":"Mistä Sari pitää enemmän?","r":"What does Sari like more?","o":["Romantiikasta.","Komediasta.","Toiminnasta."],"t":["Romance","Comedies","Action"],"a":2},{"q":"Missä kaukosäädin on?","r":"Where is the remote?","o":["Sohvalla.","Tuolilla.","Pöydällä."],"t":["On the sofa","On the chair","On the table"],"a":2},{"q":"Minkä värisiä Sarin hiukset ovat?","r":"What colour is Sari’s hair?","o":["Punaiset.","Mustat.","Vaaleat."],"t":["Red","Black","Blonde"],"a":0},{"q":"Mistä Sari ei pidä?","r":"What does Sari not like?","o":["Kirjoista.","Sateesta.","Kitarasta."],"t":["Books","Rain","The guitar"],"a":1},{"q":"Mistä Sari hakee maitoa?","r":"Where does Sari get the milk from?","o":["Kaapista.","Jääkaapista.","Uunista."],"t":["From the cupboard","From the fridge","From the oven"],"a":1}]},
+{"id":"RD_AB_5","after":"AB_S1_25","title":"Kynttilät ikkunassa","listen":false,"text":["Ystävälläni on kaksi koiraa. Toinen on musta ja toinen on ruskea. Ne ovat todella suloisia eläimiä! Pidän koirista enemmän kuin kissoista.","Sää on tänään kylmä, mutta ennuste on hyvä: huomenna ei sada. Sateenvarjoa ei tarvita. Mennään elokuviin! — Hyvä ajatus, tulen mielelläni mukaan!","Tänään on itsenäisyyspäivä. Ikkunassa on viisi kynttilää ja pöydällä kolme. Yhteensä niitä on kahdeksan. Miksi kynttilät ovat ikkunassa? Se tarkoittaa, että kaikki muistavat tämän päivän.","Pihalla on paljon lunta. Siellä on oikeasti kylmä! Lunta tippuu päähäni. Kotona on tylsää. Minulla on nälkä, mutta ruoka on kohta valmis. Katson televisiota Ainon kanssa.","Isoäiti antaa minulle paketin. Paketissa on villapaita. Se on pehmeä ja kaunis. Siskolla on samanlainen. — Miten kaunis paita! Siitä tuntuu pehmeältä. Kiitos, isoäiti!","Illalla soitan kitaraa ja luen kirjaa. Veljeni pelaa sählyä, ja isä laittaa pastaa. Kiitos tästä hyvästä päivästä!"],"ru":["My friend has two dogs. One is black, the other is brown. They are really very cute animals! I like dogs more than cats.","It’s cold today, but the forecast is good: it won’t rain tomorrow. We won’t need an umbrella. Let’s go to the cinema! — Good idea, I’ll gladly come along!","Today is Independence Day. There are five candles in the window and three on the table. That makes eight in all. Why are the candles in the window? It means that everyone remembers this day.","There is a lot of snow in the yard. It’s really cold out there! Snow is falling on my head. At home it’s boring. I’m hungry, but the food will soon be ready. I’m watching TV with Aino.","Grandmother gives me a parcel. In the parcel is a woollen jumper. It’s soft and beautiful. My sister has the same. — What a beautiful jumper! It feels so soft. Thank you, grandmother!","In the evening I play the guitar and read a book. My brother plays floorball and father makes pasta. Thank you for this good day!"],"extra":[],"quiz":[{"q":"Kuinka monta kynttilää on yhteensä?","r":"How many candles are there in the text altogether?","o":["Kuusi.","Kahdeksan.","Kymmenen."],"t":["Six","Eight","Ten"],"a":1},{"q":"Mitä juhlaa vietetään?","r":"Which holiday is being celebrated?","o":["Joulua.","Itsenäisyyspäivää.","Syntymäpäivää."],"t":["Christmas","Independence Day","A birthday"],"a":1},{"q":"Mitä kertoja sanoo pihasta?","r":"What does the narrator say about the yard?","o":["Siellä on lämmin ja aurinko paistaa.","Siellä sataa vettä.","Siellä on paljon lunta ja kylmä."],"t":["It is warm and sunny there","It is raining there","There is a lot of snow and it is cold"],"a":2},{"q":"Millaista kertojalla on kotona?","r":"How does the narrator feel at home?","o":["Tylsää, ja on nälkä.","Hauskaa ja kuumaa.","Surullista, ja nukuttaa."],"t":["Bored and hungry","Cheerful and hot","Sad and sleepy"],"a":0},{"q":"Mitä isoäidin paketissa on?","r":"What is in the parcel from grandmother?","o":["Villapaita.","Kirja.","Huivi."],"t":["A woollen jumper","A book","A scarf"],"a":0},{"q":"Millaisia koirat ovat?","r":"What are the dogs like?","o":["Vihaisia.","Suloisia.","Vanhoja."],"t":["Fierce","Cute","Old"],"a":1},{"q":"Millainen ennuste on huomiselle?","r":"What is tomorrow’s forecast?","o":["Ei sada.","Sataa paljon.","Pakkanen on kova."],"t":["No rain","Heavy rain","Severe frost"],"a":0}]},
+{"id":"RD_LB_1","after":"LB_S1_05","title":"Uusi työpaikka","listen":false,"text":["Tänään aloitan uudessa työpaikassa. Olen ohjelmoija, ja työ on mielenkiintoinen. — Anteeksi, missä toimisto on? — Mene suoraan ja käänny vasemmalle. Seuraavassa risteyksessä käänny oikealle. Toimisto on puiston vieressä.","Toimistossa naulakko on ikkunan vieressä. Lehtihylly on nurkassa ja keittiö on takana. Työpöytäni on ikkunan edessä. Avain on pöydällä.","— Kas, tässä on puhelin! Onko se sinun puhelimesi? — Ei ole. Se on varmaan työtoverin puhelin. Lähin pöytä on hänen pöytänsä. — Voinko lainata kynääsi hetkeksi? — Toki! Minulla on kynä, pyyhekumi ja lehtiö varastossa. Kaikki on kaapissa."],"ru":["Today I’m starting at my new workplace. I’m a programmer and the work is interesting. — Excuse me, where is the office? — Go straight and turn left. At the next crossroads turn right. The office is next to the park.","In the office the coat rack stands by the window. The magazine rack is in the corner and the kitchen is at the back. My desk is in front of the window. The key is on the table.","— Look, there’s a phone here! Is it your phone? — No. It’s probably a colleague’s phone. The nearest desk is his desk. — Could I borrow your pen for a moment? — Of course! I have a pen, an eraser and a notepad in reserve. Everything is in the cupboard."],"extra":[],"quiz":[{"q":"Mitä työtä kertoja tekee?","r":"What does the narrator do for a living?","o":["Hän on ohjelmoija.","Hän on opettaja.","Hän on myyjä."],"t":["A programmer","A teacher","A shop assistant"],"a":0},{"q":"Mihin suuntaan seuraavassa risteyksessä käännytään?","r":"Where should you turn at the next crossroads?","o":["Vasemmalle.","Oikealle.","Suoraan."],"t":["Left","Right","Straight ahead"],"a":1},{"q":"Missä naulakko on toimistossa?","r":"Where is the coat rack in the office?","o":["Nurkassa.","Oven takana.","Ikkunan vieressä."],"t":["In the corner","Behind the door","Next to the window"],"a":2},{"q":"Kenen puhelin se on?","r":"Whose phone is the found phone, according to the speaker?","o":["Hänen oma puhelimensa.","Johtajan puhelin.","Työtoverin puhelin."],"t":["His own","The boss’s","A colleague’s"],"a":2},{"q":"Mitä kertoja pyytää lainaksi?","r":"What does the narrator ask to borrow?","o":["Kynää.","Avainta.","Lehtiötä."],"t":["A pen","A key","A notepad"],"a":0}]},
+{"id":"RD_LB_2","after":"LB_S1_10","title":"Ensimmäinen työpäivä","listen":true,"text":["Olen ohjelmoija, ja työ on mielenkiintoinen. Toimisto on puiston vieressä. Työpöytäni on ikkunan edessä, ja puhelimeni on pöydällä. Työtoverini lainaa usein kynääni.","Eilen aloitin uudessa työpaikassa. Menin aikaisin nukkumaan, koska en halunnut olla väsynyt. Kello oli vartin yli kahdeksan, kun tulin töihin. Lounas oli puoli yksi.","Palaveri alkaa tänään kaksikymmentäviisi vaille kaksi. Haluan oppia paljon, mutta en jaksa tehdä kaikkea heti. Osaan ohjelmoida, mutta en vielä osaa suomea hyvin. Taidan juoda vielä kahvia. Meinaan lähteä kotiin kello kuusi.","— Miten ensimmäinen päivä meni? — Hyvin! Projekti tuntuu mielenkiintoiselta ja työtoverit ovat mukavia. Muuten kaikki on kivaa. — Hienoa! Nähdään huomenna! — Näkemiin! — Hyvää loppuviikkoa! — Samoin! Heippa!"],"ru":["I’m a programmer and the work is interesting. The office is next to the park. My desk is in front of the window and the phone is on the table. A colleague often borrows my pen.","Yesterday I started at my new workplace. I went to bed early because I didn’t want to be tired. It was a quarter past eight when I came to work. Lunch was at half past twelve.","The meeting today starts at twenty-five to two. I want to learn a lot, but I don’t have the energy to do everything at once. I can program, but I don’t know Finnish well yet. Maybe I’ll have some more coffee. I’m planning to leave for home at six o’clock.","— How was the first day? — Good! The project seems interesting and the colleagues are nice. Otherwise everything is wonderful. — Great! See you tomorrow! — Goodbye! — Have a good weekend! — You too! Bye!"],"extra":[],"quiz":[{"q":"Miksi kertoja meni aikaisin nukkumaan?","r":"Why did the narrator go to bed early?","o":["Koska hän oli sairas.","Koska hän ei halunnut olla väsynyt.","Koska hän halusi katsoa jääkiekkoa."],"t":["He was ill","He didn’t want to be tired","He wanted to watch hockey"],"a":1},{"q":"Mihin aikaan hän tuli töihin?","r":"What time did he come to work?","o":["Varttia vaille kahdeksan.","Vartin yli kahdeksan.","Yhdeksältä."],"t":["At 7:45","At 8:15","At 9:00"],"a":1},{"q":"Milloin tämän päivän palaveri alkaa?","r":"When does today’s meeting start?","o":["Kaksikymmentäviisi yli kaksi.","Kaksikymmentäviisi yli kaksitoista.","Kaksikymmentäviisi vaille kaksi."],"t":["At 14:25","At 12:25","At 13:35"],"a":2},{"q":"Mitä kertoja ei vielä osaa?","r":"What can’t the narrator do yet?","o":["Puhua suomea hyvin.","Ohjelmoida.","Juoda kahvia."],"t":["Speak Finnish well","Program","Drink coffee"],"a":0},{"q":"Mitä hän ajattelee projektista ja työtovereista?","r":"What does he think about the project and the colleagues?","o":["Projekti on mielenkiintoinen ja työtoverit mukavia.","Projekti on tylsä ja työtoverit tiukkoja.","Projekti on vaikea eikä työtovereita ole."],"t":["The project is interesting, the colleagues are nice","The project is boring, the colleagues are strict","The project is hard, there are no colleagues"],"a":0},{"q":"Mitä työtoveri lainaa usein?","r":"What does the colleague often borrow?","o":["Puhelinta.","Avainta.","Kynää."],"t":["The phone","A key","A pen"],"a":2}]},
+{"id":"RD_LB_3","after":"LB_S1_15","title":"Ennen nukkumaanmenoa","listen":false,"text":["Töissä kello on vartin yli kahdeksan. Lounas on yleensä kello kaksitoista. Eilen en ollut väsynyt, koska menin aikaisin nukkumaan. Haluan juoda kahvia, mutta en jaksa mennä keittiöön. Nähdään huomenna! Heippa!","— Oletko jo harjannut hampaat? — Olen. — Oletko käynyt vessassa? — Olen. — Oletko vaihtanut yöpuvun? — En vielä. Nyt vaihdan. Sitten menen sänkyyn, ja äiti lukee iltasadun.","Huomenna on koulupäivä. Ennuste sanoo, että päivä on aika tuulinen. Tuuli on kymmenen metriä sekunnissa. Aamulla on pouta, mutta illalla tulee luultavasti sadekuuro. Ylihuomenna on varmasti lämmin. Tuskin sataa enää.","Huomenna laitan housut, paidan ja kengät. Käsineet laitan laukkuun. Lapsena pidin lätäköstä, mutta nyt en enää juokse lätäkköön. Olen jo iso lapsi!"],"ru":["At work it is now a quarter past eight. Lunch is usually at twelve. Yesterday I wasn’t tired because I went to bed early. I want to have coffee, but I don’t have the energy to go to the kitchen. See you tomorrow! Bye!","— Have you brushed your teeth yet? — Yes. — Have you been to the toilet? — Yes. — Have you changed into your pyjamas? — Not yet. I’ll change now. Then I’ll go to bed and Mum will read a bedtime story.","Tomorrow is a school day. The forecast says the day will be fairly windy. The wind is ten metres per second. In the morning no rain, but in the evening there will probably be a shower. The day after tomorrow it will certainly be warm. It is unlikely to rain any more.","Tomorrow I’ll put on trousers, a shirt and shoes. I’ll put the gloves in my bag. As a child I liked puddles, but now I no longer run into them. I’m already a big child!"],"extra":[],"quiz":[{"q":"Mitä lapsi on jo tehnyt ennen nukkumaanmenoa?","r":"What has the child already done before bed?","o":["Hän on käynyt kylvyssä ja syönyt.","Hän on harjannut hampaat ja käynyt vessassa.","Hän on tehnyt läksyt ja soittanut."],"t":["Had a bath and eaten","Brushed his teeth and been to the toilet","Done homework and made a call"],"a":1},{"q":"Mitä lapsi ei ole vielä tehnyt?","r":"What hasn’t the child done yet?","o":["Hän ei ole mennyt sänkyyn.","Hän ei ole lukenut iltasatua.","Hän ei ole vaihtanut yöpukua."],"t":["Gone to bed","Read the story","Changed into pyjamas"],"a":2},{"q":"Millainen sää on huomenna?","r":"What weather is expected tomorrow?","o":["Aamulla sadekuuro, illalla selkeää.","Koko päivän lämmin ja selkeää.","Aamulla pouta, illalla luultavasti sadekuuro."],"t":["Shower in the morning, clear in the evening","Warm and clear all day","No rain in the morning, probably a shower in the evening"],"a":2},{"q":"Millainen sää on ylihuomenna?","r":"What will the weather be the day after tomorrow?","o":["Varmasti lämmin.","Tuulinen ja sateinen.","Luultavasti lunta."],"t":["Certainly warm","Windy and rainy","Most likely snow"],"a":0},{"q":"Mitä lapsi sanoo lätäköistä?","r":"What does the child say about puddles?","o":["Hän hyppii niissä joka päivä.","Lapsena hän piti niistä, mutta nyt hän ei juokse niihin.","Hän ei ole koskaan nähnyt lätäköitä."],"t":["He likes jumping in them every day","As a child he liked them, but now he doesn’t run into them","He has never seen them"],"a":1},{"q":"Milloin lounas on yleensä?","r":"When is lunch usually?","o":["Kello yksi.","Kello kaksitoista.","Kello kuusi."],"t":["At one","At twelve","At six"],"a":1}]},
+{"id":"RD_LB_4","after":"LB_S1_20","title":"Flunssa ja uusi mekko","listen":true,"text":["Ulkona on tuulinen sää, ja luultavasti sataa. Laitan housut, paidan ja kengät. Sateenvarjo menee laukkuun. Lapsena pidin lätäköistä, mutta nyt olen aikuinen.","Olin lomalla ulkomailla. En nähnyt siellä sadetta, mutta söin paljon keksejä. Kun palasin kotiin, olin hyvin väsynyt.","Maanantaina, tiistaina ja keskiviikkona olen töissä. Torstaina on palaveri. Onneksi perjantai on jo lähellä, ja viikonloppuna voin levätä. Mutta tänään on keskiviikko, ja olen sairas.","— Mikä on vikana? — Kurkku on kipeä, nenä vuotaa ja päätä särkee. Minulla on kuume. — Avatkaa suu. Kurkku on punainen. Luulen, että teillä on flunssa. Paras lääke on lepo. Saatte sairausloman.","Kun olen taas terve, etsin siskolleni mekon. — Voinko auttaa? — Etsin mekkoa. Tämä on hyvä, mutta mieluummin ottaisin vähän leveämmän. — Tämä on leveämpi kuin tuo. — Kiitos, tämä on parempi!"],"ru":["It’s windy outside and it will probably rain. I put on trousers, a shirt and shoes. The umbrella goes into the bag. As a child I liked puddles, but now I’m an adult.","I was on holiday abroad. I didn’t see any rain there, but I ate a lot of biscuits. When I got home I was very tired.","On Monday, Tuesday and Wednesday I’m at work. On Thursday there’s a meeting. Luckily Friday is already near, and at the weekend I can rest. But today is Wednesday and I’m ill.","— What seems to be the problem? — My throat hurts, my nose is running and I have a headache. I have a temperature. — Open your mouth. Your throat is red. I think you have a cold. The best medicine is rest. You’ll get a sick note.","When I’m well again I’ll look for a dress for my sister. — Can I help? — I’m looking for a dress. This one is nice, but I’d prefer a bit wider. — This one is wider than that one. — Thanks, this is better!"],"extra":[],"quiz":[{"q":"Milloin kertojalla on palaveri?","r":"When does the narrator have a meeting?","o":["Tiistaina.","Torstaina.","Perjantaina."],"t":["On Tuesday","On Thursday","On Friday"],"a":1},{"q":"Mikä kertojalla on kipeä?","r":"What hurts the narrator?","o":["Selkä ja polvi.","Korva ja hammas.","Kurkku ja pää, ja nenä vuotaa."],"t":["Back and knee","Ear and tooth","Throat and head, runny nose"],"a":2},{"q":"Mikä kertojalla on lääkärin mukaan?","r":"What diagnosis does the doctor give?","o":["Flunssa.","Influenssa.","Ruokamyrkytys."],"t":["A cold","Flu","Food poisoning"],"a":0},{"q":"Mitä lääkäri sanoo hoidosta?","r":"What does the doctor say about treatment?","o":["Paras lääke on lepo, ja hän antaa sairausloman.","Tarvitaan antibiootteja.","On mentävä heti sairaalaan."],"t":["The best medicine is rest, and a sick note is given","Antibiotics are needed","He must go to hospital urgently"],"a":0},{"q":"Mitä ja kenelle kertoja etsii kaupassa?","r":"What is the narrator looking for in the shop, and for whom?","o":["Solmion veljelle.","Mekon siskolle.","Takin äidille."],"t":["A tie for his brother","A dress for his sister","A jacket for his mother"],"a":1},{"q":"Mitä kertoja laittaa laukkuun?","r":"What does the narrator put in the bag?","o":["Housut.","Sateenvarjon.","Keksejä."],"t":["Trousers","An umbrella","Biscuits"],"a":1},{"q":"Mitä kertoja söi ulkomailla?","r":"What did the narrator eat abroad?","o":["Paljon kalaa.","Pastaa.","Paljon keksejä."],"t":["A lot of fish","Pasta","A lot of biscuits"],"a":2}]},
+{"id":"RD_LB_5","after":"LB_S1_25","title":"Sähköposti ja vuodenajat","listen":false,"text":["Maanantaina ja tiistaina olen töissä. Torstaina menen lääkäriin, koska kurkku on kipeä ja minulla on flunssa. Viikonloppuna haluan ostaa siskolleni uuden mekon. Tämä on leveämpi kuin tuo, ja se on parempi.","Työpaikka on lähellä: mene suoraan ja käänny oikealle. Toimisto on puiston vieressä. Työtoveri sanoo: — Älä unohda avainta! Minulla on kynä ja lehtiö, ja puhelin on laukussa.","Hei! Voisitko tehdä yhden muutoksen koodiin ennen palaveria? Nykyinen toiminto ei ole hyvä. Mielestäni uusi toiminto on parempi, mutta muut kannattavat vanhaa. Mikä on sinun mielipiteesi? Voisitko kirjoittaa sähköpostiviestin?","Syksyllä on synkkää ja pimeää. Talvella on aikaisin jo hämärää, mutta lumi on valoisa. Olen aina hyvällä tuulella keväällä ja kesällä. Silloin olen iloinen ja onnellinen. Talvella olen välillä surullinen.","Meidän kadulla rakennetaan uusi talo. Vanhoja puita kaadetaan, mutta uusia istutetaan. Toivotaan, että talosta tulee kaunis."],"ru":["On Monday and Tuesday I’m at work. On Thursday I’m going to the doctor because my throat hurts and I have a cold. At the weekend I want to buy my sister a new dress. This one is wider than that one, and it’s better.","The workplace is close: go straight and turn right. The office is next to the park. A colleague says: — Don’t forget the key! I have a pen and a notepad, and the phone is in my bag.","Hi! Could you make one change to the code before the meeting? The current function isn’t very good. I think the new function is better, but the others support the old one. What is your opinion? Could you write an email?","In autumn it’s gloomy and dark. In winter it’s already dusky early, but the snow is bright. I’m always in a good mood in spring and summer. Then I’m cheerful and happy. In winter I’m sometimes sad.","A new house is being built on our street. The old trees are being felled and new ones planted. Let’s hope the house turns out beautiful."],"extra":[],"quiz":[{"q":"Mitä kirjoittaja pyytää?","r":"What does the author of the letter ask the recipient to do?","o":["Kirjoittaa raportin.","Soittaa asiakkaalle.","Tehdä muutoksen koodiin."],"t":["Write a report","Call a client","Make a change to the code"],"a":2},{"q":"Mitä kirjoittaja ajattelee uudesta toiminnosta?","r":"What does the author think about the new function?","o":["Se on huonompi kuin nykyinen.","Se on samanlainen.","Se on parempi kuin nykyinen."],"t":["Worse than the current one","The same","Better than the current one"],"a":2},{"q":"Milloin kertoja on aina hyvällä tuulella?","r":"When is the narrator always in a good mood?","o":["Keväällä ja kesällä.","Syksyllä.","Talvella."],"t":["In spring and summer","In autumn","In winter"],"a":0},{"q":"Millainen syksy on tekstin mukaan?","r":"What is autumn like, according to the text?","o":["Valoisa ja lämmin.","Synkkä ja pimeä.","Tuulinen ja kuiva."],"t":["Bright and warm","Gloomy and dark","Windy and dry"],"a":1},{"q":"Mitä puille tehdään kadulla?","r":"What is being done with the trees on the street?","o":["Kaikki istutetaan uudelleen.","Vanhat kaadetaan ja uusia istutetaan.","Ne maalataan."],"t":["All are being replanted","The old ones are cut down, new ones planted","They are being painted"],"a":1},{"q":"Miksi kertoja menee torstaina lääkäriin?","r":"Why is the narrator going to the doctor on Thursday?","o":["Koska hän on väsynyt.","Koska hän tarvitsee mekon.","Koska kurkku on kipeä."],"t":["Because he is tired","Because he needs a dress","Because his throat hurts"],"a":2},{"q":"Mitä työtoveri sanoo?","r":"What does the colleague say?","o":["Älä unohda avainta.","Mene kotiin.","Soita lääkärille."],"t":["Don’t forget the key","Go home","Call the doctor"],"a":0}]},
+{"id":"RD_BE_1","after":"BE_S1_05","title":"Matkapäiväkirja","listen":false,"text":["Lentokentällä matkalaukkuni on hukassa. He toimittavat sen kotiosoitteeseeni, mutta reppu ja salkku ovat onneksi mukana. Kysyn: — Miten pääsen hotelliin? — Ota raitiovaunu ja jää pois kolmannella pysäkillä. Hotelli on vasemmalla puolella.","Hotellissa kirjaudun sisään. — Minulla on varaus kahden hengen huoneeseen. Onko huoneessa merinäköala? — On. Uloskirjautuminen on ylihuomenna.","Aurinko paistaa ja taivas on kirkas, mutta aamulla oli vielä pakkasta. Ennuste sanoo, että huomenna sataa räntää, ja aurinko ei enää paista. Ota sateenvarjo mukaan!","Postissa on kiire. Haluan lähettää kirjeen ja postipaketin. — Ykkösluokka menee nopeammin, mutta se on kalliimpi. Kakkosluokka kestää kauemmin. — Otan kakkosluokan ja yhden postimerkin."],"ru":["At the airport my suitcase got lost. It will be delivered to my home address, but my backpack and briefcase are with me, luckily. I ask: — How do I get to the hotel? — Take the tram and get off at the third stop. The hotel is on the left.","At the hotel I check in. — I have a reservation for a double room. Does the room have a sea view? — It does. Check-out is the day after tomorrow.","The sun is shining, the sky is clear, but in the morning there was still frost. The forecast says that tomorrow there will be sleet and the sun will no longer shine. Take an umbrella with you!","At the post office it’s busy. I want to send a letter and a parcel. — First class is faster, but it’s more expensive. Second class takes longer. — I’ll take second class and one stamp."],"extra":[],"quiz":[{"q":"Mitä matkalaukulle tapahtui lentokentällä?","r":"What happened to the suitcase at the airport?","o":["Se varastettiin.","Se on hukassa, mutta se toimitetaan kotiosoitteeseen.","Se jäi hotelliin."],"t":["It was stolen","It got lost, but it will be delivered to the home address","It was left at the hotel"],"a":1},{"q":"Miten hotelliin pääsee?","r":"How do you get to the hotel?","o":["Bussilla viimeiselle pysäkille.","Taksilla.","Raitiovaunulla, jää pois kolmannella pysäkillä."],"t":["By bus to the terminus","By taxi","By tram, get off at the third stop"],"a":2},{"q":"Millainen huone on varattu?","r":"What room has been booked?","o":["Yhden hengen huone ilman näköalaa.","Viiden hengen sviitti.","Kahden hengen huone, jossa on merinäköala."],"t":["A single without a view","A suite for five","A double with a sea view"],"a":2},{"q":"Millainen sää on huomenna?","r":"What weather is expected tomorrow?","o":["Räntää, eikä aurinko paista.","Selkeää ja kuumaa.","Pakkasta ja pyry."],"t":["Sleet, no sun","Clear and hot","Frost and a blizzard"],"a":0},{"q":"Miten postin luokat eroavat?","r":"How do the postal classes differ?","o":["Ykkösluokka on halvempi mutta hitaampi.","Ykkösluokka on nopeampi mutta kalliimpi.","Eroa ei ole."],"t":["First is cheaper but slower","First is faster but more expensive; second takes longer","There is no difference"],"a":1}]},
+{"id":"RD_BE_2","after":"BE_S1_10","title":"Pitkästä aikaa","listen":true,"text":["Matkani alkaa lentokentältä. Matkalaukku on hukassa, joten täytän lomakkeen ja annan kotiosoitteeni. Sitten otan raitiovaunun ja jään pois kolmannella pysäkillä. Hotellissa minulla on varaus kahden hengen huoneeseen.","Postissa lähetän postikortin ja kirjeen. Ykkösluokka on kalliimpi, mutta nopeampi. Ulkona aurinko paistaa, mutta ennuste sanoo, että huomenna on ukkosta ja tihkusadetta. Otan sateenvarjon mukaan.","— Haloo? — Moi, täällä Aino! Yllätys! — Pitkästä aikaa! Mitä kuuluu? — Hyvin! Ehdotan, että menemme yhdessä syömään. Ehditkö perjantaina? — Ikävä kyllä en ehdi, mutta lauantaina kyllä. — Kuulostaa hyvältä!","Lounasravintolassa tarjoilija suosittelee lohikeittoa. Olen allerginen äyriäisille, joten en tilaa äyriäissalaattia. Otan lohikeiton ja jälkiruoaksi mustikkapiirakan. Pidän lihapullista.","Maanantaina ilmoittaudun yliopistoon opintotoimistossa. Tarvitsen hyväksymiskirjeen ja henkilöllisyystodistuksen. Maksan jäsenmaksun ylioppilaskuntaan ja saan opiskelijakortin. Kuitti on laukussa.","Markkinoilla on silakkaa ja saaristolaisleipää. Kilo silakkaa on kallis, mutta myyjä antaa alennuksen. Voin tinkiä vähän, ja leipä tulee kaupan päälle. Maksan käteisellä."],"ru":["My trip begins at the airport. My suitcase is lost, so I fill in a form and give my home address. Then I take a tram and get off at the third stop. At the hotel I have a reservation for a double room.","At the post office I send a postcard and a letter. First class is more expensive but faster. The sun is shining outside, but the forecast says that tomorrow there will be thunder and drizzle. I take the umbrella with me.","— Hello? — Hi, it’s Aino! Surprise! — Long time no see! How are you? — Fine! I suggest we go and eat together. Will you be able to make it on Friday? — Unfortunately I won’t, but Saturday works. — Sounds good!","At the lunch restaurant the waiter recommends salmon soup. I’m allergic to shellfish, so I don’t order the seafood salad. I’ll have the salmon soup and blueberry pie for dessert. I like meatballs.","On Monday I enrol at the university in the study office. I need an acceptance letter and an ID. I’ll pay the membership fee to the student union and get a student card. The receipt is in my bag.","At the market there are Baltic herring and archipelago bread. A kilo of herring is expensive, but the seller gives a discount. I can haggle a little and the bread comes as a bonus. I pay in cash."],"extra":[],"quiz":[{"q":"Mitä Aino ehdottaa?","r":"What does Aino suggest?","o":["Mennä konserttiin.","Mennä yhdessä syömään.","Mennä mökille."],"t":["Going to a concert","Going to eat together","Going to the cottage"],"a":1},{"q":"Milloin keskustelija ehtii tavata?","r":"When can the speaker meet?","o":["Perjantaina.","Sunnuntaina.","Lauantaina."],"t":["On Friday","On Sunday","On Saturday"],"a":2},{"q":"Miksi kertoja ei tilaa äyriäissalaattia?","r":"Why doesn’t the narrator order the seafood salad?","o":["Hän on allerginen.","Se on liian kallis.","Se on loppu."],"t":["He is allergic","It is too expensive","The salad has run out"],"a":0},{"q":"Mitä yliopistoon ilmoittautumiseen tarvitaan?","r":"What is needed to enrol at the university?","o":["Hyväksymiskirje ja henkilöllisyystodistus.","Työtodistus ja äidin passi.","Vain opiskelijakortti."],"t":["The acceptance letter and an ID","A work certificate and my mother’s passport","Only the student card"],"a":0},{"q":"Mitä markkinoilla tapahtuu?","r":"What happens at the market?","o":["Myyjä ei suostu tinkimään.","Myyjä antaa alennuksen, ja leipä tulee kaupan päälle.","Kaikki maksetaan vain kortilla."],"t":["The seller refuses to haggle","The seller gives a discount, and the bread is a bonus","Everything is sold by card only"],"a":1},{"q":"Mitä kertoja antaa lentokentällä?","r":"What does the narrator give at the airport?","o":["Passinsa.","Kotiosoitteensa.","Hotellin nimen."],"t":["His passport","His home address","The name of the hotel"],"a":1},{"q":"Mitä ennuste sanoo huomisesta?","r":"What does the forecast say about tomorrow?","o":["Pakkasta ja pyryä.","Kirkasta ja kuumaa.","Ukkosta ja tihkusadetta."],"t":["Frost and a blizzard","Clear and hot","Thunder and drizzle"],"a":2}]},
+{"id":"RD_IN_1","after":"IN_S1_05","title":"Osa-aikainen työ","listen":false,"text":["Hain osa-aikaista työtä asiakaspalvelussa. Työhaastattelussa kerron, että minulla on aikaisemmin kokemusta kaupasta. Olen ahkera, luotettava ja joustava. Voin tehdä iltatyötä ja viikonlopputyötä, ja minulla on myös huumorintaju. Hakijoita on paljon, mutta haastattelija sanoo, että minulla on hyvä mahdollisuus, koska olen kokenut ja rento.","Säätiedotuksen mukaan huomenna korkeapaine ulottuu koko maahan, ja taivas selkeytyy. Pakkanen kiristyy ensin, mutta viikonloppuna se hellittää. Sitten alkaa lämmetä ja lumi sulaa. Myrskyä ei onneksi tule.","Ystäväni haluaa viettää hiihtoloman lomamökillä, mutta minun mielestäni se on tylsää. Hän ei välitä kylpylöistä. Minä pidän sekä lumesta että kylpylästä. Toisaalta mökki on halpa, mutta kuitenkin ehdotan, että menemme kylpylään.","Eilen liukastuin jäisellä tiellä ja soitin hätäkeskukseen. Kerroin hitaasti, missä olen. Jalassa oli paljon kipua. — Rauhoittukaa ja odottakaa. Ambulanssi tulee pian, sanoi hätäkeskuksen työntekijä."],"ru":["I applied for a part-time job in customer service. At the job interview I tell them that I have previous experience of working in a shop. I am hard-working, reliable and flexible. I can work evenings and weekends, and I also have a sense of humour. There are many applicants, but the interviewer says that I have a good chance because I am experienced and relaxed.","According to the weather forecast, tomorrow a high-pressure area will reach the whole country and the sky will clear. At first the frost will tighten, but at the weekend it will ease. Then it will start to warm up and the snow will melt. Luckily there will be no storm.","My friend wants to spend the ski holiday in a cottage, but I think that is boring. He doesn’t like spas. I like both snow and spas. On the other hand, the cottage is cheap, but I still suggest going to a spa.","Yesterday I slipped on an icy road and called the emergency centre. I told them slowly where I was. There was a lot of pain in my leg. — Calm down and wait. The ambulance will arrive soon, — said the emergency operator."],"extra":[],"quiz":[{"q":"Mitä työtä kertoja hakee?","r":"What kind of job is the narrator looking for?","o":["Kokopäivätyötä ohjelmoijana.","Kausityötä maatilalla.","Osa-aikaista työtä asiakaspalvelussa."],"t":["A full-time job as a programmer","Seasonal work on a farm","A part-time job in customer service"],"a":2},{"q":"Millaiseksi kertoja kuvailee itseään?","r":"How does the narrator describe himself?","o":["Luovaksi ja päättäväiseksi.","Rehelliseksi ja hermostuneeksi.","Ahkeraksi, luotettavaksi ja joustavaksi."],"t":["Creative and determined","Honest and nervous","Hard-working, reliable and flexible"],"a":2},{"q":"Mitä ennuste lupaa viikonlopuksi?","r":"What does the forecast promise for the weekend?","o":["Pakkanen hellittää ja lumi alkaa sulaa.","Pakkanen kiristyy.","Alkaa myrsky."],"t":["The frost will ease and the snow will start to melt","The frost will tighten","A storm will begin"],"a":0},{"q":"Mitä kertoja ajattelee ystävänsä lomasuunnitelmista?","r":"What does the narrator think about his friend’s holiday plans?","o":["Ystävä haluaa kylpylään, kertoja mökille.","Ystävä haluaa mökille, kertojasta se on tylsää, ja hän ehdottaa kylpylää.","Molemmat haluavat jäädä kotiin."],"t":["The friend wants a spa, the narrator wants the cottage","The friend wants the cottage, the narrator finds it boring and suggests a spa","Both want to stay at home"],"a":1},{"q":"Kenelle kertoja soitti liukastumisen jälkeen?","r":"Who did the narrator call after falling?","o":["Ystävälle.","Hätäkeskukseen.","Kauppaan."],"t":["A friend","The emergency centre","To the shop"],"a":1}]},
+{"id":"RD_IN_2","after":"IN_S1_10","title":"Huono viikko","listen":true,"text":["Viime viikolla olin työhaastattelussa. Kerroin, että olen ahkera, luotettava ja kokenut. Haastattelija sanoi, että minulla on hyvä mahdollisuus. Säätiedotuksen mukaan pakkanen hellittää ja sää lämpenee. Toisaalta tie on yhä jäinen, joten olen varovainen.","Puhelimeni ei toimi kunnolla. Kamera ei tarkenna ollenkaan. Kuitti on tallella, ja takuu on vielä voimassa. Korjaus on veloitukseton, mutta kauppa ei anna varapuhelinta. Onneksi minulla on vanha kännykkä.","Eilen kaaduin jäisellä tiellä ja loukkasin käteni. Onneksi käsi ei murtunut. Se toipuu pian. Ystävä jätti meille viestin: — Älkää tulko ravintolaan, koska se on varattu. Menkää suoraan kotiini!","Viisaudenhampaani on ollut jo pitkään tulehtunut. Olisin tarvinnut hammaslääkäriltä ajan jo aikaisemmin, mutta nyt löytyy aika huomenna. — Hammas pitää poistaa, ja sitä ennen teidän täytyy syödä antibioottikuuri. Resepti lähetetään suoraan apteekkiin. — Olen todella kiitollinen!"],"ru":["Last week I was at a job interview. I said that I am hard-working, reliable and experienced. The interviewer said that I have a good chance. According to the weather forecast, the frost will ease and it will get warmer. On the other hand, the road is still icy, so I am careful.","My phone doesn’t work properly. The camera doesn’t focus at all. I still have the receipt and the warranty is still valid. The repair is free of charge, but the shop doesn’t give a replacement phone. Luckily I have an old mobile.","Yesterday I fell on an icy road and hurt my hand. Luckily the hand is not broken. It will soon get better. A friend left us a message: — Don’t come to the restaurant, it’s booked. Go straight to my home!","My wisdom tooth has been inflamed for a long time. I should have booked an appointment with the dentist earlier, but now there is a time tomorrow. — The tooth has to come out, and before that you have to take a course of antibiotics. The prescription will be sent straight to the pharmacy. — I am very grateful!"],"extra":[],"quiz":[{"q":"Mikä puhelimessa on vialla?","r":"What is wrong with the phone?","o":["Se ei käynnisty.","Siinä ei ole ääntä.","Kamera ei tarkenna."],"t":["It doesn’t turn on","There is no sound","The camera doesn’t focus"],"a":2},{"q":"Mitä takuusta sanotaan?","r":"What is said about the warranty?","o":["Kuitti on tallella, ja korjaus on veloitukseton.","Kuitti on hukassa.","Takuu on päättynyt."],"t":["The receipt is kept, the repair is free","The receipt is lost","The warranty has expired"],"a":0},{"q":"Mitä jäällä tapahtui?","r":"What happened on the ice?","o":["Kertoja kaatui ja loukkasi kätensä, mutta luu ei murtunut.","Kertoja kaatui ja mursi kätensä.","Kertoja liukastui ja hukkasi puhelimensa."],"t":["He fell and hurt his hand, but the bone is intact","He fell and broke his arm","He slipped and lost his phone"],"a":0},{"q":"Mitä ystävä pyytää viestissä?","r":"What does the friend ask for in the message?","o":["Tulla ravintolaan aikaisemmin.","Ei mennä ravintolaan, vaan tulla hänen kotiinsa.","Tuoda ruokaa."],"t":["To come to the restaurant earlier","Not to go to the restaurant but to come to his home","To bring food"],"a":1},{"q":"Mitä hammaslääkäri sanoo?","r":"What does the dentist say?","o":["Hampaan voi jättää.","Tarvitaan vain sairausloma.","Hammas pitää poistaa, ja sitä ennen syödään antibioottikuuri."],"t":["The tooth can be left","Only a sick note is needed","The tooth has to be removed; before that, a course of antibiotics"],"a":2},{"q":"Mitä haastattelija sanoi?","r":"What did the interviewer say?","o":["Että työ on jo täytetty.","Että kertojalla on hyvä mahdollisuus.","Että palkka on liian pieni."],"t":["That the job is already taken","That the narrator has a good chance","That the salary is too low"],"a":1}]},
+{"id":"RD_IN_3","after":"IN_S1_15","title":"Uusi asunto","listen":false,"text":["Töissä käytän kännykkää, mutta puhelimeni ei toimi kunnolla. Kuitti on tallella, joten korjaus on veloitukseton. Jos hammas sattuu, soitan hammaslääkärille: — Olisin tarvinnut ajan, koska viisaudenhampaani on tulehtunut. — Teidän täytyy tulla huomenna.","Asunto on kolmio, mutta väliseinän voi purkaa, ja siitä tulee kaksio. Talossa on hissi. Taloyhtiö teettää putkiremontin kahden vuoden päästä, joten se pitää ottaa huomioon. Remontoimme asuntoa vähän itse.","Kaupassa ostan lampun. Kassalla ihmettelen, miksi hinta on korkeampi. — Hetki, eikö lamppu olekaan alennuksessa? Luulin, että hinta on kaksikymmentä euroa. — Pahoittelen, hintalappu on vanha. Olimme unohtaneet sen hyllyyn.","Kuuluttaja sanoo: — Arvoisat asiakkaat, kauppa sulkeutuu viiden minuutin kuluttua. Maksattehan ostoksenne kassalle. Tarjousluettelon löydätte pääovilta. Toivotamme viihtyisää viikonloppua!","Kaverini tulee uuteen asuntoon. Sanon: — Jää pois metrosta Kalasatamassa ja hyppää bussiin. Tulen sinua pysäkille vastaan. Haluan myös kuulla mielipiteesi: poistammeko tämän käytävän? Minusta se on käytännöllisempi. — Olen eri mieltä: toinen reitti on parempi."],"ru":["At work I use a mobile phone, but my phone doesn’t work properly. I have the receipt, so the repair is free of charge. If a tooth hurts, I call the dentist: — I would have needed an appointment because my wisdom tooth is inflamed. — You need to come tomorrow.","The flat is a three-room one, but the partition wall can be taken down and it becomes a two-room one. The building has a lift. The housing company will have the pipes replaced in two years, so that has to be taken into account. We will do the renovation partly ourselves.","In the shop I buy a lamp. At the till I wonder why the price is higher. — Just a moment, isn’t the lamp on sale after all? I thought the price was twenty euros. — I’m sorry, the price tag is old. We had forgotten it on the shelf.","The announcer says: — Dear customers, the shop will be closing in five minutes. Please pay for your purchases at the till. You will find the sales catalogue at the main entrance. We wish you a pleasant weekend!","My friend is coming to the new flat. I say: — Get off the metro at Kalasatama and hop on a bus. I’ll meet you at the stop. I also want to hear your opinion: shall we remove this passage? I think it’s more practical. — I disagree: the other route is better."],"extra":[],"quiz":[{"q":"Miten kolmion voi muuttaa kaksioksi?","r":"How can a three-room flat be turned into a two-room one?","o":["Rakentamalla lisäkerroksen.","Yhdistämällä se naapurin asuntoon.","Purkamalla väliseinän."],"t":["By building on another floor","By joining it to the neighbouring flat","By taking down the partition wall"],"a":2},{"q":"Mitä asunnon ostajan pitää ottaa huomioon?","r":"What must be taken into account when buying this flat?","o":["Taloyhtiö teettää putkiremontin kahden vuoden päästä.","Talossa ei ole hissiä.","Asunto on liian pieni."],"t":["In two years the building will have its pipes replaced","The building has no lift","The flat is too small"],"a":0},{"q":"Miksi kertoja ihmettelee kassalla?","r":"Why does the narrator wonder at the till?","o":["Vaihtorahaa ei ole.","Hinta on korkeampi kuin hän luuli, koska hyllyssä oli vanha hintalappu.","Kassa on kiinni."],"t":["There is no change","The price is higher than he thought: an old price tag was left on the shelf","The till is closed"],"a":1},{"q":"Mitä kaiuttimesta kuulutetaan?","r":"What is announced over the loudspeaker in the shop?","o":["Alennusmyynti alkaa.","Kauppa sulkeutuu viiden minuutin kuluttua.","Lapsi on hukassa."],"t":["The start of a sale","The shop closes in five minutes","A child is lost"],"a":1},{"q":"Miten kertoja neuvoo ystävää tulemaan?","r":"How does the narrator explain the way to his friend?","o":["Taksilla.","Kävellen asemalta.","Metrolla ja bussilla; hän tulee pysäkille vastaan."],"t":["Take a taxi","Walk from the station","Get off the metro and take a bus; he will meet him at the stop"],"a":2},{"q":"Miksi kertoja soittaa hammaslääkärille?","r":"Why is the narrator calling the dentist?","o":["Hän haluaa vaihtaa puhelimen.","Hän on hukannut kuitin.","Viisaudenhammas on tulehtunut."],"t":["He wants to change his phone","He has lost the receipt","His wisdom tooth is inflamed"],"a":2}]},
+{"id":"RD_IN_4","after":"IN_S1_20","title":"Linnean oma yritys","listen":true,"text":["Asuntomme on kolmio, mutta väliseinä puretaan. Taloyhtiössä on myös hissi. Minun mielestäni asunto on käytännöllinen, mutta Heikki on eri mieltä. Hän ei halua remonttia, koska se maksaa paljon.","Tänään kaupassa oli kiire. Hintalappu oli vanha, mutta myyjä pahoitteli virhettä. Kuuluttaja sanoi, että kauppa sulkeutuu. Tulin kotiin metrolla: jäin pois Kalasatamassa ja hyppäsin bussiin.","Linnea haluaa avata pankkitilin yritykselleen. Pankissa hän täyttää kaavakkeita ja näyttää henkilöllisyyspapereita. Ehdot ovat hyvät, ja pankkitoimihenkilöt ovat avuliaita.","Hänen vaateliikkeessään vaatteita voi vuokrata. Vaatteita etsivä asiakas voi vuokrata vaatteen tietyksi ajaksi. Jos hän tykästyy vaatteeseen, hän voi lunastaa sen itselleen. Ensinnäkin kauppa saa mallikappaleita edullisesti, ja toiseksi vuokraaminen tulee asiakkaalle edullisemmaksi. Uudenlainen konsepti kannattaa!","Linnea syö lounasta ravintolassa. Lounasaika alkaa vartin päästä, mutta tarjoilija sanoo: — Tulkaa vain sisään. Ruokalistalta suosittelen tuoretta kalaa ja lasillista vissyä. Linnea tilaa omenapiirakkaa lämpimänä, mutta piirakka on viileä. — Pahoittelen, vaihdan sen uudeksi. Tarjoamme sen ilmaiseksi.","Illalla Linnea kirjoittaa mielipiteensä: — Mielestäni uusi konsepti on hyvä, vaikka muut kannattavat vanhaa. Ensinnäkin se on edullinen, ja toiseksi asiakkaat pitävät siitä."],"ru":["Our flat is a three-room one, but the partition wall will be taken down. The building also has a lift. I think the flat is practical, but Heikki disagrees. He doesn’t want the renovation because it costs a lot.","Today there was a rush at the shop. The price tag was old, but the seller apologised for the mistake. The announcer said that the shop was closing. I came home by metro: I got off at Kalasatama and hopped on a bus.","Linnea wants to open a bank account for her company. At the bank she fills in forms and shows identity papers. The terms are good and the bank staff are helpful.","In her clothing shop clothes can be rented. A customer looking for clothes can rent a garment for a certain period. If the customer grows fond of it, they can buy it. First, the shop gets samples at a good price, and second, renting works out cheaper for the customer. A new concept like this pays off!","Linnea has lunch at a restaurant. Lunchtime starts in a quarter of an hour, but the waiter says: — Just come in. From the menu I recommend fresh fish and a glass of sparkling water. Linnea orders warm apple pie, but the pie is cool. — I’m sorry, I’ll replace it with a new one. We are offering it free of charge.","In the evening Linnea writes down her opinion: — I think the new concept is good, even though the others support the old one. First, it is advantageous, and second, customers like it."],"extra":[],"quiz":[{"q":"Mitä Linnea haluaa tehdä pankissa?","r":"What does Linnea want to do at the bank?","o":["Avata pankkitilin yritykselleen.","Ottaa asuntolainan.","Vaihtaa valuuttaa."],"t":["Open an account for her company","Take a loan for a flat","Exchange currency"],"a":0},{"q":"Mikä hänen liikkeessään on erikoista?","r":"What is special about her shop?","o":["Vaatteita voi vuokrata.","Vaatteita myydään vain alennuksella.","Liike on auki yöllä."],"t":["Clothes can be rented","Clothes are sold only at a discount","The shop is open at night"],"a":0},{"q":"Mitä asiakas voi tehdä, jos vaate miellyttää häntä?","r":"What can a customer do if they like a garment?","o":["Palauttaa sen ilmaiseksi.","Lunastaa sen itselleen.","Lahjoittaa sen liikkeelle."],"t":["Return it for free","Buy it","Donate it to the shop"],"a":1},{"q":"Mikä ravintolassa piirakassa on vialla?","r":"What is wrong with the pie in the restaurant?","o":["Se on liian makea.","Tuotiin väärä piirakka.","Se on viileä, vaikka se tilattiin lämpimänä."],"t":["It is too sweet","The wrong pie was brought","It is cool, though it was ordered warm"],"a":2},{"q":"Miten tarjoilija toimii?","r":"What does the waiter do?","o":["Tarjoaa kymmenen prosentin alennuksen.","Pahoittelee mutta ei vaihda mitään.","Vaihtaa piirakan uuteen eikä veloita siitä."],"t":["Offers a ten per cent discount","Apologises but changes nothing","Replaces the pie with a new one and doesn’t charge for it"],"a":2},{"q":"Mistä Heikki on eri mieltä?","r":"What does Heikki disagree with?","o":["Hissin hinnasta.","Asunnon remontista.","Metron aikataulusta."],"t":["With the price of the lift","With renovating the flat","With the metro timetable"],"a":1},{"q":"Mitä myyjä pahoitteli?","r":"What did the seller apologise for?","o":["Myöhästymistä.","Kassan sulkemista.","Hintalapun virhettä."],"t":["For being late","For closing the till","For the mistake with the price tag"],"a":2}]},
+{"id":"RD_IN_5","after":"IN_S1_25","title":"Kirjakaupassa ja töissä","listen":false,"text":["Linnea avasi pankkitilin yritykselleen. Hänen vaateliikkeessään vaatteita voi vuokrata, ja vuokraaminen tulee asiakkaalle edullisemmaksi. Ensinnäkin kauppa saa mallikappaleet edullisesti, ja toiseksi uudenlainen konsepti kannattaa. Lounaalla tarjoilija vaihtoi viileän piirakan uuteen ja tarjosi sen ilmaiseksi.","Vaatteita etsivät asiakkaat tulevat usein, ja sesongin aikana liikkeessä on paljon asiakkaita. Linnea on tyytyväinen: pankin ehdot ovat hyvät, ja yritys kannattaa.","Tulen juuri opiskelemasta ja haluan tutustua nykykirjailijoihin. Kirjakaupan myyjä suosittelee kaunokirjallisuutta: — Tämä menestynyt kirjailija on voittanut useita palkintoja. Olin juuri lukemassa hänen romaaniaan, ja pidin siitä paljon.","Ystäväni Markku on tapetoinut tuttaviemme koteja. — Ihanko totta? En tiennytkään! Minulla ei ollut aavistustakaan. Markun ensimmäinen työ oli rautakaupassa, ja hän oli siellä kesätöissä.","Tapetoinnissa tarvitaan luotilanka. Se on lanka, jonka varassa roikkuu punnus. Ennen vanhaan niitä käytettiin enemmän. Tapetointi on nyt käynnissä, ja eiköhän se onnistu. Remontista puhuttiin eilen koko illan.","Töissä osastopäällikkö ihmettelee, miksi raportti on myöhässä. Tulostin meni rikki, joten raportti pitää toimittaa viimeistään huomenna. Pysyäksemme aikataulussa tulostan sen kopiokeskuksessa. Anteeksi, saanko keskeyttää? Oletko muuten käynyt Kiasmassa?","Illalla remontista puhuttiin vielä: tapetointi on käynnissä, ja eiköhän se onnistu. Osastopäällikkö toivoo, että raportti ehditään toimittaa. Kiitos avusta, näkemiin!"],"ru":["Linnea opened a bank account for her company. In her shop clothes can be rented, and for the customer renting works out cheaper. First, the shop gets samples at a good price, and second, such a new concept pays off. At lunch the waiter replaced the cool pie with a new one and treated her to it for free.","Customers looking for clothes come often, and in the season there are many customers in the shop. Linnea is satisfied: the bank’s terms are good and the business pays off.","I’ve just come from studying and want to get to know contemporary writers. The assistant in the bookshop recommends fiction: — This successful author has won several prizes. I was just reading his novel and I liked it a lot.","My friend Markku has wallpapered some of our acquaintances’ homes. — Really? I didn’t know! I had no idea at all. Markku’s first job was in a hardware shop, he worked there in the summer.","For wallpapering you need a plumb line. It is a thread with a weight hanging from it. In the old days they were used more. The wallpapering is now under way and I think it will go well. We talked about the renovation all evening yesterday.","At work the head of department wonders why the report is late. The printer broke, so the report has to be handed in by tomorrow at the latest. To stay on schedule I will print it at the copy centre. Excuse me, may I interrupt? By the way, have you been to Kiasma?","In the evening they still talked about the renovation: the wallpapering is under way and I think it will go well. The head of department hopes the report can be handed in in time. Thank you for the help, goodbye!"],"extra":[],"quiz":[{"q":"Mistä kertoja on kiinnostunut kirjakaupassa?","r":"What is the narrator interested in at the bookshop?","o":["Nykykirjailijoista.","Dekkareista.","Oppikirjoista."],"t":["Contemporary authors","Detective novels","Textbooks"],"a":0},{"q":"Mitä myyjä suosittelee?","r":"What does the assistant recommend?","o":["Keittokirjaa.","Menestyneen kirjailijan kirjaa, joka on voittanut useita palkintoja.","Vanhaa sanakirjaa."],"t":["A cookbook","A book by a successful author who has won many prizes","An old dictionary"],"a":1},{"q":"Mitä kertoja saa tietää Markusta?","r":"What does the narrator find out about Markku?","o":["Hän on arkkitehti.","Hän on tapetoinut tuttavien koteja, ja hänen ensimmäinen työnsä oli rautakaupassa.","Hän asuu ulkomailla."],"t":["He is an architect","He has wallpapered acquaintances’ homes, and his first job was in a hardware shop","He lives abroad"],"a":1},{"q":"Mikä luotilanka on tekstin mukaan?","r":"What is a plumb line, judging by the text?","o":["Liisteriharja.","Tapetoimispöytä.","Lanka, jossa roikkuu punnus."],"t":["A glue brush","A wallpapering table","A thread with a weight"],"a":2},{"q":"Mikä esti raportin valmistumisen ja milloin se pitää toimittaa?","r":"What prevented the report from being handed in on time, and when must it be handed in?","o":["Tulostin meni rikki; viimeistään huomenna.","Osastopäällikkö sairastui; viikon kuluttua.","Tietokonetta ei ole; tänään."],"t":["The printer broke; the deadline is tomorrow at the latest","The head of department fell ill; the deadline is a week","There is no computer; the deadline is today"],"a":0},{"q":"Millainen vaatteiden vuokraaminen on asiakkaalle?","r":"How does renting clothes work out for the customer?","o":["Kalliimpi kuin ostaminen.","Mahdotonta.","Edullisempi kuin ostaminen."],"t":["More expensive than buying","Impossible","Cheaper than buying"],"a":2},{"q":"Miksi Linnea on tyytyväinen?","r":"Why is Linnea satisfied?","o":["Hän voitti palkinnon.","Pankin ehdot ovat hyvät, ja yritys kannattaa.","Hän sai alennuksen ravintolassa."],"t":["She won a prize","The bank’s terms are good and the business pays off","She got a discount at the restaurant"],"a":1}]},
+{"id":"RD_YKI_1","after":"YKI_KT_05","title":"Tavallinen päivä","listen":false,"text":["Ennen kaikkea soitan ravintolaan: — Haluaisin varata juhlasalin syntymäpäiväjuhlia varten. Meitä on noin kaksikymmentä henkeä. Paljonko koko tilaisuus maksaisi? Voisitteko kertoa lisää?","Soitan ilmoituksen vuoksi, koska haluan vuokrata viljelypalstan. Palstan kunto on hyvä. Palstan voi saada liittymällä paikalliseen yhdistykseen. Joillakin alueilla on ollut ilkivaltaa, mutta täällä ei.","Kotona kosteus on ongelma. Kirjoitan isännöitsijälle: — Hyvä isännöitsijä, haluan korjata kylpyhuoneen. Pyydän ystävällisesti lupaa remontin aloittamiseen. Yhteystietoni ovat alla. Odotan vastaustanne mielelläni.","Aamulla myöhästyn töistä, ja pahoittelen sitä. Toivottavasti kukaan ei valita! Siskoni on minulle tärkeä ihminen: hän on aina kärsivällinen. Olen tyytyväinen, että hän asuu lähellä.","Illalla kuuntelen uutisia. Asiantuntijan mukaan lentomatkustaminen tuottaa paljon päästöjä. Tutkimus perustuu tuhansien ihmisten vastauksiin. Mielestäni mielipide pitää perustella. Lääkkeiden mainostaminen on toisaalta hyödyllistä, mutta toisaalta turhaa. Hoitopaikan valinnassa jokaisella on oma näkökulmansa.","Apteekissa sanon: — Minulla on kurkku kipeä ja yskä. Mitä suosittelisitte tähän vaivaan? Onko tämä lääke reseptivapaa? — Se on reseptivapaa, mutta ottakaa sitä vain kolme kertaa päivässä."],"ru":["First I call the restaurant: — I would like to book a hall for a birthday party. There will be about twenty of us. How much would the whole event cost? Could you tell me more?","I’m calling about the advertisement because I want to rent an allotment plot. The condition of the plot is good. The plot can be obtained by joining the local association. In some areas there has been vandalism, but not here.","At home damp is a problem. I write to the building manager: — Dear manager, I want to repair the bathroom. I kindly ask for permission to start the renovation. My contact details are below. I look forward to your answer.","In the morning I am late for work and I regret it. I hope nobody complains! My sister is an important person to me: she is always patient. I’m glad she lives nearby.","In the evening I listen to the news. According to an expert, air travel produces a lot of emissions. The study is based on the answers of thousands of people. I think an opinion must be justified. Advertising medicines is, on the one hand, useful and, on the other, pointless. When choosing a place for childcare, everyone has their own point of view.","At the pharmacy I say: — I have a sore throat and a cough. What would you recommend for this complaint? Is this medicine available without a prescription? — Yes, without a prescription, but take it only three times a day."],"extra":[],"quiz":[{"q":"Mitä kertoja haluaa vuokrata?","r":"What does the narrator want to rent?","o":["Juhlasalin.","Asunnon.","Viljelypalstan."],"t":["A hall for a party","A flat","An allotment plot"],"a":2},{"q":"Miten palstan voi saada?","r":"How can such a plot be obtained?","o":["Liittymällä paikalliseen yhdistykseen.","Ostamalla sen kaupungilta.","Voittamalla arpajaisissa."],"t":["By joining the local association","By buying it from the city","By winning a lottery"],"a":0},{"q":"Mitä kertoja pyytää isännöitsijältä?","r":"What does the narrator ask the building manager for?","o":["Lupaa aloittaa kylpyhuoneen remontti.","Maksun palautusta.","Avainten vaihtoa."],"t":["For permission to start renovating the bathroom","For a refund","For replacing the keys"],"a":0},{"q":"Millainen ihminen kertojan sisko on?","r":"What kind of person is the narrator’s sister, according to the narrator?","o":["Ankara ja äänekäs.","Tärkeä ja kärsivällinen.","Kiireinen ja hermostunut."],"t":["Strict and noisy","Important and patient","Busy and nervous"],"a":1},{"q":"Mistä uutisissa kerrotaan?","r":"What is the news about?","o":["Sähkön hinta nousi.","Uusi koulu rakennettiin.","Lentomatkustaminen tuottaa paljon päästöjä."],"t":["Electricity prices have risen","A new school has been built","Air travel produces a lot of emissions"],"a":2},{"q":"Mitä kertoja haluaa varata ensimmäisessä puhelussa?","r":"What does the narrator want to book in the first call?","o":["Hotellihuoneen.","Juhlasalin.","Junalipun."],"t":["A hotel room","A hall for a party","A train ticket"],"a":1},{"q":"Mitä apteekkilainen sanoo lääkkeestä?","r":"What does the pharmacist say about the medicine?","o":["Se tarvitsee reseptin.","Se on loppu.","Se on reseptivapaa."],"t":["A prescription is needed","It has run out","It is available without a prescription"],"a":2}]},
+];
+/*__READINGS_END__*/
+
+// YKI tasks: reading and listening (same shape as the reading texts), writing, speaking.
+const YKI_TASKS = [
+{"id":"YKI_R5","skill":"read","theme":"Minä ja taustani","themeRu":"Me and my background","title":"Uusi koti Suomessa","titleRu":"A new home in Finland","limit":540,"listen":false,"text":["Sofia, 34, muutti Suomeen Italiasta neljä vuotta sitten. Hän tuli aluksi vain vuodeksi työharjoitteluun, mutta tapasi täällä tulevan miehensä ja päätti jäädä. Nykyään perheellä on pieni poika, ja he asuvat Jyväskylässä.","Suomen kieli oli aluksi vaikea. Sofia kävi iltakurssilla kaksi kertaa viikossa ja harjoitteli arjessa kaupassa ja päiväkodissa. Eniten häntä auttoivat naapurit, jotka puhuivat hänelle rauhallisesti ja selkeästi. Kolmen vuoden kuluttua hän läpäisi YKI-testin tasolla 3.","Sofia ikävöi välillä Italian aurinkoa ja suurta perhettä. Toisaalta hän pitää suomalaisesta rauhasta, luonnosta ja saunasta. Kesällä he käyvät aina Italiassa kuukauden, ja jouluna sukulaiset tulevat Suomeen. Sofia sanoo, että kotia voi olla kahdessa maassa."],"ru":["Sofia, 34, moved to Finland from Italy four years ago. At first she came for just a year for a work placement, but she met her future husband here and decided to stay. Today the family has a little son and they live in Jyväskylä.","At first the Finnish language was difficult. Sofia took an evening course twice a week and practised in everyday life in the shop and at the daycare. The neighbours helped her most; they spoke to her calmly and clearly. Three years later she passed the YKI test at level 3.","Sofia sometimes misses the Italian sun and her big family. On the other hand, she likes Finnish calm, nature and the sauna. In summer they always spend a month in Italy, and at Christmas relatives come to Finland. Sofia says that home can be in two countries."],"extra":[],"quiz":[{"q":"Miksi Sofia tuli Suomeen alun perin?","r":"Why did Sofia originally come to Finland?","o":["Opiskelemaan yliopistoon.","Työharjoitteluun vuodeksi.","Tapaamaan sukulaisia."],"t":["To study at a university","For a work placement for a year","To visit relatives"],"a":1},{"q":"Oikein vai väärin? Sofia asuu Jyväskylässä.","r":"True or false? Sofia lives in Jyväskylä.","o":["Oikein","Väärin"],"t":["True","False"],"a":0},{"q":"Mikä auttoi Sofiaa eniten suomen oppimisessa?","r":"What helped Sofia most in learning Finnish?","o":["Naapurit, jotka puhuivat selkeästi.","Kirjat ja sanakirjat.","Italialaiset ystävät."],"t":["Neighbours who spoke clearly","Books and dictionaries","Italian friends"],"a":0},{"q":"Oikein vai väärin? Sofia läpäisi YKI-testin tasolla 3.","r":"True or false? Sofia passed the YKI test at level 3.","o":["Oikein","Väärin"],"t":["True","False"],"a":0},{"q":"Mitä Sofia ikävöi välillä?","r":"What does Sofia sometimes miss?","o":["Italian ruokaa.","Entistä työpaikkaa.","Italian aurinkoa ja suurta perhettä."],"t":["Italian food","Her former job","The Italian sun and her big family"],"a":2},{"q":"Oikein vai väärin? Sofia ei pidä suomalaisesta saunasta.","r":"True or false? Sofia doesn’t like the Finnish sauna.","o":["Oikein","Väärin"],"t":["True","False"],"a":1}]},
+{"id":"YKI_L5","skill":"listen","theme":"Minä ja taustani","themeRu":"Me and my background","title":"Ihmisiä Suomessa: Ali","titleRu":"People in Finland: Ali","limit":540,"listen":true,"text":["— Tervetuloa ohjelmaan. Kuka olet ja mistä tulet? — Hei, nimeni on Ali, ja olen kotoisin Marokosta. Olen asunut Suomessa kolme vuotta. Olen sähköasentaja, ja työskentelen yrityksessä, joka tekee uusia asuntoja. — Miten päädyit Suomeen? — Vaimoni on suomalainen. Tapasimme Espanjassa, kun hän oli työmatkalla.","— Mikä on ollut vaikeinta? — Kieli ja talvi. Suomen kieli on vaikea, mutta vaimon perhe puhuu minulle paljon suomea. Talvella pimeys on raskasta, mutta nyt käyn aamuisin kävelyllä ja syön D-vitamiinia. — Mitä teet vapaa-ajalla? — Pelaan jalkapalloa kaverien kanssa ja kokkaan marokkolaista ruokaa. Viime kuussa tein kuskusia koko naapuruston kesäjuhlaan."],"ru":["— Welcome to the programme. Who are you and where do you come from? — Hello, my name is Ali and I come from Morocco. I have lived in Finland for three years. I am an electrician and I work for a company that builds new flats. — How did you end up in Finland? — My wife is Finnish. We met in Spain when she was on a business trip.","— What has been the hardest? — The language and the winter. Finnish is hard, but my wife’s family speaks a lot of Finnish to me. In winter the darkness is heavy, but now I go for a walk in the mornings and take vitamin D. — What do you do in your free time? — I play football with friends and cook Moroccan food. Last month I made couscous for the whole neighbourhood’s summer party."],"extra":[],"quiz":[{"q":"Missä Ali ja hänen vaimonsa tapasivat?","r":"Where did Ali and his wife meet?","o":["Marokossa.","Espanjassa.","Suomessa."],"t":["In Morocco","In Spain","In Finland"],"a":1},{"q":"Oikein vai väärin? Ali on asunut Suomessa kolme vuotta.","r":"True or false? Ali has lived in Finland for three years.","o":["Oikein","Väärin"],"t":["True","False"],"a":0},{"q":"Mitä Ali tekee työkseen?","r":"What does Ali do for a living?","o":["Hän on kokki.","Hän on opettaja.","Hän on sähköasentaja."],"t":["He is a cook","He is a teacher","He is an electrician"],"a":2},{"q":"Oikein vai väärin? Talvella pimeys on Alille helppoa.","r":"True or false? The winter darkness is easy for Ali.","o":["Oikein","Väärin"],"t":["True","False"],"a":1},{"q":"Mitä Ali teki viime kuussa?","r":"What did Ali do last month?","o":["Kokkasi kuskusia naapuruston juhlaan.","Matkusti Marokkoon.","Vaihtoi työpaikkaa."],"t":["Made couscous for the neighbourhood party","Travelled to Morocco","Changed jobs"],"a":0}]},
+{"id":"YKI_R2","skill":"read","theme":"Koti ja asuminen","themeRu":"Home and housing","title":"Parvekkeiden kunnostus alkaa","titleRu":"Balcony renovation begins","limit":480,"listen":false,"text":["Taloyhtiömme parvekkeiden kunnostus alkaa maanantaina 3. kesäkuuta. Työt kestävät noin kuusi viikkoa. Remonttia tekee rakennusyritys, jonka työntekijät ovat talolla arkisin kello 7–16.","Kunnostuksen aikana parvekkeita ei voi käyttää. Asukkaiden täytyy viedä kasvit, huonekalut ja muut tavarat pois parvekkeilta viimeistään perjantaina 31. toukokuuta. Jos tavaroita jää parvekkeelle, ne viedään taloyhtiön varastoon, ja siitä veloitetaan 30 euroa.","Työ aiheuttaa melua ja pölyä. Siksi ikkunat kannattaa pitää kiinni päivisin. Meluisimmat työt tehdään kello 9–15. Kysymyksiä voi esittää isännöitsijälle puhelimitse arkisin kello 9–11.","Remontin jälkeen parvekkeet maalataan ja kaiteet uusitaan. Samalla parvekkeille asennetaan uudet lasit, joten talvella ulkona on lämpimämpää. Asukkaille järjestetään tiedotustilaisuus keskiviikkona 29. toukokuuta kello 18 taloyhtiön kerhohuoneessa. Tilaisuudessa voi kysyä kaikesta remonttiin liittyvästä."],"ru":["The renovation of the balconies in our building begins on Monday 3 June. The work will take about six weeks. The renovation is carried out by a construction company whose workers will be at the building on weekdays from 7 to 16.","During the renovation the balconies cannot be used. Residents must take plants, furniture and other things off the balconies no later than Friday 31 May. If items are left on the balcony, they will be taken to the housing company’s storage, and 30 euros will be charged for it.","The work causes noise and dust. Therefore it is best to keep the windows closed during the day. The noisiest work is done from 9 to 15. Questions can be asked of the building manager by phone on weekdays from 9 to 11.","After the renovation the balconies will be painted and the railings renewed. At the same time new glazing will be installed on the balconies, so it will be warmer outside in winter. An information meeting for residents will be held on Wednesday 29 May at 18:00 in the housing company’s clubroom. At the meeting you can ask about anything related to the renovation."],"extra":[],"quiz":[{"q":"Kuinka kauan parvekkeiden kunnostus kestää?","r":"How long will the balcony renovation take?","o":["Noin kuusi päivää.","Noin kuusi viikkoa.","Koko kesän."],"t":["About six days","About six weeks","The whole summer"],"a":1},{"q":"Oikein vai väärin? Työntekijät työskentelevät myös viikonloppuisin.","r":"True or false? The workers also work at weekends.","o":["Oikein","Väärin"],"t":["True","False"],"a":1},{"q":"Mitä asukkaiden pitää tehdä ennen töiden alkua?","r":"What must residents do before the work begins?","o":["Maksaa 30 euroa.","Soittaa isännöitsijälle.","Viedä tavarat pois parvekkeilta."],"t":["Pay 30 euros","Call the manager","Take their things off the balconies"],"a":2},{"q":"Oikein vai väärin? Jos tavaroita jää parvekkeelle, ne viedään varastoon ja siitä peritään maksu.","r":"True or false? If things are left on the balcony, they are taken to storage and a fee is charged.","o":["Oikein","Väärin"],"t":["True","False"],"a":0},{"q":"Milloin melua on eniten?","r":"When is there the most noise?","o":["Kello 9–15.","Aamulla kello 7–9.","Illalla."],"t":["From 9 to 15","In the morning from 7 to 9","In the evening"],"a":0},{"q":"Oikein vai väärin? Isännöitsijälle voi soittaa koko päivän.","r":"True or false? You can call the manager all day.","o":["Oikein","Väärin"],"t":["True","False"],"a":1},{"q":"Oikein vai väärin? Tiedotustilaisuus pidetään ennen remontin alkua.","r":"True or false? The information meeting is held before the renovation begins.","o":["Oikein","Väärin"],"t":["True","False"],"a":0}]},
+{"id":"YKI_L6","skill":"listen","theme":"Koti ja asuminen","themeRu":"Home and housing","title":"Soitto vuokra-asunnosta","titleRu":"A call about a rental flat","limit":540,"listen":true,"text":["— Päivää, soitan vuokra-asunnosta, joka oli ilmoituksessa. Onko se vielä vapaana? — Kyllä on. Kyseessä on kaksio kolmannessa kerroksessa, ja vuokra on seitsemänsataakahdeksankymmentä euroa kuukaudessa. Vesi kuuluu vuokraan, mutta sähkö maksetaan erikseen. — Onko talossa hissi? — Ei ole, mutta kerroksia on vain neljä.","— Voinko tulla katsomaan asuntoa? — Toki. Näyttö on huomenna kello kahdeksantoista. Ota mukaan henkilöllisyystodistus. — Saako asunnossa pitää lemmikkejä? — Kissan saa pitää, mutta koiria ei sallita. Vuokrasopimus tehdään vähintään vuodeksi, ja vakuus on kahden kuukauden vuokra. — Selvä, tulen huomenna."],"ru":["— Good afternoon, I’m calling about the rental flat from the advertisement. Is it still available? — Yes. It is a two-room flat on the third floor, and the rent is seven hundred and eighty euros a month. Water is included in the rent, but electricity is paid separately. — Does the building have a lift? — No, but there are only four floors.","— May I come and see the flat? — Of course. The viewing is tomorrow at eighteen hundred. Bring an ID with you. — Can I keep pets in the flat? — A cat is allowed, but dogs are not. The rental agreement is made for at least a year, and the deposit is two months’ rent. — Understood, I’ll come tomorrow."],"extra":[],"quiz":[{"q":"Kuinka paljon vuokra on kuukaudessa?","r":"How much is the rent per month?","o":["580 euroa.","780 euroa.","870 euroa."],"t":["580 euros","780 euros","870 euros"],"a":1},{"q":"Oikein vai väärin? Sähkö kuuluu vuokraan.","r":"True or false? Electricity is included in the rent.","o":["Oikein","Väärin"],"t":["True","False"],"a":1},{"q":"Missä kerroksessa asunto on?","r":"Which floor is the flat on?","o":["Toisessa.","Neljännessä.","Kolmannessa."],"t":["On the second","On the fourth","On the third"],"a":2},{"q":"Oikein vai väärin? Asunnossa saa pitää kissaa.","r":"True or false? You can keep a cat in the flat.","o":["Oikein","Väärin"],"t":["True","False"],"a":0},{"q":"Mikä on vakuus?","r":"What is the deposit?","o":["Kahden kuukauden vuokra.","Yhden kuukauden vuokra.","Sata euroa."],"t":["Two months’ rent","One month’s rent","One hundred euros"],"a":0}]},
+{"id":"YKI_R1","skill":"read","theme":"Kauppa ja palvelut","themeRu":"Shops and services","title":"Kirjasto avautuu myös iltaisin","titleRu":"The library is open in the evenings too","limit":480,"listen":false,"text":["Kaupunginkirjasto muuttaa aukioloaikojaan syyskuun alusta. Tästä lähtien pääkirjasto on auki arkisin kello 8–20 ja lauantaisin kello 10–16. Sunnuntaisin kirjasto pysyy edelleen suljettuna.","Uutta on myös omatoimikirjasto. Asiakas voi käyttää kirjastoa ilman henkilökuntaa aamuisin kello 7–8 ja iltaisin kello 20–22. Palvelun käyttö vaatii kirjastokortin ja nelinumeroisen tunnusluvun, jonka saa lainaustiskiltä. Omatoimiaikana voi lainata ja palauttaa kirjoja, mutta lehtiä ja elokuvia ei voi lainata.","Myöhästymismaksuja ei peritä lapsilta. Aikuisten maksu on 20 senttiä päivässä, mutta enintään 6 euroa yhdeltä kirjalta. Kirjat voi uusia puhelimella tai verkossa kolme kertaa, jos kukaan muu ei ole varannut niitä.","Kirjastossa on myös uusia tapahtumia. Joka tiistai kello 17 pidetään suomen kielen keskusteluryhmä, johon voi osallistua ilmaiseksi. Ryhmään ei tarvitse ilmoittautua etukäteen. Lisäksi lapsille luetaan satuja lauantaisin kello 11."],"ru":["The city library is changing its opening hours from the beginning of September. From then on the main library is open on weekdays from 8 to 20 and on Saturdays from 10 to 16. On Sundays the library remains closed.","A new feature is the self-service library. Customers can use the library without staff in the mornings from 7 to 8 and in the evenings from 20 to 22. This requires a library card and a four-digit PIN, which you get from the lending desk. During self-service hours you can borrow and return books, but magazines and films cannot be borrowed.","No late fees are charged to children. For adults the fee is 20 cents a day, but no more than 6 euros per book. Books can be renewed by phone or online three times if nobody else has reserved them.","The library also has new events. Every Tuesday at 17:00 there is a Finnish conversation group, and participation is free. You do not need to sign up in advance. In addition, fairy tales are read to children on Saturdays at 11:00."],"extra":[],"quiz":[{"q":"Milloin pääkirjasto on auki arkisin?","r":"When is the main library open on weekdays?","o":["Kello 10–16.","Kello 8–20.","Kello 7–22."],"t":["From 10 to 16","From 8 to 20","From 7 to 22"],"a":1},{"q":"Oikein vai väärin? Kirjasto on auki myös sunnuntaisin.","r":"True or false? The library is also open on Sundays.","o":["Oikein","Väärin"],"t":["True","False"],"a":1},{"q":"Mitä omatoimikirjaston käyttöön tarvitaan?","r":"What is needed to use the self-service library?","o":["Pelkkä kirjastokortti.","Henkilökunnan lupa.","Kirjastokortti ja nelinumeroinen tunnusluku."],"t":["Only a library card","Permission from the staff","A library card and a four-digit PIN"],"a":2},{"q":"Oikein vai väärin? Omatoimiaikana voi lainata myös elokuvia.","r":"True or false? During self-service hours you can also borrow films.","o":["Oikein","Väärin"],"t":["True","False"],"a":1},{"q":"Paljonko aikuinen maksaa enintään myöhästymismaksua yhdestä kirjasta?","r":"What is the most an adult pays in late fees for one book?","o":["20 senttiä.","6 euroa.","Ei mitään."],"t":["20 cents","6 euros","Nothing"],"a":1},{"q":"Oikein vai väärin? Kirjan voi uusia kolme kertaa, jos kukaan muu ei ole varannut sitä.","r":"True or false? A book can be renewed three times if nobody else has reserved it.","o":["Oikein","Väärin"],"t":["True","False"],"a":0},{"q":"Oikein vai väärin? Keskusteluryhmään pitää ilmoittautua etukäteen.","r":"True or false? You must sign up in advance for the conversation group.","o":["Oikein","Väärin"],"t":["True","False"],"a":1}]},
+{"id":"YKI_L7","skill":"listen","theme":"Kauppa ja palvelut","themeRu":"Shops and services","title":"Takin palautus","titleRu":"Returning a jacket","limit":540,"listen":true,"text":["— Hei, ostin tämän takin viime viikolla, mutta vetoketju hajosi jo toisella käyttökerralla. Haluaisin palauttaa takin. — Pahoittelen. Onko teillä kuitti mukana? — On, tässä. — Kiitos. Takki on ostettu kuusi päivää sitten, joten voimme kyllä palauttaa rahat tai vaihtaa takin uuteen.","— Mieluummin vaihtaisin sen. Onko samaa mallia vielä koossa M? — Katson... Valitettavasti koko M on loppu, mutta koko L olisi vielä. Se on vähän isompi. Voin myös tilata M-koon toisesta liikkeestä, ja se tulisi ensi viikon keskiviikkona. — Tilatkaa se, kiitos. — Selvä. Soitamme teille, kun takki on saapunut."],"ru":["— Hello, I bought this jacket last week, but the zip broke on the second use. I would like to return the jacket. — I’m sorry. Do you have the receipt? — Yes, here. — Thank you. The jacket was bought six days ago, so we can refund the money or replace the jacket with a new one.","— I’d rather exchange it. Is the same model still available in size M? — Let me see… Unfortunately size M has run out, but size L is still available. It’s a little bigger. I can also order size M from another shop, and it would arrive next Wednesday. — Please order it. — All right. We’ll call you when the jacket has arrived."],"extra":[],"quiz":[{"q":"Mikä takissa oli vialla?","r":"What was wrong with the jacket?","o":["Takki oli liian pieni.","Vetoketju hajosi.","Takissa oli reikä."],"t":["The jacket was too small","The zip broke","There was a hole in the jacket"],"a":1},{"q":"Oikein vai väärin? Takki on ostettu kuusi päivää sitten.","r":"True or false? The jacket was bought six days ago.","o":["Oikein","Väärin"],"t":["True","False"],"a":0},{"q":"Mitä asiakas haluaa?","r":"What does the customer want?","o":["Saada rahat takaisin.","Ostaa toisen takin.","Vaihtaa takin uuteen."],"t":["To get the money back","To buy a second jacket","To exchange the jacket for a new one"],"a":2},{"q":"Oikein vai väärin? Koko M on vielä varastossa.","r":"True or false? Size M is still in stock.","o":["Oikein","Väärin"],"t":["True","False"],"a":1},{"q":"Milloin tilattu takki saapuu?","r":"When will the ordered jacket arrive?","o":["Ensi viikon keskiviikkona.","Huomenna.","Kuukauden kuluttua."],"t":["Next Wednesday","Tomorrow","In a month"],"a":0}]},
+{"id":"YKI_L2","skill":"listen","theme":"Kulttuuri","themeRu":"Culture","title":"Ulkoilmakonsertti","titleRu":"An open-air concert","limit":420,"listen":true,"text":["Hyvää huomenta kuuntelijat! Tänään lauantaina Kaupunginteatterin pihalla järjestetään ulkoilmakonsertti. Konsertti alkaa kello kuusitoista ja kestää noin kaksi tuntia. Lavalla esiintyy paikallinen kuoro ja kolme nuorta muusikkoa.","Pääsylippu maksaa kymmenen euroa, mutta alle kahdeksantoistavuotiaat pääsevät sisään ilmaiseksi. Jos sataa, konsertti pidetään teatterin sisällä, ja silloin lippuja on vain sata. Siksi kannattaa ostaa lippu etukäteen verkosta. Muista ottaa lämmintä päälle, sillä iltapäivällä tuulee.","Konsertin jälkeen yleisö voi tavata esiintyjät teatterin kahvilassa. Kahvilassa myydään kahvia, mehua ja piirakoita. Konsertin tuotto käytetään nuorten musiikkikerhon toimintaan. Lisätietoja löytyy teatterin kotisivuilta. Kiitos, että kuuntelitte, ja nauttikaa konsertista!"],"ru":["Good morning, dear listeners! Today, Saturday, an open-air concert is being held in the yard of the City Theatre. The concert starts at sixteen hundred and lasts about two hours. On stage will be a local choir and three young musicians.","The entrance ticket costs ten euros, but children and young people under eighteen get in free. If it rains, the concert will be held inside the theatre, and then there are only one hundred tickets. So it is best to buy a ticket in advance online. Don’t forget warm clothes: in the afternoon it will be windy.","After the concert the audience can meet the performers in the theatre café. The café sells coffee, juice and pies. The proceeds of the concert will go to the activities of a youth music club. More information can be found on the theatre’s website. Thank you for listening, and enjoy the concert!"],"extra":[],"quiz":[{"q":"Oikein vai väärin? Konsertti on sunnuntaina.","r":"True or false? The concert is on Sunday.","o":["Oikein","Väärin"],"t":["True","False"],"a":1},{"q":"Kuinka kauan konsertti kestää?","r":"How long does the concert last?","o":["Noin tunnin.","Koko päivän.","Noin kaksi tuntia."],"t":["About an hour","All day","About two hours"],"a":2},{"q":"Oikein vai väärin? Alle kahdeksantoistavuotiaat pääsevät konserttiin ilmaiseksi.","r":"True or false? Those under eighteen get into the concert free.","o":["Oikein","Väärin"],"t":["True","False"],"a":0},{"q":"Mitä tapahtuu, jos sataa?","r":"What will happen if it rains?","o":["Konsertti pidetään sisällä.","Konsertti peruutetaan.","Konsertti siirretään."],"t":["The concert will be held inside","The concert will be cancelled","The concert will be postponed"],"a":0},{"q":"Miksi lippu kannattaa ostaa etukäteen?","r":"Why is it best to buy a ticket in advance?","o":["Netissä lippu on ilmainen.","Sisällä on vain sata lippua.","Pihalla ei myydä lippuja."],"t":["The ticket is free online","There are only a hundred tickets inside","Tickets are not sold in the yard"],"a":1},{"q":"Mihin konsertin tuotto käytetään?","r":"What will the proceeds of the concert be used for?","o":["Teatterin remonttiin.","Nuorten musiikkikerhoon.","Kuoron matkaan."],"t":["The theatre’s renovation","A youth music club","The choir’s trip"],"a":1}]},
+{"id":"YKI_R6","skill":"read","theme":"Kulttuuri","themeRu":"Culture","title":"Museoiden yö kutsuu kaikki","titleRu":"Museum Night welcomes everyone","limit":540,"listen":false,"text":["Museoiden yö järjestetään perjantaina 18. elokuuta kello 17–23. Tapahtuman aikana yli kaksikymmentä museota, galleriaa ja kirjastoa on auki ilta-aikaan. Useimpiin paikkoihin on ilmainen sisäänpääsy, mutta joissakin erikoisnäyttelyissä lippu maksaa viisi euroa.","Ohjelmassa on opastettuja kierroksia, konsertteja ja työpajoja lapsille. Esimerkiksi Kansallismuseossa voi kokeilla vanhoja leikkejä, ja Kaupunginkirjastossa on runoilta kello 20. Opastetuille kierroksille pitää ilmoittautua etukäteen verkossa, koska paikkoja on rajoitetusti.","Tapahtumapaikkojen välillä liikennöi ilmainen museobussi. Se kulkee puolen tunnin välein ja pysähtyy kaikkien tärkeimpien kohteiden luona. Ohjelma ja karttalinjat löytyvät tapahtuman kotisivuilta. Pyöräilijöille on pyöräpaikkoja jokaisen museon edessä."],"ru":["Museum Night is held on Friday 18 August from 17 to 23. During the event more than twenty museums, galleries and libraries are open in the evening. Most places have free admission, but at some special exhibitions a ticket costs five euros.","The programme includes guided tours, concerts and workshops for children. For example, at the National Museum you can try old games, and the city library has a poetry evening at 20:00. For guided tours you must register online in advance, because places are limited.","A free museum bus runs between the venues. It runs every half hour and stops at all the main sites. The programme and route maps can be found on the event’s website. For cyclists there are bike racks in front of every museum."],"extra":[],"quiz":[{"q":"Mihin aikaan Museoiden yö alkaa?","r":"When does Museum Night begin?","o":["Kello 17.","Kello 20.","Kello 23."],"t":["At 17","At 20","At 23"],"a":0},{"q":"Oikein vai väärin? Kaikkiin museoihin on ilmainen sisäänpääsy.","r":"True or false? Admission to all museums is free.","o":["Oikein","Väärin"],"t":["True","False"],"a":1},{"q":"Mitä Kansallismuseossa voi kokeilla?","r":"What can you try at the National Museum?","o":["Uusia pelejä.","Ruoanlaittoa.","Vanhoja leikkejä."],"t":["New games","Cooking","Old games"],"a":2},{"q":"Oikein vai väärin? Opastetuille kierroksille pitää ilmoittautua etukäteen.","r":"True or false? You must register in advance for guided tours.","o":["Oikein","Väärin"],"t":["True","False"],"a":0},{"q":"Kuinka usein museobussi kulkee?","r":"How often does the museum bus run?","o":["Joka tunti.","Puolen tunnin välein.","Vain illalla."],"t":["Every hour","Every half hour","Only in the evening"],"a":1},{"q":"Oikein vai väärin? Museobussi maksaa viisi euroa.","r":"True or false? The museum bus costs five euros.","o":["Oikein","Väärin"],"t":["True","False"],"a":1}]},
+{"id":"YKI_L1","skill":"listen","theme":"Matkustaminen","themeRu":"Travel","title":"Junalippu Ouluun","titleRu":"A train ticket to Oulu","limit":420,"listen":true,"text":["— Hei, haluaisin ostaa lipun Ouluun huomenaamuksi. — Selvä. Aamulla lähtee juna kello seitsemän kaksitoista ja toinen kello yhdeksän neljäkymmentä. Kumpi sopii? — Mieluummin se aikaisempi. Paljonko matka maksaa? — Aikuisen normaali lippu maksaa kuusikymmentäkaksi euroa. Jos ostatte lipun netistä, hinta on halvempi, noin neljäkymmentäviisi euroa.","— Voi, mutta minä en ehdi ostaa sitä enää netistä, koska lähden jo huomenna. — Se onnistuu kyllä. Nettilippu pitää ostaa vähintään tunti ennen lähtöä, joten voitte ostaa sen vielä illalla tai aamulla. — Aha, no sitten ostan sen kotona illalla. Onko junassa ravintolavaunua? — On, mutta aikaisessa junassa se aukeaa vasta Tampereen jälkeen. — Hyvä tietää. Kiitos avusta.","— Voinko varata paikan jo nyt? — Paikkavarauksen voi tehdä asemalla maksamalla kolme euroa. Silloin voitte valita paikan ikkunan vierestä. — Hyvä, otan sen heti. — Selvä. Maksatteko kortilla vai käteisellä? — Kortilla, kiitos. — Tässä on kuitti. Hyvää matkaa!"],"ru":["— Hello, I would like to buy a ticket to Oulu for tomorrow morning. — All right. In the morning one train leaves at seven twelve and another at nine forty. Which suits you? — The earlier one, preferably. How much does the trip cost? — A normal adult ticket costs sixty-two euros. If you buy the ticket online, the price is lower, about forty-five euros.","— Oh, but I won’t be able to buy it online any more, since I’m travelling tomorrow. — You can. An online ticket has to be bought at least an hour before departure, so you can still buy it in the evening or in the morning. — I see, then I’ll buy it at home this evening. Is there a restaurant car on the train? — Yes, but on the early train it opens only after Tampere. — Good to know. Thank you for your help.","— Can I reserve a seat already now? — A seat reservation can be made at the station for three euros. Then you can choose a seat by the window. — Good, I’ll take it right away. — All right. Will you pay by card or in cash? — By card, please. — Here is your receipt. Have a good journey!"],"extra":[],"quiz":[{"q":"Oikein vai väärin? Asiakas haluaa matkustaa Ouluun tänään.","r":"True or false? The customer wants to travel to Oulu today.","o":["Oikein","Väärin"],"t":["True","False"],"a":1},{"q":"Minkä junan asiakas valitsee?","r":"Which train does the customer choose?","o":["Kello seitsemän kaksitoista.","Kello yhdeksän neljäkymmentä.","Ei kumpaakaan."],"t":["The one at seven twelve","The one at nine forty","Neither"],"a":0},{"q":"Oikein vai väärin? Nettilippu on halvempi kuin lippu asemalla.","r":"True or false? An online ticket is cheaper than a ticket at the station.","o":["Oikein","Väärin"],"t":["True","False"],"a":0},{"q":"Milloin nettilippu pitää ostaa?","r":"When must an online ticket be bought?","o":["Vasta junassa.","Viimeistään tunti ennen lähtöä.","Edellisenä viikkona."],"t":["Only on the train","At the latest an hour before departure","A week before the trip"],"a":1},{"q":"Milloin ravintolavaunu aukeaa aikaisessa junassa?","r":"When does the restaurant car open on the early train?","o":["Heti lähdön jälkeen.","Ei lainkaan.","Tampereen jälkeen."],"t":["Right after departure","It doesn’t open at all","After Tampere"],"a":2},{"q":"Paljonko paikkavaraus maksaa?","r":"How much does a seat reservation cost?","o":["Kolme euroa.","Viisi euroa.","Se on ilmainen."],"t":["Three euros","Five euros","Free"],"a":0}]},
+{"id":"YKI_R7","skill":"read","theme":"Matkustaminen","themeRu":"Travel","title":"Ohjeita lentomatkustajille","titleRu":"Notes for air passengers","limit":600,"listen":false,"text":["Lentoyhtiö muistuttaa matkustajia, että lentokentälle kannattaa tulla vähintään kaksi tuntia ennen lähtöä. Lähtöselvitys sulkeutuu 45 minuuttia ennen lennon lähtöä, eikä myöhästyneitä matkustajia oteta enää mukaan. Matkalaukun voi jättää lentokentän automaattiin, jos on tehnyt lähtöselvityksen netissä.","Käsimatkatavaran paino saa olla enintään kahdeksan kiloa. Nesteet saa ottaa mukaan vain pienissä, alle sadan millilitran pulloissa, ja pullot pitää laittaa läpinäkyvään pussiin. Terävät esineet, esimerkiksi sakset ja veitset, on laitettava ruumaan menevään matkatavaraan.","Jos lento viivästyy yli kolme tuntia, matkustaja voi saada korvausta. Korvausta pitää hakea lentoyhtiöltä kolmen kuukauden kuluessa. Hakemukseen liitetään lentolippu ja selvitys viivästymisestä. Lisätietoja saa asiakaspalvelusta puhelimitse ja verkkosivuilta."],"ru":["The airline reminds passengers that it is best to arrive at the airport at least two hours before departure. Check-in closes 45 minutes before the flight departs, and late passengers are no longer accepted. A suitcase can be left at the airport’s machine if you have checked in online.","The weight of hand luggage may be no more than eight kilograms. Liquids may be taken only in small bottles of less than one hundred millilitres, and the bottles must be put in a transparent bag. Sharp objects, such as scissors and knives, must be put in the hold luggage.","If a flight is delayed by more than three hours, the passenger may receive compensation. Compensation must be claimed from the airline within three months. The flight ticket and a statement of the delay are attached to the application. More information is available from customer service by phone and on the website."],"extra":[],"quiz":[{"q":"Milloin lähtöselvitys sulkeutuu?","r":"When does check-in close?","o":["Kaksi tuntia ennen lähtöä.","45 minuuttia ennen lähtöä.","Lähtöhetkellä."],"t":["Two hours before departure","45 minutes before departure","At the moment of departure"],"a":1},{"q":"Oikein vai väärin? Matkalaukun voi jättää automaattiin, jos on tehnyt lähtöselvityksen netissä.","r":"True or false? A suitcase can be left at the machine if you have checked in online.","o":["Oikein","Väärin"],"t":["True","False"],"a":0},{"q":"Kuinka painava käsimatkatavara saa olla enintään?","r":"How heavy may hand luggage be?","o":["Kymmenen kiloa.","Viisi kiloa.","Kahdeksan kiloa."],"t":["Ten kilograms","Five kilograms","Eight kilograms"],"a":2},{"q":"Oikein vai väärin? Nesteet saa ottaa mukaan missä tahansa pullossa.","r":"True or false? Liquids can be taken in any bottle.","o":["Oikein","Väärin"],"t":["True","False"],"a":1},{"q":"Mihin matkatavaraan sakset pitää laittaa?","r":"Into which luggage should scissors go?","o":["Ruumaan menevään matkatavaraan.","Käsimatkatavaraan.","Läpinäkyvään pussiin."],"t":["Hold luggage","Hand luggage","A transparent bag"],"a":0},{"q":"Oikein vai väärin? Korvausta pitää hakea kolmen kuukauden kuluessa.","r":"True or false? Compensation must be claimed within three months.","o":["Oikein","Väärin"],"t":["True","False"],"a":0}]},
+{"id":"YKI_R3","skill":"read","theme":"Terveys ja hyvinvointi","themeRu":"Health","title":"Uni on tärkeämpää kuin luulet","titleRu":"Sleep is more important than you think","limit":540,"listen":false,"text":["Aikuinen tarvitsee yleensä seitsemän tai kahdeksan tuntia unta yössä. Monet nukkuvat kuitenkin vähemmän, koska työ, harrastukset ja älypuhelin vievät aikaa illalla. Tutkijoiden mukaan jatkuva univaje heikentää muistia ja keskittymiskykyä.","Hyvään uneen auttavat säännölliset tavat. Kannattaa mennä nukkumaan ja nousta ylös suunnilleen samaan aikaan joka päivä, myös viikonloppuna. Iltapäivällä ei pitäisi juoda kahvia, ja viimeisen tunnin ennen nukkumaanmenoa kannattaa jättää puhelin pois.","Jos nukahtaminen on vaikeaa, ei kannata katsoa kelloa. Silloin on parempi nousta hetkeksi ylös ja lukea jotakin rauhallista. Jos univaikeudet jatkuvat yli kuukauden, kannattaa varata aika lääkärille.","Myös liikunta parantaa unta. Kävely ulkona päivällä auttaa nukahtamaan illalla, koska päivänvalo säätelee kehon vuorokausirytmiä. Raskasta liikuntaa ei kuitenkaan kannata tehdä aivan ennen nukkumaanmenoa. Makuuhuoneen pitäisi olla viileä, pimeä ja hiljainen."],"ru":["An adult usually needs seven to eight hours of sleep a night. However, many people sleep less, because work, hobbies and the smartphone take up the evening. According to researchers, continuous sleep deprivation weakens memory and concentration.","Regular habits help you sleep well. It is a good idea to go to bed and get up at about the same time every day, including at weekends. You shouldn’t drink coffee in the afternoon, and in the last hour before bed it is best to leave the phone aside.","If falling asleep is difficult, you shouldn’t watch the clock. It is better then to get up for a moment and read something calm. If sleep problems continue for more than a month, you should book an appointment with a doctor.","Exercise also improves sleep. A walk outdoors during the day helps you fall asleep in the evening, because daylight regulates the body’s daily rhythm. However, you shouldn’t do heavy exercise right before bedtime. The bedroom should be cool, dark and quiet."],"extra":[],"quiz":[{"q":"Mitä tutkijoiden mukaan jatkuva univaje aiheuttaa?","r":"What does continuous sleep deprivation cause, according to researchers?","o":["Parantaa muistia.","Heikentää muistia ja keskittymiskykyä.","Antaa enemmän energiaa."],"t":["It improves memory","It weakens memory and concentration","It gives more energy"],"a":1},{"q":"Oikein vai väärin? Viikonloppuna saa nukkua ihan milloin vain.","r":"True or false? At weekends you can sleep whenever you like.","o":["Oikein","Väärin"],"t":["True","False"],"a":1},{"q":"Mitä viimeisen tunnin ennen nukkumaanmenoa kannattaa tehdä?","r":"What is it a good idea to do in the last hour before bed?","o":["Katsoa puhelinta.","Juoda kahvia.","Jättää puhelin pois."],"t":["Look at the phone","Drink coffee","Leave the phone aside"],"a":2},{"q":"Oikein vai väärin? Jos nukahtaminen on vaikeaa, kannattaa katsoa kelloa koko ajan.","r":"True or false? If falling asleep is difficult, you should keep watching the clock.","o":["Oikein","Väärin"],"t":["True","False"],"a":1},{"q":"Milloin lääkäriin kannattaa mennä?","r":"When should you go to the doctor?","o":["Heti ensimmäisen huonon yön jälkeen.","Jos univaikeudet jatkuvat yli kuukauden.","Ei koskaan."],"t":["Right after the first bad night","If sleep problems last for more than a month","Never"],"a":1},{"q":"Oikein vai väärin? Aikuinen tarvitsee yleensä seitsemän tai kahdeksan tuntia unta yössä.","r":"True or false? An adult usually needs seven to eight hours of sleep a night.","o":["Oikein","Väärin"],"t":["True","False"],"a":0},{"q":"Miksi päivällä ulkona kävely auttaa nukkumaan?","r":"Why does a walk outdoors during the day help you sleep?","o":["Päivänvalo säätelee kehon vuorokausirytmiä.","Silloin on vähemmän ihmisiä.","Kävelystä tulee heti väsynyt."],"t":["Daylight regulates the body’s daily rhythm","There are fewer people at that time","You get tired right away from walking"],"a":0}]},
+{"id":"YKI_L4","skill":"listen","theme":"Terveys ja hyvinvointi","themeRu":"Health","title":"Ajanvaraus terveysasemalle","titleRu":"Booking an appointment at the health centre","limit":480,"listen":true,"text":["— Terveysasema, hyvää päivää. — Hei, tässä on Mikko Virtanen. Minulla on ollut kuume ja kurkku on kipeä jo kolme päivää. Haluaisin varata ajan lääkärille. — Selvä. Onko sinulla kiire, vai riittääkö aika ensi viikolla? — Mieluummin pian, koska töissä on paljon tekemistä. — Huomenna kello yksitoista olisi vapaa aika. Sopiiko se?","— Huomenna olen valitettavasti töissä aamupäivän. Onko iltapäivällä mitään? — Kello viisitoista olisi vielä yksi aika. — Se sopii hyvin. — Tule paikalle vartin ennen. Ota mukaan henkilöllisyystodistus ja Kela-kortti. Jos et pääse, peru aika viimeistään edellisenä päivänä.","— Muistutan vielä, että terveysasemalla on tänä vuonna uusi sähköinen ajanvaraus. Voit varata ajan myös puhelimen sovelluksella. — Hienoa, kiitos tiedosta. — Lääkäri kirjoittaa tarvittaessa lähetteen ja reseptin sähköisesti, ja voit hakea lääkkeet apteekista pelkällä henkilötunnuksella."],"ru":["— Health centre, good afternoon. — Hello, this is Mikko Virtanen. I have had a fever and a sore throat for three days already. I would like to book an appointment with a doctor. — All right. Is it urgent, or will a time next week do? — Preferably soon, because there is a lot to do at work. — Tomorrow at eleven there is a free time. Does that suit you?","— Tomorrow morning I’m unfortunately at work. Is there anything in the afternoon? — At fifteen hundred there is one more time. — That suits me very well. — Come a quarter of an hour before. Bring an ID and your Kela card. If you can’t make it, cancel the appointment at the latest the day before.","— I would also remind you that this year the health centre has a new electronic booking system. You can also book through an app on your phone. — Great, thanks for the information. — The doctor will, if necessary, write the referral and prescription electronically, and you can collect the medicine from the pharmacy with just your personal identity code."],"extra":[],"quiz":[{"q":"Kuinka kauan Mikolla on ollut oireita?","r":"How long has Mikko had symptoms?","o":["Kolme päivää.","Kolme viikkoa.","Yhden päivän."],"t":["Three days","Three weeks","One day"],"a":0},{"q":"Oikein vai väärin? Mikko haluaa ajan vasta ensi viikolle.","r":"True or false? Mikko wants an appointment only for next week.","o":["Oikein","Väärin"],"t":["True","False"],"a":1},{"q":"Miksi Mikko ei halua aikaa kello yksitoista?","r":"Why doesn’t Mikko want the time at eleven?","o":["Hän nukkuu silloin.","Hän on silloin lomalla.","Hän on silloin töissä."],"t":["He is asleep at that time","He is on holiday at that time","He is at work at that time"],"a":2},{"q":"Oikein vai väärin? Mikko saa ajan kello viisitoista.","r":"True or false? Mikko gets a time at fifteen hundred.","o":["Oikein","Väärin"],"t":["True","False"],"a":0},{"q":"Mitä Mikon pitää ottaa mukaan?","r":"What must Mikko take with him?","o":["Henkilöllisyystodistus ja Kela-kortti.","Vain rahaa.","Lääkkeet."],"t":["An ID and a Kela card","Only money","Medicines"],"a":0},{"q":"Oikein vai väärin? Terveysasemalla voi varata ajan myös sovelluksella.","r":"True or false? At the health centre you can also book through an app.","o":["Oikein","Väärin"],"t":["True","False"],"a":0}]},
+{"id":"YKI_R4","skill":"read","theme":"Työ","themeRu":"Work","title":"Kahvila hakee myyjää","titleRu":"A café is looking for a shop assistant","limit":540,"listen":false,"text":["Kahvila Aurinko Tampereen keskustassa hakee myyjää osa-aikaiseen työhön. Työaika on noin 25 tuntia viikossa, ja työvuorot ovat pääosin iltaisin ja viikonloppuisin. Työ alkaa 1. lokakuuta.","Tehtäviisi kuuluvat asiakaspalvelu, kahvin ja leivonnaisten valmistus sekä kassatyö. Edellytämme hyvää suomen kielen taitoa ja asiakaspalveluhalua. Työkokemus kahvilasta tai ravintolasta katsotaan eduksi, mutta myös aloittelijat voivat hakea.","Tarjoamme perehdytyksen, työvaatteet ja kuukausipalkan työehtosopimuksen mukaan. Lähetä vapaamuotoinen hakemus ja ansioluettelo sähköpostitse viimeistään 15. syyskuuta. Haastattelemme valittuja hakijoita syyskuun lopussa.","Kahvilassa työskentelee tällä hetkellä seitsemän henkilöä. Tiimi on nuori ja ystävällinen, ja työpaikalla kokoonnutaan kerran kuussa yhteiseen palaveriin. Työntekijät saavat ostaa kahvia ja leivonnaisia henkilökuntahintaan. Kysymyksiin vastaa kahvilan esimies Jaana Koskinen."],"ru":["Café Aurinko in the centre of Tampere is looking for a shop assistant for part-time work. Working hours are about 25 hours a week, and shifts are mostly in the evenings and at weekends. The job starts on 1 October.","Your duties include customer service, making coffee and pastries, and till work. We require good Finnish skills and a desire to serve customers. Experience of working in a café or restaurant is considered an advantage, but beginners can apply too.","We offer induction training, work clothes and a monthly salary according to the collective agreement. Send an informal application and a CV by email no later than 15 September. We will interview selected applicants at the end of September.","The café currently has seven employees. The team is young and friendly, and once a month the workplace holds a joint meeting. Employees can buy coffee and pastries at staff prices. Questions are answered by the café’s supervisor Jaana Koskinen."],"extra":[],"quiz":[{"q":"Millaista työtä kahvila tarjoaa?","r":"What kind of job does the café offer?","o":["Kokopäivätyötä.","Osa-aikaista työtä.","Kesätyötä."],"t":["Full-time work","Part-time work","Summer work"],"a":1},{"q":"Oikein vai väärin? Työvuorot ovat pääosin aamuisin.","r":"True or false? Shifts are mostly in the mornings.","o":["Oikein","Väärin"],"t":["True","False"],"a":1},{"q":"Mikä kuuluu työtehtäviin?","r":"What is part of the duties?","o":["Siivous ja pihatyöt.","Kirjanpito.","Asiakaspalvelu ja kassatyö."],"t":["Cleaning and yard work","Bookkeeping","Customer service and till work"],"a":2},{"q":"Oikein vai väärin? Työkokemus kahvilasta on pakollinen.","r":"True or false? Work experience in a café is compulsory.","o":["Oikein","Väärin"],"t":["True","False"],"a":1},{"q":"Mitä hakijan pitää lähettää?","r":"What must the applicant send?","o":["Vain puhelinnumeron.","Vapaamuotoisen hakemuksen ja ansioluettelon.","Todistukset postitse."],"t":["Only a phone number","An informal application and a CV","Certificates by post"],"a":1},{"q":"Oikein vai väärin? Hakemukset pitää lähettää viimeistään 15. syyskuuta.","r":"True or false? Applications must be sent no later than 15 September.","o":["Oikein","Väärin"],"t":["True","False"],"a":0},{"q":"Oikein vai väärin? Työntekijät saavat ostaa tuotteita henkilökuntahintaan.","r":"True or false? Employees can buy products at staff prices.","o":["Oikein","Väärin"],"t":["True","False"],"a":0}]},
+{"id":"YKI_L8","skill":"listen","theme":"Työ","themeRu":"Work","title":"Työhaastattelu","titleRu":"Job interview","limit":600,"listen":true,"text":["— Tervetuloa haastatteluun. Kertokaa ensin vähän itsestänne. — Kiitos. Olen valmistunut lähihoitajaksi kolme vuotta sitten ja olen työskennellyt vanhainkodissa kaksi vuotta. Pidän työstäni, koska saan auttaa ihmisiä. Nyt haluan vaihtaa työpaikkaa, koska nykyinen työ on kaukana kotoa.","— Millaisia vahvuuksia teillä on? — Olen ahkera ja luotettava. Osaan työskennellä myös paineen alla. Esimerkiksi kerran sairastui kolme työntekijää yhtä aikaa, ja silloin autoin järjestämään vuorot uudelleen. — Entä heikkouksia? — Joskus yritän tehdä liian paljon yksin. Olen oppinut pyytämään apua, kun työtä on paljon.","— Työ alkaisi ensi kuun alussa ja olisi kolmivuorotyötä. Palkka on työehtosopimuksen mukainen. Pystyttekö aloittamaan silloin? — Pystyn. Irtisanomisaikani on kaksi viikkoa, joten voin aloittaa kuun alussa. — Hyvä. Kerromme päätöksestä perjantaihin mennessä."],"ru":["— Welcome to the interview. First tell us a little about yourself. — Thank you. I graduated as a practical nurse three years ago and have worked in a care home for two years. I like my work because I can help people. Now I want to change workplace because my current job is far from home.","— What strengths do you have? — I am hard-working and reliable. I can also work under pressure. For example, once three employees fell ill at the same time, and then I helped rearrange the shifts. — And weaknesses? — Sometimes I try to do too much alone. I have learned to ask for help when there is a lot of work.","— The job would start at the beginning of next month and be three-shift work. The salary follows the collective agreement. Are you able to start then? — I am. My notice period is two weeks, so I can start at the beginning of the month. — Good. We will tell you the decision by Friday."],"extra":[],"quiz":[{"q":"Missä hakija on työskennellyt?","r":"Where has the applicant worked?","o":["Sairaalassa.","Kaupassa.","Vanhainkodissa."],"t":["In a hospital","In the shop","In a care home"],"a":2},{"q":"Oikein vai väärin? Hakija on ollut töissä kaksi vuotta.","r":"True or false? The applicant has been at work for two years.","o":["Oikein","Väärin"],"t":["True","False"],"a":0},{"q":"Miksi hakija haluaa vaihtaa työpaikkaa?","r":"Why does the applicant want to change jobs?","o":["Nykyinen työ on kaukana kotoa.","Palkka on liian pieni.","Hän ei pidä työstä."],"t":["The current job is far from home","The salary is too low","She doesn’t like the work"],"a":0},{"q":"Oikein vai väärin? Hakija sanoo, ettei hän koskaan tarvitse apua.","r":"True or false? The applicant says she never needs help.","o":["Oikein","Väärin"],"t":["True","False"],"a":1},{"q":"Milloin työ alkaisi?","r":"When would the job start?","o":["Vasta vuoden kuluttua.","Ensi kuun alussa.","Heti huomenna."],"t":["Only in a year","At the beginning of next month","Already tomorrow"],"a":1}]},
+{"id":"YKI_L3","skill":"listen","theme":"Ympäristö","themeRu":"Environment","title":"Kierrätys","titleRu":"Recycling","limit":480,"listen":true,"text":["— Tänään studiossa on ympäristöasiantuntija Anna Lehto. Kuinka hyvin suomalaiset kierrättävät? — Melko hyvin. Esimerkiksi lasipullot ja tölkit palautetaan kauppaan lähes aina, ja pantti on siihen hyvä kannustin. Muovia ja pahvia kierrätetään kuitenkin vähemmän.","— Mikä on suurin virhe? — Moni laittaa likaisen pizzalaatikon pahvin sekaan, vaikka rasvainen pahvi kuuluu sekajätteeseen. Samoin akut ja paristot kuuluvat erilliseen keräykseen eikä roskiin. — Entä vaatteet? — Käyttökelpoiset vaatteet voi viedä kirpputorille tai lahjoittaa. Rikkinäinen tekstiili viedään nykyään tekstiilikeräykseen.","— Mitä tavallinen ihminen voisi tehdä enemmän? — Ensinnäkin kannattaa suunnitella ostokset, jotta ruokaa ei mene hukkaan. Toiseksi korjaaminen on usein parempi vaihtoehto kuin uuden ostaminen. Kolmanneksi kannattaa kysyä itseltään, tarvitseeko tavaraa oikeasti. — Kiitos haastattelusta! — Kiitos itsellenne."],"ru":["— Today in the studio is environmental expert Anna Lehto. How well do Finns recycle? — Quite well. For example, glass bottles and cans are returned to the shop almost always, and the deposit is a good incentive. Plastic and cardboard, however, are recycled less.","— What is the biggest mistake? — Many people put a dirty pizza box in with the cardboard, although greasy cardboard belongs in mixed waste. Likewise, accumulators and batteries belong in a separate collection, not in the bin. — And clothes? — Usable clothes can be taken to a flea market or donated. Torn textiles are now taken to textile collection.","— What more could an ordinary person do? — First, it is worth planning your shopping so that food doesn’t go to waste. Second, repairing is often better than buying new. Third, it is worth asking yourself whether you really need the item. — Thank you for the interview! — Thank you too."],"extra":[],"quiz":[{"q":"Mikä kannustaa kierrättämään lasipulloja?","r":"What encourages people to return glass bottles?","o":["Uusi laki.","Pantti.","Mainokset."],"t":["A new law","The deposit","Advertisements"],"a":1},{"q":"Oikein vai väärin? Muovia kierrätetään yhtä paljon kuin lasipulloja.","r":"True or false? Plastic is recycled as much as glass bottles.","o":["Oikein","Väärin"],"t":["True","False"],"a":1},{"q":"Mihin rasvainen pizzalaatikko kuuluu?","r":"Where does a greasy pizza box belong?","o":["Pahvinkeräykseen.","Biojätteeseen.","Sekajätteeseen."],"t":["Cardboard collection","Biowaste","Mixed waste"],"a":2},{"q":"Oikein vai väärin? Akut ja paristot voi laittaa roskiin.","r":"True or false? Accumulators and batteries can be put in the bin.","o":["Oikein","Väärin"],"t":["True","False"],"a":1},{"q":"Mitä käyttökelpoisille vaatteille kannattaa tehdä?","r":"What is it worth doing with usable clothes?","o":["Polttaa ne.","Heittää ne pois.","Viedä kirpputorille tai lahjoittaa."],"t":["Burning them","Throwing them away","Taking them to a flea market or donating them"],"a":2},{"q":"Mitä ruokahävikin vähentämiseksi kannattaa tehdä?","r":"What is it worth doing to waste less food?","o":["Ostaa enemmän ruokaa.","Suunnitella ostokset.","Syödä vain ravintolassa."],"t":["Buying more food","Planning your shopping","Eating only in restaurants"],"a":1}]},
+{"id":"YKI_R8","skill":"read","theme":"Ympäristö","themeRu":"Environment","title":"Kaupunkipyörät tulevat","titleRu":"City bikes are coming","limit":540,"listen":false,"text":["Kaupunki ottaa ensi keväänä käyttöön tuhat uutta kaupunkipyörää. Pyöriä on tarkoitus vuokrata huhtikuusta lokakuuhun, ja asemia tulee yli sata. Yksi ajokerta alle puoli tuntia maksaa kaksi euroa, ja kausikortti koko kaudeksi maksaa 30 euroa.","Kaupunki toivoo, että pyörät vähentävät autoilua keskustassa. Tutkimusten mukaan lähes puolet työmatkoista on alle viisi kilometriä, ja sellaisen matkan voi helposti ajaa pyörällä. Vähemmän autoja tarkoittaa vähemmän pakokaasuja, melua ja pysäköintiongelmia.","Pyöriä voi lainata puhelimen sovelluksella, ja ne palautetaan mille tahansa asemalle. Talvella pyörät ovat varastossa, koska liukkaalla kelillä ajaminen on vaarallista. Kaupunki rakentaa samalla uusia pyöräteitä kymmenen kilometrin verran."],"ru":["Next spring the city is introducing a thousand new city bikes. The bikes are intended to be rented from April to October, and there will be more than a hundred stations. A single trip under half an hour costs two euros, and a season pass for the whole season costs 30 euros.","The city hopes that the bikes will reduce car traffic in the centre. According to studies, almost half of commutes are under five kilometres, and such a distance is easy to cycle. Fewer cars means less exhaust, noise and parking problems.","The bikes can be borrowed with a phone app and returned to any station. In winter the bikes are kept in storage, because riding on slippery roads is dangerous. At the same time the city is building new cycle paths about ten kilometres long."],"extra":[],"quiz":[{"q":"Milloin pyöriä voi vuokrata?","r":"When can bikes be rented?","o":["Ympäri vuoden.","Vain kesällä.","Huhtikuusta lokakuuhun."],"t":["All year round","Only in summer","From April to October"],"a":2},{"q":"Oikein vai väärin? Yksi ajokerta alle puoli tuntia maksaa 30 euroa.","r":"True or false? A single trip under half an hour costs 30 euros.","o":["Oikein","Väärin"],"t":["True","False"],"a":1},{"q":"Miksi kaupunki haluaa lisätä pyöriä?","r":"Why does the city want to add bikes?","o":["Vähentääkseen autoilua keskustassa.","Saadakseen enemmän rahaa.","Koska autot ovat kiellettyjä."],"t":["To reduce car traffic in the centre","To get more money","Because cars are banned"],"a":0},{"q":"Oikein vai väärin? Pyörät voi palauttaa mille tahansa asemalle.","r":"True or false? The bikes can be returned to any station.","o":["Oikein","Väärin"],"t":["True","False"],"a":0},{"q":"Mitä pyörille tehdään talvella?","r":"What is done with the bikes in winter?","o":["Ne myydään.","Ne ovat varastossa.","Ne ovat käytössä."],"t":["They are sold","They are kept in storage","They stay in use"],"a":1},{"q":"Oikein vai väärin? Kaupunki ei rakenna uusia pyöräteitä.","r":"True or false? The city is not building new cycle paths.","o":["Oikein","Väärin"],"t":["True","False"],"a":1}]},
+{"id":"YKI_R9","skill":"read","theme":"Yhteiskunta","themeRu":"Society","title":"Vapaaehtoiset auttavat","titleRu":"Volunteers help","limit":540,"listen":false,"text":["Noin kolmasosa suomalaisista tekee vapaaehtoistyötä. Vapaaehtoiset auttavat esimerkiksi urheiluseuroissa, vanhainkodeissa ja ruokapankeissa. Heille ei makseta palkkaa, mutta moni kokee, että työ antaa elämään merkitystä ja uusia ystäviä.","Kaupungin vapaaehtoiskeskus etsii nyt uusia auttajia syksyn tapahtumiin. Tehtäviä on esimerkiksi kirpputorilla, lukukoulussa ja nuorten läksykerhossa. Aikaa pitää luvata vain muutama tunti viikossa, ja tehtävän voi valita oman kiinnostuksen mukaan.","Ennen aloittamista vapaaehtoiset käyvät lyhyen perehdytyksen. Perehdytys kestää kaksi tuntia ja on ilmainen. Lisäksi vapaaehtoiset saavat todistuksen tehdystä työstä, josta voi olla hyötyä työnhaussa. Ilmoittautua voi puhelimitse tai sähköpostilla syyskuun loppuun mennessä."],"ru":["About a third of Finns do volunteer work. Volunteers help, for example, in sports clubs, care homes and food banks. They are not paid, but many feel that the work gives their life meaning and new friends.","The city’s volunteer centre is now looking for new helpers for autumn events. There are tasks, for example, at the flea market, in the reading school and in the youth homework club. You only have to promise a few hours a week, and you can choose the task according to your interests.","Before starting, volunteers take a short induction. It lasts two hours and is free. In addition, volunteers receive a certificate of the work done, which can be useful when looking for a job. You can sign up by phone or email until the end of September."],"extra":[],"quiz":[{"q":"Missä vapaaehtoiset voivat auttaa?","r":"Where can volunteers help?","o":["Vain sairaaloissa.","Urheiluseuroissa, vanhainkodeissa ja ruokapankeissa.","Vain kouluissa."],"t":["Only in hospitals","In sports clubs, care homes and food banks","Only in schools"],"a":1},{"q":"Oikein vai väärin? Vapaaehtoisille maksetaan palkka.","r":"True or false? Volunteers are paid a salary.","o":["Oikein","Väärin"],"t":["True","False"],"a":1},{"q":"Kuinka paljon aikaa vapaaehtoisen pitää luvata?","r":"How much time must a volunteer promise?","o":["Kymmenen tuntia päivässä.","Koko viikonlopun.","Muutaman tunnin viikossa."],"t":["Ten hours a day","The whole weekend","A few hours a week"],"a":2},{"q":"Oikein vai väärin? Perehdytys on ilmainen.","r":"True or false? The induction is free.","o":["Oikein","Väärin"],"t":["True","False"],"a":0},{"q":"Mitä vapaaehtoinen saa tehdystä työstä?","r":"What does a volunteer get for the work done?","o":["Todistuksen.","Rahapalkkion.","Uuden auton."],"t":["A certificate","A cash reward","A new car"],"a":0},{"q":"Oikein vai väärin? Ilmoittautua voi syyskuun loppuun mennessä.","r":"True or false? You can sign up until the end of September.","o":["Oikein","Väärin"],"t":["True","False"],"a":0}]},
+{"id":"YKI_L9","skill":"listen","theme":"Yhteiskunta","themeRu":"Society","title":"Alennus ikäihmisille","titleRu":"A discount for older people","limit":480,"listen":true,"text":["Hyvää iltapäivää kuuntelijat! Kaupunki tiedottaa, että yli kuusikymmentäviisivuotiaat saavat syyskuun alusta alkaen kausilipun puoleen hintaan. Alennus koskee kaikkia kaupungin sisäisiä bussi- ja ratikkalinjoja. Kausilippu maksaa nyt vain kaksikymmentäviisi euroa kuukaudessa.","Alennuksen saa näyttämällä henkilökortin tai ajokortin lipunmyyntipisteessä. Verkossa alennettua lippua ei voi vielä ostaa, mutta kaupunki lupaa, että palvelu avautuu loppuvuodesta. Alennuksella kaupunki haluaa vähentää yksinäisyyttä, koska ikäihmiset liikkuvat enemmän, kun matkustaminen on edullista."],"ru":["Good afternoon, dear listeners! The city announces that from the beginning of September people over 65 will get a season ticket at half price. The discount applies to all of the city’s internal bus and tram lines. The season ticket now costs only 25 euros a month.","The discount is obtained by showing an ID or a driving licence at the ticket sales point. A discounted ticket cannot yet be bought online, but the city promises that the service will open towards the end of the year. With the discount the city wants to reduce loneliness, because older people get around more when travelling is affordable."],"extra":[],"quiz":[{"q":"Keille alennus on tarkoitettu?","r":"Who is the discount intended for?","o":["Alle 18-vuotiaille.","Yli 65-vuotiaille.","Kaikille opiskelijoille."],"t":["Those under 18","People over 65","All students"],"a":1},{"q":"Oikein vai väärin? Kausilippu maksaa nyt 25 euroa kuukaudessa.","r":"True or false? The season ticket now costs 25 euros a month.","o":["Oikein","Väärin"],"t":["True","False"],"a":0},{"q":"Mistä alennuksen saa?","r":"Where can you get the discount?","o":["Vain verkosta.","Kuljettajalta.","Lipunmyyntipisteestä."],"t":["Only online","From the driver","At the ticket sales point"],"a":2},{"q":"Oikein vai väärin? Alennettu lippu on jo ostettavissa verkossa.","r":"True or false? A discounted ticket can already be bought online.","o":["Oikein","Väärin"],"t":["True","False"],"a":1},{"q":"Miksi kaupunki haluaa tarjota alennuksen?","r":"Why does the city want to offer the discount?","o":["Vähentääkseen yksinäisyyttä.","Saadakseen enemmän tuloja.","Koska autoilu on kielletty."],"t":["To reduce loneliness","To get more revenue","Because driving is banned"],"a":0}]},
+];
+const YKI_WRITING = [
+{"id":"YKI_W5","kind":"informal","type":"Epämuodollinen viesti","typeRu":"Informal message","theme":"Minä ja taustani","minutes":15,"words":[60,90],"prompt":"Ystäväsi asuu toisessa maassa ja haluaa tietää, millaista elämäsi Suomessa on. Kirjoita hänelle sähköpostiviesti.","promptRu":"Your friend lives in another country and wants to know what your life in Finland is like. Write him an email.","bullets":["kerro, missä asut ja kenen kanssa","kerro, mitä teet töissä tai opiskelet","kerro, mikä Suomessa on sinusta parasta ja mikä vaikeinta","kutsu ystävä käymään luonasi"],"bulletsRu":["say where you live and with whom","say what you do at work or what you study","say what you like best about Finland and what is hardest","invite your friend to visit"],"phrases":["Mitä sinulle kuuluu?","Asun … kanssa.","Parasta Suomessa on …","Vaikeinta on …","Tule käymään!"],"model":["Hei Mira!","Mitä sinulle kuuluu? Minulle kuuluu hyvää. Asun Tampereella pienessä kaksiossa yhdessä kissani kanssa. Olen töissä sairaalassa sairaanhoitajana, ja työ on välillä rankkaa mutta mielenkiintoista.","Suomessa parasta on luonto ja rauha. Kesällä uin järvessä lähes joka päivä. Vaikeinta on pimeä talvi, mutta onneksi sauna lämmittää.","Tule käymään kesällä! Voin esitellä sinulle kaupungin ja mökin. Kerro, milloin sinulle sopii.","Terveisin Aino"],"modelRu":["Hi Mira!","How are you? I’m fine. I live in Tampere in a small two-room flat with my cat. I work in a hospital as a nurse, and the work is sometimes hard but interesting.","The best things in Finland are nature and peace. In summer I swim in the lake almost every day. The hardest thing is the dark winter, but luckily the sauna warms you up.","Come and visit in the summer! I can show you the city and the cottage. Write to me when it suits you.","Best wishes, Aino"]},
+{"id":"YKI_W1","kind":"informal","type":"Epämuodollinen viesti","typeRu":"Informal message","theme":"Koti ja asuminen","minutes":15,"words":[60,90],"prompt":"Ystäväsi Sari muuttaa ensi viikolla uuteen asuntoon. Kirjoita Sarille sähköpostiviesti.","promptRu":"Your friend Sari is moving to a new flat next week. Write an email to Sari.","bullets":["kerro, että voit auttaa muutossa, ja sano, milloin sinulle sopii","kerro, mitä voisit tuoda mukanasi (esimerkiksi laatikoita, ruokaa tai työkaluja)","ehdota yhteistä illallista muuton jälkeen","kysy, tarvitseeko Sari muuta apua"],"bulletsRu":["say that you can help with the move, and when it suits you","say what you could bring with you (for example boxes, food or tools)","suggest a dinner together after the move","ask whether Sari needs any other help"],"phrases":["Voin auttaa sinua muutossa.","Sopiiko sinulle lauantai?","Voisin tuoda mukanani laatikoita.","Mennäänkö illalliselle muuton jälkeen?","Tarvitsetko vielä muuta apua?"],"model":["Hei Sari!","Kiva kuulla, että muutat uuteen asuntoon! Voin auttaa sinua muutossa. Sopiiko lauantai aamupäivällä? Voin tulla jo kello yhdeksän.","Voin tuoda mukanani tyhjiä laatikoita ja auton, jos tarvitset kuljetusta. Otan myös evästä ja kahvia, jotta jaksamme työskennellä koko päivän.","Muuton jälkeen voisimme mennä yhdessä illalliselle. Minä tarjoan! Tarvitsetko vielä muuta apua, esimerkiksi huonekalujen kokoamisessa? Laita viestiä, niin sovitaan tarkemmin.","Nähdään pian! Anna"],"modelRu":["Hi Sari!","How great that you’re moving to a new flat! I can help you with the move. Would Saturday morning suit you? I could come as early as nine.","I can bring empty boxes and a car if you need transport. I’ll also bring a snack and coffee so that we have the energy to work all day.","After the move we could go out for dinner together. My treat! Do you need any other help, for example with putting furniture together? Write to me and we’ll agree more precisely.","See you soon! Anna"]},
+{"id":"YKI_W2","kind":"formal","type":"Muodollinen viesti","typeRu":"Formal message","theme":"Koti ja asuminen","minutes":20,"words":[80,120],"prompt":"Asuntosi kylpyhuoneen vesihana vuotaa. Kirjoita sähköpostiviesti taloyhtiön isännöitsijälle.","promptRu":"The tap in the bathroom of your flat is leaking. Write an email to the building manager.","bullets":["kerro, mikä on vialla ja milloin huomasit vian","kerro, milloin olet kotona, jos korjaaja tulee asuntoon","pyydä, että korjaus tehdään pian","kerro yhteystietosi"],"bulletsRu":["say what is broken and when you noticed it","say when you are at home, in case a repairman comes","ask for the repair to be done soon","give your contact details"],"phrases":["Hyvä isännöitsijä,","Otan yhteyttä, koska asuntoni vesihana vuotaa.","Huomasin vian maanantaina.","Pyydän, että korjaus tehdään mahdollisimman pian.","Ystävällisin terveisin,"],"model":["Hyvä isännöitsijä,","Otan yhteyttä, koska asuntoni kylpyhuoneen vesihana vuotaa. Huomasin vian maanantaina aamulla, ja vuoto on lisääntynyt päivä päivältä. Pelkään, että vesi aiheuttaa kosteusvaurioita lattiaan ja alapuoliseen asuntoon.","Olen kotona arkisin kello 16 jälkeen ja viikonloppuisin koko päivän. Korjaaja voi tulla asuntoon silloin, kun hänelle sopii, kunhan hän ilmoittaa siitä etukäteen.","Pyydän, että korjaus tehdään mahdollisimman pian. Toivon myös, että korjaaja tarkistaa muut vesihanat, koska ne ovat yhtä vanhoja. Tavoitat minut puhelimella numerosta 040 123 4567 tai sähköpostitse.","Ystävällisin terveisin, Mikko Virtanen, Pajukatu 5 B 12"],"modelRu":["Dear manager,","I am writing to you because the tap in the bathroom of my flat is leaking. I noticed the fault on Monday morning, and the leak has increased day by day. I am afraid that the water will cause damp damage to the floor and to the flat below.","I am at home on weekdays after 16:00 and at weekends all day. The repairman can come to the flat whenever it suits him, as long as he lets me know in advance.","I ask for the repair to be done as soon as possible. I also hope that the repairman will check the other taps, since they are just as old. You can reach me by phone on 040 123 4567 or by email.","Yours sincerely, Mikko Virtanen, Pajukatu 5 B 12"]},
+{"id":"YKI_W3","kind":"opinion","type":"Mielipide: vertailu","typeRu":"Opinion: comparing two options","theme":"Koti ja asuminen","minutes":25,"words":[130,200],"prompt":"Onko parempi asua kaupungissa vai maaseudulla? Kirjoita mielipiteesi.","promptRu":"Is it better to live in a city or in the countryside? Write your opinion.","bullets":[],"bulletsRu":[],"structure":["Introduction (≈10%, 2 lines): one general statement + your opinion (whether you agree or not)","Part 1 (≈45%, 9–10 lines): “Syitä on useita…” — 3–4 reasons, each with an example, fact or personal experience","Part 2 (≈25%, 5–6 lines): “Toisaalta…” — the opposing view, 1–2 reasons with an example","Conclusion (≈15%, 2–3 lines): 1–2 summing-up sentences + a recommendation or prediction"],"phrases":["Minun mielestäni … on parempi kuin …","Syitä on useita.","Ensinnäkin … Toiseksi … Kolmanneksi …","Esimerkiksi …","Toisaalta … on myös hyviä puolia.","Lopuksi voidaan sanoa, että …"],"model":["Kaupunki vai maaseutu?","Nykyään monet pohtivat, missä on parempi asua. Minun mielestäni kaupungissa asuminen on parempi vaihtoehto kuin maaseudulla asuminen.","Syitä on useita. Ensinnäkin kaupungissa palvelut ovat lähellä. Esimerkiksi minulla on kauppaan ja lääkärille matkaa vain muutama sata metriä. Toiseksi julkinen liikenne toimii hyvin, joten ei tarvitse omaa autoa. Kolmanneksi kaupungissa on enemmän työpaikkoja ja harrastuksia: viime vuonna löysin uuden työn kuukaudessa. Neljänneksi kaupungissa on paljon kulttuuria, ja viime kuussa kävin ilmaisessa konsertissa ja museossa. Lisäksi kaupungissa on helppo tavata ystäviä.","Toisaalta maaseudulla on myös hyviä puolia. Siellä on rauhallista ja luonto on lähellä. Esimerkiksi isovanhempani asuvat maalla, ja heidän pihallaan lapset voivat leikkiä vapaasti. Lisäksi asunto on usein edullisempi, koska maa on halvempaa.","Lopuksi voidaan sanoa, että molemmilla on etunsa. Kuitenkin kaupunki sopii mielestäni paremmin ihmiselle, joka arvostaa palveluja ja vaihtoehtoja. Suosittelen kokeilemaan molempia ennen päätöstä."],"modelRu":["City or countryside?","Today many people wonder where it is better to live. In my opinion, living in a city is better than living in the countryside.","There are several reasons. First, in a city services are close by. For example, it is only a few hundred metres to the shop and the doctor for me. Second, public transport works well, so you don’t need your own car. Third, there are more jobs and hobbies in a city: last year I found a new job within a month. Fourth, a city has plenty of culture: last month I went to a free concert and a museum. In addition, it is easy to meet friends in a city.","On the other hand, the countryside also has good sides. It is peaceful there and nature is close. For example, my grandparents live in the country, and in their yard children can play freely. In addition, housing is often cheaper, because land is cheaper.","In conclusion, it can be said that both have their advantages. However, in my opinion a city suits a person who values services and choice better. I recommend trying both before deciding."]},
+{"id":"YKI_W6","kind":"formal","type":"Muodollinen viesti","typeRu":"Formal message","theme":"Kauppa ja palvelut","minutes":20,"words":[80,120],"prompt":"Ostit verkkokaupasta kuulokkeet, mutta ne eivät toimi. Kirjoita sähköpostiviesti verkkokaupan asiakaspalveluun.","promptRu":"You bought headphones from an online shop, but they don’t work. Write an email to the shop’s customer service.","bullets":["kerro, mitä tilasit ja milloin sait tuotteen","kerro, mikä on vialla","kerro, mitä haluat tehtäväksi (uusi tuote tai rahat takaisin)","kerro yhteystietosi"],"bulletsRu":["say what you ordered and when you received the product","say what is wrong with it","say what you want done (a new product or a refund)","give your contact details"],"phrases":["Hyvä asiakaspalvelu,","Tilasin teiltä … ja sain tuotteen …","Valitettavasti tuote ei toimi.","Toivon, että …","Ystävällisin terveisin,"],"model":["Hyvä asiakaspalvelu,","Tilasin teiltä verkkokaupasta langattomat kuulokkeet 3. lokakuuta, ja sain paketin kaksi päivää myöhemmin. Valitettavasti kuulokkeet eivät toimi: vasemmasta kuulokkeesta ei kuulu ääntä, vaikka olen ladannut ne täyteen. Olen kokeillut kuulokkeita kahdella eri laitteella, mutta ongelma on sama. Pakkauksessa olevat ohjeet eivät auttaneet.","Toivon, että voitte lähettää minulle uudet kuulokkeet. Jos se ei ole mahdollista, haluan rahat takaisin. Palautan vialliset kuulokkeet, kun kerrotte osoitteen.","Tavoitat minut sähköpostitse tai puhelimella numerosta 040 555 1234.","Ystävällisin terveisin, Laura Salo, tilausnumero 458231"],"modelRu":["Dear customer service,","I ordered wireless headphones from your online shop on 3 October and received the parcel two days later. Unfortunately the headphones don’t work: there is no sound from the left earpiece, even though I charged them fully. I have tried the headphones on two different devices, but the problem is the same. The instructions in the packaging didn’t help.","I hope that you can send me new headphones. If that is not possible, I want a refund. I will return the faulty headphones once you give me the address.","You can reach me by email or by phone on 040 555 1234.","Yours sincerely, Laura Salo, order number 458231"]},
+{"id":"YKI_W7","kind":"opinion","type":"Mielipide: väite","typeRu":"Opinion: general statement","theme":"Kulttuuri","minutes":25,"words":[110,180],"prompt":"Museoiden ja kirjastojen pitäisi olla kaikille ilmaisia. Oletko samaa mieltä?","promptRu":"Museums and libraries should be free for everyone. Do you agree?","bullets":[],"bulletsRu":[],"structure":["Introduction (≈10%, 2 lines): a general statement + your opinion","Part 1 (≈30%, 4–5 lines): the first reason and 3–4 lines of examples, facts or personal experience","Part 2 (≈30%, 4–5 lines): the second reason and examples","Part 3 (≈15%, 2–3 lines): “Toisaalta…” — the opposing view","Conclusion (≈15%, 2–3 lines): a summary + a recommendation or what may happen next"],"phrases":["Olen samaa mieltä, koska …","Ensiksi … Toiseksi …","Esimerkiksi kun …","Toisaalta …","Siksi / Tästä syystä …","Suosittelen, että …"],"model":["Kulttuuri kaikille","Monet pitävät tärkeänä, että museot ja kirjastot ovat kaikille ilmaisia. Olen samaa mieltä, koska kulttuuri ei saa olla vain niiden etuoikeus, joilla on paljon rahaa.","Ensiksi ilmainen sisäänpääsy antaa jokaiselle perheelle mahdollisuuden käydä museossa. Esimerkiksi viime talvena vein lapseni kaupunginmuseoon, ja heillä oli siellä hauskaa. Jos lippu olisi maksanut kaksikymmentä euroa, emme olisi ehkä menneet.","Toiseksi kirjasto auttaa oppimaan. Kirjaston kautta voin lainata kirjoja ja lehtiä ilmaiseksi, ja siksi suomen kielen opiskelu on ollut helpompaa.","Toisaalta museot tarvitsevat rahaa näyttelyihin ja työntekijöihin. Siksi lippu voisi maksaa vähän, jos aikuinen haluaa tukea museota.","Lopuksi uskon, että ilmainen kulttuuri tekee yhteiskunnasta tasa-arvoisemman. Suosittelen, että kaupunki maksaa museoiden ja kirjastojen kulut verovaroista."],"modelRu":["Culture for everyone","Many people consider it important that museums and libraries are free for everyone. I agree, because culture should not be the privilege of only those who have a lot of money.","First, free admission gives every family the chance to visit a museum. For example, last winter I took my children to the city museum, and they had fun there. If a ticket had cost twenty euros, we might not have gone.","Second, a library helps you learn. Through the library I can borrow books and magazines for free, and that is why studying Finnish has been easier for me.","On the other hand, museums need money for exhibitions and staff. So a ticket could cost a little if an adult wants to support the museum.","In conclusion, I believe that free culture makes society more equal. I recommend that the city pays the costs of museums and libraries from tax revenue."]},
+{"id":"YKI_W8","kind":"informal","type":"Epämuodollinen viesti","typeRu":"Informal message","theme":"Matkustaminen","minutes":15,"words":[60,90],"prompt":"Ystäväsi tulee käymään luonasi ensi kuussa. Kirjoita hänelle sähköpostiviesti.","promptRu":"Your friend is coming to visit you next month. Write him an email.","bullets":["kerro, miten ystävä pääsee lentokentältä luoksesi","ehdota, mitä voisitte tehdä yhdessä","kysy, onko ystävällä ruoka-allergioita tai toiveita","kerro, millaisia vaatteita kannattaa ottaa mukaan"],"bulletsRu":["say how your friend can get from the airport to you","suggest what you could do together","ask whether your friend has any food allergies or wishes","say what kind of clothes to bring"],"phrases":["Lentokentältä pääset …","Voisimme käydä …","Onko sinulla ruoka-allergioita?","Ota mukaan lämmintä vaatetta.","Nähdään pian!"],"model":["Hei Pekka!","Kiva, että tulet käymään! Lentokentältä pääset luokseni helpoiten junalla. Juna lähtee kentältä joka kymmenes minuutti, ja matka kestää puoli tuntia. Tulen vastaan asemalle.","Voisimme käydä keskustassa, museossa ja saunassa. Jos sää on kaunis, voimme tehdä retken järvelle. Onko sinulla ruoka-allergioita tai erityistoiveita? Illalla voimme laittaa yhdessä ruokaa ja katsoa elokuvan.","Ota mukaan lämmintä vaatetta ja kunnon kengät, koska täällä voi sataa. Nähdään pian!","Terveisin Jussi"],"modelRu":["Hi Pekka!","How great that you are coming to visit! From the airport the easiest way to get to me is by train. The train leaves the airport every ten minutes, and the journey takes half an hour. I’ll meet you at the station.","We could go to the centre, to a museum and to the sauna. If the weather is nice, we can go on a trip to the lake. Do you have any food allergies or special wishes? In the evening we can cook together and watch a film.","Bring warm clothes and good shoes, because it may rain here. See you soon!","Best wishes, Jussi"]},
+{"id":"YKI_W9","kind":"formal","type":"Muodollinen viesti","typeRu":"Formal message","theme":"Terveys ja hyvinvointi","minutes":20,"words":[80,120],"prompt":"Sinulla on lääkäriaika torstaina, mutta et pääse paikalle. Kirjoita sähköpostiviesti terveysasemalle.","promptRu":"You have a doctor’s appointment on Thursday, but you can’t make it. Write an email to the health centre.","bullets":["kerro, mikä aika sinulla on ja kenen vastaanotolle","kerro, miksi et pääse paikalle","pyydä uusi aika","kerro, milloin sinulle sopii"],"bulletsRu":["say what appointment you have and with which doctor","explain why you can’t come","ask for a new appointment","say when it suits you"],"phrases":["Hyvä vastaanottovirkailija,","Minulla on varattu aika …, mutta en pääse paikalle.","Pyydän, että saisin uuden ajan.","Minulle sopivat parhaiten …","Ystävällisin terveisin,"],"model":["Hyvä vastaanottovirkailija,","Minulla on varattu aika lääkäri Virtasen vastaanotolle torstaina 14. marraskuuta kello 10.30. Valitettavasti en pääse paikalle, koska työpaikallani on tärkeä palaveri samaan aikaan.","Pyydän, että saisin uuden ajan mahdollisimman pian, koska kurkkuni on ollut kipeä jo viikon. Minulle sopivat parhaiten aamupäivät maanantaista keskiviikkoon. Jos aikaa ei ole heti, otan mielelläni vastaan myös peruutusajan. Olen valmis tulemaan paikalle lyhyellä varoitusajalla.","Kiitos jo etukäteen. Tavoitatte minut puhelimella numerosta 040 777 1234. Ilmoitan heti, jos tilanteeni muuttuu tai pääsen paikalle aikaisemmin.","Ystävällisin terveisin, Pekka Mäkinen"],"modelRu":["Dear receptionist,","I have an appointment with Dr Virtanen on Thursday 14 November at 10:30. Unfortunately I can’t come, because there is an important meeting at my workplace at the same time.","I ask for a new appointment as soon as possible, because my throat has been sore for a week. Mornings from Monday to Wednesday suit me best. If there is no free time right away, I will gladly accept a cancellation time as well. I am ready to come at short notice.","Thank you in advance. You can reach me by phone on 040 777 1234. I will let you know right away if my situation changes or I can come earlier.","Yours sincerely, Pekka Mäkinen"]},
+{"id":"YKI_W4","kind":"opinion","type":"Mielipide: väite","typeRu":"Opinion: general statement","theme":"Työ","minutes":25,"words":[110,180],"prompt":"Nuorten pitäisi tehdä kesätöitä. Oletko samaa mieltä?","promptRu":"Young people should work in the summer. Do you agree?","bullets":[],"bulletsRu":[],"structure":["Introduction (≈10%, 2 lines): a general statement + your opinion","Part 1 (≈30%, 4–5 lines): the first reason and 3–4 lines of examples, facts or personal experience","Part 2 (≈30%, 4–5 lines): the second reason and examples","Part 3 (≈15%, 2–3 lines): “Toisaalta…” — the opposing view","Conclusion (≈15%, 2–3 lines): a summary + a recommendation or what may happen next"],"phrases":["Olen samaa mieltä, koska …","Ensiksi … Toiseksi …","Esimerkiksi kun …","Toisaalta …","Siksi / Tästä syystä …","Suosittelen, että …"],"model":["Kesätyö nuorille","Monet uskovat, että nuorten kannattaa tehdä kesätöitä. Olen samaa mieltä, koska kesätyöstä on nuorelle paljon hyötyä.","Ensiksi kesätyö opettaa vastuuta. Esimerkiksi kun työskentelin kesällä kioskissa, minun piti tulla ajoissa töihin ja hoitaa asiakkaita itsenäisesti. Opin silloin, että työpaikalla luotetaan minuun. Lisäksi opin ratkaisemaan ongelmia nopeasti, kun jono oli pitkä tai kassa ei toiminut.","Toiseksi kesätyöstä saa rahaa ja kokemusta. Viime kesänä ansaitsin tarpeeksi rahaa ajokorttiin, ja kokemus auttoi minua saamaan myöhemmin toisen työpaikan. Työnantajat arvostavat nuoria, jotka ovat jo tehneet töitä.","Toisaalta nuorilla pitäisi olla myös aikaa levätä ja tavata ystäviä. Jos kesä menee kokonaan töissä, nuori voi väsyä eikä ehdi harrastaa.","Lopuksi kesätyö on mielestäni hyödyllistä, kunhan nuori saa lomaakin. Suosittelen, että nuori tekee töitä esimerkiksi kuusi viikkoa kesässä."],"modelRu":["Summer jobs for young people","Many people think that young people should work in the summer. I agree, because a summer job is very useful for a young person.","First, a summer job teaches responsibility. For example, when I worked in a kiosk in the summer, I had to come to work on time and serve customers independently. Then I understood that at work I am trusted. In addition, I learned to solve problems quickly when the queue was long or the till wasn’t working.","Second, a summer job gives money and experience. Last summer I earned enough for my driving licence, and the experience helped me get another job later. Employers value young people who have already worked.","On the other hand, young people should also have time to rest and meet friends. If the whole summer goes on work, a young person can get tired and have no time for hobbies.","In conclusion, a summer job is, in my opinion, useful, as long as the young person also gets a holiday. I recommend working, for example, six weeks in the summer."]},
+{"id":"YKI_W10","kind":"opinion","type":"Mielipide: vertailu","typeRu":"Opinion: comparing two options","theme":"Ympäristö","minutes":25,"words":[130,200],"prompt":"Onko ympäristön kannalta parempi matkustaa junalla vai lentokoneella? Kirjoita mielipiteesi.","promptRu":"Which is better for the environment: travelling by train or by plane? Write your opinion.","bullets":[],"bulletsRu":[],"structure":["Introduction (≈10%, 2 lines): one general statement + your opinion (whether you agree or not)","Part 1 (≈45%, 9–10 lines): “Syitä on useita…” — 3–4 reasons, each with an example, fact or personal experience","Part 2 (≈25%, 5–6 lines): “Toisaalta…” — the opposing view, 1–2 reasons with an example","Conclusion (≈15%, 2–3 lines): 1–2 summing-up sentences + a recommendation or prediction"],"phrases":["Minun mielestäni … on parempi kuin …","Syitä on useita.","Ensinnäkin … Toiseksi … Kolmanneksi …","Esimerkiksi …","Toisaalta … on myös hyviä puolia.","Lopuksi voidaan sanoa, että …"],"model":["Juna vai lentokone?","Nykyään monet pohtivat, miten voi matkustaa ympäristöystävällisemmin. Minun mielestäni juna on parempi vaihtoehto kuin lentokone.","Syitä on useita. Ensinnäkin juna tuottaa paljon vähemmän päästöjä kuin lentokone. Esimerkiksi matka Helsingistä Ouluun junalla aiheuttaa vain pienen osan lentomatkan päästöistä. Toiseksi junassa matkustaminen on rauhallista: voin lukea, nukkua tai työskennellä. Kolmanneksi juna vie suoraan kaupungin keskustaan, joten ei tarvitse matkustaa kentältä erikseen. Lisäksi junamatka on usein edullisempi, kun ostaa lipun ajoissa. Neljänneksi junassa on enemmän tilaa jaloille, ja matkatavarat voi pitää vierellä.","Toisaalta lentokone on nopeampi pitkillä matkoilla. Esimerkiksi ulkomaille ei aina pääse junalla järkevässä ajassa, ja silloin moni valitsee lentämisen. Lisäksi lentolipun hinta on joskus halvempi kuin junalipun, ja se houkuttelee monia.","Lopuksi voidaan sanoa, että lyhyillä ja keskipitkillä matkoilla junan kannattaa olla ensimmäinen valinta. Suosittelen lentämistä vain silloin, kun muuta vaihtoehtoa ei ole."],"modelRu":["Train or plane?","Today many people wonder how to travel in a more environmentally friendly way. In my opinion, a train is a better option than a plane.","There are several reasons. First, a train produces much less emissions than a plane. For example, a train trip from Helsinki to Oulu causes only a small part of the emissions of a flight. Second, travelling by train is peaceful: I can read, sleep or work. Third, a train takes you straight to the city centre, so you don’t need to travel separately from the airport. In addition, a train journey is often cheaper if you buy the ticket in time. Fourth, a train has more room for your legs, and you can keep your luggage next to you.","On the other hand, a plane is faster on long journeys. For example, you cannot always get abroad by train in a reasonable time, and then many choose to fly. In addition, a plane ticket is sometimes cheaper than a train ticket, and that attracts many.","In conclusion, it can be said that on short and medium journeys a train should be the first choice. I recommend flying only when there is no other option."]},
+{"id":"YKI_W11","kind":"opinion","type":"Mielipide: väite","typeRu":"Opinion: general statement","theme":"Yhteiskunta","minutes":25,"words":[110,180],"prompt":"Jokaisen aikuisen pitäisi tehdä vapaaehtoistyötä. Oletko samaa mieltä?","promptRu":"Every adult should do volunteer work. Do you agree?","bullets":[],"bulletsRu":[],"structure":["Introduction (≈10%, 2 lines): a general statement + your opinion","Part 1 (≈30%, 4–5 lines): the first reason and 3–4 lines of examples, facts or personal experience","Part 2 (≈30%, 4–5 lines): the second reason and examples","Part 3 (≈15%, 2–3 lines): “Toisaalta…” — the opposing view","Conclusion (≈15%, 2–3 lines): a summary + a recommendation or what may happen next"],"phrases":["Olen samaa mieltä, koska …","Ensiksi … Toiseksi …","Esimerkiksi kun …","Toisaalta …","Siksi / Tästä syystä …","Suosittelen, että …"],"model":["Vapaaehtoistyö yhteiskunnassa","Monet sanovat, että jokaisen pitäisi tehdä vapaaehtoistyötä. Olen osittain samaa mieltä, koska vapaaehtoistyö hyödyttää sekä auttajaa että autettavaa.","Ensiksi vapaaehtoistyö auttaa yhteiskuntaa. Esimerkiksi viime syksynä autoin ruokapankissa, ja monelle perheelle ruoka oli tärkeä apu. Ilman vapaaehtoisia moni palvelu ei toimisi. Esimerkiksi ruokapankissa tarvitaan aina lisää käsiä viikonloppuisin.","Toiseksi vapaaehtoistyö antaa tekijälleen paljon. Tapasin työssäni uusia ihmisiä, harjoittelin suomea ja sain todistuksen, josta oli hyötyä työnhaussa.","Toisaalta vapaaehtoistyön ei pitäisi olla pakollista. Jos ihmisellä on pieniä lapsia tai raskas työ, hänellä ei välttämättä ole aikaa.","Lopuksi suosittelen, että jokainen kokeilisi vapaaehtoistyötä edes kerran. Se on helppo tapa auttaa muita ja tutustua uusiin ihmisiin. Silloin voi auttaa vaikka vain pari tuntia kuukaudessa."],"modelRu":["Volunteering in society","Many people say that everyone should do volunteer work. I partly agree, because volunteering benefits both the helper and the person being helped.","First, volunteering helps society. For example, last autumn I helped at a food bank, and for many families the food was important help. Without volunteers many services would not work. For example, a food bank always needs extra hands at weekends.","Second, volunteering gives the volunteer a lot. At work I met new people, practised Finnish and received a certificate that was useful when looking for a job.","On the other hand, volunteering should not be compulsory. If a person has small children or a heavy job, they may not have the time.","In conclusion, I recommend that everyone tries volunteering at least once. It is an easy way to help others and get to know new people. Then you can help even just a couple of hours a month."]},
+];
+const YKI_SPEAKING = [
+{"id":"YKI_S1","type":"Kertominen","typeRu":"Story","theme":"Minä ja taustani","prep":60,"speak":90,"prompt":"Kerro sinulle tärkeästä paikasta.","promptRu":"Tell about a place that is important to you.","bullets":["Mikä paikka se on ja missä se on?","Mitä siellä tehdään?","Milloin olet käynyt siellä viimeksi?","Miksi paikka on sinulle tärkeä?"],"bulletsRu":["What kind of place is it and where is it?","What do people do there?","When did you last visit?","Why is the place important to you?"],"model":["Minulle tärkeä paikka on mummoni mökki järven rannalla Itä-Suomessa. Mökille ajaa kotoani noin kolme tuntia. Siellä uidaan kesällä, kalastetaan ja käydään saunassa. Viimeksi olin siellä juhannuksena yhdessä koko perheen kanssa. Mökki on minulle tärkeä, koska siellä on rauhallista ja kaikki ovat yhdessä. Lapsena vietin siellä kaikki kesät, ja siksi mökki tuo minulle paljon hyviä muistoja. Haluan viedä sinne joskus omatkin lapseni. Mökillä on myös pieni laituri, jossa istun usein illalla ja katselen auringonlaskua. Mummo laittaa ruokaa puuhellalla, ja jokainen ateria maistuu erityisen hyvältä. Joka kesä kokoonnumme siellä koko suvun kanssa: serkut leikkivät rannalla, aikuiset keskustelevat terassilla ja illalla pelaamme lautapelejä. Mökillä ei ole nettiä, ja juuri siksi siellä jaksaa olla yhdessä ja kuunnella toisia. Uskon, että jokaisella pitäisi olla paikka, jossa voi levätä ja ladata akkuja."],"modelRu":["A place that is important to me is my grandmother’s cottage by a lake in Eastern Finland. It takes about three hours to drive there from my home. In summer people swim, fish and go to the sauna there. I was last there at Midsummer with the whole family. The cottage is important to me because it is peaceful there and everyone is together. As a child I spent all my summers there, and so the cottage brings me many good memories. I want to take my own children there someday. The cottage also has a small jetty where I often sit in the evening watching the sunset. Grandmother cooks on a wood stove, and every meal tastes especially good. Every summer we gather there with the whole extended family: cousins play on the shore, adults talk on the terrace, and in the evening we play board games. There is no internet at the cottage, and that is exactly why you have the energy there to be together and listen to each other. I believe that everyone should have a place where they can rest and recharge."]},
+{"id":"YKI_S5","type":"Tilanne","typeRu":"Situation","theme":"Koti ja asuminen","prep":30,"speak":60,"prompt":"Soitat isännöitsijälle ja kerrot, että rappukäytävän valo ei toimi.","promptRu":"You call the building manager and report that the light in the stairwell isn’t working.","bullets":["Kerro, kuka olet ja missä asut.","Kerro, mikä on vialla ja milloin huomasit sen.","Kysy, milloin korjaaja voi tulla.","Kiitä ja lopeta puhelu."],"bulletsRu":["Say who you are and where you live.","Say what is wrong and when you noticed it.","Ask when the repairman can come.","Say thank you and end the call."],"dialog":true,"model":["— Isännöitsijätoimisto, hyvää päivää. — Hei, tässä on Maria Koskinen Pajukatu viidestä. Soitan, koska rappukäytävän valo ei toimi. — Selvä. Milloin huomasitte vian? — Huomasin sen viime sunnuntai-iltana. Rappukäytävä on pimeä, ja se on vaarallista. — Pahoittelen. Lähetän huoltomiehen paikalle. — Milloin hän voisi tulla? — Huomenna iltapäivällä. — Onko vika vain meidän kerroksessamme? — Ei, myös toisessa kerroksessa valo vilkkuu. Korjaaja tarkistaa koko rappukäytävän. — Se on hyvä. Kiitos paljon! — Kiitos soitosta, näkemiin!"],"modelRu":["— Property management office, good afternoon. — Hello, this is Maria Koskinen, Pajukatu five. I’m calling because the light in the stairwell isn’t working. — I see. When did you notice the fault? — I noticed it last Sunday evening. The stairwell is dark, and that is dangerous. — I apologise. I’ll send a repairman. — When could he come? — Tomorrow afternoon. — Is the fault only on our floor? — No, on the second floor the light is flickering too. The repairman will check the whole stairwell. — That’s good. Thank you very much! — Thank you for calling, goodbye!"]},
+{"id":"YKI_S2","type":"Tilanne","typeRu":"Situation","theme":"Kauppa ja palvelut","prep":30,"speak":60,"prompt":"Soitat parturiin ja varaat ajan leikkaukseen. Puhu niin kuin puhelimessa.","promptRu":"You call a hairdresser’s and book a haircut. Speak as you would on the phone.","bullets":["Kerro, että haluat varata ajan hiusten leikkaukseen.","Sovi päivä ja kellonaika.","Kysy, paljonko leikkaus maksaa.","Kiitä ja lopeta puhelu."],"bulletsRu":["Say that you want to book a haircut.","Agree on the day and time.","Ask how much the haircut costs.","Say thank you and end the call."],"dialog":true,"model":["— Parturi-kampaamo Hiusmaa, hyvää päivää. — Hei, haluaisin varata ajan hiusten leikkaukseen. — Selvä. Milloin sopisi? — Sopisiko ensi viikon torstai iltapäivällä? — Torstaina kello viisitoista olisi vapaa aika. — Se sopii hyvin. Paljonko leikkaus maksaa? — Naisten leikkaus maksaa neljäkymmentäviisi euroa. — Voinko maksaa kortilla? — Kyllä, voitte maksaa kortilla tai käteisellä. Millä nimellä varaan ajan? — Anna Korhonen. — Kiitos, Anna. Muistutan, että aikaa voi perua viimeistään edellisenä päivänä. — Selvä, kiitos. Nähdään torstaina! — Nähdään, kiitos soitosta!"],"modelRu":["— Hairdresser’s Hiusmaa, good afternoon. — Hello, I would like to book a haircut. — All right. When would suit you? — Would next week’s Thursday afternoon suit? — On Thursday at fifteen hundred there is a free time. — That suits me well. How much does a haircut cost? — A women’s cut costs forty-five euros. — Can I pay by card? — Yes, you can pay by card or in cash. In what name shall I make the booking? — Anna Korhonen. — Thank you, Anna. I remind you that the appointment can be cancelled at the latest the day before. — All right, thank you. See you on Thursday! — See you, thank you for calling!"]},
+{"id":"YKI_S6","type":"Kertominen","typeRu":"Story","theme":"Kulttuuri","prep":60,"speak":90,"prompt":"Kerro elokuvasta, kirjasta tai konsertista, josta pidit.","promptRu":"Tell about a film, book or concert that you liked.","bullets":["Mikä se oli ja milloin sen näit, luit tai kuulit?","Mistä se kertoi tai millainen se oli?","Mikä siinä oli parasta?","Suosittelisitko sitä muille? Miksi?"],"bulletsRu":["What was it and when did you see, read or hear it?","What was it about or what was it like?","What was best about it?","Would you recommend it to others? Why?"],"model":["Haluan kertoa elokuvasta, jonka näin viime kuussa kaverini kanssa. Elokuva kertoo suomalaisesta perheestä, joka muuttaa pienelle saarelle. Aluksi kaikki ovat onnettomia, koska saarella ei ole nettiä eikä kauppaa. Vähitellen perhe oppii pärjäämään ja viettämään aikaa yhdessä. Parasta elokuvassa oli kaunis luonto ja hauska huumori. Itkin lopussa vähän, mutta samalla nauroin. Suosittelen elokuvaa kaikille, koska se muistuttaa, että tärkeintä ovat läheiset ihmiset. Elokuvan musiikki oli niin hieno, että kuuntelen sitä edelleen. Olen ajatellut katsoa saman ohjaajan seuraavan elokuvan, kun se tulee teattereihin. Kerroin elokuvasta myös kaikille työkavereilleni, ja kaksi heistä meni katsomaan sitä viime viikonloppuna."],"modelRu":["I want to tell about a film that I saw last month with a friend. The film is about a Finnish family who move to a small island. At first everyone is unhappy, because the island has no internet and no shop. Gradually the family learns to cope and spend time together. The best things in the film were the beautiful nature and the funny humour. At the end I cried a little, but at the same time I laughed. I recommend the film to everyone, because it reminds us that the most important thing is the people close to us. The music in the film was so beautiful that I still listen to it. I have been thinking of watching the same director’s next film when it comes to the cinemas. I also told all my colleagues about the film, and two of them went to see it last weekend."]},
+{"id":"YKI_S4","type":"Kertominen","typeRu":"Story","theme":"Matkustaminen","prep":60,"speak":90,"prompt":"Kerro matkasta, jonka muistat hyvin.","promptRu":"Tell about a trip that you remember well.","bullets":["Minne matkustit ja kenen kanssa?","Miten matkustit?","Mitä siellä tapahtui?","Miksi muistat matkan hyvin?"],"bulletsRu":["Where did you go and with whom?","How did you travel?","What happened there?","Why do you remember the trip well?"],"model":["Muistan hyvin matkan Tallinnaan viime syksynä. Matkustin ystäväni kanssa laivalla, ja matka kesti noin kaksi tuntia. Kävelimme vanhassakaupungissa, söimme perinteistä ruokaa ja ostimme lahjoja perheelle. Pahin hetki oli, kun ystäväni unohti passinsa hotelliin, mutta onneksi löysimme sen ajoissa. Muistan matkan hyvin, koska sää oli kaunis ja meillä oli hauskaa koko viikonlopun. Illalla istuimme kahvilassa ja katselimme ihmisiä. Se oli rauhallinen hetki, jota en unohda. Seuraavana päivänä kävimme Kadriorgin puistossa ja kuljimme pitkän matkan rannalla. Ostin siellä pienen lahjan äidilleni, ja hän käyttää sitä edelleen. Matkasta jäi mieleen myös se, kuinka ystävällisiä ihmiset olivat, vaikka puhuimme keskenämme välillä suomea ja välillä englantia. Haluan matkustaa sinne uudestaan ensi kesänä."],"modelRu":["I remember well a trip to Tallinn last autumn. I travelled with a friend by ferry, and the journey took about two hours. We walked in the old town, ate traditional food and bought presents for the family. The worst moment was when my friend forgot her passport in the hotel, but luckily we found it in time. I remember the trip well because the weather was beautiful and we had fun all weekend. In the evening we sat in a café and watched people. It was a peaceful moment that I won’t forget. The next day we visited Kadriorg Park and walked a long way along the shore. There I bought a small present for my mother, and she still uses it. What I also remember from the trip is how friendly the people were, even though we spoke to each other sometimes in Finnish and sometimes in English. I want to go there again next summer."]},
+{"id":"YKI_S7","type":"Mielipide","typeRu":"Opinion","theme":"Terveys ja hyvinvointi","prep":60,"speak":90,"prompt":"Pitäisikö jokaisen liikkua vähintään puoli tuntia päivässä?","promptRu":"Should everyone exercise at least half an hour a day?","bullets":["Mitä mieltä olet?","Millaisia syitä sinulla on?","Mikä on vastakkainen näkemys?","Mitä suosittelet?"],"bulletsRu":["What do you think?","What reasons do you have?","What is the opposing view?","What do you recommend?"],"model":["Minun mielestäni jokaisen pitäisi liikkua vähintään puoli tuntia päivässä. Ensinnäkin liikunta pitää kehon terveenä ja vähentää sairauksien riskiä. Esimerkiksi kun aloin kävellä joka päivä töihin, selkäkipuni väheni. Toiseksi liikunta parantaa mielialaa ja unta. Kun olen liikkunut, nukun paremmin ja jaksan töissä. Toisaalta kaikilla ei ole aikaa tai terveyttä liikkua joka päivä. Siksi liikunnan ei tarvitse olla rankkaa, vaan kävely tai pyöräily riittää. Suosittelen, että liikunta tehdään arkeen sopivaksi: portaita hissin sijaan ja kävelyä bussipysäkille. Itse olen huomannut, että pieni päivittäinen liikunta on helpompi pitää tapana kuin harvoin tehty raskas treeni. Tärkeintä on aloittaa, vaikka vain kymmenellä minuutilla."],"modelRu":["In my opinion, everyone should exercise at least half an hour a day. First, exercise keeps the body healthy and reduces the risk of illness. For example, when I started walking to work every day, my back pain decreased. Second, exercise improves mood and sleep. When I have exercised, I sleep better and have the energy for work. On the other hand, not everyone has the time or the health to exercise every day. So exercise does not have to be heavy: a walk or a bike ride is enough. I recommend fitting exercise into everyday life: stairs instead of the lift and walking to the bus stop. I myself have noticed that a little daily exercise is easier to make a habit than a rare heavy workout. The main thing is to start, even with ten minutes."]},
+{"id":"YKI_S8","type":"Kertominen","typeRu":"Story","theme":"Työ","prep":60,"speak":90,"prompt":"Kerro unelmatyöstäsi.","promptRu":"Tell about your dream job.","bullets":["Millainen työ se on?","Miksi se kiinnostaa sinua?","Mitä pitäisi opiskella tai oppia?","Mitä teet nyt, jotta pääset siihen työhön?"],"bulletsRu":["What kind of job is it?","Why does it interest you?","What would you need to study or learn?","What are you doing now to get that job?"],"model":["Unelmatyöni olisi opettaa suomea ulkomaalaisille. Pidän siitä, että saan auttaa ihmisiä oppimaan uutta ja tutustumaan eri kulttuureihin. Työ kiinnostaa minua, koska olen itse oppinut suomea aikuisena ja tiedän, millaista se on. Sen vuoksi voisin ymmärtää oppilaita hyvin. Jotta voin olla opettaja, minun pitäisi opiskella yliopistossa kaksi vuotta lisää ja tehdä opetusharjoittelu. Nyt kehitän omaa suomen kieltäni joka päivä ja autan työkaverini lasta kotitehtävissä. Uskon, että tavoitteeni on mahdollinen, jos jatkan harjoittelua. Uskon myös, että työ sopisi minulle hyvin, koska olen kärsivällinen ja pidän ryhmässä työskentelystä. Unelmatyö ei ole minulle vain palkkaa, vaan mahdollisuus kehittyä joka päivä."],"modelRu":["My dream job would be to teach Finnish to foreigners. I like being able to help people learn something new and get to know different cultures. The job interests me because I learned Finnish myself as an adult and I know what it is like. For that reason I could understand students well. To be a teacher I would have to study two more years at university and do teaching practice. Now I develop my own Finnish every day and help a colleague’s child with homework. I believe that my goal is achievable if I keep practising. I also believe that the job would suit me well, because I am patient and like working in a group. A dream job for me is not only a salary but a chance to develop every day."]},
+{"id":"YKI_S9","type":"Mielipide","typeRu":"Opinion","theme":"Ympäristö","prep":60,"speak":90,"prompt":"Pitäisikö kaupungin keskustassa kieltää yksityisautot?","promptRu":"Should private cars be banned in the city centre?","bullets":["Mitä mieltä olet?","Millaisia syitä sinulla on?","Mikä on vastakkainen näkemys?","Mitä suosittelet?"],"bulletsRu":["What do you think?","What reasons do you have?","What is the opposing view?","What do you recommend?"],"model":["Minun mielestäni kaupungin keskustassa yksityisautot pitäisi kieltää ainakin osittain. Ensinnäkin autot aiheuttavat melua ja päästöjä, ja keskustan ilma on parempi ilman niitä. Esimerkiksi kun yksi katu suljettiin autoilta, kahvilat ja puistot täyttyivät ihmisistä. Toiseksi julkinen liikenne, pyörä ja kävely ovat keskustassa usein nopeampia kuin auto. Toisaalta jotkut tarvitsevat autoa, esimerkiksi liikuntarajoitteiset ja ammattiliikenne. Heille pitäisi sallia pääsy keskustaan. Suosittelen, että kaupunki kokeilee autotonta keskustaa viikonloppuisin ja kysyy sitten asukkaiden mielipiteen. Lisäksi autoton keskusta voisi houkutella uusia ravintoloita ja pieniä kauppoja. Kokemus muista kaupungeista osoittaa, että asiakkaat tulevat mielellään kävellen, kun katu on rauhallinen."],"modelRu":["In my opinion, private cars in the city centre should be banned at least partly. First, cars cause noise and emissions, and the air in the centre is better without them. For example, when one street was closed to cars, the cafés and parks filled with people. Second, public transport, cycling and walking are often faster than a car in the centre. On the other hand, some people need a car, for example people with limited mobility and commercial traffic. They should be allowed access to the centre. I recommend that the city try a car-free centre at weekends and then ask the residents’ opinion. In addition, a car-free centre could attract new restaurants and small shops. Experience from other cities shows that customers gladly come on foot when the street is peaceful."]},
+{"id":"YKI_S3","type":"Mielipide","typeRu":"Opinion","theme":"Yhteiskunta","prep":60,"speak":90,"prompt":"Pitäisikö kouluissa kieltää kännykkien käyttö oppitunneilla?","promptRu":"Should mobile phones be banned in schools during lessons?","bullets":["Mitä mieltä olet?","Millaisia syitä sinulla on?","Mikä on vastakkainen näkemys?","Mitä suosittelet?"],"bulletsRu":["What do you think?","What reasons do you have?","What is the opposing view?","What do you recommend?"],"model":["Minun mielestäni kännykkien käyttö pitäisi kieltää oppitunneilla. Ensinnäkin puhelin vie huomion pois opetuksesta. Esimerkiksi moni oppilas katsoo viestejä kesken tunnin eikä kuuntele opettajaa. Toiseksi kielto parantaa ilmapiiriä, kun oppilaat puhuvat toisilleen eivätkä katso ruutua. Toisaalta puhelimesta voi olla hyötyä, esimerkiksi sanakirjana tai hätätilanteessa. Siksi opettaja voisi sallia puhelimen käytön tietyissä tehtävissä. Lopuksi suosittelen, että puhelimet ovat tunnilla repussa, ellei opettaja toisin sano. Kun puhelimet olivat meidän luokassa pois käytöstä, oppitunnit olivat selvästi rauhallisempia ja opimme enemmän. Lisäksi opettajan työ on helpompaa, kun kaikki keskittyvät samaan asiaan. Toisaalta jotkut vanhemmat haluavat tavoittaa lapsensa kesken päivän. Siihen löytyy ratkaisu: oppilas voi soittaa kotiin koulun puhelimella tai välitunnilla. Näin molemmat tavoitteet toteutuvat."],"modelRu":["In my opinion, the use of phones during lessons should be banned. First, a phone takes attention away from the teaching. For example, many students read messages in the middle of a lesson and do not listen to the teacher. Second, a ban improves the atmosphere when students talk to each other and don’t look at a screen. On the other hand, a phone can be useful, for example as a dictionary or in an emergency. So the teacher could allow the use of a phone in certain tasks. In conclusion, I recommend that during lessons phones stay in the backpack unless the teacher says otherwise. When phones were switched off in our class, lessons were clearly calmer and we learned more. In addition, a teacher’s work is easier when everyone concentrates on the same thing. On the other hand, some parents want to reach their child in the middle of the day. There is a solution: the student can call home on the school phone or during the break. That way both goals are met."]},
+];
+
+// Для каждой карточки чтения — урок, после которого она стоит в списке.
+const READING_BY_AFTER = {};
+READINGS.forEach((r) => { READING_BY_AFTER[r.after] = r; });
 
 function mergeLessons(base, extra) {
   const map = new Map(base.map((l) => [l.id, l]));
@@ -5047,17 +6803,14 @@ function mergeLessons(base, extra) {
 }
 
 /* ------------------------------------------------------------------ */
-/*  Storage                                                            */
 /* ------------------------------------------------------------------ */
 const BANK_KEY = "suomi_bank_v1";
 const PROG_KEY = "suomi_progress_v1";
 const AUDIO_KEY = "suomi_no_audio_v1";
 const SEEN_KEY = "suomi_seen_words_v1";
 const EDITS_KEY = "suomi_edits_v1";
+const READ_KEY = "suomi_readings_v1";
 
-// Edits are stored separately from the lessons themselves — keyed by "phrase id" — and
-// applied on top every time the app loads. That way the built-in lessons (which are
-// just code in the file) can be fixed in one spot without touching the whole lesson.
 function applyEdits(lessons, edits) {
   if (!edits || !Object.keys(edits).length) return lessons;
   return lessons.map((l) => ({
@@ -5071,11 +6824,23 @@ function applyEdits(lessons, edits) {
 const mem = {};
 let lastStorageError = "";
 
+function hasArtifactStorage() {
+  return typeof window !== "undefined" && !!window.storage;
+}
+function hasLocalStorage() {
+  try { return typeof window !== "undefined" && !!window.localStorage; } catch (e) { return false; }
+}
 async function stGet(key, shared) {
   try {
-    if (!window.storage) return mem[key] ?? null;
-    const r = await window.storage.get(key, shared);
-    return r ? JSON.parse(r.value) : null;
+    if (hasArtifactStorage()) {
+      const r = await window.storage.get(key, shared);
+      return r ? JSON.parse(r.value) : null;
+    }
+    if (hasLocalStorage()) {
+      const raw = window.localStorage.getItem("suomi:" + key);
+      return raw != null ? JSON.parse(raw) : (mem[key] ?? null);
+    }
+    return mem[key] ?? null;
   } catch (e) {
     return mem[key] ?? null;
   }
@@ -5083,10 +6848,18 @@ async function stGet(key, shared) {
 async function stSet(key, value, shared) {
   mem[key] = value;
   try {
-    if (!window.storage) { lastStorageError = "window.storage is not available in this environment"; return false; }
-    await window.storage.set(key, JSON.stringify(value), shared);
-    lastStorageError = "";
-    return true;
+    if (hasArtifactStorage()) {
+      await window.storage.set(key, JSON.stringify(value), shared);
+      lastStorageError = "";
+      return true;
+    }
+    if (hasLocalStorage()) {
+      window.localStorage.setItem("suomi:" + key, JSON.stringify(value));
+      lastStorageError = "";
+      return true;
+    }
+    lastStorageError = "Neither window.storage nor localStorage is available in this browser";
+    return false;
   } catch (e) {
     lastStorageError = String((e && e.message) || e);
     return false;
@@ -5105,11 +6878,19 @@ async function stSetRetry(key, value, shared) {
 
 async function storageSelfTest() {
   try {
-    if (!window.storage) return "window.storage is not available in this environment";
-    await window.storage.set("suomi_selftest", "1", false);
-    const r = await window.storage.get("suomi_selftest", false);
-    if (!r || r.value !== "1") return "the write succeeded, but reading back returned empty";
-    return "";
+    if (hasArtifactStorage()) {
+      await window.storage.set("suomi_selftest", "1", false);
+      const r = await window.storage.get("suomi_selftest", false);
+      if (!r || r.value !== "1") return "the write succeeded, but reading back returned empty";
+      return "";
+    }
+    if (hasLocalStorage()) {
+      window.localStorage.setItem("suomi:suomi_selftest", "1");
+      const v = window.localStorage.getItem("suomi:suomi_selftest");
+      if (v !== "1") return "the write succeeded, but reading back returned empty";
+      return "";
+    }
+    return "neither window.storage nor localStorage is available in this browser";
   } catch (e) {
     return String((e && e.message) || e);
   }
@@ -5121,17 +6902,6 @@ async function storageSelfTest() {
 const norm = (s) =>
   s.toLowerCase().replace(/[.,!?;:"'“”„…()]/g, "").trim();
 
-// There's no separate "is this grammar" field in the data — there was no reason to keep one
-// across 700+ entries. Instead, a note counts as grammar
-// if it's longer than a short vocabulary note: a real rule with
-// examples always ends up a few sentences longer than
-// the "translate and memorize" of an ordinary word.
-// A glossary entry has no separate "is this grammar" field — keeping one
-// across 650+ entries wasn't worth it. Instead the topic list is curated by hand
-// for each lesson: only things that explain a rule of the language itself
-// — a case, a tense, conjugation, kpt gradation — go in here, not a specific
-// word or phrase and where it's used (that stays in words,
-// even when the explanation is long).
 const GRAMMAR_TOPICS = {
   LB_S1_01: ["nominatiivi", "partitiivi", "genetiivi", "astevaihtelu"],
   LB_S1_02: ["sisäpaikallissijat", "ulkopaikallissijat"],
@@ -5191,12 +6961,6 @@ function isGrammarNote(g, lessonId) {
   return !!(list && g && list.includes(g.w));
 }
 
-// Eleven cases from the course, in the order they're actually taught
-// (levels go by number, Absolute Beginner first). The nominative
-// isn't tied to a lesson: it's just the dictionary form, which is already known
-// from day one, so it's always unlocked.
-// Each case gets two examples — one with back vowels (talo, opettaja)
-// and one with front vowels (kynä, lääkäri), so the a/ä in the ending is visible right away.
 const CASES = [
   { id: "nom", fi: "Nominatiivi", meaning: "dictionary form — who, what", ending: "—",
     examples: [{ w: "talo", f: "talo" }, { w: "kynä", f: "kynä" }], unlock: null },
@@ -5275,20 +7039,16 @@ function CaseSheet({ lessons, progress, onBack }) {
   );
 }
 
-// In the 1st and 2nd person the subject can be dropped — the verb already gives it away
-// (Absolute Beginner lessons 2 and 6). In the 3rd person (hän, he) this isn't allowed,
-// otherwise it's unclear who's meant, so these pronouns are left alone.
-const DROP_PRONOUN = /^(minä|sinä|me|te)\s+/;
-const dropLeadingPronoun = (s) => s.replace(DROP_PRONOUN, "");
+const DROP_PRONOUN = /(^|\s)(minä|sinä|me|te)(\s+)/;
+const dropPronoun = (s) => s.replace(DROP_PRONOUN, "$1");
 
-// An answer is accepted if it matches after normal normalization, and if
-// not — the same check again, but without a leading
-// minä/sinä/me/te pronoun, if there is one. That way "Minä olen iloinen." and
-// "Olen iloinen" are both accepted as the same answer, either direction.
+const dropHyvaa = (s) => s.replace(/(^|\s)hyvää (päivää|huomenta|iltaa|yötä)/g, "$1$2");
 function sameAnswer(typed, answer) {
   const a = norm(typed), b = norm(answer);
   if (a === b) return true;
-  return dropLeadingPronoun(a) === dropLeadingPronoun(b);
+  const a2 = dropHyvaa(a), b2 = dropHyvaa(b);
+  if (a2 === b2) return true;
+  return dropPronoun(a2) === dropPronoun(b2);
 }
 
 const shuffle = (a) => {
@@ -5305,10 +7065,6 @@ const INTERVALS = [10 * 60e3, 4 * 3600e3, 24 * 3600e3, 3 * 24 * 3600e3, 10 * 24 
 function itemId(lessonId, i) { return lessonId + "#" + i; }
 
 /* ------------------------------------------------------------------ */
-/*  Five mastery tiers for a lesson, and sequential unlocking          */
-/*  Bronze unlocks the next lesson; gold is the familiar old            */
-/*  checkmark; platinum and diamond exist only to give a reason         */
-/*  to come back and review what's already been learned.               */
 /* ------------------------------------------------------------------ */
 const TIERS = [
   { name: null, color: C.line },
@@ -5328,11 +7084,10 @@ function lessonStats(lesson, progress) {
   const sum = items.reduce((s, p) => s + Math.min(p ? p.box : 0, 5), 0);
   const avg = sum / n;
   const tier = avg >= 5 ? 5 : avg >= 4 ? 4 : avg >= 3 ? 3 : avg >= 2 ? 2 : avg >= 1 ? 1 : 0;
-  const bar = Math.min(avg, 3) / 3; // прежняя полоска «до золота», ничего не меняет во внешнем виде
+  const bar = Math.min(avg, 3) / 3;
   return { avg, tier, bar };
 }
 
-// Lessons within one level by number, levels in order — that's the course route.
 function courseOrder(lessons) {
   const byLevel = new Map();
   lessons.forEach((l) => {
@@ -5345,17 +7100,13 @@ function courseOrder(lessons) {
     .flatMap(([, list]) => [...list].sort((a, b) => lessonNumber(a) - lessonNumber(b)));
 }
 
-// A lesson is unlocked if it's first on the route, or the previous one is unlocked and
-// reached at least bronze. The chain breaks once, and everything after stays locked.
 function computeUnlocks(lessons, progress) {
   const order = courseOrder(lessons);
   const map = new Map();
   let chainOpen = true;
   order.forEach((l, i) => {
     const stats = lessonStats(l, progress);
-    // Your own phrases aren't part of the lesson queue: they get added any time,
-    // and they should neither wait their turn nor hold up the next lesson.
-    const free = l.id === CUSTOM_LESSON_ID;
+    const free = isFreeLesson(l.id);
     const unlocked = free || i === 0 || chainOpen;
     map.set(l.id, { ...stats, unlocked });
     if (!free) chainOpen = unlocked && stats.tier >= 1;
@@ -5363,28 +7114,20 @@ function computeUnlocks(lessons, progress) {
   return map;
 }
 
-// English branch: the whole interface reads the ru field as "the shown
-// translation", and the correct English translation for every phrase and
-// word already lives in the en field — it was written in alongside the
-// Russian from the start. So instead of translating 2800+ phrases and
-// 650+ words again, we swap ru for en right here, in one place, when the
-// pool, dialogues, and glossary are built. Everything downstream keeps
-// working exactly as before, it just shows the already-correct English.
 function flatten(lessons) {
   const out = [];
   lessons.forEach((l) =>
-    l.items.forEach((it, i) => out.push({ ...it, ru: it.en || it.ru, id: itemId(l.id, i), lessonId: l.id, lessonTitle: l.title }))
+    l.items.forEach((it, i) => out.push({ ...it, ru: it.en || it.ru, en: "", id: itemId(l.id, i), lessonId: l.id, lessonTitle: l.title }))
   );
   return out;
 }
 
-// A lesson's dialogue lines run consecutively and are already tagged k:"d".
 function buildDialogues(lessons) {
   return lessons
     .map((l) => {
       const lines = [];
       l.items.forEach((it, i) => {
-        if (it.k === "d") lines.push({ ...it, ru: it.en || it.ru, id: itemId(l.id, i), lessonId: l.id });
+        if (it.k === "d") lines.push({ ...it, ru: it.en || it.ru, en: "", id: itemId(l.id, i), lessonId: l.id });
       });
       const speakers = [...new Set(lines.map((x) => x.who).filter(Boolean))];
       return { id: l.id, title: l.title, source: l.source, lines, speakers };
@@ -5396,7 +7139,7 @@ function buildGlossaryMap(lessons) {
   const map = new Map();
   lessons.forEach((l) =>
     (l.glossary || []).forEach((g) => {
-      const entry = { ...g, ru: g.en || g.ru, lessonId: l.id };
+      const entry = { ...g, ru: g.en || g.ru, en: "", lessonId: l.id };
       map.set(norm(g.w), entry);
       (g.forms || []).forEach((f) => { if (!map.has(norm(f))) map.set(norm(f), entry); });
     })
@@ -5405,13 +7148,13 @@ function buildGlossaryMap(lessons) {
 }
 
 /* ------------------------------------------------------------------ */
-/*  Speech                                                             */
 /* ------------------------------------------------------------------ */
 function useSpeech() {
   const [voice, setVoice] = useState(null);
   const supported = typeof window !== "undefined" && "speechSynthesis" in window;
   useEffect(() => {
     if (!supported) return;
+    try { if (navigator.audioSession) navigator.audioSession.type = "playback"; } catch (e) {}
     const pick = () => {
       const v = window.speechSynthesis.getVoices().find((x) => (x.lang || "").toLowerCase().startsWith("fi"));
       if (v) setVoice(v);
@@ -5420,33 +7163,55 @@ function useSpeech() {
     window.speechSynthesis.onvoiceschanged = pick;
     return () => { if (window.speechSynthesis) window.speechSynthesis.onvoiceschanged = null; };
   }, [supported]);
-  const say = useCallback((text) => {
+  const say = useCallback((text, rate = 0.9) => {
     if (!supported) return;
     try {
       window.speechSynthesis.cancel();
       const u = new SpeechSynthesisUtterance(text);
       u.lang = "fi-FI";
       if (voice) u.voice = voice;
-      u.rate = 0.9;
+      u.rate = rate;
       window.speechSynthesis.speak(u);
-    } catch (e) { /* тишина — не критично */ }
+    } catch (e) { /* silent — not critical */ }
   }, [supported, voice]);
-  return { say, supported };
+  const sayMany = useCallback((list, rate = 0.9) => {
+    if (!supported) return;
+    try {
+      window.speechSynthesis.cancel();
+      list.forEach((text) => {
+        const u = new SpeechSynthesisUtterance(text);
+        u.lang = "fi-FI";
+        if (voice) u.voice = voice;
+        u.rate = rate;
+        window.speechSynthesis.speak(u);
+      });
+    } catch (e) { /* silent — not critical */ }
+  }, [supported, voice]);
+  const sayParts = useCallback((parts, rate = 0.9) => {
+    if (!supported) return;
+    try {
+      window.speechSynthesis.cancel();
+      const fi = window.speechSynthesis.getVoices().filter((x) => (x.lang || "").toLowerCase().startsWith("fi"));
+      const base = voice || fi[0] || null;
+      const other = fi.find((x) => x !== base) || null;
+      parts.forEach((p) => {
+        const u = new SpeechSynthesisUtterance(p.text);
+        u.lang = "fi-FI";
+        const v = p.who === 2 && other ? other : base;
+        if (v) u.voice = v;
+        u.rate = rate;
+        if (!other) u.pitch = p.who === 1 ? 0.8 : p.who === 2 ? 1.3 : 1;
+        window.speechSynthesis.speak(u);
+      });
+    } catch (e) { /* silent — not critical */ }
+  }, [supported, voice]);
+  const stop = useCallback(() => {
+    try { if (typeof window !== "undefined" && window.speechSynthesis) window.speechSynthesis.cancel(); } catch (e) { /* ok */ }
+  }, []);
+  return { say, sayMany, sayParts, stop, supported };
 }
 
-// Speech recognition — via the same browser Web Speech API as
-// pronunciation. Browser support doesn't match what you'd
-// predict in advance (some versions of Safari support it too), so
-// the app simply checks whether the specific browser has the API,
-// rather than guessing by name.
 //
-// Two safeguards, without which the microphone used to misbehave:
-// 1) onresult by itself doesn't always fully stop recording in
-//    some browsers — so we stop it explicitly rather than relying
-//    on recognition closing itself.
-// 2) If recording ended (onend) and neither a result nor an error
-//    ever arrived — we report it as a failed attempt instead of leaving
-//    the button stuck on "Listening…" with no way to type an answer.
 function useRecognizer() {
   const supported = typeof window !== "undefined" && !!(window.SpeechRecognition || window.webkitSpeechRecognition);
   const recRef = useRef(null);
@@ -5469,8 +7234,6 @@ function useRecognizer() {
     rec.onerror = (e) => { settled = true; onError && onError(e.error || "error"); stopNow(); };
     rec.onend = () => {
       if (recRef.current === rec) recRef.current = null;
-      // Ended with no result and no error — rare, but it happens,
-      // and without this safeguard the button would just stay on "listening".
       if (!settled) { settled = true; onError && onError("no-speech"); }
     };
     recRef.current = rec;
@@ -5486,14 +7249,7 @@ function useRecognizer() {
 }
 
 /* ------------------------------------------------------------------ */
-/*  Finnish text with underlined words                                 */
 /* ------------------------------------------------------------------ */
-// Long Finnish compound words (mustikkapiirakka, henkilöllisyystodistus)
-// shouldn't spill off the edge of the screen. In case the font still
-// ends up bigger than what fits, we allow wrapping right in the middle of
-// a word, rather than just clipping the line.
-// The word mustikkapiirakka won't fit the screen at 34pt — the longer
-// the word, the smaller the font, so it stays on one line in full.
 function wordFontSize(text, base) {
   const n = (text || "").length;
   if (n <= 8) return base;
@@ -5503,19 +7259,17 @@ function wordFontSize(text, base) {
   return Math.round(base * 0.46);
 }
 
-function FinnishText({ text, glossary, onWord, seen, size = 26, weight = 700 }) {
+function FinnishText({ text, glossary, onWord, seen, size = 26, weight = 700, lh = 1.28 }) {
   const parts = text.split(/(\s+)/);
   return (
     <span style={{
-      fontSize: size, fontWeight: weight, lineHeight: 1.28, letterSpacing: "-0.015em", color: C.ink,
+      fontSize: size, fontWeight: weight, lineHeight: lh, letterSpacing: "-0.015em", color: C.ink,
       overflowWrap: "anywhere", wordBreak: "break-word",
     }}>
       {parts.map((p, i) => {
         if (/^\s+$/.test(p)) return <span key={i}>{p}</span>;
         const g = glossary.get(norm(p));
         if (!g) return <span key={i}>{p}</span>;
-        // A word whose note has already been opened stays clickable, but
-        // is no longer underlined — it doesn't draw attention to what's already been read.
         const known = !!(seen && g.w && seen[g.w]);
         return (
           <button
@@ -5536,7 +7290,6 @@ function FinnishText({ text, glossary, onWord, seen, size = 26, weight = 700 }) 
 }
 
 /* ------------------------------------------------------------------ */
-/*  Buttons                                                            */
 /* ------------------------------------------------------------------ */
 function Primary({ children, onClick, disabled, tone = "blue" }) {
   const bg = disabled ? "#B9C4D2" : tone === "spruce" ? C.spruce : tone === "lingon" ? C.lingon : C.blue;
@@ -5546,7 +7299,7 @@ function Primary({ children, onClick, disabled, tone = "blue" }) {
       disabled={disabled}
       style={{
         width: "100%", background: bg, color: "#fff", border: "none", borderRadius: 6,
-        padding: "16px 18px", fontSize: 17, fontWeight: 700, letterSpacing: "-0.01em",
+        padding: "12px 18px", fontSize: 17, fontWeight: 700, letterSpacing: "-0.01em",
         cursor: disabled ? "default" : "pointer",
         boxShadow: disabled ? "none" : "0 3px 0 rgba(14,30,51,0.22)",
       }}
@@ -5555,13 +7308,15 @@ function Primary({ children, onClick, disabled, tone = "blue" }) {
     </button>
   );
 }
-function Ghost({ children, onClick }) {
+function Ghost({ children, onClick, disabled }) {
   return (
     <button
       onClick={onClick}
+      disabled={disabled}
       style={{
         width: "100%", background: "transparent", color: C.blue, border: `1.5px solid ${C.line}`,
-        borderRadius: 6, padding: "14px 18px", fontSize: 16, fontWeight: 600, cursor: "pointer",
+        borderRadius: 6, padding: "10px 18px", fontSize: 16, fontWeight: 600, cursor: disabled ? "default" : "pointer",
+        opacity: disabled ? 0.5 : 1,
       }}
     >
       {children}
@@ -5583,7 +7338,6 @@ function Dotted({ children, onClick }) {
 }
 
 /* ------------------------------------------------------------------ */
-/*  Word card (bottom sheet)                                           */
 /* ------------------------------------------------------------------ */
 function WordSheet({ entry, onClose, say }) {
   if (!entry) return null;
@@ -5622,15 +7376,12 @@ function WordSheet({ entry, onClose, say }) {
 }
 
 /* ------------------------------------------------------------------ */
-/*  Exercise generation                                                */
 /* ------------------------------------------------------------------ */
 function makeExercise(item, pool, box, speechOk, avoid, recOk) {
   const tokens = item.fi.split(/\s+/);
   const canBank = tokens.length >= 2 && tokens.length <= 9;
   const canType = box >= 1 && item.fi.length <= 30;
 
-  // All types are available from the first round. The higher the box,
-  // the more often harder exercises come up: assembling, typing, and speaking aloud.
   const types = ["mc_fi_ru", "mc_ru_fi"];
   if (box === 0) types.push("mc_fi_ru");
   if (canBank) { types.push("bank"); if (box >= 1) types.push("bank"); }
@@ -5662,7 +7413,6 @@ function makeExercise(item, pool, box, speechOk, avoid, recOk) {
 }
 
 /* ------------------------------------------------------------------ */
-/*  Training screen                                                    */
 /* ------------------------------------------------------------------ */
 function Session({ queue, pool, glossary, onFinish, onExit, onAnswer, say, speechOk, recognizer, noAudio, onToggleAudio, seen, markSeen }) {
   const [idx, setIdx] = useState(0);
@@ -5686,10 +7436,6 @@ function Session({ queue, pool, glossary, onFinish, onExit, onAnswer, say, speec
 
   const current = queue[idx];
 
-  // The microphone listens for one attempt. listen() returns a stop function —
-  // it used to never be called, so recording could keep going after
-  // the answer was checked or the user moved to the next phrase. Now this
-  // function is always on hand and gets called at every such point.
   const stopMic = () => {
     if (micStopRef.current) { micStopRef.current(); micStopRef.current = null; }
     setListening(false);
@@ -5710,8 +7456,6 @@ function Session({ queue, pool, glossary, onFinish, onExit, onAnswer, say, speec
     );
   };
 
-  // Leaving the training screen entirely also shuts off the microphone if it's
-  // somehow still listening — otherwise it would keep running in the background.
   useEffect(() => () => stopMic(), []);
 
   useEffect(() => {
@@ -5720,19 +7464,10 @@ function Session({ queue, pool, glossary, onFinish, onExit, onAnswer, say, speec
     const e = makeExercise(current.item, pool, current.box, audioAllowed, lastType.current, recOk);
     lastType.current = e.type;
     setEx(e); setPicked(null); setChips([]); setTyped(""); setResult(null); setMicError(""); setTypeInstead(false);
-    // As soon as a Finnish phrase appears on screen — on its own or via
-    // pronunciation in a listening exercise — it plays right away, unless sound is off.
     if ((e.type === "listen" || e.type === "mc_fi_ru") && audioAllowed) setTimeout(() => say(e.item.fi), 350);
-    // audioAllowed is deliberately not in the dependency list: toggling sound
-    // on its own shouldn't regenerate the current exercise — see the effect below.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [idx, current, pool, say]);
 
-  // Cases where turning sound off must change the exercise — "listen"
-  // and "say it aloud": without sound there's nothing to answer the first with, and the second itself
-  // requires speaking out loud in the room, which is exactly what's
-  // being avoided right now. In every other type the selection, typed text, and
-  // assembled tiles stay as they are.
   useEffect(() => {
     if (!audioAllowed && current && ex && (ex.type === "listen" || ex.type === "speak")) {
       stopMic();
@@ -5766,7 +7501,6 @@ function Session({ queue, pool, glossary, onFinish, onExit, onAnswer, say, speec
   const ready =
     ex.type === "bank" ? chips.length > 0 : (ex.type === "type" || ex.type === "speak") ? typed.trim().length > 0 : picked !== null;
 
-  // How many letters of the answer are already typed correctly — these highlight the word's outline.
   const shownPrefix = (() => {
     if (ex.type !== "type") return 0;
     let i = 0;
@@ -5794,7 +7528,7 @@ function Session({ queue, pool, glossary, onFinish, onExit, onAnswer, say, speec
   return (
     <div style={{ minHeight: "100vh", background: C.paper, display: "flex", flexDirection: "column" }}>
       {/* header */}
-      <div style={{ padding: "14px 16px 10px", display: "flex", alignItems: "center", gap: 12 }}>
+      <div style={{ padding: "10px 16px 7px", display: "flex", alignItems: "center", gap: 8 }}>
         <button onClick={onExit} style={{ background: "none", border: "none", padding: 4, cursor: "pointer" }}>
           <X size={24} color={C.inkSoft} />
         </button>
@@ -5817,19 +7551,19 @@ function Session({ queue, pool, glossary, onFinish, onExit, onAnswer, say, speec
         </div>
       </div>
 
-      <div style={{ flex: 1, padding: "10px 18px 180px" }}>
-        <div style={{ fontSize: 15, color: C.inkSoft, fontWeight: 600, marginBottom: 18 }}>{prompt}</div>
+      <div style={{ flex: 1, padding: "6px 18px 128px" }}>
+        <div style={{ fontSize: 15, color: C.inkSoft, fontWeight: 600, marginBottom: 13 }}>{prompt}</div>
         {noAudio && (
-          <div style={{ fontSize: 12.5, color: C.inkSoft, marginTop: -12, marginBottom: 16 }}>
+          <div style={{ fontSize: 12.5, color: C.inkSoft, marginTop: -12, marginBottom: 11 }}>
             Sound is off — listening exercises are skipped.
           </div>
         )}
 
         {/* exercise */}
         {ex.type === "mc_fi_ru" && (
-          <div style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
+          <div style={{ display: "flex", alignItems: "flex-start", gap: 7 }}>
             <button onClick={() => say(ex.item.fi)} title="Repeat"
-              style={{ background: C.blueSoft, border: "none", borderRadius: 6, padding: "9px 11px", marginTop: 4, cursor: "pointer", display: "inline-flex", alignItems: "center", gap: 6, flexShrink: 0 }}>
+              style={{ background: C.blueSoft, border: "none", borderRadius: 6, padding: "6px 11px", marginTop: 4, cursor: "pointer", display: "inline-flex", alignItems: "center", gap: 4, flexShrink: 0 }}>
               <Volume2 size={19} color={C.blue} />
               <span style={{ fontSize: 12.5, fontWeight: 700, color: C.blue }}>Repeat</span>
             </button>
@@ -5841,7 +7575,7 @@ function Session({ queue, pool, glossary, onFinish, onExit, onAnswer, say, speec
         {ex.type === "listen" && (
           <button
             onClick={() => say(ex.item.fi)}
-            style={{ background: C.blue, border: "none", borderRadius: 10, padding: "22px 26px", cursor: "pointer", display: "flex", alignItems: "center", gap: 12, color: "#fff", fontSize: 17, fontWeight: 700 }}
+            style={{ background: C.blue, border: "none", borderRadius: 10, padding: "16px 26px", cursor: "pointer", display: "flex", alignItems: "center", gap: 8, color: "#fff", fontSize: 17, fontWeight: 700 }}
           >
             <Play size={22} fill="#fff" color="#fff" /> Listen again
           </button>
@@ -5852,7 +7586,7 @@ function Session({ queue, pool, glossary, onFinish, onExit, onAnswer, say, speec
 
         {/* options */}
         {(ex.type === "mc_fi_ru" || ex.type === "mc_ru_fi" || ex.type === "listen") && (
-          <div style={{ marginTop: 26, display: "flex", flexDirection: "column", gap: 10 }}>
+          <div style={{ marginTop: 16, display: "flex", flexDirection: "column", gap: 7 }}>
             {ex.options.map((o, i) => {
               const sel = picked === i;
               return (
@@ -5861,7 +7595,7 @@ function Session({ queue, pool, glossary, onFinish, onExit, onAnswer, say, speec
                   onClick={() => !result && setPicked(i)}
                   style={{
                     textAlign: "left", background: sel ? C.blueSoft : C.card,
-                    border: `2px solid ${sel ? C.blue : C.line}`, borderRadius: 8, padding: "15px 16px",
+                    border: `2px solid ${sel ? C.blue : C.line}`, borderRadius: 8, padding: "11px 16px",
                     fontSize: 17, color: C.ink, cursor: "pointer", lineHeight: 1.35,
                   }}
                 >
@@ -5873,22 +7607,22 @@ function Session({ queue, pool, glossary, onFinish, onExit, onAnswer, say, speec
         )}
 
         {ex.type === "bank" && (
-          <div style={{ marginTop: 24 }}>
-            <div style={{ minHeight: 64, borderBottom: `2px solid ${C.line}`, paddingBottom: 10, display: "flex", flexWrap: "wrap", gap: 8 }}>
+          <div style={{ marginTop: 15 }}>
+            <div style={{ minHeight: 64, borderBottom: `2px solid ${C.line}`, paddingBottom: 10, display: "flex", flexWrap: "wrap", gap: 6 }}>
               {chips.map((c, n) => (
                 <button key={n} onClick={() => !result && setChips(chips.filter((_, k) => k !== n))}
-                  style={{ background: C.card, border: `1.5px solid ${C.line}`, borderRadius: 6, padding: "9px 12px", fontSize: 17, fontWeight: 600, color: C.ink, cursor: "pointer" }}>
+                  style={{ background: C.card, border: `1.5px solid ${C.line}`, borderRadius: 6, padding: "6px 12px", fontSize: 17, fontWeight: 600, color: C.ink, cursor: "pointer" }}>
                   {c.w}
                 </button>
               ))}
             </div>
-            <div style={{ marginTop: 18, display: "flex", flexWrap: "wrap", gap: 8 }}>
+            <div style={{ marginTop: 13, display: "flex", flexWrap: "wrap", gap: 6 }}>
               {ex.chips.map((c, i) =>
                 chips.some((ch) => ch.i === i) ? (
-                  <span key={i} style={{ borderRadius: 6, padding: "9px 12px", fontSize: 17, fontWeight: 600, fontFamily: FONT, border: "1.5px solid transparent", background: C.line, color: C.line }}>{c}</span>
+                  <span key={i} style={{ borderRadius: 6, padding: "6px 12px", fontSize: 17, fontWeight: 600, fontFamily: FONT, border: "1.5px solid transparent", background: C.line, color: C.line }}>{c}</span>
                 ) : (
                   <button key={i} onClick={() => !result && setChips([...chips, { w: c, i }])}
-                    style={{ background: C.card, border: `1.5px solid ${C.line}`, borderRadius: 6, padding: "9px 12px", fontSize: 17, fontWeight: 600, fontFamily: FONT, color: C.ink, cursor: "pointer", boxShadow: "0 2px 0 rgba(14,30,51,0.12)" }}>
+                    style={{ background: C.card, border: `1.5px solid ${C.line}`, borderRadius: 6, padding: "6px 12px", fontSize: 17, fontWeight: 600, fontFamily: FONT, color: C.ink, cursor: "pointer", boxShadow: "0 2px 0 rgba(14,30,51,0.12)" }}>
                     {c}
                   </button>
                 )
@@ -5898,7 +7632,7 @@ function Session({ queue, pool, glossary, onFinish, onExit, onAnswer, say, speec
         )}
 
         {ex.type === "type" && (
-          <div style={{ marginTop: 22 }}>
+          <div style={{ marginTop: 14 }}>
             <textarea
               ref={inputRef}
               value={typed}
@@ -5906,9 +7640,9 @@ function Session({ queue, pool, glossary, onFinish, onExit, onAnswer, say, speec
               readOnly={!!result}
               rows={2}
               placeholder="Write here..."
-              style={{ width: "100%", fontSize: 20, fontWeight: 600, color: C.ink, padding: 14, borderRadius: 8, border: `2px solid ${C.line}`, background: C.card, resize: "none", fontFamily: FONT }}
+              style={{ width: "100%", fontSize: 20, fontWeight: 600, color: C.ink, padding: 11, borderRadius: 8, border: `2px solid ${C.line}`, background: C.card, resize: "none", fontFamily: FONT }}
             />
-            <div style={{ marginTop: 12, display: "flex", flexWrap: "wrap", gap: 10, fontSize: 19, fontWeight: 700, letterSpacing: "0.06em", color: C.inkSoft }}>
+            <div style={{ marginTop: 8, display: "flex", flexWrap: "wrap", gap: 7, fontSize: 19, fontWeight: 700, letterSpacing: "0.06em", color: C.inkSoft }}>
               {ex.answer.split(/\s+/).map((w, wi, arr) => {
                 const start = arr.slice(0, wi).reduce((n, p) => n + p.length + 1, 0);
                 return (
@@ -5922,11 +7656,11 @@ function Session({ queue, pool, glossary, onFinish, onExit, onAnswer, say, speec
                 );
               })}
             </div>
-            <div style={{ marginTop: 12 }}>
+            <div style={{ marginTop: 8 }}>
               <button
                 onClick={hintNextLetter}
                 disabled={!!result}
-                style={{ background: C.ochreSoft, border: `1.5px solid ${C.ochre}`, borderRadius: 6, padding: "10px 16px", fontSize: 15, fontWeight: 700, color: C.ink, cursor: result ? "default" : "pointer" }}
+                style={{ background: C.ochreSoft, border: `1.5px solid ${C.ochre}`, borderRadius: 6, padding: "7px 16px", fontSize: 15, fontWeight: 700, color: C.ink, cursor: result ? "default" : "pointer" }}
               >
                 Reveal a letter
               </button>
@@ -5934,35 +7668,35 @@ function Session({ queue, pool, glossary, onFinish, onExit, onAnswer, say, speec
           </div>
         )}
         {ex.type === "speak" && (
-          <div style={{ marginTop: 18 }}>
+          <div style={{ marginTop: 13 }}>
             <button
               onClick={startListening}
               disabled={listening}
               style={{
-                background: listening ? C.ochre : C.blue, border: "none", borderRadius: 10, padding: "18px 24px",
-                cursor: listening ? "default" : "pointer", display: "flex", alignItems: "center", gap: 12,
+                background: listening ? C.ochre : C.blue, border: "none", borderRadius: 10, padding: "13px 24px",
+                cursor: listening ? "default" : "pointer", display: "flex", alignItems: "center", gap: 8,
                 color: "#fff", fontSize: 17, fontWeight: 700,
               }}
             >
               <Mic size={22} color="#fff" /> {listening ? "Listening…" : typed ? "Say it again" : "Say it out loud"}
             </button>
             {typed && !listening && !micError && !typeInstead && (
-              <div style={{ marginTop: 14, fontSize: 16, color: C.ink }}>
+              <div style={{ marginTop: 10, fontSize: 16, color: C.ink }}>
                 Heard: <b>{typed}</b>
               </div>
             )}
             {!micError && !typeInstead && (
               <button onClick={() => setTypeInstead(true)}
-                style={{ marginTop: 12, background: "none", border: "none", padding: 0, cursor: "pointer", fontFamily: FONT }}>
+                style={{ marginTop: 8, background: "none", border: "none", padding: 0, cursor: "pointer", fontFamily: FONT }}>
                 <span style={{ fontSize: 13.5, fontWeight: 700, color: C.blue, textDecoration: "underline" }}>Type it instead</span>
               </button>
             )}
             {(micError || typeInstead) && (
-              <div style={{ marginTop: 14 }}>
-                {micError && <div style={{ fontSize: 13.5, color: C.lingon, marginBottom: 8 }}>{micError}</div>}
+              <div style={{ marginTop: 10 }}>
+                {micError && <div style={{ fontSize: 13.5, color: C.lingon, marginBottom: 6 }}>{micError}</div>}
                 <textarea value={typed} onChange={(e) => setTyped(e.target.value)} rows={2} autoFocus={typeInstead && !micError}
                   placeholder="Type the answer instead"
-                  style={{ width: "100%", fontSize: 18, fontWeight: 600, color: C.ink, padding: 12, borderRadius: 8, border: `2px solid ${C.line}`, background: C.card, resize: "none", fontFamily: FONT }} />
+                  style={{ width: "100%", fontSize: 18, fontWeight: 600, color: C.ink, padding: 10, borderRadius: 8, border: `2px solid ${C.line}`, background: C.card, resize: "none", fontFamily: FONT }} />
               </div>
             )}
           </div>
@@ -5970,15 +7704,15 @@ function Session({ queue, pool, glossary, onFinish, onExit, onAnswer, say, speec
       </div>
 
       {/* bottom panel */}
-      <div style={{ position: "fixed", left: 0, right: 0, bottom: 0, background: result ? (result === "ok" ? C.spruceSoft : C.lingonSoft) : C.paper, borderTop: `1px solid ${C.line}`, padding: "14px 18px calc(18px + env(safe-area-inset-bottom))" }}>
+      <div style={{ position: "fixed", left: 0, right: 0, bottom: 0, background: result ? (result === "ok" ? C.spruceSoft : C.lingonSoft) : C.paper, borderTop: `1px solid ${C.line}`, padding: "9px 18px calc(12px + env(safe-area-inset-bottom))" }}>
         {result && (
-          <div style={{ marginBottom: 14 }}>
-            <div style={{ fontSize: 15, fontWeight: 800, color: result === "ok" ? C.spruce : C.lingon, marginBottom: 6 }}>
+          <div style={{ marginBottom: 10 }}>
+            <div style={{ fontSize: 15, fontWeight: 800, color: result === "ok" ? C.spruce : C.lingon, marginBottom: 5 }}>
               {result === "ok" ? "Oikein — correct" : "Correct answer"}
             </div>
-            <div style={{ display: "flex", alignItems: "flex-start", gap: 8 }}>
+            <div style={{ display: "flex", alignItems: "flex-start", gap: 6 }}>
               <button onClick={() => say(ex.item.fi)} title="Repeat"
-                style={{ background: "rgba(255,255,255,0.85)", border: `1px solid ${C.line}`, borderRadius: 6, padding: "7px 10px", marginTop: 2, cursor: "pointer", display: "inline-flex", alignItems: "center", gap: 6, flexShrink: 0 }}>
+                style={{ background: "rgba(255,255,255,0.85)", border: `1px solid ${C.line}`, borderRadius: 6, padding: "5px 10px", marginTop: 2, cursor: "pointer", display: "inline-flex", alignItems: "center", gap: 4, flexShrink: 0 }}>
                 <Volume2 size={16} color={C.ink} />
                 <span style={{ fontSize: 12.5, fontWeight: 700, color: C.ink }}>Repeat</span>
               </button>
@@ -6001,7 +7735,7 @@ function Session({ queue, pool, glossary, onFinish, onExit, onAnswer, say, speec
 
       <WordSheet entry={word} onClose={() => setWord(null)} say={say} />
       {!speechOk && ex.type === "listen" && (
-        <div style={{ position: "fixed", top: 60, left: 18, right: 18, background: C.ochreSoft, padding: 10, borderRadius: 6, fontSize: 13 }}>
+        <div style={{ position: "fixed", top: 60, left: 18, right: 18, background: C.ochreSoft, padding: 8, borderRadius: 6, fontSize: 13 }}>
           Speech isn't available in this browser.
         </div>
       )}
@@ -6010,7 +7744,6 @@ function Session({ queue, pool, glossary, onFinish, onExit, onAnswer, say, speec
 }
 
 /* ------------------------------------------------------------------ */
-/*  Main component                                                     */
 /* ------------------------------------------------------------------ */
 export default function App() {
   const [lessons, setLessons] = useState(BUILTIN);
@@ -6030,8 +7763,23 @@ export default function App() {
   const [noAudio, setNoAudio] = useState(false);
   const [seenWords, setSeenWords] = useState({});
   const [edits, setEdits] = useState({});
+  const [readingResults, setReadingResults] = useState({});
+  const [readingRun, setReadingRun] = useState(null);
+  const [numStats, setNumStats] = useState({});
+  const [numRun, setNumRun] = useState(null);
+  const [numShowWord, setNumShowWord] = useState(false);
+  const [days, setDays] = useState({});
+  const [bankFilter, setBankFilter] = useState("all");
+  const [ykiStats, setYkiStats] = useState({});
+  const [lastBackup, setLastBackup] = useState(null);
+  const [ykiCustom, setYkiCustom] = useState([]);
+  const [customEdit, setCustomEdit] = useState(null);
+  const [ykiTask, setYkiTask] = useState(null);
+  const [readingFrom, setReadingFrom] = useState("home");
+  const daysRef = useRef({});
+  const daysTimer = useRef(null);
   const lastItems = useRef(null);
-  const { say, supported } = useSpeech();
+  const { say, sayMany, sayParts, stop, supported } = useSpeech();
   const recognizer = useRecognizer();
 
   useEffect(() => {
@@ -6049,19 +7797,26 @@ export default function App() {
       if (a === true) setNoAudio(true);
       const sw = await stGet(SEEN_KEY, false);
       if (sw && typeof sw === "object") setSeenWords(sw);
+      const rr = await stGet(READ_KEY, false);
+      if (rr && typeof rr === "object") setReadingResults(rr);
+      const ns = await stGet(NUM_KEY, false);
+      if (ns && typeof ns === "object") setNumStats(ns);
+      const bk = await stGet(BACKUP_KEY, false);
+      if (bk && bk.last) setLastBackup(bk.last);
+      const cu = await stGet(YKI_CUSTOM_KEY, false);
+      if (Array.isArray(cu)) setYkiCustom(cu);
+      const yk = await stGet(YKI_KEY, false);
+      if (yk && typeof yk === "object") setYkiStats(yk);
+      const dd = await stGet(DAYS_KEY, false);
+      if (dd && typeof dd === "object") { daysRef.current = dd; setDays(dd); }
       setLoading(false);
     })();
   }, []);
 
-  // The toggle lives both on the home screen and inside training — wherever it's
-  // handy in the moment sound suddenly isn't an option. The setting is remembered.
   const toggleAudio = () => {
     setNoAudio((v) => { const next = !v; stSet(AUDIO_KEY, next, false); return next; });
   };
 
-  // A word counts as "seen" from the moment its card has been opened at
-  // least once — whether from training, the bank, or a lesson's word list. From then on
-  // it stops being underlined, but stays clickable.
   const markSeen = useCallback((entry) => {
     if (!entry || !entry.w) return;
     setSeenWords((prev) => {
@@ -6072,6 +7827,72 @@ export default function App() {
     });
   }, []);
   const openWord = useCallback((entry) => { setWord(entry); markSeen(entry); }, [markSeen]);
+
+  const openReading = (r) => { setReadingRun(r); setReadingFrom("home"); setScreen("reading"); };
+  const openYkiReading = (r) => { setReadingRun(r); setReadingFrom("ykihub"); setScreen("reading"); };
+  const openYkiWrite = (t) => { setYkiTask(t); setScreen("ykiwrite"); };
+  const openYkiSpeak = (t) => { setYkiTask(t); setScreen("ykispeak"); };
+  const patchYki = (id, fn) => setYkiStats((prev) => {
+    const next = { ...prev, [id]: fn(prev[id] || { tries: 0 }) };
+    stSet(YKI_KEY, next, false);
+    return next;
+  });
+  const finishYki = (id, words) => {
+    markStudy(DAY_GOAL);
+    patchYki(id, (o) => ({ ...o, tries: (o.tries || 0) + 1, words: words || o.words || 0, last: dayKey() }));
+  };
+  const saveYkiAttempt = (id, attempt) => {
+    markStudy(DAY_GOAL);
+    patchYki(id, (o) => ({ ...o, tries: (o.tries || 0) + 1, words: attempt.words, last: dayKey(), draft: "", attempts: [attempt, ...(o.attempts || [])].slice(0, 5) }));
+  };
+  const saveCustom = (c) => setYkiCustom((prev) => {
+    const next = prev.some((x) => x.id === c.id) ? prev.map((x) => (x.id === c.id ? c : x)) : [...prev, c];
+    stSet(YKI_CUSTOM_KEY, next, false);
+    return next;
+  });
+  const deleteCustom = (id) => {
+    setYkiCustom((prev) => { const next = prev.filter((x) => x.id !== id); stSet(YKI_CUSTOM_KEY, next, false); return next; });
+    setYkiStats((prev) => { const nx = { ...prev }; delete nx[id]; stSet(YKI_KEY, nx, false); return nx; });
+  };
+  const openCustom = (c) => { setYkiTask(customToTask(c)); setScreen(c.kind === "write" ? "ykiwrite" : "ykispeak"); };
+  const saveYkiDraft = (id, text) => patchYki(id, (o) => ({ ...o, draft: text }));
+  const saveYkiTicks = (id, ticks) => patchYki(id, (o) => ({ ...o, attempts: (o.attempts || []).map((a, i) => (i === 0 ? { ...a, ticks } : a)) }));
+
+  const markStudy = (n = 1) => {
+    const k = dayKey();
+    const next = { ...daysRef.current, [k]: (daysRef.current[k] || 0) + n };
+    daysRef.current = next;
+    setDays(next);
+    if (!daysTimer.current) {
+      daysTimer.current = setTimeout(() => {
+        daysTimer.current = null;
+        stSet(DAYS_KEY, pruneDays(daysRef.current), false);
+      }, 2500);
+    }
+  };
+
+  const startNumbers = (modeId) => {
+    setNumRun({ mode: NUM_MODES.find((m) => m.id === modeId), tasks: makeNumberTasks(modeId, 10), key: Date.now() });
+    setScreen("numrun");
+  };
+  const recordNumbers = (modeId, ok, total) => {
+    markStudy(total);
+    setNumStats((prev) => {
+      const old = prev[modeId] || { ok: 0, total: 0, runs: 0 };
+      const next = { ...prev, [modeId]: { ok: old.ok + ok, total: old.total + total, runs: old.runs + 1 } };
+      stSet(NUM_KEY, next, false);
+      return next;
+    });
+  };
+  const saveReadingResult = (id, score, total) => {
+    markStudy(total);
+    setReadingResults((prev) => {
+      const old = prev[id] || { best: 0, tries: 0 };
+      const next = { ...prev, [id]: { best: Math.max(old.best, score), total, tries: old.tries + 1, last: score } };
+      stSet(READ_KEY, next, false);
+      return next;
+    });
+  };
 
   const pool = useMemo(() => flatten(lessons), [lessons]);
   const glossary = useMemo(() => buildGlossaryMap(lessons), [lessons]);
@@ -6093,10 +7914,6 @@ export default function App() {
     return ok;
   };
 
-  // Editing one phrase: patch is {fi?, ru?, en?}, what needs to
-  // be replaced. The item itself changes right away in lessons (training will see it
-  // in the very next session), while under the hood it's stored separately from
-  // the lesson, so built-in lessons can be fixed in one spot.
   const saveEdit = async (item, patch) => {
     const nextEdits = { ...edits, [item.id]: { ...(edits[item.id] || {}), ...patch } };
     setEdits(nextEdits);
@@ -6123,8 +7940,6 @@ export default function App() {
     setStoreFail(ok ? "" : lastStorageError || "the write failed");
   }, []);
 
-  // Answers pile up in memory and go to storage as one write:
-  // it has a limit on how often requests can be made.
   const queueProgressSave = (next) => {
     pendingSave.current = next;
     if (saveTimer.current) return;
@@ -6138,9 +7953,9 @@ export default function App() {
     progressRef.current = next;
     setProgress(next);
     queueProgressSave(next);
+    markStudy(1);
   };
 
-  // The dialogue starts over: the runKey counter re-creates the screen from the first line.
   const startDialog = (d, role) => {
     setMode("dialog");
     setDialogRun({ dialog: d, role });
@@ -6148,7 +7963,6 @@ export default function App() {
     setScreen("dialogrun");
   };
 
-  // Repeat starts the same activity as before: phrases, verbs, or a dialogue.
   const repeatRun = () => {
     if (mode === "verbs") startVerbs(verbFilter);
     else if (mode === "dialog" && dialogRun) startDialog(dialogRun.dialog, dialogRun.role);
@@ -6158,11 +7972,9 @@ export default function App() {
   const startVerbs = (filter) => {
     const f = filter || verbFilter || { tenses: BASE_TENSES.map((t) => t.id), types: [1, 2, 3, 4, 5, 6] };
     setVerbFilter(f);
-    // Every selected tense comes together with its own negative.
     const wanted = f.tenses.flatMap((id) => (NEG_OF[id] ? [id, NEG_OF[id]] : [id]));
     const tasks = [];
     const seen = new Set();
-    // Forms due for review come first, then new ones.
     const nowTs = Date.now();
     const all = [];
     VERBS.filter((v) => f.types.includes(v.type)).forEach((v) => TENSES.filter((t) => wanted.includes(t.id)).forEach((t) => PERSONS.forEach((_, pi) => {
@@ -6191,6 +8003,11 @@ export default function App() {
     }).length;
   }, [pool, progress]);
 
+  const learned = useMemo(() => {
+    const ids = new Set(pool.map((it) => it.id));
+    return Object.keys(progress).filter((id) => ids.has(id) && progress[id].box >= LEARNED_BOX).length;
+  }, [pool, progress]);
+
   const studied = useMemo(() => {
     const ids = new Set(pool.map((it) => it.id));
     return Object.keys(progress).filter((id) => ids.has(id)).length;
@@ -6214,12 +8031,62 @@ export default function App() {
     setScreen("session");
   };
 
-  const restoreProgress = (p) => {
-    const merged = { ...progressRef.current, ...p };
+  const makeBackup = () => ({
+    app: "suomi-treeni", version: APP_VERSION, saved: dayKey(),
+    progress: progressRef.current, days: daysRef.current, readings: readingResults, numbers: numStats, yki: ykiStats, custom: ykiCustom,
+  });
+  const noteBackup = () => { const last = dayKey(); setLastBackup(last); stSet(BACKUP_KEY, { last }, false); };
+
+  const restoreProgress = (input) => {
+    const data = input && input.progress ? input : { progress: input };
+    const merged = { ...progressRef.current, ...data.progress };
     progressRef.current = merged;
     setProgress(merged);
     queueProgressSave(merged);
-    return Object.keys(merged).length;
+    let dayCount = Object.keys(daysRef.current).length;
+    if (data.days && typeof data.days === "object") {
+      const nd = { ...daysRef.current };
+      Object.keys(data.days).forEach((k) => { nd[k] = Math.max(nd[k] || 0, data.days[k] || 0); });
+      daysRef.current = nd; setDays(nd); stSet(DAYS_KEY, pruneDays(nd), false);
+      dayCount = Object.keys(nd).length;
+    }
+    if (data.readings && typeof data.readings === "object") {
+      setReadingResults((prev) => {
+        const nx = { ...prev };
+        Object.keys(data.readings).forEach((id) => {
+          const a = prev[id], b = data.readings[id];
+          if (!b) return;
+          nx[id] = !a || (b.best || 0) > (a.best || 0) ? { ...b, tries: Math.max(a ? a.tries || 0 : 0, b.tries || 0) } : { ...a, tries: Math.max(a.tries || 0, b.tries || 0) };
+        });
+        stSet(READ_KEY, nx, false);
+        return nx;
+      });
+    }
+    if (data.numbers && typeof data.numbers === "object") {
+      setNumStats((prev) => {
+        const nx = { ...prev };
+        Object.keys(data.numbers).forEach((id) => { const a = prev[id], b = data.numbers[id]; if (b && (!a || (b.total || 0) > (a.total || 0))) nx[id] = b; });
+        stSet(NUM_KEY, nx, false);
+        return nx;
+      });
+    }
+    if (data.yki && typeof data.yki === "object") {
+      setYkiStats((prev) => {
+        const nx = { ...prev };
+        Object.keys(data.yki).forEach((id) => { const a = prev[id], b = data.yki[id]; if (b && (!a || (b.tries || 0) > (a.tries || 0))) nx[id] = b; });
+        stSet(YKI_KEY, nx, false);
+        return nx;
+      });
+    }
+    if (Array.isArray(data.custom)) {
+      setYkiCustom((prev) => {
+        const have = new Set(prev.map((x) => x.id));
+        const next = [...prev, ...data.custom.filter((x) => x && x.id && x.prompt && !have.has(x.id))];
+        stSet(YKI_CUSTOM_KEY, next, false);
+        return next;
+      });
+    }
+    return { phrases: Object.keys(merged).length, days: dayCount };
   };
 
   const retestStorage = async () => {
@@ -6273,20 +8140,56 @@ export default function App() {
       {screen === "dialogs" && (
         <DialogPick dialogs={dialogs} progress={progress} onStart={startDialog} onBack={() => setScreen("home")} />
       )}
+      {screen === "reading" && readingRun && (
+        <ReadingScreen key={readingRun.id} reading={readingRun} glossary={glossary} say={say} sayParts={sayParts} stop={stop} canSpeak={supported && !noAudio} backLabel={readingFrom === "ykihub" ? "Back to YKI tasks" : "To the lessons"}
+          onWord={openWord} seen={seenWords} prev={readingResults[readingRun.id]} onResult={saveReadingResult}
+          onBack={() => setScreen(readingFrom)} />
+      )}
+      {screen === "numhub" && (
+        <NumbersHub stats={numStats} showWord={numShowWord} onToggleWord={() => setNumShowWord((v) => !v)}
+          speechOk={supported && !noAudio} onStart={startNumbers} onBack={() => setScreen("home")} />
+      )}
+      {screen === "numrun" && numRun && (
+        <NumbersRun key={numRun.key} mode={numRun.mode} tasks={numRun.tasks} say={say} speechOk={supported && !noAudio}
+          showWordInit={numShowWord} onRecord={recordNumbers} onAgain={() => startNumbers(numRun.mode.id)}
+          onBack={() => { stop(); setScreen("numhub"); }} />
+      )}
+      {screen === "about" && (
+        <AboutScreen lessonsCount={lessons.length} phrasesCount={pool.length} makeBackup={makeBackup} restoreBackup={restoreProgress}
+          lastBackup={lastBackup} onBackedUp={noteBackup} onBack={() => setScreen("home")} />
+      )}
+      {screen === "ykihub" && (
+        <YkiHub readingResults={readingResults} ykiStats={ykiStats} onReading={openYkiReading} onWrite={openYkiWrite} onSpeak={openYkiSpeak}
+          custom={ykiCustom} onAddCustom={() => { setCustomEdit(null); setScreen("ykicustom"); }} onOpenCustom={openCustom}
+          onEditCustom={(c) => { setCustomEdit(c); setScreen("ykicustom"); }} onBack={() => setScreen("home")} />
+      )}
+      {screen === "ykicustom" && (
+        <YkiCustomForm key={customEdit ? customEdit.id : "new"} initial={customEdit}
+          onSave={(c) => { saveCustom(c); setScreen("ykihub"); }} onDelete={(id) => { deleteCustom(id); setScreen("ykihub"); }}
+          onBack={() => setScreen("ykihub")} />
+      )}
+      {screen === "ykiwrite" && ykiTask && (
+        <YkiWriting key={ykiTask.id} task={ykiTask} glossary={glossary} onWord={openWord} seen={seenWords} prev={ykiStats[ykiTask.id]}
+          onAttempt={saveYkiAttempt} onDraft={saveYkiDraft} onTicks={saveYkiTicks} onBack={() => setScreen("ykihub")} />
+      )}
+      {screen === "ykispeak" && ykiTask && (
+        <YkiSpeaking key={ykiTask.id} task={ykiTask} glossary={glossary} say={say} sayParts={sayParts} stop={stop} onWord={openWord} seen={seenWords}
+          prev={ykiStats[ykiTask.id]} onFinish={finishYki} onBack={() => { stop(); setScreen("ykihub"); }} />
+      )}
       {screen === "cases" && (
         <CaseSheet lessons={lessons} progress={progress} onBack={() => setScreen("home")} />
       )}
       {screen === "home" && (
-        <Home lessons={lessons} pool={pool} progress={progress} due={due} studied={studied} unlockMap={unlockMap} nextLessonId={nextLessonId} say={say} onWord={openWord} markSeen={markSeen} noAudio={noAudio} onToggleAudio={toggleAudio} onVerbs={() => setScreen("verbhub")} onDialogs={() => setScreen("dialogs")} onCases={() => setScreen("cases")} saveNote={saveNote} storeFail={storeFail} onRetest={retestStorage}
+        <Home lessons={lessons} pool={pool} progress={progress} due={due} learned={learned} onBankFilter={(f) => { setBankFilter(f); setScreen("bank"); }} unlockMap={unlockMap} nextLessonId={nextLessonId} days={days} say={say} onWord={openWord} markSeen={markSeen} noAudio={noAudio} onToggleAudio={toggleAudio} onVerbs={() => setScreen("verbhub")} onDialogs={() => setScreen("dialogs")} onCases={() => setScreen("cases")} onNumbers={() => setScreen("numhub")} onYki={() => setScreen("ykihub")} onAbout={() => setScreen("about")} backupHint={Object.keys(progress).length >= 30 && (lastBackup === null || daysAgo(lastBackup) > 14)} readingResults={readingResults} onReading={openReading} saveNote={saveNote} storeFail={storeFail} onRetest={retestStorage}
           onStart={() => startSession(pool.filter((p) => { const st = unlockMap.get(p.lessonId); return st && st.unlocked; }))}
           onLesson={(l) => startSession(pool.filter((p) => p.lessonId === l.id))}
-          onBank={() => setScreen("bank")} onImport={() => setScreen("import")} />
+          onBank={() => { setBankFilter("all"); setScreen("bank"); }} onImport={() => setScreen("import")} />
       )}
       {screen === "bank" && (
-        <Bank pool={pool} glossary={glossary} say={say} onWord={openWord} seen={seenWords} onEdit={saveEdit} onBack={() => setScreen("home")} />
+        <Bank key={bankFilter} initialFilter={bankFilter} pool={pool} glossary={glossary} say={say} onWord={openWord} seen={seenWords} onEdit={saveEdit} onBack={() => setScreen("home")} progress={progress} />
       )}
       {screen === "import" && (
-        <Import lessons={lessons} onSave={saveBank} progress={progress} onProgress={restoreProgress} onBack={() => setScreen("home")} />
+        <Import lessons={lessons} onSave={saveBank} progress={progress} onProgress={restoreProgress} makeBackup={makeBackup} onBackedUp={noteBackup} onBack={() => setScreen("home")} />
       )}
       {screen === "summary" && summary && (
         <Summary stats={summary} mode={mode} onHome={() => setScreen("home")} onAgain={repeatRun} />
@@ -6297,7 +8200,6 @@ export default function App() {
 }
 
 /* ------------------------------------------------------------------ */
-/*  Verb training                                                      */
 /* ------------------------------------------------------------------ */
 function VerbSession({ tasks, onFinish, onExit, onAnswer, say }) {
   const [idx, setIdx] = useState(0);
@@ -6322,7 +8224,6 @@ function VerbSession({ tasks, onFinish, onExit, onAnswer, say }) {
   const tense = TENSES.find((t) => t.id === task.tenseId);
   const ex = task.verb.ex;
   const [ruHead, ruVerb] = splitGloss(task.ru);
-  const [enHead, enVerb] = splitGloss(task.en);
 
   const shownPrefix = (() => {
     let i = 0;
@@ -6347,7 +8248,7 @@ function VerbSession({ tasks, onFinish, onExit, onAnswer, say }) {
 
   return (
     <div style={{ minHeight: "100vh", background: C.paper, display: "flex", flexDirection: "column", fontFamily: FONT }}>
-      <div style={{ padding: "14px 16px 10px", display: "flex", alignItems: "center", gap: 12 }}>
+      <div style={{ padding: "10px 16px 7px", display: "flex", alignItems: "center", gap: 8 }}>
         <button onClick={onExit} style={{ background: "none", border: "none", padding: 4, cursor: "pointer" }}>
           <X size={24} color={C.inkSoft} />
         </button>
@@ -6359,7 +8260,7 @@ function VerbSession({ tasks, onFinish, onExit, onAnswer, say }) {
         <div style={{ fontSize: 14, fontWeight: 700, color: C.inkSoft, minWidth: 38, textAlign: "right" }}>{idx + 1}/{tasks.length}</div>
       </div>
 
-      <div style={{ flex: 1, padding: "10px 18px 190px" }}>
+      <div style={{ flex: 1, padding: "6px 18px 128px" }}>
         <div style={{ fontSize: 15, color: C.inkSoft, fontWeight: 600 }}>
           {task.neg && task.aux
             ? "The negative and ole are given — you just need the participle"
@@ -6371,8 +8272,8 @@ function VerbSession({ tasks, onFinish, onExit, onAnswer, say }) {
         </div>
 
         <div style={{
-          marginTop: 16, background: C.card, border: `1px solid ${C.line}`,
-          borderLeft: `4px solid ${task.neg ? C.lingon : C.spruce}`, borderRadius: 6, padding: "16px 16px 14px",
+          marginTop: 11, background: C.card, border: `1px solid ${C.line}`,
+          borderLeft: `4px solid ${task.neg ? C.lingon : C.spruce}`, borderRadius: 6, padding: "12px 16px 10px",
         }}>
           <div style={{ fontSize: 17, color: C.ink, lineHeight: 1.3 }}>
             {ruHead}{" "}
@@ -6380,7 +8281,7 @@ function VerbSession({ tasks, onFinish, onExit, onAnswer, say }) {
             {ex ? " " + ex.en : ""}
           </div>
 
-          <div style={{ marginTop: 14, display: "flex", alignItems: "center", gap: 10 }}>
+          <div style={{ marginTop: 10, display: "flex", alignItems: "center", gap: 7 }}>
             <div style={{ flex: 1, minWidth: 0, fontSize: 26, fontWeight: 800, letterSpacing: "-0.02em", color: task.neg ? C.lingon : C.spruce, lineHeight: 1.25 }}>
               {task.given}{" "}
               <span style={{ color: C.inkSoft }}>
@@ -6389,12 +8290,12 @@ function VerbSession({ tasks, onFinish, onExit, onAnswer, say }) {
               {ex && <span style={{ fontSize: 21, fontWeight: 700, color: C.inkSoft }}> {ex.fi}</span>}
             </div>
             <button onClick={() => say(task.verb.inf)} title="Listen to the infinitive"
-              style={{ background: C.blueSoft, border: "none", borderRadius: 6, padding: "8px 10px", cursor: "pointer", display: "inline-flex", alignItems: "center", flexShrink: 0 }}>
+              style={{ background: C.blueSoft, border: "none", borderRadius: 6, padding: "6px 10px", cursor: "pointer", display: "inline-flex", alignItems: "center", flexShrink: 0 }}>
               <Volume2 size={17} color={C.blue} />
             </button>
           </div>
 
-          <div style={{ marginTop: 10, display: "flex", flexWrap: "wrap", gap: 6, alignItems: "center" }}>
+          <div style={{ marginTop: 8, display: "flex", flexWrap: "wrap", gap: 4, alignItems: "center" }}>
             <Dotted onClick={() => setWord({ w: tense.ru, ru: "how it's formed", en: "", note: TENSE_NOTES[task.tenseId] })}>
               {tense.ru}
             </Dotted>
@@ -6417,23 +8318,23 @@ function VerbSession({ tasks, onFinish, onExit, onAnswer, say }) {
         </div>
 
         {task.type === "mc" ? (
-          <div style={{ marginTop: 22, display: "flex", flexDirection: "column", gap: 10 }}>
+          <div style={{ marginTop: 14, display: "flex", flexDirection: "column", gap: 7 }}>
             {task.options.map((o, i) => {
               const sel = picked === i;
               return (
                 <button key={i} onClick={() => !result && setPicked(i)}
-                  style={{ textAlign: "left", background: sel ? C.blueSoft : C.card, border: `2px solid ${sel ? C.blue : C.line}`, borderRadius: 8, padding: "15px 16px", fontSize: 19, fontWeight: 600, color: C.ink, cursor: "pointer" }}>
+                  style={{ textAlign: "left", background: sel ? C.blueSoft : C.card, border: `2px solid ${sel ? C.blue : C.line}`, borderRadius: 8, padding: "11px 16px", fontSize: 19, fontWeight: 600, color: C.ink, cursor: "pointer" }}>
                   {o}
                 </button>
               );
             })}
           </div>
         ) : (
-          <div style={{ marginTop: 20 }}>
+          <div style={{ marginTop: 12 }}>
             <input ref={inputRef} value={typed} onChange={(e) => setTyped(e.target.value)} readOnly={!!result}
               placeholder={task.aux ? "Just the participle" : task.neg ? "Just the verb, without " + NEG[task.person] : "Verb form"}
-              style={{ width: "100%", fontSize: 21, fontWeight: 700, color: C.ink, padding: 14, borderRadius: 8, border: `2px solid ${C.line}`, background: C.card, fontFamily: FONT }} />
-            <div style={{ marginTop: 12, fontSize: 19, fontWeight: 700, letterSpacing: "0.06em" }}>
+              style={{ width: "100%", fontSize: 21, fontWeight: 700, color: C.ink, padding: 11, borderRadius: 8, border: `2px solid ${C.line}`, background: C.card, fontFamily: FONT }} />
+            <div style={{ marginTop: 8, fontSize: 19, fontWeight: 700, letterSpacing: "0.06em" }}>
               {task.answer.split("").map((ch, i) => (
                 <span key={i} style={{ color: i < shownPrefix ? C.ink : C.inkSoft }}>
                   {i < shownPrefix ? ch : ch === " " ? " " : "·"}
@@ -6441,26 +8342,26 @@ function VerbSession({ tasks, onFinish, onExit, onAnswer, say }) {
               ))}
             </div>
             <button onClick={() => { if (!result) { setTyped(task.answer.slice(0, shownPrefix + 1)); inputRef.current?.focus(); } }}
-              style={{ marginTop: 12, background: C.ochreSoft, border: `1.5px solid ${C.ochre}`, borderRadius: 6, padding: "10px 16px", fontSize: 15, fontWeight: 700, color: C.ink, cursor: "pointer" }}>
+              style={{ marginTop: 8, background: C.ochreSoft, border: `1.5px solid ${C.ochre}`, borderRadius: 6, padding: "7px 16px", fontSize: 15, fontWeight: 700, color: C.ink, cursor: "pointer" }}>
               Reveal a letter
             </button>
           </div>
         )}
       </div>
 
-      <div style={{ position: "fixed", left: 0, right: 0, bottom: 0, background: result ? (result === "ok" ? C.spruceSoft : C.lingonSoft) : C.paper, borderTop: `1px solid ${C.line}`, padding: "14px 18px calc(18px + env(safe-area-inset-bottom))" }}>
+      <div style={{ position: "fixed", left: 0, right: 0, bottom: 0, background: result ? (result === "ok" ? C.spruceSoft : C.lingonSoft) : C.paper, borderTop: `1px solid ${C.line}`, padding: "9px 18px calc(12px + env(safe-area-inset-bottom))" }}>
         {result && (
-          <div style={{ marginBottom: 14 }}>
+          <div style={{ marginBottom: 10 }}>
             <div style={{ fontSize: 15, fontWeight: 800, color: result === "ok" ? C.spruce : C.lingon, marginBottom: 4 }}>
               {result === "ok" ? "Oikein — correct" : "The correct form"}
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 7 }}>
               <div style={{ fontSize: 21, fontWeight: 800, color: C.ink }}>
                 {PERSONS[task.person]} {task.full}
                 {ex && <span style={{ color: C.inkSoft }}> {ex.fi}</span>}
               </div>
               <button onClick={() => say(fullSentence(task))} title="Repeat"
-                style={{ background: "rgba(255,255,255,0.85)", border: `1px solid ${C.line}`, borderRadius: 6, padding: "7px 10px", cursor: "pointer", display: "inline-flex", alignItems: "center", gap: 6, flexShrink: 0 }}>
+                style={{ background: "rgba(255,255,255,0.85)", border: `1px solid ${C.line}`, borderRadius: 6, padding: "5px 10px", cursor: "pointer", display: "inline-flex", alignItems: "center", gap: 4, flexShrink: 0 }}>
                 <Volume2 size={16} color={C.ink} />
                 <span style={{ fontSize: 12.5, fontWeight: 700, color: C.ink }}>Repeat</span>
               </button>
@@ -6471,7 +8372,7 @@ function VerbSession({ tasks, onFinish, onExit, onAnswer, say }) {
             <div style={{ fontSize: 13, color: C.inkSoft, marginTop: 2 }}>
               {task.verb.inf} · {tense.ru}
             </div>
-            {task.verb.note && <div style={{ fontSize: 13.5, color: C.ink, marginTop: 6 }}>{task.verb.note}</div>}
+            {task.verb.note && <div style={{ fontSize: 13.5, color: C.ink, marginTop: 5 }}>{task.verb.note}</div>}
           </div>
         )}
         {!result ? (
@@ -6489,22 +8390,19 @@ function VerbSession({ tasks, onFinish, onExit, onAnswer, say }) {
 }
 
 /* ------------------------------------------------------------------ */
-/*  Verbs: progress and topic selection on one screen                  */
 /* ------------------------------------------------------------------ */
-// The fill inside the button shows how well the topic is mastered, and the border
-// shows whether it's selected for training. Two different meanings, two different signals.
 function Chip({ on, onClick, children, sub, fill = 0, pct }) {
   return (
     <button onClick={onClick}
       style={{
         position: "relative", overflow: "hidden", textAlign: "left",
         background: C.card, border: `2px solid ${on ? C.blue : C.line}`,
-        borderRadius: 7, padding: "7px 9px", cursor: "pointer",
+        borderRadius: 7, padding: "5px 9px", cursor: "pointer",
         flex: "1 1 44%", minWidth: 138,
       }}>
       <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: `${Math.round(Math.min(1, fill) * 100)}%`, background: C.spruceSoft }} />
       <div style={{ position: "relative" }}>
-        <div style={{ display: "flex", alignItems: "baseline", gap: 5 }}>
+        <div style={{ display: "flex", alignItems: "baseline", gap: 4 }}>
           <div style={{ flex: 1, fontSize: 13.5, fontWeight: 700, color: on ? C.blue : C.ink, lineHeight: 1.2 }}>{children}</div>
           {pct !== undefined && (
             <div style={{ fontSize: 11, fontWeight: 700, color: fill >= 1 ? C.spruce : C.inkSoft }}>{pct}%</div>
@@ -6524,13 +8422,9 @@ function VerbHub({ progress, initial, onStart, onBack }) {
 
   const allTenses = BASE_TENSES.map((t) => t.id);
   const allTypes = [1, 2, 3, 4, 5, 6];
-  // Negation isn't selected separately: it always comes bundled inside its tense.
   const expand = (ids) => ids.flatMap((id) => [id, NEG_OF[id]]);
-  // An empty type list means "any" — this filter can be left untouched.
   const usedTypes = types.length ? types : allTypes;
 
-  // One "cell" is a verb in one person and tense. Mastery is counted the same way
-  // as for phrases: three correct answers give a full share.
   const stat = (tenseIds, typeIds) => {
     let total = 0, got = 0, started = 0, due = 0;
     const now = Date.now();
@@ -6553,20 +8447,20 @@ function VerbHub({ progress, initial, onStart, onBack }) {
   const [showGrammar, setShowGrammar] = useState(false);
 
   return (
-    <div style={{ maxWidth: 620, margin: "0 auto", padding: "calc(18px + env(safe-area-inset-top)) 18px 40px" }}>
+    <div style={{ maxWidth: 620, margin: "0 auto", padding: "calc(12px + env(safe-area-inset-top)) 18px 28px" }}>
       <TopBar title="Verb Conjugation" onBack={onBack} />
 
       <button onClick={() => setShowGrammar(true)}
         style={{
-          marginTop: 10, background: "none", border: "none", padding: 0, display: "inline-flex",
-          alignItems: "center", gap: 6, cursor: "pointer", fontFamily: FONT,
+          marginTop: 8, background: "none", border: "none", padding: 0, display: "inline-flex",
+          alignItems: "center", gap: 4, cursor: "pointer", fontFamily: FONT,
         }}>
         <Info size={15} color={C.ochre} />
         <span style={{ fontSize: 12.5, fontWeight: 600, color: C.ochre }}>Grammar: verb types and tenses</span>
       </button>
 
-      <div style={{ marginTop: 16, fontSize: 14.5, fontWeight: 800, letterSpacing: "-0.01em" }}>Tense</div>
-      <div style={{ marginTop: 8, display: "flex", flexWrap: "wrap", gap: 7 }}>
+      <div style={{ marginTop: 11, fontSize: 14.5, fontWeight: 800, letterSpacing: "-0.01em" }}>Time</div>
+      <div style={{ marginTop: 6, display: "flex", flexWrap: "wrap", gap: 5 }}>
         {BASE_TENSES.map((t) => {
           const st = stat(expand([t.id]), usedTypes);
           return (
@@ -6579,11 +8473,11 @@ function VerbHub({ progress, initial, onStart, onBack }) {
         })}
       </div>
 
-      <div style={{ marginTop: 16, display: "flex", alignItems: "baseline", gap: 8 }}>
+      <div style={{ marginTop: 11, display: "flex", alignItems: "baseline", gap: 6 }}>
         <div style={{ fontSize: 14.5, fontWeight: 800, letterSpacing: "-0.01em" }}>Verb type</div>
         {!types.length && <div style={{ fontSize: 11.5, color: C.inkSoft }}>none selected — any</div>}
       </div>
-      <div style={{ marginTop: 8, display: "flex", flexWrap: "wrap", gap: 7 }}>
+      <div style={{ marginTop: 6, display: "flex", flexWrap: "wrap", gap: 5 }}>
         {allTypes.map((n) => {
           const st = stat(expand(tenses.length ? tenses : allTenses), [n]);
           return (
@@ -6596,7 +8490,7 @@ function VerbHub({ progress, initial, onStart, onBack }) {
         })}
       </div>
 
-      <div style={{ marginTop: 16, display: "flex", flexDirection: "column", gap: 8 }}>
+      <div style={{ marginTop: 11, display: "flex", flexDirection: "column", gap: 6 }}>
         <Primary onClick={() => onStart({ tenses, types: usedTypes })} disabled={!tenses.length}>
           {tenses.length
             ? `Train · ${chosen.due ? chosen.due + " due" : chosen.total + " forms"}`
@@ -6612,10 +8506,6 @@ function VerbHub({ progress, initial, onStart, onBack }) {
   );
 }
 
-// All conjugation grammar in one place: the six verb types, the general
-// consonant gradation rule, and the eight tenses/moods with their negatives.
-// Not tied to a specific verb — meant to be read as a reference ahead of time,
-// rather than one hint at a time in the middle of training.
 function VerbGrammarSheet({ onClose }) {
   const GRADATION_NOTE = "A verb's stem changes during conjugation if it contains k, p, or t. Strong grade: kk, pp, tt, and also nt, mp, ht, lt, rt. Weak grade: k, p, t — and k between vowels disappears entirely; nt → nn, mp → mm, ht → hd, lt → ll, rt → rr, t → d, p → v.\nIn types 1 and 2, the strong grade sits in the infinitive and 3rd person, the weak grade everywhere else and in the negative. In types 3 and 4 it's the other way round: the infinitive is weak, the personal forms are strong.";
   const Card = ({ title, sub, note }) => (
@@ -6623,7 +8513,7 @@ function VerbGrammarSheet({ onClose }) {
       <div style={{ fontSize: 16, fontWeight: 800, color: C.ink }}>{title}</div>
       {sub && <div style={{ fontSize: 13, color: C.inkSoft, marginTop: 1 }}>{sub}</div>}
       <div style={{
-        marginTop: 8, background: C.ochreSoft, borderRadius: 8, padding: 13,
+        marginTop: 6, background: C.ochreSoft, borderRadius: 8, padding: 10,
         fontSize: 14, lineHeight: 1.55, color: C.ink, whiteSpace: "pre-line",
       }}>
         {note}
@@ -6635,10 +8525,10 @@ function VerbGrammarSheet({ onClose }) {
       style={{ position: "fixed", inset: 0, background: "rgba(14,30,51,0.45)", zIndex: 60, display: "flex", alignItems: "flex-end" }}>
       <div onClick={(e) => e.stopPropagation()}
         style={{
-          background: C.card, width: "100%", borderRadius: "14px 14px 0 0", padding: "20px 20px 32px",
+          background: C.card, width: "100%", borderRadius: "14px 14px 0 0", padding: "14px 20px 23px",
           maxHeight: "82vh", overflowY: "auto", borderTop: `4px solid ${C.blue}`,
         }}>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 7 }}>
           <div style={{ flex: 1 }}>
             <div style={{ fontSize: 19, fontWeight: 800, color: C.ink, letterSpacing: "-0.02em" }}>Conjugation grammar</div>
             <div style={{ fontSize: 13, color: C.inkSoft, marginTop: 2 }}>How verb types and tenses work — not tied to one specific word</div>
@@ -6648,16 +8538,16 @@ function VerbGrammarSheet({ onClose }) {
           </button>
         </div>
 
-        <div style={{ marginTop: 18, fontSize: 13, fontWeight: 800, color: C.inkSoft, textTransform: "uppercase", letterSpacing: "0.04em" }}>Verb types</div>
-        <div style={{ marginTop: 10, display: "flex", flexDirection: "column", gap: 14 }}>
+        <div style={{ marginTop: 13, fontSize: 13, fontWeight: 800, color: C.inkSoft, textTransform: "uppercase", letterSpacing: "0.04em" }}>Verb types</div>
+        <div style={{ marginTop: 8, display: "flex", flexDirection: "column", gap: 10 }}>
           {[1, 2, 3, 4, 5, 6].map((n) => (
             <Card key={n} title={VERB_TYPES[n].w} sub={VERB_TYPES[n].ru} note={VERB_TYPES[n].note} />
           ))}
           <Card title="Consonant gradation" sub="k, p, t change during conjugation" note={GRADATION_NOTE} />
         </div>
 
-        <div style={{ marginTop: 22, fontSize: 13, fontWeight: 800, color: C.inkSoft, textTransform: "uppercase", letterSpacing: "0.04em" }}>Tenses and moods</div>
-        <div style={{ marginTop: 10, display: "flex", flexDirection: "column", gap: 14 }}>
+        <div style={{ marginTop: 14, fontSize: 13, fontWeight: 800, color: C.inkSoft, textTransform: "uppercase", letterSpacing: "0.04em" }}>Tenses and moods</div>
+        <div style={{ marginTop: 8, display: "flex", flexDirection: "column", gap: 10 }}>
           {TENSES.map((t) => (
             <Card key={t.id} title={t.ru} note={TENSE_NOTES[t.id]} />
           ))}
@@ -6668,7 +8558,6 @@ function VerbGrammarSheet({ onClose }) {
 }
 
 /* ------------------------------------------------------------------ */
-/*  Dialogue: scene and role selection                                 */
 /* ------------------------------------------------------------------ */
 function DialogPick({ dialogs, progress, onStart, onBack }) {
   const [pick, setPick] = useState(null);
@@ -6679,13 +8568,13 @@ function DialogPick({ dialogs, progress, onStart, onBack }) {
   };
 
   return (
-    <div style={{ maxWidth: 620, margin: "0 auto", padding: "calc(18px + env(safe-area-inset-top)) 18px 40px" }}>
+    <div style={{ maxWidth: 620, margin: "0 auto", padding: "calc(12px + env(safe-area-inset-top)) 18px 28px" }}>
       <TopBar title="Dialogues" onBack={onBack} />
-      <div style={{ fontSize: 14.5, color: C.inkSoft, marginTop: 10, lineHeight: 1.5 }}>
+      <div style={{ fontSize: 14.5, color: C.inkSoft, marginTop: 8, lineHeight: 1.5 }}>
         The lesson's scene plays out line by line. Choose who you're speaking as: you'll have to put together that person's lines yourself, the rest arrive as messages.
       </div>
 
-      <div style={{ marginTop: 16, display: "flex", flexDirection: "column", gap: 8 }}>
+      <div style={{ marginTop: 11, display: "flex", flexDirection: "column", gap: 6 }}>
         {dialogs.map((d) => {
           const m = done(d);
           return (
@@ -6693,7 +8582,7 @@ function DialogPick({ dialogs, progress, onStart, onBack }) {
               style={{
                 textAlign: "left", background: C.card, border: `1px solid ${C.line}`,
                 borderLeft: `4px solid ${m >= 1 ? C.spruce : C.line}`, borderRadius: 6,
-                padding: "12px 14px", cursor: "pointer",
+                padding: "9px 14px", cursor: "pointer",
               }}>
               <div style={{ fontSize: 16.5, fontWeight: 700, color: C.ink, letterSpacing: "-0.01em" }}>{d.title}</div>
               <div style={{ fontSize: 12, color: C.inkSoft, margin: "3px 0 6px" }}>
@@ -6709,17 +8598,17 @@ function DialogPick({ dialogs, progress, onStart, onBack }) {
         <div onClick={() => setPick(null)}
           style={{ position: "fixed", inset: 0, background: "rgba(14,30,51,0.45)", zIndex: 60, display: "flex", alignItems: "flex-end" }}>
           <div onClick={(e) => e.stopPropagation()}
-            style={{ background: C.card, width: "100%", borderRadius: "14px 14px 0 0", padding: "20px 20px 32px", borderTop: `4px solid ${C.blue}` }}>
+            style={{ background: C.card, width: "100%", borderRadius: "14px 14px 0 0", padding: "14px 20px 23px", borderTop: `4px solid ${C.blue}` }}>
             <div style={{ fontSize: 20, fontWeight: 800, color: C.ink, letterSpacing: "-0.02em" }}>{pick.title}</div>
-            <div style={{ fontSize: 14, color: C.inkSoft, marginTop: 4, marginBottom: 16 }}>Who are you speaking as?</div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+            <div style={{ fontSize: 14, color: C.inkSoft, marginTop: 4, marginBottom: 11 }}>Which part do you want to play?</div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 7 }}>
               {pick.speakers.map((s) => {
                 const n = pick.lines.filter((l) => l.who === s).length;
                 return (
                   <button key={s} onClick={() => onStart(pick, s)}
                     style={{
                       textAlign: "left", background: C.blueSoft, border: `2px solid ${C.blue}`, borderRadius: 8,
-                      padding: "14px 16px", cursor: "pointer", display: "flex", alignItems: "baseline", gap: 8,
+                      padding: "10px 16px", cursor: "pointer", display: "flex", alignItems: "baseline", gap: 6,
                     }}>
                     <span style={{ fontSize: 18, fontWeight: 800, color: C.blue }}>{s}</span>
                     <span style={{ fontSize: 13, color: C.inkSoft }}>{n} lines</span>
@@ -6727,7 +8616,7 @@ function DialogPick({ dialogs, progress, onStart, onBack }) {
                 );
               })}
             </div>
-            <div style={{ marginTop: 12 }}><Ghost onClick={() => setPick(null)}>Cancel</Ghost></div>
+            <div style={{ marginTop: 8 }}><Ghost onClick={() => setPick(null)}>Cancel</Ghost></div>
           </div>
         </div>
       )}
@@ -6736,7 +8625,6 @@ function DialogPick({ dialogs, progress, onStart, onBack }) {
 }
 
 /* ------------------------------------------------------------------ */
-/*  Dialogue: the training itself                                      */
 /* ------------------------------------------------------------------ */
 function makeDialogTask(line, others, box) {
   const tokens = line.fi.split(/\s+/);
@@ -6759,7 +8647,7 @@ function makeDialogTask(line, others, box) {
 
 function Bubble({ line, mine, glossary, onWord, seen, say }) {
   return (
-    <div style={{ display: "flex", justifyContent: mine ? "flex-end" : "flex-start", marginBottom: 12 }}>
+    <div style={{ display: "flex", justifyContent: mine ? "flex-end" : "flex-start", marginBottom: 8 }}>
       <div style={{ maxWidth: "86%" }}>
         <div style={{ fontSize: 11.5, fontWeight: 800, color: C.inkSoft, letterSpacing: "0.03em", marginBottom: 3, textAlign: mine ? "right" : "left" }}>
           {line.who || ""}
@@ -6768,9 +8656,9 @@ function Bubble({ line, mine, glossary, onWord, seen, say }) {
           background: mine ? C.blueSoft : C.card,
           border: `1px solid ${mine ? C.blue : C.line}`,
           borderRadius: mine ? "10px 10px 2px 10px" : "10px 10px 10px 2px",
-          padding: "11px 13px",
+          padding: "8px 13px",
         }}>
-          <div style={{ display: "flex", alignItems: "flex-start", gap: 8 }}>
+          <div style={{ display: "flex", alignItems: "flex-start", gap: 6 }}>
             <div style={{ flex: 1, minWidth: 0 }}>
               <FinnishText text={line.fi} glossary={glossary} onWord={onWord} seen={seen} size={17} weight={700} />
               <div style={{ fontSize: 14, color: C.inkSoft, marginTop: 4 }}>{line.ru}</div>
@@ -6857,7 +8745,7 @@ function DialogSession({ dialog, role, dPool, glossary, progress, say, onAnswer,
 
   return (
     <div style={{ minHeight: "100vh", background: C.paper, display: "flex", flexDirection: "column", fontFamily: FONT }}>
-      <div style={{ padding: "14px 16px 10px", display: "flex", alignItems: "center", gap: 12, flexShrink: 0 }}>
+      <div style={{ padding: "10px 16px 7px", display: "flex", alignItems: "center", gap: 8, flexShrink: 0 }}>
         <button onClick={onExit} style={{ background: "none", border: "none", padding: 4, cursor: "pointer" }}>
           <X size={24} color={C.inkSoft} />
         </button>
@@ -6874,13 +8762,13 @@ function DialogSession({ dialog, role, dPool, glossary, progress, say, onAnswer,
         </div>
       </div>
 
-      <div ref={scroller} style={{ flex: 1, overflowY: "auto", padding: "8px 16px 6px" }}>
+      <div ref={scroller} style={{ flex: 1, overflowY: "auto", padding: "6px 16px 5px" }}>
         {shown.map((l, i) => (
           <Bubble key={i} line={l} mine={l.who === role} glossary={glossary} onWord={openWord} seen={seen} say={say} />
         ))}
         {mine && !result && (
-          <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: 12 }}>
-            <div style={{ background: C.ochreSoft, border: `1px dashed ${C.ochre}`, borderRadius: "10px 10px 2px 10px", padding: "11px 13px", maxWidth: "86%" }}>
+          <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: 8 }}>
+            <div style={{ background: C.ochreSoft, border: `1px dashed ${C.ochre}`, borderRadius: "10px 10px 2px 10px", padding: "8px 13px", maxWidth: "86%" }}>
               <div style={{ fontSize: 11.5, fontWeight: 800, color: C.ochre, letterSpacing: "0.03em", marginBottom: 3 }}>YOUR LINE</div>
               <div style={{ fontSize: 17, fontWeight: 600, color: C.ink, lineHeight: 1.35 }}>{cur.ru}</div>
             </div>
@@ -6890,12 +8778,12 @@ function DialogSession({ dialog, role, dPool, glossary, progress, say, onAnswer,
 
       <div style={{
         flexShrink: 0, background: result ? (result === "ok" ? C.spruceSoft : C.lingonSoft) : C.paper,
-        borderTop: `1px solid ${C.line}`, padding: "12px 16px calc(16px + env(safe-area-inset-bottom))",
+        borderTop: `1px solid ${C.line}`, padding: "8px 16px calc(12px + env(safe-area-inset-bottom))",
       }}>
         {mine && !result && task && (
-          <div style={{ marginBottom: 12 }}>
+          <div style={{ marginBottom: 8 }}>
             {task.type === "mc" && (
-              <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
                 {task.options.map((o, i) => {
                   const sel = picked === i;
                   return (
@@ -6903,7 +8791,7 @@ function DialogSession({ dialog, role, dPool, glossary, progress, say, onAnswer,
                       style={{
                         textAlign: "left", background: sel ? C.blueSoft : C.card,
                         border: `2px solid ${sel ? C.blue : C.line}`, borderRadius: 8,
-                        padding: "12px 14px", fontSize: 16, fontWeight: 600, color: C.ink, cursor: "pointer", lineHeight: 1.3,
+                        padding: "9px 14px", fontSize: 16, fontWeight: 600, color: C.ink, cursor: "pointer", lineHeight: 1.3,
                       }}>
                       {o}
                     </button>
@@ -6913,21 +8801,21 @@ function DialogSession({ dialog, role, dPool, glossary, progress, say, onAnswer,
             )}
             {task.type === "bank" && (
               <div>
-                <div style={{ minHeight: 46, borderBottom: `2px solid ${C.line}`, paddingBottom: 8, display: "flex", flexWrap: "wrap", gap: 7 }}>
+                <div style={{ minHeight: 46, borderBottom: `2px solid ${C.line}`, paddingBottom: 8, display: "flex", flexWrap: "wrap", gap: 5 }}>
                   {chips.map((c, n) => (
                     <button key={n} onClick={() => setChips(chips.filter((_, k) => k !== n))}
-                      style={{ background: C.card, border: `1.5px solid ${C.line}`, borderRadius: 6, padding: "8px 11px", fontSize: 16, fontWeight: 600, color: C.ink, cursor: "pointer" }}>
+                      style={{ background: C.card, border: `1.5px solid ${C.line}`, borderRadius: 6, padding: "7px 12px", fontSize: 16, fontWeight: 600, color: C.ink, cursor: "pointer" }}>
                       {c.w}
                     </button>
                   ))}
                 </div>
-                <div style={{ marginTop: 12, display: "flex", flexWrap: "wrap", gap: 7 }}>
+                <div style={{ marginTop: 8, display: "flex", flexWrap: "wrap", gap: 5 }}>
                   {task.chips.map((c, i) =>
                     chips.some((ch) => ch.i === i) ? (
-                      <span key={i} style={{ borderRadius: 6, padding: "8px 11px", fontSize: 16, fontWeight: 600, fontFamily: FONT, border: "1.5px solid transparent", background: C.line, color: C.line }}>{c}</span>
+                      <span key={i} style={{ borderRadius: 6, padding: "7px 12px", fontSize: 16, fontWeight: 600, fontFamily: FONT, border: "1.5px solid transparent", background: C.line, color: C.line }}>{c}</span>
                     ) : (
                       <button key={i} onClick={() => setChips([...chips, { w: c, i }])}
-                        style={{ background: C.card, border: `1.5px solid ${C.line}`, borderRadius: 6, padding: "8px 11px", fontSize: 16, fontWeight: 600, fontFamily: FONT, color: C.ink, cursor: "pointer", boxShadow: "0 2px 0 rgba(14,30,51,0.12)" }}>
+                        style={{ background: C.card, border: `1.5px solid ${C.line}`, borderRadius: 6, padding: "7px 12px", fontSize: 16, fontWeight: 600, fontFamily: FONT, color: C.ink, cursor: "pointer", boxShadow: "0 2px 0 rgba(14,30,51,0.12)" }}>
                         {c}
                       </button>
                     )
@@ -6939,8 +8827,8 @@ function DialogSession({ dialog, role, dPool, glossary, progress, say, onAnswer,
               <div>
                 <textarea ref={inputRef} value={typed} onChange={(e) => setTyped(e.target.value)} rows={2}
                   placeholder="Answer in Finnish..."
-                  style={{ width: "100%", fontSize: 18, fontWeight: 600, color: C.ink, padding: 12, borderRadius: 8, border: `2px solid ${C.line}`, background: C.card, resize: "none", fontFamily: FONT }} />
-                <div style={{ marginTop: 8, display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
+                  style={{ width: "100%", fontSize: 18, fontWeight: 600, color: C.ink, padding: 10, borderRadius: 8, border: `2px solid ${C.line}`, background: C.card, resize: "none", fontFamily: FONT }} />
+                <div style={{ marginTop: 6, display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
                   <div style={{ fontSize: 17, fontWeight: 700, letterSpacing: "0.06em", color: C.inkSoft }}>
                     {task.answer.split("").map((ch, i) => (
                       <span key={i} style={{ color: i < shownPrefix ? C.ink : C.inkSoft }}>
@@ -6949,7 +8837,7 @@ function DialogSession({ dialog, role, dPool, glossary, progress, say, onAnswer,
                     ))}
                   </div>
                   <button onClick={() => { setTyped(task.answer.slice(0, shownPrefix + 1)); inputRef.current?.focus(); }}
-                    style={{ background: C.ochreSoft, border: `1.5px solid ${C.ochre}`, borderRadius: 6, padding: "8px 12px", fontSize: 14, fontWeight: 700, color: C.ink, cursor: "pointer" }}>
+                    style={{ background: C.ochreSoft, border: `1.5px solid ${C.ochre}`, borderRadius: 6, padding: "6px 12px", fontSize: 14, fontWeight: 700, color: C.ink, cursor: "pointer" }}>
                     Reveal a letter
                   </button>
                 </div>
@@ -6959,7 +8847,7 @@ function DialogSession({ dialog, role, dPool, glossary, progress, say, onAnswer,
         )}
 
         {result && (
-          <div style={{ fontSize: 14.5, fontWeight: 800, marginBottom: 10, color: result === "ok" ? C.spruce : C.lingon }}>
+          <div style={{ fontSize: 14.5, fontWeight: 800, marginBottom: 8, color: result === "ok" ? C.spruce : C.lingon }}>
             {result === "ok" ? "Oikein — correct" : "The correct line is shown above"}
           </div>
         )}
@@ -6979,8 +8867,927 @@ function DialogSession({ dialog, role, dPool, glossary, progress, say, onAnswer,
 }
 
 /* ------------------------------------------------------------------ */
-/*  Progress bar                                                       */
 /* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+const DAYS_KEY = "suomi_days_v1";
+const DAY_GOAL = 5;
+
+function dayKey(t) {
+  const d = t || new Date();
+  return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+}
+function shiftDay(key, n) {
+  const [y, m, d] = key.split("-").map(Number);
+  return dayKey(new Date(y, m - 1, d + n));
+}
+function ruPlural(n, one, few, many) {
+  return Math.abs(n) === 1 ? one : many;
+}
+function ruPluralRu(n, one, few, many) {
+  const a = Math.abs(n) % 100, b = a % 10;
+  if (a > 10 && a < 20) return many;
+  if (b === 1) return one;
+  if (b >= 2 && b <= 4) return few;
+  return many;
+}
+function pruneDays(days) {
+  const keys = Object.keys(days).sort();
+  if (keys.length <= 400) return days;
+  const out = {};
+  keys.slice(-400).forEach((k) => { out[k] = days[k]; });
+  return out;
+}
+
+const STREAK_MILESTONES = [[100, "100 days in a row"], [60, "Two months in a row"], [30, "A month in a row"], [14, "Two weeks in a row"], [7, "A week in a row"], [3, "Three days in a row"]];
+
+function studyStats(days, today) {
+  today = today || dayKey();
+  const done = (k) => (days[k] || 0) >= DAY_GOAL;
+  const doneKeys = Object.keys(days).filter(done).sort();
+  let streak = 0;
+  let k = done(today) ? today : shiftDay(today, -1);
+  while (done(k)) { streak++; k = shiftDay(k, -1); }
+  let best = 0, run = 0, prev = null;
+  doneKeys.forEach((key) => {
+    run = prev && shiftDay(prev, 1) === key ? run + 1 : 1;
+    if (run > best) best = run;
+    prev = key;
+  });
+  const first = doneKeys[0] || null;
+  const dots = [];
+  for (let i = 13; i >= 0; i--) {
+    const key = shiftDay(today, -i);
+    dots.push({ key, n: days[key] || 0, done: done(key), today: i === 0, before: !first || key < first });
+  }
+  let windowLen = 0, missed = 0;
+  if (first) {
+    const floor = shiftDay(today, -14);
+    for (let key = first > floor ? first : floor; key < today; key = shiftDay(key, 1)) {
+      windowLen++;
+      if (!done(key)) missed++;
+    }
+  }
+  return { todayN: days[today] || 0, todayDone: done(today), streak, best, dots, windowLen, missed, total: doneKeys.length };
+}
+
+function streakMessage(st) {
+  const d = (n) => n + " " + ruPlural(n, "day", "days", "days");
+  if (st.total === 0) return { tone: "info", text: "Complete at least " + DAY_GOAL + " tasks — and today will count as the first day of your streak." };
+  if (st.windowLen >= 5) {
+    if (st.missed === 0) return { tone: "good", text: "No missed days in " + d(st.windowLen) + " — great consistency!" };
+    if (st.missed <= 2) return { tone: "good", text: "Only " + st.missed + " " + ruPlural(st.missed, "missed day", "missed days", "missed days") + " over the last " + d(st.windowLen) + " — a very good rhythm. Keep it up!" };
+    return { tone: "soft", text: "Missed " + st.missed + " of the last " + d(st.windowLen) + ". Even 10 minutes a day beats rare long sessions — shall we start today?" };
+  }
+  if (st.streak >= 2) return { tone: "good", text: "Streak going: " + d(st.streak) + " in a row. Don’t break it!" };
+  return { tone: "info", text: "A good start. Practise every day — that is how words stick best." };
+}
+
+function StreakCard({ days }) {
+  const [open, setOpen] = useState(false);
+  const st = studyStats(days);
+  const msg = streakMessage(st);
+  const toneColor = msg.tone === "good" ? C.spruce : msg.tone === "soft" ? C.ochre : C.blue;
+  const badge = STREAK_MILESTONES.find(([n]) => st.streak >= n);
+  const nextM = [...STREAK_MILESTONES].reverse().find(([n]) => n > st.streak);
+  return (
+    <div onClick={() => setOpen((v) => !v)} role="button" title="Tap to see details"
+      style={{ marginTop: 10, background: C.card, border: `1px solid ${C.line}`, borderLeft: `3px solid ${toneColor}`, borderRadius: 8, padding: "8px 12px", cursor: "pointer" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 7 }}>
+        <Flame size={18} color={st.streak > 0 ? C.ochre : C.line} />
+        <span style={{ fontSize: 19, fontWeight: 800, letterSpacing: "-0.02em", color: C.ink, lineHeight: 1 }}>{st.streak}</span>
+        <span style={{ fontSize: 13, fontWeight: 700, color: C.ink }}>{ruPlural(st.streak, "day", "days", "days")} in a row</span>
+        <span style={{ flex: 1 }} />
+        <span style={{ fontSize: 12, fontWeight: 700, color: st.todayDone ? C.spruce : C.inkSoft }}>
+          {st.todayDone ? "today ✓" : `today ${Math.min(st.todayN, DAY_GOAL)}/${DAY_GOAL}`}
+        </span>
+        <span style={{ fontSize: 11, color: C.inkSoft }}>{open ? "▴" : "▾"}</span>
+      </div>
+      <div style={{ display: "flex", gap: 3, marginTop: 6 }}>
+        {st.dots.map((d) => (
+          <div key={d.key} title={d.key}
+            style={{
+              flex: 1, height: 7, borderRadius: 4, boxSizing: "border-box",
+              background: d.done ? C.spruce : d.before || d.today ? "transparent" : C.paper,
+              border: `1.2px solid ${d.done ? C.spruce : d.today ? C.ochre : C.line}`,
+              opacity: d.before && !d.done ? 0.45 : 1,
+            }} />
+        ))}
+      </div>
+      <div style={{ marginTop: 5, fontSize: 12, color: toneColor, fontWeight: 600, lineHeight: 1.35 }}>{msg.text}</div>
+      {open && (
+        <div style={{ marginTop: 6, paddingTop: 6, borderTop: `1px dashed ${C.line}`, fontSize: 12, color: C.inkSoft, lineHeight: 1.5 }}>
+          Best streak: {st.best}{nextM && st.streak > 0 ? ` · until “${nextM[1]}” — days left: ${nextM[0] - st.streak}` : ""}.
+          {badge ? ` Now: “${badge[1]}».` : ""}
+          <br />A day counts when you complete {DAY_GOAL} tasks. The dots are the last 14 days, today on the right.
+        </div>
+      )}
+    </div>
+  );
+}
+
+
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+const YKI_KEY = "suomi_yki_v1";
+const fmtClock = (sec) => {
+  const s = Math.max(0, Math.round(sec));
+  return String(Math.floor(s / 60)).padStart(2, "0") + ":" + String(s % 60).padStart(2, "0");
+};
+
+function YkiHub({ onBack, onReading, onWrite, onSpeak, readingResults, ykiStats, custom, onAddCustom, onOpenCustom, onEditCustom }) {
+  const row = (key, title, titleRu, meta, result, onClick) => (
+    <button key={key} onClick={onClick}
+      style={{
+        width: "100%", textAlign: "left", fontFamily: FONT, cursor: "pointer", background: C.card, border: `1px solid ${C.line}`,
+        borderLeft: `4px solid ${result ? C.spruce : C.blue}`, borderRadius: 8, padding: "12px 14px",
+      }}>
+      <div style={{ fontSize: 16.5, fontWeight: 800, color: C.ink, letterSpacing: "-0.01em" }}>{title}</div>
+      <div style={{ fontSize: 13, color: C.inkSoft, marginTop: 1 }}>{titleRu}</div>
+      <div style={{ fontSize: 12, color: C.inkSoft, marginTop: 5 }}>{meta}</div>
+      {result && <div style={{ fontSize: 12, fontWeight: 700, color: C.spruce, marginTop: 3 }}>{result}</div>}
+    </button>
+  );
+  const section = (title, sub, items) => (
+    <div style={{ marginTop: 22 }}>
+      <div style={{ fontSize: 13, fontWeight: 800, color: C.blue, letterSpacing: "0.03em" }}>{title}</div>
+      <div style={{ fontSize: 12.5, color: C.inkSoft, marginTop: 2, lineHeight: 1.45 }}>{sub}</div>
+      <div style={{ marginTop: 10, display: "flex", flexDirection: "column", gap: 9 }}>{items}</div>
+    </div>
+  );
+  const rl = (skill) => YKI_TASKS.filter((t) => t.skill === skill).map((t) => {
+    const r = readingResults[t.id];
+    return row(t.id, t.title, t.titleRu, `${t.theme} · ${Math.round(t.limit / 60)} min · ${t.quiz.length} questions`,
+      r && r.total ? `Best result: ${r.best} / ${r.total}` : "", () => onReading(t));
+  });
+  const tries = (id) => {
+    const st = ykiStats[id];
+    if (!st) return "";
+    const parts = [];
+    if (st.tries) parts.push(`Attempts: ${st.tries}`);
+    if (st.attempts && st.attempts.length) parts.push("answers saved");
+    if (st.draft && st.draft.trim()) parts.push("has a draft");
+    return parts.join(" · ");
+  };
+  return (
+    <div style={{ maxWidth: 620, margin: "0 auto", padding: "calc(18px + env(safe-area-inset-top)) 18px 40px" }}>
+      <TopBar title="YKI test" onBack={onBack} />
+      <div style={{ marginTop: 12, background: C.card, border: `1px solid ${C.line}`, borderRadius: 8, padding: "13px 15px", fontSize: 13.5, color: C.ink, lineHeight: 1.5 }}>
+        The four parts of the YKI exam, intermediate level (keskitaso, B1–B2): reading and listening — multiple choice a/b/c and “true / false”; writing — a letter to a friend, a formal message and an opinion; speaking — a story, a situation and an opinion with preparation time. There are enough tasks for all nine themes: every section has at least one per theme, and they go in theme order. All tasks come with a timer; a dictionary is not available in the real test, so it is better to work without hints.
+        <div style={{ marginTop: 6, color: C.inkSoft, fontSize: 12.5 }}>Nine themes: “Me and my background”, “Home and housing”, “Shops and services”, “Culture”, “Travel”, “Health”, “Work”, “Environment”, “Society”. The tasks follow the YKI format; all texts and sample answers were written specially for the app.</div>
+      </div>
+      <div style={{ marginTop: 22 }}>
+        <div style={{ fontSize: 13, fontWeight: 800, color: C.blue, letterSpacing: "0.03em" }}>MY TASKS</div>
+        <div style={{ fontSize: 12.5, color: C.inkSoft, marginTop: 2, lineHeight: 1.45 }}>
+          Your own writing or speaking task — for example, from a textbook. The app gives you a timer, recording and an AI prompt. The tasks are kept only on your device.
+        </div>
+        <div style={{ marginTop: 10, display: "flex", flexDirection: "column", gap: 9 }}>
+          {(custom || []).map((c) => (
+            <div key={c.id} style={{ display: "flex", gap: 8, alignItems: "stretch" }}>
+              <button onClick={() => onOpenCustom(c)}
+                style={{ flex: 1, minWidth: 0, textAlign: "left", fontFamily: FONT, cursor: "pointer", background: C.card, border: `1px solid ${C.line}`, borderLeft: `4px solid ${C.ochre}`, borderRadius: 8, padding: "12px 14px" }}>
+                <div style={{ fontSize: 16, fontWeight: 800, color: C.ink, letterSpacing: "-0.01em", overflowWrap: "anywhere" }}>{c.title}</div>
+                <div style={{ fontSize: 12, color: C.inkSoft, marginTop: 4 }}>
+                  {c.kind === "write" ? `${CUSTOM_WK_LABEL[c.wkind]} · ${c.minutes} min · ${c.words[0]}–${c.words[1]} words` : `Speaking · preparation ${c.prep} s · answer ${c.speak} s`}
+                </div>
+                {tries(c.id) && <div style={{ fontSize: 12, fontWeight: 700, color: C.spruce, marginTop: 3 }}>{tries(c.id)}</div>}
+              </button>
+              <button onClick={() => onEditCustom(c)} title="Edit"
+                style={{ flex: "0 0 44px", cursor: "pointer", background: C.card, border: `1px solid ${C.line}`, borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <Pencil size={16} color={C.inkSoft} />
+              </button>
+            </div>
+          ))}
+          <Ghost onClick={onAddCustom}>+ Add my own task</Ghost>
+        </div>
+      </div>
+      {section("READING · TEKSTIN YMMÄRTÄMINEN", "Read the text and answer the questions. You can turn the timer off.", rl("read"))}
+      {section("LISTENING · PUHEEN YMMÄRTÄMINEN", "The text is hidden — we only listen. “Like the exam” mode limits the number of plays.", rl("listen"))}
+      {section("WRITING · KIRJOITTAMINEN", "Timer, word counter, structure memo, check and a model answer after you finish.",
+        YKI_WRITING.map((w) => row(w.id, w.type, w.typeRu, `${w.theme} · ${w.minutes} min · ${w.words[0]}–${w.words[1]} words`, tries(w.id), () => onWrite(w))))}
+      {section("SPEAKING · PUHUMINEN", "Preparation time, then an answer timer; you can record your answer and play it back.",
+        YKI_SPEAKING.map((s) => row(s.id, s.type + ": " + s.prompt, s.promptRu, `${s.theme} · preparation ${s.prep} s · answer ${s.speak} s`, tries(s.id), () => onSpeak(s))))}
+    </div>
+  );
+}
+
+const WRITING_CONNECTORS = ["esimerkiksi", "siksi", "lisäksi", "toisaalta", "kuitenkin", "koska", "jotta", "vaikka", "ensiksi", "ensinnäkin", "toiseksi", "kolmanneksi", "lopuksi", "tästä syystä", "siinä tapauksessa", "valitettavasti"];
+const WRITING_TIPS = [
+  "Connectors make a text flow: esimerkiksi (for example), siksi (therefore), lisäksi (in addition), kuitenkin (however), valitettavasti (unfortunately), tästä syystä (for that reason), siinä tapauksessa (in that case).",
+  "Build complex sentences: koska (because), joka (which), jotta (so that), vaikka (although).",
+  "Mix tenses: present for facts and opinions, past for examples from personal experience.",
+  "In an opinion text: 3–4 reasons, no more than four; each with an example, fact or personal experience. State your opinion already in the first paragraph.",
+];
+function writingChecks(task, text) {
+  const t = text.trim();
+  const low = t.toLowerCase();
+  const words = t ? t.split(/\s+/).length : 0;
+  const paras = t ? t.split(/\n\s*\n|\n/).filter((x) => x.trim()).length : 0;
+  const used = WRITING_CONNECTORS.filter((c) => low.includes(c));
+  const checks = [];
+  checks.push({ ok: words >= task.words[0] && words <= task.words[1], label: `Length ${words} words (need ${task.words[0]}–${task.words[1]})` });
+  if (task.kind === "informal") {
+    checks.push({ ok: /^\s*(hei|moi|terve|hyvää päivää)/i.test(t), label: "Has a greeting (Hei, Moi…)" });
+    checks.push({ ok: /(nähdään|terveisin|moikka|heippa|moi moi|ystävällisin)/i.test(t), label: "Has a closing (Nähdään…, Terveisin…)" });
+  } else if (task.kind === "formal") {
+    checks.push({ ok: /^\s*hyvä /i.test(t), label: "Formal salutation (Hyvä …,)" });
+    checks.push({ ok: /(terveisin|kunnioittavasti)/i.test(t), label: "Closing formula (Ystävällisin terveisin)" });
+  } else {
+    checks.push({ ok: paras >= 4, label: `Paragraphs: ${paras} (at least 4 are needed: introduction, body, conclusion)` });
+    checks.push({ ok: /(mielestäni|mielipiteeni|olen samaa mieltä|olen eri mieltä)/i.test(t), label: "Opinion stated (Mielestäni…, Olen samaa mieltä…)" });
+    checks.push({ ok: /toisaalta/i.test(t), label: "Has an opposing view (Toisaalta…)" });
+    checks.push({ ok: /(lopuksi|yhteenvetona|loppujen lopuksi)/i.test(t), label: "Has a conclusion (Lopuksi…)" });
+  }
+  checks.push({ ok: used.length >= 3, label: `Connectors used: ${used.length}${used.length ? " (" + used.join(", ") + ")" : ""} — at least 3 are needed` });
+  return { checks, words, paras };
+}
+
+function buildAiPrompt(task, text) {
+  const words = text.trim() ? text.trim().split(/\s+/).length : 0;
+  const bullets = task.bullets.length ? "\n" + task.bullets.map((b) => "– " + b).join("\n") : "";
+  return [
+    "You are a teacher of Finnish and an expert on the YKI exam (intermediate level, keskitaso, B1–B2). Check my text and give useful feedback. My native language is English: write the explanations in English and keep the Finnish examples in Finnish.",
+    "",
+    `Task type: ${task.type} (${task.typeRu}).${task.custom ? "" : " Topic: " + task.theme + "."} Time allowed: ${task.minutes} minutes. Required length: ${task.words[0]}–${task.words[1]} words.`,
+    "",
+    "Task:",
+    task.prompt + bullets,
+    "",
+    `My text (${words} words):`,
+    '"""',
+    text.trim(),
+    '"""',
+    "",
+    "Please do the following, in order:",
+    "1. Was the task completed: are all points covered, is the style right (informal, formal or opinion) and the length?",
+    "2. Structure and coherence of the text. For an opinion text: introduction, reasons with examples, opposing view, conclusion.",
+    "3. Mistakes: a list in the form “my phrase → correction → short explanation of the rule” (cases, verb forms, word order, spelling). The most important first.",
+    "4. Words and connectors: what could be said more precisely and which connectors to add (esimerkiksi, siksi, lisäksi, toisaalta, kuitenkin, etc.).",
+    "5. Approximate level against the YKI criteria (below B1, B1 or B2), noting that this is not an official grade.",
+    "6. A corrected version of my text.",
+    "7. The three most useful things for me to practise next.",
+  ].join("\n");
+}
+
+function YkiWriting({ task, glossary, onWord, seen, prev, onAttempt, onDraft, onTicks, onBack }) {
+  const attempts = (prev && prev.attempts) || [];
+  const draftSaved = (prev && prev.draft) || "";
+  const [phase, setPhase] = useState("ready");
+  const [text, setText] = useState("");
+  const [left, setLeft] = useState(task.minutes * 60);
+  const [showRu, setShowRu] = useState(false);
+  const [showTips, setShowTips] = useState(false);
+  const [shown, setShown] = useState(null);
+  const [fromHistory, setFromHistory] = useState(false);
+  const [ticks, setTicks] = useState({});
+  const [modelRu, setModelRu] = useState(false);
+  const [aiMsg, setAiMsg] = useState(null);
+  const [showPrompt, setShowPrompt] = useState(false);
+  const words = text.trim() ? text.trim().split(/\s+/).length : 0;
+
+  const finish = (byTime) => {
+    const res = writingChecks(task, text);
+    const attempt = { date: dayKey(), words, text, checks: res.checks, ticks: {}, timeUp: !!byTime, usedSec: task.minutes * 60 - Math.max(0, left) };
+    onAttempt(task.id, attempt);
+    setShown(attempt); setFromHistory(false); setTicks({}); setAiMsg(null); setShowPrompt(false); setPhase("done");
+  };
+
+  useEffect(() => {
+    if (phase !== "writing") return undefined;
+    const t = setInterval(() => setLeft((x) => x - 1), 1000);
+    return () => clearInterval(t);
+  }, [phase]);
+  useEffect(() => {
+    if (phase === "writing" && left <= 0) finish(true);
+  }, [left]); // eslint-disable-line
+  useEffect(() => {
+    if (phase !== "writing" || !text.trim()) return undefined;
+    const t = setTimeout(() => onDraft(task.id, text), 1500);
+    return () => clearTimeout(t);
+  }, [text, phase]); // eslint-disable-line
+
+  const start = (initial) => { setText(initial || ""); setLeft(task.minutes * 60); setPhase("writing"); };
+  const restart = () => { setPhase("ready"); setText(""); setLeft(task.minutes * 60); setShown(null); setFromHistory(false); setTicks({}); setModelRu(false); setAiMsg(null); setShowPrompt(false); };
+  const openAttempt = (a) => { setShown(a); setFromHistory(true); setTicks(a.ticks || {}); setAiMsg(null); setShowPrompt(false); setPhase("done"); };
+  const inRange = words >= task.words[0] && words <= task.words[1];
+  const card = { background: C.card, border: `1px solid ${C.line}`, borderRadius: 8, padding: "13px 15px", marginTop: 12 };
+  const linkBtn = { background: "none", border: "none", padding: 0, cursor: "pointer", fontFamily: FONT, fontSize: 12.5, fontWeight: 700, color: C.blue };
+
+  const aiText = shown ? buildAiPrompt(task, shown.text) : "";
+  const copyAi = async () => {
+    try {
+      await navigator.clipboard.writeText(aiText);
+      setAiMsg({ bad: false, t: "Prompt copied. Paste it into an AI assistant: ChatGPT, Claude, Gemini or another." });
+    } catch (e) {
+      setShowPrompt(true);
+      setAiMsg({ bad: true, t: "The browser did not allow clipboard access. Select the prompt text below and copy it manually." });
+    }
+  };
+
+  const renderResult = (a) => {
+    const checks = a.checks || [];
+    const allOk = checks.length > 0 && checks.every((c) => c.ok);
+    return (
+      <div>
+        <div style={{ ...card, borderLeft: `4px solid ${allOk ? C.spruce : C.ochre}` }}>
+          <div style={{ fontSize: 13, fontWeight: 800, color: C.ink }}>
+            {a.timeUp ? "Time is up. " : ""}Auto-check · {a.date}{fromHistory ? " (saved attempt)" : ""}
+          </div>
+          <div style={{ marginTop: 6, display: "flex", flexDirection: "column", gap: 5 }}>
+            {checks.map((c, i) => (
+              <div key={i} style={{ fontSize: 14, color: C.ink, display: "flex", gap: 8 }}>
+                <span style={{ fontWeight: 800, color: c.ok ? C.spruce : C.lingon }}>{c.ok ? "✓" : "✗"}</span><span>{c.label}</span>
+              </div>
+            ))}
+          </div>
+          {task.bullets.length > 0 && (
+            <div style={{ marginTop: 12 }}>
+              <div style={{ fontSize: 13, fontWeight: 800, color: C.ink }}>Your tick: are all points of the task covered?</div>
+              {task.bullets.map((b, i) => (
+                <label key={i} style={{ display: "flex", gap: 8, marginTop: 6, fontSize: 13.5, color: C.ink, cursor: fromHistory ? "default" : "pointer" }}>
+                  <input type="checkbox" checked={!!ticks[i]} disabled={fromHistory}
+                    onChange={() => { const nx = { ...ticks, [i]: !ticks[i] }; setTicks(nx); onTicks(task.id, nx); }} />
+                  <span>{task.bulletsRu[i] || b}</span>
+                </label>
+              ))}
+            </div>
+          )}
+          <div style={{ marginTop: 10, fontSize: 12, color: C.inkSoft }}>This attempt is saved: it stays in the app and is included in your progress backup.</div>
+        </div>
+
+        <div style={card}>
+          <div style={{ fontSize: 13, fontWeight: 800, color: C.ink }}>Your text · {a.words} words</div>
+          <div style={{ marginTop: 6, fontSize: 15, color: C.ink, lineHeight: 1.5, whiteSpace: "pre-wrap" }}>{a.text}</div>
+        </div>
+
+        <div style={{ ...card, borderLeft: `4px solid ${C.ochre}` }}>
+          <div style={{ fontSize: 13, fontWeight: 800, color: C.ink }}>Check your text with AI</div>
+          <div style={{ marginTop: 6, fontSize: 13.5, color: C.ink, lineHeight: 1.5 }}>
+            The auto-check only looks at form. For a real analysis of your mistakes, use an AI assistant (ChatGPT, Claude, Gemini, etc.): copy the ready-made prompt — it already contains the task, your text and a request to explain the mistakes, assess the structure and show a corrected version. The AI’s assessment is approximate, not official. Better without real names, addresses and phone numbers.
+          </div>
+          <div style={{ marginTop: 10 }}><Primary onClick={copyAi}>Copy the AI prompt</Primary></div>
+          <button onClick={() => setShowPrompt((v) => !v)} style={{ ...linkBtn, marginTop: 8 }}>{showPrompt ? "Hide prompt" : "Show prompt"}</button>
+          {showPrompt && (
+            <textarea readOnly value={aiText} rows={10} onFocus={(e) => e.target.select()}
+              style={{ width: "100%", marginTop: 8, padding: 10, fontSize: 12, borderRadius: 6, border: `1.5px solid ${C.line}`, background: C.paper, color: C.ink, fontFamily: "ui-monospace, Menlo, monospace", boxSizing: "border-box" }} />
+          )}
+          {aiMsg && (
+            <div style={{ marginTop: 10, background: aiMsg.bad ? C.lingonSoft : C.spruceSoft, color: aiMsg.bad ? C.lingon : C.spruce, padding: 10, borderRadius: 6, fontSize: 13.5, fontWeight: 600 }}>{aiMsg.t}</div>
+          )}
+        </div>
+
+        {task.model && task.model.length > 0 && (
+        <div style={{ ...card, borderLeft: `4px solid ${C.spruce}` }}>
+          <div style={{ fontSize: 13, fontWeight: 800, color: C.spruce }}>Model answer (compare the structure and connectors)</div>
+          {task.model.map((para, i) => (
+            <div key={i} style={{ marginTop: 9 }}>
+              <FinnishText text={para} glossary={glossary} onWord={onWord} seen={seen} size={16} weight={500} lh={1.5} />
+              {modelRu && <div style={{ marginTop: 4, fontSize: 13.5, color: C.inkSoft, lineHeight: 1.45 }}>{task.modelRu[i]}</div>}
+            </div>
+          ))}
+          <button onClick={() => setModelRu((v) => !v)} style={{ ...linkBtn, marginTop: 10 }}>{modelRu ? "Hide translation" : "Show model translation"}</button>
+        </div>
+        )}
+
+        <div style={{ marginTop: 16, display: "flex", flexDirection: "column", gap: 10 }}>
+          {fromHistory
+            ? <Primary onClick={restart}>Back to the task</Primary>
+            : <Primary onClick={restart}>Write again</Primary>}
+          <Ghost onClick={onBack}>Back to YKI tasks</Ghost>
+        </div>
+      </div>
+    );
+  };
+
+  return (
+    <div style={{ maxWidth: 620, margin: "0 auto", padding: "calc(18px + env(safe-area-inset-top)) 18px 40px" }}>
+      <TopBar title="Writing" onBack={onBack} />
+      <div style={{ fontSize: 12.5, color: C.inkSoft, marginTop: 8, fontWeight: 700 }}>
+        {task.type} · {task.theme} · {task.minutes} min{prev && prev.tries ? ` · attempts: ${prev.tries}` : ""}
+      </div>
+
+      <div style={{ ...card, borderLeft: `4px solid ${C.blue}` }}>
+        <div style={{ fontSize: 12, fontWeight: 800, color: C.inkSoft }}>TEHTÄVÄ</div>
+        <div style={{ marginTop: 4, fontSize: 17, fontWeight: 700, color: C.ink, lineHeight: 1.4 }}>{task.prompt}</div>
+        {task.bullets.length > 0 && (
+          <ul style={{ margin: "8px 0 0", paddingLeft: 18, fontSize: 15, color: C.ink, lineHeight: 1.5 }}>
+            {task.bullets.map((b, i) => <li key={i}>{b}{showRu && task.bulletsRu[i] ? <div style={{ fontSize: 13, color: C.inkSoft }}>{task.bulletsRu[i]}</div> : null}</li>)}
+          </ul>
+        )}
+        {task.promptRu && showRu && <div style={{ marginTop: 8, fontSize: 13.5, color: C.inkSoft }}>{task.promptRu}</div>}
+        {task.promptRu && (
+          <button onClick={() => setShowRu((v) => !v)} style={{ ...linkBtn, marginTop: 8 }}>
+            {showRu ? "Hide task translation" : "Show task translation"}
+          </button>
+        )}
+      </div>
+
+      {phase === "ready" && (
+        <div>
+          {draftSaved.trim() && (
+            <div style={{ ...card, borderLeft: `4px solid ${C.ochre}` }}>
+              <div style={{ fontSize: 13, fontWeight: 800, color: C.ink }}>Unfinished draft · {draftSaved.trim().split(/\s+/).length} words</div>
+              <div style={{ marginTop: 6, fontSize: 13.5, color: C.inkSoft, lineHeight: 1.45, whiteSpace: "pre-wrap" }}>{draftSaved.length > 160 ? draftSaved.slice(0, 160) + "…" : draftSaved}</div>
+              <div style={{ marginTop: 10, display: "flex", gap: 8 }}>
+                <div style={{ flex: 1 }}><Primary onClick={() => start(draftSaved)}>Continue</Primary></div>
+                <div style={{ flex: 1 }}><Ghost onClick={() => onDraft(task.id, "")}>Delete</Ghost></div>
+              </div>
+            </div>
+          )}
+
+          {attempts.length > 0 && (
+            <div style={card}>
+              <div style={{ fontSize: 13, fontWeight: 800, color: C.ink }}>My attempts</div>
+              <div style={{ marginTop: 8, display: "flex", flexDirection: "column", gap: 6 }}>
+                {attempts.map((a, i) => {
+                  const ok = (a.checks || []).filter((c) => c.ok).length, all = (a.checks || []).length;
+                  return (
+                    <button key={i} onClick={() => openAttempt(a)}
+                      style={{ textAlign: "left", fontFamily: FONT, cursor: "pointer", background: C.paper, border: `1px solid ${C.line}`, borderRadius: 6, padding: "9px 12px", fontSize: 13.5, color: C.ink }}>
+                      <b>{a.date}</b> · {a.words} words · checks passed {ok} / {all} <span style={{ color: C.blue, fontWeight: 700 }}>open ›</span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          <div style={card}>
+            <div style={{ fontSize: 13, fontWeight: 800, color: C.ink }}>How to write</div>
+            {task.structure && (
+              <ul style={{ margin: "6px 0 0", paddingLeft: 18, fontSize: 13.5, color: C.ink, lineHeight: 1.5 }}>
+                {task.structure.map((x, i) => <li key={i}>{x}</li>)}
+              </ul>
+            )}
+            <button onClick={() => setShowTips((v) => !v)} style={{ ...linkBtn, marginTop: 8 }}>
+              {showTips ? "Hide general tips" : "General tips"}
+            </button>
+            {showTips && <ul style={{ margin: "6px 0 0", paddingLeft: 18, fontSize: 13.5, color: C.ink, lineHeight: 1.5 }}>{WRITING_TIPS.map((x, i) => <li key={i}>{x}</li>)}</ul>}
+            <div style={{ marginTop: 10, fontSize: 12.5, fontWeight: 700, color: C.inkSoft }}>Useful phrases</div>
+            <div style={{ marginTop: 4, fontSize: 14, color: C.ink, lineHeight: 1.6 }}>{task.phrases.map((p, i) => <div key={i}>• {p}</div>)}</div>
+          </div>
+          <div style={{ marginTop: 16 }}>
+            <Primary onClick={() => start("")}>Start: timer {task.minutes} min</Primary>
+          </div>
+        </div>
+      )}
+
+      {phase === "writing" && (
+        <div style={{ marginTop: 12 }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
+            <div style={{ fontSize: 20, fontWeight: 800, color: left <= 60 ? C.lingon : C.ink, fontVariantNumeric: "tabular-nums" }}>⏱ {fmtClock(left)}</div>
+            <div style={{ fontSize: 14, fontWeight: 700, color: inRange ? C.spruce : C.ochre }}>{words} words · target {task.words[0]}–{task.words[1]}</div>
+          </div>
+          <textarea value={text} onChange={(e) => setText(e.target.value)} autoFocus placeholder="Kirjoita tähän…"
+            style={{
+              width: "100%", marginTop: 8, minHeight: 260, padding: "12px 13px", fontSize: 16.5, lineHeight: 1.5, borderRadius: 8,
+              border: `1.5px solid ${C.line}`, background: C.card, color: C.ink, fontFamily: FONT, boxSizing: "border-box", resize: "vertical",
+            }} />
+          <div style={{ marginTop: 6, fontSize: 12, color: C.inkSoft }}>The draft saves itself.</div>
+          <div style={{ marginTop: 10, display: "flex", flexDirection: "column", gap: 8 }}>
+            <Primary onClick={() => finish(false)} disabled={words === 0}>Finish and check</Primary>
+          </div>
+        </div>
+      )}
+
+      {phase === "done" && shown && renderResult(shown)}
+    </div>
+  );
+}
+
+function YkiSpeaking({ task, glossary, say, sayParts, stop, onWord, seen, prev, onFinish, onBack }) {
+  const [phase, setPhase] = useState("ready");
+  const [left, setLeft] = useState(task.prep);
+  const [url, setUrl] = useState(null);
+  const [note, setNote] = useState("");
+  const [showRu, setShowRu] = useState(false);
+  const [modelRu, setModelRu] = useState(false);
+  const [ticks, setTicks] = useState({});
+  const [wantRec, setWantRec] = useState(true);
+  const [spoke, setSpoke] = useState(0);
+  const recRef = useRef(null);
+  const streamRef = useRef(null);
+  const chunksRef = useRef([]);
+  const canRecord = typeof navigator !== "undefined" && !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) && typeof MediaRecorder !== "undefined";
+
+  const stopMic = () => {
+    try { if (recRef.current && recRef.current.state !== "inactive") recRef.current.stop(); } catch (e) { /* ok */ }
+    try { if (streamRef.current) streamRef.current.getTracks().forEach((t) => t.stop()); } catch (e) { /* ok */ }
+    streamRef.current = null;
+  };
+  useEffect(() => () => { stopMic(); if (stop) stop(); }, []); // eslint-disable-line
+
+  const startTalk = async () => {
+    setPhase("talk");
+    setLeft(task.speak);
+    if (wantRec && canRecord) {
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        streamRef.current = stream;
+        const mr = new MediaRecorder(stream);
+        chunksRef.current = [];
+        mr.ondataavailable = (e) => { if (e.data && e.data.size) chunksRef.current.push(e.data); };
+        mr.onstop = () => {
+          if (chunksRef.current.length) setUrl(URL.createObjectURL(new Blob(chunksRef.current, { type: mr.mimeType || "audio/mp4" })));
+        };
+        mr.start();
+        recRef.current = mr;
+      } catch (e) {
+        setNote("No microphone access — speak aloud, nothing is being recorded.");
+      }
+    } else if (wantRec && !canRecord) {
+      setNote("Recording is not available in this browser — speak aloud, the timer is running.");
+    }
+  };
+  const finishTalk = () => { stopMic(); setSpoke(Math.max(0, task.speak - left)); setPhase("done"); onFinish(task.id); };
+
+  useEffect(() => {
+    if (phase !== "prep" && phase !== "talk") return undefined;
+    const t = setInterval(() => setLeft((x) => x - 1), 1000);
+    return () => clearInterval(t);
+  }, [phase]);
+  useEffect(() => {
+    if (phase === "prep" && left <= 0) startTalk();
+    else if (phase === "talk" && left <= 0) finishTalk();
+  }, [left]); // eslint-disable-line
+
+  const restart = () => { stopMic(); if (url) URL.revokeObjectURL(url); setUrl(null); setNote(""); setPhase("ready"); setLeft(task.prep); setTicks({}); setModelRu(false); };
+  const card = { background: C.card, border: `1px solid ${C.line}`, borderRadius: 8, padding: "13px 15px", marginTop: 12 };
+  const playModel = () => sayParts(task.model.flatMap((p) => (task.dialog ? splitSpeech(p) : [{ text: p, who: 0 }])));
+  const checklist = [...(task.bulletsRu && task.bulletsRu.length ? task.bulletsRu : task.bullets), "I spoke almost the whole time, without long pauses", "I used connectors: ensinnäkin, toisaalta, siksi…"];
+
+  return (
+    <div style={{ maxWidth: 620, margin: "0 auto", padding: "calc(18px + env(safe-area-inset-top)) 18px 40px" }}>
+      <TopBar title="Speaking" onBack={onBack} />
+      <div style={{ fontSize: 12.5, color: C.inkSoft, marginTop: 8, fontWeight: 700 }}>
+        {task.type} · {task.theme}{prev && prev.tries ? ` · attempts: ${prev.tries}` : ""}
+      </div>
+
+      <div style={{ ...card, borderLeft: `4px solid ${C.blue}` }}>
+        <div style={{ fontSize: 12, fontWeight: 800, color: C.inkSoft }}>TEHTÄVÄ</div>
+        <div style={{ marginTop: 4, fontSize: 17, fontWeight: 700, color: C.ink, lineHeight: 1.4 }}>{task.prompt}</div>
+        <ul style={{ margin: "8px 0 0", paddingLeft: 18, fontSize: 15, color: C.ink, lineHeight: 1.5 }}>
+          {task.bullets.map((b, i) => <li key={i}>{b}{showRu && task.bulletsRu[i] ? <div style={{ fontSize: 13, color: C.inkSoft }}>{task.bulletsRu[i]}</div> : null}</li>)}
+        </ul>
+        {task.promptRu && showRu && <div style={{ marginTop: 8, fontSize: 13.5, color: C.inkSoft }}>{task.promptRu}</div>}
+        {task.promptRu && (
+          <button onClick={() => setShowRu((v) => !v)} style={{ marginTop: 8, background: "none", border: "none", padding: 0, cursor: "pointer", fontFamily: FONT, fontSize: 12.5, fontWeight: 700, color: C.blue }}>
+            {showRu ? "Hide task translation" : "Show task translation"}
+          </button>
+        )}
+      </div>
+
+      {phase === "ready" && (
+        <div>
+          <div style={{ marginTop: 12, fontSize: 13.5, color: C.inkSoft, lineHeight: 1.5 }}>
+            First {task.prep} seconds to prepare, then {task.speak} seconds to answer. Try to keep talking the whole time.
+          </div>
+          {canRecord && (
+            <button onClick={() => setWantRec((v) => !v)} style={{ marginTop: 10, background: "none", border: "none", padding: 0, display: "inline-flex", alignItems: "center", gap: 8, cursor: "pointer", fontFamily: FONT }}>
+              <span style={{ width: 20, height: 20, borderRadius: 5, border: `1.8px solid ${wantRec ? C.blue : C.line}`, background: wantRec ? C.blue : C.card, display: "inline-flex", alignItems: "center", justifyContent: "center" }}>{wantRec && <Check size={14} color="#fff" />}</span>
+              <span style={{ fontSize: 13.5, fontWeight: 600, color: C.ink }}>Record my answer (you can play it back later)</span>
+            </button>
+          )}
+          <div style={{ marginTop: 16 }}><Primary onClick={() => { setLeft(task.prep); setPhase("prep"); }}>Start preparing</Primary></div>
+        </div>
+      )}
+
+      {phase === "prep" && (
+        <div style={{ ...card, textAlign: "center" }}>
+          <div style={{ fontSize: 13, fontWeight: 800, color: C.ochre }}>PREPARATION</div>
+          <div style={{ fontSize: 48, fontWeight: 800, color: C.ink, fontVariantNumeric: "tabular-nums", margin: "4px 0" }}>{fmtClock(left)}</div>
+          <div style={{ fontSize: 13.5, color: C.inkSoft }}>Plan your answer: respond to every question on the list.</div>
+          <div style={{ marginTop: 12 }}><Ghost onClick={startTalk}>Start answering right away</Ghost></div>
+        </div>
+      )}
+
+      {phase === "talk" && (
+        <div style={{ ...card, textAlign: "center", borderColor: C.lingon }}>
+          <div style={{ fontSize: 13, fontWeight: 800, color: C.lingon }}>● SPEAK{url === null && streamRef.current ? " · recording" : ""}</div>
+          <div style={{ fontSize: 48, fontWeight: 800, color: left <= 15 ? C.lingon : C.ink, fontVariantNumeric: "tabular-nums", margin: "4px 0" }}>{fmtClock(left)}</div>
+          {note && <div style={{ fontSize: 12.5, color: C.ochre, marginBottom: 8 }}>{note}</div>}
+          <Ghost onClick={finishTalk}>Finish</Ghost>
+        </div>
+      )}
+
+      {phase === "done" && (
+        <div>
+          <div style={{ ...card, borderLeft: `4px solid ${C.spruce}` }}>
+            <div style={{ fontSize: 13, fontWeight: 800, color: C.ink }}>You spoke for about {spoke} s of {task.speak}</div>
+            {note && <div style={{ fontSize: 12.5, color: C.ochre, marginTop: 4 }}>{note}</div>}
+            {url && <audio controls src={url} style={{ width: "100%", marginTop: 8 }} />}
+            <div style={{ marginTop: 10, fontSize: 13, fontWeight: 800, color: C.ink }}>Rate yourself</div>
+            {checklist.map((b, i) => (
+              <label key={i} style={{ display: "flex", gap: 8, marginTop: 6, fontSize: 13.5, color: C.ink, cursor: "pointer" }}>
+                <input type="checkbox" checked={!!ticks[i]} onChange={() => setTicks((o) => ({ ...o, [i]: !o[i] }))} />
+                <span>{b}</span>
+              </label>
+            ))}
+          </div>
+
+          {task.model && task.model.length > 0 && (
+          <div style={{ ...card, borderLeft: `4px solid ${C.blue}` }}>
+            <div style={{ fontSize: 13, fontWeight: 800, color: C.blue }}>Sample answer{task.dialog ? " (A and B are the two sides of the conversation)" : ""}</div>
+            {task.model.map((para, i) => (
+              <div key={i} style={{ marginTop: 9 }}>
+                <SpeechPara para={para} gl={glossary} onWord={onWord} seen={seen} />
+                {modelRu && <div style={{ marginTop: 4, fontSize: 13.5, color: C.inkSoft, lineHeight: 1.45 }}>{task.modelRu[i]}</div>}
+              </div>
+            ))}
+            <div style={{ marginTop: 10, display: "flex", flexWrap: "wrap", gap: 8 }}>
+              <button onClick={playModel} style={{ padding: "8px 12px", fontSize: 13.5, fontWeight: 700, fontFamily: FONT, cursor: "pointer", borderRadius: 6, border: `1.5px solid ${C.line}`, background: C.card, color: C.ink }}>▶ Listen to the model</button>
+              <button onClick={() => stop && stop()} style={{ padding: "8px 12px", fontSize: 13.5, fontWeight: 700, fontFamily: FONT, cursor: "pointer", borderRadius: 6, border: `1.5px solid ${C.line}`, background: C.card, color: C.ink }}>■ Stop</button>
+              <button onClick={() => setModelRu((v) => !v)} style={{ padding: "8px 12px", fontSize: 13.5, fontWeight: 700, fontFamily: FONT, cursor: "pointer", borderRadius: 6, border: `1.5px solid ${modelRu ? C.blue : C.line}`, background: modelRu ? C.blueSoft : C.card, color: modelRu ? C.blue : C.ink }}>{modelRu ? "Hide translation" : "Translation"}</button>
+            </div>
+          </div>
+          )}
+
+          <div style={{ marginTop: 16, display: "flex", flexDirection: "column", gap: 10 }}>
+            <Primary onClick={restart}>Answer again</Primary>
+            <Ghost onClick={onBack}>Back to YKI tasks</Ghost>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+const APP_VERSION = "3.4";
+const CONTACT_EMAIL = "olleksa.suomitreeni@gmail.com";
+const BACKUP_KEY = "suomi_backup_v1";
+const CHANGELOG = [
+  { v: "3.4", date: "13.11", items: [
+    "Phrase training, dialogues, verb conjugation, numbers by ear and the result screens are more compact: less padding and lower buttons, the font size is unchanged",
+  ] },
+];
+
+function daysAgo(key) {
+  if (!key) return null;
+  return Math.round((new Date(dayKey()).getTime() - new Date(key).getTime()) / 86400000);
+}
+
+function AboutScreen({ onBack, lessonsCount, phrasesCount, makeBackup, restoreBackup, lastBackup, onBackedUp }) {
+  const [copyMsg, setCopyMsg] = useState(null);
+  const [fallback, setFallback] = useState("");
+  const [restoreText, setRestoreText] = useState("");
+  const [restoreMsg, setRestoreMsg] = useState(null);
+  const [mailCopied, setMailCopied] = useState(false);
+
+  const card = { background: C.card, border: `1px solid ${C.line}`, borderRadius: 8, padding: "14px 15px", marginTop: 14 };
+  const h = (t) => <div style={{ fontSize: 15.5, fontWeight: 800, color: C.ink, letterSpacing: "-0.01em" }}>{t}</div>;
+  const p = { fontSize: 14, color: C.ink, lineHeight: 1.55, marginTop: 6 };
+  const sub = { fontSize: 13, fontWeight: 800, color: C.blue, marginTop: 12 };
+  const ago = daysAgo(lastBackup);
+
+  const copyBackup = async () => {
+    const data = makeBackup();
+    const text = JSON.stringify(data);
+    try {
+      await navigator.clipboard.writeText(text);
+      onBackedUp();
+      setFallback("");
+      setCopyMsg({ bad: false, t: `Backup copied: phrases in progress ${Object.keys(data.progress || {}).length}, days of practice ${Object.keys(data.days || {}).length}. Paste it into Notes or send it to yourself.` });
+    } catch (e) {
+      setFallback(text);
+      setCopyMsg({ bad: true, t: "The browser did not allow clipboard access. Tap the field below, select all the text and copy it manually." });
+    }
+  };
+  const restore = () => {
+    let data;
+    try { data = JSON.parse(restoreText); } catch (e) { setRestoreMsg({ bad: true, t: "This doesn’t look like a progress backup. Make sure the whole text was pasted." }); return; }
+    if (!data || typeof data !== "object" || !data.progress || typeof data.progress !== "object") {
+      setRestoreMsg({ bad: true, t: "There is no progress in this text. You need a backup made with the “Copy progress backup” button." });
+      return;
+    }
+    const r = restoreBackup(data);
+    setRestoreText("");
+    setRestoreMsg({ bad: false, t: `Progress restored: phrases in progress ${r.phrases}, days of practice ${r.days}.` });
+  };
+  const copyMail = async () => {
+    try { await navigator.clipboard.writeText(CONTACT_EMAIL); setMailCopied(true); setTimeout(() => setMailCopied(false), 2000); } catch (e) { setMailCopied(false); }
+  };
+  const msgBox = (m) => m && (
+    <div style={{ marginTop: 10, background: m.bad ? C.lingonSoft : C.spruceSoft, color: m.bad ? C.lingon : C.spruce, padding: 12, borderRadius: 6, fontSize: 13.5, fontWeight: 600, lineHeight: 1.45 }}>{m.t}</div>
+  );
+  const latest = CHANGELOG[0];
+
+  return (
+    <div style={{ maxWidth: 620, margin: "0 auto", padding: "calc(18px + env(safe-area-inset-top)) 18px 40px" }}>
+      <TopBar title="About the app" onBack={onBack} />
+      <div style={{ marginTop: 10, display: "flex", alignItems: "baseline", gap: 8 }}>
+        <div style={{ fontSize: 26, fontWeight: 800, letterSpacing: "-0.03em" }}>suomi</div>
+        <div style={{ fontSize: 26, fontWeight: 300, letterSpacing: "-0.03em", color: C.blue }}>treeni</div>
+        <div style={{ fontSize: 13, fontWeight: 700, color: C.inkSoft }}>version {APP_VERSION}</div>
+      </div>
+      <div style={{ fontSize: 12.5, color: C.inkSoft, marginTop: 2 }}>lessons: {lessonsCount} · phrases: {phrasesCount}</div>
+
+      <div style={card}>
+        {h(`What’s new in version ${latest.v}`)}
+        <div style={{ fontSize: 12.5, color: C.inkSoft, marginTop: 2 }}>{latest.date}</div>
+        <ul style={{ margin: "8px 0 0", paddingLeft: 20, fontSize: 14, color: C.ink, lineHeight: 1.55 }}>
+          {latest.items.map((x, i) => <li key={i}>{x}</li>)}
+        </ul>
+      </div>
+
+      <div style={card}>
+        {h("How to add to the Home Screen")}
+        <div style={p}>This way the app opens full screen like a regular app and works without internet.</div>
+        <div style={sub}>iPhone and iPad</div>
+        <ol style={{ margin: "4px 0 0", paddingLeft: 20, fontSize: 14, color: C.ink, lineHeight: 1.6 }}>
+          <li>Open the app link in <b>Safari</b>.</li>
+          <li>Tap “Share” — the square with an arrow pointing up (at the bottom of the screen on iPhone, at the top on iPad). If you can’t see the button, tap “…” in the address bar.</li>
+          <li>Scroll the menu and choose <b>“Add to Home Screen”</b>.</li>
+          <li>Tap “Add”. The icon will appear on your Home Screen — open the app from it.</li>
+        </ol>
+        <div style={sub}>Android (Chrome)</div>
+        <ol style={{ margin: "4px 0 0", paddingLeft: 20, fontSize: 14, color: C.ink, lineHeight: 1.6 }}>
+          <li>Open the link in Chrome.</li>
+          <li>Tap the “⋮” menu at the top right.</li>
+          <li>Choose <b>“Install app”</b> (or “Add to Home Screen”) and confirm.</li>
+        </ol>
+        <div style={{ marginTop: 10, background: C.ochreSoft, borderRadius: 6, padding: "10px 12px", fontSize: 13, color: C.ink, lineHeight: 1.5 }}>
+          <b>Important:</b> do not delete the icon or re-add the app without a progress backup — the icon has its own storage, and all your progress may disappear with it.
+        </div>
+      </div>
+
+      <div style={card}>
+        {h("Save your progress")}
+        <div style={p}>
+          Progress — phrase levels, streak, reading results, numbers, YKI and your own tasks — is stored only on your phone, in the app’s memory, not on a server. It can disappear if you delete the icon, clear the browser data, reinstall the app or change phones. A backup is just text: you can save it in Notes, send it to yourself in a messenger or by email.
+        </div>
+        <div style={{ ...p, color: C.inkSoft }}>It is best to make a backup once a week or after a big session.</div>
+        <div style={{ marginTop: 8, fontSize: 13, fontWeight: 700, color: ago === null || ago > 14 ? C.ochre : C.spruce }}>
+          {ago === null ? "You haven’t made a backup yet." : ago === 0 ? "Last backup: today." : `Last backup: ${ago} ${ruPlural(ago, "day", "days", "days")} ago.`}
+        </div>
+
+        <div style={sub}>How to save</div>
+        <div style={p}>Tap the button, then open Notes (or a messenger) and paste the text.</div>
+        <div style={{ marginTop: 10 }}><Primary onClick={copyBackup}>Copy progress backup</Primary></div>
+        {msgBox(copyMsg)}
+        {fallback && (
+          <textarea readOnly value={fallback} rows={4} onFocus={(e) => e.target.select()}
+            style={{ width: "100%", marginTop: 10, padding: 10, fontSize: 12, borderRadius: 6, border: `1.5px solid ${C.line}`, background: C.paper, color: C.ink, fontFamily: "ui-monospace, Menlo, monospace", boxSizing: "border-box" }} />
+        )}
+
+        <div style={sub}>How to restore</div>
+        <div style={p}>Copy the saved text, paste it here and tap “Restore”. It is merged with what you already have: the best result is kept.</div>
+        <textarea value={restoreText} onChange={(e) => setRestoreText(e.target.value)} rows={4} placeholder="Paste your saved progress backup"
+          style={{ width: "100%", marginTop: 10, padding: 10, fontSize: 13, borderRadius: 6, border: `1.5px solid ${C.line}`, background: C.card, color: C.ink, fontFamily: "ui-monospace, Menlo, monospace", boxSizing: "border-box" }} />
+        <div style={{ marginTop: 8 }}><Ghost onClick={restore} disabled={!restoreText.trim()}>Restore</Ghost></div>
+        {msgBox(restoreMsg)}
+      </div>
+
+      <div style={card}>
+        {h("Questions and suggestions")}
+        <div style={p}>If you have questions or suggestions, write to <a href={"mailto:" + CONTACT_EMAIL + "?subject=suomi%20treeni"} style={{ color: C.blue, fontWeight: 700, overflowWrap: "anywhere" }}>{CONTACT_EMAIL}</a>.</div>
+        <div style={{ marginTop: 8 }}><Ghost onClick={copyMail}>{mailCopied ? "Address copied" : "Copy address"}</Ghost></div>
+      </div>
+    </div>
+  );
+}
+
+
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+const YKI_CUSTOM_KEY = "suomi_yki_custom_v1";
+const CUSTOM_WK = {
+  informal: ["Epämuodollinen viesti", "Informal message"],
+  formal: ["Muodollinen viesti", "Formal message"],
+  opinion: ["Mielipide", "Opinion"],
+};
+const CUSTOM_WK_LABEL = { informal: "Informal letter", formal: "Formal letter", opinion: "Opinion" };
+const CUSTOM_DEFAULTS = { informal: [15, 60, 90], formal: [20, 80, 120], opinion: [25, 130, 200] };
+const CUSTOM_PHRASES = {
+  informal: ["Hei …!", "Mitä sinulle kuuluu?", "Kiitos viestistä!", "Nähdään pian!", "Terveisin, …"],
+  formal: ["Hyvä vastaanottaja,", "Otan yhteyttä, koska …", "Pyydän, että …", "Kiitos jo etukäteen.", "Ystävällisin terveisin, …"],
+  opinion: ["Minun mielestäni …", "Syitä on useita. Ensinnäkin … Toiseksi …", "Esimerkiksi …", "Toisaalta …", "Lopuksi voidaan sanoa, että …"],
+};
+const CUSTOM_OPINION_STRUCT = [
+  "Introduction (≈10%): one general statement + your opinion",
+  "Main part (≈60–70%): 2–4 reasons, each with an example, fact or personal experience",
+  "Opposing view (≈15–25%): “Toisaalta…” and 1–2 reasons",
+  "Conclusion (≈15%): summary + recommendation or prediction",
+];
+
+function customToTask(c) {
+  if (c.kind === "write") {
+    const [type, typeRu] = CUSTOM_WK[c.wkind] || CUSTOM_WK.informal;
+    return {
+      id: c.id, custom: true, kind: c.wkind, type, typeRu, theme: "My own task", minutes: c.minutes, words: c.words,
+      prompt: c.prompt, promptRu: "", bullets: c.bullets, bulletsRu: [], structure: c.wkind === "opinion" ? CUSTOM_OPINION_STRUCT : null,
+      phrases: CUSTOM_PHRASES[c.wkind] || CUSTOM_PHRASES.informal, model: [], modelRu: [],
+    };
+  }
+  return { id: c.id, custom: true, type: "Speaking", typeRu: "Speaking", theme: "My own task", prep: c.prep, speak: c.speak, prompt: c.prompt, promptRu: "", bullets: c.bullets, bulletsRu: [], model: [], modelRu: [] };
+}
+
+function YkiCustomForm({ initial, onSave, onDelete, onBack }) {
+  const i0 = initial || {};
+  const [kind, setKind] = useState(i0.kind || "write");
+  const [wkind, setWkind] = useState(i0.wkind || "formal");
+  const def = CUSTOM_DEFAULTS[i0.wkind || "formal"];
+  const [title, setTitle] = useState(i0.title || "");
+  const [prompt, setPrompt] = useState(i0.prompt || "");
+  const [bulletsText, setBulletsText] = useState((i0.bullets || []).join("\n"));
+  const [minutes, setMinutes] = useState(String(i0.minutes || def[0]));
+  const [wmin, setWmin] = useState(String(i0.words ? i0.words[0] : def[1]));
+  const [wmax, setWmax] = useState(String(i0.words ? i0.words[1] : def[2]));
+  const [prep, setPrep] = useState(String(i0.prep != null ? i0.prep : 60));
+  const [speak, setSpeak] = useState(String(i0.speak || 90));
+  const [err, setErr] = useState("");
+  const [confirmDel, setConfirmDel] = useState(false);
+
+  const pickWk = (k) => { setWkind(k); const d = CUSTOM_DEFAULTS[k]; setMinutes(String(d[0])); setWmin(String(d[1])); setWmax(String(d[2])); };
+  const num = (v) => parseInt(String(v).replace(/\D/g, ""), 10);
+  const field = { width: "100%", padding: "11px 12px", fontSize: 15.5, borderRadius: 6, border: `1.5px solid ${C.line}`, background: C.card, color: C.ink, fontFamily: FONT, marginTop: 5, boxSizing: "border-box" };
+  const label = { fontSize: 12.5, fontWeight: 800, color: C.inkSoft, marginTop: 14 };
+  const chip = (on, text, onClick) => (
+    <button onClick={onClick} style={{ padding: "8px 12px", fontSize: 13.5, fontWeight: 700, fontFamily: FONT, cursor: "pointer", borderRadius: 18, border: `1.5px solid ${on ? C.blue : C.line}`, background: on ? C.blue : C.card, color: on ? "#fff" : C.ink }}>{text}</button>
+  );
+
+  const save = () => {
+    if (!prompt.trim()) { setErr("Paste the task."); return; }
+    const bullets = bulletsText.split("\n").map((x) => x.replace(/^[\s\-–•*]+/, "").trim()).filter(Boolean);
+    const base = { id: i0.id || "CUS_" + Date.now(), kind, title: title.trim() || prompt.trim().replace(/\s+/g, " ").slice(0, 42), prompt: prompt.trim(), bullets, created: i0.created || dayKey() };
+    if (kind === "write") {
+      const m = num(minutes), a = num(wmin), b = num(wmax);
+      if (!(m >= 1 && m <= 120)) { setErr("Time: from 1 to 120 minutes."); return; }
+      if (!(a >= 1 && b >= a)) { setErr("Length: “from” must not exceed “to”, for example 80 and 120."); return; }
+      onSave({ ...base, wkind, minutes: m, words: [a, b] });
+    } else {
+      const p = Number.isNaN(num(prep)) ? 0 : num(prep), s = num(speak);
+      if (!(p >= 0 && p <= 300)) { setErr("Preparation: from 0 to 300 seconds."); return; }
+      if (!(s >= 15 && s <= 600)) { setErr("Answer time: from 15 to 600 seconds."); return; }
+      onSave({ ...base, prep: p, speak: s });
+    }
+  };
+
+  return (
+    <div style={{ maxWidth: 620, margin: "0 auto", padding: "calc(18px + env(safe-area-inset-top)) 18px 40px" }}>
+      <TopBar title={initial ? "Edit task" : "My own task"} onBack={onBack} />
+      <div style={{ fontSize: 13, color: C.inkSoft, marginTop: 10, lineHeight: 1.5 }}>
+        Paste a task from a textbook or from your teacher. The app will give you a timer, a word counter, voice recording and a ready-made prompt for checking with AI. The task is stored only on your phone and is included in your progress backup.
+      </div>
+
+      <div style={label}>What are we practising</div>
+      <div style={{ display: "flex", gap: 8, marginTop: 6 }}>
+        {chip(kind === "write", "Writing", () => setKind("write"))}
+        {chip(kind === "speak", "Speaking", () => setKind("speak"))}
+      </div>
+
+      {kind === "write" && (
+        <div>
+          <div style={label}>Letter type</div>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginTop: 6 }}>
+            {Object.keys(CUSTOM_WK_LABEL).map((k) => <span key={k}>{chip(wkind === k, CUSTOM_WK_LABEL[k], () => pickWk(k))}</span>)}
+          </div>
+        </div>
+      )}
+
+      <div style={label}>Title (optional)</div>
+      <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="For example: p. 142, task 3" style={field} />
+
+      <div style={label}>Task in Finnish</div>
+      <textarea value={prompt} onChange={(e) => setPrompt(e.target.value)} rows={5} placeholder="Paste or retype the task" style={{ ...field, lineHeight: 1.45 }} />
+
+      <div style={label}>Task points (one per line, optional)</div>
+      <textarea value={bulletsText} onChange={(e) => setBulletsText(e.target.value)} rows={4} placeholder={"kerro, mitä tapahtui\nkysy, milloin …"} style={{ ...field, lineHeight: 1.45 }} />
+
+      {kind === "write" ? (
+        <div style={{ display: "flex", gap: 10, marginTop: 4 }}>
+          <div style={{ flex: 1 }}><div style={label}>Time, min</div><input value={minutes} onChange={(e) => setMinutes(e.target.value)} inputMode="numeric" style={field} /></div>
+          <div style={{ flex: 1 }}><div style={label}>Words from</div><input value={wmin} onChange={(e) => setWmin(e.target.value)} inputMode="numeric" style={field} /></div>
+          <div style={{ flex: 1 }}><div style={label}>Words up to</div><input value={wmax} onChange={(e) => setWmax(e.target.value)} inputMode="numeric" style={field} /></div>
+        </div>
+      ) : (
+        <div style={{ display: "flex", gap: 10, marginTop: 4 }}>
+          <div style={{ flex: 1 }}><div style={label}>Preparation, s</div><input value={prep} onChange={(e) => setPrep(e.target.value)} inputMode="numeric" style={field} /></div>
+          <div style={{ flex: 1 }}><div style={label}>Answer, s</div><input value={speak} onChange={(e) => setSpeak(e.target.value)} inputMode="numeric" style={field} /></div>
+        </div>
+      )}
+
+      {err && <div style={{ marginTop: 12, background: C.lingonSoft, color: C.lingon, padding: 10, borderRadius: 6, fontSize: 13.5, fontWeight: 600 }}>{err}</div>}
+      <div style={{ marginTop: 16, display: "flex", flexDirection: "column", gap: 10 }}>
+        <Primary onClick={save}>{initial ? "Save" : "Add task"}</Primary>
+        {initial && !confirmDel && <Ghost onClick={() => setConfirmDel(true)}>Delete task</Ghost>}
+        {initial && confirmDel && (
+          <div style={{ background: C.lingonSoft, borderRadius: 6, padding: 12 }}>
+            <div style={{ fontSize: 13.5, color: C.lingon, fontWeight: 700, marginBottom: 8 }}>Delete the task together with the saved attempts?</div>
+            <div style={{ display: "flex", gap: 8 }}>
+              <div style={{ flex: 1 }}><Ghost onClick={() => onDelete(initial.id)}>Yes, delete</Ghost></div>
+              <div style={{ flex: 1 }}><Ghost onClick={() => setConfirmDel(false)}>Cancel</Ghost></div>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+
 function Bar({ value, color, height = 6 }) {
   return (
     <div style={{ background: C.line, borderRadius: 2, height, overflow: "hidden" }}>
@@ -6989,9 +9796,6 @@ function Bar({ value, color, height = 6 }) {
   );
 }
 
-// Five segments — bronze, silver, gold, platinum, diamond — fill in
-// left to right as a lesson's average score grows. How many of the five are
-// filled is visible at a glance, with no separate label or color legend needed.
 function TierPips({ avg }) {
   return (
     <div style={{ display: "flex", gap: 3 }}>
@@ -7008,10 +9812,8 @@ function TierPips({ avg }) {
 }
 
 /* ------------------------------------------------------------------ */
-/*  Home screen                                                        */
 /* ------------------------------------------------------------------ */
-function Home({ lessons, pool, progress, due, studied, unlockMap, nextLessonId, say, onWord, markSeen, noAudio, onToggleAudio, onStart, onLesson, onVerbs, onDialogs, onCases, onBank, onImport, saveNote, storeFail, onRetest }) {
-  // Lessons in order within a level, levels by number.
+function Home({ lessons, pool, progress, due, learned, onBankFilter, unlockMap, nextLessonId, days, say, onWord, markSeen, noAudio, onToggleAudio, onStart, onLesson, onVerbs, onDialogs, onCases, onNumbers, onYki, onAbout, backupHint, onBank, onImport, readingResults, onReading, saveNote, storeFail, onRetest }) {
   const groups = useMemo(() => {
     const byLevel = new Map();
     [...lessons].forEach((l) => {
@@ -7027,10 +9829,7 @@ function Home({ lessons, pool, progress, due, studied, unlockMap, nextLessonId, 
   const nextLesson = nextLessonId;
   const [glossaryLesson, setGlossaryLesson] = useState(null);
   const [grammarLesson, setGrammarLesson] = useState(null);
-  const [dueInfo, setDueInfo] = useState(false);
 
-  // Levels sit in a single strip: swiping changes the page, tapping a
-  // tab scrolls to it. The active tab is computed from the scroll position.
   const scroller = useRef(null);
   const [tab, setTab] = useState(0);
 
@@ -7047,11 +9846,15 @@ function Home({ lessons, pool, progress, due, studied, unlockMap, nextLessonId, 
     setTab(i);
   };
 
-  // On open, show the level where the person left off.
   useEffect(() => {
     const i = groups.findIndex((g) => g.list.some((l) => l.id === nextLesson));
     const el = scroller.current;
     if (i > 0 && el && el.clientWidth) { el.scrollLeft = i * el.clientWidth; setTab(i); }
+    const t = setTimeout(() => {
+      const card = scroller.current && scroller.current.querySelector('[data-lesson="' + nextLesson + '"]');
+      if (card && card.scrollIntoView) card.scrollIntoView({ block: "center", inline: "nearest" });
+    }, 60);
+    return () => clearTimeout(t);
   }, []);
 
   return (
@@ -7061,9 +9864,16 @@ function Home({ lessons, pool, progress, due, studied, unlockMap, nextLessonId, 
         <div style={{ fontSize: 30, fontWeight: 300, letterSpacing: "-0.03em", color: C.blue }}>treeni</div>
       </div>
       <div style={{ fontSize: 14.5, color: C.inkSoft, marginTop: 3 }}>Finnish phrases with English translations</div>
-      <div style={{ fontSize: 11.5, color: C.inkSoft, marginTop: 2, opacity: 0.8 }}>
-        build {BUILD} · lessons {lessons.length}
-      </div>
+      <button onClick={onAbout}
+        style={{ marginTop: 4, background: "none", border: "none", padding: "2px 0", cursor: "pointer", fontFamily: FONT, fontSize: 12.5, fontWeight: 700, color: C.blue, textAlign: "left" }}>
+        v{APP_VERSION} · what’s new and help ›
+      </button>
+      {backupHint && (
+        <button onClick={onAbout}
+          style={{ display: "block", width: "100%", textAlign: "left", marginTop: 10, background: C.ochreSoft, border: "none", borderRadius: 6, padding: "10px 12px", cursor: "pointer", fontFamily: FONT, fontSize: 13, color: C.ink, lineHeight: 1.45 }}>
+          You haven’t saved a progress backup for a while. It takes half a minute — <b>save it ›</b>
+        </button>
+      )}
 
       {saveNote && (
         <div style={{ marginTop: 14, background: C.lingonSoft, color: C.lingon, padding: 12, borderRadius: 6, fontSize: 14 }}>{saveNote}</div>
@@ -7079,15 +9889,12 @@ function Home({ lessons, pool, progress, due, studied, unlockMap, nextLessonId, 
       )}
 
       <div style={{ display: "flex", gap: 10, marginTop: 20 }}>
-        <Stat value={pool.length} label="phrases in the bank" />
-        <Stat value={studied} label="started" accent={C.spruce} />
-        <Stat value={due} label="due for review" accent={C.ochre} onClick={() => setDueInfo((v) => !v)} active={dueInfo} />
+        <Stat value={pool.length} label="total phrases" onClick={() => onBankFilter("all")} arrow />
+        <Stat value={learned} label="learned" accent={C.spruce} onClick={() => onBankFilter("learned")} arrow />
+        <Stat value={due} label="due for review" accent={C.ochre} onClick={() => onBankFilter("due")} arrow />
       </div>
-      {dueInfo && (
-        <div style={{ fontSize: 12.5, color: C.inkSoft, marginTop: 8, lineHeight: 1.5 }}>
-          Due for review — phrases whose time has come up. After each correct answer a phrase comes back later and later: in 10 minutes, 4 hours, a day, 3 days, 10 days, a month. Get it wrong, and the countdown starts over.
-        </div>
-      )}
+
+      <StreakCard days={days} />
 
       <div style={{ marginTop: 18, display: "flex", flexDirection: "column", gap: 10 }}>
         <Primary onClick={onStart}>Phrase Training</Primary>
@@ -7104,6 +9911,16 @@ function Home({ lessons, pool, progress, due, studied, unlockMap, nextLessonId, 
         <Ghost onClick={onCases}>
           <span style={{ display: "inline-flex", alignItems: "center", gap: 8 }}>
             <BookOpen size={17} /> Case Cheat Sheet
+          </span>
+        </Ghost>
+        <Ghost onClick={onNumbers}>
+          <span style={{ display: "inline-flex", alignItems: "center", gap: 8 }}>
+            <Volume2 size={17} /> Numbers by ear
+          </span>
+        </Ghost>
+        <Ghost onClick={onYki}>
+          <span style={{ display: "inline-flex", alignItems: "center", gap: 8 }}>
+            <Mic size={17} /> YKI test: reading, listening, writing, speaking
           </span>
         </Ghost>
       </div>
@@ -7143,7 +9960,7 @@ function Home({ lessons, pool, progress, due, studied, unlockMap, nextLessonId, 
             <div key={g.lv.n} style={{ flex: "0 0 100%", minWidth: "100%", scrollSnapAlign: "start" }}>
               <div style={{ marginTop: 8 }}><Bar value={avg} color={C.spruce} height={8} /></div>
               <div style={{ fontSize: 12.5, color: C.inkSoft, marginTop: 5 }}>
-                {g.list.length} lessons · {Math.round(avg * 100)}% mastered
+                {g.list.length} lessons · mastered {Math.round(avg * 100)}%
               </div>
 
               <div style={{ marginTop: 14, display: "flex", flexDirection: "column", gap: 8 }}>
@@ -7152,14 +9969,14 @@ function Home({ lessons, pool, progress, due, studied, unlockMap, nextLessonId, 
                   const { tier, avg, unlocked } = st;
                   const locked = !unlocked;
                   const isNext = l.id === nextLesson;
-                  // The circle and stripe color show what's already been reached. The label
-                  // next to the title is the goal the lesson is currently working toward:
-                  // at diamond there's no goal left, there's nowhere further to go.
                   const workTier = Math.min(tier + 1, 5);
                   const stripeColor = locked ? C.line : tier >= 1 ? TIERS[tier].color : isNext ? C.blue : C.line;
                   const badgeBg = locked ? C.line : tier >= 1 ? TIERS[tier].color : isNext ? C.blue : C.paper;
+                  const rd = READING_BY_AFTER[l.id];
+                  const rdOpen = !!rd && (isFreeLesson(l.id) || tier >= 1);
                   return (
-                    <div key={l.id}
+                    <React.Fragment key={l.id}>
+                    <div data-lesson={l.id}
                       style={{
                         background: locked ? C.paper : C.card,
                         border: `1px solid ${locked ? C.line : isNext ? C.blue : C.line}`,
@@ -7218,6 +10035,8 @@ function Home({ lessons, pool, progress, due, studied, unlockMap, nextLessonId, 
                         </div>
                       )}
                     </div>
+                    {rd && <ReadingRow reading={rd} unlocked={rdOpen} result={readingResults[rd.id]} onOpen={onReading} />}
+                    </React.Fragment>
                   );
                 })}
               </div>
@@ -7236,7 +10055,11 @@ function Home({ lessons, pool, progress, due, studied, unlockMap, nextLessonId, 
       </div>
 
       <div style={{ marginTop: 22, fontSize: 13, color: C.inkSoft, lineHeight: 1.5 }}>
-        A lesson unlocks the next one as soon as it reaches bronze. Gold is the familiar old checkmark. Platinum and diamond go further and rest entirely on repetition: reaching them means answering correctly again and again, even long after the lesson is “done”.
+        Every lesson has five levels: bronze, silver, gold, platinum and diamond. A level goes up when you answer the lesson’s phrases correctly. When a lesson reaches bronze, the next one opens. To stay on the high levels, phrases need to be reviewed from time to time.
+      </div>
+
+      <div style={{ marginTop: 14, fontSize: 12.5, color: C.inkSoft, lineHeight: 1.5 }}>
+        Questions and suggestions: write to <a href={"mailto:" + CONTACT_EMAIL + "?subject=suomi%20treeni"} style={{ color: C.blue, fontWeight: 700, overflowWrap: "anywhere" }}>{CONTACT_EMAIL}</a>
       </div>
 
       <GlossarySheet lesson={glossaryLesson} onClose={() => setGlossaryLesson(null)} say={say} markSeen={markSeen} />
@@ -7245,11 +10068,9 @@ function Home({ lessons, pool, progress, due, studied, unlockMap, nextLessonId, 
   );
 }
 
-// This lesson's rules are the same notes from the glossary as in the word list,
-// just shown all at once instead of one click at a time.
 function GrammarSheet({ lesson, onClose, say }) {
   if (!lesson) return null;
-  const topics = (lesson.glossary || []).filter((g) => isGrammarNote(g, lesson.id)).map((g) => ({ ...g, ru: g.en || g.ru }));
+  const topics = (lesson.glossary || []).filter((g) => isGrammarNote(g, lesson.id)).map((g) => ({ ...g, ru: g.en || g.ru, en: "" }));
   return (
     <div onClick={onClose}
       style={{ position: "fixed", inset: 0, background: "rgba(14,30,51,0.45)", zIndex: 60, display: "flex", alignItems: "flex-end" }}>
@@ -7278,7 +10099,7 @@ function GrammarSheet({ lesson, onClose, say }) {
                 </button>
               </div>
               <div style={{ fontSize: 14, color: C.inkSoft, marginTop: 2 }}>
-                {g.ru}
+                {g.ru}{g.en ? " · " + g.en : ""}
               </div>
               <div style={{
                 marginTop: 10, background: C.ochreSoft, borderRadius: 8, padding: 14,
@@ -7297,13 +10118,9 @@ function GrammarSheet({ lesson, onClose, say }) {
   );
 }
 
-// A list of all the lesson's words with a short translation; tapping a word
-// opens the regular word card with the full explanation.
 function GlossarySheet({ lesson, onClose, say, markSeen }) {
-  const words = lesson ? (lesson.glossary || []).filter((g) => !isGrammarNote(g, lesson.id)).map((g) => ({ ...g, ru: g.en || g.ru })) : [];
+  const words = lesson ? (lesson.glossary || []).filter((g) => !isGrammarNote(g, lesson.id)).map((g) => ({ ...g, ru: g.en || g.ru, en: "" })) : [];
 
-  // The sheet is open — meaning every word in it is visible without a click. We count them
-  // as read right away: from then on they aren't underlined in exercises.
   useEffect(() => {
     if (lesson) words.forEach((g) => markSeen(g));
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -7338,7 +10155,7 @@ function GlossarySheet({ lesson, onClose, say, markSeen }) {
                 </button>
               </div>
               <div style={{ fontSize: 14, color: C.inkSoft, marginTop: 2 }}>
-                {g.ru}
+                {g.ru}{g.en ? " · " + g.en : ""}
               </div>
               {g.note && (
                 <div style={{
@@ -7359,7 +10176,7 @@ function GlossarySheet({ lesson, onClose, say, markSeen }) {
   );
 }
 
-function Stat({ value, label, accent, onClick, active }) {
+function Stat({ value, label, accent, onClick, active, arrow }) {
   const Tag = onClick ? "button" : "div";
   return (
     <Tag onClick={onClick}
@@ -7374,8 +10191,8 @@ function Stat({ value, label, accent, onClick, active }) {
         {onClick && (
           <span style={{
             display: "inline-flex", alignItems: "center", justifyContent: "center", width: 13, height: 13,
-            borderRadius: 7, border: `1.3px solid ${C.inkSoft}`, fontSize: 9.5, fontWeight: 800, flexShrink: 0,
-          }}>?</span>
+            borderRadius: 7, border: arrow ? "none" : `1.3px solid ${C.inkSoft}`, fontSize: arrow ? 16 : 9.5, fontWeight: 800, flexShrink: 0,
+          }}>{arrow ? "›" : "?"}</span>
         )}
       </div>
     </Tag>
@@ -7383,20 +10200,75 @@ function Stat({ value, label, accent, onClick, active }) {
 }
 
 /* ------------------------------------------------------------------ */
-/*  Phrase Bank                                                          */
 /* ------------------------------------------------------------------ */
-function Bank({ pool, glossary, say, onWord, seen, onEdit, onBack }) {
+function PhraseProgress({ box }) {
+  const n = Math.max(0, Math.min(5, box || 0));
+  return (
+    <div style={{ display: "flex", alignItems: "center", gap: 6, marginTop: 7 }}>
+      <div style={{ display: "flex", gap: 2, flex: "0 0 64px" }}>
+        {[1, 2, 3, 4, 5].map((i) => (
+          <div key={i} style={{ flex: 1, height: 4, borderRadius: 2, background: i <= n ? TIERS[i].color : C.line }} />
+        ))}
+      </div>
+      <span style={{ fontSize: 11, fontWeight: 700, color: n >= 1 ? TIERS[n].color : C.inkSoft }}>
+        {n >= 1 ? TIERS[n].name.toUpperCase() : "not started"}
+      </span>
+    </div>
+  );
+}
+
+const LEARNED_BOX = 3;
+const BANK_FILTERS = [
+  { id: "all", label: "All" },
+  { id: "new", label: "Not started" },
+  { id: "doing", label: "In progress" },
+  { id: "learned", label: "Learned" },
+  { id: "due", label: "Due for review" },
+];
+const BANK_FILTER_INFO = {
+  new: "Phrases you haven’t answered yet.",
+  doing: "You are already learning these phrases, but you have fewer than three correct answers in a row so far.",
+  learned: "Learned — three or more correct answers in a row. A mistake sends the phrase back to “In progress”.",
+  due: "Due for review — phrases whose time has come. After every correct answer a phrase comes back later: after 10 minutes, 4 hours, a day, 3 days, 10 days, a month. A mistake restarts the count. The most overdue come first.",
+};
+
+function Bank({ pool, glossary, say, onWord, seen, onEdit, onBack, progress, initialFilter }) {
+  const [filter, setFilter] = useState(initialFilter || "all");
+  const nowTs = useMemo(() => Date.now(), []);
   const [q, setQ] = useState("");
   const [copied, setCopied] = useState(false);
   const [editing, setEditing] = useState(null);
+  const counts = useMemo(() => {
+    const c = { all: pool.length, new: 0, doing: 0, learned: 0, due: 0 };
+    pool.forEach((p) => {
+      const pr = progress && progress[p.id];
+      if (!pr) { c.new++; return; }
+      if (pr.box >= LEARNED_BOX) c.learned++; else c.doing++;
+      if (pr.due <= nowTs) c.due++;
+    });
+    return c;
+  }, [pool, progress, nowTs]);
+
   const list = useMemo(() => {
     const s = q.trim().toLowerCase();
-    if (!s) return pool;
-    return pool.filter((p) => (p.fi + " " + p.ru + " " + (p.en || "")).toLowerCase().includes(s));
-  }, [q, pool]);
+    let arr = pool;
+    if (filter !== "all") {
+      arr = arr.filter((p) => {
+        const pr = progress && progress[p.id];
+        if (filter === "new") return !pr;
+        if (!pr) return false;
+        if (filter === "learned") return pr.box >= LEARNED_BOX;
+        if (filter === "doing") return pr.box < LEARNED_BOX;
+        return pr.due <= nowTs;
+      });
+      if (filter === "due") arr = [...arr].sort((a, b) => progress[a.id].due - progress[b.id].due);
+    }
+    if (s) arr = arr.filter((p) => (p.fi + " " + p.ru + " " + (p.en || "")).toLowerCase().includes(s));
+    return arr;
+  }, [q, pool, filter, progress, nowTs]);
 
   const copyAll = async () => {
-    const text = pool.map((p) => `${p.fi}\t${p.ru}`).join("\n");
+    const text = list.map((p) => `${p.fi}\t${p.ru}`).join("\n");
     try { await navigator.clipboard.writeText(text); setCopied(true); setTimeout(() => setCopied(false), 2000); } catch (e) { setCopied(false); }
   };
 
@@ -7408,10 +10280,27 @@ function Bank({ pool, glossary, say, onWord, seen, onEdit, onBack }) {
         <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search in Finnish or English"
           style={{ width: "100%", padding: "13px 12px 13px 38px", fontSize: 16, borderRadius: 6, border: `1.5px solid ${C.line}`, background: C.card, color: C.ink, fontFamily: FONT }} />
       </div>
+      <div style={{ marginTop: 12, display: "flex", flexWrap: "wrap", gap: 8 }}>
+        {BANK_FILTERS.map((f) => {
+          const on = filter === f.id;
+          return (
+            <button key={f.id} onClick={() => setFilter(f.id)}
+              style={{
+                padding: "8px 12px", fontSize: 13.5, fontWeight: 700, fontFamily: FONT, cursor: "pointer", borderRadius: 18,
+                border: `1.5px solid ${on ? C.blue : C.line}`, background: on ? C.blue : C.card, color: on ? "#fff" : C.ink,
+              }}>
+              {f.label} · {counts[f.id]}
+            </button>
+          );
+        })}
+      </div>
+      {BANK_FILTER_INFO[filter] && (
+        <div style={{ fontSize: 12.5, color: C.inkSoft, marginTop: 8, lineHeight: 1.5 }}>{BANK_FILTER_INFO[filter]}</div>
+      )}
       <div style={{ marginTop: 10 }}>
         <Ghost onClick={copyAll}>
           <span style={{ display: "inline-flex", alignItems: "center", gap: 8 }}>
-            <Copy size={16} /> {copied ? "Copied" : "Copy all phrases"}
+            <Copy size={16} /> {copied ? "Copied" : filter === "all" && !q.trim() ? "Copy all phrases" : `Copy the shown phrases (${list.length})`}
           </span>
         </Ghost>
       </div>
@@ -7425,7 +10314,8 @@ function Bank({ pool, glossary, say, onWord, seen, onEdit, onBack }) {
             <div style={{ flex: 1, minWidth: 0 }}>
               <FinnishText text={p.fi} glossary={glossary} onWord={onWord} seen={seen} size={17} weight={700} />
               <div style={{ fontSize: 15, color: C.ink, marginTop: 3 }}>{p.ru}</div>
-              
+              {p.en && <div style={{ fontSize: 13, color: C.inkSoft }}>{p.en}</div>}
+              <PhraseProgress box={progress && progress[p.id] ? progress[p.id].box : 0} />
             </div>
             <button onClick={() => setEditing(p)} title="Edit phrase"
               style={{ background: "none", border: "none", padding: 4, cursor: "pointer", alignSelf: "flex-start", flexShrink: 0 }}>
@@ -7433,7 +10323,7 @@ function Bank({ pool, glossary, say, onWord, seen, onEdit, onBack }) {
             </button>
           </div>
         ))}
-        {!list.length && <div style={{ color: C.inkSoft, fontSize: 15, padding: 20, textAlign: "center" }}>Nothing found. Try a different word.</div>}
+        {!list.length && <div style={{ color: C.inkSoft, fontSize: 15, padding: 20, textAlign: "center" }}>{filter !== "all" && !q.trim() ? "This list is empty for now." : "Nothing found. Try another word."}</div>}
       </div>
 
       <EditPhraseSheet item={editing} onClose={() => setEditing(null)} onSave={onEdit} />
@@ -7441,8 +10331,6 @@ function Bank({ pool, glossary, say, onWord, seen, onEdit, onBack }) {
   );
 }
 
-// Editing one phrase: three fields, the same place the phrase was found.
-// The edit lives on top of the original lesson and survives an app restart.
 function EditPhraseSheet({ item, onClose, onSave }) {
   const [fi, setFi] = useState("");
   const [ru, setRu] = useState("");
@@ -7513,7 +10401,630 @@ function TopBar({ title, onBack }) {
 }
 
 /* ------------------------------------------------------------------ */
-/*  Lesson import                                                      */
+/* ------------------------------------------------------------------ */
+
+const NUM_T = {
+  nom:   ["yksi", "kaksi", "kolme", "neljä", "viisi", "kuusi", "seitsemän", "kahdeksan", "yhdeksän", "kymmenen", "sata", "tuhat"],
+  gen:   ["yhden", "kahden", "kolmen", "neljän", "viiden", "kuuden", "seitsemän", "kahdeksan", "yhdeksän", "kymmenen", "sadan", "tuhannen"],
+  part:  ["yhtä", "kahta", "kolmea", "neljää", "viittä", "kuutta", "seitsemää", "kahdeksaa", "yhdeksää", "kymmentä", "sataa", "tuhatta"],
+  iness: ["yhdessä", "kahdessa", "kolmessa", "neljässä", "viidessä", "kuudessa", "seitsemässä", "kahdeksassa", "yhdeksässä", "kymmenessä", "sadassa", "tuhannessa"],
+  elat:  ["yhdestä", "kahdesta", "kolmesta", "neljästä", "viidestä", "kuudesta", "seitsemästä", "kahdeksasta", "yhdeksästä", "kymmenestä", "sadasta", "tuhannesta"],
+  illat: ["yhteen", "kahteen", "kolmeen", "neljään", "viiteen", "kuuteen", "seitsemään", "kahdeksaan", "yhdeksään", "kymmeneen", "sataan", "tuhanteen"],
+  adess: ["yhdellä", "kahdella", "kolmella", "neljällä", "viidellä", "kuudella", "seitsemällä", "kahdeksalla", "yhdeksällä", "kymmenellä", "sadalla", "tuhannella"],
+  ablat: ["yhdeltä", "kahdelta", "kolmelta", "neljältä", "viideltä", "kuudelta", "seitsemältä", "kahdeksalta", "yhdeksältä", "kymmeneltä", "sadalta", "tuhannelta"],
+  allat: ["yhdelle", "kahdelle", "kolmelle", "neljälle", "viidelle", "kuudelle", "seitsemälle", "kahdeksalle", "yhdeksälle", "kymmenelle", "sadalle", "tuhannelle"],
+  ess:   ["yhtenä", "kahtena", "kolmena", "neljänä", "viitenä", "kuutena", "seitsemänä", "kahdeksana", "yhdeksänä", "kymmenenä", "satana", "tuhantena"],
+  transl:["yhdeksi", "kahdeksi", "kolmeksi", "neljäksi", "viideksi", "kuudeksi", "seitsemäksi", "kahdeksaksi", "yhdeksäksi", "kymmeneksi", "sadaksi", "tuhanneksi"],
+};
+const NUM_DIGIT = ["nolla", "yksi", "kaksi", "kolme", "neljä", "viisi", "kuusi", "seitsemän", "kahdeksan", "yhdeksän"];
+
+function numBelow1000(n, c) {
+  const T = NUM_T[c];
+  const parts = [];
+  const h = Math.floor(n / 100), r = n % 100;
+  if (h === 1) parts.push(T[10]);
+  else if (h > 1) parts.push(T[h - 1] + (c === "nom" ? NUM_T.part[10] : T[10]));
+  if (r > 0) {
+    if (r < 10) parts.push(T[r - 1]);
+    else if (r === 10) parts.push(T[9]);
+    else if (r < 20) parts.push(T[r - 11] + "toista");
+    else {
+      const d = Math.floor(r / 10), u = r % 10;
+      let w = T[d - 1] + (c === "nom" ? NUM_T.part[9] : T[9]);
+      if (u) w += T[u - 1];
+      parts.push(w);
+    }
+  }
+  return parts;
+}
+
+function numChunks(n, c = "nom") {
+  if (n === 0) return [c === "gen" ? "nollan" : c === "part" ? "nollaa" : "nolla"];
+  const T = NUM_T[c];
+  const out = [];
+  const t = Math.floor(n / 1000), r = n % 1000;
+  if (t === 1) out.push(T[11]);
+  else if (t > 1) out.push(numBelow1000(t, c).join("") + (c === "nom" ? NUM_T.part[11] : T[11]));
+  if (r > 0) out.push(...numBelow1000(r, c));
+  return out;
+}
+const numSpoken = (n, c = "nom") => numChunks(n, c).join(" ");
+const numWord = (n, c = "nom") => numChunks(n, c).join("");
+
+const NUM_CASE_BAG = ["gen", "gen", "gen", "part", "part", "part", "iness", "iness", "iness", "elat", "elat", "elat",
+  "illat", "illat", "illat", "adess", "adess", "adess", "ablat", "ablat", "allat", "allat", "transl", "ess"];
+
+function numRand(lo, hi) { return lo + Math.floor(Math.random() * (hi - lo + 1)); }
+function numDigits(k) { let s = ""; for (let i = 0; i < k; i++) s += numRand(0, 9); return s; }
+
+function makePhoneTask() {
+  const v = Math.random();
+  let groups;
+  if (v < 0.5) groups = [["040", "041", "044", "045", "046", "050"][numRand(0, 5)], numDigits(3), numDigits(4)];
+  else if (v < 0.75) groups = [["09", "02", "03", "05", "06", "08"][numRand(0, 5)], numDigits(3), numDigits(4)];
+  else groups = ["+358", ["40", "41", "44", "45", "46", "50"][numRand(0, 5)], numDigits(3), numDigits(4)];
+  const spoken = groups.map((g) => g.split("").map((ch) => (ch === "+" ? "plus" : NUM_DIGIT[+ch])).join(" ")).join(", ");
+  return { kind: "phone", answer: groups.join(""), shown: groups.join(" "), spoken, word: spoken.replace(/,/g, ""), intl: groups[0] === "+358" };
+}
+
+function makeNumberTask(modeId) {
+  if (modeId === "mix") modeId = ["n20", "n100", "n999", "n9999", "years", "phone", "cases"][numRand(0, 6)];
+  if (modeId === "phone") return makePhoneTask();
+  if (modeId === "cases") {
+    const n = Math.random() < 0.8 ? numRand(1, 99) : numRand(100, 999);
+    const c = NUM_CASE_BAG[numRand(0, NUM_CASE_BAG.length - 1)];
+    return { kind: "case", answer: String(n), shown: String(n), spoken: numSpoken(n, c), word: numWord(n, c), caseId: c };
+  }
+  const R = { n20: [0, 20], n100: [21, 99], n999: [100, 999], n9999: [1000, 99999], years: [1900, 2030] }[modeId] || [0, 20];
+  const n = numRand(R[0], R[1]);
+  return { kind: "num", answer: String(n), shown: String(n), spoken: numSpoken(n), word: numWord(n) };
+}
+function makeNumberTasks(modeId, count) {
+  const out = []; let guard = 0;
+  while (out.length < count && guard++ < 200) {
+    const t = makeNumberTask(modeId);
+    if (!out.some((x) => x.answer === t.answer && x.kind === t.kind)) out.push(t);
+  }
+  return out;
+}
+
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+
+function ReadingRow({ reading, unlocked, result, onOpen }) {
+  const has = result && result.total;
+  const ratio = has ? result.best / result.total : 0;
+  const accent = !unlocked ? C.line : has ? (ratio >= 0.8 ? C.spruce : ratio >= 0.5 ? C.ochre : C.lingon) : C.blue;
+  return (
+    <button onClick={() => unlocked && onOpen(reading)} disabled={!unlocked}
+      style={{
+        width: "100%", textAlign: "left", fontFamily: FONT, cursor: unlocked ? "pointer" : "default",
+        background: unlocked ? C.blueSoft : C.paper, border: `1.5px dashed ${unlocked ? C.blue : C.line}`,
+        borderRadius: 6, padding: "12px 14px", display: "flex", gap: 12, alignItems: "center",
+        opacity: unlocked ? 1 : 0.6,
+      }}>
+      <div style={{
+        width: 34, height: 34, flexShrink: 0, borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center",
+        background: accent, color: "#fff",
+      }}>
+        {unlocked ? (reading.listen ? <Volume2 size={17} /> : <BookOpen size={17} />) : <Lock size={14} color={C.inkSoft} />}
+      </div>
+      <div style={{ flex: 1, minWidth: 0 }}>
+        <div style={{ fontSize: 11, fontWeight: 800, color: unlocked ? C.blue : C.inkSoft, letterSpacing: "0.04em" }}>
+          {reading.listen ? "READING · LISTEN FIRST" : "READING"}
+        </div>
+        <div style={{ fontSize: 16, fontWeight: 700, color: unlocked ? C.ink : C.inkSoft, letterSpacing: "-0.01em", marginTop: 1 }}>{reading.title}</div>
+        <div style={{ fontSize: 12, color: has ? accent : C.inkSoft, fontWeight: has ? 700 : 400, marginTop: 3 }}>
+          {!unlocked
+            ? "Opens when the last lesson of the set reaches bronze"
+            : has ? `Best result: ${result.best} / ${result.total}` : `Text and comprehension quiz · ${reading.quiz.length} questions`}
+        </div>
+      </div>
+    </button>
+  );
+}
+
+const OPT_LETTERS = ["A", "B", "C", "D"];
+
+function splitSpeech(para) {
+  const parts = para.split(/\s*—\s*/);
+  const out = [];
+  if (parts[0].trim()) out.push({ who: 0, text: parts[0].trim() });
+  let turn = 0;
+  parts.slice(1).forEach((t) => {
+    if (t.trim()) { out.push({ who: 1 + (turn % 2), text: t.trim() }); turn++; }
+  });
+  return out;
+}
+
+function SpeechPara({ para, gl, onWord, seen }) {
+  const segs = splitSpeech(para);
+  const turns = segs.filter((x) => x.who > 0).length;
+  if (turns === 0) return <FinnishText text={para} glossary={gl} onWord={onWord} seen={seen} size={18} weight={500} lh={1.55} />;
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 9 }}>
+      {segs.map((x, i) => (
+        <div key={i} style={{ display: "flex", gap: 9, alignItems: "flex-start" }}>
+          {x.who > 0 && (
+            <span style={{
+              flex: "0 0 22px", height: 22, borderRadius: 11, marginTop: 3, display: "inline-flex", alignItems: "center", justifyContent: "center",
+              fontSize: 11.5, fontWeight: 800, color: "#fff", background: turns < 2 ? C.inkSoft : x.who === 1 ? C.blue : C.ochre,
+            }}>{turns < 2 ? "—" : x.who === 1 ? "A" : "B"}</span>
+          )}
+          <div style={{ flex: 1, minWidth: 0 }}>
+            <FinnishText text={x.text} glossary={gl} onWord={onWord} seen={seen} size={18} weight={500} lh={1.55} />
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function ReadingScreen({ reading, glossary, say, sayParts, stop, canSpeak, backLabel, onWord, seen, prev, onResult, onBack }) {
+  const [view, setView] = useState("text");
+  const [showRu, setShowRu] = useState(false);
+  const [hidden, setHidden] = useState(!!reading.listen && canSpeak);
+  const [answers, setAnswers] = useState(() => reading.quiz.map(() => null));
+  const [checked, setChecked] = useState(false);
+  const [trOpen, setTrOpen] = useState({});
+  const [trAll, setTrAll] = useState(false);
+  const hasLimit = !!reading.limit;
+  const [timerOn, setTimerOn] = useState(hasLimit);
+  const [left, setLeft] = useState(reading.limit || 0);
+  const [timeUp, setTimeUp] = useState(false);
+  const [examOn, setExamOn] = useState(false);
+  const [playsAll, setPlaysAll] = useState(0);
+  const [partsPlayed, setPartsPlayed] = useState({});
+
+  useEffect(() => () => { if (stop) stop(); }, []); // eslint-disable-line
+
+  const gl = useMemo(() => {
+    const m = new Map(glossary);
+    [...READING_EXTRAS, ...(reading.extra || [])].forEach((e) => {
+      const entry = { w: e.w, ru: e.ru, en: e.en || "", note: e.note, forms: e.forms || [e.w] };
+      [e.w, ...entry.forms].forEach((f) => m.set(norm(f), entry));
+    });
+    return m;
+  }, [glossary, reading]);
+
+  const playAll = () => sayParts(reading.text.flatMap(splitSpeech));
+  const total = reading.quiz.length;
+  const score = answers.reduce((n, a, i) => n + (a === reading.quiz[i].a ? 1 : 0), 0);
+  const allAnswered = answers.every((a) => a !== null);
+  const endN = parseInt(((reading.after || "").match(/(\d+)\s*$/) || [0, 0])[1], 10);
+  const range = endN >= 5 ? `1–${endN}` : String(endN);
+
+  const pick = (qi, oi) => {
+    if (checked) return;
+    setAnswers((prevA) => prevA.map((a, i) => (i === qi ? oi : a)));
+  };
+  const check = () => {
+    setChecked(true);
+    onResult(reading.id, score, total);
+  };
+  const again = () => {
+    setAnswers(reading.quiz.map(() => null));
+    setChecked(false);
+    setLeft(reading.limit || 0);
+    setTimeUp(false);
+    setPlaysAll(0);
+    setPartsPlayed({});
+  };
+  useEffect(() => {
+    if (!hasLimit || !timerOn || checked) return undefined;
+    const t = setInterval(() => setLeft((x) => x - 1), 1000);
+    return () => clearInterval(t);
+  }, [hasLimit, timerOn, checked]);
+  useEffect(() => {
+    if (hasLimit && timerOn && !checked && left <= 0) { setTimeUp(true); check(); }
+  }, [left]); // eslint-disable-line
+  const playAllGated = () => { if (examOn && playsAll >= 1) return; setPlaysAll((n) => n + 1); playAll(); };
+  const playPartGated = (i, para) => { if (examOn && partsPlayed[i]) return; setPartsPlayed((o) => ({ ...o, [i]: true })); sayParts(splitSpeech(para)); };
+
+  const verdict = score === total ? "Excellent — you understood everything!"
+    : score / total >= 0.6 ? "Good. Re-read (or re-listen to) the places where you made mistakes."
+    : "It is worth reading or listening to the text once more and trying again.";
+  const verdictColor = score === total ? C.spruce : score / total >= 0.6 ? C.ochre : C.lingon;
+
+  const seg = (id, label) => (
+    <button onClick={() => setView(id)}
+      style={{
+        flex: 1, padding: "11px 8px", fontSize: 15, fontWeight: 700, fontFamily: FONT, cursor: "pointer",
+        borderRadius: 6, border: `1.5px solid ${view === id ? C.blue : C.line}`,
+        background: view === id ? C.blue : C.card, color: view === id ? "#fff" : C.ink,
+      }}>
+      {label}
+    </button>
+  );
+
+  const miniBtn = (label, onClick, active) => (
+    <button onClick={onClick}
+      style={{
+        padding: "8px 12px", fontSize: 13.5, fontWeight: 700, fontFamily: FONT, cursor: "pointer", borderRadius: 6,
+        border: `1.5px solid ${active ? C.blue : C.line}`, background: active ? C.blueSoft : C.card, color: active ? C.blue : C.ink,
+      }}>
+      {label}
+    </button>
+  );
+
+  return (
+    <div style={{ maxWidth: 620, margin: "0 auto", padding: "calc(18px + env(safe-area-inset-top)) 18px 40px" }}>
+      <TopBar title="Reading" onBack={onBack} />
+      <div style={{ fontSize: 12.5, color: C.inkSoft, marginTop: 8, fontWeight: 700 }}>
+        {reading.theme ? `Teema: ${reading.theme} · ${reading.skill === "listen" ? "listening" : "reading"}` : `Words from lessons ${range}`}{prev && prev.total ? ` · best result ${prev.best} / ${prev.total}` : ""}
+      </div>
+
+      <div style={{ display: "flex", gap: 8, marginTop: 14 }}>
+        {seg("text", hidden ? "Listen" : "Text")}
+        {seg("quiz", checked ? `Questions · ${score}/${total}` : `Questions · ${total}`)}
+      </div>
+      {hasLimit && (
+        <div style={{ marginTop: 10, display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
+          <div style={{ fontSize: 16, fontWeight: 800, fontVariantNumeric: "tabular-nums", color: timerOn && !checked ? (left <= 60 ? C.lingon : C.ink) : C.inkSoft }}>
+            ⏱ {fmtClock(timerOn ? left : reading.limit)}
+          </div>
+          {!checked && miniBtn(timerOn ? "Timer: on" : "Timer: off", () => setTimerOn((v) => !v), timerOn)}
+          {timeUp && <span style={{ fontSize: 12.5, fontWeight: 700, color: C.lingon }}>Time is up — answers checked</span>}
+        </div>
+      )}
+
+      {view === "text" && (
+        <div>
+          <div style={{ marginTop: 18 }}>
+            <FinnishText text={reading.title} glossary={gl} onWord={onWord} seen={seen} size={24} weight={800} />
+          </div>
+
+          {hidden ? (
+            <div style={{ background: C.card, border: `1px solid ${C.line}`, borderLeft: `4px solid ${C.blue}`, borderRadius: 8, padding: "14px 15px", marginTop: 14 }}>
+              <div style={{ fontSize: 15, fontWeight: 700, color: C.ink }}>The text is hidden — listen to it and answer the questions.</div>
+              <div style={{ fontSize: 13, color: C.inkSoft, marginTop: 4, lineHeight: 1.45 }}>
+                You can listen as many times as you like — the whole text or paragraph by paragraph. In dialogues the lines are read by different voices: A lower, B higher. If it doesn’t work out, you can open the text.
+              </div>
+              <div style={{ marginTop: 12, display: "flex", flexDirection: "column", gap: 10 }}>
+                {reading.skill === "listen" && (
+                  <button onClick={() => setExamOn((v) => !v)} disabled={playsAll > 0 || Object.keys(partsPlayed).length > 0}
+                    style={{ background: "none", border: "none", padding: 0, display: "inline-flex", alignItems: "center", gap: 8, cursor: "pointer", fontFamily: FONT, textAlign: "left" }}>
+                    <span style={{ flex: "0 0 20px", width: 20, height: 20, borderRadius: 5, border: `1.8px solid ${examOn ? C.blue : C.line}`, background: examOn ? C.blue : C.card, display: "inline-flex", alignItems: "center", justifyContent: "center" }}>{examOn && <Check size={14} color="#fff" />}</span>
+                    <span style={{ fontSize: 13.5, fontWeight: 600, color: C.ink }}>Like the exam: the whole text once, then each paragraph once</span>
+                  </button>
+                )}
+                <Primary onClick={playAllGated} disabled={examOn && playsAll >= 1}>
+                  {examOn && playsAll >= 1 ? "Whole text already played" : "▶ Listen to the whole text"}
+                </Primary>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+                  {reading.text.map((para, i) => miniBtn(examOn && partsPlayed[i] ? `✓ Paragraph ${i + 1}` : `▶ Paragraph ${i + 1}`, () => playPartGated(i, para), false))}
+                  {miniBtn("■ Stop", () => stop && stop(), false)}
+                </div>
+              </div>
+            </div>
+          ) : (
+            <div>
+              <div style={{ fontSize: 12.5, color: C.inkSoft, marginTop: 6 }}>
+                Tap the underlined words to see a translation. In dialogues the lines of different people are marked A and B and read by different voices.
+              </div>
+              {reading.text.map((para, i) => (
+                <div key={i} style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 8, padding: "14px 15px", marginTop: 12 }}>
+                  <div style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
+                    <div style={{ flex: 1, minWidth: 0 }}>
+                      <SpeechPara para={para} gl={gl} onWord={onWord} seen={seen} />
+                    </div>
+                    {canSpeak && (
+                      <button onClick={() => sayParts(splitSpeech(para))} title="Listen to the paragraph"
+                        style={{ background: "none", border: "none", padding: 4, cursor: "pointer", flexShrink: 0 }}>
+                        <Volume2 size={19} color={C.blue} />
+                      </button>
+                    )}
+                  </div>
+                  {showRu && (
+                    <div style={{ marginTop: 10, paddingTop: 10, borderTop: `1px dashed ${C.line}`, fontSize: 14.5, color: C.inkSoft, lineHeight: 1.5 }}>
+                      {reading.ru[i]}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
+
+          <div style={{ marginTop: 18, display: "flex", flexDirection: "column", gap: 10 }}>
+            {hidden ? (
+              examOn && !checked
+                ? <div style={{ fontSize: 12.5, color: C.inkSoft, textAlign: "center" }}>In exam mode the text opens after you check your answers.</div>
+                : <Ghost onClick={() => { setHidden(false); if (stop) stop(); }}>Show text</Ghost>
+            ) : (
+              <>
+                <Ghost onClick={() => setShowRu((v) => !v)}>{showRu ? "Hide translation" : "Show translation"}</Ghost>
+                {canSpeak && <Ghost onClick={() => { setHidden(true); setShowRu(false); }}>Hide text and listen</Ghost>}
+              </>
+            )}
+            <Primary onClick={() => setView("quiz")}>Go to the questions</Primary>
+          </div>
+        </div>
+      )}
+
+      {view === "quiz" && (
+        <div>
+          {checked && (
+            <div style={{ marginTop: 16, background: C.card, border: `1px solid ${C.line}`, borderLeft: `4px solid ${verdictColor}`, borderRadius: 8, padding: "14px 15px" }}>
+              <div style={{ fontSize: 24, fontWeight: 800, color: verdictColor, letterSpacing: "-0.02em" }}>{score} / {total}</div>
+              <div style={{ fontSize: 14.5, color: C.ink, marginTop: 3 }}>{verdict}</div>
+            </div>
+          )}
+
+          <div style={{ marginTop: 14, display: "flex", flexWrap: "wrap", gap: 8 }}>
+            {miniBtn(trAll ? "Hide translations" : "Show question translations", () => setTrAll((v) => !v), trAll)}
+            {hidden && miniBtn(examOn && playsAll >= 1 ? "Whole text played" : "▶ Listen to the text", playAllGated, false)}
+            {hidden && miniBtn("■ Stop", () => stop && stop(), false)}
+          </div>
+
+          {reading.quiz.map((q, qi) => {
+            const open = trAll || !!trOpen[qi];
+            return (
+              <div key={qi} style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 8, padding: "14px 15px", marginTop: 12 }}>
+                <div style={{ fontSize: 12, fontWeight: 800, color: C.inkSoft }}>KYSYMYS {qi + 1} / {total}</div>
+                <div style={{ marginTop: 5 }}>
+                  <FinnishText text={q.q} glossary={gl} onWord={onWord} seen={seen} size={17} weight={700} lh={1.35} />
+                </div>
+                <button onClick={() => setTrOpen((o) => ({ ...o, [qi]: !o[qi] }))}
+                  style={{ marginTop: 6, background: "none", border: "none", padding: 0, cursor: "pointer", fontFamily: FONT, fontSize: 12.5, fontWeight: 700, color: C.blue }}>
+                  {open ? "Hide translation" : "Show translation"}
+                </button>
+                {open && (
+                  <div style={{ marginTop: 6, padding: "10px 12px", background: C.paper, borderRadius: 6, fontSize: 13.5, color: C.inkSoft, lineHeight: 1.5 }}>
+                    <div style={{ fontWeight: 700, color: C.ink }}>{q.r}</div>
+                    {q.t.map((x, i) => <div key={i}>{OPT_LETTERS[i]} — {x}</div>)}
+                  </div>
+                )}
+                <div style={{ marginTop: 10, display: "flex", flexDirection: "column", gap: 8 }}>
+                  {q.o.map((opt, oi) => {
+                    const chosen = answers[qi] === oi;
+                    const right = checked && oi === q.a;
+                    const wrong = checked && chosen && oi !== q.a;
+                    const border = right ? C.spruce : wrong ? C.lingon : chosen ? C.blue : C.line;
+                    const bg = right ? C.spruceSoft : wrong ? C.lingonSoft : chosen ? C.blueSoft : C.card;
+                    return (
+                      <button key={oi} onClick={() => pick(qi, oi)} disabled={checked}
+                        style={{
+                          textAlign: "left", padding: "12px 14px", fontSize: 15.5, fontWeight: 600, fontFamily: FONT,
+                          borderRadius: 8, border: `1.5px solid ${border}`, background: bg, color: C.ink,
+                          cursor: checked ? "default" : "pointer", display: "flex", gap: 10,
+                        }}>
+                        <span style={{ fontWeight: 800, color: C.inkSoft, flexShrink: 0 }}>{OPT_LETTERS[oi]}</span>
+                        <span>{opt}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+                {checked && answers[qi] !== q.a && (
+                  <div style={{ marginTop: 8, fontSize: 13.5, color: C.spruce, fontWeight: 700 }}>Oikea vastaus: {OPT_LETTERS[q.a]} — {q.o[q.a]}</div>
+                )}
+              </div>
+            );
+          })}
+
+          <div style={{ marginTop: 18, display: "flex", flexDirection: "column", gap: 10 }}>
+            {!checked ? (
+              <Primary onClick={check} disabled={!allAnswered}>Check</Primary>
+            ) : (
+              <>
+                <Primary onClick={again}>Take the test again</Primary>
+                <Ghost onClick={() => setView("text")}>{hidden ? "Back to listening" : "Back to the text"}</Ghost>
+                <Ghost onClick={onBack}>{backLabel || "To the lessons"}</Ghost>
+              </>
+            )}
+            {!checked && !allAnswered && (
+              <div style={{ fontSize: 12.5, color: C.inkSoft, textAlign: "center" }}>Answer all the questions to check.</div>
+            )}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+const NUM_KEY = "suomi_numbers_v1";
+const NUM_MODES = [
+  { id: "n20", title: "From 0 to 20", hint: "nolla, yksi … kaksikymmentä" },
+  { id: "n100", title: "From 21 to 99", hint: "kaksikymmentäviisi, yhdeksänkymmentäyhdeksän" },
+  { id: "n999", title: "From 100 to 999", hint: "sata, kolmesataaneljäkymmentäviisi" },
+  { id: "n9999", title: "Thousands: up to 99,999", hint: "prices, distances, population" },
+  { id: "years", title: "Years", hint: "tuhatyhdeksänsataakahdeksankymmentäseitsemän" },
+  { id: "phone", title: "Phone numbers", hint: "digit by digit, including with the +358 code" },
+  { id: "cases", title: "Numerals in cases", hint: "kahdellakymmenelläviidellä — every part in the case" },
+  { id: "mix", title: "Everything mixed", hint: "a random mode from all of them" },
+];
+
+function fmtDigits(s, plain) {
+  if (plain || !/^\d+$/.test(s)) return s;
+  return s.replace(/\B(?=(\d{3})+(?!\d))/g, "\u202F");
+}
+
+function NumbersHub({ stats, showWord, onToggleWord, speechOk, onStart, onBack }) {
+  return (
+    <div style={{ maxWidth: 620, margin: "0 auto", padding: "calc(12px + env(safe-area-inset-top)) 18px 28px" }}>
+      <TopBar title="Numbers by ear" onBack={onBack} />
+      <div style={{ fontSize: 14, color: C.inkSoft, marginTop: 8, lineHeight: 1.5 }}>
+        You hear a number in Finnish and type it in digits on the keypad, like on a calculator. Each run has 10 tasks.
+      </div>
+      {!speechOk && (
+        <div style={{ marginTop: 8, background: C.ochreSoft, borderRadius: 6, padding: "7px 12px", fontSize: 13, color: C.ink }}>
+          Sound is unavailable or turned off — the word will be shown on screen.
+        </div>
+      )}
+      <button onClick={onToggleWord}
+        style={{
+          marginTop: 8, background: "none", border: "none", padding: 0, display: "inline-flex",
+          alignItems: "center", gap: 6, cursor: "pointer", fontFamily: FONT,
+        }}>
+        <span style={{
+          width: 20, height: 20, borderRadius: 5, border: `1.8px solid ${showWord ? C.blue : C.line}`,
+          background: showWord ? C.blue : C.card, display: "inline-flex", alignItems: "center", justifyContent: "center",
+        }}>{showWord && <Check size={14} color="#fff" />}</span>
+        <span style={{ fontSize: 13.5, fontWeight: 600, color: C.ink }}>Show the word on screen (hint)</span>
+      </button>
+
+      <div style={{ marginTop: 11, display: "flex", flexDirection: "column", gap: 7 }}>
+        {NUM_MODES.map((m) => {
+          const st = stats[m.id];
+          return (
+            <button key={m.id} onClick={() => onStart(m.id)}
+              style={{
+                textAlign: "left", fontFamily: FONT, cursor: "pointer", background: C.card, border: `1px solid ${C.line}`,
+                borderLeft: `4px solid ${C.blue}`, borderRadius: 8, padding: "9px 15px",
+              }}>
+              <div style={{ fontSize: 17, fontWeight: 800, color: C.ink, letterSpacing: "-0.01em" }}>{m.title}</div>
+              <div style={{ fontSize: 12.5, color: C.inkSoft, marginTop: 3, overflowWrap: "anywhere" }}>{m.hint}</div>
+              {st && st.total > 0 && (
+                <div style={{ fontSize: 12, fontWeight: 700, color: st.ok / st.total >= 0.8 ? C.spruce : C.ochre, marginTop: 5 }}>
+                  Correct {st.ok} / {st.total} · runs: {st.runs}
+                </div>
+              )}
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+function NumbersRun({ mode, tasks, say, speechOk, showWordInit, onRecord, onAgain, onBack }) {
+  const [idx, setIdx] = useState(0);
+  const [typed, setTyped] = useState("");
+  const [checked, setChecked] = useState(false);
+  const [wasOk, setWasOk] = useState(false);
+  const [okCount, setOkCount] = useState(0);
+  const [showWord, setShowWord] = useState(!!showWordInit || !speechOk);
+  const [done, setDone] = useState(false);
+  const sayRef = useRef(say);
+  sayRef.current = say;
+  const total = tasks.length;
+  const task = tasks[idx];
+
+  useEffect(() => {
+    if (done || !speechOk) return undefined;
+    const t = setTimeout(() => sayRef.current(task.spoken, 0.8), 400);
+    return () => clearTimeout(t);
+  }, [idx, done, speechOk]); // eslint-disable-line
+
+  const press = (k) => {
+    if (checked || done) return;
+    if (k === "<") setTyped((s) => s.slice(0, -1));
+    else if (k === "+") setTyped((s) => (s === "" && task.intl ? "+" : s));
+    else setTyped((s) => (s.length < 16 ? s + k : s));
+  };
+  const check = () => {
+    const ok = typed === task.answer;
+    setChecked(true);
+    setWasOk(ok);
+    if (ok) setOkCount((c) => c + 1);
+  };
+  const next = () => {
+    if (idx + 1 >= total) { setDone(true); onRecord(mode.id, okCount, total); return; }
+    setIdx(idx + 1);
+    setTyped("");
+    setChecked(false);
+    setWasOk(false);
+  };
+
+  if (done) {
+    const ratio = okCount / total;
+    const col = ratio >= 0.8 ? C.spruce : ratio >= 0.5 ? C.ochre : C.lingon;
+    return (
+      <div style={{ maxWidth: 620, margin: "0 auto", padding: "calc(12px + env(safe-area-inset-top)) 18px 28px" }}>
+        <TopBar title={mode.title} onBack={onBack} />
+        <div style={{ marginTop: 12, background: C.card, border: `1px solid ${C.line}`, borderLeft: `4px solid ${col}`, borderRadius: 8, padding: "13px 16px" }}>
+          <div style={{ fontSize: 30, fontWeight: 800, color: col, letterSpacing: "-0.02em" }}>{okCount} / {total}</div>
+          <div style={{ fontSize: 15, color: C.ink, marginTop: 4 }}>
+            {ratio === 1 ? "Flawless — every number recognised." : ratio >= 0.8 ? "Very good!" : ratio >= 0.5 ? "Not bad, but worth reviewing." : "Try another run — numbers by ear don’t come right away."}
+          </div>
+        </div>
+        <div style={{ marginTop: 13, display: "flex", flexDirection: "column", gap: 7 }}>
+          <Primary onClick={onAgain}>Another run</Primary>
+          <Ghost onClick={onBack}>Back to mode selection</Ghost>
+        </div>
+      </div>
+    );
+  }
+
+  const cs = task.kind === "case" ? CASES.find((c) => c.id === task.caseId) : null;
+  const plain = task.kind === "phone";
+  const keys = ["7", "8", "9", "4", "5", "6", "1", "2", "3", "+", "0", "<"];
+
+  return (
+    <div style={{ maxWidth: 620, margin: "0 auto", padding: "calc(12px + env(safe-area-inset-top)) 18px 28px" }}>
+      <TopBar title={mode.title} onBack={onBack} />
+      <div style={{ fontSize: 12.5, color: C.inkSoft, marginTop: 6, fontWeight: 700 }}>{idx + 1} / {total}</div>
+      <div style={{ marginTop: 5 }}><Bar value={idx / total} color={C.blue} height={5} /></div>
+
+      <div style={{ marginTop: 11, display: "flex", gap: 7, alignItems: "stretch" }}>
+        <button onClick={() => speechOk && say(task.spoken, 0.8)} disabled={!speechOk}
+          style={{
+            flex: "0 0 74px", borderRadius: 8, border: `1.5px solid ${C.blue}`, background: C.blueSoft, cursor: speechOk ? "pointer" : "default",
+            display: "flex", alignItems: "center", justifyContent: "center", opacity: speechOk ? 1 : 0.4,
+          }}>
+          <Volume2 size={30} color={C.blue} />
+        </button>
+        <div style={{ flex: 1, minWidth: 0, background: C.card, border: `1px solid ${C.line}`, borderRadius: 8, padding: "7px 12px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+          {showWord || checked ? (
+            <div style={{ fontSize: 16, fontWeight: 700, color: C.ink, lineHeight: 1.35, overflowWrap: "anywhere" }}>{task.spoken}</div>
+          ) : (
+            <div style={{ fontSize: 13.5, color: C.inkSoft }}>Listen and type the number. The word is hidden.</div>
+          )}
+          <button onClick={() => setShowWord((v) => !v)}
+            style={{ marginTop: 5, alignSelf: "flex-start", background: "none", border: "none", padding: 0, cursor: "pointer", fontFamily: FONT, fontSize: 12.5, fontWeight: 700, color: C.blue }}>
+            {showWord ? "Hide word" : "Show word"}
+          </button>
+        </div>
+      </div>
+
+      <div style={{
+        marginTop: 10, background: C.card, border: `1.5px solid ${checked ? (wasOk ? C.spruce : C.lingon) : C.line}`, borderRadius: 8,
+        padding: "10px 16px", minHeight: 64, display: "flex", alignItems: "center", justifyContent: "flex-end",
+        fontSize: 34, fontWeight: 800, letterSpacing: "0.02em", color: C.ink, fontVariantNumeric: "tabular-nums", overflowWrap: "anywhere",
+      }}>
+        {typed === "" ? <span style={{ color: C.line }}>0</span> : fmtDigits(typed, plain)}
+      </div>
+
+      {checked && (
+        <div style={{ marginTop: 8, background: wasOk ? C.spruceSoft : C.lingonSoft, border: `1px solid ${wasOk ? C.spruce : C.lingon}`, borderRadius: 8, padding: "9px 14px" }}>
+          <div style={{ fontSize: 17, fontWeight: 800, color: wasOk ? C.spruce : C.lingon }}>
+            {wasOk ? "Correct!" : `No. Correct: ${fmtDigits(task.shown, plain)}`}
+          </div>
+          {cs && (
+            <div style={{ fontSize: 13.5, color: C.ink, marginTop: 4, lineHeight: 1.4 }}>
+              <b>{task.word}</b> — {cs.fi}: {cs.meaning} (ending {cs.ending})
+            </div>
+          )}
+          {!cs && task.kind !== "phone" && <div style={{ fontSize: 13.5, color: C.inkSoft, marginTop: 4 }}>{task.word}</div>}
+        </div>
+      )}
+
+      <div style={{ marginTop: 8, display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 6 }}>
+        {keys.map((k) => {
+          const off = checked || (k === "+" && !task.intl);
+          return (
+            <button key={k} onClick={() => press(k)} disabled={off}
+              style={{
+                height: 58, fontSize: k === "<" ? 22 : 26, fontWeight: 700, fontFamily: FONT, borderRadius: 8,
+                border: `1px solid ${C.line}`, background: off ? C.paper : C.card, color: off ? C.line : C.ink, cursor: off ? "default" : "pointer",
+              }}>
+              {k === "<" ? "⌫" : k}
+            </button>
+          );
+        })}
+      </div>
+
+      <div style={{ marginTop: 10 }}>
+        {!checked
+          ? <Primary onClick={check} disabled={typed === ""}>Check</Primary>
+          : <Primary onClick={next}>{idx + 1 >= total ? "Finish" : "Next"}</Primary>}
+      </div>
+    </div>
+  );
+}
+
+/* ------------------------------------------------------------------ */
 /* ------------------------------------------------------------------ */
 const EXAMPLE = `{
   "id": "LB_S1_21",
@@ -7529,7 +11040,7 @@ const EXAMPLE = `{
   ]
 }`;
 
-function Import({ lessons, onSave, progress, onProgress, onBack }) {
+function Import({ lessons, onSave, progress, onProgress, makeBackup, onBackedUp, onBack }) {
   const [text, setText] = useState("");
   const [msg, setMsg] = useState(null);
   const [showFmt, setShowFmt] = useState(false);
@@ -7539,8 +11050,6 @@ function Import({ lessons, onSave, progress, onProgress, onBack }) {
   const [phraseMsg, setPhraseMsg] = useState(null);
   const [addingPhrase, setAddingPhrase] = useState(false);
 
-  // A custom phrase goes into a separate, always-unlocked "My Phrases" level —
-  // it doesn't need unlocking or going through in order with the rest.
   const addPhrase = async () => {
     if (!fi.trim() || !ru.trim()) return;
     setAddingPhrase(true);
@@ -7568,8 +11077,8 @@ function Import({ lessons, onSave, progress, onProgress, onBack }) {
     let data;
     try { data = JSON.parse(text); } catch (e) { setMsg({ bad: true, t: "This doesn't look like JSON. Check that you copied the whole text." }); return; }
     if (data && data.progress && typeof data.progress === "object") {
-      const n = onProgress(data.progress);
-      setMsg({ bad: false, t: `Progress restored: ${n} phrases in progress.`, done: true });
+      const r = onProgress(data);
+      setMsg({ bad: false, t: `Progress restored: phrases in progress ${r.phrases}, days of practice ${r.days}.`, done: true });
       setText("");
       return;
     }
@@ -7651,8 +11160,9 @@ function Import({ lessons, onSave, progress, onProgress, onBack }) {
         </Ghost>
         <Ghost onClick={async () => {
           try {
-            await navigator.clipboard.writeText(JSON.stringify({ progress }));
-            setMsg({ bad: false, t: `Progress copied: ${Object.keys(progress || {}).length} phrases in progress. Save this text somewhere — pasting it back here will restore your counters.` });
+            await navigator.clipboard.writeText(JSON.stringify(makeBackup()));
+            onBackedUp();
+            setMsg({ bad: false, t: `Progress copied: ${Object.keys(progress || {}).length}phrases in progress. Save this text somewhere — pasting it back here will restore your counters.` });
           } catch (e) {
             setMsg({ bad: true, t: "The browser didn't allow access to the clipboard." });
           }
@@ -7679,7 +11189,6 @@ function Import({ lessons, onSave, progress, onProgress, onBack }) {
 }
 
 /* ------------------------------------------------------------------ */
-/*  Summary                                                            */
 /* ------------------------------------------------------------------ */
 function Summary({ stats, mode, onHome, onAgain }) {
   const total = stats.ok + stats.no;
@@ -7689,15 +11198,15 @@ function Summary({ stats, mode, onHome, onAgain }) {
       <div style={{ fontSize: 15, color: C.inkSoft, fontWeight: 600 }}>
         {mode === "verbs" ? "Verbs: training finished" : mode === "dialog" ? "Dialogue finished" : "Training finished"}
       </div>
-      <div style={{ fontSize: 76, fontWeight: 800, letterSpacing: "-0.05em", color: pct >= 70 ? C.spruce : C.ochre, lineHeight: 1.05, marginTop: 8 }}>
+      <div style={{ fontSize: 76, fontWeight: 800, letterSpacing: "-0.05em", color: pct >= 70 ? C.spruce : C.ochre, lineHeight: 1.05, marginTop: 6 }}>
         {pct}%
       </div>
       <div style={{ fontSize: 17, color: C.ink, marginTop: 4 }}>
-        {total}: {stats.ok} correct
+        {stats.ok} / {total} correct
       </div>
-      <div style={{ fontSize: 15, fontWeight: 700, color: C.blue, marginTop: 8 }}>
+      <div style={{ fontSize: 15, fontWeight: 700, color: C.blue, marginTop: 6 }}>
       </div>
-      <div style={{ marginTop: 26, display: "flex", flexDirection: "column", gap: 10 }}>
+      <div style={{ marginTop: 16, display: "flex", flexDirection: "column", gap: 7 }}>
         <Primary onClick={onAgain} tone="spruce">{mode === "verbs" ? "More verbs" : mode === "dialog" ? "Play again" : "One more round"}</Primary>
         <Ghost onClick={onHome}>Home</Ghost>
       </div>
